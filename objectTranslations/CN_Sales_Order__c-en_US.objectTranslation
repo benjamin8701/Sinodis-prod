@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Order</value>
+    </caseValues>
+    <fields>
+        <label><!-- Finance AR --></label>
+        <name>CN_AR_Person__c</name>
+        <relationshipLabel><!-- Sales Order (Finance AR) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing block --></label>
+        <name>CN_Billing_Block__c</name>
+        <picklistValues>
+            <masterLabel>01-Calculation Missing</masterLabel>
+            <translation><!-- 01-Calculation Missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02-Compl Confirm Missng</masterLabel>
+            <translation><!-- 02-Compl Confirm Missng --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03-Prices Incomplete</masterLabel>
+            <translation><!-- 03-Prices Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04-Check Terms of Paymt</masterLabel>
+            <translation><!-- 04-Check Terms of Paymt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05-Check Terms of Dlv</masterLabel>
+            <translation><!-- 05-Check Terms of Dlv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08-Check Credit Memo</masterLabel>
+            <translation><!-- 08-Check Credit Memo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09-Check Debit Memo</masterLabel>
+            <translation><!-- 09-Check Debit Memo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10-</masterLabel>
+            <translation><!-- 10- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YH-Rejected by Customer</masterLabel>
+            <translation><!-- YH-Rejected by Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Credit Status --></label>
+        <name>CN_Credit_Status__c</name>
+        <picklistValues>
+            <masterLabel>A-Credit check was executed, document OK</masterLabel>
+            <translation><!-- A-Credit check was executed, document OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-Credit check was executed, document not OK</masterLabel>
+            <translation><!-- B-Credit check was executed, document not OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Credit check was executed, document not OK, partial release</masterLabel>
+            <translation><!-- C-Credit check was executed, document not OK, partial release --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D-Document released by credit representative</masterLabel>
+            <translation><!-- D-Document released by credit representative --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>CN_Currency__c</name>
+        <picklistValues>
+            <masterLabel>CNY</masterLabel>
+            <translation><!-- CNY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ship-to party --></label>
+        <name>CN_Delivery_Account_Name__c</name>
+        <relationshipLabel><!-- Sales Order --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Delivery block --></label>
+        <name>CN_Delivery_Block__c</name>
+        <picklistValues>
+            <masterLabel>01-Credit limit</masterLabel>
+            <translation><!-- 01-Credit limit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02-Waitting confirm</masterLabel>
+            <translation><!-- 02-Waitting confirm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03-Bottleneck material</masterLabel>
+            <translation><!-- 03-Bottleneck material --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04-Export papers missng</masterLabel>
+            <translation><!-- 04-Export papers missng --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05-Check free of ch.dlv</masterLabel>
+            <translation><!-- 05-Check free of ch.dlv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06-No printing</masterLabel>
+            <translation><!-- 06-No printing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07-Change in quantity</masterLabel>
+            <translation><!-- 07-Change in quantity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08-Kanban Delivery</masterLabel>
+            <translation><!-- 08-Kanban Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09-JIT delivery (PDS)</masterLabel>
+            <translation><!-- 09-JIT delivery (PDS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10-Not achieve MOQ</masterLabel>
+            <translation><!-- 10-Not achieve MOQ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delivery Status --></label>
+        <name>CN_Delivery_Status__c</name>
+        <picklistValues>
+            <masterLabel>A-Not yet processed</masterLabel>
+            <translation><!-- A-Not yet processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-Partially processed</masterLabel>
+            <translation><!-- B-Partially processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Completely processed</masterLabel>
+            <translation><!-- C-Completely processed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>CN_Distribution_Channel__c</name>
+        <picklistValues>
+            <masterLabel>DS</masterLabel>
+            <translation><!-- DS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KA</masterLabel>
+            <translation><!-- KA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WS</masterLabel>
+            <translation><!-- WS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>CN_Division__c</name>
+        <picklistValues>
+            <masterLabel>01-SFD</masterLabel>
+            <translation><!-- 01-SFD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02-Domestic Sales</masterLabel>
+            <translation><!-- 02-Domestic Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Incoterms (Part 1) --></label>
+        <name>CN_Incoterms1__c</name>
+        <picklistValues>
+            <masterLabel>CFR-Costs and freight</masterLabel>
+            <translation><!-- CFR-Costs and freight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIF-Costs, insurance &amp; freight</masterLabel>
+            <translation><!-- CIF-Costs, insurance &amp; freight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIP-Carriage and insurance paid to</masterLabel>
+            <translation><!-- CIP-Carriage and insurance paid to --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT-Carriage paid to</masterLabel>
+            <translation><!-- CPT-Carriage paid to --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAF-Delivered at frontier</masterLabel>
+            <translation><!-- DAF-Delivered at frontier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDP-Delivered Duty Paid</masterLabel>
+            <translation><!-- DDP-Delivered Duty Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDU-Delivered Duty Unpaid</masterLabel>
+            <translation><!-- DDU-Delivered Duty Unpaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEQ-Delivered ex quay (duty paid)</masterLabel>
+            <translation><!-- DEQ-Delivered ex quay (duty paid) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DES-Delivered ex ship</masterLabel>
+            <translation><!-- DES-Delivered ex ship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXW-Ex Works</masterLabel>
+            <translation><!-- EXW-Ex Works --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAS-Free Alongside Ship</masterLabel>
+            <translation><!-- FAS-Free Alongside Ship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCA-Free Carrier</masterLabel>
+            <translation><!-- FCA-Free Carrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FH-Free house</masterLabel>
+            <translation><!-- FH-Free house --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOB-Free on board</masterLabel>
+            <translation><!-- FOB-Free on board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UN-Not Free</masterLabel>
+            <translation><!-- UN-Not Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Incoterms (Part 2) --></label>
+        <name>CN_Incoterms2__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN_Is_Within_6_Months --></label>
+        <name>CN_Is_Within_6_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Value --></label>
+        <name>CN_Order_Net_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Reason --></label>
+        <name>CN_Order_Reason__c</name>
+        <relationshipLabel><!-- Sales Order --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Reference No --></label>
+        <name>CN_Order_Reference_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall blocked Status --></label>
+        <name>CN_Overall_Blocked_Status__c</name>
+        <picklistValues>
+            <masterLabel>A-Not yet processed</masterLabel>
+            <translation><!-- A-Not yet processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-Partially processed</masterLabel>
+            <translation><!-- B-Partially processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Completely processed</masterLabel>
+            <translation><!-- C-Completely processed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Overall Status --></label>
+        <name>CN_Overall_Status__c</name>
+        <picklistValues>
+            <masterLabel>A-Not yet processed</masterLabel>
+            <translation><!-- A-Not yet processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-Partially processed</masterLabel>
+            <translation><!-- B-Partially processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Completely processed</masterLabel>
+            <translation><!-- C-Completely processed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PO Number --></label>
+        <name>CN_PO_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms --></label>
+        <name>CN_Payment_Terms__c</name>
+        <picklistValues>
+            <masterLabel>CIA-Payment in advance</masterLabel>
+            <translation><!-- CIA-Payment in advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D000-Payment in advance</masterLabel>
+            <translation><!-- D000-Payment in advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D003-Pay immediately with Invoice</masterLabel>
+            <translation><!-- D003-Pay immediately with Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D005-D05/5 days after delivery</masterLabel>
+            <translation><!-- D005-D05/5 days after delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D010-D10/10 days after delivery</masterLabel>
+            <translation><!-- D010-D10/10 days after delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D015-15 days after delivery</masterLabel>
+            <translation><!-- D015-15 days after delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D020-20 days, due net</masterLabel>
+            <translation><!-- D020-20 days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D030-30 days, due net</masterLabel>
+            <translation><!-- D030-30 days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D045-45 days, due net</masterLabel>
+            <translation><!-- D045-45 days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D060-60days, due net</masterLabel>
+            <translation><!-- D060-60days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D090-90days, due net</masterLabel>
+            <translation><!-- D090-90days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D120-120 days, due net</masterLabel>
+            <translation><!-- D120-120 days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M110-10 th of next month, due net</masterLabel>
+            <translation><!-- M110-10 th of next month, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M115-15 th of next month, due net</masterLabel>
+            <translation><!-- M115-15 th of next month, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M120-20 th of next month, due net</masterLabel>
+            <translation><!-- M120-20 th of next month, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M131-30 days end of month, due net</masterLabel>
+            <translation><!-- M131-30 days end of month, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M145-Before 15th in 2 months, due net</masterLabel>
+            <translation><!-- M145-Before 15th in 2 months, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M231-60 days end of month, due net</masterLabel>
+            <translation><!-- M231-60 days end of month, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M331-90 days end of month, due net</masterLabel>
+            <translation><!-- M331-90 days end of month, due net --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rejection Status --></label>
+        <name>CN_Rejection_Status__c</name>
+        <picklistValues>
+            <masterLabel>A-Not yet processed</masterLabel>
+            <translation><!-- A-Not yet processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-Partially processed</masterLabel>
+            <translation><!-- B-Partially processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Completely processed</masterLabel>
+            <translation><!-- C-Completely processed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Delivery Date --></label>
+        <name>CN_Request_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Delivery Date --></label>
+        <name>CN_Requested_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Create By --></label>
+        <name>CN_SAP_Create_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Creation Date --></label>
+        <name>CN_SAP_Create_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Order Type --></label>
+        <name>CN_Sales_Order_Type__c</name>
+        <relationshipLabel><!-- Sales Order --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Organization --></label>
+        <name>CN_Sales_Organization__c</name>
+        <picklistValues>
+            <masterLabel>S010-Sinodis Sales Org</masterLabel>
+            <translation><!-- S010-Sinodis Sales Org --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Person --></label>
+        <name>CN_Sales_Person_Name__c</name>
+        <relationshipLabel><!-- Sales Order (Sales Person) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sold-To Party --></label>
+        <name>CN_Sold_To_Account_Name__c</name>
+        <relationshipLabel><!-- Sales Order --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sync Error Message --></label>
+        <name>CN_Sync_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Status --></label>
+        <name>CN_Sync_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sync Time --></label>
+        <name>CN_Sync_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax amount --></label>
+        <name>CN_Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount With Tax --></label>
+        <name>CN_Total_Amount_With_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Order Number --></label>
+        <name>CN_Up_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Sales Order Layout</layout>
+        <sections>
+            <label><!-- Amount --></label>
+            <section>Amount</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Order Status --></label>
+            <section>Order Status</section>
+        </sections>
+        <sections>
+            <label><!-- Related Party --></label>
+            <section>Related Party</section>
+        </sections>
+        <sections>
+            <label><!-- Sync Information --></label>
+            <section>Sync Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Retrieve Status --></label>
+        <name>CN_Retrieve_Status</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- CN Sales Order --></label>
+        <name>CN_Sales_Order</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

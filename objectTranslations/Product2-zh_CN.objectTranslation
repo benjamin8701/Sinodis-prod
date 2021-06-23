@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>品牌</label>
+        <name>CN_Brand__c</name>
+        <picklistValues>
+            <masterLabel>AA</masterLabel>
+            <translation><!-- AA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>原产国</label>
+        <name>CN_Origin__c</name>
+        <picklistValues>
+            <masterLabel>AA</masterLabel>
+            <translation><!-- AA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>包装规格</label>
+        <name>CN_Package_Description__c</name>
+    </fields>
+    <fields>
+        <label>产品名称（EN）</label>
+        <name>CN_Product_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label>箱规</label>
+        <name>CN_Qty_per_Carton__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU Code --></label>
+        <name>CN_SKU_Code__c</name>
+    </fields>
+    <fields>
+        <label>产品描述中文</label>
+        <name>CN_SKU_Description_CN__c</name>
+    </fields>
+    <fields>
+        <label>产品描述英文</label>
+        <name>CN_SKU_Description_EN__c</name>
+    </fields>
+    <fields>
+        <label>出货单位</label>
+        <name>CN_Selling_Unit__c</name>
+    </fields>
+    <fields>
+        <label>保质期</label>
+        <name>CN_Shelf_Life__c</name>
+    </fields>
+    <fields>
+        <label>储存条件</label>
+        <name>CN_Storage_Condition__c</name>
+    </fields>
+    <fields>
+        <label>税率</label>
+        <name>CN_Tax_rate__c</name>
+    </fields>
+    <fields>
+        <label>重量单位</label>
+        <name>CN_Weight_Unit__c</name>
+    </fields>
+    <fields>
+        <label>保质期单位</label>
+        <name>Shelf_Life_Unit__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CN_Account_Blocked</name>
+    <style>none</style>
+    <subject>{!Account.CN_Account_Email_Subject__c}-帐户已经被锁定/Account is blocked.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

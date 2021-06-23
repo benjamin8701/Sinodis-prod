@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Change_Request_Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <label>Change Request Endpoint</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Password__c</fullName>
+        <externalId>false</externalId>
+        <label>Password</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Order_Update_Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Order Update Endpoint</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Sanbox_Change_Request_Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <label>Sanbox Change Request Endpoint</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Sanbox_Sales_Order_Update_Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <label>Sanbox Sales Order Update Endpoint</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Sandbox_Password__c</fullName>
+        <externalId>false</externalId>
+        <label>Sandbox Password</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sandbox_Send_To_Account_Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <label>Sandbox Send to Account Endpoint</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Sandbox_User_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Sandbox User Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Send_to_Account_Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <label>Send to Account Endpoint</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>User_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>User Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Talend Setting</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CN_Account_API_Path_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_API_Path_Error</shortDescription>
+        <value>The API does not exist since the API path is not correct.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_API_Server_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_API_Server_Error</shortDescription>
+        <value>API Serivce Internal System Error.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_API_US_PW_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_API_US_PW_Error</shortDescription>
+        <value>Wrong API User Name and Password.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_CFRM_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_CFRM_Msg</shortDescription>
+        <value>Send Account to SAP?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Contact_System_Admin</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Contact_System_Admin</shortDescription>
+        <value>Please contact System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_CustomLabel_Hour_Is_NULL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_CustomLabel_Hour_Is_NULL</shortDescription>
+        <value>Error: Approval Aging hour is blank in custom setting. Please contact IT administrator for help.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Had_Synced</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Had_Synced</shortDescription>
+        <value>Account has been synced.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Has_Approved_Or_Synced</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account Has_Approved_Or_Synced</shortDescription>
+        <value>You cannot delete account that is ready for approval, submitted for approval, approved or processed to sync to SAP.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Has_Billing_and_Purchase_Contact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Has_Billing_and_Purchase_Contact</shortDescription>
+        <value>At least one billing contact and one purchase contact for each account.请保证至少一个账单联系人与购买联系人。</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Has_ShipToParty</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Has_ShipToParty</shortDescription>
+        <value>Please make sure at least one ship to party.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_LC_New_Change_Request</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_LC_New_Change_Request</shortDescription>
+        <value>New Change Request</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_New_Contact_Request</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_New_Contact_Request</shortDescription>
+        <value>New Contact Request</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_New_ShipTo_Request</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_New_ShipTo_Request</shortDescription>
+        <value>New Ship To Party Request</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_No_Permission</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_No_Permission</shortDescription>
+        <value>You don&apos;t have permission to this account.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Not_Found</shortDescription>
+        <value>No Account Found.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Not_Synced</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Not_Synced</shortDescription>
+        <value>Account not synced yet.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Request_Validation_Fail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Request_Validation_Fail</shortDescription>
+        <value>Request validation fails.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Send_Success_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Send_Success_Msg</shortDescription>
+        <value>This Account has been sent to SAP successfully.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Send_To_SAP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Send_To_SAP</shortDescription>
+        <value>Are you sure to send this account to SAP?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Wait_5_Mins</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Wait_5_Mins</shortDescription>
+        <value>Account Has been sent, please wait for 5 mins</value>
+    </labels>
+    <labels>
+        <fullName>CN_CR_AT_LEAST_ONE_FIELD_CHANGE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CR_AT_LEAST_ONE_FIELD_CHANGE</shortDescription>
+        <value>Please edit at least one field./请至少更改一个项目。</value>
+    </labels>
+    <labels>
+        <fullName>CN_CR_Approved_Or_Has_Synced</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CR_Approved_Or_Has_Synced</shortDescription>
+        <value>You cannot delete change request that is ready for approval, submitted for approval, approved or processed to sync to SAP.</value>
+    </labels>
+    <labels>
+        <fullName>CN_CR_CFRM_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CR_CFRM_Msg</shortDescription>
+        <value>Send Change Request to SAP?</value>
+    </labels>
+    <labels>
+        <fullName>CN_CR_CustomLabel_Hour_Is_NULL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CR_CustomLabel_Hour_Is_NULL</shortDescription>
+        <value>Error: Approval Aging hour is blank in custom setting. Please contact IT administrator for help.</value>
+    </labels>
+    <labels>
+        <fullName>CN_CR_Had_Synced</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CR_Had_Synced</shortDescription>
+        <value>Change Request has been synced.</value>
+    </labels>
+    <labels>
+        <fullName>CN_CR_Has_Ongoing_CTA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CR_Has_Ongoing_CTA</shortDescription>
+        <value>Please finish or cancel on going credit term application before continue./如想继续请先完成信用额度申请。</value>
+    </labels>
+    <labels>
+        <fullName>CN_CR_No_Permission</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CR_No_Permission</shortDescription>
+        <value>You don&apos;t have permission to this change request.</value>
+    </labels>
+    <labels>
+        <fullName>CN_CR_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CR_Not_Found</shortDescription>
+        <value>No Change Request Found.</value>
+    </labels>
+    <labels>
+        <fullName>CN_CR_Send_Success_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CR_Send_Success_Msg</shortDescription>
+        <value>This Change Request has been sent to SAP successfully.</value>
+    </labels>
+    <labels>
+        <fullName>CN_CR_Send_To_SAP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CR_Send_To_SAP</shortDescription>
+        <value>Are you sure to send this change request to SAP?</value>
+    </labels>
+    <labels>
+        <fullName>CN_CR_Sync_No_Need</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CR_Sync_No_Need</shortDescription>
+        <value>No need to sync this Change Request.</value>
+    </labels>
+    <labels>
+        <fullName>CN_CTA_CustomLabel_Hour_Is_NULL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CTA_CustomLabel_Hour_Is_NULL</shortDescription>
+        <value>Error: Approval Aging hour is blank in custom setting. Please contact IT administrator for help.</value>
+    </labels>
+    <labels>
+        <fullName>CN_CTA_Has_Same_ExternalIdCR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CTA_Has_Same_ExternalIdCR</shortDescription>
+        <value>You are not allowed to set the credit term application as ready for approval as there&apos;s an ongoing change request for the account.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Contact_Account_Has_Synced</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Contact_Account_Has_Synced</shortDescription>
+        <value>You cannot delete contact whose account is ready for approval, submitted for approval, approved or processed to sync to SAP.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Contact_Change_Request</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Contact_Change_Request</shortDescription>
+        <value>New Contact Change Request</value>
+    </labels>
+    <labels>
+        <fullName>CN_Not_Found_BusinessUnit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Not_Found_BusinessUnit</shortDescription>
+        <value>Business unit of the user is not found in customer hierarchy.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Not_Found_FinanceAR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Not_Found_FinanceAR</shortDescription>
+        <value>Related finance AR record is not found in Internal Employee.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Not_Found_IN_InternalEmployee</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Not_Found_IN_InternalEmployee</shortDescription>
+        <value>There&apos;s no internal employee available that matches with sales person on account.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Not_Found_SalesOffice</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Not_Found_SalesOffice</shortDescription>
+        <value>Sales office of the user is not found in sales office picklist values.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Not_Found_SalesTeam</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Not_Found_SalesTeam</shortDescription>
+        <value>Sales team of the user is not found。</value>
+    </labels>
+    <labels>
+        <fullName>CN_Not_Found_SalesTeamOrBusinessUnit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Not_Found_SalesTeamOrBusinessUnit</shortDescription>
+        <value>Business unit or sales team of the user is not found.</value>
+    </labels>
+    <labels>
+        <fullName>CN_PleaseConfirm_Value_AlreadySubmitted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_PleaseConfirm_Value_AlreadySubmitted</shortDescription>
+        <value>Already Submitted, Please Close.</value>
+    </labels>
+    <labels>
+        <fullName>CN_PleaseConfirm_Value_BackToNew</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_PleaseConfirm_Value_BackToNew</shortDescription>
+        <value>Back to New</value>
+    </labels>
+    <labels>
+        <fullName>CN_PleaseConfirm_Value_ReadyForApproval</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_PleaseConfirm_Value_ReadyForApproval</shortDescription>
+        <value>Ready for Approval</value>
+    </labels>
+    <labels>
+        <fullName>CN_Sales_Order_Confirm_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Sales_Order_Confirm_Msg</shortDescription>
+        <value>Confirm to retrieve?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Sales_Order_Retrieve_Order_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Sales_Order_Retrieve_Order_Status</shortDescription>
+        <value>Retrieve Order Status</value>
+    </labels>
+    <labels>
+        <fullName>CN_Sales_Order_Retrieve_Success</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Sales_Order_Retrieve_Success</shortDescription>
+        <value>Retrieve Order Status Success.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Sales_Order_Retrieve_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Sales_Order_Retrieve_Title</shortDescription>
+        <value>Retrieve Order Status</value>
+    </labels>
+    <labels>
+        <fullName>CN_Sales_Order_Warning_Msg_Too_Frequency</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Sales_Order_Warning_Msg_Too_Frequency</shortDescription>
+        <value>Too frequency, please wait for a while.</value>
+    </labels>
+    <labels>
+        <fullName>CN_ShipTo_Account_Approved_Or_Has_Synced</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_ShipTo_Account_Approved_Or_Has_Synced</shortDescription>
+        <value>You cannot delete ship to party whose account  is ready for approval, submitted for approval, approved or processed to sync to SAP.</value>
+    </labels>
+    <labels>
+        <fullName>CN_ShipTo_Account_Has_Synced</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_ShipTo_Account_Has_Synced</shortDescription>
+        <value>You can&apos;t delete a ship-to that is already synced successfully to SAP.</value>
+    </labels>
+    <labels>
+        <fullName>CN_ShipTo_Change_Request</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_ShipTo_Change_Request</shortDescription>
+        <value>New Ship To Party Change Request</value>
+    </labels>
+</CustomLabels>

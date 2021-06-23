@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CN Approve Process Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CN Approve Process Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- CEO User ID --></label>
+        <name>CN_CEO_UserId__c</name>
+    </fields>
+    <fields>
+        <label><!-- CFO User ID --></label>
+        <name>CN_CFO_UserId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance AR User ID --></label>
+        <name>CN_Finance_AR_UserId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance MDM User ID --></label>
+        <name>CN_Finance_MDM_UserId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales MDM User ID --></label>
+        <name>CN_Sales_MDM_UserId__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

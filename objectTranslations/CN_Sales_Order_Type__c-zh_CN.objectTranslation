@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>订单类型</value>
+    </caseValues>
+    <fields>
+        <label>订单类型外键</label>
+        <name>CN_Sales_Order_Type_External_ID__c</name>
+    </fields>
+    <nameFieldLabel>订单类型名称</nameFieldLabel>
+    <recordTypes>
+        <label><!-- CN Sales Order Type --></label>
+        <name>CN_Sales_Order_Type</name>
+    </recordTypes>
+</CustomObjectTranslation>

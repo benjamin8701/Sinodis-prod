@@ -1,0 +1,27 @@
+开户文档已提交。请尽快审查。
+
+帐户：
+
+{!CN_Document__c.CN_Parent_Url__c}
+
+营业执照：{!CN_Document__c.CN_Uploaded_Status_Business_License__c}
+发票信息：{!CN_Document__c.CN_Uploaded_Status_Fapiao__c}
+卫生证书：{!CN_Document__c.CN_Uploaded_Status_Hygiene_Certificate__c}
+合同：{!CN_Document__c.CN_Uploaded_Status_Contract__c}
+
+谢谢，
+Salesforce
+---------------------------------English Version Scroll Down------------------------------
+Document(s) has been uploaded in Salesforce. Please review. 
+
+Account: 
+
+{!CN_Document__c.CN_Parent_Url__c}
+
+Business License: {!CN_Document__c.CN_Uploaded_Status_Business_License__c}
+Fapiao Information: {!CN_Document__c.CN_Uploaded_Status_Fapiao__c}
+Hygiene Certificate:{!CN_Document__c.CN_Uploaded_Status_Hygiene_Certificate__c}
+Contract:{!CN_Document__c.CN_Uploaded_Status_Contract__c}
+
+Thank you,
+Salesforce

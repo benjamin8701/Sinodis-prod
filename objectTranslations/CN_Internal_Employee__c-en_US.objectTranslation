@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Internal Employee</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Internal Employees</value>
+    </caseValues>
+    <fields>
+        <label><!-- Personnel Number --></label>
+        <name>CN_Personnel_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN Role --></label>
+        <name>CN_Role__c</name>
+        <picklistValues>
+            <masterLabel>Finance AR</masterLabel>
+            <translation><!-- Finance AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Person</masterLabel>
+            <translation><!-- Sales Person --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Email --></label>
+        <name>CN_User_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN User Name --></label>
+        <name>CN_User_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Internal Employee Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CN Internal Employee --></label>
+        <name>CN_Internal_Employee</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

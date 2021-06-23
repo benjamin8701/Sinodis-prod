@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Document</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Documents</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>CN_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN Account --></label>
+        <name>CN_Account__c</name>
+        <relationshipLabel><!-- Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Document Email Subject --></label>
+        <name>CN_Document_Email_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Type --></label>
+        <name>CN_Document_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business License</masterLabel>
+            <translation><!-- Business License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fapiao Information</masterLabel>
+            <translation><!-- Fapiao Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hygiene Certificate</masterLabel>
+            <translation><!-- Hygiene Certificate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Address Update</masterLabel>
+            <translation><!-- New Address Update --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Finance MDM Email --></label>
+        <name>CN_Finance_MDM_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is File Upload --></label>
+        <name>CN_Is_File_Upload__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Url --></label>
+        <name>CN_Parent_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uploaded Status Business License --></label>
+        <name>CN_Uploaded_Status_Business_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uploaded Status Contract --></label>
+        <name>CN_Uploaded_Status_Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uploaded Status Fapiao --></label>
+        <name>CN_Uploaded_Status_Fapiao__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uploaded Status Hygiene Certificate --></label>
+        <name>CN_Uploaded_Status_Hygiene_Certificate__c</name>
+    </fields>
+    <layouts>
+        <layout>Document Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CN Document --></label>
+        <name>CN_Document</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

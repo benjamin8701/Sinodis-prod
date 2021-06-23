@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Schedule Line</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Schedule Line</value>
+    </caseValues>
+    <fields>
+        <label><!-- Delivery Date --></label>
+        <name>CN_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Order Item --></label>
+        <name>CN_Order_Item_Number__c</name>
+        <relationshipLabel><!-- Schedule Line --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SAP Schedule Line Number --></label>
+        <name>CN_SAP_Schedule_Line_Number__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- CN Schedule Line --></label>
+        <name>CN_Schedule_Line</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

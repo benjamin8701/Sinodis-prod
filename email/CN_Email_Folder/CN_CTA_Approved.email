@@ -1,0 +1,26 @@
+新账期申请审批已完成。信息如下：
+
+账户名：{!CN_Credit_Term_Application__c.CN_License_Name_CN__c}
+付款期限：{!CN_Credit_Term_Application__c.CN_Payment_Term_Negotiated__c}
+申请性质:  {!CN_Credit_Term_Application__c.CN_Nature_Of_Request__c}
+
+要查看帐户账期申请表，请单击链接：
+
+{!CN_Credit_Term_Application__c.Link}
+
+谢谢，
+Salesforce
+----------------------------English Version Scroll Down----------------------------
+
+Credit Term Application has been Approved. 
+
+Account Name: {!CN_Credit_Term_Application__c.CN_License_Name_EN__c}
+Payment Term:  {!CN_Credit_Term_Application__c.CN_Payment_Term_Negotiated__c}
+Nature of Request:  {!CN_Credit_Term_Application__c.CN_Nature_Of_Request__c}
+
+To review the credit term application, please click the link: 
+
+{!CN_Credit_Term_Application__c.Link}
+
+Thank you,
+Salesforce

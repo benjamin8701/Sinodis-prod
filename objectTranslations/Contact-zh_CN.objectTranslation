@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>CN_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Status --></label>
+        <name>CN_Account_Status__c</name>
+    </fields>
+    <fields>
+        <label>账户同步状态</label>
+        <name>CN_Account_Sync_Status__c</name>
+    </fields>
+    <fields>
+        <label>寄票地址</label>
+        <name>CN_Bill_To_Address__c</name>
+    </fields>
+    <fields>
+        <label>变更申请</label>
+        <name>CN_Change_Request__c</name>
+        <relationshipLabel><!-- Change Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Email Subject --></label>
+        <name>CN_Contact_Email_Subject__c</name>
+    </fields>
+    <fields>
+        <label>联络人姓名（英文）</label>
+        <name>CN_Contact_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label>联系人类型</label>
+        <name>CN_Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>01-Billing</masterLabel>
+            <translation><!-- 01-Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02-Business</masterLabel>
+            <translation><!-- 02-Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04-Others</masterLabel>
+            <translation><!-- 04-Others --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>联系人部门</label>
+        <name>CN_Department_Of_Contact_Person__c</name>
+        <picklistValues>
+            <masterLabel>0001-Purchasing Dept</masterLabel>
+            <translation><!-- 0001-Purchasing Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0002-Sales Dept</masterLabel>
+            <translation><!-- 0002-Sales Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0003-Administration Dept</masterLabel>
+            <translation><!-- 0003-Administration Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0004-Production Dept</masterLabel>
+            <translation><!-- 0004-Production Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0005-QA Dept</masterLabel>
+            <translation><!-- 0005-QA Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0006-Secretary&apos;s Office</masterLabel>
+            <translation><!-- 0006-Secretary&apos;s Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0007-Financial Dept</masterLabel>
+            <translation><!-- 0007-Financial Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0008-Legal Dept</masterLabel>
+            <translation><!-- 0008-Legal Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0009-Human Resources Dept</masterLabel>
+            <translation><!-- 0009-Human Resources Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0010-General Affairs Dept</masterLabel>
+            <translation><!-- 0010-General Affairs Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0011-Sales Promotion Dept</masterLabel>
+            <translation><!-- 0011-Sales Promotion Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0012-International Dept</masterLabel>
+            <translation><!-- 0012-International Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0013-Export Dept</masterLabel>
+            <translation><!-- 0013-Export Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0014-Import Dept</masterLabel>
+            <translation><!-- 0014-Import Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0015-Public Relation Dept</masterLabel>
+            <translation><!-- 0015-Public Relation Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0016-Advertising Dept</masterLabel>
+            <translation><!-- 0016-Advertising Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0017-Planning Dept</masterLabel>
+            <translation><!-- 0017-Planning Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0018-R&amp;D Dept</masterLabel>
+            <translation><!-- 0018-R&amp;D Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0019-Product Dev. Dept</masterLabel>
+            <translation><!-- 0019-Product Dev. Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0020-Food &amp; Beverage Dept</masterLabel>
+            <translation><!-- 0020-Food &amp; Beverage Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0021-Service Dept</masterLabel>
+            <translation><!-- 0021-Service Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0022-Technical Support</masterLabel>
+            <translation><!-- 0022-Technical Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0023-IT Dept</masterLabel>
+            <translation><!-- 0023-IT Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0024-Logistics Dept</masterLabel>
+            <translation><!-- 0024-Logistics Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0025-Cold Kitchen</masterLabel>
+            <translation><!-- 0025-Cold Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0026-Hot Kitchen</masterLabel>
+            <translation><!-- 0026-Hot Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0027-Banquet Kitchen</masterLabel>
+            <translation><!-- 0027-Banquet Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0028-Pastry</masterLabel>
+            <translation><!-- 0028-Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0029-Backery</masterLabel>
+            <translation><!-- 0029-Backery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0030-Bar</masterLabel>
+            <translation><!-- 0030-Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0031-Receiving</masterLabel>
+            <translation><!-- 0031-Receiving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0032-Kitchen</masterLabel>
+            <translation><!-- 0032-Kitchen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>家庭信息</label>
+        <name>CN_Family_Info__c</name>
+    </fields>
+    <fields>
+        <label>Finance AR邮箱</label>
+        <name>CN_FinAR_Email__c</name>
+    </fields>
+    <fields>
+        <label>功能</label>
+        <name>CN_Function__c</name>
+    </fields>
+    <fields>
+        <label>是否为其他人联系人</label>
+        <name>CN_Is_Others_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Change Request Sync Error Message --></label>
+        <name>CN_Latest_CR_Sync_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Change Request Sync Status --></label>
+        <name>CN_Latest_CR_Sync_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Need To Sync</masterLabel>
+            <translation><!-- No Need To Sync --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Latest Change Request Sync Time --></label>
+        <name>CN_Latest_CR_Sync_Time__c</name>
+    </fields>
+    <fields>
+        <label>备注</label>
+        <name>CN_Open_Field_To_Comment__c</name>
+    </fields>
+    <fields>
+        <label>SAP客户代码</label>
+        <name>CN_SAP_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label>售达方客户代码</label>
+        <name>CN_Sold_To_Party_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label>同步错误消息</label>
+        <name>CN_Sync_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label>同步状态</label>
+        <name>CN_Sync_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>同步时间</label>
+        <name>CN_Sync_Time__c</name>
+    </fields>
+    <fields>
+        <label>联系人代码</label>
+        <name>CN_UP_Code__c</name>
+    </fields>
+    <fields>
+        <label>微信号</label>
+        <name>CN_Wechat_ID__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Contact Layout</layout>
+        <sections>
+            <label>附加信息</label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label>SAP创建信息</label>
+            <section>SAP Creation Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>申请变更联系人</label>
+        <name>CN_Contact_Update_Request</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- CN Contact --></label>
+        <name>CN_Contact</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>必须填写营业执照公司名称。</errorMessage>
+        <name>CN_Check_Account_IsBlank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请填写寄票地址</errorMessage>
+        <name>CN_Check_BillToAddress</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请填写正确格式的电话号码。</errorMessage>
+        <name>CN_Check_Moblie_NumberFormat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请填写正确格式的电话号码。</errorMessage>
+        <name>CN_Check_Phone_NumberFormat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请通过创建一个新建联系人变更请求来创建联系人。请通过创建一个编辑联系人变更请求来编辑现有的联系人。</errorMessage>
+        <name>CN_Prevent_CreateOrEdit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请不要更新已经同步成功的联系人。</errorMessage>
+        <name>CN_Prevent_Edit_Synced_Success</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

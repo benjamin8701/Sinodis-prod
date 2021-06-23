@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- Savencia-Sinodis --></label>
+        <name>CN_Savencia_Sinodis</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- CN_Account_API_Path_Error --></label>
+        <name>CN_Account_API_Path_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_API_Server_Error --></label>
+        <name>CN_Account_API_Server_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_API_US_PW_Error --></label>
+        <name>CN_Account_API_US_PW_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_CFRM_Msg --></label>
+        <name>CN_Account_CFRM_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Contact_System_Admin --></label>
+        <name>CN_Account_Contact_System_Admin</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_CustomLabel_Hour_Is_NULL --></label>
+        <name>CN_Account_CustomLabel_Hour_Is_NULL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Had_Synced --></label>
+        <name>CN_Account_Had_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account Has_Approved_Or_Synced --></label>
+        <name>CN_Account_Has_Approved_Or_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Has_Billing_and_Purchase_Contact --></label>
+        <name>CN_Account_Has_Billing_and_Purchase_Contact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Has_ShipToParty --></label>
+        <name>CN_Account_Has_ShipToParty</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_LC_New_Change_Request --></label>
+        <name>CN_Account_LC_New_Change_Request</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_New_Contact_Request --></label>
+        <name>CN_Account_New_Contact_Request</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_New_ShipTo_Request --></label>
+        <name>CN_Account_New_ShipTo_Request</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_No_Permission --></label>
+        <name>CN_Account_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Not_Found --></label>
+        <name>CN_Account_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Not_Synced --></label>
+        <name>CN_Account_Not_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Request_Validation_Fail --></label>
+        <name>CN_Account_Request_Validation_Fail</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Send_Success_Msg --></label>
+        <name>CN_Account_Send_Success_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Send_To_SAP --></label>
+        <name>CN_Account_Send_To_SAP</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Wait_5_Mins --></label>
+        <name>CN_Account_Wait_5_Mins</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_CR_AT_LEAST_ONE_FIELD_CHANGE --></label>
+        <name>CN_CR_AT_LEAST_ONE_FIELD_CHANGE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_CR_Approved_Or_Has_Synced --></label>
+        <name>CN_CR_Approved_Or_Has_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_CR_CFRM_Msg --></label>
+        <name>CN_CR_CFRM_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_CR_CustomLabel_Hour_Is_NULL --></label>
+        <name>CN_CR_CustomLabel_Hour_Is_NULL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_CR_Had_Synced --></label>
+        <name>CN_CR_Had_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_CR_Has_Ongoing_CTA --></label>
+        <name>CN_CR_Has_Ongoing_CTA</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_CR_No_Permission --></label>
+        <name>CN_CR_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_CR_Not_Found --></label>
+        <name>CN_CR_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_CR_Send_Success_Msg --></label>
+        <name>CN_CR_Send_Success_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_CR_Send_To_SAP --></label>
+        <name>CN_CR_Send_To_SAP</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_CR_Sync_No_Need --></label>
+        <name>CN_CR_Sync_No_Need</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_CTA_CustomLabel_Hour_Is_NULL --></label>
+        <name>CN_CTA_CustomLabel_Hour_Is_NULL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_CTA_Has_Same_ExternalIdCR --></label>
+        <name>CN_CTA_Has_Same_ExternalIdCR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Contact_Account_Has_Synced --></label>
+        <name>CN_Contact_Account_Has_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Contact_Change_Request --></label>
+        <name>CN_Contact_Change_Request</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Not_Found_BusinessUnit --></label>
+        <name>CN_Not_Found_BusinessUnit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Not_Found_FinanceAR --></label>
+        <name>CN_Not_Found_FinanceAR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Not_Found_IN_InternalEmployee --></label>
+        <name>CN_Not_Found_IN_InternalEmployee</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Not_Found_SalesOffice --></label>
+        <name>CN_Not_Found_SalesOffice</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Not_Found_SalesTeam --></label>
+        <name>CN_Not_Found_SalesTeam</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Not_Found_SalesTeamOrBusinessUnit --></label>
+        <name>CN_Not_Found_SalesTeamOrBusinessUnit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_PleaseConfirm_Value_AlreadySubmitted --></label>
+        <name>CN_PleaseConfirm_Value_AlreadySubmitted</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_PleaseConfirm_Value_BackToNew --></label>
+        <name>CN_PleaseConfirm_Value_BackToNew</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_PleaseConfirm_Value_ReadyForApproval --></label>
+        <name>CN_PleaseConfirm_Value_ReadyForApproval</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Sales_Order_Confirm_Msg --></label>
+        <name>CN_Sales_Order_Confirm_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Sales_Order_Retrieve_Order_Status --></label>
+        <name>CN_Sales_Order_Retrieve_Order_Status</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Sales_Order_Retrieve_Success --></label>
+        <name>CN_Sales_Order_Retrieve_Success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Sales_Order_Retrieve_Title --></label>
+        <name>CN_Sales_Order_Retrieve_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Sales_Order_Warning_Msg_Too_Frequency --></label>
+        <name>CN_Sales_Order_Warning_Msg_Too_Frequency</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_ShipTo_Account_Approved_Or_Has_Synced --></label>
+        <name>CN_ShipTo_Account_Approved_Or_Has_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_ShipTo_Account_Has_Synced --></label>
+        <name>CN_ShipTo_Account_Has_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_ShipTo_Change_Request --></label>
+        <name>CN_ShipTo_Change_Request</name>
+    </customLabels>
+</Translations>

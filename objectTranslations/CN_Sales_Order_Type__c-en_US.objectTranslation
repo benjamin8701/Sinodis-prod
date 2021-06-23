@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Order Type</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Order Type</value>
+    </caseValues>
+    <fields>
+        <label><!-- Sales Order Type External ID --></label>
+        <name>CN_Sales_Order_Type_External_ID__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- CN Sales Order Type --></label>
+        <name>CN_Sales_Order_Type</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

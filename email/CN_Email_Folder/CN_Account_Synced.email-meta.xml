@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CN_Account_Synced</name>
+    <style>none</style>
+    <subject>{!Account.CN_Account_Email_Subject__c}-新帐户创建已被批准并同步到SAP/New Account Creation has been Approved and Synced to SAP</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

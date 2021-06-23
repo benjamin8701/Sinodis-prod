@@ -1,0 +1,17 @@
+帐户已经被被解锁。请联系财务团队获取更多信息。
+
+帐户：
+
+{!Account.Link}
+
+谢谢，
+Salesforce
+----------------------------English Version Scroll Down----------------------------
+The following account is unblocked in SAP. Please contact finance team for more information. 
+
+Account: 
+
+{!Account.Link}
+
+Thank you,
+Salesforce

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Distributor to End Customer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Distributor to End Customer</value>
+    </caseValues>
+    <fields>
+        <label><!-- Distributor --></label>
+        <name>CN_Distributor__c</name>
+        <relationshipLabel><!-- Distributor to End Customer --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Customer --></label>
+        <name>CN_End_Customer__c</name>
+        <relationshipLabel><!-- Distributor to End Customer (End Customer) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Distributor to End Customer Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CN Distributor to End Customer --></label>
+        <name>CN_Distributor_to_End_Customer</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

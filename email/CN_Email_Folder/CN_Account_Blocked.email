@@ -1,0 +1,29 @@
+帐户已经被锁定。请联系财务团队获取更多信息。
+
+帐户：
+
+{!Account.Link}
+
+交易锁定：{!Account.CN_Billing_Block__c}
+销售支持锁定：{!Account.CN_Block_Sales_Support__c=TRUE,"锁定","未锁定")}
+发货锁定：{!Account.CN_Delivery_Block__c}
+订单锁定：{!Account.CN_Order_Block__c}
+关闭：{!IF(Account.CN_Closed__c=TRUE,"关闭","未关闭")}
+
+谢谢，
+Salesforce
+----------------------------English Version Scroll Down----------------------------
+The following account is blocked in SAP. Please contact finance team for more information. 
+
+Account: 
+
+{!Account.Link}
+
+Billing Block: {!Account.CN_Billing_Block__c}
+Block Sales Support: {!IF(Account.CN_Block_Sales_Support__c=TRUE,"Yes","No")}
+Delivery Block: {!Account.CN_Delivery_Block__c}
+Order Blocked: {!Account.CN_Order_Block__c}
+Closed: {!IF(Account.CN_Closed__c=TRUE,"Yes","No")}
+
+Thank you,
+Salesforce

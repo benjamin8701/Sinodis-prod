@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Province</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Provinces</value>
+    </caseValues>
+    <fields>
+        <label><!-- Province(CN) --></label>
+        <name>CN_Province_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Province(EN) --></label>
+        <name>CN_Province_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Province Code --></label>
+        <name>Province_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>Province Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CN Province --></label>
+        <name>CN_Province</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

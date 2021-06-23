@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Is Integration User --></label>
+        <name>CN_Is_Integration_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is My Team Member --></label>
+        <name>CN_Is_My_Team_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office --></label>
+        <name>CN_Sales_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Team --></label>
+        <name>CN_Sales_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personnel Number --></label>
+        <name>CN_User_Personnel_Number__c</name>
+    </fields>
+    <layouts>
+        <layout>User Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage>人员编号不能为空</errorMessage>
+        <name>CN_Check_PersonnelNumber_Sales</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only System Admin could change the title --></errorMessage>
+        <name>CN_Prevent_Change_Title</name>
+    </validationRules>
+</CustomObjectTranslation>

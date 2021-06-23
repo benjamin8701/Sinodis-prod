@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ship to Party</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ship to Parties</value>
+    </caseValues>
+    <fields>
+        <label><!-- License Name(CN) --></label>
+        <name>CN_Account_Name__c</name>
+        <relationshipLabel><!-- Ship to Parties (Account Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Status --></label>
+        <name>CN_Account_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Sync Status --></label>
+        <name>CN_Account_Sync_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Request --></label>
+        <name>CN_Change_Request__c</name>
+        <relationshipLabel><!-- Ship to Parties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CN_City_CN_API --></label>
+        <name>CN_City_CN_API__c</name>
+    </fields>
+    <fields>
+        <label><!-- City(CN) --></label>
+        <name>CN_City_CN__c</name>
+        <relationshipLabel><!-- Ship to Parties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- City(EN) --></label>
+        <name>CN_City_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>CN_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>CN_Country__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please input license name + store name. --></help>
+        <label><!-- Customer Name --></label>
+        <name>CN_Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Type --></label>
+        <name>CN_Customer_Type__c</name>
+        <picklistValues>
+            <masterLabel>0001-Sold to party</masterLabel>
+            <translation><!-- 0001-Sold to party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0002-Goods Receipt</masterLabel>
+            <translation><!-- 0002-Goods Receipt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPDA-Onetime Customer</masterLabel>
+            <translation><!-- CPDA-Onetime Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delivery Address(CN) --></label>
+        <name>CN_Delivery_Address_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Address (EN) --></label>
+        <name>CN_Delivery_Address_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Plant --></label>
+        <name>CN_Delivery_Plant__c</name>
+        <picklistValues>
+            <masterLabel>P011-SINODIS ShangHai External-西诺迪斯（上海） 外部</masterLabel>
+            <translation><!-- P011-SINODIS ShangHai External-西诺迪斯（上海） 外部 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P020-SINODIS BeiJing-西诺迪斯（北京）</masterLabel>
+            <translation><!-- P020-SINODIS BeiJing-西诺迪斯（北京） --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P040-SINODIS GuangZhou-西诺迪斯（广州）</masterLabel>
+            <translation><!-- P040-SINODIS GuangZhou-西诺迪斯（广州） --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P050-SINODIS Chengdu-西诺迪斯（成都）</masterLabel>
+            <translation><!-- P050-SINODIS Chengdu-西诺迪斯（成都） --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P060-SINODIS Dalian-西诺迪斯（大连）</masterLabel>
+            <translation><!-- P060-SINODIS Dalian-西诺迪斯（大连） --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Indirect Account --></label>
+        <name>CN_Indirect_Account__c</name>
+        <relationshipLabel><!-- Ship to Parties (Indirect Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoice info Same as Sold-to Party --></label>
+        <name>CN_Invoice_Info_Same_As_Sold_To_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Indirect Account --></label>
+        <name>CN_Is_Indirect_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Change Request Sync Error Message --></label>
+        <name>CN_Latest_CR_Sync_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Change Request Sync Status --></label>
+        <name>CN_Latest_CR_Sync_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Need To Sync</masterLabel>
+            <translation><!-- No Need To Sync --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Latest Change Request Sync Time --></label>
+        <name>CN_Latest_CR_Sync_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Partial Delivery --></label>
+        <name>CN_Max_Partial_Delivery__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <label><!-- Mobile Phone --></label>
+        <name>CN_Mobile_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Combination --></label>
+        <name>CN_Order_Combination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Province(CN) --></label>
+        <name>CN_Province_CN__c</name>
+        <relationshipLabel><!-- Ship to Parties (Province(CN)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Province(EN) --></label>
+        <name>CN_Province_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>CN_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Term --></label>
+        <name>CN_Search_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Condition --></label>
+        <name>CN_Shipping_Condition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold-to Party Customer Code --></label>
+        <name>CN_Sold_To_Party_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold-to Party Customer --></label>
+        <lookupFilter>
+            <errorMessage><!-- You can only select Account whose Status is New. --></errorMessage>
+        </lookupFilter>
+        <name>CN_Sold_To_Party_Customer__c</name>
+        <relationshipLabel><!-- Ship to Parties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>CN_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Error Message --></label>
+        <name>CN_Sync_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Status --></label>
+        <name>CN_Sync_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sync Time --></label>
+        <name>CN_Sync_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <label><!-- Telephone --></label>
+        <name>CN_Telephone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transportation Zone --></label>
+        <name>CN_Transportation_Zone__c</name>
+        <picklistValues>
+            <masterLabel>CN-0000000001-Normal</masterLabel>
+            <translation><!-- CN-0000000001-Normal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UP code --></label>
+        <name>CN_UP_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uploading Points --></label>
+        <name>CN_Uploading_Points__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Ship to Party Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Contact --></label>
+            <section>Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- SAP Creation Information --></label>
+            <section>SAP Creation Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Request Update --></label>
+        <name>CN_ShipTo_Request_Update</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Ship to Party --></label>
+        <name>CN_Ship_to_Party</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Ship-to must have an associated account. --></errorMessage>
+        <name>CN_Check_Account_NotNull</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input a phone number with a valid format. --></errorMessage>
+        <name>CN_Check_Moblie_NumberFormat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input a phone number with a valid format. --></errorMessage>
+        <name>CN_Check_Telephone_NumberFormat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please create ship-to via creating a new ship-to change request.
+Please edit existing ship-to via creating a update ship-to change request. --></errorMessage>
+        <name>CN_Prevent_CreateOrEdit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- E-099 : Pls don&apos;t update sync information when the ship to party has been synchronized. --></errorMessage>
+        <name>CN_Prevent_Edit_Synced_Success</name>
+    </validationRules>
+</CustomObjectTranslation>

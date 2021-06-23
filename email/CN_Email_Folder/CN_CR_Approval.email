@@ -1,0 +1,26 @@
+新的帐户/运送至/联系人已更新，供您批准。
+
+要批准或拒绝该项目，请点击此链接
+
+{!ApprovalRequest.Internal_URL}
+
+或在电子邮件第一行中用以下单词之一回复此电子邮件：APPROVE, APPROVED, YES, REJECT, REJECTED, NO
+
+如果通过电子邮件回复，您还可以在第二行添加评论。 注释将与批准请求一起存储在Salesforce CRM中。
+
+
+谢谢，
+Salesforce
+----------------------------------------English Version Scroll Down-------------------------------
+New Account/Ship-to/Contact has been updated for you to approve. 
+
+To approve or reject this item, click this link
+
+{!ApprovalRequest.Internal_URL} 
+
+or reply to this email with one of these words in the first line of the email message: APPROVE, APPROVED, YES, REJECT, REJECTED, NO
+
+If replying via email, you can also add comments on the second line. Comments will be stored with the approval request in Salesforce CRM.
+
+Thank you,
+Salesforce

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Order Item Note</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Order Item Note</value>
+    </caseValues>
+    <fields>
+        <label><!-- Text Type --></label>
+        <name>CN_Item_Note_Type__c</name>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Text --></label>
+        <name>CN_Item_Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Item Number --></label>
+        <name>CN_Order_Item_Number__c</name>
+        <relationshipLabel><!-- Sales Order Item Note --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Up Code --></label>
+        <name>CN_Up_Code__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- CN Sales Order Item Note --></label>
+        <name>CN_Sales_Order_Item_Note</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

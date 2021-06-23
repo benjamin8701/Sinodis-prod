@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>销售订单明细</value>
+    </caseValues>
+    <fields>
+        <label>确认金额</label>
+        <name>CN_Confirmed_Value__c</name>
+    </fields>
+    <fields>
+        <label>货币</label>
+        <name>CN_Currency__c</name>
+        <picklistValues>
+            <masterLabel>CNY</masterLabel>
+            <translation><!-- CNY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>交货单</label>
+        <name>CN_DN_Item__c</name>
+    </fields>
+    <fields>
+        <label>交货单编号</label>
+        <name>CN_DN_Number__c</name>
+    </fields>
+    <fields>
+        <label>交付状态</label>
+        <name>CN_Delilvery_Status__c</name>
+        <picklistValues>
+            <masterLabel>A-Not yet processed</masterLabel>
+            <translation><!-- A-Not yet processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-Partially processed</masterLabel>
+            <translation><!-- B-Partially processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Completely processed</masterLabel>
+            <translation><!-- C-Completely processed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>交付时间</label>
+        <name>CN_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label>折扣率%</label>
+        <name>CN_Discount_Rate__c</name>
+    </fields>
+    <fields>
+        <label>毛重</label>
+        <name>CN_Gross_Weight__c</name>
+    </fields>
+    <fields>
+        <label>拒绝原因</label>
+        <name>CN_Item_Reject_Reason__c</name>
+        <picklistValues>
+            <masterLabel>71-No Stock</masterLabel>
+            <translation><!-- 71-No Stock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>72-Short Shelf Life</masterLabel>
+            <translation><!-- 72-Short Shelf Life --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>73-Stock Difference</masterLabel>
+            <translation><!-- 73-Stock Difference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>74-Price Issue</masterLabel>
+            <translation><!-- 74-Price Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75-Package Issue</masterLabel>
+            <translation><!-- 75-Package Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>76-No Certification</masterLabel>
+            <translation><!-- 76-No Certification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>77-Transport</masterLabel>
+            <translation><!-- 77-Transport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>78-MOQ issue</masterLabel>
+            <translation><!-- 78-MOQ issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>79-Sales Issue</masterLabel>
+            <translation><!-- 79-Sales Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80-Others</masterLabel>
+            <translation><!-- 80-Others --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>原价</label>
+        <name>CN_List_Price__c</name>
+    </fields>
+    <fields>
+        <label>物料编码</label>
+        <name>CN_Material_Number__c</name>
+        <relationshipLabel><!-- Sales Order Item --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>金额（不含税）</label>
+        <name>CN_Net_Value__c</name>
+    </fields>
+    <fields>
+        <label>净重</label>
+        <name>CN_Net_Weight__c</name>
+    </fields>
+    <fields>
+        <label>订单编号</label>
+        <name>CN_Order_Number__c</name>
+        <relationshipLabel><!-- Sales Order Item --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>数量</label>
+        <name>CN_Order_Quantity__c</name>
+    </fields>
+    <fields>
+        <label>状态</label>
+        <name>CN_Overall_Status__c</name>
+        <picklistValues>
+            <masterLabel>A-Not yet processed</masterLabel>
+            <translation><!-- A-Not yet processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-Partially processed</masterLabel>
+            <translation><!-- B-Partially processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Completely processed</masterLabel>
+            <translation><!-- C-Completely processed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>交货工厂</label>
+        <name>CN_Plant__c</name>
+        <picklistValues>
+            <masterLabel>P010-SINODIS ShangHai</masterLabel>
+            <translation><!-- P010-SINODIS ShangHai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P011-SINODIS ShangHai External</masterLabel>
+            <translation><!-- P011-SINODIS ShangHai External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P012-Regional Warehouse</masterLabel>
+            <translation><!-- P012-Regional Warehouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P020-SINODIS BeiJing</masterLabel>
+            <translation><!-- P020-SINODIS BeiJing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P030-SINODIS ShenZhen</masterLabel>
+            <translation><!-- P030-SINODIS ShenZhen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P040-SINODIS GuangZhou</masterLabel>
+            <translation><!-- P040-SINODIS GuangZhou --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P050-SINODIS Chengdu</masterLabel>
+            <translation><!-- P050-SINODIS Chengdu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P060-SINODIS Dalian</masterLabel>
+            <translation><!-- P060-SINODIS Dalian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P070-SINODIS Tianjin</masterLabel>
+            <translation><!-- P070-SINODIS Tianjin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P080-SINODIS Xi&apos;an</masterLabel>
+            <translation><!-- P080-SINODIS Xi&apos;an --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P091-SINODIS ShangHai DUMMY externa</masterLabel>
+            <translation><!-- P091-SINODIS ShangHai DUMMY externa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P092-SINODIS BeiJing DUMMY external</masterLabel>
+            <translation><!-- P092-SINODIS BeiJing DUMMY external --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P093-SINODIS ShenZhen DUMMY externa</masterLabel>
+            <translation><!-- P093-SINODIS ShenZhen DUMMY externa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P094-SINODIS GuangZhou DUMMY extern</masterLabel>
+            <translation><!-- P094-SINODIS GuangZhou DUMMY extern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P095-SINODIS ChengDu DUMMY external</masterLabel>
+            <translation><!-- P095-SINODIS ChengDu DUMMY external --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P096-SINODIS Dalian DUMMY external</masterLabel>
+            <translation><!-- P096-SINODIS Dalian DUMMY external --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P097-SINODIS Tianjin DUMMY external</masterLabel>
+            <translation><!-- P097-SINODIS Tianjin DUMMY external --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P098-SINODIS Xi&apos;an DUMMY external</masterLabel>
+            <translation><!-- P098-SINODIS Xi&apos;an DUMMY external --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P610-BSI(Tianjin) Foods Co.Ltd</masterLabel>
+            <translation><!-- P610-BSI(Tianjin) Foods Co.Ltd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P611-BSI Tianjin Sales</masterLabel>
+            <translation><!-- P611-BSI Tianjin Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P615-BSI ChengDu Sales</masterLabel>
+            <translation><!-- P615-BSI ChengDu Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P616-BSI GuangZhou Sales</masterLabel>
+            <translation><!-- P616-BSI GuangZhou Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P617-BSI Xi&apos;An Sales</masterLabel>
+            <translation><!-- P617-BSI Xi&apos;An Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P618-BSI Shanghai Sales</masterLabel>
+            <translation><!-- P618-BSI Shanghai Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P619-BSI Shanghai Sales External</masterLabel>
+            <translation><!-- P619-BSI Shanghai Sales External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P810-Gerard (Tianjin) Food Co.,Ltd</masterLabel>
+            <translation><!-- P810-Gerard (Tianjin) Food Co.,Ltd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P811-Gerard Tianjin Sales</masterLabel>
+            <translation><!-- P811-Gerard Tianjin Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P812-Gerard ShangHai Sales External</masterLabel>
+            <translation><!-- P812-Gerard ShangHai Sales External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P813-Gerard BeiJing</masterLabel>
+            <translation><!-- P813-Gerard BeiJing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P814-Gerard GuangZhou</masterLabel>
+            <translation><!-- P814-Gerard GuangZhou --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P911-Savencia F&amp;D Taiwan Co.,Ltd</masterLabel>
+            <translation><!-- P911-Savencia F&amp;D Taiwan Co.,Ltd --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>产品编号</label>
+        <name>CN_Product_Code__c</name>
+    </fields>
+    <fields>
+        <label>物料描述中文</label>
+        <name>CN_SKU_Description_CN__c</name>
+    </fields>
+    <fields>
+        <label>物料描述英文</label>
+        <name>CN_SKU_Description_EN__c</name>
+    </fields>
+    <fields>
+        <label>销售单位</label>
+        <name>CN_Sales_Unit__c</name>
+    </fields>
+    <fields>
+        <label>税金</label>
+        <name>CN_Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <label>金额（含税）</label>
+        <name>CN_Total_Amount_With_Tax__c</name>
+    </fields>
+    <fields>
+        <label>交货单编号</label>
+        <name>CN_Up_Code__c</name>
+    </fields>
+    <fields>
+        <label>卸货地址</label>
+        <name>CN_Uploading_Point__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weight Unit --></label>
+        <name>CN_Weight_Unit__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Sales Order Item Layout</layout>
+        <sections>
+            <label>金额</label>
+            <section>Amount</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>基础信息</label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label>产品信息</label>
+            <section>Product Information</section>
+        </sections>
+        <sections>
+            <label>系统信息</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>销售订单明细名称</nameFieldLabel>
+    <recordTypes>
+        <label><!-- CN Sales Order Item --></label>
+        <name>CN_Sales_Order_Item</name>
+    </recordTypes>
+</CustomObjectTranslation>

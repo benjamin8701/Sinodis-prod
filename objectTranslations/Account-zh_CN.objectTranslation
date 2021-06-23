@@ -1,0 +1,2446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>营业执照公司名称（CN）</value>
+        </caseValues>
+        <name>account_name</name>
+    </fields>
+    <fields>
+        <label><!-- Account Approved Date --></label>
+        <name>CN_Account_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Email Subject --></label>
+        <name>CN_Account_Email_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- FinAR Email --></label>
+        <name>CN_Account_FinAR_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Not Uploaded Contract --></label>
+        <name>CN_Account_Not_Uploaded_Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Not Uploaded Expect Contract --></label>
+        <name>CN_Account_Not_Uploaded_Expect_Contract__c</name>
+    </fields>
+    <fields>
+        <label>客户来源</label>
+        <name>CN_Account_Source__c</name>
+        <picklistValues>
+            <masterLabel>Brand Activity</masterLabel>
+            <translation><!-- Brand Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold Visit</masterLabel>
+            <translation><!-- Cold Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Recommend</masterLabel>
+            <translation><!-- Customer Recommend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expositions</masterLabel>
+            <translation><!-- Expositions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Demo</masterLabel>
+            <translation><!-- Public Demo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>客户状态</label>
+        <name>CN_Account_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Approval</masterLabel>
+            <translation><!-- Ready for Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Approval</masterLabel>
+            <translation><!-- Submitted for Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>客户分配组</label>
+        <name>CN_Acct_Assgmt_Group__c</name>
+    </fields>
+    <fields>
+        <label>实际销量（月）</label>
+        <name>CN_Actual_Sales_Volume__c</name>
+    </fields>
+    <fields>
+        <label>地址</label>
+        <name>CN_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approve Aging Trigger Datetime --></label>
+        <name>CN_Approve_Aging_Trigger_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approve Step --></label>
+        <name>CN_Approve_Step__c</name>
+        <picklistValues>
+            <masterLabel>Step1</masterLabel>
+            <translation><!-- Step1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step2</masterLabel>
+            <translation><!-- Step2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step3</masterLabel>
+            <translation><!-- Step3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step4</masterLabel>
+            <translation><!-- Step4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step5</masterLabel>
+            <translation><!-- Step5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Regional Manager --></label>
+        <name>CN_Approver_1__c</name>
+        <relationshipLabel><!-- Accounts (Regional Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Channel Director --></label>
+        <name>CN_Approver_2__c</name>
+        <relationshipLabel><!-- Accounts (Channel Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Commercial Director --></label>
+        <name>CN_Approver_3__c</name>
+        <relationshipLabel><!-- Accounts (Commercial Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales MDM --></label>
+        <name>CN_Approver_4__c</name>
+        <relationshipLabel><!-- Accounts (Sales MDM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Finance MDM --></label>
+        <name>CN_Approver_5__c</name>
+        <relationshipLabel><!-- Accounts (Finance MDM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>银行账户</label>
+        <name>CN_Bank_Account__c</name>
+    </fields>
+    <fields>
+        <label>开票锁定状态</label>
+        <name>CN_Billing_Block__c</name>
+        <picklistValues>
+            <masterLabel>01    Calculation Missing</masterLabel>
+            <translation><!-- 01    Calculation Missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02    Compl Confirm Missng</masterLabel>
+            <translation><!-- 02    Compl Confirm Missng --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03    Prices Incomplete</masterLabel>
+            <translation><!-- 03    Prices Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04    Check Terms of Paymt</masterLabel>
+            <translation><!-- 04    Check Terms of Paymt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05    Check Terms of Dlv</masterLabel>
+            <translation><!-- 05    Check Terms of Dlv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08    Check Credit Memo</masterLabel>
+            <translation><!-- 08    Check Credit Memo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09    Check Debit Memo</masterLabel>
+            <translation><!-- 09    Check Debit Memo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YH    Rejected by Customer</masterLabel>
+            <translation><!-- YH    Rejected by Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Contact Name(CN)-First Name --></label>
+        <name>CN_Billing_Contact_Name_CN_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Contact Name(CN)-Last Name --></label>
+        <name>CN_Billing_Contact_Name_CN_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Contact Name(EN) --></label>
+        <name>CN_Billing_Contact_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Department of Contact Person --></label>
+        <name>CN_Billing_Department_of_Contact_Person__c</name>
+        <picklistValues>
+            <masterLabel>0001-Purchasing Dept</masterLabel>
+            <translation><!-- 0001-Purchasing Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0002-Sales Dept</masterLabel>
+            <translation><!-- 0002-Sales Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0003-Administration Dept</masterLabel>
+            <translation><!-- 0003-Administration Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0004-Production Dept</masterLabel>
+            <translation><!-- 0004-Production Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0005-QA Dept</masterLabel>
+            <translation><!-- 0005-QA Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0006-Secretary&apos;s Office</masterLabel>
+            <translation><!-- 0006-Secretary&apos;s Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0007-Financial Dept</masterLabel>
+            <translation><!-- 0007-Financial Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0008-Legal Dept</masterLabel>
+            <translation><!-- 0008-Legal Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0009-Human Resources Dept</masterLabel>
+            <translation><!-- 0009-Human Resources Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0010-General Affairs Dept</masterLabel>
+            <translation><!-- 0010-General Affairs Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0011-Sales Promotion Dept</masterLabel>
+            <translation><!-- 0011-Sales Promotion Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0012-International Dept</masterLabel>
+            <translation><!-- 0012-International Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0013-Export Dept</masterLabel>
+            <translation><!-- 0013-Export Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0014-Import Dept</masterLabel>
+            <translation><!-- 0014-Import Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0015-Public Relation Dept</masterLabel>
+            <translation><!-- 0015-Public Relation Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0016-Advertising Dept</masterLabel>
+            <translation><!-- 0016-Advertising Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0017-Planning Dept</masterLabel>
+            <translation><!-- 0017-Planning Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0018-R&amp;D Dept</masterLabel>
+            <translation><!-- 0018-R&amp;D Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0019-Product Dev. Dept</masterLabel>
+            <translation><!-- 0019-Product Dev. Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0020-Food &amp; Beverage Dept</masterLabel>
+            <translation><!-- 0020-Food &amp; Beverage Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0021-Service Dept</masterLabel>
+            <translation><!-- 0021-Service Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0022-Technical Support</masterLabel>
+            <translation><!-- 0022-Technical Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0023-IT Dept</masterLabel>
+            <translation><!-- 0023-IT Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0024-Logistics Dept</masterLabel>
+            <translation><!-- 0024-Logistics Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0025-Cold Kitchen</masterLabel>
+            <translation><!-- 0025-Cold Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0026-Hot Kitchen</masterLabel>
+            <translation><!-- 0026-Hot Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0027-Banquet Kitchen</masterLabel>
+            <translation><!-- 0027-Banquet Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0028-Pastry</masterLabel>
+            <translation><!-- 0028-Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0029-Backery</masterLabel>
+            <translation><!-- 0029-Backery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0030-Bar</masterLabel>
+            <translation><!-- 0030-Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0031-Receiving</masterLabel>
+            <translation><!-- 0031-Receiving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0032-Kitchen</masterLabel>
+            <translation><!-- 0032-Kitchen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Email --></label>
+        <name>CN_Billing_Email__c</name>
+    </fields>
+    <fields>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <label><!-- Billing Mobile Phone --></label>
+        <name>CN_Billing_Mobile_Phone__c</name>
+    </fields>
+    <fields>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <label><!-- Billing Phone Number --></label>
+        <name>CN_Billing_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label>销售支持锁定状态</label>
+        <name>CN_Block_Sales_Support__c</name>
+    </fields>
+    <fields>
+        <label>品牌API</label>
+        <name>CN_Brand_API__c</name>
+    </fields>
+    <fields>
+        <label>品牌</label>
+        <name>CN_Brand__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>营业执照编号</label>
+        <name>CN_Business_License__c</name>
+    </fields>
+    <fields>
+        <help>可检索Food Service</help>
+        <label>业务部门</label>
+        <name>CN_Business_Unit_UI__c</name>
+        <relationshipLabel><!-- Business Units --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>业务部门</label>
+        <name>CN_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label>现金管理组</label>
+        <name>CN_Cash_Mgmt_Group__c</name>
+    </fields>
+    <fields>
+        <label>类别</label>
+        <name>CN_Category__c</name>
+        <picklistValues>
+            <masterLabel>BAPA</masterLabel>
+            <translation><!-- BAPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catering</masterLabel>
+            <translation><!-- Catering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coffee/Tea Shop</masterLabel>
+            <translation><!-- Coffee/Tea Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EC</masterLabel>
+            <translation><!-- EC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotel</masterLabel>
+            <translation><!-- Hotel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM</masterLabel>
+            <translation><!-- OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurant</masterLabel>
+            <translation><!-- Restaurant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retailor</masterLabel>
+            <translation><!-- Retailor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler</masterLabel>
+            <translation><!-- Wholesaler --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>请同时输入连锁店数量</help>
+        <label>是否连锁</label>
+        <name>CN_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Request --></label>
+        <name>CN_Change_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- City(CN) API --></label>
+        <name>CN_City_CN_API__c</name>
+    </fields>
+    <fields>
+        <label>城市（CN）</label>
+        <name>CN_City_CN__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- City Code --></label>
+        <name>CN_City_Code__c</name>
+    </fields>
+    <fields>
+        <label>城市（EN）</label>
+        <name>CN_City_EN__c</name>
+    </fields>
+    <fields>
+        <label>关闭状态</label>
+        <name>CN_Closed__c</name>
+    </fields>
+    <fields>
+        <label>竞争对手</label>
+        <name>CN_Competitors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Change Request Id --></label>
+        <name>CN_Contact_Change_Request_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>CN_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <label><!-- Contact Mobile Phone --></label>
+        <name>CN_Contact_Mobile_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name(CN)-First Name --></label>
+        <name>CN_Contact_Name_CN_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name(CN)-Last Name --></label>
+        <name>CN_Contact_Name_CN_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name(EN) --></label>
+        <name>CN_Contact_Name_EN__c</name>
+    </fields>
+    <fields>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <label><!-- Contact Phone Number --></label>
+        <name>CN_Contact_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Type --></label>
+        <name>CN_Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchasing</masterLabel>
+            <translation><!-- Purchasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>国家（CN）</label>
+        <name>CN_Country_CN__c</name>
+        <picklistValues>
+            <masterLabel>中国</masterLabel>
+            <translation><!-- 中国 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>国家（EN）</label>
+        <name>CN_Country_EN__c</name>
+        <picklistValues>
+            <masterLabel>CN</masterLabel>
+            <translation><!-- CN --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>信用额度</label>
+        <name>CN_Credit_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Term Application Status --></label>
+        <name>CN_Credit_Term_Application_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Approver --></label>
+        <name>CN_Current_Approver__c</name>
+        <relationshipLabel><!-- Accounts (Current Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>客户价格程序</label>
+        <name>CN_Cust_Pric_Proc__c</name>
+    </fields>
+    <fields>
+        <label>客户统计数据</label>
+        <name>CN_Cust_Stats_Grp__c</name>
+    </fields>
+    <fields>
+        <label>客户代码</label>
+        <name>CN_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label>客户群</label>
+        <name>CN_Customer_Group__c</name>
+        <picklistValues>
+            <masterLabel>BABP</masterLabel>
+            <translation><!-- BABP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catering</masterLabel>
+            <translation><!-- Catering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coffee/Tea Shop</masterLabel>
+            <translation><!-- Coffee/Tea Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Convenient stores</masterLabel>
+            <translation><!-- Convenient stores --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEPARTMENT STORES &amp;</masterLabel>
+            <translation><!-- DEPARTMENT STORES &amp; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Department Stores</masterLabel>
+            <translation><!-- Department Stores --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor Corporat</masterLabel>
+            <translation><!-- Distributor Corporat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor Food Ser</masterLabel>
+            <translation><!-- Distributor Food Ser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor Retail</masterLabel>
+            <translation><!-- Distributor Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor Retail &amp;</masterLabel>
+            <translation><!-- Distributor Retail &amp; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EC</masterLabel>
+            <translation><!-- EC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee</masterLabel>
+            <translation><!-- Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expat Stores</masterLabel>
+            <translation><!-- Expat Stores --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FS1</masterLabel>
+            <translation><!-- FS1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FS2</masterLabel>
+            <translation><!-- FS2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FS3</masterLabel>
+            <translation><!-- FS3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food Logistic Servic</masterLabel>
+            <translation><!-- Food Logistic Servic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gourmet Shop</masterLabel>
+            <translation><!-- Gourmet Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotels</masterLabel>
+            <translation><!-- Hotels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Chain</masterLabel>
+            <translation><!-- International Chain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet sales</masterLabel>
+            <translation><!-- Internet sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Key Account</masterLabel>
+            <translation><!-- Key Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Chain</masterLabel>
+            <translation><!-- Local Chain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM</masterLabel>
+            <translation><!-- OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pastry/Bakery/Ice cr</masterLabel>
+            <translation><!-- Pastry/Bakery/Ice cr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal sales</masterLabel>
+            <translation><!-- Personal sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurant</masterLabel>
+            <translation><!-- Restaurant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retailor</masterLabel>
+            <translation><!-- Retailor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply Chain</masterLabel>
+            <translation><!-- Supply Chain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply Chain and Foo</masterLabel>
+            <translation><!-- Supply Chain and Foo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesale Market</masterLabel>
+            <translation><!-- Wholesale Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler</masterLabel>
+            <translation><!-- Wholesaler --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>客户旅程</label>
+        <name>CN_Customer_Journey__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation><!-- Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>活跃状态</label>
+        <name>CN_Customer_Status__c</name>
+    </fields>
+    <fields>
+        <label>客户类型</label>
+        <name>CN_Customer_Type__c</name>
+        <picklistValues>
+            <masterLabel>0001-Sold to party</masterLabel>
+            <translation><!-- 0001-Sold to party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0002-Goods Receipt</masterLabel>
+            <translation><!-- 0002-Goods Receipt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPDA-Onetime Customer</masterLabel>
+            <translation><!-- CPDA-Onetime Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>交货锁定状态</label>
+        <name>CN_Delivery_Block__c</name>
+        <picklistValues>
+            <masterLabel>01 Credit limit</masterLabel>
+            <translation><!-- 01 Credit limit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02 Waitting confirm</masterLabel>
+            <translation><!-- 02 Waitting confirm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03 Bottleneck material</masterLabel>
+            <translation><!-- 03 Bottleneck material --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04 Export papers missng</masterLabel>
+            <translation><!-- 04 Export papers missng --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05 Check free of ch.dlv</masterLabel>
+            <translation><!-- 05 Check free of ch.dlv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06 No printing</masterLabel>
+            <translation><!-- 06 No printing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07 Change in quantity</masterLabel>
+            <translation><!-- 07 Change in quantity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08 Kanban Delivery</masterLabel>
+            <translation><!-- 08 Kanban Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09 JIT delivery (PDS)</masterLabel>
+            <translation><!-- 09 JIT delivery (PDS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 Not achieve MOQ</masterLabel>
+            <translation><!-- 10 Not achieve MOQ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>送货工厂</label>
+        <name>CN_Delivery_Plant__c</name>
+        <picklistValues>
+            <masterLabel>P011-SINODIS ShangHai External-西诺迪斯（上海） 外部</masterLabel>
+            <translation><!-- P011-SINODIS ShangHai External-西诺迪斯（上海） 外部 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P020-SINODIS BeiJing-西诺迪斯（北京）</masterLabel>
+            <translation><!-- P020-SINODIS BeiJing-西诺迪斯（北京） --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P040-SINODIS GuangZhou-西诺迪斯（广州）</masterLabel>
+            <translation><!-- P040-SINODIS GuangZhou-西诺迪斯（广州） --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P050-SINODIS Chengdu-西诺迪斯（成都）</masterLabel>
+            <translation><!-- P050-SINODIS Chengdu-西诺迪斯（成都） --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P060-SINODIS Dalian-西诺迪斯（大连）</masterLabel>
+            <translation><!-- P060-SINODIS Dalian-西诺迪斯（大连） --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Department of Contact Person --></label>
+        <name>CN_Department_of_Contact_Person__c</name>
+        <picklistValues>
+            <masterLabel>0001-Purchasing Dept</masterLabel>
+            <translation><!-- 0001-Purchasing Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0002-Sales Dept</masterLabel>
+            <translation><!-- 0002-Sales Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0003-Administration Dept</masterLabel>
+            <translation><!-- 0003-Administration Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0004-Production Dept</masterLabel>
+            <translation><!-- 0004-Production Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0005-QA Dept</masterLabel>
+            <translation><!-- 0005-QA Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0006-Secretary&apos;s Office</masterLabel>
+            <translation><!-- 0006-Secretary&apos;s Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0007-Financial Dept</masterLabel>
+            <translation><!-- 0007-Financial Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0008-Legal Dept</masterLabel>
+            <translation><!-- 0008-Legal Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0009-Human Resources Dept</masterLabel>
+            <translation><!-- 0009-Human Resources Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0010-General Affairs Dept</masterLabel>
+            <translation><!-- 0010-General Affairs Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0011-Sales Promotion Dept</masterLabel>
+            <translation><!-- 0011-Sales Promotion Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0012-International Dept</masterLabel>
+            <translation><!-- 0012-International Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0013-Export Dept</masterLabel>
+            <translation><!-- 0013-Export Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0014-Import Dept</masterLabel>
+            <translation><!-- 0014-Import Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0015-Public Relation Dept</masterLabel>
+            <translation><!-- 0015-Public Relation Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0016-Advertising Dept</masterLabel>
+            <translation><!-- 0016-Advertising Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0017-Planning Dept</masterLabel>
+            <translation><!-- 0017-Planning Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0018-R&amp;D Dept</masterLabel>
+            <translation><!-- 0018-R&amp;D Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0019-Product Dev. Dept</masterLabel>
+            <translation><!-- 0019-Product Dev. Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0020-Food &amp; Beverage Dept</masterLabel>
+            <translation><!-- 0020-Food &amp; Beverage Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0021-Service Dept</masterLabel>
+            <translation><!-- 0021-Service Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0022-Technical Support</masterLabel>
+            <translation><!-- 0022-Technical Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0023-IT Dept</masterLabel>
+            <translation><!-- 0023-IT Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0024-Logistics Dept</masterLabel>
+            <translation><!-- 0024-Logistics Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0025-Cold Kitchen</masterLabel>
+            <translation><!-- 0025-Cold Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0026-Hot Kitchen</masterLabel>
+            <translation><!-- 0026-Hot Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0027-Banquet Kitchen</masterLabel>
+            <translation><!-- 0027-Banquet Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0028-Pastry</masterLabel>
+            <translation><!-- 0028-Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0029-Backery</masterLabel>
+            <translation><!-- 0029-Backery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0030-Bar</masterLabel>
+            <translation><!-- 0030-Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0031-Receiving</masterLabel>
+            <translation><!-- 0031-Receiving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0032-Kitchen</masterLabel>
+            <translation><!-- 0032-Kitchen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group Name API --></label>
+        <name>CN_Group_Name_API__c</name>
+    </fields>
+    <fields>
+        <label>集团名称</label>
+        <name>CN_Group_Name__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Has Billing Contact --></label>
+        <name>CN_Has_Billing_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Purchasing Contact --></label>
+        <name>CN_Has_Purchasing_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Ship To Party --></label>
+        <name>CN_Has_Ship_To_Party__c</name>
+    </fields>
+    <fields>
+        <label>国际贸易条件2</label>
+        <name>CN_Incoterms_Part_2__c</name>
+    </fields>
+    <fields>
+        <label>国际贸易条件</label>
+        <name>CN_Incoterms__c</name>
+        <picklistValues>
+            <masterLabel>CFR-Costs and freight</masterLabel>
+            <translation><!-- CFR-Costs and freight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIF-Costs, insurance &amp; freight</masterLabel>
+            <translation><!-- CIF-Costs, insurance &amp; freight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIP-Carriage and insurance paid to</masterLabel>
+            <translation><!-- CIP-Carriage and insurance paid to --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT-Carriage paid to</masterLabel>
+            <translation><!-- CPT-Carriage paid to --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAF-Delivered at frontier</masterLabel>
+            <translation><!-- DAF-Delivered at frontier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDP-Delivered Duty Paid</masterLabel>
+            <translation><!-- DDP-Delivered Duty Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDU-Delivered Duty Unpaid</masterLabel>
+            <translation><!-- DDU-Delivered Duty Unpaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEQ-Delivered ex quay (duty paid)</masterLabel>
+            <translation><!-- DEQ-Delivered ex quay (duty paid) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DES-Delivered ex ship</masterLabel>
+            <translation><!-- DES-Delivered ex ship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXW-Ex Works</masterLabel>
+            <translation><!-- EXW-Ex Works --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAS-Free Alongside Ship</masterLabel>
+            <translation><!-- FAS-Free Alongside Ship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCA-Free Carrier</masterLabel>
+            <translation><!-- FCA-Free Carrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FH-Free house</masterLabel>
+            <translation><!-- FH-Free house --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOB-Free on board</masterLabel>
+            <translation><!-- FOB-Free on board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UN-Not Free</masterLabel>
+            <translation><!-- UN-Not Free --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>指标：记录付款历史</label>
+        <name>CN_Indicator_Record_Payment_History__c</name>
+    </fields>
+    <fields>
+        <label>发票类型</label>
+        <name>CN_Invoice_Type__c</name>
+        <picklistValues>
+            <masterLabel>General Invoice</masterLabel>
+            <translation><!-- General Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAT Invoice</masterLabel>
+            <translation><!-- VAT Invoice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>开票地址（CN）</label>
+        <name>CN_Invoicing_Address_CN__c</name>
+    </fields>
+    <fields>
+        <label>开票地址（EN）</label>
+        <name>CN_Invoicing_Address_EN__c</name>
+    </fields>
+    <fields>
+        <help>开票地址和电话</help>
+        <label>开票地址和电话（CN）</label>
+        <name>CN_Invoicing_Address_and_Phone__c</name>
+    </fields>
+    <fields>
+        <label>开票名称</label>
+        <name>CN_Invoicing_Name_Bill_To_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is All Doc Uploaded Except Contract --></label>
+        <name>CN_Is_All_Doc_Uploaded_Except_Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Contract Uploaded --></label>
+        <name>CN_Is_Contract_Uploaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Cross Channel --></label>
+        <name>CN_Is_Cross_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is In Approving --></label>
+        <name>CN_Is_In_Approving__c</name>
+    </fields>
+    <fields>
+        <label>是否为间接客户</label>
+        <name>CN_Is_Indirect_Acount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Sales Owner --></label>
+        <name>CN_Is_Sales_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Approved Payment Term --></label>
+        <name>CN_Latest_Approved_Payment_Term__c</name>
+        <picklistValues>
+            <masterLabel>CIA-Payment in advance</masterLabel>
+            <translation><!-- CIA-Payment in advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D000-Payment in advance</masterLabel>
+            <translation><!-- D000-Payment in advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D005-D05/5 days after delivery</masterLabel>
+            <translation><!-- D005-D05/5 days after delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D010-D10/10 days after delivery</masterLabel>
+            <translation><!-- D010-D10/10 days after delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D015-15 days after delivery</masterLabel>
+            <translation><!-- D015-15 days after delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D020-20 days, due net</masterLabel>
+            <translation><!-- D020-20 days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D030-30 days, due net</masterLabel>
+            <translation><!-- D030-30 days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D045-45 days, due net</masterLabel>
+            <translation><!-- D045-45 days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D060-60days, due net</masterLabel>
+            <translation><!-- D060-60days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D090-90days, due net</masterLabel>
+            <translation><!-- D090-90days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M110-10 th of next month, due net</masterLabel>
+            <translation><!-- M110-10 th of next month, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M115-15 th of next month, due net</masterLabel>
+            <translation><!-- M115-15 th of next month, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M131-30 days end of month, due net</masterLabel>
+            <translation><!-- M131-30 days end of month, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M145-Before 15th in 2 months, due net</masterLabel>
+            <translation><!-- M145-Before 15th in 2 months, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M231-60 days end of month, due net</masterLabel>
+            <translation><!-- M231-60 days end of month, due net --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Latest Approved Reference Day --></label>
+        <name>CN_Latest_Approved_Reference_Day__c</name>
+        <picklistValues>
+            <masterLabel>Delivery Day</masterLabel>
+            <translation><!-- Delivery Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fapiao Day</masterLabel>
+            <translation><!-- Fapiao Day --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Latest Change Request Sync Error Message --></label>
+        <name>CN_Latest_CR_Sync_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Change Request Sync Status --></label>
+        <name>CN_Latest_CR_Sync_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Need To Sync</masterLabel>
+            <translation><!-- No Need To Sync --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Latest Change Request Sync Time --></label>
+        <name>CN_Latest_CR_Sync_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Credit Term App Status --></label>
+        <name>CN_Latest_Credit_Term_App_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation><!-- Cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Approval</masterLabel>
+            <translation><!-- Ready for Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Approval</masterLabel>
+            <translation><!-- Submitted for Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Latest Order Create Date --></label>
+        <name>CN_Latest_Order_Create_Date__c</name>
+    </fields>
+    <fields>
+        <label>等级</label>
+        <name>CN_Level__c</name>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head Quarter</masterLabel>
+            <translation><!-- Head Quarter --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>营业执照公司名称（EN）</label>
+        <name>CN_License_Name_EN__c</name>
+    </fields>
+    <fields>
+        <help>填写营业执照注册城市中文名+英文名</help>
+        <label>诉讼城市</label>
+        <name>CN_Litigation_City__c</name>
+    </fields>
+    <fields>
+        <label>忠诚度等级</label>
+        <name>CN_Loyalty_level__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Nature --></label>
+        <name>CN_Nature__c</name>
+    </fields>
+    <fields>
+        <label>连锁门店数</label>
+        <name>CN_Number_Of_Stores__c</name>
+    </fields>
+    <fields>
+        <label><!-- Numbers of Ship-to Party --></label>
+        <name>CN_Numbers_of_Ship_to_Party__c</name>
+    </fields>
+    <fields>
+        <label>订单锁定状态</label>
+        <name>CN_Order_Block__c</name>
+        <picklistValues>
+            <masterLabel>01    Overall block</masterLabel>
+            <translation><!-- 01    Overall block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02    All free of charge</masterLabel>
+            <translation><!-- 02    All free of charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03    Test block</masterLabel>
+            <translation><!-- 03    Test block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>99    test (e)</masterLabel>
+            <translation><!-- 99    test (e) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>付款银行账户</label>
+        <name>CN_Payment_Bank_Account__c</name>
+    </fields>
+    <fields>
+        <label>付款银行名称</label>
+        <name>CN_Payment_Bank_Name__c</name>
+    </fields>
+    <fields>
+        <label>付款方名称</label>
+        <name>CN_Payment_Name__c</name>
+    </fields>
+    <fields>
+        <label>付款条件</label>
+        <name>CN_Payment_Terms__c</name>
+        <picklistValues>
+            <masterLabel>CIA-Payment in advance</masterLabel>
+            <translation><!-- CIA-Payment in advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D000-Payment in advance</masterLabel>
+            <translation><!-- D000-Payment in advance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>付款方式</label>
+        <name>CN_Payment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bank</masterLabel>
+            <translation><!-- Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QR Code</masterLabel>
+            <translation><!-- QR Code --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>请确认</label>
+        <name>CN_Please_Confirm__c</name>
+    </fields>
+    <fields>
+        <label>邮政编码</label>
+        <name>CN_Post_Code__c</name>
+    </fields>
+    <fields>
+        <label>潜在销量￥（市场）</label>
+        <name>CN_Potential_Volume_Market__c</name>
+    </fields>
+    <fields>
+        <label>潜在销量￥（西诺迪斯）</label>
+        <name>CN_Potential_Volume_Sinodis_Chance__c</name>
+    </fields>
+    <fields>
+        <label>价格确定</label>
+        <name>CN_Price_determination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Province(CN) API --></label>
+        <name>CN_Province_CN_API__c</name>
+    </fields>
+    <fields>
+        <label>省（CN）</label>
+        <name>CN_Province_CN__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>省（EN）</label>
+        <name>CN_Province_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchasing Contact Name(CN)-First Name --></label>
+        <name>CN_Purchasing_Contact_Name_CN_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchasing Contact Name(CN)-Last Name --></label>
+        <name>CN_Purchasing_Contact_Name_CN_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchasing Contact Name(EN) --></label>
+        <name>CN_Purchasing_Contact_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchasing Department of Contact Person --></label>
+        <name>CN_Purchasing_Department_of_Contact__c</name>
+        <picklistValues>
+            <masterLabel>0001-Purchasing Dept</masterLabel>
+            <translation><!-- 0001-Purchasing Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0002-Sales Dept</masterLabel>
+            <translation><!-- 0002-Sales Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0003-Administration Dept</masterLabel>
+            <translation><!-- 0003-Administration Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0004-Production Dept</masterLabel>
+            <translation><!-- 0004-Production Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0005-QA Dept</masterLabel>
+            <translation><!-- 0005-QA Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0006-Secretary&apos;s Office</masterLabel>
+            <translation><!-- 0006-Secretary&apos;s Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0007-Financial Dept</masterLabel>
+            <translation><!-- 0007-Financial Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0008-Legal Dept</masterLabel>
+            <translation><!-- 0008-Legal Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0009-Human Resources Dept</masterLabel>
+            <translation><!-- 0009-Human Resources Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0010-General Affairs Dept</masterLabel>
+            <translation><!-- 0010-General Affairs Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0011-Sales Promotion Dept</masterLabel>
+            <translation><!-- 0011-Sales Promotion Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0012-International Dept</masterLabel>
+            <translation><!-- 0012-International Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0013-Export Dept</masterLabel>
+            <translation><!-- 0013-Export Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0014-Import Dept</masterLabel>
+            <translation><!-- 0014-Import Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0015-Public Relation Dept</masterLabel>
+            <translation><!-- 0015-Public Relation Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0016-Advertising Dept</masterLabel>
+            <translation><!-- 0016-Advertising Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0017-Planning Dept</masterLabel>
+            <translation><!-- 0017-Planning Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0018-R&amp;D Dept</masterLabel>
+            <translation><!-- 0018-R&amp;D Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0019-Product Dev. Dept</masterLabel>
+            <translation><!-- 0019-Product Dev. Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0020-Food &amp; Beverage Dept</masterLabel>
+            <translation><!-- 0020-Food &amp; Beverage Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0021-Service Dept</masterLabel>
+            <translation><!-- 0021-Service Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0022-Technical Support</masterLabel>
+            <translation><!-- 0022-Technical Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0023-IT Dept</masterLabel>
+            <translation><!-- 0023-IT Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0024-Logistics Dept</masterLabel>
+            <translation><!-- 0024-Logistics Dept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0025-Cold Kitchen</masterLabel>
+            <translation><!-- 0025-Cold Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0026-Hot Kitchen</masterLabel>
+            <translation><!-- 0026-Hot Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0027-Banquet Kitchen</masterLabel>
+            <translation><!-- 0027-Banquet Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0028-Pastry</masterLabel>
+            <translation><!-- 0028-Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0029-Backery</masterLabel>
+            <translation><!-- 0029-Backery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0030-Bar</masterLabel>
+            <translation><!-- 0030-Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0031-Receiving</masterLabel>
+            <translation><!-- 0031-Receiving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0032-Kitchen</masterLabel>
+            <translation><!-- 0032-Kitchen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchasing Email --></label>
+        <name>CN_Purchasing_Email__c</name>
+    </fields>
+    <fields>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <label><!-- Purchasing Mobile Phone --></label>
+        <name>CN_Purchasing_Mobile_Phone__c</name>
+    </fields>
+    <fields>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <label><!-- Purchasing Phone Number --></label>
+        <name>CN_Purchasing_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label>是否有返点</label>
+        <name>CN_Rebat__c</name>
+    </fields>
+    <fields>
+        <label>统驭科目</label>
+        <name>CN_Reconciliation_Account__c</name>
+        <picklistValues>
+            <masterLabel>11410101-Account Receivable - domestic</masterLabel>
+            <translation><!-- 11410101-Account Receivable - domestic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11410103-Account Receivable - domestic - Legal Cases</masterLabel>
+            <translation><!-- 11410103-Account Receivable - domestic - Legal Cases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11410104-Account Receivable - domestic - Dispute/Deduction</masterLabel>
+            <translation><!-- 11410104-Account Receivable - domestic - Dispute/Deduction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11410201-Accounts Receivable - foreign</masterLabel>
+            <translation><!-- 11410201-Accounts Receivable - foreign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11910000-Other Accounts Receivable domestic</masterLabel>
+            <translation><!-- 11910000-Other Accounts Receivable domestic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11910001-Other Accounts Receivable Custom duties</masterLabel>
+            <translation><!-- 11910001-Other Accounts Receivable Custom duties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11910010-Other Accounts Receivable - Inter Company</masterLabel>
+            <translation><!-- 11910010-Other Accounts Receivable - Inter Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11910020-Other Accounts Receivable - Foreign suppliers (3rd</masterLabel>
+            <translation><!-- 11910020-Other Accounts Receivable - Foreign suppliers (3rd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11910040-Other Accounts Receivable - Security deposit</masterLabel>
+            <translation><!-- 11910040-Other Accounts Receivable - Security deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11910050-Other Accounts Receivable Others</masterLabel>
+            <translation><!-- 11910050-Other Accounts Receivable Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11910085-Other Receivable - MSH Pension Fund Balance</masterLabel>
+            <translation><!-- 11910085-Other Receivable - MSH Pension Fund Balance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21610101-Advances from Customer   domestic</masterLabel>
+            <translation><!-- 21610101-Advances from Customer   domestic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21610102-Security deposit given to Customers</masterLabel>
+            <translation><!-- 21610102-Security deposit given to Customers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21610103-Advances from Customer   domestic(Credit balance)</masterLabel>
+            <translation><!-- 21610103-Advances from Customer   domestic(Credit balance) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21610201-Advances from Customer   foreign</masterLabel>
+            <translation><!-- 21610201-Advances from Customer   foreign --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>参考日</label>
+        <name>CN_Reference_Day__c</name>
+        <picklistValues>
+            <masterLabel>Delivery Day</masterLabel>
+            <translation><!-- Delivery Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fapiao Day</masterLabel>
+            <translation><!-- Fapiao Day --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>是否需要银行信息/发票</label>
+        <name>CN_Require_Bank_Information_FaPiao__c</name>
+    </fields>
+    <fields>
+        <label>是否需要营业执照</label>
+        <name>CN_Require_Business_License__c</name>
+    </fields>
+    <fields>
+        <label>是否需要合同</label>
+        <name>CN_Require_Contract__c</name>
+    </fields>
+    <fields>
+        <label>是否需要食品流通许可证</label>
+        <name>CN_Require_Hygiene_Certificate__c</name>
+    </fields>
+    <fields>
+        <label>风险类别</label>
+        <name>CN_Risk_Category__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>客户类型</label>
+        <name>CN_Route_To_Market__c</name>
+    </fields>
+    <fields>
+        <label>SF客户代码</label>
+        <name>CN_SF_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label>销售区域</label>
+        <name>CN_Sales_District__c</name>
+        <picklistValues>
+            <masterLabel>001-SH-HuangPu</masterLabel>
+            <translation><!-- 001-SH-HuangPu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>002-SH-LuWan</masterLabel>
+            <translation><!-- 002-SH-LuWan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>003-SH-XuHui</masterLabel>
+            <translation><!-- 003-SH-XuHui --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>004-SH-ChangNing</masterLabel>
+            <translation><!-- 004-SH-ChangNing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>005-SH-JingAn</masterLabel>
+            <translation><!-- 005-SH-JingAn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>006-SH-PuTuo</masterLabel>
+            <translation><!-- 006-SH-PuTuo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>007-SH-ZhaBei</masterLabel>
+            <translation><!-- 007-SH-ZhaBei --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>008-SH-HongKou</masterLabel>
+            <translation><!-- 008-SH-HongKou --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>009-SH-YangPu</masterLabel>
+            <translation><!-- 009-SH-YangPu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>010-SH-MingHang</masterLabel>
+            <translation><!-- 010-SH-MingHang --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>011-SH-BaoShan</masterLabel>
+            <translation><!-- 011-SH-BaoShan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>012-SH-JiaDing</masterLabel>
+            <translation><!-- 012-SH-JiaDing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>013-SH-PuDong new Distr</masterLabel>
+            <translation><!-- 013-SH-PuDong new Distr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>014-SH-JinShan</masterLabel>
+            <translation><!-- 014-SH-JinShan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>015-SH-SongJiang</masterLabel>
+            <translation><!-- 015-SH-SongJiang --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>016-SH-QingPu</masterLabel>
+            <translation><!-- 016-SH-QingPu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>017-SH-NanHui</masterLabel>
+            <translation><!-- 017-SH-NanHui --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>018-SH-FengXian</masterLabel>
+            <translation><!-- 018-SH-FengXian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>019-SH-CongMing</masterLabel>
+            <translation><!-- 019-SH-CongMing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>020-Out of ShangHai</masterLabel>
+            <translation><!-- 020-Out of ShangHai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>021-HangZhou</masterLabel>
+            <translation><!-- 021-HangZhou --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>022-SuZhou</masterLabel>
+            <translation><!-- 022-SuZhou --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>023-Nanjing</masterLabel>
+            <translation><!-- 023-Nanjing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>024-BeiJing</masterLabel>
+            <translation><!-- 024-BeiJing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>025-ShenZhen</masterLabel>
+            <translation><!-- 025-ShenZhen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>026-GuangZhou</masterLabel>
+            <translation><!-- 026-GuangZhou --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>销售组</label>
+        <name>CN_Sales_Group__c</name>
+        <picklistValues>
+            <masterLabel>002-Food Service</masterLabel>
+            <translation><!-- 002-Food Service --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>销售办公室</label>
+        <name>CN_Sales_Office__c</name>
+        <picklistValues>
+            <masterLabel>K010-ShangHai</masterLabel>
+            <translation><!-- K010-ShangHai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K020-BeiJing</masterLabel>
+            <translation><!-- K020-BeiJing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K030-ShenZhen</masterLabel>
+            <translation><!-- K030-ShenZhen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K040-GuangZhou</masterLabel>
+            <translation><!-- K040-GuangZhou --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K050-ChengDu</masterLabel>
+            <translation><!-- K050-ChengDu --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>销售组织</label>
+        <name>CN_Sales_Org__c</name>
+        <picklistValues>
+            <masterLabel>S010-Sinodis Sales Org</masterLabel>
+            <translation><!-- S010-Sinodis Sales Org --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Person Email --></label>
+        <name>CN_Sales_Person_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person Name API --></label>
+        <name>CN_Sales_Person_Name_API__c</name>
+    </fields>
+    <fields>
+        <label>销售人姓名</label>
+        <name>CN_Sales_Person_Name__c</name>
+        <relationshipLabel><!-- Accounts (Sales Person Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>可检索KA/DS/WS</help>
+        <label>销售团队</label>
+        <name>CN_Sales_Team_UI__c</name>
+        <relationshipLabel><!-- SalesTeams --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>销售团队</label>
+        <name>CN_Sales_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Party Change Request Id --></label>
+        <name>CN_Ship_To_Party_Change_Request_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Contact Name --></label>
+        <name>CN_Shipping_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <label><!-- Shipping Mobile Phone --></label>
+        <name>CN_Shipping_Mobile_Phone__c</name>
+    </fields>
+    <fields>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <label><!-- Shipping Telephone --></label>
+        <name>CN_Shipping_Telephone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sinodis Finance AR API --></label>
+        <name>CN_Sinodis_Finance_AR_API__c</name>
+    </fields>
+    <fields>
+        <label>西诺迪斯财务AR</label>
+        <name>CN_Sinodis_Finance_AR__c</name>
+        <relationshipLabel><!-- Accounts (Sinodis Finance AR) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>排序码</label>
+        <name>CN_Sort_Key__c</name>
+        <picklistValues>
+            <masterLabel>000-Allocation number</masterLabel>
+            <translation><!-- 000-Allocation number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>001-Posting date</masterLabel>
+            <translation><!-- 001-Posting date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>002-Doc.no., fiscal year</masterLabel>
+            <translation><!-- 002-Doc.no., fiscal year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>003-Document date</masterLabel>
+            <translation><!-- 003-Document date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>004-Branch account</masterLabel>
+            <translation><!-- 004-Branch account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>005-Loc.currency amount</masterLabel>
+            <translation><!-- 005-Loc.currency amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>006-Doc.currency amount</masterLabel>
+            <translation><!-- 006-Doc.currency amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>007-Bill/exch.due date</masterLabel>
+            <translation><!-- 007-Bill/exch.due date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>008-Cost center</masterLabel>
+            <translation><!-- 008-Cost center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>009-External doc.number</masterLabel>
+            <translation><!-- 009-External doc.number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>010-Purchase order no.</masterLabel>
+            <translation><!-- 010-Purchase order no. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>011-Plant number</masterLabel>
+            <translation><!-- 011-Plant number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>012-Vendor number</masterLabel>
+            <translation><!-- 012-Vendor number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>014-Purchase order</masterLabel>
+            <translation><!-- 014-Purchase order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>015-Personnel number</masterLabel>
+            <translation><!-- 015-Personnel number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>016-Settlement period</masterLabel>
+            <translation><!-- 016-Settlement period --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>017-Settl.per., pers.no.</masterLabel>
+            <translation><!-- 017-Settl.per., pers.no. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>018-Asset number</masterLabel>
+            <translation><!-- 018-Asset number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>021-Segment text</masterLabel>
+            <translation><!-- 021-Segment text --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>022-One-time name / city</masterLabel>
+            <translation><!-- 022-One-time name / city --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>023-One-time city / name</masterLabel>
+            <translation><!-- 023-One-time city / name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>024-Document header text</masterLabel>
+            <translation><!-- 024-Document header text --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>025-CPU date</masterLabel>
+            <translation><!-- 025-CPU date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>026-Pmnt per.bslne date</masterLabel>
+            <translation><!-- 026-Pmnt per.bslne date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>027-Value date</masterLabel>
+            <translation><!-- 027-Value date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>028-Asset number</masterLabel>
+            <translation><!-- 028-Asset number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>029-Pstng month, vendor</masterLabel>
+            <translation><!-- 029-Pstng month, vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>031-Customer number</masterLabel>
+            <translation><!-- 031-Customer number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>032-Pstng yr,month,curr.</masterLabel>
+            <translation><!-- 032-Pstng yr,month,curr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>033-Cost center</masterLabel>
+            <translation><!-- 033-Cost center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>034-Month, cost center</masterLabel>
+            <translation><!-- 034-Month, cost center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>035-Contract number</masterLabel>
+            <translation><!-- 035-Contract number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>036-Order</masterLabel>
+            <translation><!-- 036-Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>037-Currency key</masterLabel>
+            <translation><!-- 037-Currency key --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>039-Project number</masterLabel>
+            <translation><!-- 039-Project number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>055-Fiscal year, month</masterLabel>
+            <translation><!-- 055-Fiscal year, month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>060-Test0</masterLabel>
+            <translation><!-- 060-Test0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>061-Test1</masterLabel>
+            <translation><!-- 061-Test1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>065-Test5</masterLabel>
+            <translation><!-- 065-Test5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101-Cash discnt clearing</masterLabel>
+            <translation><!-- 101-Cash discnt clearing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>105-Test</masterLabel>
+            <translation><!-- 105-Test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>店铺名称（CN）</label>
+        <name>CN_Store_Name_CN__c</name>
+    </fields>
+    <fields>
+        <label>店铺名称（EN）</label>
+        <name>CN_Store_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label>子类别</label>
+        <name>CN_Subcategory__c</name>
+        <picklistValues>
+            <masterLabel>1 Star Hotel</masterLabel>
+            <translation><!-- 1 Star Hotel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Star Hotel</masterLabel>
+            <translation><!-- 2 Star Hotel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Star Hotel</masterLabel>
+            <translation><!-- 3 Star Hotel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 Star Hotel</masterLabel>
+            <translation><!-- 4 Star Hotel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Star Hotel</masterLabel>
+            <translation><!-- 5 Star Hotel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access Bakery</masterLabel>
+            <translation><!-- Access Bakery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access Coffee Shop</masterLabel>
+            <translation><!-- Access Coffee Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access Ice cream</masterLabel>
+            <translation><!-- Access Ice cream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access Pastry</masterLabel>
+            <translation><!-- Access Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access Tea Shop</masterLabel>
+            <translation><!-- Access Tea Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Airline</masterLabel>
+            <translation><!-- Airline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAPA OEM</masterLabel>
+            <translation><!-- BAPA OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Casual Dining - Asian excl CH</masterLabel>
+            <translation><!-- Casual Dining - Asian excl CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Casual Dining - Chinese</masterLabel>
+            <translation><!-- Casual Dining - Chinese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Casual Dining - Western</masterLabel>
+            <translation><!-- Casual Dining - Western --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central Kitchen</masterLabel>
+            <translation><!-- Central Kitchen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coffee/Tea OEM</masterLabel>
+            <translation><!-- Coffee/Tea OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Convenience Store</masterLabel>
+            <translation><!-- Convenience Store --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core Bakery</masterLabel>
+            <translation><!-- Core Bakery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core Coffee Shop</masterLabel>
+            <translation><!-- Core Coffee Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core Ice cream</masterLabel>
+            <translation><!-- Core Ice cream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core Pastry</masterLabel>
+            <translation><!-- Core Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core Tea Shop</masterLabel>
+            <translation><!-- Core Tea Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Sales</masterLabel>
+            <translation><!-- Corporate Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cruise</masterLabel>
+            <translation><!-- Cruise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fine Dining - Asian excl CH</masterLabel>
+            <translation><!-- Fine Dining - Asian excl CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fine Dining - Chinese</masterLabel>
+            <translation><!-- Fine Dining - Chinese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fine Dining - Western</masterLabel>
+            <translation><!-- Fine Dining - Western --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORECA OEM</masterLabel>
+            <translation><!-- HORECA OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital</masterLabel>
+            <translation><!-- Hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online B2B</masterLabel>
+            <translation><!-- Online B2B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online B2C</masterLabel>
+            <translation><!-- Online B2C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium Bakery</masterLabel>
+            <translation><!-- Premium Bakery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium Coffee Shop</masterLabel>
+            <translation><!-- Premium Coffee Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium Ice cream</masterLabel>
+            <translation><!-- Premium Ice cream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium Pastry</masterLabel>
+            <translation><!-- Premium Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium Tea Shop</masterLabel>
+            <translation><!-- Premium Tea Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QSR - Asian exclude Chinese</masterLabel>
+            <translation><!-- QSR - Asian exclude Chinese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QSR - Chinese</masterLabel>
+            <translation><!-- QSR - Chinese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QSR - Western</masterLabel>
+            <translation><!-- QSR - Western --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail OEM</masterLabel>
+            <translation><!-- Retail OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School</masterLabel>
+            <translation><!-- School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary Wholesaler</masterLabel>
+            <translation><!-- Secondary Wholesaler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supermarket</masterLabel>
+            <translation><!-- Supermarket --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler</masterLabel>
+            <translation><!-- Wholesaler --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>同步错误消息</label>
+        <name>CN_Sync_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label>同步状态</label>
+        <name>CN_Sync_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>同步时间</label>
+        <name>CN_Sync_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synchronized --></label>
+        <name>CN_Synchronized__c</name>
+    </fields>
+    <fields>
+        <label>税收分类</label>
+        <name>CN_Tax_Classification__c</name>
+    </fields>
+    <fields>
+        <label>税务登记号</label>
+        <name>CN_Tax_Registration_No__c</name>
+    </fields>
+    <fields>
+        <label>账单中的付款条款</label>
+        <name>CN_Terms_of_Payment_in_Billing__c</name>
+    </fields>
+    <fields>
+        <label>店内座位数</label>
+        <name>CN_The_Number_Of_Seats__c</name>
+    </fields>
+    <fields>
+        <label>已经上传银行信息/发票</label>
+        <name>CN_Upload_Bank_Information_FaPiao_No__c</name>
+    </fields>
+    <fields>
+        <label>已经上传银行信息/发票</label>
+        <name>CN_Upload_Bank_Information_FaPiao__c</name>
+    </fields>
+    <fields>
+        <label>已经上传营业执照</label>
+        <name>CN_Upload_Business_License_No__c</name>
+    </fields>
+    <fields>
+        <label>已经上传营业执照</label>
+        <name>CN_Upload_Business_License__c</name>
+    </fields>
+    <fields>
+        <label>已经上传合同</label>
+        <name>CN_Upload_Contract_No__c</name>
+    </fields>
+    <fields>
+        <label>已经上传合同</label>
+        <name>CN_Upload_Contract__c</name>
+    </fields>
+    <fields>
+        <label>已经上传食品流通许可证</label>
+        <name>CN_Upload_Hygiene_Certificate_No__c</name>
+    </fields>
+    <fields>
+        <label>已经上传食品流通许可证</label>
+        <name>CN_Upload_Hygiene_Certificate__c</name>
+    </fields>
+    <fields>
+        <label>卸货地址</label>
+        <name>CN_Uploading_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vat Reg No --></label>
+        <name>CN_Vat_Reg_No__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Account Direct  Approved</layout>
+        <sections>
+            <label>客户所有人</label>
+            <section>Account Owners</section>
+        </sections>
+        <sections>
+            <label>地址</label>
+            <section>Adddress</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN Account Direct Edit</layout>
+        <sections>
+            <label>客户所有人</label>
+            <section>Account Owners</section>
+        </sections>
+        <sections>
+            <label>地址</label>
+            <section>Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN Account Direct New</layout>
+        <sections>
+            <label>开票</label>
+            <section>Invoicing</section>
+        </sections>
+        <sections>
+            <label>付款</label>
+            <section>Payment</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN Account Indirect Edit</layout>
+        <sections>
+            <label>客户所有人</label>
+            <section>Account Owners</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>申请新建联系人</label>
+        <name>CN_Account_Request_New_Contact</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>申请新建送达方</label>
+        <name>CN_Account_Request_New_Ship_To_Party</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>发送到SAP</label>
+        <name>CN_Account_Send</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Account Status --></label>
+        <name>CN_Account_Status</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>申请变更</label>
+        <name>CN_Account_Update_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Documents --></label>
+        <name>CN_Documents</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Finance Information --></label>
+        <name>CN_Finance_Information</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>检查审批/撤销检查</label>
+        <name>CN_Ready_for_Approval</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Approved Direct --></label>
+        <name>CN_Approved_Direct</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Edit Direct --></label>
+        <name>CN_Edit_Direct</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Edit Indirect --></label>
+        <name>CN_Edit_Indirect</name>
+    </recordTypes>
+    <recordTypes>
+        <label>直接客户</label>
+        <name>CN_New_Direct</name>
+    </recordTypes>
+    <recordTypes>
+        <label>间接客户</label>
+        <name>CN_New_Indirect</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>不允许在审批的过程中更新状态。</errorMessage>
+        <name>CN_Acc_Prevent_Change_Status_In_Approve</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不允许更改送达方。</errorMessage>
+        <name>CN_Account_Prevent_Change_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请为连锁客户输入 连锁门店数。</errorMessage>
+        <name>CN_Check_Chain</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请在提交审批前创建一个开票和采购的联系人。</errorMessage>
+        <name>CN_Check_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请在提交审批钱上传合同。</errorMessage>
+        <name>CN_Check_ContractUpload</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请在提交审批前创建一个账期申请。</errorMessage>
+        <name>CN_Check_CreditTermApplication</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>如果您需要开普通发票，请确保输入税务登记号。</errorMessage>
+        <name>CN_Check_General_InvoiceType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请在将标记为客户准备好审批前填写客户层次。</errorMessage>
+        <name>CN_Check_Hierarchy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>如果您需要开发票，请确保输入以下信息：开票名称、税务登记号、银行账户、开票地址和电话（CN）、参考日。</errorMessage>
+        <name>CN_Check_InvoiceType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请在提交审批前上传发票和营业执照。</errorMessage>
+        <name>CN_Check_License_Fapiao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不允许为CIA或者COD的客户选择发票日期。</errorMessage>
+        <name>CN_Check_PaymentTerm</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>客户的付款条件和最新通过审批的账期申请的付款条件不相同。</errorMessage>
+        <name>CN_Check_PaymentTerm_And_LatestPayment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请在提交审批前创建一个送达方或填写送达方的联系人信息和客户名称。</errorMessage>
+        <name>CN_Check_ShipTo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请填写正确格式的电话号码。</errorMessage>
+        <name>CN_Check_ShippingMobilePhone_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请填写正确格式的电话号码。</errorMessage>
+        <name>CN_Check_ShippingTelephone_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>如果您需要开增值税发票，请确保输入以下信息：开票名称、税务登记号、银行账户、开票地址和电话（CN）、参考日。</errorMessage>
+        <name>CN_Check_VAT_InvoiceType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请不要在客户审批通过之后更新客户信息。</errorMessage>
+        <name>CN_Prevent_Edit_Approved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不被允许编辑客户是否需要合同或是否需要出生证明。</errorMessage>
+        <name>CN_Prevent_Edit_Contract_Certificate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不被允许在客户已经被标记为准备好提交审批的时候编辑它。请点击取消按钮然后您可以再次编辑。</errorMessage>
+        <name>CN_Prevent_Edit_For_Ready</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不被允许更新客户名。</errorMessage>
+        <name>CN_Prevent_Edit_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请不要更新已经同步成功的客户。</errorMessage>
+        <name>CN_Prevent_Edit_Synced_Success</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clone --></label>
+        <name>Clone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

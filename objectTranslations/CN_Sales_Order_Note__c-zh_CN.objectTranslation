@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>销售订单备注</value>
+    </caseValues>
+    <fields>
+        <label><!-- Text Type --></label>
+        <name>CN_Note_Type__c</name>
+        <picklistValues>
+            <masterLabel>tbd</masterLabel>
+            <translation><!-- tbd --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Text --></label>
+        <name>CN_Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Order Number --></label>
+        <name>CN_Order_Number__c</name>
+        <relationshipLabel><!-- Sales Order Note --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Up Code --></label>
+        <name>CN_Up_Code__c</name>
+    </fields>
+    <nameFieldLabel>销售订单备注名称</nameFieldLabel>
+    <recordTypes>
+        <label><!-- CN Sales Order Note --></label>
+        <name>CN_Sales_Order_Note</name>
+    </recordTypes>
+</CustomObjectTranslation>

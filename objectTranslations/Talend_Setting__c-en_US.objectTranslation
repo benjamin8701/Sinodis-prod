@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Talend Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Talend Setting</value>
+    </caseValues>
+    <fields>
+        <label><!-- Change Request Endpoint --></label>
+        <name>Change_Request_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Order Update Endpoint --></label>
+        <name>Sales_Order_Update_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanbox Change Request Endpoint --></label>
+        <name>Sanbox_Change_Request_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanbox Sales Order Update Endpoint --></label>
+        <name>Sanbox_Sales_Order_Update_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox Password --></label>
+        <name>Sandbox_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox Send to Account Endpoint --></label>
+        <name>Sandbox_Send_To_Account_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox User Name --></label>
+        <name>Sandbox_User_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send to Account Endpoint --></label>
+        <name>Send_to_Account_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Name --></label>
+        <name>User_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

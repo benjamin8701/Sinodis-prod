@@ -1,0 +1,43 @@
+已提交新帐期供您批准：
+
+【信贷期限】
+付款期限：{!CN_Credit_Term_Application__c.CN_Payment_Term_Negotiated__c}
+参考日：{!CN_Credit_Term_Application__c.CN_Reference_Day__c}
+信用额度：{!CN_Credit_Term_Application__c.CN_Credit_Limit_Incl_VAT__c}
+
+【帐户信息】
+
+{!CN_Credit_Term_Application__c.CN_Account_URL__c}
+
+要批准或拒绝该项目，请点击此链接
+
+{!CN_Credit_Term_Application__c.Link}
+
+或在电子邮件的第一行中使用以下单词之一回复此电子邮件：APPROVE, APPROVED, YES, REJECT, REJECTED, NO
+
+如果通过电子邮件回复，您还可以在第二行添加评论。 注释将与批准请求一起存储在Salesforce CRM中。
+
+谢谢，
+Salesforce
+----------------------------------English Version Scroll Down--------------------------------
+New credit term application has been submitted for you to approve
+
+【Credit Term】
+Payment Term: {!CN_Credit_Term_Application__c.CN_Payment_Term_Negotiated__c}
+Reference Day:{!CN_Credit_Term_Application__c.CN_Reference_Day__c}
+Credit Limit:{!CN_Credit_Term_Application__c.CN_Credit_Limit_Incl_VAT__c}
+
+【Account Info】
+
+{!CN_Credit_Term_Application__c.CN_Account_URL__c}
+
+To approve or reject this item, click this link
+
+{!CN_Credit_Term_Application__c.Link}
+
+ or reply to this email with one of these words in the first line of the email message: APPROVE, APPROVED, YES, REJECT, REJECTED, NO
+
+If replying via email, you can also add comments on the second line. Comments will be stored with the approval request in Salesforce CRM.
+
+Thank you,
+Salesforce

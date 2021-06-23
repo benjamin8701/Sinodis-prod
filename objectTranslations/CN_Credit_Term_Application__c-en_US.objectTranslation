@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Credit Term Application</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Credit Term Applications</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account OwnerId --></label>
+        <name>CN_Account_OwnerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Sync Status --></label>
+        <name>CN_Account_Sync_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN_Account_URL --></label>
+        <name>CN_Account_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold-to Customer --></label>
+        <name>CN_Account__c</name>
+        <relationshipLabel><!-- Credit Term Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Any legal case --></label>
+        <name>CN_Any_Legal_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Any other information available --></label>
+        <name>CN_Any_Other_Information_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approve Aging Trigger Datetime --></label>
+        <name>CN_Approve_Aging_Trigger_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approve Step --></label>
+        <name>CN_Approve_Step__c</name>
+        <picklistValues>
+            <masterLabel>Step1</masterLabel>
+            <translation><!-- Step1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step2</masterLabel>
+            <translation><!-- Step2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step3</masterLabel>
+            <translation><!-- Step3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved Datetime --></label>
+        <name>CN_Approved_Datetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance AR --></label>
+        <name>CN_Approver_1__c</name>
+        <relationshipLabel><!-- Credit Term Applications (Finance AR) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver2 --></label>
+        <name>CN_Approver_2__c</name>
+        <relationshipLabel><!-- Credit Term Applications (Approver2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver3 --></label>
+        <name>CN_Approver_3__c</name>
+        <relationshipLabel><!-- Credit Term Applications (Approver3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>CN_Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business License # --></label>
+        <name>CN_Business_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>CN_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- CTA Email Subject --></label>
+        <name>CN_CTA_Email_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>CN_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>CN_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Background --></label>
+        <name>CN_Company_Background__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit (incl VAT) --></label>
+        <name>CN_Credit_Limit_Incl_VAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Approver --></label>
+        <name>CN_Current_Approver__c</name>
+        <relationshipLabel><!-- Credit Term Applications (Current Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Delivery Address --></label>
+        <name>CN_Customer_Delivery_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance MDM --></label>
+        <name>CN_Finance_MDM__c</name>
+        <relationshipLabel><!-- Credit Term Applications (Finance MDM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- General comment for approvers --></label>
+        <name>CN_General_Comment_For_Approvers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>CN_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Approving --></label>
+        <name>CN_Is_Approving__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Name(CN) --></label>
+        <name>CN_License_Name_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Name(EN) --></label>
+        <name>CN_License_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nature of Request --></label>
+        <name>CN_Nature_Of_Request__c</name>
+        <picklistValues>
+            <masterLabel>NO CONTRACT</masterLabel>
+            <translation><!-- NO CONTRACT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular Customer</masterLabel>
+            <translation><!-- Regular Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TM1 (Hotel-3month rule)</masterLabel>
+            <translation><!-- TM1 (Hotel-3month rule) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TM2(Excluding Hotel-3month rule)</masterLabel>
+            <translation><!-- TM2(Excluding Hotel-3month rule) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Application Reference Number --></label>
+        <name>CN_Payment_Application_Reference_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Term Negotiated --></label>
+        <name>CN_Payment_Term_Negotiated__c</name>
+        <picklistValues>
+            <masterLabel>D005-D05/5 days after delivery</masterLabel>
+            <translation><!-- D005-D05/5 days after delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D010-D10/10 days after delivery</masterLabel>
+            <translation><!-- D010-D10/10 days after delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D015-15 days after delivery</masterLabel>
+            <translation><!-- D015-15 days after delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D020-20 days, due net</masterLabel>
+            <translation><!-- D020-20 days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D030-30 days, due net</masterLabel>
+            <translation><!-- D030-30 days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D045-45 days, due net</masterLabel>
+            <translation><!-- D045-45 days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D060-60days, due net</masterLabel>
+            <translation><!-- D060-60days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D090-90days, due net</masterLabel>
+            <translation><!-- D090-90days, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M110-10 th of next month, due net</masterLabel>
+            <translation><!-- M110-10 th of next month, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M115-15 th of next month, due net</masterLabel>
+            <translation><!-- M115-15 th of next month, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M131-30 days end of month, due net</masterLabel>
+            <translation><!-- M131-30 days end of month, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M145-Before 15th in 2 months, due net</masterLabel>
+            <translation><!-- M145-Before 15th in 2 months, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M231-60 days end of month, due net</masterLabel>
+            <translation><!-- M231-60 days end of month, due net --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Please Confirm --></label>
+        <name>CN_Please_Confirm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Monthly Sales (Incl VAT) --></label>
+        <name>CN_Potential_Monthly_Sales_Incl_VAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reasons for applying for credit term --></label>
+        <name>CN_Reasons_For_Applying_For_Credit_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Day --></label>
+        <name>CN_Reference_Day__c</name>
+        <picklistValues>
+            <masterLabel>Delivery Day</masterLabel>
+            <translation><!-- Delivery Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fapiao Day</masterLabel>
+            <translation><!-- Fapiao Day --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>CN_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Customer Code --></label>
+        <name>CN_SAP_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Customer Code --></label>
+        <name>CN_SF_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person Email --></label>
+        <name>CN_Sales_Person_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person Name --></label>
+        <name>CN_Sales_Person_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Team --></label>
+        <name>CN_Sales_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>CN_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation><!-- Cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Approval</masterLabel>
+            <translation><!-- Ready for Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Approval</masterLabel>
+            <translation><!-- Submitted for Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of contract customer can sign --></label>
+        <name>CN_Type_Of_Contract_Customer_Can_Sign__c</name>
+        <picklistValues>
+            <masterLabel>Customer own template</masterLabel>
+            <translation><!-- Customer own template --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Siodis standard contract</masterLabel>
+            <translation><!-- Siodis standard contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>With guarantee</masterLabel>
+            <translation><!-- With guarantee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Without guarantee</masterLabel>
+            <translation><!-- Without guarantee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of customer --></label>
+        <name>CN_Type_Of_Customer__c</name>
+        <picklistValues>
+            <masterLabel>Company</masterLabel>
+            <translation><!-- Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partership firm</masterLabel>
+            <translation><!-- Partership firm --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>CN Credit Term Application Layout</layout>
+        <sections>
+            <label><!-- Account --></label>
+            <section>Account</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Request --></label>
+            <section>Credit Request</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Review by Credit Team (FSSC) --></label>
+            <section>Review by Credit Team (FSSC)</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Cancel Application --></label>
+        <name>CN_Cancel_Application</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Ready for Approval/Back to New --></label>
+        <name>CN_Ready_for_Approval</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- CN Credit Term Application --></label>
+        <name>CN_Credit_Term_Application</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please wait for a few minutes until the account synced to SAP. --></errorMessage>
+        <name>CN_AccountApproved_NotSynced</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not Allowed to Change Status in Approving. --></errorMessage>
+        <name>CN_CTA_Prevent_Change_Status_In_Approve</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to choose Fapiao Day for CIA or COD customer. --></errorMessage>
+        <name>CN_Check_PaymentTerm</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please continue with the ongoing credit term application or cancel it and create a new one. --></errorMessage>
+        <name>CN_Prevent_Create_Or_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t change this Credit Term Application when Status is Ready for Approval or Approved. --></errorMessage>
+        <name>CN_Prevent_Edit_For_Ready_Approved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to create credit term application when account is already marked as ready for approval or Submitted for Approval. --></errorMessage>
+        <name>CN_Prevent_Edit_On_Ready_And_Submit</name>
+    </validationRules>
+</CustomObjectTranslation>

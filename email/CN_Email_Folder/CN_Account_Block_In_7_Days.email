@@ -1,0 +1,30 @@
+以下文件正在等待您提交。请尽快提交文件，以免账户七天后被系统锁定。
+
+
+帐户：
+
+{!Account.Link}
+
+营业执照：{!IF(Account.CN_Require_Business_License__c=TRUE,IF(Account.CN_Upload_Business_License__c=TRUE,"已提交","待提交"),"不需要")}
+发票信息：{!IF(Account.CN_Require_Bank_Information_FaPiao__c=TRUE,IF(Account.CN_Upload_Bank_Information_FaPiao__c=TRUE,"已提交","待提交"),"不需要")}
+卫生证书：{!IF(Account.CN_Require_Hygiene_Certificate__c=TRUE,IF(Account.CN_Upload_Hygiene_Certificate__c=TRUE,"已提交","待提交"),"不需要")}
+合同：{!IF(Account.CN_Require_Contract__c=TRUE,IF(Account.CN_Upload_Contract__c=TRUE,"已提交","待提交"),"不需要")}
+
+
+谢谢，
+Salesforce
+----------------------------English Version Scroll Down----------------------------
+The following document(s) is pending your submission. Please upload the required document as soon as possible. Please take note that the account will be blocked after 7 days. 
+
+
+Account: 
+
+{!Account.Link}
+
+Business License: {!IF(Account.CN_Require_Business_License__c=TRUE,IF(Account.CN_Upload_Business_License__c=TRUE,"Submitted","Pending Submission"),"Not Required")}
+Fapiao Information:{!IF(Account.CN_Require_Bank_Information_FaPiao__c=TRUE,IF(Account.CN_Upload_Bank_Information_FaPiao__c=TRUE,"Submitted","Pending Submission"),"Not Required")}
+Hygiene Certificate:{!IF(Account.CN_Require_Hygiene_Certificate__c=TRUE,IF(Account.CN_Upload_Hygiene_Certificate__c=TRUE,"Submitted","Pending Submission"),"Not Required")}
+Contract:{!IF(Account.CN_Require_Contract__c=TRUE,IF(Account.CN_Upload_Contract__c=TRUE,"Submitted","Pending Submission"),"Not Required")}
+
+Thank you,
+Salesforce
