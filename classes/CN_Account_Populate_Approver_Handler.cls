@@ -107,7 +107,9 @@ public without sharing class CN_Account_Populate_Approver_Handler implements Tri
 
                 acc.CN_Approver_1__c = RMId;
                 acc.CN_Approver_2__c = CMId;
-                acc.CN_Approver_3__c = CDId;
+                if(acc.CN_Is_Cross_Channel__c) {
+                    acc.CN_Approver_3__c = CDId;
+                }
             }
             acc.CN_Approver_4__c = settings.CN_Sales_MDM_UserId__c;
             acc.CN_Approver_5__c = settings.CN_Finance_MDM_UserId__c;
