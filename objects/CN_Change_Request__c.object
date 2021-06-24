@@ -1356,6 +1356,18 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>CN_Account_Post_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Post Code</label>
+        <length>6</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Account_Potential_Volume_Chance__c</fullName>
         <externalId>false</externalId>
         <label>Potential Volume(Sinodis chance)</label>
@@ -6233,6 +6245,18 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>New_CN_Account_Post_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>New Post Code</label>
+        <length>6</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>New_CN_Account_Potential_Volume_Chance__c</fullName>
@@ -33418,6 +33442,18 @@ OR(
 )
 )</errorConditionFormula>
         <errorMessage>At least related to one Account/Contact/Ship-to and no more than one relation on Account/Contact/Ship-to for the change request.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Check_Post_Code_Length</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+	$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+	NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+	RecordType.DeveloperName = &quot;CN_Update_Account_Request&quot;,
+	 NOT(REGEX(  New_CN_Account_Post_Code__c , &quot;\\d{6}&quot;)) 
+)</errorConditionFormula>
+        <errorDisplayField>New_CN_Account_Post_Code__c</errorDisplayField>
+        <errorMessage>Postal code must be six digits.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Check_ShipTo_Moblie_NumberFormat</fullName>

@@ -627,8 +627,8 @@
             <translation><!-- Gourmet Shop --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Hotels</masterLabel>
-            <translation><!-- Hotels --></translation>
+            <masterLabel>Hotel</masterLabel>
+            <translation><!-- Hotel --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>International Chain</masterLabel>
@@ -2407,6 +2407,10 @@ Reference Day --></errorMessage>
     <validationRules>
         <errorMessage><!-- Payment term of the account does not equal to the payment term approved in latest credit term application. --></errorMessage>
         <name>CN_Check_PaymentTerm_And_LatestPayment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Postal code must be six digits. --></errorMessage>
+        <name>CN_Check_Post_Code_Length</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Please create a ship-to or fill in contact information and customer name before submitting the account for approval. --></errorMessage>

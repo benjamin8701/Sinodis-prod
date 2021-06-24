@@ -114,6 +114,26 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
                 titleUserIdMap.put(owner.Manager.Manager.Manager.Manager.Manager.Title, owner.Manager.Manager.Manager.Manager.ManagerId);
             }
 
+            String ManagerUserId = titleUserIdMap.get(Constants.CN_USER_TITLE_MANAGER);
+            String ARMUserId = titleUserIdMap.get(Constants.CN_USER_TITLE_ARM);
+            String RMUserId = titleUserIdMap.get(Constants.CN_USER_TITLE_RM);
+            String CMUserId = titleUserIdMap.get(Constants.CN_USER_TITLE_CM);
+            String CDUserId = titleUserIdMap.get(Constants.CN_USER_TITLE_CD);
+
+            Map<String, Integer> levelMap = new Map<String, Integer>();
+            levelMap.put(Constants.CN_USER_TITLE_MANAGER, 0);
+            levelMap.put(Constants.CN_USER_TITLE_ARM, 1);
+            levelMap.put(Constants.CN_USER_TITLE_RM, 2);
+            levelMap.put(Constants.CN_USER_TITLE_CM, 3);
+            levelMap.put(Constants.CN_USER_TITLE_CD, 4);
+
+            List<String> levelList = new List<String>();
+            levelList.add(ManagerUserId);
+            levelList.add(ARMUserId);
+            levelList.add(RMUserId);
+            levelList.add(CMUserId);
+            levelList.add(CDUserId);
+
             Set<String> changedFieldSet = new Set<String>();
             Boolean isInterfaceField = false;
             for(String oldFieldName : fieldMap.keySet()) {
@@ -132,7 +152,10 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
             // New Ship-to
             } else if(newShiptoRTId.equals(cr.RecordTypeId)) {
                 if(String.isNotBlank(owner.Title)) {
-                    cr.CN_Approver_2__c = titleUserIdMap.get(Constants.CN_USER_TITLE_RM);
+                    if(String.isBlank(RMUserId)) {
+                        RMUserId = getLatestApprover(Constants.CN_USER_TITLE_RM, levelMap, levelList);
+                    }
+                    cr.CN_Approver_2__c = RMUserId;
                     cr.CN_Approver_3__c = settings.CN_Sales_MDM_UserId__c;                   
                     cr.CN_Approver_4__c = settings.CN_Finance_MDM_UserId__c;
                     cr.CN_Is_Auto_Approved__c = false;
@@ -143,6 +166,7 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
                 Boolean isFinMDMRequired = false;
                 Boolean isSalesMDMRequired = false;
                 Boolean isOnlyOtherFieldChanged = true;
+                Boolean isApprover2Needed = false;
                 if(String.isNotBlank(owner.Title)) {
                     if(changedFieldSet.contains('CN_ShipTo_Delivery_Plant__c')) {
                         cr.CN_Approver_1__c = titleUserIdMap.get(Constants.CN_USER_TITLE_MANAGER);
@@ -161,7 +185,18 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
                             isFinMDMRequired = true;
                             isSalesMDMRequired = true;
                             isOnlyOtherFieldChanged = false;
+                            isApprover2Needed = true;
                     }
+                    if(isApprover2Needed) {
+                        if(cr.CN_Approver_2__c == null) {
+                            cr.CN_Approver_2__c = getLatestApprover(Constants.CN_USER_TITLE_RM, levelMap, levelList);
+                        }
+                    } else {
+                        if(cr.CN_Approver_1__c == null) {
+                            cr.CN_Approver_1__c = getLatestApprover(Constants.CN_USER_TITLE_MANAGER, levelMap, levelList);
+                        }
+                    }
+
                     if(isSalesMDMRequired) {
                         cr.CN_Approver_3__c = settings.CN_Sales_MDM_UserId__c;
                     }
@@ -177,12 +212,14 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
                 Boolean isFinMDMRequired = false;
                 Boolean isSalesMDMRequired = false;
                 Boolean isAutoApproved = true;
-
+                Boolean isAppprover1Needed = false;
+                Boolean isAppprover2Needed = false;
                 if(String.isNotBlank(owner.Title)) {
                     if(changedFieldSet.contains('CN_Account_Chain__c')) {
                         cr.CN_Approver_1__c = titleUserIdMap.get(Constants.CN_USER_TITLE_MANAGER);
                         isSalesMDMRequired = false; 
                         isAutoApproved = false;
+                        isAppprover1Needed = true;
                     } 
                     if(
                         changedFieldSet.contains('CN_Account_Group_Name__c') ||
@@ -192,6 +229,7 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
                             cr.CN_Approver_2__c = titleUserIdMap.get(Constants.CN_USER_TITLE_RM);
                             isSalesMDMRequired = true;
                             isAutoApproved = false;
+                            isAppprover2Needed = true;
                     } 
                     if( 
                         changedFieldSet.contains('CN_Account_Invoice_Type__c') ||
@@ -215,6 +253,7 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
                         isSalesMDMRequired = true;
                         isFinMDMRequired = true;
                         isAutoApproved = false;
+                        isAppprover2Needed = true;
                     }
                     if(
                         changedFieldSet.contains('CN_Account_Store_Name_CN__c') ||
@@ -239,6 +278,25 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
                             }
 
                     }
+
+                    // Set The Last Stand Approver
+                    if(isAutoApproved) {
+                        if(cr.CN_Approver_1__c == null) {
+                            cr.CN_Approver_1__c = getLatestApprover(Constants.CN_USER_TITLE_MANAGER, levelMap, levelList);
+                        }
+                    } else {
+                        if(isAppprover2Needed) {
+                            if(cr.CN_Approver_2__c == null) {
+                                cr.CN_Approver_2__c = getLatestApprover(Constants.CN_USER_TITLE_RM, levelMap, levelList);
+                            }
+                        }
+                        if(isAppprover1Needed) {
+                            if(cr.CN_Approver_1__c == null) {
+                                cr.CN_Approver_1__c = getLatestApprover(Constants.CN_USER_TITLE_MANAGER, levelMap, levelList);
+                            }
+                        }
+                    }
+
                     if(isSalesMDMRequired) {
                         cr.CN_Approver_3__c = settings.CN_Sales_MDM_UserId__c;
                         if(cr.CN_Approver_3__c == owner.Id && isFinMDMRequired == false) {
@@ -257,5 +315,23 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
                 }
             }
         }
+    }
+    public String getLatestApprover(String title, Map<String, Integer> levelMap, List<String> levelList) {
+        String latestApproverId = null;
+        if(levelMap.containsKey(title)) {
+            if(levelMap.get(title) <= levelList.size()) {
+                if(String.isBlank(levelList[levelMap.get(title)])) {
+                    for(Integer i = levelMap.get(title); i < levelList.size(); i++) {
+                        if(String.isNotBlank(levelList[i])) {
+                            latestApproverId = levelList[i];
+                            break;
+                        }
+                    }
+                } else {
+                    latestApproverId = levelList[levelMap.get(title)];
+                }
+            }
+        }
+        return latestApproverId;
     }
 }

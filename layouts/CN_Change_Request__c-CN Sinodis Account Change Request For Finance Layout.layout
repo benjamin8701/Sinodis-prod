@@ -142,6 +142,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
+                <field>CN_Account_Post_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
                 <field>CN_Account_Delivery_Plant__c</field>
             </layoutItems>
         </layoutColumns>
@@ -211,7 +215,7 @@
                 <field>New_CN_Account_Litigation_City__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>New_CN_Account_Customer_Journey__c</field>
             </layoutItems>
             <layoutItems>
@@ -219,7 +223,11 @@
                 <field>New_CN_Account_Business_License__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
+                <field>New_CN_Account_Post_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
                 <field>New_CN_Account_Delivery_Plant__c</field>
             </layoutItems>
         </layoutColumns>

@@ -446,6 +446,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Post Code --></label>
+        <name>CN_Account_Post_Code__c</name>
+    </fields>
+    <fields>
         <label><!-- Potential Volume(Sinodis chance) --></label>
         <name>CN_Account_Potential_Volume_Chance__c</name>
     </fields>
@@ -2672,6 +2676,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- New Post Code --></label>
+        <name>New_CN_Account_Post_Code__c</name>
+    </fields>
+    <fields>
         <label><!-- New Potential volume(Sinodis chance) --></label>
         <name>New_CN_Account_Potential_Volume_Chance__c</name>
     </fields>
@@ -3849,6 +3857,10 @@ Reference Day. --></errorMessage>
     <validationRules>
         <errorMessage><!-- At least related to one Account/Contact/Ship-to and no more than one relation on Account/Contact/Ship-to for the change request. --></errorMessage>
         <name>CN_Check_One_Relation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Postal code must be six digits. --></errorMessage>
+        <name>CN_Check_Post_Code_Length</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Please input a phone number with a valid format. --></errorMessage>

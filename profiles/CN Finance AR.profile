@@ -1449,6 +1449,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Change_Request__c.CN_Account_Post_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CN_Change_Request__c.CN_Account_Potential_Volume_Chance__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2525,6 +2530,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CN_Change_Request__c.New_CN_Account_Payment_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Change_Request__c.New_CN_Account_Post_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

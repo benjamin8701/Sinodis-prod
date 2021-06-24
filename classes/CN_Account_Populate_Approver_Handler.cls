@@ -46,7 +46,7 @@ public without sharing class CN_Account_Populate_Approver_Handler implements Tri
     }
     
     public void populateApprover(List<Account> accList) {
-        
+
         CN_Approve_Process_Settings__c settings = CN_Approve_Process_Settings__c.getInstance();
         
         Set<String> ownerIdSet = new Set<String>();
@@ -69,6 +69,13 @@ public without sharing class CN_Account_Populate_Approver_Handler implements Tri
                                WHERE Id in: ownerIdSet];
         Map<Id, User> ownerMap = new Map<Id, User>(ownerList);
         for(Account acc : accList) {
+
+            acc.CN_Approver_1__c = null;
+            acc.CN_Approver_2__c = null;
+            acc.CN_Approver_3__c = null;
+            acc.CN_Approver_4__c = null;
+            acc.CN_Approver_5__c = null;
+
             User owner = ownerMap.get(acc.OwnerId);
             Map<String, String> titleUserIdMap = new Map<String, String>();
             if(String.isNotBlank(owner.ManagerId)) {
@@ -87,9 +94,20 @@ public without sharing class CN_Account_Populate_Approver_Handler implements Tri
             	titleUserIdMap.put(owner.Manager.Manager.Manager.Manager.Manager.Title, owner.Manager.Manager.Manager.Manager.ManagerId);
             }
             if(String.isNotBlank(owner.Title)) {
-                acc.CN_Approver_1__c = titleUserIdMap.get(Constants.CN_USER_TITLE_RM);
-                acc.CN_Approver_2__c = titleUserIdMap.get(Constants.CN_USER_TITLE_CM);
-                acc.CN_Approver_3__c = titleUserIdMap.get(Constants.CN_USER_TITLE_CD);
+                String RMId = titleUserIdMap.get(Constants.CN_USER_TITLE_RM);
+                String CMId = titleUserIdMap.get(Constants.CN_USER_TITLE_CM);
+                String CDId = titleUserIdMap.get(Constants.CN_USER_TITLE_CD);
+                
+                // Set The Last Stand Approver
+                if(!acc.CN_Is_Cross_Channel__c) {
+                    if(String.isBlank(CMId)) {
+                        CMId = CDId;
+                    }
+                }
+
+                acc.CN_Approver_1__c = RMId;
+                acc.CN_Approver_2__c = CMId;
+                acc.CN_Approver_3__c = CDId;
             }
             acc.CN_Approver_4__c = settings.CN_Sales_MDM_UserId__c;
             acc.CN_Approver_5__c = settings.CN_Finance_MDM_UserId__c;

@@ -442,6 +442,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label>邮政编码</label>
+        <name>CN_Account_Post_Code__c</name>
+    </fields>
+    <fields>
         <label>潜在销量￥（西诺迪斯）</label>
         <name>CN_Account_Potential_Volume_Chance__c</name>
     </fields>
@@ -2668,6 +2672,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label>新邮政编码</label>
+        <name>New_CN_Account_Post_Code__c</name>
+    </fields>
+    <fields>
         <label>新潜在销量￥（西诺迪斯）</label>
         <name>New_CN_Account_Potential_Volume_Chance__c</name>
     </fields>
@@ -3837,6 +3845,10 @@
     <validationRules>
         <errorMessage>必须且仅为变更请求选择一个请求对象（客户/联系人/送达方）</errorMessage>
         <name>CN_Check_One_Relation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>邮政编码必须为六位数字。</errorMessage>
+        <name>CN_Check_Post_Code_Length</name>
     </validationRules>
     <validationRules>
         <errorMessage>请填写正确格式的电话号码。</errorMessage>

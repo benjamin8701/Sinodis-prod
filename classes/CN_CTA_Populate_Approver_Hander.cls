@@ -53,6 +53,7 @@ public without sharing class CN_CTA_Populate_Approver_Hander implements Triggers
             
             cta.CN_Approver_2__c = null;
             cta.CN_Approver_1__c = null;
+            cta.CN_Approver_3__c = null;
 
             User owner = ownerMap.get(cta.CN_Account_OwnerId__c);
             Map<String, String> titleUserIdMap = new Map<String, String>();
@@ -73,6 +74,26 @@ public without sharing class CN_CTA_Populate_Approver_Hander implements Triggers
             }
             titleUserIdMap.put(Constants.CN_USER_TITLE_CEO, settings.CN_CEO_UserID__c);
             titleUserIdMap.put(Constants.CN_USER_TITLE_CFO, settings.CN_CFO_UserID__c);
+
+            String ManagerUserId = titleUserIdMap.get(Constants.CN_USER_TITLE_MANAGER);
+            String ARMUserId = titleUserIdMap.get(Constants.CN_USER_TITLE_ARM);
+            String RMUserId = titleUserIdMap.get(Constants.CN_USER_TITLE_RM);
+            String CMUserId = titleUserIdMap.get(Constants.CN_USER_TITLE_CM);
+            String CDUserId = titleUserIdMap.get(Constants.CN_USER_TITLE_CD);
+
+            Map<String, Integer> levelMap = new Map<String, Integer>();
+            levelMap.put(Constants.CN_USER_TITLE_MANAGER, 0);
+            levelMap.put(Constants.CN_USER_TITLE_ARM, 1);
+            levelMap.put(Constants.CN_USER_TITLE_RM, 2);
+            levelMap.put(Constants.CN_USER_TITLE_CM, 3);
+            levelMap.put(Constants.CN_USER_TITLE_CD, 4);
+
+            List<String> levelList = new List<String>();
+            levelList.add(ManagerUserId);
+            levelList.add(ARMUserId);
+            levelList.add(RMUserId);
+            levelList.add(CMUserId);
+            levelList.add(CDUserId);
             
             String nature = cta.CN_Nature_Of_Request__c;
             Decimal paymentDays = CN_Payment_Term_Check__mdt.getInstance(cta.CN_Payment_Term_Negotiated__c + '_' + cta.CN_Reference_Day__c).CN_Payment_Days__c;
@@ -134,6 +155,28 @@ public without sharing class CN_CTA_Populate_Approver_Hander implements Triggers
             if(hasApprover3) {
                 cta.CN_Approver_3__c = titleUserIdMap.get(Constants.CN_USER_TITLE_CFO);
             }
+            // Set The Last Stand Approver
+            if(cta.CN_Approver_2__c == null) {
+                cta.CN_Approver_2__c = getLatestApprover(approver2Ttile, levelMap, levelList);
+            }
         }
+    }
+    public String getLatestApprover(String title, Map<String, Integer> levelMap, List<String> levelList) {
+        String latestApproverId = null;
+        if(levelMap.containsKey(title)) {
+            if(levelMap.get(title) <= levelList.size()) {
+                if(String.isBlank(levelList[levelMap.get(title)])) {
+                    for(Integer i = levelMap.get(title); i < levelList.size(); i++) {
+                        if(String.isNotBlank(levelList[i])) {
+                            latestApproverId = levelList[i];
+                            break;
+                        }
+                    }
+                } else {
+                    latestApproverId = levelList[levelMap.get(title)];
+                }
+            }
+        }
+        return latestApproverId;
     }
 }
