@@ -5,25 +5,68 @@
         <value>集团名称</value>
     </caseValues>
     <fields>
-        <label><!-- Group Code --></label>
+        <label>城市</label>
+        <name>CN_City_API__c</name>
+    </fields>
+    <fields>
+        <label>集团编码</label>
         <name>CN_Group_Code__c</name>
     </fields>
     <fields>
-        <label><!-- Sales Team Code Name --></label>
+        <label>已激活？</label>
+        <name>CN_Is_Activated__c</name>
+    </fields>
+    <fields>
+        <label>有效?</label>
+        <name>CN_Is_Active__c</name>
+    </fields>
+    <fields>
+        <label>销售团队编码名称</label>
         <name>CN_Sales_Team_Code_Name__c</name>
     </fields>
     <fields>
-        <label><!-- Sales Team Code --></label>
+        <label>销售团队编码</label>
         <name>CN_Sales_Team_Code__c</name>
     </fields>
     <fields>
-        <label><!-- Sales Team Name --></label>
+        <label>销售团队名称</label>
         <name>CN_Sales_Team_Name__c</name>
     </fields>
     <fields>
-        <label><!-- Sales Team --></label>
+        <label>销售团队</label>
+        <lookupFilter>
+            <errorMessage>您必须选择拥有编码的销售团队。</errorMessage>
+        </lookupFilter>
         <name>CN_Sales_Team__c</name>
         <relationshipLabel><!-- Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>同步错误消息</label>
+        <name>CN_Sync_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label>同步状态</label>
+        <name>CN_Sync_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>同步时间</label>
+        <name>CN_Sync_Time__c</name>
     </fields>
     <layouts>
         <layout>Group Layout</layout>
@@ -31,8 +74,17 @@
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
+        <sections>
+            <label><!-- SAP Creation Information --></label>
+            <section>SAP Creation Information</section>
+        </sections>
     </layouts>
     <nameFieldLabel><!-- Group Name --></nameFieldLabel>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>发送到SAP</label>
+        <name>CN_Send_To_SAP</name>
+    </quickActions>
     <recordTypes>
         <label><!-- CN Group --></label>
         <name>CN_Group</name>

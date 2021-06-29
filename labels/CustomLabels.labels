@@ -141,6 +141,104 @@
         <value>Account Has been sent, please wait for 5 mins</value>
     </labels>
     <labels>
+        <fullName>CN_Brand_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Brand_Name</shortDescription>
+        <value>Brand</value>
+    </labels>
+    <labels>
+        <fullName>CN_Brand_Retrieve_Success</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Brand_Retrieve_Success</shortDescription>
+        <value>Retrieve Brand Status Success.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Brand_Retrieve_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Brand_Retrieve_Title</shortDescription>
+        <value>Retrieve Brand Status</value>
+    </labels>
+    <labels>
+        <fullName>CN_Brand_Synced_Prevent_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Brand_Synced_Prevent_Delete</shortDescription>
+        <value>You cannot delete the brand that was processed to sync to SAP.</value>
+    </labels>
+    <labels>
+        <fullName>CN_BusinessUnit_Synced_Prevent_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_BusinessUnit_Synced_Prevent_Delete</shortDescription>
+        <value>You cannot delete the business unit that was processed to sync to SAP.</value>
+    </labels>
+    <labels>
+        <fullName>CN_BusinessUnit_Warning_Msg_Too_Frequency</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_BusinessUnit_Warning_Msg_Too_Frequency</shortDescription>
+        <value>Too frequency, please wait for a while.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Business_Unit_Code_Is_Blank</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Business_Unit_Code_Is_Blank</shortDescription>
+        <value>{0} Code is Blank.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Business_Unit_Had_Synced</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Business_Unit_Had_Synced</shortDescription>
+        <value>{0} has been synced yet.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Business_Unit_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Business_Unit_Name</shortDescription>
+        <value>Business Unit</value>
+    </labels>
+    <labels>
+        <fullName>CN_Business_Unit_No_Permission</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Business_Unit_No_Permission</shortDescription>
+        <value>You don&apos;t have permission to this {0}.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Business_Unit_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Business_Unit_Not_Found</shortDescription>
+        <value>No {0} Found.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Business_Unit_Retrieve_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Business_Unit_Retrieve_Title</shortDescription>
+        <value>Send {0} to SAP</value>
+    </labels>
+    <labels>
+        <fullName>CN_Business_Unit_Send_Success_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Business_Unit_Send_Success_Msg</shortDescription>
+        <value>This {0} has been sent to SAP successfully.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Business_Unit_Send_To_SAP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Business_Unit_Send_To_SAP</shortDescription>
+        <value>Are you sure to send this {0} to SAP?</value>
+    </labels>
+    <labels>
         <fullName>CN_CR_AT_LEAST_ONE_FIELD_CHANGE</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -246,6 +344,48 @@
         <value>New Contact Change Request</value>
     </labels>
     <labels>
+        <fullName>CN_CustomerHierarchy_Confirm_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CustomerHierarchy_Confirm_Msg</shortDescription>
+        <value>Confirm to Send?</value>
+    </labels>
+    <labels>
+        <fullName>CN_CustomerHierarchy_Warning_Msg_Too_Frequency</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CustomerHierarchy_Warning_Msg_Too_Frequency</shortDescription>
+        <value>Too frequency, please wait for a while.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Group_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Group_Name</shortDescription>
+        <value>Group</value>
+    </labels>
+    <labels>
+        <fullName>CN_Group_Retrieve_Success</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Group_Retrieve_Success</shortDescription>
+        <value>Retrieve Group Status Success.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Group_Retrieve_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Group_Retrieve_Title</shortDescription>
+        <value>Retrieve Group Status</value>
+    </labels>
+    <labels>
+        <fullName>CN_Group_Synced_Prevent_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Group_Synced_Prevent_Delete</shortDescription>
+        <value>You cannot delete the Group that was processed to sync to SAP.</value>
+    </labels>
+    <labels>
         <fullName>CN_Not_Found_BusinessUnit</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -309,6 +449,13 @@
         <value>Ready for Approval</value>
     </labels>
     <labels>
+        <fullName>CN_SalesTeam_Synced_Prevent_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_SalesTeam_Synced_Prevent_Delete</shortDescription>
+        <value>You cannot delete the sales team that was processed to sync to SAP.</value>
+    </labels>
+    <labels>
         <fullName>CN_Sales_Order_Confirm_Msg</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -342,6 +489,27 @@
         <protected>false</protected>
         <shortDescription>CN_Sales_Order_Warning_Msg_Too_Frequency</shortDescription>
         <value>Too frequency, please wait for a while.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Sales_Team_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Sales_Team_Name</shortDescription>
+        <value>Sales Team</value>
+    </labels>
+    <labels>
+        <fullName>CN_Sales_Team_Retrieve_Success</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Sales_Team_Retrieve_Success</shortDescription>
+        <value>Retrieve Sales Team Status Success.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Sales_Team_Retrieve_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Sales_Team_Retrieve_Title</shortDescription>
+        <value>Retrieve Sales Team Status</value>
     </labels>
     <labels>
         <fullName>CN_ShipTo_Account_Approved_Or_Has_Synced</fullName>

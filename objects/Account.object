@@ -871,8 +871,8 @@ IF(
         <externalId>false</externalId>
         <label>Brand</label>
         <lookupFilter>
-            <active>false</active>
-            <booleanFilter>1 OR 2</booleanFilter>
+            <active>true</active>
+            <booleanFilter>2 OR (1 AND 3)</booleanFilter>
             <filterItems>
                 <field>$Source.CN_Group_Name__c</field>
                 <operation>equals</operation>
@@ -883,7 +883,12 @@ IF(
                 <operation>equals</operation>
                 <value>True</value>
             </filterItems>
-            <isOptional>false</isOptional>
+            <filterItems>
+                <field>CN_Brand__c.CN_Is_Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>true</isOptional>
         </lookupFilter>
         <referenceTo>CN_Brand__c</referenceTo>
         <relationshipLabel>Accounts</relationshipLabel>
@@ -910,6 +915,26 @@ IF(
         <externalId>false</externalId>
         <inlineHelpText>Please search for Food Service.</inlineHelpText>
         <label>Business Unit</label>
+        <lookupFilter>
+            <active>false</active>
+            <booleanFilter>1 OR (2 AND 3)</booleanFilter>
+            <filterItems>
+                <field>$User.CN_Is_Integration_User__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <filterItems>
+                <field>CN_Business_Unit__c.CN_Is_Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <filterItems>
+                <field>CN_Business_Unit__c.CN_Sync_Status__c</field>
+                <operation>equals</operation>
+                <value>Success</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
         <referenceTo>CN_Business_Unit__c</referenceTo>
         <relationshipLabel>Business Units</relationshipLabel>
         <relationshipName>Accounts</relationshipName>
@@ -1904,8 +1929,8 @@ IF(
         <externalId>false</externalId>
         <label>Group Name</label>
         <lookupFilter>
-            <active>false</active>
-            <booleanFilter>1 OR 2</booleanFilter>
+            <active>true</active>
+            <booleanFilter>2 OR (1 AND 3)</booleanFilter>
             <filterItems>
                 <field>$Source.CN_Sales_Team_UI__c</field>
                 <operation>equals</operation>
@@ -1916,7 +1941,12 @@ IF(
                 <operation>equals</operation>
                 <value>True</value>
             </filterItems>
-            <isOptional>false</isOptional>
+            <filterItems>
+                <field>CN_Group__c.CN_Is_Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>true</isOptional>
         </lookupFilter>
         <referenceTo>CN_Group__c</referenceTo>
         <relationshipLabel>Accounts</relationshipLabel>
@@ -2598,6 +2628,29 @@ IF(
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Parent_Up_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+   NOT(ISBLANK( CN_Brand__c )) ,  CN_Brand__r.CN_Brand_Code__c , 
+   IF(
+     NOT(ISBLANK(  CN_Group_Name__c  )) ,  CN_Group_Name__r.CN_Group_Code__c  , 
+     IF(
+       NOT(ISBLANK(  CN_Sales_Team_UI__c )) ,   CN_Sales_Team_UI__r.CN_Sales_Team_Code__c  , 
+       IF(
+         NOT(ISBLANK( CN_Business_Unit_UI__c )) ,  CN_Business_Unit_UI__r.CN_Business_Unit_Code__c , 
+         &quot;&quot;
+       )
+     )
+   )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent UP Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Payment_Bank_Account__c</fullName>
@@ -3517,13 +3570,13 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     </fields>
     <fields>
         <fullName>CN_Sales_Team_UI__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
+        <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
         <inlineHelpText>Please search for KA/DS/WS.</inlineHelpText>
         <label>Sales Team</label>
         <lookupFilter>
             <active>true</active>
-            <booleanFilter>1 OR 2</booleanFilter>
+            <booleanFilter>2 OR (1 AND 3)</booleanFilter>
             <filterItems>
                 <field>$Source.CN_Business_Unit_UI__c</field>
                 <operation>equals</operation>
@@ -3534,7 +3587,12 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <operation>equals</operation>
                 <value>True</value>
             </filterItems>
-            <isOptional>false</isOptional>
+            <filterItems>
+                <field>CN_Sales_Team__c.CN_Is_Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>true</isOptional>
         </lookupFilter>
         <referenceTo>CN_Sales_Team__c</referenceTo>
         <relationshipLabel>SalesTeams</relationshipLabel>
@@ -14458,6 +14516,104 @@ RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,
 IF(CN_Is_In_Approving__c , ISCHANGED(  CN_Account_Status__c  ) , FALSE)
 )</errorConditionFormula>
         <errorMessage>Not Allowed to Change Status in Approving.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Account_Check_BU_Vaild</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(ISNEW(),ISCHANGED( CN_Business_Unit_UI__c )) ,
+  NOT( ISCHANGED( CN_Change_Request__c ) ),
+
+  OR(
+    AND(
+      OR( RecordType.DeveloperName == &apos;CN_New_Direct&apos; ,RecordType.DeveloperName == &apos;CN_Edit_Direct&apos;),
+      ISPICKVAL(CN_Account_Status__c ,&apos;New&apos;),
+      NOT(CN_Business_Unit_UI__r.CN_Is_Active__c)
+    ),
+    AND(
+      OR(RecordType.DeveloperName == &apos;CN_New_Indirect&apos;, RecordType.DeveloperName == &apos;CN_Edit_Indirect&apos;),
+      NOT(CN_Business_Unit_UI__r.CN_Is_Active__c)
+    )
+  )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Business_Unit_UI__c</errorDisplayField>
+        <errorMessage>The Business Unit that be choice is not valid.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Account_Check_Brand_Vaild</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(ISNEW(),ISCHANGED( CN_Brand__c )) ,
+  NOT(ISBLANK(CN_Brand__c)),
+  NOT( ISCHANGED( CN_Change_Request__c ) ),
+
+  OR(
+    AND(
+      OR( RecordType.DeveloperName == &apos;CN_New_Direct&apos; ,RecordType.DeveloperName == &apos;CN_Edit_Direct&apos;),
+      ISPICKVAL(CN_Account_Status__c ,&apos;New&apos;),
+      NOT(CN_Brand__r.CN_Is_Activated__c)
+    ),
+    AND(
+      OR(RecordType.DeveloperName == &apos;CN_New_Indirect&apos;, RecordType.DeveloperName == &apos;CN_Edit_Indirect&apos;),
+      NOT(CN_Brand__r.CN_Is_Activated__c)
+    )
+  )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Brand__c</errorDisplayField>
+        <errorMessage>The Brand that be choice is not valid.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Account_Check_Group_Vaild</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(ISNEW(),ISCHANGED( CN_Group_Name__c )) ,
+  NOT(ISBLANK(CN_Group_Name__c )),
+  NOT( ISCHANGED( CN_Change_Request__c ) ),
+
+  OR(
+    AND(
+      OR( RecordType.DeveloperName == &apos;CN_New_Direct&apos; ,RecordType.DeveloperName == &apos;CN_Edit_Direct&apos;),
+      ISPICKVAL(CN_Account_Status__c ,&apos;New&apos;),
+      NOT(CN_Group_Name__r.CN_Is_Activated__c)
+    ),
+    AND(
+      OR(RecordType.DeveloperName == &apos;CN_New_Indirect&apos;, RecordType.DeveloperName == &apos;CN_Edit_Indirect&apos;),
+      NOT(CN_Group_Name__r.CN_Is_Activated__c)
+    )
+  )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Group_Name__c</errorDisplayField>
+        <errorMessage>The Group that be choice is not valid</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Account_Check_ST_Vaild</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(ISNEW(),ISCHANGED(  CN_Sales_Team_UI__c )),
+  NOT( ISCHANGED( CN_Change_Request__c ) ),
+
+  OR(
+    AND(
+      OR( RecordType.DeveloperName == &apos;CN_New_Direct&apos; ,RecordType.DeveloperName == &apos;CN_Edit_Direct&apos;),
+      ISPICKVAL(CN_Account_Status__c ,&apos;New&apos;),
+      NOT(CN_Sales_Team_UI__r.CN_Is_Activated__c)
+    ),
+    AND(
+      OR(RecordType.DeveloperName == &apos;CN_New_Indirect&apos;, RecordType.DeveloperName == &apos;CN_Edit_Indirect&apos;),
+      NOT(CN_Sales_Team_UI__r.CN_Is_Activated__c)
+    )
+  )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Sales_Team_UI__c</errorDisplayField>
+        <errorMessage>The Sales Team that be choice is not valid.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Account_Prevent_Change_Owner</fullName>

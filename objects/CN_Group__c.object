@@ -128,25 +128,31 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Group_Record_Page</content>
         <formFactor>Large</formFactor>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Group_Record_Page</content>
         <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>true</enableActivities>
+    <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
@@ -154,15 +160,48 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>CN_City_API__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Group_Code__c</fullName>
         <caseSensitive>true</caseSensitive>
         <externalId>true</externalId>
         <label>Group Code</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Activated__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Activated</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Active__c</fullName>
+        <externalId>false</externalId>
+        <formula>ISPICKVAL( CN_Sync_Status__c , &quot;Success&quot;) &amp;&amp; CN_Is_Activated__c</formula>
+        <label>Is Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>CN_Sales_Team_Code_Name__c</fullName>
@@ -170,6 +209,8 @@
         <label>Sales Team Code Name</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -177,9 +218,10 @@
     <fields>
         <fullName>CN_Sales_Team_Code__c</fullName>
         <externalId>false</externalId>
+        <formula>CN_Sales_Team__r.CN_Sales_Team_Code__c</formula>
         <label>Sales Team Code</label>
-        <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -190,6 +232,8 @@
         <label>Sales Team Name</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -199,12 +243,81 @@
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>Sales Team</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>The sales team you choose must have sales team Code.</errorMessage>
+            <filterItems>
+                <field>CN_Sales_Team__c.CN_Sales_Team_Code__c</field>
+                <operation>notEqual</operation>
+                <value></value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
         <referenceTo>CN_Sales_Team__c</referenceTo>
         <relationshipLabel>Groups</relationshipLabel>
         <relationshipName>Groups</relationshipName>
         <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Sync_Error_Message__c</fullName>
+        <externalId>false</externalId>
+        <label>Sync Error Message</label>
+        <length>131072</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CN_Sync_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Sync Status</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sent</fullName>
+                    <default>false</default>
+                    <label>Sent</label>
+                </value>
+                <value>
+                    <fullName>Processing</fullName>
+                    <default>false</default>
+                    <label>Processing</label>
+                </value>
+                <value>
+                    <fullName>Success</fullName>
+                    <default>false</default>
+                    <label>Success</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Sync_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Sync Time</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
     </fields>
     <label>Group</label>
     <listViews>
@@ -214,17 +327,64 @@
     </listViews>
     <nameField>
         <label>Group Name</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Groups</pluralLabel>
+    <recordTypeTrackFeedHistory>true</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
     <recordTypes>
         <fullName>CN_Group</fullName>
         <active>true</active>
         <label>CN Group</label>
+        <picklistValues>
+            <picklist>CN_Sync_Status__c</picklist>
+            <values>
+                <fullName>Fail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Success</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
     </recordTypes>
     <searchLayouts>
+        <customTabListAdditionalFields>CN_Group_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CN_Sales_Team__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CN_Sales_Team_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CN_Sales_Team_Code_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CN_Sales_Team_Name__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CN_Group_Code__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CN_Sales_Team__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CN_Sales_Team_Code__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CN_Sales_Team_Code_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CN_Sales_Team_Name__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CN_Group_Code__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CN_Sales_Team__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CN_Sales_Team_Code__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CN_Sales_Team_Code_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CN_Sales_Team_Name__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>CN_Group_Code__c</searchFilterFields>
+        <searchFilterFields>CN_Sales_Team__c</searchFilterFields>
+        <searchFilterFields>CN_Sales_Team_Code__c</searchFilterFields>
+        <searchFilterFields>CN_Sales_Team_Code_Name__c</searchFilterFields>
+        <searchFilterFields>CN_Sales_Team_Name__c</searchFilterFields>
         <searchResultsAdditionalFields>CN_Group_Code__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Sales_Team__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CN_Sales_Team_Code_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Is_Activated__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

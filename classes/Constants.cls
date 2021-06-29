@@ -157,4 +157,45 @@ public without sharing class Constants {
 	public static final String CN_DOCUMENT_TYPE_HYGIENE_CERTIFICATE = 'Hygiene Certificate';	
 	public static final String CN_DOCUMENT_TYPE_CONTRACT = 'Contract';	
 
+
+	//Business Unit
+	public static Boolean BU_TRIGGER_ON = true;
+	public static Boolean CN_BU_TRIGGER_ON = true;
+	public static Boolean CN_BUSINESSUNIT_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
+
+	public static final String CN_BU_RT_API_NAME = 'CN_Business_Unit';
+
+	public static final String CN_BU_SYNC_STATUS_FAIL = 'Fail';
+	public static final String CN_BU_SYNC_STATUS_SUCCESS = 'Success';
+
+
+	//Sales Team
+	public static Boolean ST_TRIGGER_ON = true;
+	public static Boolean CN_ST_TRIGGER_ON = true;
+	public static Boolean CN_SALESTEAM_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
+
+	public static final String CN_ST_RT_API_NAME = 'CN_Sales_Team';
+
+	public static final String CN_ST_SYNC_STATUS_FAIL = 'Fail';
+	public static final String CN_ST_SYNC_STATUS_SUCCESS = 'Success';
+
+	//Group
+	public static Boolean GR_TRIGGER_ON = true;
+	public static Boolean CN_GR_TRIGGER_ON = true;
+	public static Boolean CN_GROUP_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
+
+	public static final String CN_GROUP_RT_API_NAME = 'CN_Group';
+
+	public static final String CN_GROUP_SYNC_STATUS_FAIL = 'Fail';
+	public static final String CN_GROUP_SYNC_STATUS_SUCCESS = 'Success';
+
+	//Brand
+	public static Boolean BR_TRIGGER_ON = true;
+	public static Boolean CN_BR_TRIGGER_ON = true;
+	public static Boolean CN_BRAND_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
+	
+	public static final String CN_BRAND_RT_API_NAME = 'CN_Brand';
+
+	public static final String CN_BRAND_SYNC_STATUS_FAIL = 'Fail';
+	public static final String CN_BRAND_SYNC_STATUS_SUCCESS = 'Success';
 }

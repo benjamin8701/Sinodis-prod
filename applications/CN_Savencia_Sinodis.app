@@ -17,6 +17,10 @@
     <tabs>CN_Sales_Order__c</tabs>
     <tabs>CN_Ship_to_Party__c</tabs>
     <tabs>CN_Change_Request__c</tabs>
+    <tabs>CN_Business_Unit__c</tabs>
+    <tabs>CN_Sales_Team__c</tabs>
+    <tabs>CN_Group__c</tabs>
+    <tabs>CN_Brand__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Savencia_Sanodis_UtilityBar</utilityBar>
 </CustomApplication>

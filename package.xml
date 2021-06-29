@@ -21,6 +21,14 @@
         <members>CN_Account_Prevent_Delete_Handler</members>
         <members>CN_Account_Prevent_Delete_Handler_Test</members>
         <members>CN_Account_Send_To_SAP_LC_Ctrl</members>
+        <members>CN_BU_Prevent_Delete_Handler</members>
+        <members>CN_BU_Prevent_Delete_Handler_Test</members>
+        <members>CN_BU_Send_To_SAP_LC_Ctrl</members>
+        <members>CN_BU_Send_To_SAP_LC_Ctrl_Test</members>
+        <members>CN_Brand_Prevent_Delete_Handler</members>
+        <members>CN_Brand_Prevent_Delete_Handler_Test</members>
+        <members>CN_Brand_Send_To_SAP_LC_Ctrl</members>
+        <members>CN_Brand_Send_To_SAP_LC_Ctrl_Test</members>
         <members>CN_CDL_Populate_Uploaded_Handler</members>
         <members>CN_CDL_Populate_Uploaded_Handler_Test</members>
         <members>CN_CD_Populate_Uploaded_Handler</members>
@@ -61,8 +69,16 @@
         <members>CN_Contact_Prevent_Delete_Handler</members>
         <members>CN_Contact_Prevent_Delete_Handler_Test</members>
         <members>CN_Contact_Update_FinAREmail_Handler</members>
+        <members>CN_Group_Prevent_Delete_Handler</members>
+        <members>CN_Group_Prevent_Delete_Handler_Test</members>
+        <members>CN_Group_Send_To_SAP_LC_Ctrl</members>
+        <members>CN_Group_Send_To_SAP_LC_Ctrl_Test</members>
         <members>CN_OrderTreeUpsert_WS</members>
         <members>CN_OrderTreeUpsert_WS_Test</members>
+        <members>CN_ST_Send_To_SAP_LC_Ctrl</members>
+        <members>CN_ST_Send_To_SAP_LC_Ctrl_Test</members>
+        <members>CN_SalesTeam_Prevent_Delete_Handler</members>
+        <members>CN_SalesTeam_Prevent_Delete_Handler_Test</members>
         <members>CN_Sales_Order_Send_LC_Ctrl</members>
         <members>CN_Sales_Order_Send_LC_Ctrl_Test</members>
         <members>CN_ShipTo_Prevent_Delete_Handler</members>
@@ -224,11 +240,15 @@
         <members>Account.CN_Documents</members>
         <members>Account.CN_Finance_Information</members>
         <members>Account.CN_Ready_for_Approval</members>
+        <members>CN_Brand__c.CN_Send_To_SAP</members>
+        <members>CN_Business_Unit__c.CN_BU_Send</members>
         <members>CN_Change_Request__c.CN_Ready_for_Approval</members>
         <members>CN_Change_Request__c.CN_Send_To_SAP</members>
         <members>CN_Credit_Term_Application__c.CN_Cancel_Application</members>
         <members>CN_Credit_Term_Application__c.CN_Ready_for_Approval</members>
+        <members>CN_Group__c.CN_Send_To_SAP</members>
         <members>CN_Sales_Order__c.CN_Retrieve_Status</members>
+        <members>CN_Sales_Team__c.CN_Send_To_SAP</members>
         <members>CN_Ship_to_Party__c.CN_ShipTo_Request_Update</members>
         <members>Contact.CN_Contact_Update_Request</members>
         <name>QuickAction</name>

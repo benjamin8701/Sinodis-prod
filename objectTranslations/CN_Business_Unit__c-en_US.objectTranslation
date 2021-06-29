@@ -12,13 +12,61 @@
         <label><!-- Business Unit Code --></label>
         <name>CN_Business_Unit_Code__c</name>
     </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>CN_City_API__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Activated --></label>
+        <name>CN_Is_Activated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>CN_Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Error Message --></label>
+        <name>CN_Sync_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Status --></label>
+        <name>CN_Sync_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sync Time --></label>
+        <name>CN_Sync_Time__c</name>
+    </fields>
     <layouts>
         <layout>Business Unit Layout</layout>
         <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
+        <sections>
+            <label><!-- SAP Creation Information --></label>
+            <section>SAP Creation Information</section>
+        </sections>
     </layouts>
+    <quickActions>
+        <label><!-- Send to SAP --></label>
+        <name>CN_BU_Send</name>
+    </quickActions>
     <recordTypes>
         <label><!-- CN Business Unit --></label>
         <name>CN_Business_Unit</name>
