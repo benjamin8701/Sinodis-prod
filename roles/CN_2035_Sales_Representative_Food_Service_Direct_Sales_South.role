@@ -5,5 +5,5 @@
     <mayForecastManagerShare>false</mayForecastManagerShare>
     <name>2035_Sales Representative-Food Service Direct Sales-South</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
-    <parentRole>CN_1896_Sales_Manager_Food_Service_Direct_Sales_East</parentRole>
+    <parentRole>CN_2023_Sales_Manager_Food_Service_Direct_Sales_South</parentRole>
 </Role>
