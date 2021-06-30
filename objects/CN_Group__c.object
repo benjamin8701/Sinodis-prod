@@ -163,7 +163,7 @@
         <fullName>CN_City_API__c</fullName>
         <externalId>false</externalId>
         <label>City</label>
-        <length>255</length>
+        <length>40</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -190,7 +190,7 @@
         <externalId>false</externalId>
         <label>Is Activated</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -322,6 +322,14 @@
     <label>Group</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Group_Code__c</columns>
+        <columns>CN_Sales_Team_Code_Name__c</columns>
+        <columns>CN_Is_Activated__c</columns>
+        <columns>CN_Sync_Status__c</columns>
+        <columns>CN_Sync_Time__c</columns>
+        <columns>CN_Sync_Error_Message__c</columns>
+        <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -361,25 +369,24 @@
     <searchLayouts>
         <customTabListAdditionalFields>CN_Group_Code__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>CN_Sales_Team__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>CN_Sales_Team_Code__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>CN_Sales_Team_Code_Name__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>CN_Sales_Team_Name__c</customTabListAdditionalFields>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>IsotopeSubscription</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>Import</excludedStandardButtons>
         <lookupDialogsAdditionalFields>CN_Group_Code__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CN_Sales_Team__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>CN_Sales_Team_Code__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CN_Sales_Team_Code_Name__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>CN_Sales_Team_Name__c</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CN_Group_Code__c</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CN_Sales_Team__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CN_Sales_Team_Code__c</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CN_Sales_Team_Code_Name__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CN_Sales_Team_Name__c</lookupPhoneDialogsAdditionalFields>
         <searchFilterFields>NAME</searchFilterFields>
         <searchFilterFields>CN_Group_Code__c</searchFilterFields>
         <searchFilterFields>CN_Sales_Team__c</searchFilterFields>
-        <searchFilterFields>CN_Sales_Team_Code__c</searchFilterFields>
         <searchFilterFields>CN_Sales_Team_Code_Name__c</searchFilterFields>
-        <searchFilterFields>CN_Sales_Team_Name__c</searchFilterFields>
         <searchResultsAdditionalFields>CN_Group_Code__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CN_Sales_Team__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CN_Sales_Team_Code_Name__c</searchResultsAdditionalFields>

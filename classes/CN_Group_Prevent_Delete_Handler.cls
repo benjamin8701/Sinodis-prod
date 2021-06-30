@@ -19,7 +19,7 @@ public without sharing class CN_Group_Prevent_Delete_Handler implements Triggers
     public void handleBeforeDelete() {
         Id groupRTId = Schema.SObjectType.CN_Group__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_GROUP_RT_API_NAME).getRecordTypeId();
         for(CN_Group__c gr : (List<CN_Group__c>)Trigger.Old) {
-            if(groupRTId.equals(gr.recordTypeId) &&  String.isNotBlank(gr.CN_Sync_Status__c)
+            if(groupRTId.equals(gr.recordTypeId) &&  String.isNotBlank(gr.CN_Group_Code__c)
             ){
                 gr.addError(system.Label.CN_Group_Synced_Prevent_Delete);
             }

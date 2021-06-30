@@ -219,7 +219,7 @@
         <fullName>CN_City_API__c</fullName>
         <externalId>false</externalId>
         <label>City</label>
-        <length>255</length>
+        <length>40</length>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
@@ -231,7 +231,7 @@
         <defaultValue>true</defaultValue>
         <externalId>false</externalId>
         <label>Is Activated</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -362,6 +362,13 @@
         <customTabListAdditionalFields>CN_Business_Unit_Code__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>CN_Business_Unit_Code_Name__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>CN_Business_Unit_Name__c</customTabListAdditionalFields>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>IsotopeSubscription</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>Import</excludedStandardButtons>
         <lookupDialogsAdditionalFields>CN_Sales_Team_Code__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CN_Business_Unit__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CN_Business_Unit_Code__c</lookupDialogsAdditionalFields>

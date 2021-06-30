@@ -175,7 +175,7 @@
         <fullName>CN_City_API__c</fullName>
         <externalId>false</externalId>
         <label>City</label>
-        <length>255</length>
+        <length>40</length>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
@@ -257,6 +257,13 @@
     <label>Business Unit</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Business_Unit_Code__c</columns>
+        <columns>CN_Is_Activated__c</columns>
+        <columns>CN_Sync_Status__c</columns>
+        <columns>CN_Sync_Time__c</columns>
+        <columns>CN_Sync_Error_Message__c</columns>
+        <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -293,6 +300,13 @@
     </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>CN_Business_Unit_Code__c</customTabListAdditionalFields>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>IsotopeSubscription</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>Import</excludedStandardButtons>
         <lookupDialogsAdditionalFields>CN_Business_Unit_Code__c</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CN_Business_Unit_Code__c</lookupPhoneDialogsAdditionalFields>
         <searchFilterFields>NAME</searchFilterFields>

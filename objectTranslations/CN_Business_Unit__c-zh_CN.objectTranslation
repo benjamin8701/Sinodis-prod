@@ -59,14 +59,14 @@
             <section>SAP Creation Information</section>
         </sections>
     </layouts>
-    <nameFieldLabel><!-- Business Unit Name --></nameFieldLabel>
+    <nameFieldLabel>业务部门名称</nameFieldLabel>
     <quickActions>
         <aspect>Master</aspect>
         <label>发送到SAP</label>
         <name>CN_BU_Send</name>
     </quickActions>
     <recordTypes>
-        <label><!-- CN Business Unit --></label>
+        <label>业务部门</label>
         <name>CN_Business_Unit</name>
     </recordTypes>
 </CustomObjectTranslation>

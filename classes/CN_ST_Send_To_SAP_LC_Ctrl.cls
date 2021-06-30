@@ -114,9 +114,13 @@ public without sharing class CN_ST_Send_To_SAP_LC_Ctrl {
                 throw new AuraHandledException( e.getMessage());   
             }
         }else{
+			if(String.isBlank(stToSend.CN_Sales_Team_Code__c) && st_result.CN_Sales_Team_Code__c !=null && String.isNotBlank(st_result.CN_Sales_Team_Code__c)){
+                stCode = st_result.CN_Sales_Team_Code__c;
+            }
             CN_Sales_Team__c stToUpdate = new CN_Sales_Team__c(
                     Id = stToSend.Id,
-                    CN_Sync_Status__c = Constants.CN_BU_SYNC_STATUS_FAIL,   
+                    CN_Sync_Status__c = Constants.CN_BU_SYNC_STATUS_FAIL,
+                    CN_Sales_Team_Code__c = String.isBlank(stCode)? stToSend.CN_Sales_Team_Code__c: stCode,
                     CN_Sync_Time__c = Datetime.now(),
                     CN_Sync_Error_Message__c = errorMessage
             );
@@ -151,7 +155,7 @@ public without sharing class CN_ST_Send_To_SAP_LC_Ctrl {
         JSONGenerator gen = JSON.createGenerator(false);
         gen.writeStartObject();
         gen.writeStringField('Name',st_select.Name);
-        gen.writeStringField('CN_Up_Code__c',st_select.CN_Sales_Team_Code__c);
+        gen.writeStringField('CN_Up_Code__c',st_select.CN_Sales_Team_Code__c == null? '': st_select.CN_Sales_Team_Code__c);
         gen.writeStringField('CN_Parent_Up_Code__c',st_select.CN_Business_Unit_Code__c);
         gen.writeStringField('CN_City_API__c',st_select.CN_City_API__c);
         gen.writeEndObject();
@@ -159,6 +163,7 @@ public without sharing class CN_ST_Send_To_SAP_LC_Ctrl {
 
         String authorizationHeader = 'Basic ' + EncodingUtil.base64Encode(headerValue);
         request.setHeader('Authorization', authorizationHeader);
+        request.setHeader('Content-Type', 'application/json');
         request.setMethod('POST');
         request.setBody(gen.getAsString());
         request.setTimeout(120000);
@@ -174,7 +179,7 @@ public without sharing class CN_ST_Send_To_SAP_LC_Ctrl {
                 errorMsg = resultMap.containsKey('CN_Sync_Error_Message__c')? (String)resultMap.get('CN_Sync_Error_Message__c'): '';
                 if(resultMap.containsKey('CN_Sync_Status__c')) {
                     String resultStatus = (String)resultMap.get('CN_Sync_Status__c');
-                    if('Success'.equals(resultStatus)) {
+                    if('S'.equals(resultStatus)) {
                         
                         isSendSuccess = true;
                         if(resultMap.containsKey('CN_Up_Code__c')) {
@@ -183,8 +188,14 @@ public without sharing class CN_ST_Send_To_SAP_LC_Ctrl {
                             st.CN_Sales_Team_Code__c = null;
                         }
                         st.CN_Sync_Time__c = Datetime.now();
-                    } else if('FAIL'.equals(resultStatus) || String.isBlank(resultStatus)) {
-                        throw new CustomException(errorMsg);
+                    } else if('E'.equals(resultStatus) || String.isBlank(resultStatus)) {
+                        if(resultMap.containsKey('CN_Up_Code__c')) {
+                            if(resultMap.get('CN_Up_Code__c') != null) {
+                            	st.CN_Sales_Team_Code__c = (String)resultMap.get('CN_Up_Code__c');
+                            }
+                        } else {
+                        	throw new CustomException(errorMsg);
+                        }
                     } else {
                         throw new CustomException(errorMsg);
                     }

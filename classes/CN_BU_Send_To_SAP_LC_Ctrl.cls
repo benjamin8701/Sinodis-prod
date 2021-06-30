@@ -150,7 +150,7 @@ public without sharing class CN_BU_Send_To_SAP_LC_Ctrl {
         JSONGenerator gen = JSON.createGenerator(false);
         gen.writeStartObject();
         gen.writeStringField('Name',bu_select.Name);
-        gen.writeStringField('CN_Up_Code__c',bu_select.CN_Business_Unit_Code__c);
+        gen.writeStringField('CN_Up_Code__c',bu_select.CN_Business_Unit_Code__c == null? '': bu_select.CN_Business_Unit_Code__c);
         gen.writeStringField('CN_Parent_Up_Code__c','');
         gen.writeStringField('CN_City_API__c',bu_select.CN_City_API__c);
         gen.writeEndObject();
@@ -158,6 +158,7 @@ public without sharing class CN_BU_Send_To_SAP_LC_Ctrl {
 
         String authorizationHeader = 'Basic ' + EncodingUtil.base64Encode(headerValue);
         request.setHeader('Authorization', authorizationHeader);
+        request.setHeader('Content-Type', 'application/json');
         request.setMethod('POST');
         request.setBody(gen.getAsString());
         request.setTimeout(120000);
@@ -173,7 +174,7 @@ public without sharing class CN_BU_Send_To_SAP_LC_Ctrl {
                 errorMsg = resultMap.containsKey('CN_Sync_Error_Message__c')? (String)resultMap.get('CN_Sync_Error_Message__c'): '';
                 if(resultMap.containsKey('CN_Sync_Status__c')) {
                     String resultStatus = (String)resultMap.get('CN_Sync_Status__c');
-                    if('Success'.equals(resultStatus)) {
+                    if('S'.equals(resultStatus)) {
                         
                         isSendSuccess = true;
                         if(resultMap.containsKey('CN_Up_Code__c')) {
@@ -182,7 +183,7 @@ public without sharing class CN_BU_Send_To_SAP_LC_Ctrl {
                             bu.CN_Business_Unit_Code__c = null;
                         }
                         bu.CN_Sync_Time__c = Datetime.now();
-                    } else if('FAIL'.equals(resultStatus) || String.isBlank(resultStatus)) {
+                    } else if('E'.equals(resultStatus) || String.isBlank(resultStatus)) {
                         throw new CustomException(errorMsg);
                     } else {
                         throw new CustomException(errorMsg);

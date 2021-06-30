@@ -175,7 +175,7 @@
         <fullName>CN_City_API__c</fullName>
         <externalId>false</externalId>
         <label>City</label>
-        <length>255</length>
+        <length>40</length>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
@@ -244,7 +244,7 @@
         <defaultValue>true</defaultValue>
         <externalId>false</externalId>
         <label>Is Activated</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -358,6 +358,19 @@
         </picklistValues>
     </recordTypes>
     <searchLayouts>
+        <customTabListAdditionalFields>CN_Brand_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CN_Group_Code_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CN_Is_Activated__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CN_Sync_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CN_Sync_Time__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CN_Sync_Error_Message__c</customTabListAdditionalFields>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>IsotopeSubscription</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>Import</excludedStandardButtons>
         <lookupDialogsAdditionalFields>CN_Brand_Code__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CN_Group__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CN_Group_Code_Name__c</lookupDialogsAdditionalFields>
@@ -368,9 +381,10 @@
         <lookupDialogsAdditionalFields>LAST_UPDATE</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CN_Brand_Code__c</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CN_Group__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CN_Group_Code__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CN_Group_Name__c</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CN_Group_Code_Name__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>CN_Brand_Code__c</searchFilterFields>
+        <searchFilterFields>CN_Group_Code_Name__c</searchFilterFields>
         <searchResultsAdditionalFields>CN_Brand_Code__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CN_Group__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CN_Group_Code_Name__c</searchResultsAdditionalFields>

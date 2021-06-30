@@ -86,7 +86,7 @@
         <name>CN_Send_To_SAP</name>
     </quickActions>
     <recordTypes>
-        <label><!-- CN Sales Team --></label>
+        <label>销售团队</label>
         <name>CN_Sales_Team</name>
     </recordTypes>
 </CustomObjectTranslation>

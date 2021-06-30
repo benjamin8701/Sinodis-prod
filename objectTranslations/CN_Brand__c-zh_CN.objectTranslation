@@ -79,14 +79,14 @@
             <section>SAP Creation Information</section>
         </sections>
     </layouts>
-    <nameFieldLabel><!-- Brand Name --></nameFieldLabel>
+    <nameFieldLabel>品牌名称</nameFieldLabel>
     <quickActions>
         <aspect>Master</aspect>
         <label>发送到SAP</label>
         <name>CN_Send_To_SAP</name>
     </quickActions>
     <recordTypes>
-        <label><!-- CN Brand --></label>
+        <label>品牌</label>
         <name>CN_Brand</name>
     </recordTypes>
 </CustomObjectTranslation>

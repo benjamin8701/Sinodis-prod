@@ -19,7 +19,7 @@ public without sharing class CN_Brand_Prevent_Delete_Handler implements Triggers
     public void handleBeforeDelete() {
         Id brandRTId = Schema.SObjectType.CN_Brand__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_BRAND_RT_API_NAME).getRecordTypeId();
         for(CN_Brand__c br : (List<CN_Brand__c>)Trigger.Old) {
-            if(brandRTId.equals(br.recordTypeId) &&  String.isNotBlank(br.CN_Sync_Status__c)
+            if(brandRTId.equals(br.recordTypeId) &&  String.isNotBlank(br.CN_Brand_Code__c)
             ){
                 br.addError(system.Label.CN_Brand_Synced_Prevent_Delete);
             }

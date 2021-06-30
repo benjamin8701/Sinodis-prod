@@ -19,7 +19,7 @@ public without sharing class CN_SalesTeam_Prevent_Delete_Handler implements Trig
     public void handleBeforeDelete() {
         Id salesTeamRTId = Schema.SObjectType.CN_Sales_Team__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_ST_RT_API_NAME).getRecordTypeId();
         for(CN_Sales_Team__c st : (List<CN_Sales_Team__c>)Trigger.Old) {
-            if(salesTeamRTId.equals(st.recordTypeId) &&  String.isNotBlank(st.CN_Sync_Status__c)
+            if(salesTeamRTId.equals(st.recordTypeId) &&  String.isNotBlank(st.CN_Sales_Team_Code__c)
             ){
                 st.addError(system.Label.CN_SalesTeam_Synced_Prevent_Delete);
             }

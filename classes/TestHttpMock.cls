@@ -40,9 +40,9 @@ global class TestHttpMock implements HttpCalloutMock {
         }else if(url.contains('CH')){
             if(url.contains('200')) {
                 if(url.contains('CHE')){
-                    res.setBody('{"CN_Up_Code__c" : "00001","CN_Sync_Time__c" : "2021-04-20T00:00:00.000Z", "CN_Sync_Status__c" : "Fail","CN_Sync_Error_Message__c" : ""}');
+                    res.setBody('{"CN_Up_Code__c" : "00001","CN_Sync_Time__c" : "2021-04-20T00:00:00.000Z", "CN_Sync_Status__c" : "E","CN_Sync_Error_Message__c" : ""}');
                 }else if(url.contains('CHS')){
-                    res.setBody('{"CN_Up_Code__c" : "00001","CN_Sync_Time__c" : "2021-04-20T00:00:00.000Z", "CN_Sync_Status__c" : "Success","CN_Sync_Error_Message__c" : ""}');
+                    res.setBody('{"CN_Up_Code__c" : "00001","CN_Sync_Time__c" : "2021-04-20T00:00:00.000Z", "CN_Sync_Status__c" : "S","CN_Sync_Error_Message__c" : ""}');
                 }else{
                     res.setBody('{"CN_Up_Code__c" : "00001","CN_Sync_Time__c" : "2021-04-20T00:00:00.000Z", "CN_Sync_Status__c" : "Sent","CN_Sync_Error_Message__c" : ""}');
                 }

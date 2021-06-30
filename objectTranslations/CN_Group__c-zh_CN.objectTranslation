@@ -2,7 +2,7 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>集团名称</value>
+        <value>集团</value>
     </caseValues>
     <fields>
         <label>城市</label>
@@ -79,14 +79,14 @@
             <section>SAP Creation Information</section>
         </sections>
     </layouts>
-    <nameFieldLabel><!-- Group Name --></nameFieldLabel>
+    <nameFieldLabel>集团名称</nameFieldLabel>
     <quickActions>
         <aspect>Master</aspect>
         <label>发送到SAP</label>
         <name>CN_Send_To_SAP</name>
     </quickActions>
     <recordTypes>
-        <label><!-- CN Group --></label>
+        <label>集团</label>
         <name>CN_Group</name>
     </recordTypes>
 </CustomObjectTranslation>
