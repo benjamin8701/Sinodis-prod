@@ -105,10 +105,6 @@
         <name>CN_BusinessUnit_Synced_Prevent_Delete</name>
     </customLabels>
     <customLabels>
-        <label>您的操作太频繁了，请稍等一下。</label>
-        <name>CN_BusinessUnit_Warning_Msg_Too_Frequency</name>
-    </customLabels>
-    <customLabels>
         <label>{0}编码为空。</label>
         <name>CN_Business_Unit_Code_Is_Blank</name>
     </customLabels>
