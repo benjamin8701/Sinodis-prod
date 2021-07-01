@@ -2109,7 +2109,7 @@ IF(
     <fields>
         <fullName>CN_Invoicing_Address_EN__c</fullName>
         <externalId>false</externalId>
-        <label>Invoicing Address(EN)</label>
+        <label>Delivery Address(EN)</label>
         <length>60</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -2226,7 +2226,7 @@ IF(
                 <value>
                     <fullName>D000</fullName>
                     <default>false</default>
-                    <label>D000-Payment in advance</label>
+                    <label>D000-Cash on delivery</label>
                 </value>
                 <value>
                     <fullName>D005</fullName>
@@ -2651,7 +2651,7 @@ IF(
                 <value>
                     <fullName>D000</fullName>
                     <default>false</default>
-                    <label>D000-Payment in advance</label>
+                    <label>D000-Cash on delivery</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -14537,9 +14537,23 @@ ISCHANGED(  OwnerId )
   OR(RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,RecordType.DeveloperName = &apos;CN_New_Direct&apos;),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   ISPICKVAL(CN_Invoice_Type__c, &quot;General Invoice&quot;),
-  ISBLANK(CN_Tax_Registration_No__c)
+  OR(
+    ISBLANK(CN_Invoicing_Name_Bill_To_Party__c),
+    NOT(ISBLANK(CN_Bank_Account__c)),
+    NOT(ISBLANK(CN_Invoicing_Address_and_Phone__c)),
+    IF(
+    	OR(ISPICKVAL(CN_Payment_Terms__c, &quot;CIA&quot;),ISPICKVAL(CN_Payment_Terms__c, &quot;D000&quot;)),
+    	FALSE,
+    	ISBLANK(TEXT(CN_Reference_Day__c))
+    ),
+    ISBLANK(CN_Tax_Registration_No__c),
+    ISBLANK(CN_Invoicing_Address_EN__c)
+  )
 )</errorConditionFormula>
-        <errorMessage>Please fill in the tax no., if you select General Invoice.</errorMessage>
+        <errorMessage>Please just fill in the following information, if you select Genernal invoice.
+Invoicing Name (Bill to party),
+Tax Registration No. ,
+Delivery Address(EN).</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Hierarchy</fullName>
@@ -14702,7 +14716,8 @@ Reference Day</errorMessage>
     	FALSE,
     	ISBLANK(TEXT(CN_Reference_Day__c))
     ),
-    ISBLANK(CN_Tax_Registration_No__c)
+    ISBLANK(CN_Tax_Registration_No__c),
+    ISBLANK(CN_Invoicing_Address_EN__c)
   )
 )</errorConditionFormula>
         <errorMessage>Please fill in the following information, if you select VAT invoice.
@@ -14710,7 +14725,8 @@ Invoicing Name (Bill to party),
 Tax Registration No.,
 Bank Account,
 Invoice Address and Phone,
-Reference Day.</errorMessage>
+Reference Day,
+Delivery Address (EN).</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Prevent_Edit_Approved</fullName>
