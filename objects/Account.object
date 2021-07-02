@@ -3547,7 +3547,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>CN_Sales_Team__c</fullName>
         <externalId>false</externalId>
-        <formula>CN_Sales_Team_UI__r.Name</formula>
+        <formula>CN_Sales_Team_UI__r.CN_Sales_Team_Code__c</formula>
         <label>Sales Team</label>
         <required>false</required>
         <trackHistory>false</trackHistory>

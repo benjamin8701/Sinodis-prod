@@ -182,6 +182,10 @@
                 <behavior>Readonly</behavior>
                 <field>CN_City_EN__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Invoicing_Address_EN__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

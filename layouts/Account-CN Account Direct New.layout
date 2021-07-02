@@ -136,6 +136,10 @@
                 <behavior>Required</behavior>
                 <field>CN_Delivery_Plant__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Invoicing_Address_EN__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -184,10 +188,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CN_Invoicing_Address_and_Phone__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CN_Invoicing_Address_EN__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

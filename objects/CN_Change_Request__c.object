@@ -10427,6 +10427,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Contact_Dept_Of_Contact_Person__c</picklist>
@@ -12939,6 +12943,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -15455,6 +15463,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Contact_Dept_Of_Contact_Person__c</picklist>
@@ -17967,6 +17979,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -20483,6 +20499,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Contact_Dept_Of_Contact_Person__c</picklist>
@@ -22995,6 +23015,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -25511,6 +25535,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Contact_Dept_Of_Contact_Person__c</picklist>
@@ -28023,6 +28051,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -30539,6 +30571,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Contact_Dept_Of_Contact_Person__c</picklist>
@@ -33051,6 +33087,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
