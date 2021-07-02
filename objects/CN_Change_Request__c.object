@@ -1033,7 +1033,7 @@
     <fields>
         <fullName>CN_Account_Invoicing_Address_EN__c</fullName>
         <externalId>false</externalId>
-        <label>Invoicing Address(EN)</label>
+        <label>Delivery Address(EN)</label>
         <length>60</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -1239,7 +1239,7 @@
                 <value>
                     <fullName>D000</fullName>
                     <default>false</default>
-                    <label>D000-Payment in advance</label>
+                    <label>D000-Cash on delivery</label>
                 </value>
                 <value>
                     <fullName>D003</fullName>
@@ -2104,9 +2104,9 @@
                     <label>Casual Dining - Western</label>
                 </value>
                 <value>
-                    <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                    <fullName>Casual Dining - Asian excl CH</fullName>
                     <default>false</default>
-                    <label>Casual Dining - Asian exclude Chinese</label>
+                    <label>Casual Dining - Asian excl CH</label>
                 </value>
                 <value>
                     <fullName>Casual Dining - Chinese</fullName>
@@ -2119,9 +2119,9 @@
                     <label>Fine Dining - Western</label>
                 </value>
                 <value>
-                    <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                    <fullName>Fine Dining - Asian excl CH</fullName>
                     <default>false</default>
-                    <label>Fine Dining - Asian exclude Chinese</label>
+                    <label>Fine Dining - Asian excl CH</label>
                 </value>
                 <value>
                     <fullName>Fine Dining - Chinese</fullName>
@@ -2434,7 +2434,7 @@
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Restaurant</controllingFieldValue>
-                <valueName>Casual Dining - Asian exclude Chinese</valueName>
+                <valueName>Casual Dining - Asian excl CH</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Restaurant</controllingFieldValue>
@@ -2446,7 +2446,7 @@
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Restaurant</controllingFieldValue>
-                <valueName>Fine Dining - Asian exclude Chinese</valueName>
+                <valueName>Fine Dining - Asian excl CH</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Restaurant</controllingFieldValue>
@@ -5948,7 +5948,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>New_CN_Account_Invoicing_Address_EN__c</fullName>
         <externalId>false</externalId>
-        <label>New Invoicing Address(EN)</label>
+        <label>New Delivery Address(EN)</label>
         <length>60</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -6140,7 +6140,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <value>
                     <fullName>D000</fullName>
                     <default>false</default>
-                    <label>D000-Payment in advance</label>
+                    <label>D000-Cash on delivery</label>
                 </value>
                 <value>
                     <fullName>D003</fullName>
@@ -7026,9 +7026,9 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                     <label>Casual Dining - Western</label>
                 </value>
                 <value>
-                    <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                    <fullName>Casual Dining - Asian excl CH</fullName>
                     <default>false</default>
-                    <label>Casual Dining - Asian exclude Chinese</label>
+                    <label>Casual Dining - Asian excl CH</label>
                 </value>
                 <value>
                     <fullName>Casual Dining - Chinese</fullName>
@@ -7041,9 +7041,9 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                     <label>Fine Dining - Western</label>
                 </value>
                 <value>
-                    <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                    <fullName>Fine Dining - Asian excl CH</fullName>
                     <default>false</default>
-                    <label>Fine Dining - Asian exclude Chinese</label>
+                    <label>Fine Dining - Asian excl CH</label>
                 </value>
                 <value>
                     <fullName>Fine Dining - Chinese</fullName>
@@ -7320,7 +7320,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Restaurant</controllingFieldValue>
-                <valueName>Casual Dining - Asian exclude Chinese</valueName>
+                <valueName>Casual Dining - Asian excl CH</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Restaurant</controllingFieldValue>
@@ -7332,7 +7332,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Restaurant</controllingFieldValue>
-                <valueName>Fine Dining - Asian exclude Chinese</valueName>
+                <valueName>Fine Dining - Asian excl CH</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Restaurant</controllingFieldValue>
@@ -8867,7 +8867,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -8923,7 +8923,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10311,7 +10311,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10367,7 +10367,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10440,6 +10440,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11381,7 +11385,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11437,7 +11441,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12825,7 +12829,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12881,7 +12885,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12954,6 +12958,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13895,7 +13903,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13951,7 +13959,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15339,7 +15347,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15395,7 +15403,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15468,6 +15476,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16409,7 +16421,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16465,7 +16477,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17853,7 +17865,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17909,7 +17921,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17982,6 +17994,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18923,7 +18939,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -18979,7 +18995,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -20367,7 +20383,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -20423,7 +20439,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -20496,6 +20512,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -21437,7 +21457,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -21493,7 +21513,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22881,7 +22901,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22937,7 +22957,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -23010,6 +23030,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -23951,7 +23975,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -24007,7 +24031,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25395,7 +25419,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25451,7 +25475,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25524,6 +25548,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -26465,7 +26493,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -26521,7 +26549,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -27909,7 +27937,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -27965,7 +27993,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28038,6 +28066,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -28979,7 +29011,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -29035,7 +29067,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -30423,7 +30455,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -30479,7 +30511,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -30552,6 +30584,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -31493,7 +31529,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -31549,7 +31585,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -32937,7 +32973,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                <fullName>Casual Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -32993,7 +33029,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                <fullName>Fine Dining - Asian excl CH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -33066,6 +33102,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -33349,9 +33389,23 @@ IF($Profile.Name = &quot;CN Sales&quot;, TRUE, FALSE),
   RecordType.DeveloperName = &quot;CN_Update_Account_Request&quot;,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   ISPICKVAL(New_CN_Account_Invoice_Type__c, &quot;General Invoice&quot;),
-  ISBLANK(New_CN_Account_Tax_Registration_No__c)
+  OR(
+    ISBLANK(CN_Account_Name__r.CN_Invoicing_Name_Bill_To_Party__c),
+    NOT(ISBLANK(New_CN_Account_Bank_Account__c)),
+    NOT(ISBLANK(New_CN_Account_Invoice_Address_and_Phone__c)),
+    IF(
+    	OR(ISPICKVAL(New_CN_Account_Payment_Terms__c, &quot;CIA&quot;),ISPICKVAL(New_CN_Account_Payment_Terms__c, &quot;D000&quot;)),
+    	FALSE,
+    	ISBLANK(TEXT(New_CN_Account_Reference_Day__c))
+    ),
+    ISBLANK(New_CN_Account_Tax_Registration_No__c),
+    ISBLANK(New_CN_Account_Invoicing_Address_EN__c)
+  )
 )</errorConditionFormula>
-        <errorMessage>Please fill in the tax no., if you select General invoice.</errorMessage>
+        <errorMessage>Please just fill in the following information, if you select Genernal invoice.
+Invoicing Name (Bill to party),
+Tax Registration No. ,
+Delivery Address(EN).</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Account_InvoiceType</fullName>
@@ -33393,7 +33447,8 @@ Reference Day</errorMessage>
     	FALSE,
     	ISBLANK(TEXT(New_CN_Account_Reference_Day__c))
     ),
-    ISBLANK( New_CN_Account_Tax_Registration_No__c )
+    ISBLANK( New_CN_Account_Tax_Registration_No__c ),
+    ISBLANK( New_CN_Account_Invoicing_Address_EN__c)
   )
 )</errorConditionFormula>
         <errorMessage>Please fill in the following information, if you select VAT invoice.
@@ -33401,7 +33456,8 @@ Invoicing Name (Bill to party),
 Tax Registration No.,
 Bank Account,
 Invoice Address and Phone,
-Reference Day.</errorMessage>
+Reference Day,
+Delivery Address (EN).</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Contact_BillToAddress</fullName>

@@ -4288,14 +4288,14 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>CN_Change_Request__c-CN Sinodis Account Change Request For Finance Layout</layout>
+        <recordType>CN_Change_Request__c.CN_Approved_Update_Account_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CN_Change_Request__c-CN Sinodis Account Change Request For Finance Layout</layout>
         <recordType>CN_Change_Request__c.CN_Update_Account_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CN_Change_Request__c-CN Sinodis Account Change Request Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CN_Change_Request__c-CN Sinodis Account Change Request Layout</layout>
-        <recordType>CN_Change_Request__c.CN_Approved_Update_Account_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CN_Change_Request__c-CN Sinodis New Contact Change Request Layout</layout>

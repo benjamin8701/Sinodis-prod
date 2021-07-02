@@ -1033,7 +1033,7 @@
         <name>CN_Invoicing_Address_CN__c</name>
     </fields>
     <fields>
-        <label><!-- Invoicing Address(EN) --></label>
+        <label><!-- Delivery Address(EN) --></label>
         <name>CN_Invoicing_Address_EN__c</name>
     </fields>
     <fields>
@@ -1077,8 +1077,8 @@
             <translation><!-- CIA-Payment in advance --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>D000-Payment in advance</masterLabel>
-            <translation><!-- D000-Payment in advance --></translation>
+            <masterLabel>D000-Cash on delivery</masterLabel>
+            <translation><!-- D000-Cash on delivery --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>D005-D05/5 days after delivery</masterLabel>
@@ -1298,8 +1298,8 @@
             <translation><!-- CIA-Payment in advance --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>D000-Payment in advance</masterLabel>
-            <translation><!-- D000-Payment in advance --></translation>
+            <masterLabel>D000-Cash on delivery</masterLabel>
+            <translation><!-- D000-Cash on delivery --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -2400,7 +2400,10 @@
         <name>CN_Check_CreditTermApplication</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Please fill in the tax no., if you select General Invoice. --></errorMessage>
+        <errorMessage><!-- Please just fill in the following information, if you select Genernal invoice.
+Invoicing Name (Bill to party),
+Tax Registration No. ,
+Delivery Address(EN). --></errorMessage>
         <name>CN_Check_General_InvoiceType</name>
     </validationRules>
     <validationRules>
@@ -2450,7 +2453,8 @@ Invoicing Name (Bill to party),
 Tax Registration No.,
 Bank Account,
 Invoice Address and Phone,
-Reference Day. --></errorMessage>
+Reference Day,
+Delivery Address (EN). --></errorMessage>
         <name>CN_Check_VAT_InvoiceType</name>
     </validationRules>
     <validationRules>

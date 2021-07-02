@@ -580,7 +580,7 @@
                     <fullName>D000</fullName>
                     <default>false</default>
                     <isActive>false</isActive>
-                    <label>D000-Payment in advance</label>
+                    <label>D000-Cash on delivery</label>
                 </value>
                 <value>
                     <fullName>D003-Pay immediately with Invoice</fullName>

@@ -303,8 +303,8 @@
             <translation><!-- CIA-Payment in advance --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>D000-Payment in advance</masterLabel>
-            <translation><!-- D000-Payment in advance --></translation>
+            <masterLabel>D000-Cash on delivery</masterLabel>
+            <translation><!-- D000-Cash on delivery --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>D003-Pay immediately with Invoice</masterLabel>
