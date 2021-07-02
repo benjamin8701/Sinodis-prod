@@ -102,6 +102,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
+                <field>CN_Account_Invoicing_Address_EN__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
                 <field>CN_Account_Potential_Volume_Market__c</field>
             </layoutItems>
             <layoutItems>
@@ -181,6 +185,10 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>New_CN_ShipTo_City_CN__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>New_CN_Account_Invoicing_Address_EN__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -310,10 +318,6 @@
                 <behavior>Readonly</behavior>
                 <field>CN_Account_Bank_Account__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Account_Invoicing_Address_EN__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -335,10 +339,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>New_CN_Account_Bank_Account__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>New_CN_Account_Invoicing_Address_EN__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
