@@ -296,7 +296,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Invoicing Address(EN) --></label>
+        <label><!-- Delivery Address(EN) --></label>
         <name>CN_Account_Invoicing_Address_EN__c</name>
     </fields>
     <fields>
@@ -361,8 +361,8 @@
             <translation><!-- CIA-Payment in advance --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>D000-Payment in advance</masterLabel>
-            <translation><!-- D000-Payment in advance --></translation>
+            <masterLabel>D000-Cash on delivery</masterLabel>
+            <translation><!-- D000-Cash on delivery --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>D003-Pay immediately with Invoice</masterLabel>
@@ -915,8 +915,8 @@
             <translation><!-- BAPA OEM --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Casual Dining - Asian exclude Chinese</masterLabel>
-            <translation><!-- Casual Dining - Asian exclude Chinese --></translation>
+            <masterLabel>Casual Dining - Asian excl CH</masterLabel>
+            <translation><!-- Casual Dining - Asian excl CH --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Casual Dining - Chinese</masterLabel>
@@ -971,8 +971,8 @@
             <translation><!-- Entertainment --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Fine Dining - Asian exclude Chinese</masterLabel>
-            <translation><!-- Fine Dining - Asian exclude Chinese --></translation>
+            <masterLabel>Fine Dining - Asian excl CH</masterLabel>
+            <translation><!-- Fine Dining - Asian excl CH --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Fine Dining - Chinese</masterLabel>
@@ -2530,7 +2530,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- New Invoicing Address(EN) --></label>
+        <label><!-- New Delivery Address(EN) --></label>
         <name>New_CN_Account_Invoicing_Address_EN__c</name>
     </fields>
     <fields>
@@ -2591,8 +2591,8 @@
             <translation><!-- CIA-Payment in advance --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>D000-Payment in advance</masterLabel>
-            <translation><!-- D000-Payment in advance --></translation>
+            <masterLabel>D000-Cash on delivery</masterLabel>
+            <translation><!-- D000-Cash on delivery --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>D003-Pay immediately with Invoice</masterLabel>
@@ -3146,8 +3146,8 @@
             <translation><!-- BAPA OEM --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Casual Dining - Asian exclude Chinese</masterLabel>
-            <translation><!-- Casual Dining - Asian exclude Chinese --></translation>
+            <masterLabel>Casual Dining - Asian excl CH</masterLabel>
+            <translation><!-- Casual Dining - Asian excl CH --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Casual Dining - Chinese</masterLabel>
@@ -3202,8 +3202,8 @@
             <translation><!-- Entertainment --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Fine Dining - Asian exclude Chinese</masterLabel>
-            <translation><!-- Fine Dining - Asian exclude Chinese --></translation>
+            <masterLabel>Fine Dining - Asian excl CH</masterLabel>
+            <translation><!-- Fine Dining - Asian excl CH --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Fine Dining - Chinese</masterLabel>
@@ -3809,7 +3809,10 @@
         <name>CN_Check_Account_Chain</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Please fill in the tax no., if you select General invoice. --></errorMessage>
+        <errorMessage><!-- Please just fill in the following information, if you select Genernal invoice.
+Invoicing Name (Bill to party),
+Tax Registration No. ,
+Delivery Address(EN). --></errorMessage>
         <name>CN_Check_Account_General_InvoiceType</name>
     </validationRules>
     <validationRules>
@@ -3827,7 +3830,8 @@ Invoicing Name (Bill to party),
 Tax Registration No.,
 Bank Account,
 Invoice Address and Phone,
-Reference Day. --></errorMessage>
+Reference Day,
+Delivery Address (EN). --></errorMessage>
         <name>CN_Check_Account_VAT_InvoiceType</name>
     </validationRules>
     <validationRules>
