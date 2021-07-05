@@ -145,6 +145,7 @@
     <types>
         <members>CN_Email_Folder</members>
         <members>CN_Email_Folder/CN_Account_Approval_Reminder</members>
+        <members>CN_Email_Folder/CN_Account_Assign_Failed_Notification</members>
         <members>CN_Email_Folder/CN_Account_Block_In_7_Days</members>
         <members>CN_Email_Folder/CN_Account_Blocked</members>
         <members>CN_Email_Folder/CN_Account_Initial_Submit_For_Approval</members>
@@ -154,6 +155,7 @@
         <members>CN_Email_Folder/CN_Account_Unblocked</members>
         <members>CN_Email_Folder/CN_CR_Approval</members>
         <members>CN_Email_Folder/CN_CR_Approval_Reminder</members>
+        <members>CN_Email_Folder/CN_CR_Assign_Failed_Notification</members>
         <members>CN_Email_Folder/CN_CR_Auto_Approval_Account_Notification</members>
         <members>CN_Email_Folder/CN_CR_Purchasing_Or_Billing_Contact_Synced</members>
         <members>CN_Email_Folder/CN_CR_Rejected</members>
