@@ -303,8 +303,8 @@
             <translation><!-- CIA-Payment in advance --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>D000-Cash on delivery</masterLabel>
-            <translation><!-- D000-Cash on delivery --></translation>
+            <masterLabel>D000-Payment in advance</masterLabel>
+            <translation><!-- D000-Payment in advance --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>D003-Pay immediately with Invoice</masterLabel>
@@ -465,6 +465,10 @@
     <fields>
         <label><!-- Total Amount With Tax --></label>
         <name>CN_Total_Amount_With_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Confirmed Value --></label>
+        <name>CN_Total_Confirmed_Value__c</name>
     </fields>
     <fields>
         <label><!-- Sales Order Number --></label>

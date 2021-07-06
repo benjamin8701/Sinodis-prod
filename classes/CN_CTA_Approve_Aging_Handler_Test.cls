@@ -55,7 +55,7 @@ private class CN_CTA_Approve_Aging_Handler_Test {
             acc.CN_Store_Name_EN__c = 'TestAccount';
             acc.CN_Store_Name_CN__c = 'TestAccount';
             acc.CN_Sales_District__c = '001';
-            acc.CN_Customer_Group__c = '01';
+            //acc.CN_Customer_Group__c = '01';
             acc.CN_Category__c = 'BAPA';
             acc.CN_Subcategory__c = 'Access Bakery';
             acc.CN_Province_CN__c = province.Id;
@@ -105,7 +105,7 @@ private class CN_CTA_Approve_Aging_Handler_Test {
             CN_Credit_Term_Application__c cta = new CN_Credit_Term_Application__c();
             cta.CN_Account__c = acc.Id;
             cta.CN_Company_Background__c = 'company background';
-            cta.CN_Nature_Of_Request__c = 'Regular Customer	';
+            cta.CN_Nature_Of_Request__c = 'Regular Customer ';
             cta.CN_Payment_Term_Negotiated__c = 'D005';
             cta.CN_Reference_Day__c = 'Delivery_Day';
             cta.CN_Credit_Limit_Incl_VAT__c = 113.00;

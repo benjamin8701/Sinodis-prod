@@ -463,6 +463,10 @@
         <name>CN_Total_Amount_With_Tax__c</name>
     </fields>
     <fields>
+        <label>确认金额</label>
+        <name>CN_Total_Confirmed_Value__c</name>
+    </fields>
+    <fields>
         <label>SAP销售订单编号</label>
         <name>CN_Up_Code__c</name>
     </fields>

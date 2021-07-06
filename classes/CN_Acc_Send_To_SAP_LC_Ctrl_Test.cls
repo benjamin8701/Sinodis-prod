@@ -62,7 +62,7 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
             acc.CN_Store_Name_EN__c = 'TestAccount';
             acc.CN_Store_Name_CN__c = 'TestAccount';
             acc.CN_Sales_District__c = '001';
-            acc.CN_Customer_Group__c = '01';
+           //acc.CN_Customer_Group__c = '01';
             acc.CN_Category__c = 'BAPA';
             acc.CN_Subcategory__c = 'Access Bakery';
             acc.CN_Province_CN__c = province.Id;
@@ -163,7 +163,7 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
             acc.CN_Store_Name_EN__c = 'TestAccount';
             acc.CN_Store_Name_CN__c = 'TestAccount';
             acc.CN_Sales_District__c = '001';
-            acc.CN_Customer_Group__c = '01';
+            //acc.CN_Customer_Group__c = '01';
             acc.CN_Category__c = 'BAPA';
             acc.CN_Subcategory__c = 'Access Bakery';
             acc.CN_Province_CN__c = province.Id;
@@ -244,7 +244,7 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
             acc.CN_Store_Name_EN__c = 'TestAccount';
             acc.CN_Store_Name_CN__c = 'TestAccount';
             acc.CN_Sales_District__c = '001';
-            acc.CN_Customer_Group__c = '01';
+            //acc.CN_Customer_Group__c = '01';
             acc.CN_Category__c = 'BAPA';
             acc.CN_Subcategory__c = 'Access Bakery';
             acc.CN_Province_CN__c = province.Id;
@@ -325,7 +325,7 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
             acc.CN_Store_Name_EN__c = 'TestAccount';
             acc.CN_Store_Name_CN__c = 'TestAccount';
             acc.CN_Sales_District__c = '001';
-            acc.CN_Customer_Group__c = '01';
+            //acc.CN_Customer_Group__c = '01';
             acc.CN_Category__c = 'BAPA';
             acc.CN_Subcategory__c = 'Access Bakery';
             acc.CN_Province_CN__c = province.Id;
@@ -406,7 +406,7 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
             acc.CN_Store_Name_EN__c = 'TestAccount';
             acc.CN_Store_Name_CN__c = 'TestAccount';
             acc.CN_Sales_District__c = '001';
-            acc.CN_Customer_Group__c = '01';
+            //acc.CN_Customer_Group__c = '01';
             acc.CN_Category__c = 'BAPA';
             acc.CN_Subcategory__c = 'Access Bakery';
             acc.CN_Province_CN__c = province.Id;

@@ -29,6 +29,10 @@ public without sharing class CN_CR_Generate_ShipTo_Handler implements Triggers.H
         if(idChangeRequestMap.size() > 0) {
             List<CN_Ship_to_Party__c> shipToList = new List<CN_Ship_to_Party__c>();
             Map<Id, CN_Ship_to_Party__c> stpMap = new Map<Id, CN_Ship_to_Party__c>();
+            //add file to new shipto  ----start
+            List<ContentDocumentLink> contentlinkNew = new List<ContentDocumentLink>();
+            Set<Id> stpSet = new Set<Id>();
+            //add file to new shipto  ----end
             shipToList = generateshipTos(idChangeRequestMap);
             if(shipToList.size() > 0) {
                 for(CN_Ship_to_Party__c stp: shipToList) {
@@ -48,7 +52,71 @@ public without sharing class CN_CR_Generate_ShipTo_Handler implements Triggers.H
                     }
                 }
                 populateExternalId(shipToList,idChangeRequestMap, stpSuccessIdSet);
+                //add file to new shipto  ----start
+                system.debug('shipToList++++'+shipToList);
+                /*if(shipToList.size() > 0){
+                    for(CN_Ship_to_Party__c stpl: shipToList){
+                        stpSet.add(stpl.CN_Change_Request__c);
+                    }
+                }*/
+                if(stpSuccessIdSet.size() > 0){
+                    Set<Id> stpSetNull = new Set<Id>();
+                    stpSetNull.add(null);
+                    List<CN_Ship_to_Party__c> shiptoidList = [select id,CN_Change_Request__c from CN_Ship_to_Party__c where id in: stpSuccessIdSet];
+                    system.debug('shiptoidList'+shiptoidList);
+                    if(shiptoidList.size() > 0 && shiptoidList != null){
+                        for(CN_Ship_to_Party__c csp:shiptoidList){
+                            stpSet.add(csp.CN_Change_Request__c);
+                        }
+                           
+                            system.debug('stpSet'+stpSet);
+                            system.debug('stpSetNull'+stpSetNull);
+                            system.debug('stpSet.size()'+stpSet.size());
+                            if(stpSet.size()>0 && !stpSet.equals(stpSetNull)){
+                                List<ContentDocumentLink> contentlinkold = [ select id,ContentDocumentId,LinkedEntityId from ContentDocumentlink where LinkedEntityId IN: stpSet ];
+                                system.debug('contentlinkold'+contentlinkold);
+                                //List<ContentDocumentLink> contentlinkold = [ select ContentDocumentId from ContentDocumentlink where LinkedEntityId IN: stpSet ];
+                                Map<Id, set<id>> conLinkMap = new Map<Id, set<id>>();
+                                if(contentlinkold.size() > 0 && contentlinkold != null){
+                                system.debug('contentlinkold++++');
+                                    for(ContentDocumentLink clo: contentlinkold){
+                                        if(conLinkMap.containskey(clo.LinkedEntityId)){
+                                            Set<Id> cdId = conLinkMap.get(clo.LinkedEntityId);
+                                            cdId.add(clo.ContentDocumentId);
+                                            conLinkMap.put(clo.LinkedEntityId,cdId);
+                                        }else {
+                                            conLinkMap.put(clo.LinkedEntityId, new Set<Id>{clo.ContentDocumentId});
+                                        }   
+                                    }
+                                    for (CN_Ship_to_Party__c shipToLink : shiptoidList) {
+                                    //if(stpSuccessIdSet.contains(shipToLink.id)) {
+                                        //List<Id> conDocLinkId = (List<Id>)conLinkMap.get(shipToLink.Id);
+                                        Set<Id> conDocLinkId = conLinkMap.get(shipToLink.CN_Change_Request__c);
+                                        system.debug('conDocLinkId'+conDocLinkId);
+                                        if(conDocLinkId.size() > 0 && !conDocLinkId.equals(stpSetNull) && conDocLinkId != null){
+                                            for(Id cdl:conDocLinkId){
+                                                ContentDocumentLink contentlink=new ContentDocumentLink();
+                                                contentlink.LinkedEntityId = shipToLink.id;
+                                                contentlink.contentdocumentid = cdl;
+                                                contentlink.ShareType = 'V';
+                                                contentlink.Visibility = 'AllUsers';
+                                                contentlinkNew.add(contentlink);
+                                            }
+                                        }
+                                    //}
+                                }
+                                if(contentlinkNew.size() > 0){
+                                    insert contentlinkNew;
+                                }
+                                }
+                                
+                            }
+                        }
+                }
+                //add file to new shipto  ----end
+                
             }
+            
             CN_CR_Generate_ShipTo_Handler.isTriggerRun = false;
         }
     }
