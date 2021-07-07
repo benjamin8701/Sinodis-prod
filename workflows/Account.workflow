@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
+        <fullName>CN_Account_Assign_Failed_notification</fullName>
+        <description>CN Account Assign Failed notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CN_Email_Folder/CN_Account_Assign_Failed_Notification</template>
+    </alerts>
+    <alerts>
         <fullName>CN_Account_Blocked_Notification</fullName>
         <description>CN Account Blocked Notification</description>
         <protected>false</protected>
@@ -450,6 +460,31 @@
             <timeLength>0</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CN_Account_Assign_Fail_Notification</fullName>
+        <actions>
+            <name>CN_Account_Assign_Failed_notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
+  ISPICKVAL(CN_Account_Status__c , &apos;Approved&apos;),
+  OR(
+    AND(  
+      ISCHANGED(CN_Sync_Status__c ),
+      ISPICKVAL(CN_Sync_Status__c , &apos;Success&apos;),
+      CONTAINS( CN_Sync_Error_Message__c, &quot;Assign Failed.&quot;) 
+    ),
+    AND(
+      ISPICKVAL(CN_Sync_Status__c , &apos;Success&apos;),
+      ISCHANGED( CN_Sync_Time__c ),
+      CONTAINS( CN_Sync_Error_Message__c, &quot;Assign Failed.&quot;) 
+    )
+  )
+)</formula>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>CN_Account_Blocked_Notification</fullName>

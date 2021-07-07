@@ -1016,7 +1016,7 @@
         <name>CN_Invoicing_Address_CN__c</name>
     </fields>
     <fields>
-        <label>开票地址（EN）</label>
+        <label>送货地址（EN）</label>
         <name>CN_Invoicing_Address_EN__c</name>
     </fields>
     <fields>
@@ -1060,8 +1060,8 @@
             <translation><!-- CIA-Payment in advance --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>D000-Payment in advance</masterLabel>
-            <translation><!-- D000-Payment in advance --></translation>
+            <masterLabel>D000-Cash on delivery</masterLabel>
+            <translation><!-- D000-Cash on delivery --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>D005-D05/5 days after delivery</masterLabel>
@@ -1258,6 +1258,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Parent UP Code --></label>
+        <name>CN_Parent_Up_Code__c</name>
+    </fields>
+    <fields>
         <label>付款银行账户</label>
         <name>CN_Payment_Bank_Account__c</name>
     </fields>
@@ -1277,8 +1281,8 @@
             <translation><!-- CIA-Payment in advance --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>D000-Payment in advance</masterLabel>
-            <translation><!-- D000-Payment in advance --></translation>
+            <masterLabel>D000-Cash on delivery</masterLabel>
+            <translation><!-- D000-Cash on delivery --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -2348,6 +2352,22 @@
         <name>CN_Acc_Prevent_Change_Status_In_Approve</name>
     </validationRules>
     <validationRules>
+        <errorMessage>您选择的业务部门无效。</errorMessage>
+        <name>CN_Account_Check_BU_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您选择的品牌无效。</errorMessage>
+        <name>CN_Account_Check_Brand_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您选择的集团无效。</errorMessage>
+        <name>CN_Account_Check_Group_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您选择的销售团队无效。</errorMessage>
+        <name>CN_Account_Check_ST_Vaild</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>不允许更改送达方。</errorMessage>
         <name>CN_Account_Prevent_Change_Owner</name>
     </validationRules>
@@ -2368,7 +2388,7 @@
         <name>CN_Check_CreditTermApplication</name>
     </validationRules>
     <validationRules>
-        <errorMessage>如果您需要开普通发票，请确保输入税务登记号。</errorMessage>
+        <errorMessage>如果您需要开普通发票，请确保只输入开票名称、税务登记号、送货地址（EN）。</errorMessage>
         <name>CN_Check_General_InvoiceType</name>
     </validationRules>
     <validationRules>
@@ -2408,7 +2428,7 @@
         <name>CN_Check_ShippingTelephone_Format</name>
     </validationRules>
     <validationRules>
-        <errorMessage>如果您需要开增值税发票，请确保输入以下信息：开票名称、税务登记号、银行账户、开票地址和电话（CN）、参考日。</errorMessage>
+        <errorMessage>如果您需要开增值税发票，请确保输入以下信息：开票名称、税务登记号、银行账户、开票地址和电话（CN）、参考日、送货地址（EN）。</errorMessage>
         <name>CN_Check_VAT_InvoiceType</name>
     </validationRules>
     <validationRules>

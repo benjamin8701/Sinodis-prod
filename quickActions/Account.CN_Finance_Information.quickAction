@@ -40,11 +40,6 @@
                 <field>CN_Invoicing_Address_and_Phone__c</field>
                 <uiBehavior>Edit</uiBehavior>
             </quickActionLayoutItems>
-            <quickActionLayoutItems>
-                <emptySpace>false</emptySpace>
-                <field>CN_Invoicing_Address_EN__c</field>
-                <uiBehavior>Required</uiBehavior>
-            </quickActionLayoutItems>
         </quickActionLayoutColumns>
         <quickActionLayoutColumns>
             <quickActionLayoutItems>

@@ -1,0 +1,18 @@
+这是提醒电子邮件。 客户分配失败。请联系系统管理员寻求进一步帮助。
+
+要查看客户信息，请单击链接：
+
+{!Account.Link}
+
+谢谢，
+Salesforce
+------------------------English Version Scroll Down------------------------
+
+This is reminder Email. Your account assigned fail. Please contact your system administrator for further assistance.
+
+To review the account information, please click the link: 
+
+{!Account.Link}
+
+Thank you,
+Salesforce

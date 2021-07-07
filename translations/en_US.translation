@@ -85,6 +85,58 @@
         <name>CN_Account_Wait_5_Mins</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_Brand_Name --></label>
+        <name>CN_Brand_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Brand_Retrieve_Success --></label>
+        <name>CN_Brand_Retrieve_Success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Brand_Retrieve_Title --></label>
+        <name>CN_Brand_Retrieve_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Brand_Synced_Prevent_Delete --></label>
+        <name>CN_Brand_Synced_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_BusinessUnit_Synced_Prevent_Delete --></label>
+        <name>CN_BusinessUnit_Synced_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Business_Unit_Code_Is_Blank --></label>
+        <name>CN_Business_Unit_Code_Is_Blank</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Business_Unit_Had_Synced --></label>
+        <name>CN_Business_Unit_Had_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Business_Unit_Name --></label>
+        <name>CN_Business_Unit_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Business_Unit_No_Permission --></label>
+        <name>CN_Business_Unit_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Business_Unit_Not_Found --></label>
+        <name>CN_Business_Unit_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Business_Unit_Retrieve_Title --></label>
+        <name>CN_Business_Unit_Retrieve_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Business_Unit_Send_Success_Msg --></label>
+        <name>CN_Business_Unit_Send_Success_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Business_Unit_Send_To_SAP --></label>
+        <name>CN_Business_Unit_Send_To_SAP</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_CR_AT_LEAST_ONE_FIELD_CHANGE --></label>
         <name>CN_CR_AT_LEAST_ONE_FIELD_CHANGE</name>
     </customLabels>
@@ -145,6 +197,30 @@
         <name>CN_Contact_Change_Request</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_CustomerHierarchy_Confirm_Msg --></label>
+        <name>CN_CustomerHierarchy_Confirm_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_CustomerHierarchy_Warning_Msg_Too_Frequency --></label>
+        <name>CN_CustomerHierarchy_Warning_Msg_Too_Frequency</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Group_Name --></label>
+        <name>CN_Group_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Group_Retrieve_Success --></label>
+        <name>CN_Group_Retrieve_Success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Group_Retrieve_Title --></label>
+        <name>CN_Group_Retrieve_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Group_Synced_Prevent_Delete --></label>
+        <name>CN_Group_Synced_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_Not_Found_BusinessUnit --></label>
         <name>CN_Not_Found_BusinessUnit</name>
     </customLabels>
@@ -181,6 +257,10 @@
         <name>CN_PleaseConfirm_Value_ReadyForApproval</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_SalesTeam_Synced_Prevent_Delete --></label>
+        <name>CN_SalesTeam_Synced_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_Sales_Order_Confirm_Msg --></label>
         <name>CN_Sales_Order_Confirm_Msg</name>
     </customLabels>
@@ -199,6 +279,18 @@
     <customLabels>
         <label><!-- CN_Sales_Order_Warning_Msg_Too_Frequency --></label>
         <name>CN_Sales_Order_Warning_Msg_Too_Frequency</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Sales_Team_Name --></label>
+        <name>CN_Sales_Team_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Sales_Team_Retrieve_Success --></label>
+        <name>CN_Sales_Team_Retrieve_Success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Sales_Team_Retrieve_Title --></label>
+        <name>CN_Sales_Team_Retrieve_Title</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_ShipTo_Account_Approved_Or_Has_Synced --></label>

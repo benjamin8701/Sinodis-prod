@@ -292,7 +292,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label>开票地址（EN）</label>
+        <label>送货地址（EN）</label>
         <name>CN_Account_Invoicing_Address_EN__c</name>
     </fields>
     <fields>
@@ -357,8 +357,8 @@
             <translation><!-- CIA-Payment in advance --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>D000-Payment in advance</masterLabel>
-            <translation><!-- D000-Payment in advance --></translation>
+            <masterLabel>D000-Cash on delivery</masterLabel>
+            <translation><!-- D000-Cash on delivery --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>D003-Pay immediately with Invoice</masterLabel>
@@ -911,8 +911,8 @@
             <translation><!-- BAPA OEM --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Casual Dining - Asian exclude Chinese</masterLabel>
-            <translation><!-- Casual Dining - Asian exclude Chinese --></translation>
+            <masterLabel>Casual Dining - Asian excl CH</masterLabel>
+            <translation><!-- Casual Dining - Asian excl CH --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Casual Dining - Chinese</masterLabel>
@@ -967,8 +967,8 @@
             <translation><!-- Entertainment --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Fine Dining - Asian exclude Chinese</masterLabel>
-            <translation><!-- Fine Dining - Asian exclude Chinese --></translation>
+            <masterLabel>Fine Dining - Asian excl CH</masterLabel>
+            <translation><!-- Fine Dining - Asian excl CH --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Fine Dining - Chinese</masterLabel>
@@ -2526,7 +2526,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label>新开票地址（EN）</label>
+        <label>新送货地址（EN）</label>
         <name>New_CN_Account_Invoicing_Address_EN__c</name>
     </fields>
     <fields>
@@ -2587,8 +2587,8 @@
             <translation><!-- CIA-Payment in advance --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>D000-Payment in advance</masterLabel>
-            <translation><!-- D000-Payment in advance --></translation>
+            <masterLabel>D000-Cash on delivery</masterLabel>
+            <translation><!-- D000-Cash on delivery --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>D003-Pay immediately with Invoice</masterLabel>
@@ -3142,8 +3142,8 @@
             <translation><!-- BAPA OEM --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Casual Dining - Asian exclude Chinese</masterLabel>
-            <translation><!-- Casual Dining - Asian exclude Chinese --></translation>
+            <masterLabel>Casual Dining - Asian excl CH</masterLabel>
+            <translation><!-- Casual Dining - Asian excl CH --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Casual Dining - Chinese</masterLabel>
@@ -3198,8 +3198,8 @@
             <translation><!-- Entertainment --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Fine Dining - Asian exclude Chinese</masterLabel>
-            <translation><!-- Fine Dining - Asian exclude Chinese --></translation>
+            <masterLabel>Fine Dining - Asian excl CH</masterLabel>
+            <translation><!-- Fine Dining - Asian excl CH --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Fine Dining - Chinese</masterLabel>
@@ -3799,6 +3799,22 @@
         <name>CN_Update_Ship_To_Request</name>
     </recordTypes>
     <validationRules>
+        <errorMessage>您选择的业务部门无效。</errorMessage>
+        <name>CN_CR_Check_BU_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您选择的品牌无效。</errorMessage>
+        <name>CN_CR_Check_Brand_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您选择的集团无效。</errorMessage>
+        <name>CN_CR_Check_Group_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您选择的销售团队无效。</errorMessage>
+        <name>CN_CR_Check_ST_Vaild</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>不允许更改送达方。</errorMessage>
         <name>CN_CR_Prevent_Change_Owner</name>
     </validationRules>
@@ -3807,7 +3823,7 @@
         <name>CN_Check_Account_Chain</name>
     </validationRules>
     <validationRules>
-        <errorMessage>如果您需要开普通发票，请确保输入税务登记号。</errorMessage>
+        <errorMessage>如果您需要开普通发票，请确保只输入开票名称、税务登记号、送货地址（EN）。</errorMessage>
         <name>CN_Check_Account_General_InvoiceType</name>
     </validationRules>
     <validationRules>
@@ -3815,7 +3831,7 @@
         <name>CN_Check_Account_InvoiceType</name>
     </validationRules>
     <validationRules>
-        <errorMessage>如果您需要开增值税发票，请确保输入以下信息：开票名称、税务登记号、银行账户、开票地址和电话（CN）、参考日。</errorMessage>
+        <errorMessage>如果您需要开增值税发票，请确保输入以下信息：开票名称、税务登记号、银行账户、开票地址和电话（CN）、参考日、送货地址（EN）。</errorMessage>
         <name>CN_Check_Account_VAT_InvoiceType</name>
     </validationRules>
     <validationRules>

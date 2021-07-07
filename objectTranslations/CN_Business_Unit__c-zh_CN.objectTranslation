@@ -5,8 +5,48 @@
         <value>业务部门</value>
     </caseValues>
     <fields>
-        <label><!-- Business Unit Code --></label>
+        <label>业务部门编码</label>
         <name>CN_Business_Unit_Code__c</name>
+    </fields>
+    <fields>
+        <label>城市</label>
+        <name>CN_City_API__c</name>
+    </fields>
+    <fields>
+        <label>已激活？</label>
+        <name>CN_Is_Activated__c</name>
+    </fields>
+    <fields>
+        <label>有效?</label>
+        <name>CN_Is_Active__c</name>
+    </fields>
+    <fields>
+        <label>同步错误消息</label>
+        <name>CN_Sync_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label>同步状态</label>
+        <name>CN_Sync_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>同步时间</label>
+        <name>CN_Sync_Time__c</name>
     </fields>
     <layouts>
         <layout>Business Unit Layout</layout>
@@ -14,10 +54,19 @@
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
+        <sections>
+            <label><!-- SAP Creation Information --></label>
+            <section>SAP Creation Information</section>
+        </sections>
     </layouts>
-    <nameFieldLabel><!-- Business Unit Name --></nameFieldLabel>
+    <nameFieldLabel>业务部门名称</nameFieldLabel>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>发送到SAP</label>
+        <name>CN_BU_Send</name>
+    </quickActions>
     <recordTypes>
-        <label><!-- CN Business Unit --></label>
+        <label>业务部门</label>
         <name>CN_Business_Unit</name>
     </recordTypes>
 </CustomObjectTranslation>
