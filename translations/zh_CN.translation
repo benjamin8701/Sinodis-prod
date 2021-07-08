@@ -113,6 +113,10 @@
         <name>CN_CR_No_Permission</name>
     </customLabels>
     <customLabels>
+        <label>这个变更申请没有被审批通过！请在审批通过后再将此变更申请发送到SAP。</label>
+        <name>CN_CR_Not_Approved</name>
+    </customLabels>
+    <customLabels>
         <label>没有找到变更申请</label>
         <name>CN_CR_Not_Found</name>
     </customLabels>

@@ -1003,6 +1003,14 @@
         <label>发票类型</label>
         <name>CN_Invoice_Type__c</name>
         <picklistValues>
+            <masterLabel>Electronic General Invoice</masterLabel>
+            <translation><!-- Electronic General Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronic VAT Invoice</masterLabel>
+            <translation><!-- Electronic VAT Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>General Invoice</masterLabel>
             <translation><!-- General Invoice --></translation>
         </picklistValues>
@@ -2368,7 +2376,7 @@
         <name>CN_Check_CreditTermApplication</name>
     </validationRules>
     <validationRules>
-        <errorMessage>如果您需要开普通发票，请确保只输入开票名称、税务登记号、送货地址（EN）。</errorMessage>
+        <errorMessage>如果您需要开普通发票或电子普通发票，请确保只输入开票名称、税务登记号、送货地址（EN）。</errorMessage>
         <name>CN_Check_General_InvoiceType</name>
     </validationRules>
     <validationRules>
@@ -2408,7 +2416,7 @@
         <name>CN_Check_ShippingTelephone_Format</name>
     </validationRules>
     <validationRules>
-        <errorMessage>如果您需要开增值税发票，请确保输入以下信息：开票名称、税务登记号、银行账户、开票地址和电话（CN）、参考日、送货地址（EN）。</errorMessage>
+        <errorMessage>如果您需要开增值税发票或电子增值税发票，请确保输入以下信息：开票名称、税务登记号、银行账户、开票地址和电话（CN）、参考日、送货地址（EN）。</errorMessage>
         <name>CN_Check_VAT_InvoiceType</name>
     </validationRules>
     <validationRules>

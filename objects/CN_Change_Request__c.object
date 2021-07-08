@@ -1022,6 +1022,16 @@
                     <label>General Invoice</label>
                 </value>
                 <value>
+                    <fullName>Electronic General Invoice</fullName>
+                    <default>false</default>
+                    <label>Electronic General Invoice</label>
+                </value>
+                <value>
+                    <fullName>Electronic VAT Invoice</fullName>
+                    <default>false</default>
+                    <label>Electronic VAT Invoice</label>
+                </value>
+                <value>
                     <fullName>No need invoice</fullName>
                     <default>false</default>
                     <isActive>false</isActive>
@@ -5927,6 +5937,16 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                     <label>General Invoice</label>
                 </value>
                 <value>
+                    <fullName>Electronic General Invoice</fullName>
+                    <default>false</default>
+                    <label>Electronic General Invoice</label>
+                </value>
+                <value>
+                    <fullName>Electronic VAT Invoice</fullName>
+                    <default>false</default>
+                    <label>Electronic VAT Invoice</label>
+                </value>
+                <value>
                     <fullName>No need invoice</fullName>
                     <default>false</default>
                     <isActive>false</isActive>
@@ -8325,6 +8345,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -9768,6 +9796,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
+            <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
@@ -10843,6 +10879,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -12286,6 +12330,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
+            <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
@@ -13361,6 +13413,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -14804,6 +14864,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
+            <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
@@ -15879,6 +15947,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -17322,6 +17398,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
+            <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
@@ -18397,6 +18481,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -19840,6 +19932,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
+            <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
@@ -20915,6 +21015,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -22358,6 +22466,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
+            <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
@@ -23433,6 +23549,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -24876,6 +25000,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
+            <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
@@ -25951,6 +26083,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -27394,6 +27534,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
+            <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
@@ -28469,6 +28617,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -29912,6 +30068,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
+            <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
@@ -30987,6 +31151,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -32431,6 +32603,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -33315,7 +33495,10 @@ IF($Profile.Name = &quot;CN Sales&quot;, TRUE, FALSE),
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   RecordType.DeveloperName = &quot;CN_Update_Account_Request&quot;,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  ISPICKVAL(New_CN_Account_Invoice_Type__c, &quot;General Invoice&quot;),
+  OR(
+    ISPICKVAL(New_CN_Account_Invoice_Type__c, &quot;General Invoice&quot;),
+    ISPICKVAL(New_CN_Account_Invoice_Type__c, &quot;Electronic General Invoice&quot;)
+  ),
   OR(
     ISBLANK(CN_Account_Name__r.CN_Invoicing_Name_Bill_To_Party__c),
     NOT(ISBLANK(New_CN_Account_Bank_Account__c)),
@@ -33329,7 +33512,7 @@ IF($Profile.Name = &quot;CN Sales&quot;, TRUE, FALSE),
     ISBLANK(New_CN_Account_Invoicing_Address_EN__c)
   )
 )</errorConditionFormula>
-        <errorMessage>Please just fill in the following information, if you select Genernal invoice.
+        <errorMessage>Please just fill in the following information, if you select Genernal invoice or Electronic General invoice.
 Invoicing Name (Bill to party),
 Tax Registration No. ,
 Delivery Address(EN).</errorMessage>
@@ -33364,7 +33547,10 @@ Reference Day</errorMessage>
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   RecordType.DeveloperName = &quot;CN_Update_Account_Request&quot;,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  ISPICKVAL(New_CN_Account_Invoice_Type__c, &quot;VAT Invoice&quot;),
+  OR(
+    ISPICKVAL(New_CN_Account_Invoice_Type__c, &quot;VAT Invoice&quot;),
+    ISPICKVAL(New_CN_Account_Invoice_Type__c, &quot;Electronic VAT Invoice&quot;)
+  ),
   OR(
     ISBLANK(CN_Account_Name__r.CN_Invoicing_Name_Bill_To_Party__c),
     ISBLANK(New_CN_Account_Bank_Account__c),
@@ -33378,7 +33564,7 @@ Reference Day</errorMessage>
     ISBLANK( New_CN_Account_Invoicing_Address_EN__c)
   )
 )</errorConditionFormula>
-        <errorMessage>Please fill in the following information, if you select VAT invoice.
+        <errorMessage>Please fill in the following information, if you select VAT invoice or Electronic VAT invoice.
 Invoicing Name (Bill to party),
 Tax Registration No.,
 Bank Account,

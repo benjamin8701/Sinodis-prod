@@ -2087,6 +2087,16 @@ IF(
                     <label>General Invoice</label>
                 </value>
                 <value>
+                    <fullName>Electronic General Invoice</fullName>
+                    <default>false</default>
+                    <label>Electronic General Invoice</label>
+                </value>
+                <value>
+                    <fullName>Electronic VAT Invoice</fullName>
+                    <default>false</default>
+                    <label>Electronic VAT Invoice</label>
+                </value>
+                <value>
                     <fullName>No need Invoice</fullName>
                     <default>false</default>
                     <isActive>false</isActive>
@@ -5638,6 +5648,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -7553,6 +7571,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>CN_Invoice_Type__c</picklist>
+            <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
@@ -9470,6 +9496,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -11373,6 +11407,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>CN_Invoice_Type__c</picklist>
+            <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
@@ -13290,6 +13332,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -14536,7 +14586,10 @@ ISCHANGED(  OwnerId )
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   OR(RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,RecordType.DeveloperName = &apos;CN_New_Direct&apos;),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(
   ISPICKVAL(CN_Invoice_Type__c, &quot;General Invoice&quot;),
+    ISPICKVAL(CN_Invoice_Type__c, &quot;Electronic General Invoice&quot;)
+  ),
   OR(
     ISBLANK(CN_Invoicing_Name_Bill_To_Party__c),
     NOT(ISBLANK(CN_Bank_Account__c)),
@@ -14550,7 +14603,7 @@ ISCHANGED(  OwnerId )
     ISBLANK(CN_Invoicing_Address_EN__c)
   )
 )</errorConditionFormula>
-        <errorMessage>Please just fill in the following information, if you select Genernal invoice.
+        <errorMessage>Please just fill in the following information, if you select Genernal invoice or Electronic General invoice.
 Invoicing Name (Bill to party),
 Tax Registration No. ,
 Delivery Address(EN).</errorMessage>
@@ -14706,7 +14759,10 @@ Reference Day</errorMessage>
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   OR(RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,RecordType.DeveloperName = &apos;CN_New_Direct&apos;),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(
   ISPICKVAL(CN_Invoice_Type__c, &quot;VAT Invoice&quot;),
+    ISPICKVAL(CN_Invoice_Type__c, &quot;Electronic VAT Invoice&quot;)
+  ),
   OR(
     ISBLANK(CN_Invoicing_Name_Bill_To_Party__c),
     ISBLANK(CN_Bank_Account__c),
@@ -14720,7 +14776,7 @@ Reference Day</errorMessage>
     ISBLANK(CN_Invoicing_Address_EN__c)
   )
 )</errorConditionFormula>
-        <errorMessage>Please fill in the following information, if you select VAT invoice.
+        <errorMessage>Please fill in the following information, if you select VAT invoice or Electronic VAT Invoice.
 Invoicing Name (Bill to party),
 Tax Registration No.,
 Bank Account,
