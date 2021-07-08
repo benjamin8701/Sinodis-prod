@@ -52,6 +52,7 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
         cr.New_CN_Contact_Mobile__c = '15755555551';
         cr.New_CN_Contact_Billing_To_Address__c = 'CR Bill to Address';
         cr.CN_Is_Generate_From_Action__c = true;
+        cr.CN_Change_Request_Status__c = 'Approved';
         insert cr;
 
         Test.startTest();
@@ -118,6 +119,7 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
         cr.New_CN_Contact_Mobile__c = '15755555551';
         cr.New_CN_Contact_Billing_To_Address__c = 'CR Bill to Address';
         cr.CN_Is_Generate_From_Action__c = true;
+        cr.CN_Change_Request_Status__c = 'Approved';
         insert cr;
 
         Test.startTest();
@@ -164,6 +166,7 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
         cr.New_CN_Contact_Mobile__c = '15755555551';
         cr.New_CN_Contact_Billing_To_Address__c = 'CR Bill to Address';
         cr.CN_Is_Generate_From_Action__c = true;
+        cr.CN_Change_Request_Status__c = 'Approved';
         insert cr;
 
         Test.startTest();
@@ -210,6 +213,7 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
         cr.New_CN_Contact_Mobile__c = '15755555551';
         cr.New_CN_Contact_Billing_To_Address__c = 'CR Bill to Address';
         cr.CN_Is_Generate_From_Action__c = true;
+        cr.CN_Change_Request_Status__c = 'Approved';
         insert cr;
 
         Test.startTest();
@@ -256,6 +260,7 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
         cr.New_CN_Contact_Mobile__c = '15755555551';
         cr.New_CN_Contact_Billing_To_Address__c = 'CR Bill to Address';
         cr.CN_Is_Generate_From_Action__c = true;
+        cr.CN_Change_Request_Status__c = 'Approved';
         insert cr;
 
         Test.startTest();
