@@ -1126,6 +1126,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Parent UP Code --></label>
+        <name>CN_Parent_Up_Code__c</name>
+    </fields>
+    <fields>
         <label>付款银行账户</label>
         <name>CN_Payment_Bank_Account__c</name>
     </fields>
@@ -1189,6 +1193,10 @@
         <label>省（CN）</label>
         <name>CN_Province_CN__c</name>
         <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>省（EN）</label>
+        <name>CN_Province_EN_UI__c</name>
     </fields>
     <fields>
         <label>省（EN）</label>
@@ -2214,6 +2222,22 @@
     <validationRules>
         <errorMessage>不允许在审批的过程中更新状态。</errorMessage>
         <name>CN_Acc_Prevent_Change_Status_In_Approve</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您选择的业务部门无效。</errorMessage>
+        <name>CN_Account_Check_BU_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您选择的品牌无效。</errorMessage>
+        <name>CN_Account_Check_Brand_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您选择的集团无效。</errorMessage>
+        <name>CN_Account_Check_Group_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您选择的销售团队无效。</errorMessage>
+        <name>CN_Account_Check_ST_Vaild</name>
     </validationRules>
     <validationRules>
         <errorMessage>不允许更改送达方。</errorMessage>

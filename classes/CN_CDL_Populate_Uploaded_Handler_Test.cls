@@ -63,8 +63,8 @@ private class CN_CDL_Populate_Uploaded_Handler_Test {
             acc.CN_Invoicing_Name_Bill_To_Party__c = 'D000';
             acc.CN_Tax_Registration_No__c = '10000000';
             acc.CN_Invoice_Type__c = 'General Invoice';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
+            acc.CN_Invoicing_Address_EN__c = 'ABCDEF';
+            acc.CN_Reference_Day__c = 'Delivery_Day';
             insert acc;
 
             CN_Document__c doc_b = new CN_Document__c();

@@ -37,6 +37,8 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.Sales_Order_Update_Endpoint__c = 'http://127.0.0.1/SO/200';
         talendSetting.Sanbox_Change_Request_Endpoint__c = 'http://127.0.0.1/CR/200';
         talendSetting.Sanbox_Sales_Order_Update_Endpoint__c = 'http://127.0.0.1/SO/200';
+        talendSetting.Customer_Hierarchy_Endpoint__c = 'http://127.0.0.1/CH/404';
+        talendSetting.Sandbox_Customer_Hierarchy_Endpoint__c = 'http://127.0.0.1/CH/404';
         talendSetting.Sandbox_Password__c = 'password';
         talendSetting.Sandbox_Send_To_Account_Endpoint__c = 'http://127.0.0.1/ACC/200';
         talendSetting.Sandbox_User_Name__c = 'Name';
@@ -73,8 +75,8 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
             acc.CN_Invoicing_Name_Bill_To_Party__c = 'D000';
             acc.CN_Tax_Registration_No__c = '10000000';
             acc.CN_Invoice_Type__c = 'General Invoice';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
+            acc.CN_Invoicing_Address_EN__c = 'ABCDEF';
+            acc.CN_Reference_Day__c = 'Delivery_Day';
             acc.CN_Business_Unit_UI__c = businessUnit.Id;
             acc.CN_Sales_Team_UI__c = salesTeam.Id;
             acc.CN_Customer_Code__c = 'TestAccount';
@@ -138,6 +140,8 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.Sales_Order_Update_Endpoint__c = 'http://127.0.0.1/SO/500';
         talendSetting.Sanbox_Change_Request_Endpoint__c = 'http://127.0.0.1/CR/500';
         talendSetting.Sanbox_Sales_Order_Update_Endpoint__c = 'http://127.0.0.1/SO/500';
+        talendSetting.Customer_Hierarchy_Endpoint__c = 'http://127.0.0.1/CH/404';
+        talendSetting.Sandbox_Customer_Hierarchy_Endpoint__c = 'http://127.0.0.1/CH/404';
         talendSetting.Sandbox_Password__c = 'password';
         talendSetting.Sandbox_Send_To_Account_Endpoint__c = 'http://127.0.0.1/ACC/500';
         talendSetting.Sandbox_User_Name__c = 'Name';
@@ -174,8 +178,8 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
             acc.CN_Invoicing_Name_Bill_To_Party__c = 'D000';
             acc.CN_Tax_Registration_No__c = '10000000';
             acc.CN_Invoice_Type__c = 'General Invoice';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
+            acc.CN_Invoicing_Address_EN__c = 'ABCDEF';
+            acc.CN_Reference_Day__c = 'Delivery_Day';
             acc.CN_Business_Unit_UI__c = businessUnit.Id;
             acc.CN_Sales_Team_UI__c = salesTeam.Id;
             acc.CN_Customer_Code__c = 'TestAccount';
@@ -219,6 +223,8 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.Sales_Order_Update_Endpoint__c = 'http://127.0.0.1/SO/400';
         talendSetting.Sanbox_Change_Request_Endpoint__c = 'http://127.0.0.1/CR/400';
         talendSetting.Sanbox_Sales_Order_Update_Endpoint__c = 'http://127.0.0.1/SO/400';
+        talendSetting.Customer_Hierarchy_Endpoint__c = 'http://127.0.0.1/CH/404';
+        talendSetting.Sandbox_Customer_Hierarchy_Endpoint__c = 'http://127.0.0.1/CH/404';
         talendSetting.Sandbox_Password__c = 'password';
         talendSetting.Sandbox_Send_To_Account_Endpoint__c = 'http://127.0.0.1/ACC/400';
         talendSetting.Sandbox_User_Name__c = 'Name';
@@ -255,8 +261,8 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
             acc.CN_Invoicing_Name_Bill_To_Party__c = 'D000';
             acc.CN_Tax_Registration_No__c = '10000000';
             acc.CN_Invoice_Type__c = 'General Invoice';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
+            acc.CN_Invoicing_Address_EN__c = 'ABCDEF';
+            acc.CN_Reference_Day__c = 'Delivery_Day';
             acc.CN_Business_Unit_UI__c = businessUnit.Id;
             acc.CN_Sales_Team_UI__c = salesTeam.Id;
             acc.CN_Customer_Code__c = 'TestAccount';
@@ -300,6 +306,8 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.Sales_Order_Update_Endpoint__c = 'http://127.0.0.1/SO/401';
         talendSetting.Sanbox_Change_Request_Endpoint__c = 'http://127.0.0.1/CR/401';
         talendSetting.Sanbox_Sales_Order_Update_Endpoint__c = 'http://127.0.0.1/SO/401';
+        talendSetting.Customer_Hierarchy_Endpoint__c = 'http://127.0.0.1/CH/404';
+        talendSetting.Sandbox_Customer_Hierarchy_Endpoint__c = 'http://127.0.0.1/CH/404';
         talendSetting.Sandbox_Password__c = 'password';
         talendSetting.Sandbox_Send_To_Account_Endpoint__c = 'http://127.0.0.1/ACC/401';
         talendSetting.Sandbox_User_Name__c = 'Name';
@@ -336,8 +344,8 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
             acc.CN_Invoicing_Name_Bill_To_Party__c = 'D000';
             acc.CN_Tax_Registration_No__c = '10000000';
             acc.CN_Invoice_Type__c = 'General Invoice';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
+            acc.CN_Invoicing_Address_EN__c = 'ABCDEF';
+            acc.CN_Reference_Day__c = 'Delivery_Day';
             acc.CN_Business_Unit_UI__c = businessUnit.Id;
             acc.CN_Sales_Team_UI__c = salesTeam.Id;
             acc.CN_Customer_Code__c = 'TestAccount';
@@ -381,6 +389,8 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.Sales_Order_Update_Endpoint__c = 'http://127.0.0.1/SO/404';
         talendSetting.Sanbox_Change_Request_Endpoint__c = 'http://127.0.0.1/CR/404';
         talendSetting.Sanbox_Sales_Order_Update_Endpoint__c = 'http://127.0.0.1/SO/404';
+        talendSetting.Customer_Hierarchy_Endpoint__c = 'http://127.0.0.1/CH/404';
+        talendSetting.Sandbox_Customer_Hierarchy_Endpoint__c = 'http://127.0.0.1/CH/404';
         talendSetting.Sandbox_Password__c = 'password';
         talendSetting.Sandbox_Send_To_Account_Endpoint__c = 'http://127.0.0.1/ACC/404';
         talendSetting.Sandbox_User_Name__c = 'Name';
@@ -417,8 +427,8 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
             acc.CN_Invoicing_Name_Bill_To_Party__c = 'D000';
             acc.CN_Tax_Registration_No__c = '10000000';
             acc.CN_Invoice_Type__c = 'General Invoice';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
+            acc.CN_Invoicing_Address_EN__c = 'ABCDEF';
+            acc.CN_Reference_Day__c = 'Delivery_Day';
             acc.CN_Business_Unit_UI__c = businessUnit.Id;
             acc.CN_Sales_Team_UI__c = salesTeam.Id;
             acc.CN_Customer_Code__c = 'TestAccount';

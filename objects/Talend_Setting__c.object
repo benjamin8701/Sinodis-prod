@@ -11,6 +11,14 @@
         <type>Url</type>
     </fields>
     <fields>
+        <fullName>Customer_Hierarchy_Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Hierarchy Endpoint</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
         <fullName>Password__c</fullName>
         <externalId>false</externalId>
         <label>Password</label>
@@ -40,6 +48,14 @@
         <fullName>Sanbox_Sales_Order_Update_Endpoint__c</fullName>
         <externalId>false</externalId>
         <label>Sanbox Sales Order Update Endpoint</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Sandbox_Customer_Hierarchy_Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <label>Sandbox Customer Hierarchy Endpoint</label>
         <required>true</required>
         <trackTrending>false</trackTrending>
         <type>Url</type>

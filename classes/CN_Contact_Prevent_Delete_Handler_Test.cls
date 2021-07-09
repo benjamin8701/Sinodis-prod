@@ -64,8 +64,8 @@ private class CN_Contact_Prevent_Delete_Handler_Test {
             acc.CN_Invoicing_Name_Bill_To_Party__c = 'D000';
             acc.CN_Tax_Registration_No__c = '10000000';
             acc.CN_Invoice_Type__c = 'General Invoice';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
+            acc.CN_Invoicing_Address_EN__c = 'ABCDEF';
+            acc.CN_Reference_Day__c = 'Delivery_Day';
             acc.CN_Sync_Status__c  = Constants.CN_ACCOUNT_SYNC_STATUS_SUCCESS;
             acc.CN_Account_Status__c = 'New';
             acc.CN_Business_Unit_UI__c = businessUnit.Id;

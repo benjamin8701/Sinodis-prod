@@ -70,8 +70,8 @@ private class CN_CR_Check_Fields_Change_Handler_Test {
             acc.CN_Invoicing_Name_Bill_To_Party__c = 'D000';
             acc.CN_Tax_Registration_No__c = '10000000';
             acc.CN_Invoice_Type__c = 'General Invoice';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
-            acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
+            acc.CN_Invoicing_Address_EN__c = 'ABCDEF';
+            acc.CN_Reference_Day__c = 'Delivery_Day';
             acc.CN_Sync_Status__c  = Constants.CN_ACCOUNT_SYNC_STATUS_SUCCESS;
             acc.CN_Account_Status__c = 'New';
             acc.CN_Business_Unit_UI__c = businessUnit.Id;
@@ -94,10 +94,10 @@ private class CN_CR_Check_Fields_Change_Handler_Test {
             acc_second.CN_Delivery_Plant__c = 'P011';
             acc_second.CN_Payment_Terms__c = 'D000';
             acc_second.CN_Invoicing_Name_Bill_To_Party__c = 'D000';
-            acc_second.CN_Tax_Registration_No__c = '10000011';
+            acc_second.CN_Tax_Registration_No__c = '10000001';
             acc_second.CN_Invoice_Type__c = 'General Invoice';
-            acc_second.CN_Invoicing_Address_and_Phone__c = 'ABC';
-            acc_second.CN_Invoicing_Address_and_Phone__c = 'ABC';
+            acc_second.CN_Invoicing_Address_EN__c = 'ABCDEF';
+            acc_second.CN_Reference_Day__c = 'Delivery_Day';
             acc_second.CN_Sync_Status__c  = Constants.CN_ACCOUNT_SYNC_STATUS_SUCCESS;
             acc_second.CN_Account_Status__c = 'New';
             acc_second.CN_Business_Unit_UI__c = businessUnit.Id;

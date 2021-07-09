@@ -5451,8 +5451,8 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <externalId>false</externalId>
         <label>New Account Brand</label>
         <lookupFilter>
-            <active>false</active>
-            <booleanFilter>1 OR 2</booleanFilter>
+            <active>true</active>
+            <booleanFilter>2 OR (1 AND 3)</booleanFilter>
             <filterItems>
                 <field>CN_Brand__c.CN_Group__c</field>
                 <operation>equals</operation>
@@ -5463,7 +5463,12 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <operation>equals</operation>
                 <value>True</value>
             </filterItems>
-            <isOptional>false</isOptional>
+            <filterItems>
+                <field>CN_Brand__c.CN_Is_Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>true</isOptional>
         </lookupFilter>
         <referenceTo>CN_Brand__c</referenceTo>
         <relationshipLabel>Change Requests (New Brand)</relationshipLabel>
@@ -5867,8 +5872,8 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <externalId>false</externalId>
         <label>New Account Group Name</label>
         <lookupFilter>
-            <active>false</active>
-            <booleanFilter>1 OR 2</booleanFilter>
+            <active>true</active>
+            <booleanFilter>2 OR (1 AND 3)</booleanFilter>
             <filterItems>
                 <field>CN_Group__c.CN_Sales_Team__c</field>
                 <operation>equals</operation>
@@ -5879,7 +5884,12 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <operation>equals</operation>
                 <value>True</value>
             </filterItems>
-            <isOptional>false</isOptional>
+            <filterItems>
+                <field>CN_Group__c.CN_Is_Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>true</isOptional>
         </lookupFilter>
         <referenceTo>CN_Group__c</referenceTo>
         <relationshipLabel>Change Requests (New Group Name)</relationshipLabel>
@@ -6629,7 +6639,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <label>New Account Sales Team</label>
         <lookupFilter>
             <active>true</active>
-            <booleanFilter>1 OR 2</booleanFilter>
+            <booleanFilter>2 OR (1 AND 3)</booleanFilter>
             <filterItems>
                 <field>CN_Sales_Team__c.CN_Business_Unit__c</field>
                 <operation>equals</operation>
@@ -6640,7 +6650,12 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <operation>equals</operation>
                 <value>True</value>
             </filterItems>
-            <isOptional>false</isOptional>
+            <filterItems>
+                <field>CN_Sales_Team__c.CN_Is_Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>true</isOptional>
         </lookupFilter>
         <referenceTo>CN_Sales_Team__c</referenceTo>
         <relationshipLabel>Change Requests (New Account Sales Team)</relationshipLabel>
@@ -33282,6 +33297,64 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <searchResultsAdditionalFields>OWNER.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>CN_CR_Check_BU_Vaild</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(ISNEW(), ISCHANGED(New_CN_Account_Business_Unit__c ) ),
+  OR( RecordType.DeveloperName == &apos;CN_Update_Account_Request&apos; ,RecordType.DeveloperName == &apos;CN_Approved_Update_Account_Request&apos;),
+  ISPICKVAL( CN_Change_Request_Status__c ,&apos;New&apos;),
+  NOT(New_CN_Account_Business_Unit__r.CN_Is_Active__c)
+)</errorConditionFormula>
+        <errorDisplayField>New_CN_Account_Business_Unit__c</errorDisplayField>
+        <errorMessage>The Business Unit that be choice is not valid.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_CR_Check_Brand_Vaild</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(ISNEW(),ISCHANGED( New_CN_Account_Brand__c )) ,
+  NOT(ISBLANK(New_CN_Account_Brand__c )),
+  OR( RecordType.DeveloperName == &apos;CN_Update_Account_Request&apos; ,RecordType.DeveloperName == &apos;CN_Approved_Update_Account_Request&apos;),
+  ISPICKVAL( CN_Change_Request_Status__c ,&apos;New&apos;),
+  OR( New_CN_Account_Brand__r.CN_Is_Active__c == False, NOT(ISPICKVAL(New_CN_Account_Brand__r.CN_Sync_Status__c,&apos;Success&apos;)))
+)</errorConditionFormula>
+        <errorDisplayField>New_CN_Account_Brand__c</errorDisplayField>
+        <errorMessage>The Brand that be choice is not valid.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_CR_Check_Group_Vaild</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(ISNEW(),ISCHANGED(New_CN_Account_Group_Name__c )) ,
+  NOT(ISBLANK(New_CN_Account_Group_Name__c )),
+  OR( RecordType.DeveloperName == &apos;CN_Update_Account_Request&apos; ,RecordType.DeveloperName == &apos;CN_Approved_Update_Account_Request&apos;),
+  ISPICKVAL( CN_Change_Request_Status__c ,&apos;New&apos;),
+  NOT(New_CN_Account_Group_Name__r.CN_Is_Active__c)
+)</errorConditionFormula>
+        <errorDisplayField>New_CN_Account_Group_Name__c</errorDisplayField>
+        <errorMessage>The Group that be choice is not valid.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_CR_Check_ST_Vaild</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(ISNEW(),ISCHANGED(  New_CN_Account_Sales_Team__c )) ,
+  OR( RecordType.DeveloperName == &apos;CN_Update_Account_Request&apos; ,RecordType.DeveloperName == &apos;CN_Approved_Update_Account_Request&apos;),
+  ISPICKVAL( CN_Change_Request_Status__c ,&apos;New&apos;),
+  NOT(New_CN_Account_Sales_Team__r.CN_Is_Active__c)
+)</errorConditionFormula>
+        <errorDisplayField>New_CN_Account_Sales_Team__c</errorDisplayField>
+        <errorMessage>The Sales Team that be choice is not valid.</errorMessage>
+    </validationRules>
     <validationRules>
         <fullName>CN_CR_Prevent_Change_Owner</fullName>
         <active>true</active>

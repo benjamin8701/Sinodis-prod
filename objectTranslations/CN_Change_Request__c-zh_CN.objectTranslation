@@ -3799,6 +3799,22 @@
         <name>CN_Update_Ship_To_Request</name>
     </recordTypes>
     <validationRules>
+        <errorMessage>您选择的业务部门无效。</errorMessage>
+        <name>CN_CR_Check_BU_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您选择的品牌无效。</errorMessage>
+        <name>CN_CR_Check_Brand_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您选择的集团无效。</errorMessage>
+        <name>CN_CR_Check_Group_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您选择的销售团队无效。</errorMessage>
+        <name>CN_CR_Check_ST_Vaild</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>不允许更改送达方。</errorMessage>
         <name>CN_CR_Prevent_Change_Owner</name>
     </validationRules>

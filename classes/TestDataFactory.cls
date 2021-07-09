@@ -238,6 +238,9 @@ public class TestDataFactory {
     private static CN_Business_Unit__c makeBusinessUnit(String name,String businessUnitCode){
         CN_Business_Unit__c businessUnit = new CN_Business_Unit__c();
         businessUnit.Name = name;
+        businessUnit.CN_City_API__c = 'Shanghai';
+        businessUnit.CN_Is_Activated__c = true;
+        businessUnit.CN_Sync_Status__c = 'Success';
         businessUnit.CN_Business_Unit_Code__c = businessUnitCode;
         businessUnit.CurrencyIsoCode = 'CNY';
         return businessUnit;
@@ -246,6 +249,9 @@ public class TestDataFactory {
     private static CN_Sales_Team__c makeSalesTeam(String name,String unitCode,String salesTeamCode){
         CN_Sales_Team__c salesTeam = new CN_Sales_Team__c();
         salesTeam.Name = name;
+        salesTeam.CN_City_API__c = 'Shanghai';
+        salesTeam.CN_Is_Activated__c = true;
+        salesTeam.CN_Sync_Status__c = 'Success';
         salesTeam.CN_Business_Unit__r = new CN_Business_Unit__c(CN_Business_Unit_Code__c = unitCode);
         salesTeam.CurrencyIsoCode = 'CNY';
         salesTeam.CN_Sales_Team_Code__c = salesTeamCode;
@@ -255,6 +261,9 @@ public class TestDataFactory {
     private static CN_Group__c makeGroup(String name,String salesTeamCode,String groupCode){
         CN_Group__c salesgroup = new CN_Group__c();
         salesgroup.Name = name;
+        salesgroup.CN_City_API__c = 'Shanghai';
+        salesgroup.CN_Is_Activated__c = true;
+        salesgroup.CN_Sync_Status__c = 'Success';
         salesgroup.CN_Group_Code__c = groupCode;
         salesgroup.CN_Sales_Team__r = new CN_Sales_Team__c(CN_Sales_Team_Code__c = salesTeamCode);
         salesgroup.CurrencyIsoCode = 'CNY';

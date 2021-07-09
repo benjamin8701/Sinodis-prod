@@ -33,7 +33,7 @@ Sales Team : {!Account.CN_Sales_Team_UI__c}
 Sales Person: {!Account.CN_Sales_Person_Name__c}
 Customer Name: {!Account.Name}
 Customer Category: {!Account.CN_Category__c}
-Province & City : {!Account.CN_Province_EN__c} {!Account.CN_City_EN__c}
+Province & City : {!Account.CN_Province_EN_UI__c} {!Account.CN_City_EN__c}
 
 【Credit Term】
 Payment Term: {!Account.CN_Payment_Terms__c}
