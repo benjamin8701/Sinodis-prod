@@ -2752,7 +2752,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>CN_Province_CN_API__c</fullName>
         <externalId>false</externalId>
-        <formula>CN_Province_CN__r.Name</formula>
+        <formula>CN_Province_CN__r.Province_Code__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Province(CN) API</label>
         <required>false</required>
