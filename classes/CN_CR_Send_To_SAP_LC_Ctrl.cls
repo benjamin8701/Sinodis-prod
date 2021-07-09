@@ -24,6 +24,7 @@ public without sharing class CN_CR_Send_To_SAP_LC_Ctrl {
         }
         List<CN_Change_Request__c> crList = [SELECT Id, 
                                         Name,
+                                        CN_Change_Request_Status__c, 
                                         CN_Sync_Status__c,
                                         CN_Sync_Time__c,
                                         CN_Synchronized__c,
@@ -43,6 +44,9 @@ public without sharing class CN_CR_Send_To_SAP_LC_Ctrl {
         if(checkTimeInterval(cr)) {
             errorMsg = System.Label.CN_Account_Wait_5_Mins;   
         }
+        if(cr.CN_Change_Request_Status__c != Constants.CN_CR_STATUS_APPROVALED){   
+            errorMsg = System.Label.CN_CR_Not_Approved;     
+        }                                                   
         return new Map<String, Object>{
             'hasCreatePermission' => hasCreatePermission,
             'errorMsg' => errorMsg
@@ -63,6 +67,7 @@ public without sharing class CN_CR_Send_To_SAP_LC_Ctrl {
         }
         List<CN_Change_Request__c> crList = [SELECT Id, 
                                         Name,
+                                        CN_Change_Request_Status__c,
                                         CN_Sync_Status__c,
                                         CN_Sync_Time__c,
                                         CN_Synchronized__c,
@@ -82,6 +87,9 @@ public without sharing class CN_CR_Send_To_SAP_LC_Ctrl {
         }
         if(checkTimeInterval(crToSend)) {
             throw new AuraHandledException(System.Label.CN_Account_Wait_5_Mins);   
+        }
+        if(crToSend.CN_Change_Request_Status__c != Constants.CN_CR_STATUS_APPROVALED){   
+            throw new AuraHandledException(System.Label.CN_CR_Not_Approved);     
         }
         Map<String, Object> resultMap = callTalendAPI(crToSend);
         errorMessage = (String)resultMap.get('errorMsg');

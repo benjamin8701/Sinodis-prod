@@ -281,6 +281,13 @@
         <value>You don&apos;t have permission to this change request.</value>
     </labels>
     <labels>
+        <fullName>CN_CR_Not_Approved</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_CR_Not_Approved</shortDescription>
+        <value>This change request has not been approved! Please send the change request to SAP after this record has been approved.</value>
+    </labels>
+    <labels>
         <fullName>CN_CR_Not_Found</fullName>
         <language>en_US</language>
         <protected>false</protected>
