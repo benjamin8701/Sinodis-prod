@@ -13,6 +13,10 @@
         <name>Change_Request_Endpoint__c</name>
     </fields>
     <fields>
+        <label><!-- Customer Hierarchy Endpoint --></label>
+        <name>Customer_Hierarchy_Endpoint__c</name>
+    </fields>
+    <fields>
         <label><!-- Password --></label>
         <name>Password__c</name>
     </fields>
@@ -27,6 +31,10 @@
     <fields>
         <label><!-- Sanbox Sales Order Update Endpoint --></label>
         <name>Sanbox_Sales_Order_Update_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox Customer Hierarchy Endpoint --></label>
+        <name>Sandbox_Customer_Hierarchy_Endpoint__c</name>
     </fields>
     <fields>
         <label><!-- Sandbox Password --></label>

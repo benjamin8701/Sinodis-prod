@@ -37,6 +37,29 @@ global class TestHttpMock implements HttpCalloutMock {
                 res.setBody('{"CN_Up_Code__c": "00005","CN_Overall_Status__c": "A", "CN_Rejection_Status__c": "B","CN_Delivery_Status__c": "C","CN_Credit_Status__c": "","CN_Overall_Blocked_Status__c": "","CN_Sync_Status__c": "S","CN_Sync_Error_Message__c": "AAAAAAA","Sales_Order_Item__r": [ {"CN_Up_Code__c": "000051","CN_DN_Number__c": "1234567891","CN_Overall_Status__c": "A","CN_Delilvery_Status__c": "B"}, {"CN_Up_Code__c": "000052","CN_DN_Number__c": "1234567892","CN_Overall_Status__c": "B","CN_Delilvery_Status__c": "C"}]}');
                 res.setStatusCode(404);
             }
+        }else if(url.contains('CH')){
+            if(url.contains('200')) {
+                if(url.contains('CHE')){
+                    res.setBody('{"CN_Up_Code__c" : "00001","CN_Sync_Time__c" : "2021-04-20T00:00:00.000Z", "CN_Sync_Status__c" : "E","CN_Sync_Error_Message__c" : ""}');
+                }else if(url.contains('CHS')){
+                    res.setBody('{"CN_Up_Code__c" : "00001","CN_Sync_Time__c" : "2021-04-20T00:00:00.000Z", "CN_Sync_Status__c" : "S","CN_Sync_Error_Message__c" : ""}');
+                }else{
+                    res.setBody('{"CN_Up_Code__c" : "00001","CN_Sync_Time__c" : "2021-04-20T00:00:00.000Z", "CN_Sync_Status__c" : "Sent","CN_Sync_Error_Message__c" : ""}');
+                }
+                res.setStatusCode(200);
+            } else if(url.contains('500')) {
+                res.setBody('{"CN_Up_Code__c" : "00001","CN_Sync_Time__c" : "2021-04-20T00:00:00.000Z","CN_Sync_Error_Message__c" : ""}');
+                res.setStatusCode(500);
+            } else if(url.contains('400')) {
+                res.setBody('{"CN_Up_Code__c" : "00001","CN_Sync_Time__c" : "2021-04-20T00:00:00.000Z","CN_Sync_Error_Message__c" : ""}');
+                res.setStatusCode(400);
+            } else if(url.contains('401')) {
+                res.setBody('{"CN_Up_Code__c" : "00001","CN_Sync_Time__c" : "2021-04-20T00:00:00.000Z","CN_Sync_Error_Message__c" : ""}');
+                res.setStatusCode(401);
+            } else if(url.contains('404')) {
+                res.setBody('{"CN_Up_Code__c" : "00001","CN_Sync_Time__c" : "2021-04-20T00:00:00.000Z","CN_Sync_Error_Message__c" : ""}');
+                res.setStatusCode(404);
+            }
         }else{
             if(url.contains('200')) {
                 res.setBody('');

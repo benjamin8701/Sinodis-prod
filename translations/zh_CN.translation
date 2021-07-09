@@ -85,6 +85,58 @@
         <name>CN_Account_Wait_5_Mins</name>
     </customLabels>
     <customLabels>
+        <label>品牌</label>
+        <name>CN_Brand_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>获取品牌状态成功。</label>
+        <name>CN_Brand_Retrieve_Success</name>
+    </customLabels>
+    <customLabels>
+        <label>获取品牌状态</label>
+        <name>CN_Brand_Retrieve_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>您不可以删除已经与SAP同步的品牌。</label>
+        <name>CN_Brand_Synced_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>您不可以删除已经与SAP同步的业务部门。</label>
+        <name>CN_BusinessUnit_Synced_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>{0}编码为空。</label>
+        <name>CN_Business_Unit_Code_Is_Blank</name>
+    </customLabels>
+    <customLabels>
+        <label>{0}已经同步完成。</label>
+        <name>CN_Business_Unit_Had_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label>业务部门</label>
+        <name>CN_Business_Unit_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>您没有访问这个{0}的权限</label>
+        <name>CN_Business_Unit_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label>没有找到{0}。</label>
+        <name>CN_Business_Unit_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label>发送{0}</label>
+        <name>CN_Business_Unit_Retrieve_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>{0}已经被成功发送到SAP。</label>
+        <name>CN_Business_Unit_Send_Success_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>您确定发送这个{0}到SAP吗？</label>
+        <name>CN_Business_Unit_Send_To_SAP</name>
+    </customLabels>
+    <customLabels>
         <label>请至少更改一个项目。</label>
         <name>CN_CR_AT_LEAST_ONE_FIELD_CHANGE</name>
     </customLabels>
@@ -111,6 +163,10 @@
     <customLabels>
         <label>您没有权限访问这个变更申请。</label>
         <name>CN_CR_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label>这个变更申请没有被审批通过！请在审批通过后再将此变更申请发送到SAP。</label>
+        <name>CN_CR_Not_Approved</name>
     </customLabels>
     <customLabels>
         <label>没有找到变更申请</label>
@@ -143,6 +199,30 @@
     <customLabels>
         <label>申请变更联系人</label>
         <name>CN_Contact_Change_Request</name>
+    </customLabels>
+    <customLabels>
+        <label>确认发送？</label>
+        <name>CN_CustomerHierarchy_Confirm_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>您的操作太频繁了，请稍等一下。</label>
+        <name>CN_CustomerHierarchy_Warning_Msg_Too_Frequency</name>
+    </customLabels>
+    <customLabels>
+        <label>集团</label>
+        <name>CN_Group_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>获取集团状态成功。</label>
+        <name>CN_Group_Retrieve_Success</name>
+    </customLabels>
+    <customLabels>
+        <label>获取集团状态</label>
+        <name>CN_Group_Retrieve_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>您不可以删除已经与SAP同步的集团。</label>
+        <name>CN_Group_Synced_Prevent_Delete</name>
     </customLabels>
     <customLabels>
         <label>在客户层次中没有找到用户的业务部门。</label>
@@ -181,6 +261,10 @@
         <name>CN_PleaseConfirm_Value_ReadyForApproval</name>
     </customLabels>
     <customLabels>
+        <label>您不可以删除已经与SAP同步的销售团队。</label>
+        <name>CN_SalesTeam_Synced_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
         <label>请确认是否取得订单状态？</label>
         <name>CN_Sales_Order_Confirm_Msg</name>
     </customLabels>
@@ -199,6 +283,18 @@
     <customLabels>
         <label>您的操作太频繁了，请稍等一下。</label>
         <name>CN_Sales_Order_Warning_Msg_Too_Frequency</name>
+    </customLabels>
+    <customLabels>
+        <label>销售团队</label>
+        <name>CN_Sales_Team_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>获取销售团队状态成功。</label>
+        <name>CN_Sales_Team_Retrieve_Success</name>
+    </customLabels>
+    <customLabels>
+        <label>获取销售团队状态</label>
+        <name>CN_Sales_Team_Retrieve_Title</name>
     </customLabels>
     <customLabels>
         <label>您不能删除已经其客户被标记为准备好提交审批，提交审批，审批通过或者已经同步到SAP的送达方。</label>

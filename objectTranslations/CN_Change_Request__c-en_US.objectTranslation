@@ -3801,6 +3801,22 @@
     </recordTypes>
     <startsWith>Consonant</startsWith>
     <validationRules>
+        <errorMessage><!-- The Business Unit that be choice is not valid. --></errorMessage>
+        <name>CN_CR_Check_BU_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Brand that be choice is not valid. --></errorMessage>
+        <name>CN_CR_Check_Brand_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Group that be choice is not valid. --></errorMessage>
+        <name>CN_CR_Check_Group_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Sales Team that be choice is not valid. --></errorMessage>
+        <name>CN_CR_Check_ST_Vaild</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Not Allow to Transfer Sold to Party to others. --></errorMessage>
         <name>CN_CR_Prevent_Change_Owner</name>
     </validationRules>

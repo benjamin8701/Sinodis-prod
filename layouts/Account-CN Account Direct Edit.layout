@@ -76,6 +76,14 @@
                 <field>CN_Sales_Team_UI__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Group_Name__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Brand__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CN_Sales_Office__c</field>
             </layoutItems>
@@ -156,7 +164,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Province_EN__c</field>
+                <field>CN_Province_EN_UI__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>

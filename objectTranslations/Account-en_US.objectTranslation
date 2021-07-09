@@ -1275,6 +1275,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Parent UP Code --></label>
+        <name>CN_Parent_Up_Code__c</name>
+    </fields>
+    <fields>
         <label><!-- Payment Bank Account --></label>
         <name>CN_Payment_Bank_Account__c</name>
     </fields>
@@ -1341,6 +1345,10 @@
     </fields>
     <fields>
         <label><!-- Province(EN) --></label>
+        <name>CN_Province_EN_UI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Province(EN) API --></label>
         <name>CN_Province_EN__c</name>
     </fields>
     <fields>
@@ -2358,6 +2366,22 @@
     <validationRules>
         <errorMessage><!-- Not Allowed to Change Status in Approving. --></errorMessage>
         <name>CN_Acc_Prevent_Change_Status_In_Approve</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Business Unit that be choice is not valid. --></errorMessage>
+        <name>CN_Account_Check_BU_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Brand that be choice is not valid. --></errorMessage>
+        <name>CN_Account_Check_Brand_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Group that be choice is not valid --></errorMessage>
+        <name>CN_Account_Check_Group_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Sales Team that be choice is not valid. --></errorMessage>
+        <name>CN_Account_Check_ST_Vaild</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Not Allowed to Transfer Sold To Party to others. --></errorMessage>

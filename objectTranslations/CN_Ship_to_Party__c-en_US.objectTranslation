@@ -165,6 +165,10 @@
     </fields>
     <fields>
         <label><!-- Province(EN) --></label>
+        <name>CN_Province_EN_UI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Province(EN) API --></label>
         <name>CN_Province_EN__c</name>
     </fields>
     <fields>

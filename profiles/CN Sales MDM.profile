@@ -86,6 +86,38 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_BU_Prevent_Delete_Handler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_BU_Prevent_Delete_Handler_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_BU_Send_To_SAP_LC_Ctrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_BU_Send_To_SAP_LC_Ctrl_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Brand_Prevent_Delete_Handler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Brand_Prevent_Delete_Handler_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Brand_Send_To_SAP_LC_Ctrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Brand_Send_To_SAP_LC_Ctrl_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_CDL_Populate_Uploaded_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -246,11 +278,43 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Group_Prevent_Delete_Handler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Group_Prevent_Delete_Handler_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Group_Send_To_SAP_LC_Ctrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Group_Send_To_SAP_LC_Ctrl_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_OrderTreeUpsert_WS</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CN_OrderTreeUpsert_WS_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_ST_Send_To_SAP_LC_Ctrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_ST_Send_To_SAP_LC_Ctrl_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_SalesTeam_Prevent_Delete_Handler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_SalesTeam_Prevent_Delete_Handler_Test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -818,6 +882,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.CN_Parent_Up_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.CN_Payment_Bank_Account__c</field>
         <readable>true</readable>
@@ -875,6 +944,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.CN_Province_CN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.CN_Province_EN_UI__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1254,11 +1328,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>CN_Brand__c.CN_Group_Code_Name__c</field>
+        <field>CN_Brand__c.CN_City_API__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Brand__c.CN_Group_Code_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Brand__c.CN_Group_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1274,7 +1353,62 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Brand__c.CN_Is_Activated__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Brand__c.CN_Is_Active__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Brand__c.CN_Sync_Error_Message__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Brand__c.CN_Sync_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Brand__c.CN_Sync_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CN_Business_Unit__c.CN_Business_Unit_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Business_Unit__c.CN_City_API__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Business_Unit__c.CN_Is_Activated__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Business_Unit__c.CN_Is_Active__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Business_Unit__c.CN_Sync_Error_Message__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Business_Unit__c.CN_Sync_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Business_Unit__c.CN_Sync_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3079,7 +3213,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Group__c.CN_City_API__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CN_Group__c.CN_Group_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Group__c.CN_Is_Activated__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Group__c.CN_Is_Active__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3088,7 +3237,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>CN_Group__c.CN_Sales_Team_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3100,6 +3249,21 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CN_Group__c.CN_Sales_Team__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Group__c.CN_Sync_Error_Message__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Group__c.CN_Sync_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Group__c.CN_Sync_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3494,7 +3658,37 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Sales_Team__c.CN_City_API__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Sales_Team__c.CN_Is_Activated__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Sales_Team__c.CN_Is_Active__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CN_Sales_Team__c.CN_Sales_Team_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Sales_Team__c.CN_Sync_Error_Message__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Sales_Team__c.CN_Sync_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Sales_Team__c.CN_Sync_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3630,6 +3824,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CN_Ship_to_Party__c.CN_Province_CN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Ship_to_Party__c.CN_Province_EN_UI__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4632,11 +4831,11 @@
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>CN_Brand__c</tab>
-        <visibility>DefaultOff</visibility>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>CN_Business_Unit__c</tab>
-        <visibility>DefaultOff</visibility>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>CN_Change_Request__c</tab>
@@ -4652,7 +4851,7 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>CN_Group__c</tab>
-        <visibility>DefaultOff</visibility>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>CN_Internal_Employee__c</tab>
@@ -4672,7 +4871,7 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>CN_Sales_Team__c</tab>
-        <visibility>DefaultOff</visibility>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>CN_Ship_to_Party__c</tab>
