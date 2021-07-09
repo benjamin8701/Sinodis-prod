@@ -516,11 +516,22 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>CN_Province_EN__c</fullName>
+        <fullName>CN_Province_EN_UI__c</fullName>
         <externalId>false</externalId>
         <formula>CN_Province_CN__r.CN_Province_EN__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Province(EN)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Province_EN__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Province_CN__r.Province_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Province(EN) API</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>

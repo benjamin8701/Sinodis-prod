@@ -148,7 +148,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Province_EN__c</field>
+                <field>CN_Province_EN_UI__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>

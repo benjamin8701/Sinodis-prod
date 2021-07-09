@@ -879,6 +879,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.CN_Province_EN_UI__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.CN_Province_EN__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3630,6 +3635,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CN_Ship_to_Party__c.CN_Province_CN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Ship_to_Party__c.CN_Province_EN_UI__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

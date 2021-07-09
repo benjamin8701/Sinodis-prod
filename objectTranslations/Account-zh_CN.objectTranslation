@@ -1332,6 +1332,10 @@
     </fields>
     <fields>
         <label>省（EN）</label>
+        <name>CN_Province_EN_UI__c</name>
+    </fields>
+    <fields>
+        <label>省（EN）</label>
         <name>CN_Province_EN__c</name>
     </fields>
     <fields>
