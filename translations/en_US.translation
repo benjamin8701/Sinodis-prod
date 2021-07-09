@@ -113,10 +113,6 @@
         <name>CN_CR_No_Permission</name>
     </customLabels>
     <customLabels>
-        <label><!-- CN_CR_Not_Approved --></label>
-        <name>CN_CR_Not_Approved</name>
-    </customLabels>
-    <customLabels>
         <label><!-- CN_CR_Not_Found --></label>
         <name>CN_CR_Not_Found</name>
     </customLabels>
