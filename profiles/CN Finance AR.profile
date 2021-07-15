@@ -3633,6 +3633,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Sales_Order__c.CN_Total_Confirmed_Value__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Sales_Order__c.CN_Up_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>

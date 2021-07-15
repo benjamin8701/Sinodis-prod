@@ -467,6 +467,10 @@
         <name>CN_Total_Amount_With_Tax__c</name>
     </fields>
     <fields>
+        <label><!-- Total Confirmed Value --></label>
+        <name>CN_Total_Confirmed_Value__c</name>
+    </fields>
+    <fields>
         <label><!-- Sales Order Number --></label>
         <name>CN_Up_Code__c</name>
     </fields>
