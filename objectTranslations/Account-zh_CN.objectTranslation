@@ -907,6 +907,11 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Finance AR --></label>
+        <name>CN_Finance_AR__c</name>
+        <relationshipLabel><!-- Accounts (Finance AR) --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Group Name API --></label>
         <name>CN_Group_Name_API__c</name>
     </fields>
@@ -1002,6 +1007,14 @@
     <fields>
         <label>发票类型</label>
         <name>CN_Invoice_Type__c</name>
+        <picklistValues>
+            <masterLabel>Electronic General Invoice</masterLabel>
+            <translation><!-- Electronic General Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronic VAT Invoice</masterLabel>
+            <translation><!-- Electronic VAT Invoice --></translation>
+        </picklistValues>
         <picklistValues>
             <masterLabel>General Invoice</masterLabel>
             <translation><!-- General Invoice --></translation>
@@ -1798,6 +1811,10 @@
         <name>CN_Sinodis_Finance_AR_API__c</name>
     </fields>
     <fields>
+        <label><!-- Sinodis Finance AR Name --></label>
+        <name>CN_Sinodis_Finance_AR_Name__c</name>
+    </fields>
+    <fields>
         <label>西诺迪斯财务AR</label>
         <name>CN_Sinodis_Finance_AR__c</name>
         <relationshipLabel><!-- Accounts (Sinodis Finance AR) --></relationshipLabel>
@@ -2392,7 +2409,7 @@
         <name>CN_Check_CreditTermApplication</name>
     </validationRules>
     <validationRules>
-        <errorMessage>如果您需要开普通发票，请确保只输入开票名称、税务登记号、送货地址（EN）。</errorMessage>
+        <errorMessage>如果您需要开普通发票或电子普通发票，请确保只输入开票名称、税务登记号。</errorMessage>
         <name>CN_Check_General_InvoiceType</name>
     </validationRules>
     <validationRules>
@@ -2420,6 +2437,10 @@
         <name>CN_Check_Post_Code_Length</name>
     </validationRules>
     <validationRules>
+        <errorMessage>您必须为不是CIA或者COD的客户选择发票日期。</errorMessage>
+        <name>CN_Check_ReferenceDay</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>请在提交审批前创建一个送达方或填写送达方的联系人信息和客户名称。</errorMessage>
         <name>CN_Check_ShipTo</name>
     </validationRules>
@@ -2432,7 +2453,7 @@
         <name>CN_Check_ShippingTelephone_Format</name>
     </validationRules>
     <validationRules>
-        <errorMessage>如果您需要开增值税发票，请确保输入以下信息：开票名称、税务登记号、银行账户、开票地址和电话（CN）、参考日、送货地址（EN）。</errorMessage>
+        <errorMessage>如果您需要开增值税发票或电子增值税发票，请确保输入以下信息：开票名称、税务登记号、银行账户、开票地址和电话（CN）。</errorMessage>
         <name>CN_Check_VAT_InvoiceType</name>
     </validationRules>
     <validationRules>

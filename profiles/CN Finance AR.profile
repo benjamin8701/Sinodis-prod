@@ -712,6 +712,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.CN_Finance_AR__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.CN_Group_Name_API__c</field>
         <readable>true</readable>
@@ -1109,6 +1114,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.CN_Sinodis_Finance_AR_API__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.CN_Sinodis_Finance_AR_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

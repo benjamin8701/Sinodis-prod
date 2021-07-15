@@ -281,6 +281,10 @@
         <name>CN_Check_Account_NotNull</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- Contact Name must be entered more than two words. --></errorMessage>
+        <name>CN_Check_ContactName</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Please input a phone number with a valid format. --></errorMessage>
         <name>CN_Check_Moblie_NumberFormat</name>
     </validationRules>

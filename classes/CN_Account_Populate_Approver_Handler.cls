@@ -113,6 +113,8 @@ public without sharing class CN_Account_Populate_Approver_Handler implements Tri
             }
             acc.CN_Approver_4__c = settings.CN_Sales_MDM_UserId__c;
             acc.CN_Approver_5__c = settings.CN_Finance_MDM_UserId__c;
+            
+            acc.CN_Finance_AR__c = settings.CN_Finance_AR_UserId__c;
         }
     }
     

@@ -278,6 +278,10 @@
         <name>CN_Check_Account_NotNull</name>
     </validationRules>
     <validationRules>
+        <errorMessage>请输入两个字符及以上长度的联系人姓名。</errorMessage>
+        <name>CN_Check_ContactName</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>请填写正确格式的电话号码。</errorMessage>
         <name>CN_Check_Moblie_NumberFormat</name>
     </validationRules>

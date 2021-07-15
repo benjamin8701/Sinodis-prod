@@ -924,6 +924,11 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Finance AR --></label>
+        <name>CN_Finance_AR__c</name>
+        <relationshipLabel><!-- Accounts (Finance AR) --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Group Name API --></label>
         <name>CN_Group_Name_API__c</name>
     </fields>
@@ -1019,6 +1024,14 @@
     <fields>
         <label><!-- Invoice Type --></label>
         <name>CN_Invoice_Type__c</name>
+        <picklistValues>
+            <masterLabel>Electronic General Invoice</masterLabel>
+            <translation><!-- Electronic General Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronic VAT Invoice</masterLabel>
+            <translation><!-- Electronic VAT Invoice --></translation>
+        </picklistValues>
         <picklistValues>
             <masterLabel>General Invoice</masterLabel>
             <translation><!-- General Invoice --></translation>
@@ -1815,6 +1828,10 @@
         <name>CN_Sinodis_Finance_AR_API__c</name>
     </fields>
     <fields>
+        <label><!-- Sinodis Finance AR Name --></label>
+        <name>CN_Sinodis_Finance_AR_Name__c</name>
+    </fields>
+    <fields>
         <label><!-- Sinodis Finance AR --></label>
         <name>CN_Sinodis_Finance_AR__c</name>
         <relationshipLabel><!-- Accounts (Sinodis Finance AR) --></relationshipLabel>
@@ -2404,10 +2421,9 @@
         <name>CN_Check_CreditTermApplication</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Please just fill in the following information, if you select Genernal invoice.
+        <errorMessage><!-- Please just fill in the following information, if you select Genernal invoice or Electronic General invoice.
 Invoicing Name (Bill to party),
-Tax Registration No. ,
-Delivery Address(EN). --></errorMessage>
+Tax Registration No. --></errorMessage>
         <name>CN_Check_General_InvoiceType</name>
     </validationRules>
     <validationRules>
@@ -2440,6 +2456,10 @@ Reference Day --></errorMessage>
         <name>CN_Check_Post_Code_Length</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- You must input reference day for not a customer of CIA or COD. --></errorMessage>
+        <name>CN_Check_ReferenceDay</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Please create a ship-to or fill in contact information and customer name before submitting the account for approval. --></errorMessage>
         <name>CN_Check_ShipTo</name>
     </validationRules>
@@ -2452,13 +2472,11 @@ Reference Day --></errorMessage>
         <name>CN_Check_ShippingTelephone_Format</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Please fill in the following information, if you select VAT invoice.
+        <errorMessage><!-- Please fill in the following information, if you select VAT invoice or Electronic VAT Invoice.
 Invoicing Name (Bill to party),
 Tax Registration No.,
 Bank Account,
-Invoice Address and Phone,
-Reference Day,
-Delivery Address (EN). --></errorMessage>
+Invoicing Address and Phone. --></errorMessage>
         <name>CN_Check_VAT_InvoiceType</name>
     </validationRules>
     <validationRules>
