@@ -4,6 +4,7 @@
 SAP客户代码：{!Account.CN_Customer_Code__c}
 销售团队:{!Account.CN_Sales_Team_UI__c}
 销售人员:{!Account.CN_Sales_Person_Name__c}
+财务AR：{!Account.CN_Sinodis_Finance_AR_Name__c}
 顾客姓名:{!Account.Name}
 客户类别:{!Account.CN_Customer_Type__c}
 省市: {!Account.CN_Province_CN__c} {!Account.CN_City_CN__c}
@@ -12,6 +13,13 @@ SAP客户代码：{!Account.CN_Customer_Code__c}
 付款期限：{!Account.CN_Payment_Terms__c}
 参考日：{!Account.CN_Reference_Day__c}
 信用额度：{!Account.CN_Credit_Limit__c}
+
+【财务信息】
+发票类型：{!Account.CN_Invoice_Type__c}
+开票名称：{!Account.CN_Invoicing_Name_Bill_To_Party__c}
+银行账户：{!Account.CN_Bank_Account__c}
+税务登记号：{!Account.CN_Tax_Registration_No__c}
+开票地址和电话（CN）：{!Account.CN_Invoicing_Address_and_Phone__c}
 
 要查看帐户的创建，请单击链接：
 
@@ -26,6 +34,7 @@ New account creation has been approved and synced to SAP.
 SAP Customer Code:{!Account.CN_Customer_Code__c}
 Sales Team:{!Account.CN_Sales_Team_UI__c}
 Sales Person:{!Account.CN_Sales_Person_Name__c}
+Finance AR:{!Account.CN_Sinodis_Finance_AR_Name__c}
 Customer Name:{!Account.CN_License_Name_EN__c}
 Customer Category:{!Account.CN_Customer_Type__c}
 Province & City:{!Account.CN_Province_EN_UI__c} {!Account.CN_City_EN__c}
@@ -34,6 +43,14 @@ Province & City:{!Account.CN_Province_EN_UI__c} {!Account.CN_City_EN__c}
 Payment Term：{!Account.CN_Payment_Terms__c}
 Reference Day: {!Account.CN_Reference_Day__c}
 Credit Limit：{!Account.CN_Credit_Limit__c}
+
+【Financial Information】
+Invoice Type：{!Account.CN_Invoice_Type__c}
+Invoicing Name (Bill to party)：{!Account.CN_Invoicing_Name_Bill_To_Party__c}
+Bank Account：{!Account.CN_Bank_Account__c}
+Tax Registration No.：{!Account.CN_Tax_Registration_No__c}
+Invoicing Address and Phone：{!Account.CN_Invoicing_Address_and_Phone__c}
+
 
 To review the account creation, please click the link:
 

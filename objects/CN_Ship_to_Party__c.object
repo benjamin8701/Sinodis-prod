@@ -877,6 +877,21 @@
         <errorMessage>Ship-to must have an associated account.</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>CN_Check_ContactName</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  RecordType.DeveloperName = &apos;CN_Ship_to_Party&apos;,
+  OR(
+    AND(  ISCHANGED(CN_Contact_Name__c ),LEN( CN_Contact_Name__c ) &lt; 2),
+    AND(  ISNEW() , NOT(ISBLANK(CN_Contact_Name__c )), LEN( CN_Contact_Name__c ) &lt; 2)
+  )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Contact_Name__c</errorDisplayField>
+        <errorMessage>Contact Name must be entered more than two words.</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>CN_Check_Moblie_NumberFormat</fullName>
         <active>true</active>
         <errorConditionFormula>AND(

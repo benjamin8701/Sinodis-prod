@@ -130,6 +130,10 @@
             <field>CN_Approver_5__c</field>
             <type>userLookup</type>
         </recipients>
+        <recipients>
+            <field>CN_Finance_AR__c</field>
+            <type>userLookup</type>
+        </recipients>
         <senderType>CurrentUser</senderType>
         <template>CN_Email_Folder/CN_Account_Synced</template>
     </alerts>
