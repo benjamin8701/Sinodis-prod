@@ -105,6 +105,7 @@
     </alerts>
     <alerts>
         <fullName>Send_Email_to_ApporveAndOwner_Account_Synced</fullName>
+        <ccEmails>ar.team@savencia.com</ccEmails>
         <description>Send Email to Apporve12345 and Owner to reminder Account was Synced</description>
         <protected>false</protected>
         <recipients>
@@ -128,10 +129,6 @@
         </recipients>
         <recipients>
             <field>CN_Approver_5__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <recipients>
-            <field>CN_Finance_AR__c</field>
             <type>userLookup</type>
         </recipients>
         <senderType>CurrentUser</senderType>
