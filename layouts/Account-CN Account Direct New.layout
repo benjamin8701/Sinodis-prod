@@ -72,7 +72,7 @@
                 <field>CN_Sales_District__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Readonly</behavior>
                 <field>CN_Customer_Group__c</field>
             </layoutItems>
             <layoutItems>
@@ -137,7 +137,7 @@
                 <field>CN_Delivery_Plant__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>CN_Invoicing_Address_EN__c</field>
             </layoutItems>
         </layoutColumns>

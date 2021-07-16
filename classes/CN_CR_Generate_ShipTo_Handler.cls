@@ -29,6 +29,10 @@ public without sharing class CN_CR_Generate_ShipTo_Handler implements Triggers.H
         if(idChangeRequestMap.size() > 0) {
             List<CN_Ship_to_Party__c> shipToList = new List<CN_Ship_to_Party__c>();
             Map<Id, CN_Ship_to_Party__c> stpMap = new Map<Id, CN_Ship_to_Party__c>();
+            //add file to new shipto  ----start
+            List<ContentDocumentLink> contentlinkNew = new List<ContentDocumentLink>();
+            Set<Id> crIdSet = new Set<Id>();
+            //add file to new shipto  ----end
             shipToList = generateshipTos(idChangeRequestMap);
             if(shipToList.size() > 0) {
                 for(CN_Ship_to_Party__c stp: shipToList) {
@@ -48,7 +52,56 @@ public without sharing class CN_CR_Generate_ShipTo_Handler implements Triggers.H
                     }
                 }
                 populateExternalId(shipToList,idChangeRequestMap, stpSuccessIdSet);
+                //add file to new shipto  ----start
+                if(stpSuccessIdSet.size() > 0){
+                    List<CN_Ship_to_Party__c> shiptoidList = [select id,CN_Change_Request__c from CN_Ship_to_Party__c where id in: stpSuccessIdSet];
+                    if(shiptoidList.size() > 0 && shiptoidList != null){
+                        for(CN_Ship_to_Party__c csp : shiptoidList){
+                            if(csp.CN_Change_Request__c != null) {
+                            	crIdSet.add(csp.CN_Change_Request__c);
+                            }
+                        }
+                           
+                        if(crIdSet.size() > 0) {
+                            List<ContentDocumentLink> contentlinkold = [ select id,ContentDocumentId,LinkedEntityId from ContentDocumentlink where LinkedEntityId IN: crIdSet];
+                            Map<Id, set<id>> conLinkMap = new Map<Id, set<id>>();
+                            if(contentlinkold.size() > 0) {
+                                for(ContentDocumentLink clo: contentlinkold) {
+                                    if(conLinkMap.containskey(clo.LinkedEntityId)){
+                                        conLinkMap.get(clo.LinkedEntityId).add(clo.ContentDocumentId);
+                                    } else {
+                                        conLinkMap.put(clo.LinkedEntityId, new Set<Id>{clo.ContentDocumentId});
+                                    }   
+                                }
+                                for (CN_Ship_to_Party__c shipToLink : shiptoidList) {
+                                    Set<Id> conDocLinkId = new Set<Id>();
+                                    if(conLinkMap.containsKey(shipToLink.CN_Change_Request__c)) {
+                                        if(conLinkMap.get(shipToLink.CN_Change_Request__c).size() > 0) {
+                                            conDocLinkId = conLinkMap.get(shipToLink.CN_Change_Request__c);
+                                        }
+                                    }
+                                    if(conDocLinkId.size() > 0){
+                                        for(Id cdl:conDocLinkId){
+                                            ContentDocumentLink contentlink = new ContentDocumentLink();
+                                            contentlink.LinkedEntityId = shipToLink.id;
+                                            contentlink.contentdocumentid = cdl;
+                                            contentlink.ShareType = 'V';
+                                            contentlink.Visibility = 'AllUsers';
+                                            contentlinkNew.add(contentlink);
+                                        }
+                                    }
+                                }
+                                if(contentlinkNew.size() > 0){
+                                    insert contentlinkNew;
+                                }
+                            }
+                        }
+                    }
+                }
+                //add file to new shipto  ----end
+                
             }
+            
             CN_CR_Generate_ShipTo_Handler.isTriggerRun = false;
         }
     }
