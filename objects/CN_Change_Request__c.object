@@ -33573,7 +33573,7 @@ IF($Profile.Name = &quot;CN Sales&quot;, TRUE, FALSE),
     ISPICKVAL(New_CN_Account_Invoice_Type__c, &quot;Electronic General Invoice&quot;)
   ),
   OR(
-    ISBLANK(CN_Account_Name__r.CN_Invoicing_Name_Bill_To_Party__c),
+    ISBLANK(New_CN_Account_Invoicing_Name__c),
     NOT(ISBLANK(New_CN_Account_Bank_Account__c)),
     NOT(ISBLANK(New_CN_Account_Invoice_Address_and_Phone__c)),
     ISBLANK(New_CN_Account_Tax_Registration_No__c)

@@ -28,5 +28,9 @@
         <label><!-- Sales MDM User ID --></label>
         <name>CN_Sales_MDM_UserId__c</name>
     </fields>
+    <fields>
+        <label><!-- WholeSales Development Supervisor --></label>
+        <name>CN_WholeSales_Development_Supervisor__c</name>
+    </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

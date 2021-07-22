@@ -473,6 +473,11 @@ IF(
                     <default>false</default>
                     <label>Step5</label>
                 </value>
+                <value>
+                    <fullName>Step6</fullName>
+                    <default>false</default>
+                    <label>Step6</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -480,7 +485,7 @@ IF(
         <fullName>CN_Approver_1__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Regional Manager</label>
+        <label>Sales MDM</label>
         <referenceTo>User</referenceTo>
         <relationshipName>Accounts_Approver1</relationshipName>
         <required>false</required>
@@ -492,7 +497,7 @@ IF(
         <fullName>CN_Approver_2__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Channel Director</label>
+        <label>Wholesale Channel Manager</label>
         <referenceTo>User</referenceTo>
         <relationshipName>Accounts_Approver2</relationshipName>
         <required>false</required>
@@ -504,7 +509,7 @@ IF(
         <fullName>CN_Approver_3__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Commercial Director</label>
+        <label>Regional Manager</label>
         <referenceTo>User</referenceTo>
         <relationshipName>Accounts_Approver3</relationshipName>
         <required>false</required>
@@ -516,7 +521,7 @@ IF(
         <fullName>CN_Approver_4__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Sales MDM</label>
+        <label>Channel Director</label>
         <referenceTo>User</referenceTo>
         <relationshipName>Accounts_Approver4</relationshipName>
         <required>false</required>
@@ -528,9 +533,21 @@ IF(
         <fullName>CN_Approver_5__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Finance MDM</label>
+        <label>Commercial Director</label>
         <referenceTo>User</referenceTo>
         <relationshipName>Accounts_Approver5</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Approver_6__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Finance MDM</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts_Approver6</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -2219,11 +2236,11 @@ IF(
         <externalId>false</externalId>
         <formula>OR(
    AND(
-      OR(CN_Sales_Team_UI__r.CN_Sales_Team_Code__c= &quot;0000900012&quot;,CN_Sales_Team_UI__r.CN_Sales_Team_Code__c= &quot;0000900013&quot;),
+      OR(CN_Sales_Team_UI__r.CN_Sales_Team_Code__c= &quot;900012&quot;,CN_Sales_Team_UI__r.CN_Sales_Team_Code__c= &quot;900013&quot;),
       ISPICKVAL( CN_Category__c , &quot;Wholesaler&quot;) 
    ),
    AND(
-      CN_Sales_Team_UI__r.CN_Sales_Team_Code__c = &quot;0000900012&quot;,
+      CN_Sales_Team_UI__r.CN_Sales_Team_Code__c = &quot;900012&quot;,
        TEXT(CN_City_CN__r.CN_Sales_Office__c) !=  Owner.CN_Sales_Office__c 
    )
 )</formula>
@@ -3600,6 +3617,16 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Sales_Person_SalesTeam_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner.CN_Sales_Team__c</formula>
+        <label>Sales Person SalesTeam Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Sales_Team_UI__c</fullName>
@@ -5066,6 +5093,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Step5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Step6</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6992,6 +7023,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>Step5</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Step6</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Billing_Block__c</picklist>
@@ -8916,6 +8951,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>Step5</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Step6</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Billing_Block__c</picklist>
@@ -10826,6 +10865,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Step5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Step6</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12750,6 +12793,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Step5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Step6</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -14776,7 +14823,7 @@ ISCHANGED(  OwnerId )
   OR(RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,RecordType.DeveloperName = &apos;CN_New_Direct&apos;),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   OR(
-  ISPICKVAL(CN_Invoice_Type__c, &quot;General Invoice&quot;),
+    ISPICKVAL(CN_Invoice_Type__c, &quot;General Invoice&quot;),
     ISPICKVAL(CN_Invoice_Type__c, &quot;Electronic General Invoice&quot;)
   ),
   OR(
@@ -14963,7 +15010,7 @@ Reference Day</errorMessage>
   OR(RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,RecordType.DeveloperName = &apos;CN_New_Direct&apos;),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   OR(
-  ISPICKVAL(CN_Invoice_Type__c, &quot;VAT Invoice&quot;),
+    ISPICKVAL(CN_Invoice_Type__c, &quot;VAT Invoice&quot;),
     ISPICKVAL(CN_Invoice_Type__c, &quot;Electronic VAT Invoice&quot;)
   ),
   OR(
