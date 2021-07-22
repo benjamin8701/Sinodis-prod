@@ -980,6 +980,17 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>CN_Total_Confirmed_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Confirmed Value</label>
+        <summarizedField>CN_Sales_Order_Item__c.CN_Confirmed_Value__c</summarizedField>
+        <summaryForeignKey>CN_Sales_Order_Item__c.CN_Order_Number__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
         <fullName>CN_Up_Code__c</fullName>
         <caseSensitive>true</caseSensitive>
         <externalId>true</externalId>

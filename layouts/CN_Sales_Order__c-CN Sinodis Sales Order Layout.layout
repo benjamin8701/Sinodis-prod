@@ -64,6 +64,10 @@
                 <behavior>Edit</behavior>
                 <field>CN_Tax_Amount__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Total_Confirmed_Value__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
