@@ -18,7 +18,7 @@
             <type>accountOwner</type>
         </recipients>
         <recipients>
-            <field>CN_Approver_5__c</field>
+            <field>CN_Approver_6__c</field>
             <type>userLookup</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -49,6 +49,10 @@
         </recipients>
         <recipients>
             <field>CN_Approver_5__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>CN_Approver_6__c</field>
             <type>userLookup</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -83,7 +87,7 @@
             <type>accountOwner</type>
         </recipients>
         <recipients>
-            <field>CN_Approver_5__c</field>
+            <field>CN_Approver_6__c</field>
             <type>userLookup</type>
         </recipients>
         <senderType>DefaultWorkflowUser</senderType>
@@ -97,7 +101,7 @@
             <type>accountOwner</type>
         </recipients>
         <recipients>
-            <field>CN_Approver_5__c</field>
+            <field>CN_Approver_6__c</field>
             <type>userLookup</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -129,6 +133,10 @@
         </recipients>
         <recipients>
             <field>CN_Approver_5__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>CN_Approver_6__c</field>
             <type>userLookup</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -317,6 +325,16 @@
         <reevaluateOnChange>true</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>CN_Populate_Approve_Step6</fullName>
+        <field>CN_Approve_Step__c</field>
+        <literalValue>Step6</literalValue>
+        <name>CN_Populate_Approve_Step6</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CN_Populate_Synced</fullName>
         <field>CN_Synchronized__c</field>
         <literalValue>1</literalValue>
@@ -460,6 +478,21 @@
             <offsetFromField>Account.CN_Approve_Aging_Trigger_Datetime__c</offsetFromField>
             <timeLength>0</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CN_Account_Approval_Aging_Step6</fullName>
+        <active>true</active>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,    RecordType.DeveloperName = &quot;CN_Edit_Direct&quot;,   ISPICKVAL(CN_Account_Status__c, &quot;Submitted for Approval&quot;),      ISPICKVAL( CN_Approve_Step__c , &quot;Step6&quot;),    NOT(ISBLANK(CN_Current_Approver__c )) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>CN_Account_Send_Email_approval_Pending</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.CN_Approve_Aging_Trigger_Datetime__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
     </rules>
     <rules>

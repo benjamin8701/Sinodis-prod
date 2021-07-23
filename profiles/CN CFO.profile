@@ -472,6 +472,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.CN_Approver_6__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.CN_Bank_Account__c</field>
         <readable>true</readable>
@@ -1079,6 +1084,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.CN_Sales_Person_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.CN_Sales_Person_SalesTeam_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

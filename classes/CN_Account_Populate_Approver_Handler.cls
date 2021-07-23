@@ -75,6 +75,7 @@ public without sharing class CN_Account_Populate_Approver_Handler implements Tri
             acc.CN_Approver_3__c = null;
             acc.CN_Approver_4__c = null;
             acc.CN_Approver_5__c = null;
+            acc.CN_Approver_6__c = null;
 
             User owner = ownerMap.get(acc.OwnerId);
             Map<String, String> titleUserIdMap = new Map<String, String>();
@@ -93,6 +94,8 @@ public without sharing class CN_Account_Populate_Approver_Handler implements Tri
             if(String.isNotBlank(owner.Manager.Manager.Manager.Manager.ManagerId)) {
             	titleUserIdMap.put(owner.Manager.Manager.Manager.Manager.Manager.Title, owner.Manager.Manager.Manager.Manager.ManagerId);
             }
+            acc.CN_Approver_1__c = settings.CN_Sales_MDM_UserId__c;
+            
             if(String.isNotBlank(owner.Title)) {
                 String RMId = titleUserIdMap.get(Constants.CN_USER_TITLE_RM);
                 String CMId = titleUserIdMap.get(Constants.CN_USER_TITLE_CM);
@@ -104,15 +107,16 @@ public without sharing class CN_Account_Populate_Approver_Handler implements Tri
                         CMId = CDId;
                     }
                 }
-
-                acc.CN_Approver_1__c = RMId;
-                acc.CN_Approver_2__c = CMId;
+                if(acc.CN_Sales_Person_SalesTeam_Code__c == Constants.CN_ACCOUNT_SALESTEAM_CODE_WS && RMID <> settings.CN_WholeSales_Development_Supervisor__c){
+                    acc.CN_Approver_2__c = settings.CN_WholeSales_Development_Supervisor__c;
+                }
+                acc.CN_Approver_3__c = RMId;
+                acc.CN_Approver_4__c = CMId;
                 if(acc.CN_Is_Cross_Channel__c) {
-                    acc.CN_Approver_3__c = CDId;
+                    acc.CN_Approver_5__c = CDId;
                 }
             }
-            acc.CN_Approver_4__c = settings.CN_Sales_MDM_UserId__c;
-            acc.CN_Approver_5__c = settings.CN_Finance_MDM_UserId__c;
+            acc.CN_Approver_6__c = settings.CN_Finance_MDM_UserId__c;
             
             acc.CN_Finance_AR__c = settings.CN_Finance_AR_UserId__c;
         }

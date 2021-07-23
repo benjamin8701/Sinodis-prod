@@ -222,6 +222,46 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Internal Employees</pluralLabel>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>CN_Personnel_Number__c</fields>
+        <profileName>CN Sales MDM</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>CN_Personnel_Number__c</fields>
+        <profileName>CN CFO</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>CN_Personnel_Number__c</fields>
+        <profileName>CN Finance MDM</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>CN_Personnel_Number__c</fields>
+        <profileName>System Administrator</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>CN_Personnel_Number__c</fields>
+        <profileName>CN Sales</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>CN_Personnel_Number__c</fields>
+        <profileName>CN Finance AR</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>CN_Personnel_Number__c</fields>
+        <profileName>CN Sales Manager</profileName>
+    </profileSearchLayouts>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>CN_Personnel_Number__c</fields>
+        <profileName>CN Sales Lead</profileName>
+    </profileSearchLayouts>
     <recordTypes>
         <fullName>CN_Internal_Employee</fullName>
         <active>true</active>
@@ -238,7 +278,10 @@
             </values>
         </picklistValues>
     </recordTypes>
-    <searchLayouts/>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>CN_Personnel_Number__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Personnel_Number__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

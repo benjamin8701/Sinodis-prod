@@ -34,7 +34,8 @@ private class CN_CTA_Approve_Aging_Handler_Test {
             CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
             CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
             CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM')
+            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
+			CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
         );
         insert approveSetting;
 
@@ -105,7 +106,7 @@ private class CN_CTA_Approve_Aging_Handler_Test {
             CN_Credit_Term_Application__c cta = new CN_Credit_Term_Application__c();
             cta.CN_Account__c = acc.Id;
             cta.CN_Company_Background__c = 'company background';
-            cta.CN_Nature_Of_Request__c = 'Regular Customer ';
+            cta.CN_Nature_Of_Request__c = 'Regular Customer	';
             cta.CN_Payment_Term_Negotiated__c = 'D005';
             cta.CN_Reference_Day__c = 'Delivery_Day';
             cta.CN_Credit_Limit_Incl_VAT__c = 113.00;
