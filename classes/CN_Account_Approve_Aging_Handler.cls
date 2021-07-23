@@ -19,7 +19,7 @@ public without sharing class CN_Account_Approve_Aging_Handler implements Trigger
     public void handleBeforeUpdate() {
         Id accRTId = Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get(Constants.CN_Account_RT_API_NAME_EDIT_DIRECT).getRecordTypeId();
         List<Account> accList = new List<Account>();
-        for(Account acc : (List<Account>)Trigger.New) {          
+        for(Account acc : (List<Account>)Trigger.New) {
             if(acc.recordTypeId == accRTId && Constants.CN_ACCOUNT_ACCOUNT_STATUS_SUBMITTED_FOR_APPROVAL.equals(acc.CN_Account_Status__c) && String.isNotBlank(acc.CN_Approve_Step__c) && acc.CN_Approve_Step__c <> ((Account)Trigger.oldMap.get(acc.Id)).CN_Approve_Step__c ){
                 accList.add(acc);
             }
@@ -39,14 +39,15 @@ public without sharing class CN_Account_Approve_Aging_Handler implements Trigger
             ApproveStepStringApproverIdMap.put('step3',acc.CN_Approver_3__c);
             ApproveStepStringApproverIdMap.put('step4',acc.CN_Approver_4__c);
             ApproveStepStringApproverIdMap.put('step5',acc.CN_Approver_5__c);
+            ApproveStepStringApproverIdMap.put('step6',acc.CN_Approver_6__c);
 
             Integer str_Approve_Step_num = Integer.valueOf(acc.CN_Approve_Step__c.Right(1));
-            for(Integer n=str_Approve_Step_num;n<=5;n++){
+            for(Integer n=str_Approve_Step_num;n<=6;n++){
                 if(String.isNotBlank(ApproveStepStringApproverIdMap.get('step'+n))){
                     acc.CN_Current_Approver__c = ApproveStepStringApproverIdMap.get('step'+ n);
                     acc.CN_Approve_Step__c = 'step'+n;
                     break;
-                }else if(n==5){
+                }else if(n==6){
                     return;
                 }
             }

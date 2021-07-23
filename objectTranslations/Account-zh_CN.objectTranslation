@@ -110,30 +110,39 @@
             <masterLabel>Step5</masterLabel>
             <translation><!-- Step5 --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>Step6</masterLabel>
+            <translation><!-- Step6 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales MDM --></label>
+        <name>CN_Approver_1__c</name>
+        <relationshipLabel><!-- Accounts (Sales MDM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wholesale Channel Manager --></label>
+        <name>CN_Approver_2__c</name>
+        <relationshipLabel><!-- Accounts (Wholesale Channel Manager) --></relationshipLabel>
     </fields>
     <fields>
         <label><!-- Regional Manager --></label>
-        <name>CN_Approver_1__c</name>
+        <name>CN_Approver_3__c</name>
         <relationshipLabel><!-- Accounts (Regional Manager) --></relationshipLabel>
     </fields>
     <fields>
         <label><!-- Channel Director --></label>
-        <name>CN_Approver_2__c</name>
+        <name>CN_Approver_4__c</name>
         <relationshipLabel><!-- Accounts (Channel Director) --></relationshipLabel>
     </fields>
     <fields>
         <label><!-- Commercial Director --></label>
-        <name>CN_Approver_3__c</name>
+        <name>CN_Approver_5__c</name>
         <relationshipLabel><!-- Accounts (Commercial Director) --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Sales MDM --></label>
-        <name>CN_Approver_4__c</name>
-        <relationshipLabel><!-- Accounts (Sales MDM) --></relationshipLabel>
-    </fields>
-    <fields>
         <label><!-- Finance MDM --></label>
-        <name>CN_Approver_5__c</name>
+        <name>CN_Approver_6__c</name>
         <relationshipLabel><!-- Accounts (Finance MDM) --></relationshipLabel>
     </fields>
     <fields>
@@ -1645,6 +1654,10 @@
         <label>销售人姓名</label>
         <name>CN_Sales_Person_Name__c</name>
         <relationshipLabel><!-- Accounts (Sales Person Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Person SalesTeam Code --></label>
+        <name>CN_Sales_Person_SalesTeam_Code__c</name>
     </fields>
     <fields>
         <help>可检索KA/DS/WS</help>

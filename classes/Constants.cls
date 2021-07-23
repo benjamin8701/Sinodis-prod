@@ -34,6 +34,8 @@ public without sharing class Constants {
 	public static final String CN_ACCOUNT_SALESOFFICE_VALUE_K060 = 'K060';
 
 	public static final String CN_ACCOUNT_SYNC_STATUS_SUCCESS = 'Success';
+    
+    public static final String CN_ACCOUNT_SALESTEAM_CODE_WS = '900014';
 
 
     // ContentDocumentLink
