@@ -14,6 +14,8 @@ public class TestDataFactory {
         objectList.add(makeInternalImployee('TestUser2', 'Test0002', 'TestUser2@example.com', 'AR'));
         objectList.add(makeInternalImployee('TestUser3', 'Test00012', 'TestUser3@example.com', 'Sales'));
         objectList.add(makeInternalImployee('TestUser4', 'Test0012', 'TestUser4@example.com', 'Sales'));
+        objectList.add(makeInternalImployee('TestUser5', 'Test0013', 'TestUser5@example.com', 'Sales'));
+
 
         objectList.add(makeBusinessUnit('Food Service', '0000900001'));
         objectList.add(makeBusinessUnit('RETAIL', '0000900002'));
@@ -161,6 +163,7 @@ public class TestDataFactory {
         objectList.add(makeUser('Manager', 'CN Sales Manager', 'CN_Manager', 'Manager', 'Test0012', '0000901001', ''));
         objectList.add(makeUser('Sales1', 'CN Sales', 'CN_Sales', 'Sales Rep', 'Test0001', '0000901001', 'K010'));
         objectList.add(makeUser('Sales2', 'CN Sales', 'CN_Sales', 'Sales Rep', 'Test00012', '0000901001', 'K020'));
+        objectList.add(makeUser('WholeSalesDevelopmentSupervisor', 'CN Sales Manager', 'CN_RM', 'Regional Manager', 'Test0013', '0000901001', 'K010'));
         insert objectList;
 
         List<User> userList = [SELECT Id, LastName FROM User];
@@ -293,7 +296,8 @@ public class TestDataFactory {
             CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
             CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
             CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM')
+            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
+            CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
         );
         insert approveSetting;
 

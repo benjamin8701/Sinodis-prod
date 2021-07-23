@@ -34,7 +34,8 @@ private class CN_Account_New_ConRequest_LC_Ctrl_Test {
             CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
             CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
             CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM')
+            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
+            CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
         );
         insert approveSetting;
 
@@ -59,7 +60,7 @@ private class CN_Account_New_ConRequest_LC_Ctrl_Test {
             acc.CN_Store_Name_EN__c = 'TestClass_Account';
             acc.CN_Store_Name_CN__c = 'TestClass_Account';
             acc.CN_Sales_District__c = '001';
-            //acc.CN_Customer_Group__c = '01';
+            acc.CN_Customer_Group__c = '01';
             acc.CN_Category__c = 'BAPA';
             acc.CN_Subcategory__c = 'Access Bakery';
             acc.CN_Province_CN__c = province.Id;

@@ -35,7 +35,8 @@ private class CN_Sales_Order_Send_LC_Ctrl_Test {
             CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
             CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
             CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM')
+            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
+			CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
         );
         insert approveSetting;
 
@@ -150,7 +151,8 @@ private class CN_Sales_Order_Send_LC_Ctrl_Test {
             CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
             CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
             CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM')
+            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
+			CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
         );
         insert approveSetting;
 
@@ -265,7 +267,8 @@ private class CN_Sales_Order_Send_LC_Ctrl_Test {
             CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
             CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
             CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM')
+            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
+			CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
         );
         insert approveSetting;
 
@@ -380,7 +383,8 @@ private class CN_Sales_Order_Send_LC_Ctrl_Test {
             CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
             CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
             CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM')
+            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
+			CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
         );
         insert approveSetting;
 
@@ -495,7 +499,8 @@ private class CN_Sales_Order_Send_LC_Ctrl_Test {
             CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
             CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
             CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM')
+            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
+			CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
         );
         insert approveSetting;
 
@@ -609,7 +614,8 @@ private class CN_Sales_Order_Send_LC_Ctrl_Test {
             CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
             CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
             CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM')
+            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
+			CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
         );
         insert approveSetting;
 
@@ -724,7 +730,8 @@ private class CN_Sales_Order_Send_LC_Ctrl_Test {
             CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
             CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
             CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM')
+            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
+			CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
         );
         insert approveSetting;
 
