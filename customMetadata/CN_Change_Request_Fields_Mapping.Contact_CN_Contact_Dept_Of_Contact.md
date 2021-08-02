@@ -12,7 +12,7 @@
     </values>
     <values>
         <field>CN_Is_Interface_Field__c</field>
-        <value xsi:type="xsd:boolean">false</value>
+        <value xsi:type="xsd:boolean">true</value>
     </values>
     <values>
         <field>CN_Object_Name__c</field>
