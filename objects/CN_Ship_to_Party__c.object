@@ -272,6 +272,17 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Customer_Name_EN__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Name(EN)</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Customer_Name__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Please input license name + store name.</inlineHelpText>
@@ -328,7 +339,7 @@
         <fullName>CN_Delivery_Address_EN__c</fullName>
         <externalId>false</externalId>
         <label>Delivery Address (EN)</label>
-        <length>60</length>
+        <length>220</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
@@ -503,6 +514,16 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CN_Post_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Sold_To_Party_Customer__r.CN_Post_Code__c</formula>
+        <label>Post Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Province_CN__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -548,9 +569,19 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Search_Term_EN__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Sold_To_Party_Customer__r.CN_License_Name_EN__c</formula>
+        <label>Search Term(EN)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Search_Term__c</fullName>
         <externalId>false</externalId>
-        <formula>CN_Sold_To_Party_Customer__r.CN_Store_Name_CN__c</formula>
+        <formula>CN_Sold_To_Party_Customer__r.Name</formula>
         <label>Search Term</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -699,6 +730,19 @@
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CN_Tax_Classification__c</fullName>
+        <defaultValue>1</defaultValue>
+        <externalId>false</externalId>
+        <label>Tax Classification</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Telephone__c</fullName>

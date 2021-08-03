@@ -544,7 +544,7 @@
         <name>CN_Customer_Code__c</name>
     </fields>
     <fields>
-        <label>客户群</label>
+        <label><!-- Customer Group --></label>
         <name>CN_Customer_Group__c</name>
     </fields>
     <fields>
@@ -880,6 +880,10 @@
     <fields>
         <label>指标：记录付款历史</label>
         <name>CN_Indicator_Record_Payment_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Type API --></label>
+        <name>CN_Invoice_Type_API__c</name>
     </fields>
     <fields>
         <label>发票类型</label>

@@ -2095,6 +2095,10 @@
         <name>CN_ShipTo_Contact_Name__c</name>
     </fields>
     <fields>
+        <label><!-- ShipTo Customer Name(EN) --></label>
+        <name>CN_ShipTo_Customer_Name_EN__c</name>
+    </fields>
+    <fields>
         <label><!-- ShipTo Customer Name --></label>
         <name>CN_ShipTo_Customer_Name__c</name>
     </fields>
@@ -3522,6 +3526,10 @@
     <fields>
         <label><!-- New ShipTo Contact Name --></label>
         <name>New_CN_ShipTo_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New ShipTo Customer Name(EN) --></label>
+        <name>New_CN_ShipTo_Customer_Name_EN__c</name>
     </fields>
     <fields>
         <help><!-- Please input license name + store name. --></help>

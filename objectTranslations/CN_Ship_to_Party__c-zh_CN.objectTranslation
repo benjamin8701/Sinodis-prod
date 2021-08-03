@@ -44,6 +44,10 @@
         <name>CN_Country__c</name>
     </fields>
     <fields>
+        <label>客户名称（EN）</label>
+        <name>CN_Customer_Name_EN__c</name>
+    </fields>
+    <fields>
         <help>请输入营业执照名和店铺名</help>
         <label>客户名称</label>
         <name>CN_Customer_Name__c</name>
@@ -155,6 +159,10 @@
         <name>CN_Order_Combination__c</name>
     </fields>
     <fields>
+        <label>邮政编码</label>
+        <name>CN_Post_Code__c</name>
+    </fields>
+    <fields>
         <label>省（CN）</label>
         <name>CN_Province_CN__c</name>
         <relationshipLabel>送达方</relationshipLabel>
@@ -170,6 +178,10 @@
     <fields>
         <label><!-- Region --></label>
         <name>CN_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Term(EN) --></label>
+        <name>CN_Search_Term_EN__c</name>
     </fields>
     <fields>
         <label><!-- Search Term --></label>
@@ -222,6 +234,10 @@
     <fields>
         <label>同步时间</label>
         <name>CN_Sync_Time__c</name>
+    </fields>
+    <fields>
+        <label>税收分类</label>
+        <name>CN_Tax_Classification__c</name>
     </fields>
     <fields>
         <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>

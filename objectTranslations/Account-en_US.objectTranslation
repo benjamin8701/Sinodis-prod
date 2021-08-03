@@ -899,6 +899,10 @@
         <name>CN_Indicator_Record_Payment_History__c</name>
     </fields>
     <fields>
+        <label><!-- Invoice Type API --></label>
+        <name>CN_Invoice_Type_API__c</name>
+    </fields>
+    <fields>
         <label><!-- Invoice Type --></label>
         <name>CN_Invoice_Type__c</name>
         <picklistValues>

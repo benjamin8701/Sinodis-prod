@@ -1044,7 +1044,7 @@
         <fullName>CN_Account_Invoicing_Address_EN__c</fullName>
         <externalId>false</externalId>
         <label>Delivery Address(EN)</label>
-        <length>60</length>
+        <length>220</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -1106,7 +1106,7 @@
         <fullName>CN_Account_License_Name_EN__c</fullName>
         <externalId>false</externalId>
         <label>Account License Name(EN)</label>
-        <length>40</length>
+        <length>80</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -2029,7 +2029,7 @@
         <fullName>CN_Account_Store_Name_CN__c</fullName>
         <externalId>false</externalId>
         <label>Account Commercial Name (CN)</label>
-        <length>20</length>
+        <length>30</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -2041,7 +2041,7 @@
         <fullName>CN_Account_Store_Name_EN__c</fullName>
         <externalId>false</externalId>
         <label>Account Commercial Name (EN)</label>
-        <length>20</length>
+        <length>30</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -4945,6 +4945,18 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_ShipTo_Customer_Name_EN__c</fullName>
+        <externalId>false</externalId>
+        <label>ShipTo Customer Name(EN)</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_ShipTo_Customer_Name__c</fullName>
         <externalId>false</externalId>
         <label>ShipTo Customer Name</label>
@@ -4972,7 +4984,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>CN_ShipTo_Delivery_Address_EN__c</fullName>
         <externalId>false</externalId>
         <label>ShipTo Delivery Address(EN)</label>
-        <length>60</length>
+        <length>220</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -5969,7 +5981,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>New_CN_Account_Invoicing_Address_EN__c</fullName>
         <externalId>false</externalId>
         <label>New Delivery Address(EN)</label>
-        <length>60</length>
+        <length>220</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -6031,7 +6043,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>New_CN_Account_License_Name_EN__c</fullName>
         <externalId>false</externalId>
         <label>New Account License Name(EN)</label>
-        <length>40</length>
+        <length>80</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -6961,7 +6973,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>New_CN_Account_Store_Name_CN__c</fullName>
         <externalId>false</externalId>
         <label>New Account Commercial Name (CN)</label>
-        <length>20</length>
+        <length>30</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -6973,7 +6985,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>New_CN_Account_Store_Name_EN__c</fullName>
         <externalId>false</externalId>
         <label>New Account Commercial Name (EN)</label>
-        <length>20</length>
+        <length>30</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -7925,6 +7937,18 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>New_CN_ShipTo_Customer_Name_EN__c</fullName>
+        <externalId>false</externalId>
+        <label>New ShipTo Customer Name(EN)</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>New_CN_ShipTo_Customer_Name__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Please input license name + store name.</inlineHelpText>
@@ -7953,7 +7977,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>New_CN_ShipTo_Delivery_Address_EN__c</fullName>
         <externalId>false</externalId>
         <label>New ShipTo Delivery Address(EN)</label>
-        <length>60</length>
+        <length>220</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>

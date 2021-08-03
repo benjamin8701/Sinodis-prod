@@ -70,6 +70,10 @@
                 <behavior>Readonly</behavior>
                 <field>CN_ShipTo_Indirect_Account__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_ShipTo_Customer_Name_EN__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -115,6 +119,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>New_CN_ShipTo_Indirect_Account__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>New_CN_ShipTo_Customer_Name_EN__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

@@ -2091,6 +2091,10 @@
         <name>CN_ShipTo_Contact_Name__c</name>
     </fields>
     <fields>
+        <label>送达方客户名称（EN）</label>
+        <name>CN_ShipTo_Customer_Name_EN__c</name>
+    </fields>
+    <fields>
         <label>送达方客户名称</label>
         <name>CN_ShipTo_Customer_Name__c</name>
     </fields>
@@ -3518,6 +3522,10 @@
     <fields>
         <label>新送达方联系人姓名</label>
         <name>New_CN_ShipTo_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label>新送达方客户名称（EN）</label>
+        <name>New_CN_ShipTo_Customer_Name_EN__c</name>
     </fields>
     <fields>
         <help>请输入营业执照名和店铺名</help>

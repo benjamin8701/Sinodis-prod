@@ -763,6 +763,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.CN_Invoice_Type_API__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.CN_Invoice_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2413,6 +2418,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Change_Request__c.CN_ShipTo_Customer_Name_EN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CN_Change_Request__c.CN_ShipTo_Customer_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2869,6 +2879,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CN_Change_Request__c.New_CN_ShipTo_Contact_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Change_Request__c.New_CN_ShipTo_Customer_Name_EN__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3778,6 +3793,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Ship_to_Party__c.CN_Customer_Name_EN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CN_Ship_to_Party__c.CN_Customer_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3848,6 +3868,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Ship_to_Party__c.CN_Post_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Ship_to_Party__c.CN_Province_CN__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3864,6 +3889,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Ship_to_Party__c.CN_Region__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Ship_to_Party__c.CN_Search_Term_EN__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3899,6 +3929,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Ship_to_Party__c.CN_Sync_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Ship_to_Party__c.CN_Tax_Classification__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
