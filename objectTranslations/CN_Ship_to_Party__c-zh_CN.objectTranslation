@@ -44,12 +44,12 @@
         <name>CN_Country__c</name>
     </fields>
     <fields>
-        <label>客户名称（EN）</label>
+        <label>送达方（EN）</label>
         <name>CN_Customer_Name_EN__c</name>
     </fields>
     <fields>
         <help>请输入营业执照名和店铺名</help>
-        <label>客户名称</label>
+        <label>送达方（CN）</label>
         <name>CN_Customer_Name__c</name>
     </fields>
     <fields>

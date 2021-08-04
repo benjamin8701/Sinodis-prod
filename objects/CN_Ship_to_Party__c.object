@@ -274,7 +274,7 @@
     <fields>
         <fullName>CN_Customer_Name_EN__c</fullName>
         <externalId>false</externalId>
-        <label>Customer Name(EN)</label>
+        <label>Ship To Name(EN)</label>
         <length>80</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -286,7 +286,7 @@
         <fullName>CN_Customer_Name__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Please input license name + store name.</inlineHelpText>
-        <label>Customer Name</label>
+        <label>Ship To Name(CN)</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>

@@ -4947,7 +4947,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>CN_ShipTo_Customer_Name_EN__c</fullName>
         <externalId>false</externalId>
-        <label>ShipTo Customer Name(EN)</label>
+        <label>Ship To Name(EN)</label>
         <length>80</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -4959,7 +4959,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>CN_ShipTo_Customer_Name__c</fullName>
         <externalId>false</externalId>
-        <label>ShipTo Customer Name</label>
+        <label>Ship To Name(CN)</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -7939,7 +7939,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>New_CN_ShipTo_Customer_Name_EN__c</fullName>
         <externalId>false</externalId>
-        <label>New ShipTo Customer Name(EN)</label>
+        <label>New Ship To Name(EN)</label>
         <length>80</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -7952,7 +7952,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>New_CN_ShipTo_Customer_Name__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Please input license name + store name.</inlineHelpText>
-        <label>New ShipTo Customer Name</label>
+        <label>New Ship To Name(CN)</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>

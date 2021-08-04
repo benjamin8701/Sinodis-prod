@@ -48,12 +48,12 @@
         <name>CN_Country__c</name>
     </fields>
     <fields>
-        <label><!-- Customer Name(EN) --></label>
+        <label><!-- Ship To Name(EN) --></label>
         <name>CN_Customer_Name_EN__c</name>
     </fields>
     <fields>
         <help><!-- Please input license name + store name. --></help>
-        <label><!-- Customer Name --></label>
+        <label><!-- Ship To Name(CN) --></label>
         <name>CN_Customer_Name__c</name>
     </fields>
     <fields>

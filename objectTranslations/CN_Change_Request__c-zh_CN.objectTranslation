@@ -2091,11 +2091,11 @@
         <name>CN_ShipTo_Contact_Name__c</name>
     </fields>
     <fields>
-        <label>送达方客户名称（EN）</label>
+        <label>送达方（EN）</label>
         <name>CN_ShipTo_Customer_Name_EN__c</name>
     </fields>
     <fields>
-        <label>送达方客户名称</label>
+        <label>送达方（CN）</label>
         <name>CN_ShipTo_Customer_Name__c</name>
     </fields>
     <fields>
@@ -3524,12 +3524,12 @@
         <name>New_CN_ShipTo_Contact_Name__c</name>
     </fields>
     <fields>
-        <label>新送达方客户名称（EN）</label>
+        <label>新送达方（EN）</label>
         <name>New_CN_ShipTo_Customer_Name_EN__c</name>
     </fields>
     <fields>
         <help>请输入营业执照名和店铺名</help>
-        <label>新送达方客户名称</label>
+        <label>新送达方（CN）</label>
         <name>New_CN_ShipTo_Customer_Name__c</name>
     </fields>
     <fields>
