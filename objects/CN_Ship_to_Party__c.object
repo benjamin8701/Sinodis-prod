@@ -733,15 +733,14 @@
     </fields>
     <fields>
         <fullName>CN_Tax_Classification__c</fullName>
-        <defaultValue>1</defaultValue>
+        <defaultValue>&quot;1&quot;</defaultValue>
         <externalId>false</externalId>
         <label>Tax Classification</label>
-        <precision>1</precision>
+        <length>1</length>
         <required>false</required>
-        <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
-        <type>Number</type>
+        <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
