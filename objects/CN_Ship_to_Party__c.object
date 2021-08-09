@@ -497,7 +497,7 @@
     <fields>
         <fullName>CN_Mobile_Phone__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>Mobile Phone</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -746,7 +746,7 @@
     <fields>
         <fullName>CN_Telephone__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>Telephone</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -941,7 +941,7 @@
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(ISBLANK( CN_Mobile_Phone__c )),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  NOT(OR(REGEX(CN_Mobile_Phone__c , &apos;1\\d{10}&apos;),REGEX(CN_Mobile_Phone__c ,&apos;\\d{3}-\\d{8}&apos; )))
+  NOT(OR(REGEX(CN_Mobile_Phone__c , &apos;1\\d{10}&apos;),REGEX(CN_Mobile_Phone__c ,&apos;\\d{3,4}-\\d{8}(-\\d{2,5})?&apos;)))
 )</errorConditionFormula>
         <errorDisplayField>CN_Mobile_Phone__c</errorDisplayField>
         <errorMessage>Please input a phone number with a valid format.</errorMessage>
@@ -953,7 +953,7 @@
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(ISBLANK( CN_Telephone__c )),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  NOT(OR(REGEX(CN_Telephone__c , &apos;1\\d{10}&apos;),REGEX(CN_Telephone__c ,&apos;\\d{3}-\\d{8}&apos; )))
+  NOT(OR(REGEX(CN_Telephone__c , &apos;1\\d{10}&apos;),REGEX(CN_Telephone__c ,&apos;\\d{3,4}-\\d{8}(-\\d{2,5})?&apos;)))
 )</errorConditionFormula>
         <errorDisplayField>CN_Telephone__c</errorDisplayField>
         <errorMessage>Please input a phone number with a valid format.</errorMessage>

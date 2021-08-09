@@ -150,7 +150,7 @@
         <name>CN_Max_Partial_Delivery__c</name>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</help>
         <label>送达方联系人手机</label>
         <name>CN_Mobile_Phone__c</name>
     </fields>
@@ -240,7 +240,7 @@
         <name>CN_Tax_Classification__c</name>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</help>
         <label>送达方联系人电话</label>
         <name>CN_Telephone__c</name>
     </fields>

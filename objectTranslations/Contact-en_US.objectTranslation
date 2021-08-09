@@ -333,11 +333,11 @@
         <name>CN_Check_BillToAddress</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Please input a phone number with a valid format. --></errorMessage>
+        <errorMessage><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></errorMessage>
         <name>CN_Check_Moblie_NumberFormat</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Please input a phone number with a valid format. --></errorMessage>
+        <errorMessage><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></errorMessage>
         <name>CN_Check_Phone_NumberFormat</name>
     </validationRules>
     <validationRules>

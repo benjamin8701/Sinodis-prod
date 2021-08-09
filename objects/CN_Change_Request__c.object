@@ -2831,7 +2831,7 @@
     <fields>
         <fullName>CN_Billing_Mobile_Phone__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>Billing Mobile Phone</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -2842,7 +2842,7 @@
     <fields>
         <fullName>CN_Billing_Phone_Number__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>Billing Phone Number</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -3237,7 +3237,7 @@
     <fields>
         <fullName>CN_Contact_Mobile__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>Contact Mobile</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -3271,7 +3271,7 @@
     <fields>
         <fullName>CN_Contact_Phone_Number__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>Contact Phone Number</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -3887,7 +3887,7 @@
     <fields>
         <fullName>CN_New_Billing_Mobile_Phone__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>New Billing Mobile Phone</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -3898,7 +3898,7 @@
     <fields>
         <fullName>CN_New_Billing_Phone_Number__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>New Billing Phone Number</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -4296,7 +4296,7 @@
     <fields>
         <fullName>CN_New_Purchasing_Phone_Number__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>New Purchasing Phone Number</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -4722,7 +4722,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>CN_Purchasing_Mobile_Phone__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>Purchasing Mobile Phone</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -4733,7 +4733,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>CN_Purchasing_Phone_Number__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>Purchasing Phone Number</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -5056,7 +5056,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>CN_ShipTo_Mobile_Phone__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>ShipTo Mobile Phone</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -5095,7 +5095,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>CN_ShipTo_Telephone__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>ShipTo Telephone</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -7783,7 +7783,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>New_CN_Contact_Mobile__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>New Contact Mobile</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -7817,7 +7817,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>New_CN_Contact_Phone_Number__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>New Contact Phone Number</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -8049,7 +8049,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>New_CN_ShipTo_Mobile_Phone__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>New ShipTo Mobile Phone</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -8088,7 +8088,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>New_CN_ShipTo_Telephone__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <label>New ShipTo Telephone</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -33680,7 +33680,7 @@ Invoicing Address and Phone.</errorMessage>
   ),
   NOT(ISBLANK(New_CN_Contact_Mobile__c)),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  NOT(OR(REGEX(New_CN_Contact_Mobile__c, &apos;1\\d{10}&apos;),REGEX(New_CN_Contact_Mobile__c,&apos;\\d{3}-\\d{8}&apos; )))
+  NOT(OR(REGEX(New_CN_Contact_Mobile__c, &apos;1\\d{10}&apos;),REGEX(New_CN_Contact_Mobile__c,&apos;\\d{3,4}-\\d{8}(-\\d{2,5})?&apos;)))
 )</errorConditionFormula>
         <errorDisplayField>New_CN_Contact_Mobile__c</errorDisplayField>
         <errorMessage>Please input a phone number with a valid format.</errorMessage>
@@ -33712,7 +33712,7 @@ Invoicing Address and Phone.</errorMessage>
   ),
   NOT(ISBLANK(New_CN_Contact_Phone_Number__c)),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  NOT(OR(REGEX(New_CN_Contact_Phone_Number__c, &apos;1\\d{10}&apos;),REGEX(New_CN_Contact_Phone_Number__c,&apos;\\d{3}-\\d{8}&apos; )))
+  NOT(OR(REGEX(New_CN_Contact_Phone_Number__c, &apos;1\\d{10}&apos;),REGEX(New_CN_Contact_Phone_Number__c,&apos;\\d{3,4}-\\d{8}(-\\d{2,5})?&apos;)))
 )</errorConditionFormula>
         <errorDisplayField>New_CN_Contact_Phone_Number__c</errorDisplayField>
         <errorMessage>Please input a phone number with a valid format.</errorMessage>
@@ -33821,7 +33821,7 @@ OR(
   ),
   NOT(ISBLANK( New_CN_ShipTo_Mobile_Phone__c)),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  NOT(OR(REGEX(New_CN_ShipTo_Mobile_Phone__c, &apos;1\\d{10}&apos;),REGEX(New_CN_ShipTo_Mobile_Phone__c,&apos;\\d{3}-\\d{8}&apos; )))
+  NOT(OR(REGEX(New_CN_ShipTo_Mobile_Phone__c, &apos;1\\d{10}&apos;),REGEX(New_CN_ShipTo_Mobile_Phone__c,&apos;\\d{3,4}-\\d{8}(-\\d{2,5})?&apos;)))
 )</errorConditionFormula>
         <errorDisplayField>New_CN_ShipTo_Mobile_Phone__c</errorDisplayField>
         <errorMessage>Please input a phone number with a valid format.</errorMessage>
@@ -33837,7 +33837,7 @@ OR(
   ),
   NOT(ISBLANK( New_CN_ShipTo_Telephone__c)),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  NOT(OR(REGEX(New_CN_ShipTo_Telephone__c, &apos;1\\d{10}&apos;),REGEX(New_CN_ShipTo_Telephone__c,&apos;\\d{3}-\\d{8}&apos; )))
+  NOT(OR(REGEX(New_CN_ShipTo_Telephone__c, &apos;1\\d{10}&apos;),REGEX(New_CN_ShipTo_Telephone__c,&apos;\\d{3,4}-\\d{8}(-\\d{2,5})?&apos;)))
 )</errorConditionFormula>
         <errorDisplayField>New_CN_ShipTo_Telephone__c</errorDisplayField>
         <errorMessage>Please input a phone number with a valid format.</errorMessage>

@@ -154,7 +154,7 @@
         <name>CN_Max_Partial_Delivery__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- Mobile Phone --></label>
         <name>CN_Mobile_Phone__c</name>
     </fields>
@@ -244,7 +244,7 @@
         <name>CN_Tax_Classification__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- Telephone --></label>
         <name>CN_Telephone__c</name>
     </fields>

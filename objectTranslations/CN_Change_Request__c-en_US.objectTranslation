@@ -1152,12 +1152,12 @@
         <name>CN_Billing_Email__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- Billing Mobile Phone --></label>
         <name>CN_Billing_Mobile_Phone__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- Billing Phone Number --></label>
         <name>CN_Billing_Phone_Number__c</name>
     </fields>
@@ -1371,7 +1371,7 @@
         <relationshipLabel><!-- Change Requests (Contact License Name) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- Contact Mobile --></label>
         <name>CN_Contact_Mobile__c</name>
     </fields>
@@ -1384,7 +1384,7 @@
         <name>CN_Contact_Open_Field_To_Comment__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- Contact Phone Number --></label>
         <name>CN_Contact_Phone_Number__c</name>
     </fields>
@@ -1649,12 +1649,12 @@
         <name>CN_New_Billing_Email__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- New Billing Mobile Phone --></label>
         <name>CN_New_Billing_Mobile_Phone__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- New Billing Phone Number --></label>
         <name>CN_New_Billing_Phone_Number__c</name>
     </fields>
@@ -1836,7 +1836,7 @@
         <name>CN_New_Purchasing_Mobile_Phone__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- New Purchasing Phone Number --></label>
         <name>CN_New_Purchasing_Phone_Number__c</name>
     </fields>
@@ -2003,12 +2003,12 @@
         <name>CN_Purchasing_Email__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- Purchasing Mobile Phone --></label>
         <name>CN_Purchasing_Mobile_Phone__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- Purchasing Phone Number --></label>
         <name>CN_Purchasing_Phone_Number__c</name>
     </fields>
@@ -2140,7 +2140,7 @@
         <relationshipLabel><!-- Change Requests (Indirect Account) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- ShipTo Mobile Phone --></label>
         <name>CN_ShipTo_Mobile_Phone__c</name>
     </fields>
@@ -2155,7 +2155,7 @@
         <relationshipLabel><!-- Change Requests (Sold-to Party Customer Code) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- ShipTo Telephone --></label>
         <name>CN_ShipTo_Telephone__c</name>
     </fields>
@@ -3472,7 +3472,7 @@
         <relationshipLabel><!-- Change Requests (New Contact License Name) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- New Contact Mobile --></label>
         <name>New_CN_Contact_Mobile__c</name>
     </fields>
@@ -3485,7 +3485,7 @@
         <name>New_CN_Contact_Open_Field_To_Comment__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- New Contact Phone Number --></label>
         <name>New_CN_Contact_Phone_Number__c</name>
     </fields>
@@ -3574,7 +3574,7 @@
         <relationshipLabel><!-- Change Requests (New Indirect Account) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- New ShipTo Mobile Phone --></label>
         <name>New_CN_ShipTo_Mobile_Phone__c</name>
     </fields>
@@ -3589,7 +3589,7 @@
         <relationshipLabel><!-- Change Requests (New Sold-to Party Customer) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- New ShipTo Telephone --></label>
         <name>New_CN_ShipTo_Telephone__c</name>
     </fields>
