@@ -1970,6 +1970,16 @@ IF(
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CN_Invoice_Type_API__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(CN_Invoice_Type__c, &quot;VAT Invoice&quot;, &quot;10&quot;, &quot;General Invoice&quot;, &quot;11&quot;,&quot;Electronic VAT Invoice&quot;,&quot;12&quot;,&quot;Electronic General Invoice&quot;,&quot;13&quot;,null)</formula>
+        <label>Invoice Type API</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Invoice_Type__c</fullName>
         <externalId>false</externalId>
         <label>Invoice Type</label>
@@ -2025,7 +2035,7 @@ IF(
         <fullName>CN_Invoicing_Address_EN__c</fullName>
         <externalId>false</externalId>
         <label>Delivery Address(EN)</label>
-        <length>60</length>
+        <length>220</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -2373,7 +2383,7 @@ IF(
         <fullName>CN_License_Name_EN__c</fullName>
         <externalId>false</externalId>
         <label>License Name(EN)</label>
-        <length>40</length>
+        <length>80</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -3819,7 +3829,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>CN_Store_Name_CN__c</fullName>
         <externalId>false</externalId>
         <label>Commercial Name (CN)</label>
-        <length>20</length>
+        <length>30</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -3830,7 +3840,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>CN_Store_Name_EN__c</fullName>
         <externalId>false</externalId>
         <label>Commercial Name (EN)</label>
-        <length>20</length>
+        <length>30</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -14105,7 +14115,7 @@ Reference Day</errorMessage>
         <errorMessage>Payment term of the account does not equal to the payment term approved in latest credit term application.</errorMessage>
     </validationRules>
     <validationRules>
-            <fullName>CN_Check_Post_Code_Length</fullName>
+        <fullName>CN_Check_Post_Code_Length</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
 	$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,

@@ -36,6 +36,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
+                <field>New_CN_ShipTo_Customer_Name_EN__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
                 <field>New_CN_ShipTo_Delivery_Plant__c</field>
             </layoutItems>
             <layoutItems>
