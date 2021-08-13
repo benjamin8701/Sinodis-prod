@@ -48,8 +48,12 @@
         <name>CN_Country__c</name>
     </fields>
     <fields>
+        <label><!-- Ship To Name(EN) --></label>
+        <name>CN_Customer_Name_EN__c</name>
+    </fields>
+    <fields>
         <help><!-- Please input license name + store name. --></help>
-        <label><!-- Customer Name --></label>
+        <label><!-- Ship To Name(CN) --></label>
         <name>CN_Customer_Name__c</name>
     </fields>
     <fields>
@@ -150,13 +154,17 @@
         <name>CN_Max_Partial_Delivery__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- Mobile Phone --></label>
         <name>CN_Mobile_Phone__c</name>
     </fields>
     <fields>
         <label><!-- Order Combination --></label>
         <name>CN_Order_Combination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Code --></label>
+        <name>CN_Post_Code__c</name>
     </fields>
     <fields>
         <label><!-- Province(CN) --></label>
@@ -174,6 +182,10 @@
     <fields>
         <label><!-- Region --></label>
         <name>CN_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Term(EN) --></label>
+        <name>CN_Search_Term_EN__c</name>
     </fields>
     <fields>
         <label><!-- Search Term --></label>
@@ -228,7 +240,11 @@
         <name>CN_Sync_Time__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number). --></help>
+        <label><!-- Tax Classification --></label>
+        <name>CN_Tax_Classification__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- Telephone --></label>
         <name>CN_Telephone__c</name>
     </fields>

@@ -972,7 +972,7 @@ INCLUDES(CN_Contact_Type__c , &quot;04&quot;)
     </fields>
     <fields>
         <fullName>MobilePhone</fullName>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
     </fields>
@@ -999,7 +999,7 @@ INCLUDES(CN_Contact_Type__c , &quot;04&quot;)
     </fields>
     <fields>
         <fullName>Phone</fullName>
-        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX (X is number).</inlineHelpText>
+        <inlineHelpText>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</inlineHelpText>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
@@ -1351,10 +1351,10 @@ INCLUDES(CN_Contact_Type__c , &quot;04&quot;)
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(ISBLANK(MobilePhone)),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  NOT(OR(REGEX(MobilePhone, &apos;1\\d{10}&apos;),REGEX(MobilePhone,&apos;\\d{3}-\\d{8}&apos; )))
+  NOT(OR(REGEX(MobilePhone, &apos;1\\d{10}&apos;),REGEX(MobilePhone,&apos;\\d{3,4}-\\d{8}(-\\d{2,5})?&apos;)))
 )</errorConditionFormula>
         <errorDisplayField>MobilePhone</errorDisplayField>
-        <errorMessage>Please input a phone number with a valid format.</errorMessage>
+        <errorMessage>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Phone_NumberFormat</fullName>
@@ -1364,10 +1364,10 @@ INCLUDES(CN_Contact_Type__c , &quot;04&quot;)
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(ISBLANK(Phone)),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  NOT(OR(REGEX(Phone, &apos;1\\d{10}&apos;),REGEX(Phone,&apos;\\d{3}-\\d{8}&apos; )))
+  NOT(OR(REGEX(Phone, &apos;1\\d{10}&apos;),REGEX(Phone,&apos;\\d{3,4}-\\d{8}(-\\d{2,5})?&apos;)))
 )</errorConditionFormula>
         <errorDisplayField>Phone</errorDisplayField>
-        <errorMessage>Please input a phone number with a valid format.</errorMessage>
+        <errorMessage>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Prevent_CreateOrEdit</fullName>

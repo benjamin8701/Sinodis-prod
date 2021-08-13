@@ -302,11 +302,11 @@
         <name>CN_Check_BillToAddress</name>
     </validationRules>
     <validationRules>
-        <errorMessage>请填写正确格式的电话号码。</errorMessage>
+        <errorMessage>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</errorMessage>
         <name>CN_Check_Moblie_NumberFormat</name>
     </validationRules>
     <validationRules>
-        <errorMessage>请填写正确格式的电话号码。</errorMessage>
+        <errorMessage>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</errorMessage>
         <name>CN_Check_Phone_NumberFormat</name>
     </validationRules>
     <validationRules>

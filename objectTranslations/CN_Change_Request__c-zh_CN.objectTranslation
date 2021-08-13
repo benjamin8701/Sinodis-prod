@@ -1148,12 +1148,12 @@
         <name>CN_Billing_Email__c</name>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- Billing Mobile Phone --></label>
         <name>CN_Billing_Mobile_Phone__c</name>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- Billing Phone Number --></label>
         <name>CN_Billing_Phone_Number__c</name>
     </fields>
@@ -1367,7 +1367,7 @@
         <relationshipLabel>变更申请</relationshipLabel>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</help>
         <label>手机</label>
         <name>CN_Contact_Mobile__c</name>
     </fields>
@@ -1380,7 +1380,7 @@
         <name>CN_Contact_Open_Field_To_Comment__c</name>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</help>
         <label>电话号码</label>
         <name>CN_Contact_Phone_Number__c</name>
     </fields>
@@ -1645,12 +1645,12 @@
         <name>CN_New_Billing_Email__c</name>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- New Billing Mobile Phone --></label>
         <name>CN_New_Billing_Mobile_Phone__c</name>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- New Billing Phone Number --></label>
         <name>CN_New_Billing_Phone_Number__c</name>
     </fields>
@@ -1832,7 +1832,7 @@
         <name>CN_New_Purchasing_Mobile_Phone__c</name>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- New Purchasing Phone Number --></label>
         <name>CN_New_Purchasing_Phone_Number__c</name>
     </fields>
@@ -1999,12 +1999,12 @@
         <name>CN_Purchasing_Email__c</name>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- Purchasing Mobile Phone --></label>
         <name>CN_Purchasing_Mobile_Phone__c</name>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
         <label><!-- Purchasing Phone Number --></label>
         <name>CN_Purchasing_Phone_Number__c</name>
     </fields>
@@ -2091,7 +2091,11 @@
         <name>CN_ShipTo_Contact_Name__c</name>
     </fields>
     <fields>
-        <label>送达方客户名称</label>
+        <label>送达方（EN）</label>
+        <name>CN_ShipTo_Customer_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label>送达方（CN）</label>
         <name>CN_ShipTo_Customer_Name__c</name>
     </fields>
     <fields>
@@ -2132,7 +2136,7 @@
         <relationshipLabel>变更申请</relationshipLabel>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</help>
         <label>送达方联系人手机</label>
         <name>CN_ShipTo_Mobile_Phone__c</name>
     </fields>
@@ -2147,7 +2151,7 @@
         <relationshipLabel>变更申请</relationshipLabel>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</help>
         <label>送达方联系人电话</label>
         <name>CN_ShipTo_Telephone__c</name>
     </fields>
@@ -3464,7 +3468,7 @@
         <relationshipLabel>变更申请</relationshipLabel>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</help>
         <label>新联系人手机</label>
         <name>New_CN_Contact_Mobile__c</name>
     </fields>
@@ -3477,7 +3481,7 @@
         <name>New_CN_Contact_Open_Field_To_Comment__c</name>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</help>
         <label>新联系人电话号码</label>
         <name>New_CN_Contact_Phone_Number__c</name>
     </fields>
@@ -3520,8 +3524,12 @@
         <name>New_CN_ShipTo_Contact_Name__c</name>
     </fields>
     <fields>
+        <label>新送达方（EN）</label>
+        <name>New_CN_ShipTo_Customer_Name_EN__c</name>
+    </fields>
+    <fields>
         <help>请输入营业执照名和店铺名</help>
-        <label>新送达方客户名称</label>
+        <label>新送达方（CN）</label>
         <name>New_CN_ShipTo_Customer_Name__c</name>
     </fields>
     <fields>
@@ -3562,7 +3570,7 @@
         <relationshipLabel>变更申请</relationshipLabel>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</help>
         <label>新送达方联系人手机</label>
         <name>New_CN_ShipTo_Mobile_Phone__c</name>
     </fields>
@@ -3577,7 +3585,7 @@
         <relationshipLabel>变更申请</relationshipLabel>
     </fields>
     <fields>
-        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</help>
         <label>新送达方联系人电话</label>
         <name>New_CN_ShipTo_Telephone__c</name>
     </fields>
