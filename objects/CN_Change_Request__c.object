@@ -4972,7 +4972,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>CN_ShipTo_Delivery_Address_CN__c</fullName>
         <externalId>false</externalId>
         <label>ShipTo Delivery Address(CN)</label>
-        <length>60</length>
+        <length>140</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -7965,7 +7965,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>New_CN_ShipTo_Delivery_Address_CN__c</fullName>
         <externalId>false</externalId>
         <label>New ShipTo Delivery Address(CN)</label>
-        <length>60</length>
+        <length>140</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
