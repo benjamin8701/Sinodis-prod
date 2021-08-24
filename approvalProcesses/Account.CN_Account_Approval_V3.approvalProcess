@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>false</active>
+    <active>true</active>
     <allowRecall>true</allowRecall>
     <allowedSubmitters>
         <type>owner</type>
@@ -26,6 +26,12 @@
         </assignedApprover>
         <label>Step 1</label>
         <name>CN_Step_1</name>
+        <rejectionActions>
+            <action>
+                <name>CN_Account_Final_Rejected_Notification_Step1</name>
+                <type>Alert</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -54,6 +60,12 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>CN_Account_Final_Rejected_Notification_Step2</name>
+                <type>Alert</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -82,6 +94,12 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>CN_Account_Final_Rejected_Notification_Step3</name>
+                <type>Alert</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -110,6 +128,12 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>CN_Account_Final_Rejected_Notification_Step4</name>
+                <type>Alert</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -143,6 +167,12 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>CN_Account_Final_Rejected_Notification_Step5</name>
+                <type>Alert</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
@@ -164,6 +194,12 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>CN_Account_Final_Rejected_Notification</name>
+                <type>Alert</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <emailTemplate>CN_Email_Folder/CN_Account_Initial_Submit_For_Approval</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
@@ -209,10 +245,6 @@
     <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionActions>
         <action>
-            <name>CN_Account_Final_Rejected_Notification</name>
-            <type>Alert</type>
-        </action>
-        <action>
             <name>CN_Account_Status_To_Draft</name>
             <type>FieldUpdate</type>
         </action>
@@ -240,7 +272,7 @@
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>CN Account Approval V2</label>
+    <label>CN Account Approval V3</label>
     <processOrder>1</processOrder>
     <recallActions>
         <action>
