@@ -1056,7 +1056,7 @@
         <fullName>CN_Account_Invoicing_Name__c</fullName>
         <externalId>false</externalId>
         <label>Invoicing Name (Bill to party)</label>
-        <length>40</length>
+        <length>80</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -5993,7 +5993,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>New_CN_Account_Invoicing_Name__c</fullName>
         <externalId>false</externalId>
         <label>New Invoicing Name (Bill to party)</label>
-        <length>40</length>
+        <length>80</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
