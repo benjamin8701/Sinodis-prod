@@ -2601,6 +2601,101 @@ IF(
                     <default>false</default>
                     <label>D000-Cash on delivery</label>
                 </value>
+                <value>
+                    <fullName>D005</fullName>
+                    <default>false</default>
+                    <label>D005-D05/5 days after delivery</label>
+                </value>
+                <value>
+                    <fullName>D010</fullName>
+                    <default>false</default>
+                    <label>D010-D10/10 days after delivery</label>
+                </value>
+                <value>
+                    <fullName>D015</fullName>
+                    <default>false</default>
+                    <label>D015-15 days after delivery</label>
+                </value>
+                <value>
+                    <fullName>D020</fullName>
+                    <default>false</default>
+                    <label>D020-20 days, due net</label>
+                </value>
+                <value>
+                    <fullName>D030</fullName>
+                    <default>false</default>
+                    <label>D030-30 days, due net</label>
+                </value>
+                <value>
+                    <fullName>D045</fullName>
+                    <default>false</default>
+                    <label>D045-45 days, due net</label>
+                </value>
+                <value>
+                    <fullName>D060</fullName>
+                    <default>false</default>
+                    <label>D060-60days, due net</label>
+                </value>
+                <value>
+                    <fullName>D090</fullName>
+                    <default>false</default>
+                    <label>D090-90days, due net</label>
+                </value>
+                <value>
+                    <fullName>M110</fullName>
+                    <default>false</default>
+                    <label>M110-10 th of next month, due net</label>
+                </value>
+                <value>
+                    <fullName>M115</fullName>
+                    <default>false</default>
+                    <label>M115-15 th of next month, due net</label>
+                </value>
+                <value>
+                    <fullName>M131</fullName>
+                    <default>false</default>
+                    <label>M131-30 days end of month, due net</label>
+                </value>
+                <value>
+                    <fullName>M145</fullName>
+                    <default>false</default>
+                    <label>M145-Before 15th in 2 months, due net</label>
+                </value>
+                <value>
+                    <fullName>M231</fullName>
+                    <default>false</default>
+                    <label>M231-60 days end of month, due net</label>
+                </value>
+                <value>
+                    <fullName>D003</fullName>
+                    <default>false</default>
+                    <label>D003-Pay immediately with Invoice</label>
+                </value>
+                <value>
+                    <fullName>D120</fullName>
+                    <default>false</default>
+                    <label>D120-120 days, due net</label>
+                </value>
+                <value>
+                    <fullName>M120</fullName>
+                    <default>false</default>
+                    <label>M120-20 th of next month, due net</label>
+                </value>
+                <value>
+                    <fullName>M23</fullName>
+                    <default>false</default>
+                    <label>M23-60 days end of month, due net</label>
+                </value>
+                <value>
+                    <fullName>M031</fullName>
+                    <default>false</default>
+                    <label>M031</label>
+                </value>
+                <value>
+                    <fullName>D007</fullName>
+                    <default>false</default>
+                    <label>D007</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -5682,6 +5777,82 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>D000</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>D003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D045</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D090</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M031</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M115</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M131</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M231</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Payment_Type__c</picklist>
@@ -7473,6 +7644,82 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>D000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D045</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D090</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M031</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M115</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M131</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M231</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9268,6 +9515,82 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>D000</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>D003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D045</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D090</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M031</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M115</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M131</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M231</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Payment_Type__c</picklist>
@@ -11047,6 +11370,82 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>D000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D045</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D090</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M031</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M115</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M131</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M231</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12842,6 +13241,82 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>D000</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>D003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D045</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D090</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M031</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M115</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M131</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M231</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Payment_Type__c</picklist>
@@ -13986,7 +14461,7 @@ ISCHANGED(  OwnerId )
     </validationRules>
     <validationRules>
         <fullName>CN_Check_CreditTermApplication</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,

@@ -367,6 +367,14 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
+                <field>CN_Account_Payment_Terms__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Account_Reference_Day__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
                 <field>CN_Account_Payment_Bank_Account__c</field>
             </layoutItems>
             <layoutItems>
@@ -382,6 +390,14 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>New_CN_Account_Payment_Type__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>New_CN_Account_Payment_Terms__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>New_CN_Account_Reference_Day__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

@@ -377,6 +377,10 @@
             <translation><!-- D005-D05/5 days after delivery --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>D007</masterLabel>
+            <translation><!-- D007 --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>D010-D10/10 days after delivery</masterLabel>
             <translation><!-- D010-D10/10 days after delivery --></translation>
         </picklistValues>
@@ -409,6 +413,10 @@
             <translation><!-- D120-120 days, due net --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>M031</masterLabel>
+            <translation><!-- M031 --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>M110-10 th of next month, due net</masterLabel>
             <translation><!-- M110-10 th of next month, due net --></translation>
         </picklistValues>
@@ -429,12 +437,12 @@
             <translation><!-- M145-Before 15th in 2 months, due net --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>M231-60 days end of month, due net</masterLabel>
-            <translation><!-- M231-60 days end of month, due net --></translation>
+            <masterLabel>M23-60 days end of month, due net</masterLabel>
+            <translation><!-- M23-60 days end of month, due net --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>M331-90 days end of month, due net</masterLabel>
-            <translation><!-- M331-90 days end of month, due net --></translation>
+            <masterLabel>M231-60 days end of month, due net</masterLabel>
+            <translation><!-- M231-60 days end of month, due net --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -2619,6 +2627,10 @@
             <translation><!-- D005-D05/5 days after delivery --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>D007</masterLabel>
+            <translation><!-- D007 --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>D010-D10/10 days after delivery</masterLabel>
             <translation><!-- D010-D10/10 days after delivery --></translation>
         </picklistValues>
@@ -2651,6 +2663,10 @@
             <translation><!-- D120-120 days, due net --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>M031</masterLabel>
+            <translation><!-- M031 --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>M110-10 th of next month, due net</masterLabel>
             <translation><!-- M110-10 th of next month, due net --></translation>
         </picklistValues>
@@ -2671,12 +2687,12 @@
             <translation><!-- M145-Before 15th in 2 months, due net --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>M231-60 days end of month, due net</masterLabel>
-            <translation><!-- M231-60 days end of month, due net --></translation>
+            <masterLabel>M23-60 days end of month, due net</masterLabel>
+            <translation><!-- M23-60 days end of month, due net --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>M331-90 days end of month, due net</masterLabel>
-            <translation><!-- M331-90 days end of month, due net --></translation>
+            <masterLabel>M231-60 days end of month, due net</masterLabel>
+            <translation><!-- M231-60 days end of month, due net --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -3853,6 +3869,10 @@
     <validationRules>
         <errorMessage>如果您需要开发票，请确保输入以下信息：开票名称、税务登记号、银行账户、开票地址和电话（CN）、参考日。</errorMessage>
         <name>CN_Check_Account_InvoiceType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不允许为CIA或者COD的客户选择发票日期。</errorMessage>
+        <name>CN_Check_Account_PaymentTerm</name>
     </validationRules>
     <validationRules>
         <errorMessage>如果您需要开增值税发票或电子增值税发票，请确保输入以下信息：开票名称、税务登记号、银行账户、开票地址和电话（CN）。</errorMessage>
