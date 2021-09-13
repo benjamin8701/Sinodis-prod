@@ -231,7 +231,8 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
                             isAutoApproved = false;
                             isAppprover2Needed = true;
                     } 
-                    if( 
+                    //Add Payment Terms & Reference day finance approve by Shuqi ----Start
+                    /*if( 
                         changedFieldSet.contains('CN_Account_Invoice_Type__c') ||
                         changedFieldSet.contains('CN_Account_Bank_Account__c') ||
                         changedFieldSet.contains('CN_Account_Invoicing_Name__c') ||
@@ -240,7 +241,20 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
                     ) {
                             isFinMDMRequired = true;
                             isAutoApproved = false;
+                    }*/
+                    if( 
+                        changedFieldSet.contains('CN_Account_Invoice_Type__c') ||
+                        changedFieldSet.contains('CN_Account_Bank_Account__c') ||
+                        changedFieldSet.contains('CN_Account_Invoicing_Name__c') ||
+                        changedFieldSet.contains('CN_Account_Tax_Registration_No__c') ||
+                        changedFieldSet.contains('CN_Account_Invoice_Address_and_Phone__c') ||
+                        changedFieldSet.contains('CN_Account_Payment_Terms__c') ||
+                        changedFieldSet.contains('CN_Account_Reference_Day__c')
+                    ) {
+                            isFinMDMRequired = true;
+                            isAutoApproved = false;
                     }
+                    //Add Payment Terms & Reference day finance approve by Shuqi ----end
                     if(
                         changedFieldSet.contains('CN_Account_License_Name_CN__c') ||
                         changedFieldSet.contains('CN_Account_License_Name_EN__c') ||

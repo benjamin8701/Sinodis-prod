@@ -381,6 +381,10 @@
             <translation><!-- D005-D05/5 days after delivery --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>D007</masterLabel>
+            <translation><!-- D007 --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>D010-D10/10 days after delivery</masterLabel>
             <translation><!-- D010-D10/10 days after delivery --></translation>
         </picklistValues>
@@ -413,6 +417,10 @@
             <translation><!-- D120-120 days, due net --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>M031</masterLabel>
+            <translation><!-- M031 --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>M110-10 th of next month, due net</masterLabel>
             <translation><!-- M110-10 th of next month, due net --></translation>
         </picklistValues>
@@ -433,12 +441,12 @@
             <translation><!-- M145-Before 15th in 2 months, due net --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>M231-60 days end of month, due net</masterLabel>
-            <translation><!-- M231-60 days end of month, due net --></translation>
+            <masterLabel>M23-60 days end of month, due net</masterLabel>
+            <translation><!-- M23-60 days end of month, due net --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>M331-90 days end of month, due net</masterLabel>
-            <translation><!-- M331-90 days end of month, due net --></translation>
+            <masterLabel>M231-60 days end of month, due net</masterLabel>
+            <translation><!-- M231-60 days end of month, due net --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -2623,6 +2631,10 @@
             <translation><!-- D005-D05/5 days after delivery --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>D007</masterLabel>
+            <translation><!-- D007 --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>D010-D10/10 days after delivery</masterLabel>
             <translation><!-- D010-D10/10 days after delivery --></translation>
         </picklistValues>
@@ -2655,6 +2667,10 @@
             <translation><!-- D120-120 days, due net --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>M031</masterLabel>
+            <translation><!-- M031 --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>M110-10 th of next month, due net</masterLabel>
             <translation><!-- M110-10 th of next month, due net --></translation>
         </picklistValues>
@@ -2675,12 +2691,12 @@
             <translation><!-- M145-Before 15th in 2 months, due net --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>M231-60 days end of month, due net</masterLabel>
-            <translation><!-- M231-60 days end of month, due net --></translation>
+            <masterLabel>M23-60 days end of month, due net</masterLabel>
+            <translation><!-- M23-60 days end of month, due net --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>M331-90 days end of month, due net</masterLabel>
-            <translation><!-- M331-90 days end of month, due net --></translation>
+            <masterLabel>M231-60 days end of month, due net</masterLabel>
+            <translation><!-- M231-60 days end of month, due net --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -3862,6 +3878,10 @@ Bank Account
 Invoice Address and Phone
 Reference Day --></errorMessage>
         <name>CN_Check_Account_InvoiceType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to choose Fapiao Day for CIA or COD customer. --></errorMessage>
+        <name>CN_Check_Account_PaymentTerm</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Please fill in the following information, if you select VAT invoice or Electronic VAT invoice.

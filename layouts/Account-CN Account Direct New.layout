@@ -174,7 +174,7 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>CN_Reference_Day__c</field>
             </layoutItems>
             <layoutItems>

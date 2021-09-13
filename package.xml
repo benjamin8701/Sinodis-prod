@@ -100,6 +100,7 @@
     <types>
         <members>Account.CN_Account_Approval_V1</members>
         <members>Account.CN_Account_Approval_V2</members>
+        <members>Account.CN_Account_Approval_V3</members>
         <members>CN_Change_Request__c.CN_CR_Approve_Process</members>
         <members>CN_Change_Request__c.CN_CR_Approve_Process_Auto</members>
         <members>CN_Credit_Term_Application__c.CN_CTA_Approval_Process</members>
