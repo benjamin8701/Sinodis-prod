@@ -55,16 +55,16 @@ public without sharing class CN_Campaign_Generate_Opp_LC_Ctrl {
                                                   ContactId,
                                                   CampaignId,
                                                   Status,
-                                                  Type
+                                                  CN_Type_Formula__c
                                            FROM CampaignMember
-                                           WHERE CampaignId = :campId AND Status = :attendedStatus AND Type != :leadType];
+                                           WHERE CampaignId = :campId AND Status = :attendedStatus AND CN_Type_Formula__c != :leadType];
         Set<Id> accIds = new Set<Id>();
         Set<Id> conIds = new Set<Id>();
         if(camMemList.size() > 0) {
             for(CampaignMember camMem : camMemList) {
-                if(camMem.Type == accType) {
+                if(camMem.CN_Type_Formula__c == accType) {
                     accIds.add(camMem.AccountId);
-                } else if(camMem.Type == conType) {
+                } else if(camMem.CN_Type_Formula__c == conType) {
                     conIds.add(camMem.ContactId);
                 }
             }

@@ -894,8 +894,16 @@ CN_SP_Records_Count_All__c &lt;= 0
         <fullName>CN_SR_Prevent_Cancel</fullName>
         <active>true</active>
         <errorConditionFormula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c, 
-BEGINS(RecordType.DeveloperName, &quot;CN&quot;),
-ISPICKVAL(CN_Sample_Request_Status__c, &quot;Canceled&quot;),   NOT(IF(DATEVALUE(CN_Approved_Date__c) = TODAY(), IF(TIMEVALUE(CN_Approved_Date__c) &lt; TIMEVALUE(&quot;19:30:00.000&quot;), TIMEVALUE(NOW())&lt;TIMEVALUE(&quot;19:30:00.000&quot;), IF(DATEVALUE(CN_Approved_Date__c) = TODAY()-1, AND(TIMEVALUE(NOW()) &gt;= TIMEVALUE(&quot;00:00:00.000&quot;), TIMEVALUE(NOW()) &lt; TIMEVALUE(&quot;19:30:00.000&quot;)), false) ), false)))</errorConditionFormula>
+	BEGINS(RecordType.DeveloperName,&quot;CN&quot;),
+	ISPICKVAL(CN_Sample_Request_Status__c,&quot;Canceled&quot;),  
+	NOT(
+		IF(DATEVALUE(CN_Approved_Date__c) = TODAY(), 
+			IF(TIMEVALUE(CN_Approved_Date__c) &lt; TIMEVALUE(&quot;19:30:00.000&quot;), TIMEVALUE(NOW())&lt;TIMEVALUE(&quot;19:30:00.000&quot;), 
+				false 
+				),
+				IF(DATEVALUE(CN_Approved_Date__c) = TODAY()-1, AND(TIMEVALUE(NOW()) &gt;= TIMEVALUE(&quot;00:00:00.000&quot;), TIMEVALUE(NOW()) &lt; TIMEVALUE(&quot;19:30:00.000&quot;)), false))
+		)
+	)</errorConditionFormula>
         <errorMessage>You&apos;re not allowed to cancel it now.</errorMessage>
     </validationRules>
     <validationRules>

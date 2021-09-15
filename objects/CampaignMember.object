@@ -142,11 +142,31 @@
         <fullName>CN_Able_to_generate_opportunity__c</fullName>
         <externalId>false</externalId>
         <formula>AND( 
-  OR(CN_Type__c = &apos;Account&apos;,CN_Type__c = &apos;Contact&apos;),
+  OR(
+    NOT(ISBLANK(AccountId)),
+    NOT(ISBLANK(ContactId))
+  ),
   ISPICKVAL( Status , &apos;Attended&apos;)
 )</formula>
         <label>Able to generate opportunity</label>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Type_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+  NOT(ISBLANK(AccountId)),
+  &apos;Account&apos;,
+  IF(
+    NOT(ISBLANK( ContactId )),
+    &apos;Contact&apos;,
+    IF(NOT(ISBLANK( LeadId )),&apos;Lead&apos;,NULL )
+  )
+)</formula>
+        <label>Type</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Type__c</fullName>

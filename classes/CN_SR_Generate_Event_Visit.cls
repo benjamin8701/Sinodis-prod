@@ -54,7 +54,7 @@ public without sharing class CN_SR_Generate_Event_Visit implements Triggers.Hand
             if(sr.CN_SP_Records_Count_Delivery_Status_All__c == sr.CN_SP_Records_Count_All__c && sr.CN_SP_Records_Count_Delivery_Status_Done__c >= 1) {
                 Event eventObj7 = new Event(
                     RecordTypeId = eventRTId,
-                    Subject = System.Label.CN_Create_Event_Subject,
+                    Subject = String.format(System.Label.CN_Create_Event_Subject,new List<String>{sr.Name}),
                     OwnerId = sr.OwnerId,
                     WhatId = sr.CN_Account_Name__c,
                     Type = 'Others',
@@ -66,7 +66,7 @@ public without sharing class CN_SR_Generate_Event_Visit implements Triggers.Hand
                 etNewList.add(eventObj7);
                 Event eventObj14 = new Event(
                     RecordTypeId = eventRTId,
-                    Subject = System.Label.CN_Create_Event_Subject,
+                    Subject = String.format(System.Label.CN_Create_Event_Subject,new List<String>{sr.Name}),
                     OwnerId = sr.OwnerId,
                     WhatId = sr.CN_Account_Name__c,
                     Type = 'Others',

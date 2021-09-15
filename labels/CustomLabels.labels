@@ -607,7 +607,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>CN_Create_Event_Subject</shortDescription>
-        <value>Sample delivery done notification</value>
+        <value>Please provide customer feedback for {0}</value>
     </labels>
     <labels>
         <fullName>CN_Create_Visit_Subject</fullName>

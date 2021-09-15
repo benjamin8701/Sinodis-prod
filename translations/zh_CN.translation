@@ -349,7 +349,7 @@
         <name>CN_Contact_Type_Purchasing</name>
     </customLabels>
     <customLabels>
-        <label>样品派送完成通知</label>
+        <label>请提交{0}的客户反馈</label>
         <name>CN_Create_Event_Subject</name>
     </customLabels>
     <customLabels>

@@ -1,216 +1,216 @@
 public without sharing class Constants {
-	public static final String CN_Code = 'CN';
-	// Account trigger switch
-	public static Boolean ACCOUNT_TRIGGER_ON = true;
-	public static Boolean CN_ACCOUNT_TRIGGER_ON = true;
-	public static Boolean CN_ACCOUNT_GENERATE_CONTACT_HANDLER_TRIGGER_ON = true;
+    public static final String CN_Code = 'CN';
+    // Account trigger switch
+    public static Boolean ACCOUNT_TRIGGER_ON = true;
+    public static Boolean CN_ACCOUNT_TRIGGER_ON = true;
+    public static Boolean CN_ACCOUNT_GENERATE_CONTACT_HANDLER_TRIGGER_ON = true;
     public static Boolean CN_ACCOUNT_GENERATE_SHIPTO_HANDLER_TRIGGER_ON = true;
     public static Boolean CN_ACCOUNT_SYNC_SALESPERSON_HANDLER_TRIGGER_ON = true;
     public static Boolean CN_ACCOUNT_POPULATE_APPROVER_HANDLER_TRIGGER_ON = true;
     public static Boolean CN_ACCOUNT_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
     public static Boolean CN_ACCOUNT_APPROVE_AGING_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_ACCOUNT_GENERATE_DOCUMENTS_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_ACCOUNT_ADDRESS_CHANGE_HANDLER_TRIGGER_ON = true;
-	//CR05 � Tm report by Shuqi - start
-	public static Boolean CN_ACCOUNT_TM_REPORT_HANDLER_TRIGGER_ON = true;
-	//CR05 � Tm report by Shuqi - end   
-	
-	public static final String CN_Account_RT_API_NAME_NEW_DIRECT = 'CN_New_Direct';
-	public static final String CN_Account_RT_API_NAME_EDIT_DIRECT = 'CN_Edit_Direct';
-	public static final String CN_Account_RT_API_NAME_NEW_INDIRECT = 'CN_New_Indirect';
-	public static final String CN_Account_RT_API_NAME_EDIT_INDIRECT = 'CN_Edit_Indirect';
-	public static final String CN_Account_RT_API_NAME_APPROVE_DIRECT = 'CN_Approved_Direct';
-	public static final String CN_Account_RT_API_NAME_NEW_Prospect = 'CN_New_Prospect';
-	public static final String CN_Account_RT_API_NAME_EDIT_Prospect = 'CN_Edit_Prospect';	 
-    public static final String CN_ACCOUNT_ACCOUNT_STATUS_SUBMITTED_FOR_APPROVAL = 'Submitted for Approval';
-	public static final String CN_ACCOUNT_ACCOUNT_STATUS_READY_FOR_APPROVAL = 'Ready for Approval';
-	public static final String CN_ACCOUNT_ACCOUNT_STATUS_APPROVED = 'Approved';
+    public static Boolean CN_ACCOUNT_GENERATE_DOCUMENTS_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_ACCOUNT_ADDRESS_CHANGE_HANDLER_TRIGGER_ON = true;
+    //CR05 � Tm report by Shuqi - start
+    public static Boolean CN_ACCOUNT_TM_REPORT_HANDLER_TRIGGER_ON = true;
+    //CR05 � Tm report by Shuqi - end   
+    
+    public static final String CN_Account_RT_API_NAME_NEW_DIRECT = 'CN_New_Direct';
+    public static final String CN_Account_RT_API_NAME_EDIT_DIRECT = 'CN_Edit_Direct';
+    public static final String CN_Account_RT_API_NAME_NEW_INDIRECT = 'CN_New_Indirect';
+    public static final String CN_Account_RT_API_NAME_EDIT_INDIRECT = 'CN_Edit_Indirect';
+    public static final String CN_Account_RT_API_NAME_APPROVE_DIRECT = 'CN_Approved_Direct';
+    public static final String CN_Account_RT_API_NAME_NEW_Prospect = 'CN_New_Prospect';
+    public static final String CN_Account_RT_API_NAME_EDIT_Prospect = 'CN_Edit_Prospect';     
+  public static final String CN_ACCOUNT_ACCOUNT_STATUS_SUBMITTED_FOR_APPROVAL = 'Submitted for Approval';
+    public static final String CN_ACCOUNT_ACCOUNT_STATUS_READY_FOR_APPROVAL = 'Ready for Approval';
+    public static final String CN_ACCOUNT_ACCOUNT_STATUS_APPROVED = 'Approved';
     
     public static final String CN_ACCOUNT_NATURE_REGULAR_CUSTOMER = 'Regular Customer';
     public static final String CN_ACCOUNT_NATURE_TM1 = 'TM1 (Hotel-3month rule)';
     public static final String CN_ACCOUNT_NATURE_TM2 = 'TM2 (BAPA-3month rule)';
 
-	public static final String CN_ACCOUNT_SALESOFFICE_VALUE_K010 = 'K010';
-	public static final String CN_ACCOUNT_SALESOFFICE_VALUE_K020 = 'K020';
-	public static final String CN_ACCOUNT_SALESOFFICE_VALUE_K030 = 'K030';
-	public static final String CN_ACCOUNT_SALESOFFICE_VALUE_K040 = 'K040';
-	public static final String CN_ACCOUNT_SALESOFFICE_VALUE_K050 = 'K050';
-	public static final String CN_ACCOUNT_SALESOFFICE_VALUE_K060 = 'K060';
+    public static final String CN_ACCOUNT_SALESOFFICE_VALUE_K010 = 'K010';
+    public static final String CN_ACCOUNT_SALESOFFICE_VALUE_K020 = 'K020';
+    public static final String CN_ACCOUNT_SALESOFFICE_VALUE_K030 = 'K030';
+    public static final String CN_ACCOUNT_SALESOFFICE_VALUE_K040 = 'K040';
+    public static final String CN_ACCOUNT_SALESOFFICE_VALUE_K050 = 'K050';
+    public static final String CN_ACCOUNT_SALESOFFICE_VALUE_K060 = 'K060';
 
-	public static final String CN_ACCOUNT_SYNC_STATUS_SUCCESS = 'Success';
+    public static final String CN_ACCOUNT_SYNC_STATUS_SUCCESS = 'Success';
     
     public static final String CN_ACCOUNT_SALESTEAM_CODE_WS = '900014';
 
 
     // ContentDocumentLink
-	public static Boolean CDL_TRIGGER_ON = true;
-	public static Boolean CN_CDL_TRIGGER_ON = true;
-	public static Boolean CN_CDL_POPULATE_UPLOADED_HANDLER_TRIGGER_ON = true;
+    public static Boolean CDL_TRIGGER_ON = true;
+    public static Boolean CN_CDL_TRIGGER_ON = true;
+    public static Boolean CN_CDL_POPULATE_UPLOADED_HANDLER_TRIGGER_ON = true;
 
     // ContentDocument
-	public static Boolean CD_TRIGGER_ON = true;
-	public static Boolean CN_CD_TRIGGER_ON = true;
-	public static Boolean CN_CD_POPULATE_UPLOADED_HANDLER_TRIGGER_ON = true;
+    public static Boolean CD_TRIGGER_ON = true;
+    public static Boolean CN_CD_TRIGGER_ON = true;
+    public static Boolean CN_CD_POPULATE_UPLOADED_HANDLER_TRIGGER_ON = true;
     
     // User
-	public static final String CN_USER_TITLE_SALES_REP = 'Sales Rep';
-	public static final String CN_USER_TITLE_MANAGER = 'Manager';
-	public static final String CN_USER_TITLE_ARM = 'Assistant Regional Manager';
-	public static final String CN_USER_TITLE_RM = 'Regional Manager';
-	public static final String CN_USER_TITLE_CM = 'Channel Manager';
-	public static final String CN_USER_TITLE_CD = 'Commerical Director';
-	public static final String CN_USER_TITLE_CFO = 'CFO';
-	public static final String CN_USER_TITLE_CEO = 'CEO';
+    public static final String CN_USER_TITLE_SALES_REP = 'Sales Rep';
+    public static final String CN_USER_TITLE_MANAGER = 'Manager';
+    public static final String CN_USER_TITLE_ARM = 'Assistant Regional Manager';
+    public static final String CN_USER_TITLE_RM = 'Regional Manager';
+    public static final String CN_USER_TITLE_CM = 'Channel Manager';
+    public static final String CN_USER_TITLE_CD = 'Commerical Director';
+    public static final String CN_USER_TITLE_CFO = 'CFO';
+    public static final String CN_USER_TITLE_CEO = 'CEO';
 
-	// Contact trigger switch
-	public static Boolean CONTACT_TRIGGER_ON = true;
-	public static Boolean CN_CONTACT_TRIGGER_ON = true;
-	public static Boolean CN_CONTACT_POPULATE_FIELD_HANDLER_TRIGGER_ON = true;
+    // Contact trigger switch
+    public static Boolean CONTACT_TRIGGER_ON = true;
+    public static Boolean CN_CONTACT_TRIGGER_ON = true;
+    public static Boolean CN_CONTACT_POPULATE_FIELD_HANDLER_TRIGGER_ON = true;
     public static Boolean CN_CONTACT_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
     public static Boolean CN_CONTACT_UPDATE_FINAREMAIL_HANDLER_TRIGGER_ON = true;
-	// Added By Jessica Wang 2021-07-22 Start
+    // Added By Jessica Wang 2021-07-22 Start
 	public static Boolean CN_CONTACT_WRITE_BACK_TO_LEAD_HANDLER_TRIGGER_ON = true;
 	// Added By Jessica Wang 2021-07-22 End
 	public static Boolean CN_CONTACT_TYPE_CHECK_HANDLER_TRIGGER_ON = true;
-	public static final String CN_CONTACT_RT_API_NAME = 'CN_Contact';
-	public static final String CN_CONTACT_TYPE_FINANCE_VALUE_NAME = '01';
-	public static final String CN_CONTACT_TYPE_PURCHASE_VALUE_NAME = '02';
+    public static final String CN_CONTACT_RT_API_NAME = 'CN_Contact';
+    public static final String CN_CONTACT_TYPE_FINANCE_VALUE_NAME = '01';
+    public static final String CN_CONTACT_TYPE_PURCHASE_VALUE_NAME = '02';
 
-	public static final String CN_CONTACT_ACCOUNT_SYNC_STATUS_SUCCESS = 'Success';
+    public static final String CN_CONTACT_ACCOUNT_SYNC_STATUS_SUCCESS = 'Success';
     //Ship To Party trigger switch
     public static Boolean SHIPTO_TRIGGER_ON = true;
-	public static Boolean CN_SHIPTO_TRIGGER_ON = true;
+    public static Boolean CN_SHIPTO_TRIGGER_ON = true;
     public static Boolean CN_SHIPTO_PREVENT_DELETE_HANDLER_ON = true;
     
-	public static final String CN_SHIPTO_RT_API_NAME = 'CN_Ship_to_Party';
+    public static final String CN_SHIPTO_RT_API_NAME = 'CN_Ship_to_Party';
 
-	public static final String CN_SHIPTO_ACCOUNT_SYNC_STATUS_SUCCESS = 'Success';
+    public static final String CN_SHIPTO_ACCOUNT_SYNC_STATUS_SUCCESS = 'Success';
 
-	//Credit Term Application trigger switch
-	public static Boolean CTA_TRIGGER_ON = true;
-	public static Boolean CN_CTA_TRIGGER_ON = true;
-	public static Boolean CN_CTA_POPULATE_FIELDS_HANDLER_ON = true;
-	public static Boolean CN_CTA_POPULATE_APPROVER_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CTA_APPROVE_AGING_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CTA_GENERATE_CR_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CTA_PREVENT_DUPLICATE_CR_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CTA_POPULATE_FINANCEMDM_HANDLER_TRIGGER_ON = true;
+    //Credit Term Application trigger switch
+    public static Boolean CTA_TRIGGER_ON = true;
+    public static Boolean CN_CTA_TRIGGER_ON = true;
+    public static Boolean CN_CTA_POPULATE_FIELDS_HANDLER_ON = true;
+    public static Boolean CN_CTA_POPULATE_APPROVER_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CTA_APPROVE_AGING_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CTA_GENERATE_CR_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CTA_PREVENT_DUPLICATE_CR_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CTA_POPULATE_FINANCEMDM_HANDLER_TRIGGER_ON = true;
 
-	public static final String CN_CTA_RT_API_NAME = 'CN_Credit_Term_Application';
-	
-	public static final String CN_CTA_STATUS_NEW = 'New';
-	public static final String CN_CTA_STATUS_READY_FOR_APPROVAL = 'Ready for Approval';
-	public static final String CN_CTA_STATUS_SUBMITTED_FOR_APPROVAL = 'Submitted for Approval';
-	public static final String CN_CTA_STATUS_APPROVALED = 'Approved';
-	public static final String CN_CTA_STATUS_CANCEL = 'Cancel';
-
-	public static final String CN_CTA_NATURE_OF_REQUEST_REGULAR = 'Regular Customer';
-	public static final String CN_CTA_NATURE_OF_REQUEST_TM1 = 'TM1 (Hotel-3month rule)';
-	public static final String CN_CTA_NATURE_OF_REQUEST_TM2 = 'TM2 (BAPA-3month rule)';
-	public static final String CN_CTA_NATURE_OF_REQUEST_NOC = 'NO CONTRACT';	
+    public static final String CN_CTA_RT_API_NAME = 'CN_Credit_Term_Application';
     
-	// Change Request Trigger Switch
-	public static Boolean CR_TRIGGER_ON = true;
-	public static Boolean CN_CR_TRIGGER_ON = true;
-	public static Boolean CN_CR_POPULATE_APPROVER_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CR_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CR_CHANGE_RECORDTYPE_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CR_APPROVE_AGING_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CR_WRITE_BACK_TO_SHIPTO_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CR_WRITE_BACK_TO_CONTACT_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CR_GENERATE_CONTACT_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CR_PREVENT_DUPLICATE_ONGOING_CR_TRIGGER_ON = true;
-	public static Boolean CN_CR_CHECK_AT_LEAST_ONE_FIELD_CHANGED_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CR_GENERATE_SHIPTO_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CR_UPDATE_SYNC_STATUS_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CR_WRITE_BACK_TO_ACCOUNT_HANDLER_TRIGGER_ON = true;
-	public static Boolean CN_CR_CHECK_FIELDS_HANDLER_TRIGGER_ON = true;
+    public static final String CN_CTA_STATUS_NEW = 'New';
+    public static final String CN_CTA_STATUS_READY_FOR_APPROVAL = 'Ready for Approval';
+    public static final String CN_CTA_STATUS_SUBMITTED_FOR_APPROVAL = 'Submitted for Approval';
+    public static final String CN_CTA_STATUS_APPROVALED = 'Approved';
+    public static final String CN_CTA_STATUS_CANCEL = 'Cancel';
 
-	public static final String CN_CR_RT_API_NAME_UPDATE_ACCOUNT = 'CN_Update_Account_Request';
-	public static final String CN_CR_RT_API_NAME_UPDATE_CONTACT = 'CN_Update_Contact_Request';
-	public static final String CN_CR_RT_API_NAME_UPDATE_SHIPTO = 'CN_Update_Ship_To_Request';
-	public static final String CN_CR_RT_API_NAME_NEW_CONTACT = 'CN_New_Contact_Request';
-	public static final String CN_CR_RT_API_NAME_NEW_SHIPTO = 'CN_New_Ship_To_Request';
-	public static final String CN_CR_RT_API_NAME_APPD_UPDATE_ACCOUNT = 'CN_Approved_Update_Account_Request';
-	public static final String CN_CR_RT_API_NAME_APPD_UPDATE_CONTACT = 'CN_Approved_Update_Contact_Request';
-	public static final String CN_CR_RT_API_NAME_APPD_UPDATE_SHIPTO = 'CN_Approved_Update_Ship_To_Request';
-	public static final String CN_CR_RT_API_NAME_APPD_NEW_CONTACT = 'CN_Approved_New_Contact_Request';
-	public static final String CN_CR_RT_API_NAME_NEW_APPD_SHIPTO = 'CN_Approved_New_Ship_To_Request';
-	//hotfix realse7 ----by shuqi start
-	public static final String CN_CR_RT_API_NAME_Mass_UPDATE_ACCOUNT_OWNER = 'CN_MASS_Change_Account_Owner';
-	public static final String CN_CR_RT_API_NAME_Mass_UPDATE_ACCOUNT_FINANCE_AR = 'CN_Mass_Change_Account_Finance_AR';
-	//hotfix realse7 ----by shuqi end
+    public static final String CN_CTA_NATURE_OF_REQUEST_REGULAR = 'Regular Customer';
+    public static final String CN_CTA_NATURE_OF_REQUEST_TM1 = 'TM1 (Hotel-3month rule)';
+    public static final String CN_CTA_NATURE_OF_REQUEST_TM2 = 'TM2 (BAPA-3month rule)';
+    public static final String CN_CTA_NATURE_OF_REQUEST_NOC = 'NO CONTRACT';    
+    
+    // Change Request Trigger Switch
+    public static Boolean CR_TRIGGER_ON = true;
+    public static Boolean CN_CR_TRIGGER_ON = true;
+    public static Boolean CN_CR_POPULATE_APPROVER_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CR_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CR_CHANGE_RECORDTYPE_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CR_APPROVE_AGING_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CR_WRITE_BACK_TO_SHIPTO_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CR_WRITE_BACK_TO_CONTACT_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CR_GENERATE_CONTACT_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CR_PREVENT_DUPLICATE_ONGOING_CR_TRIGGER_ON = true;
+    public static Boolean CN_CR_CHECK_AT_LEAST_ONE_FIELD_CHANGED_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CR_GENERATE_SHIPTO_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CR_UPDATE_SYNC_STATUS_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CR_WRITE_BACK_TO_ACCOUNT_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CR_CHECK_FIELDS_HANDLER_TRIGGER_ON = true;
 
-	public static final String CN_CR_STATUS_READY_FOR_APPROVAL = 'Ready for Approval';
-	public static final String CN_CR_STATUS_SUBMITTED_FOR_APPROVAL = 'Submitted for Approval';
-	public static final String CN_CR_STATUS_APPROVALED = 'Approved';
-	public static final String CN_CR_SYNC_STATUS_NO_NEED_TO_SYNC = 'No Need To Sync';
-	public static final String CN_CR_STATUS_CANCEL = 'Cancel';
+    public static final String CN_CR_RT_API_NAME_UPDATE_ACCOUNT = 'CN_Update_Account_Request';
+    public static final String CN_CR_RT_API_NAME_UPDATE_CONTACT = 'CN_Update_Contact_Request';
+    public static final String CN_CR_RT_API_NAME_UPDATE_SHIPTO = 'CN_Update_Ship_To_Request';
+    public static final String CN_CR_RT_API_NAME_NEW_CONTACT = 'CN_New_Contact_Request';
+    public static final String CN_CR_RT_API_NAME_NEW_SHIPTO = 'CN_New_Ship_To_Request';
+    public static final String CN_CR_RT_API_NAME_APPD_UPDATE_ACCOUNT = 'CN_Approved_Update_Account_Request';
+    public static final String CN_CR_RT_API_NAME_APPD_UPDATE_CONTACT = 'CN_Approved_Update_Contact_Request';
+    public static final String CN_CR_RT_API_NAME_APPD_UPDATE_SHIPTO = 'CN_Approved_Update_Ship_To_Request';
+    public static final String CN_CR_RT_API_NAME_APPD_NEW_CONTACT = 'CN_Approved_New_Contact_Request';
+    public static final String CN_CR_RT_API_NAME_NEW_APPD_SHIPTO = 'CN_Approved_New_Ship_To_Request';
+    //hotfix realse7 ----by shuqi start
+    public static final String CN_CR_RT_API_NAME_Mass_UPDATE_ACCOUNT_OWNER = 'CN_MASS_Change_Account_Owner';
+    public static final String CN_CR_RT_API_NAME_Mass_UPDATE_ACCOUNT_FINANCE_AR = 'CN_Mass_Change_Account_Finance_AR';
+    //hotfix realse7 ----by shuqi end
 
-	public static final String CN_CR_STATUS_APPROVED = 'Approved';
+    public static final String CN_CR_STATUS_READY_FOR_APPROVAL = 'Ready for Approval';
+    public static final String CN_CR_STATUS_SUBMITTED_FOR_APPROVAL = 'Submitted for Approval';
+    public static final String CN_CR_STATUS_APPROVALED = 'Approved';
+    public static final String CN_CR_SYNC_STATUS_NO_NEED_TO_SYNC = 'No Need To Sync';
+    public static final String CN_CR_STATUS_CANCEL = 'Cancel';
 
-	public static final String CN_CR_SYNC_STATUS_SENT = 'Sent';
-	public static final String CN_CR_SYNC_STATUS_PROCESSING = 'Processing';
-	public static final String CN_CR_SYNC_STATUS_SUCCESS = 'Success';
-	public static final String CN_CR_SYNC_STATUS_FAIL = 'Fail';
+    public static final String CN_CR_STATUS_APPROVED = 'Approved';
 
-	// Sales Order
-	public static final String CN_SO_SYNC_STATUS_SENT = 'Sent';
-	public static final String CN_SO_SYNC_STATUS_PROCESSING = 'Processing';
-	public static final String CN_SO_SYNC_STATUS_SUCCESS = 'S';
-	public static final String CN_SO_SYNC_STATUS_FAIL = 'E';
+    public static final String CN_CR_SYNC_STATUS_SENT = 'Sent';
+    public static final String CN_CR_SYNC_STATUS_PROCESSING = 'Processing';
+    public static final String CN_CR_SYNC_STATUS_SUCCESS = 'Success';
+    public static final String CN_CR_SYNC_STATUS_FAIL = 'Fail';
+
+    // Sales Order
+    public static final String CN_SO_SYNC_STATUS_SENT = 'Sent';
+    public static final String CN_SO_SYNC_STATUS_PROCESSING = 'Processing';
+    public static final String CN_SO_SYNC_STATUS_SUCCESS = 'S';
+    public static final String CN_SO_SYNC_STATUS_FAIL = 'E';
 
     //Business Hours
-    public static final String CN_BUSINESS_HOURS_NAME = 'CN_BusinessHour';	
+    public static final String CN_BUSINESS_HOURS_NAME = 'CN_BusinessHour';  
     
 
-	//Document
-	public static final String CN_DOCUMENT_TYPE_BUSINESS_LICENSE = 'Business License';	
-	public static final String CN_DOCUMENT_TYPE_FAPIAO_INFORMATION = 'Fapiao Information';	
-	public static final String CN_DOCUMENT_TYPE_HYGIENE_CERTIFICATE = 'Hygiene Certificate';	
-	public static final String CN_DOCUMENT_TYPE_CONTRACT = 'Contract';	
+    //Document
+    public static final String CN_DOCUMENT_TYPE_BUSINESS_LICENSE = 'Business License';  
+    public static final String CN_DOCUMENT_TYPE_FAPIAO_INFORMATION = 'Fapiao Information';  
+    public static final String CN_DOCUMENT_TYPE_HYGIENE_CERTIFICATE = 'Hygiene Certificate';    
+    public static final String CN_DOCUMENT_TYPE_CONTRACT = 'Contract';  
 
 
-	//Business Unit
-	public static Boolean BU_TRIGGER_ON = true;
-	public static Boolean CN_BU_TRIGGER_ON = true;
-	public static Boolean CN_BUSINESSUNIT_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
+    //Business Unit
+    public static Boolean BU_TRIGGER_ON = true;
+    public static Boolean CN_BU_TRIGGER_ON = true;
+    public static Boolean CN_BUSINESSUNIT_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
 
-	public static final String CN_BU_RT_API_NAME = 'CN_Business_Unit';
+    public static final String CN_BU_RT_API_NAME = 'CN_Business_Unit';
 
-	public static final String CN_BU_SYNC_STATUS_FAIL = 'Fail';
-	public static final String CN_BU_SYNC_STATUS_SUCCESS = 'Success';
+    public static final String CN_BU_SYNC_STATUS_FAIL = 'Fail';
+    public static final String CN_BU_SYNC_STATUS_SUCCESS = 'Success';
 
 
-	//Sales Team
-	public static Boolean ST_TRIGGER_ON = true;
-	public static Boolean CN_ST_TRIGGER_ON = true;
-	public static Boolean CN_SALESTEAM_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
+    //Sales Team
+    public static Boolean ST_TRIGGER_ON = true;
+    public static Boolean CN_ST_TRIGGER_ON = true;
+    public static Boolean CN_SALESTEAM_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
 
-	public static final String CN_ST_RT_API_NAME = 'CN_Sales_Team';
+    public static final String CN_ST_RT_API_NAME = 'CN_Sales_Team';
 
-	public static final String CN_ST_SYNC_STATUS_FAIL = 'Fail';
-	public static final String CN_ST_SYNC_STATUS_SUCCESS = 'Success';
+    public static final String CN_ST_SYNC_STATUS_FAIL = 'Fail';
+    public static final String CN_ST_SYNC_STATUS_SUCCESS = 'Success';
 
-	//Group
-	public static Boolean GR_TRIGGER_ON = true;
-	public static Boolean CN_GR_TRIGGER_ON = true;
-	public static Boolean CN_GROUP_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
+    //Group
+    public static Boolean GR_TRIGGER_ON = true;
+    public static Boolean CN_GR_TRIGGER_ON = true;
+    public static Boolean CN_GROUP_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
 
-	public static final String CN_GROUP_RT_API_NAME = 'CN_Group';
+    public static final String CN_GROUP_RT_API_NAME = 'CN_Group';
 
-	public static final String CN_GROUP_SYNC_STATUS_FAIL = 'Fail';
-	public static final String CN_GROUP_SYNC_STATUS_SUCCESS = 'Success';
+    public static final String CN_GROUP_SYNC_STATUS_FAIL = 'Fail';
+    public static final String CN_GROUP_SYNC_STATUS_SUCCESS = 'Success';
 
-	//Brand
-	public static Boolean BR_TRIGGER_ON = true;
-	public static Boolean CN_BR_TRIGGER_ON = true;
-	public static Boolean CN_BRAND_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
-	
-	public static final String CN_BRAND_RT_API_NAME = 'CN_Brand';
+    //Brand
+    public static Boolean BR_TRIGGER_ON = true;
+    public static Boolean CN_BR_TRIGGER_ON = true;
+    public static Boolean CN_BRAND_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
+    
+    public static final String CN_BRAND_RT_API_NAME = 'CN_Brand';
 
-	public static final String CN_BRAND_SYNC_STATUS_FAIL = 'Fail';
-	public static final String CN_BRAND_SYNC_STATUS_SUCCESS = 'Success';
+    public static final String CN_BRAND_SYNC_STATUS_FAIL = 'Fail';
+    public static final String CN_BRAND_SYNC_STATUS_SUCCESS = 'Success';
 
 	// Added By Jessica Wang 2021-07-21 Release2 Start
 	//Lead
@@ -305,7 +305,7 @@ public without sharing class Constants {
 	public static final String CN_SR_SHARING_ROWCAUSE_EDIT = 'Edit';
 	public static final String CN_SR_SHARING_ACCESSLEVEL_MANUAL = 'Manual';
 
-	// Sample Product
+    // Sample Product
 	public static final String CN_SP_RT_API_NAME = 'CN_Sample_Product';
 	public static Boolean SAMPLE_PRODUCT_TRIGGER_ON = true;
 	public static Boolean CN_SAMPLE_PRODUCT_TRIGGER_ON = true;
@@ -395,7 +395,7 @@ public without sharing class Constants {
 	public static final String CN_CA_STATUS_REJECTED = 'Rejected';
 	public static final String CN_CA_STATUS_RESOLVED = 'Resolved';
 	public static final String CN_CA_STATUS_ASSIGNED = 'Assigned';
-	public static final String CN_CA_STATUS_ACCEPTED = 'Accepted';
+    public static final String CN_CA_STATUS_ACCEPTED = 'Accepted';
 	public static final String CN_CA_STATUS_CLOSED = 'Closed';
 
 	//Profile

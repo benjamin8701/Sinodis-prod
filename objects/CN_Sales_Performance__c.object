@@ -128,16 +128,22 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Sales_Performance_Record_Page</content>
         <formFactor>Large</formFactor>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Sales_Performance_Record_Page</content>
         <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
@@ -736,13 +742,44 @@ SAP传的是编号</description>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
-        <columns>CN_External_ID_SAP__c</columns>
+        <columns>CN_Year__c</columns>
+        <columns>CN_Month__c</columns>
         <columns>CN_Customer_Code_SAP__c</columns>
         <columns>CN_Customer__c</columns>
-        <columns>CREATED_DATE</columns>
         <columns>CN_Billing_Date_SAP__c</columns>
+        <columns>CN_Billing_No_SAP__c</columns>
+        <columns>CN_Billing_Type_SAP__c</columns>
+        <columns>CN_Sale_Amount_SAP__c</columns>
+        <columns>CN_Sale_Net_Value_SAP__c</columns>
+        <columns>CN_Performance_Sales_Person__c</columns>
+        <columns>CN_Is_Active__c</columns>
         <filterScope>Everything</filterScope>
-        <label>All</label>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>CN_Sales_Performance__c.CN_Sales_Performance</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All - Sales Performance</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Sales_Target</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Target_Year__c</columns>
+        <columns>CN_Target_Month__c</columns>
+        <columns>CN_Target_Sales_Person__c</columns>
+        <columns>Target_Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>CN_Sales_Performance__c.CN_Sales_Target</value>
+        </filters>
+        <label>All - Sales Target</label>
     </listViews>
     <nameField>
         <displayFormat>SP-{000000000}</displayFormat>

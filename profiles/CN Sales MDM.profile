@@ -434,6 +434,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Promotion_Generate_ProMember_LC_Ctrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Promotion_Prevent_Delete_Handler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -6843,6 +6847,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CampaignMember.CN_Type_Formula__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CampaignMember.CN_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -9765,7 +9774,7 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>CN_Mass_Change_Account_Owner_Tab</tab>
-        <visibility>Hidden</visibility>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>CN_Order_Reason__c</tab>

@@ -6,6 +6,10 @@
     </fields>
     <fields>
         <label><!-- Type --></label>
+        <name>CN_Type_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
         <name>CN_Type__c</name>
     </fields>
     <fields>

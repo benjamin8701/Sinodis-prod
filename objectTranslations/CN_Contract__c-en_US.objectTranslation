@@ -566,6 +566,10 @@
             <section>Invoicing&amp;Payment</section>
         </sections>
         <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
             <label><!-- Remark --></label>
             <section>Remark</section>
         </sections>

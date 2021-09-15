@@ -434,6 +434,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Promotion_Generate_ProMember_LC_Ctrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Promotion_Prevent_Delete_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -6839,6 +6843,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CampaignMember.CN_Able_to_generate_opportunity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CampaignMember.CN_Type_Formula__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

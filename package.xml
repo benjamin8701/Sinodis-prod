@@ -108,6 +108,7 @@
         <members>CN_PromotionLI_Prevent_Delete_Handler</members>
         <members>CN_PromotionM_Prevent_Delete_Handler</members>
         <members>CN_PromotionM_Set_Account_Handler</members>
+        <members>CN_Promotion_Generate_ProMember_LC_Ctrl</members>
         <members>CN_Promotion_Prevent_Delete_Handler</members>
         <members>CN_Promotion_Publish_LC_Ctrl</members>
         <members>CN_Promotion_Validation_Handler</members>
@@ -227,10 +228,7 @@
         <name>CustomObjectTranslation</name>
     </types>
     <types>
-        <members>CN_Marketing_Chef_Request_User</members>
-        <members>CN_Marketing_Lead_Manager</members>
-        <members>CN_Marketing_Reassign_Manager</members>
-        <members>CN_Marketing_Update_List_Price</members>
+        <members>*</members>
         <name>CustomPermission</name>
     </types>
     <types>
