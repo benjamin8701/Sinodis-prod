@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <brand>
-        <headerColor>#0070D2</headerColor>
-        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+        <headerColor>#FF8000</headerColor>
+        <logo>Sinodis</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
     </brand>
     <formFactors>Small</formFactors>
     <formFactors>Large</formFactors>
@@ -12,6 +14,7 @@
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
     <tabs>standard-AppLauncher</tabs>
+    <tabs>standard-Lead</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>CN_Sales_Order__c</tabs>
@@ -21,6 +24,30 @@
     <tabs>CN_Sales_Team__c</tabs>
     <tabs>CN_Group__c</tabs>
     <tabs>CN_Brand__c</tabs>
+    <tabs>CN_Promotion__c</tabs>
+    <tabs>standard-Case</tabs>
+    <tabs>standard-Product2</tabs>
+    <tabs>standard-Pricebook2</tabs>
+    <tabs>standard-Campaign</tabs>
+    <tabs>standard-Quote</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Event</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>CN_Chef_Request__c</tabs>
+    <tabs>CN_Sample_Request__c</tabs>
+    <tabs>CN_Mass_Change_Account_Owner_Tab</tabs>
+    <tabs>CN_Chefs_Assigned__c</tabs>
+    <tabs>CN_Demo_Report__c</tabs>
+    <tabs>CN_Promotion_Member__c</tabs>
+    <tabs>CN_Sample_Product__c</tabs>
+    <tabs>CN_Return__c</tabs>
+    <tabs>Map</tabs>
+    <tabs>CN_Contract__c</tabs>
+    <tabs>CN_Sales_Performance__c</tabs>
+    <tabs>CN_Payment_History__c</tabs>
+    <tabs>CN_Payment_Report__c</tabs>
+    <tabs>CN_Chef_UT__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Savencia_Sanodis_UtilityBar</utilityBar>
 </CustomApplication>

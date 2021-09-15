@@ -22,6 +22,41 @@
         <value>Wrong API User Name and Password.</value>
     </labels>
     <labels>
+        <fullName>CN_Account_Button_Assign</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Button_Assign</shortDescription>
+        <value>Process</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Button_Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Button_Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Button_Clear</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Button_Clear</shortDescription>
+        <value>Clear</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Button_Process</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Button_Process</shortDescription>
+        <value>Confirm</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Button_Search</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Button_Search</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
         <fullName>CN_Account_CFRM_Msg</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -34,6 +69,13 @@
         <protected>false</protected>
         <shortDescription>CN_Account_Contact_System_Admin</shortDescription>
         <value>Please contact System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Convert_To_Direct</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Convert_To_Direct</shortDescription>
+        <value>Are you sure to convert this prospect to direct account?</value>
     </labels>
     <labels>
         <fullName>CN_Account_CustomLabel_Hour_Is_NULL</fullName>
@@ -76,6 +118,97 @@
         <protected>false</protected>
         <shortDescription>CN_Account_LC_New_Change_Request</shortDescription>
         <value>New Change Request</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Mass_Change_Current</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Mass_Change_Current</shortDescription>
+        <value>Current Employee Number</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Mass_Change_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Mass_Change_Type</shortDescription>
+        <value>Change Type</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Mass_Change_User</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Mass_Change_User</shortDescription>
+        <value>New Employee Number</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Mass_Customer_Code</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Mass_Customer_Code</shortDescription>
+        <value>Customer Code (Use &apos;,&apos; as the delimiter)</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Mass_ErrMsg_Check_AccountCode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Mass_ErrMsg_Check_AccountCode</shortDescription>
+        <value>Please check Account Customer Code</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Mass_ErrMsg_Check_CurrentUser</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Mass_ErrMsg_Check_CurrentUser</shortDescription>
+        <value>Please check current user personal number</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Mass_ErrMsg_Check_UpdateUser</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Mass_ErrMsg_Check_UpdateUser</shortDescription>
+        <value>Please check update user personal number</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Mass_ErrMsg_Notice</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Mass_ErrMsg_Notice</shortDescription>
+        <value>Please cancel change request or sync</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Mass_ErrMsg_Notice2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Mass_ErrMsg_Notice2</shortDescription>
+        <value>Please sync Account</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Mass_ErrMsg_Notice3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Mass_ErrMsg_Notice3</shortDescription>
+        <value>Exception occurs, Please check the details!</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Mass_Label_Notice</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Mass_Label_Notice</shortDescription>
+        <value>Please kindly confirm your mass change request!</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Mass_Label_Results</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Mass_Label_Results</shortDescription>
+        <value>Results</value>
+    </labels>
+    <labels>
+        <fullName>CN_Account_Mass_Notice_Success</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Mass_Notice_Success</shortDescription>
+        <value>Update Successful!</value>
     </labels>
     <labels>
         <fullName>CN_Account_New_Contact_Request</fullName>
@@ -330,6 +463,118 @@
         <value>You are not allowed to set the credit term application as ready for approval as there&apos;s an ongoing change request for the account.</value>
     </labels>
     <labels>
+        <fullName>CN_Campaign_DMLException</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Campaign_DMLException</shortDescription>
+        <value>Unable to Perform the DML Operation on Opportunity Product : {0}</value>
+    </labels>
+    <labels>
+        <fullName>CN_Campaign_Insert_Failed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Campaign_Insert_Failed</shortDescription>
+        <value>Error Status :  {0} ; Error Fields : {1}</value>
+    </labels>
+    <labels>
+        <fullName>CN_Campaign_More_10000</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Campaign_More_10000</shortDescription>
+        <value>The opportunity and opportunity products records that need to be created are greater than 10000.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Chef_Request_Confirm_Info_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Chef_Request_Confirm_Info_Message</shortDescription>
+        <value>To Confirm this Chef Request?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Chef_Request_Delete_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Chef_Request_Delete_Error_Message</shortDescription>
+        <value>Set status to new and clean all chefs assigned and demo report before delete.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Chef_Request_Uncomfirm_Info_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Chef_Request_Uncomfirm_Info_Message</shortDescription>
+        <value>Are you sure to unconfirm?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Chefs_Assigned_Prevent_Delete_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Chefs_Assigned_Prevent_Delete_Error_Message</shortDescription>
+        <value>It&apos;s not allowed to delete when chef request is confirmed.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Assign_Queue_Check</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Assign_Queue_Check</shortDescription>
+        <value>Must assign the complaint to a queue.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Can_Not_Closed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Can_Not_Closed</shortDescription>
+        <value>You can&apos;t closed the complaint ,please Check the status of the record.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Can_Not_Rejected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Can_Not_Rejected</shortDescription>
+        <value>You can&apos;t reject the complaint ,please Check the status of the record.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Can_Not_Resolved</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Can_Not_Resolved</shortDescription>
+        <value>You can&apos;t resolved the complaint ,please Check the status of the record.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Cannot_Be_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Cannot_Be_Delete</shortDescription>
+        <value>You are not allowed to delete the complaint.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Mannual_Assign_Check</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Mannual_Assign_Check</shortDescription>
+        <value>You can&apos;t assign the complaint to a user, please check the status of the complaint.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_No_Permission</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_No_Permission</shortDescription>
+        <value>You don&apos;t have permission to this complaint.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Not_Found</shortDescription>
+        <value>No Complaint Found.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_ResolveReason_Null</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_ResolveReason_Null</shortDescription>
+        <value>You must input resolve reason before you resolved the complaint.</value>
+    </labels>
+    <labels>
         <fullName>CN_Contact_Account_Has_Synced</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -344,6 +589,34 @@
         <value>New Contact Change Request</value>
     </labels>
     <labels>
+        <fullName>CN_Contact_Type_Billilng_Only</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Contact_Type_Billilng_Only</shortDescription>
+        <value>Only one billing contact can be existed</value>
+    </labels>
+    <labels>
+        <fullName>CN_Contact_Type_Purchasing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Contact_Type_Purchasing</shortDescription>
+        <value>Must have at least one business contact</value>
+    </labels>
+    <labels>
+        <fullName>CN_Create_Event_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Create_Event_Subject</shortDescription>
+        <value>Sample delivery done notification</value>
+    </labels>
+    <labels>
+        <fullName>CN_Create_Visit_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Create_Visit_Subject</shortDescription>
+        <value>Follow up visit reminder</value>
+    </labels>
+    <labels>
         <fullName>CN_CustomerHierarchy_Confirm_Msg</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -356,6 +629,41 @@
         <protected>false</protected>
         <shortDescription>CN_CustomerHierarchy_Warning_Msg_Too_Frequency</shortDescription>
         <value>Too frequency, please wait for a while.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Demo_Report_Prevent_Delete_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Demo_Report_Prevent_Delete_Msg</shortDescription>
+        <value>It&apos;s not allowed to delete others demo report.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Event_Prevent_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Event_Prevent_Delete</shortDescription>
+        <value>You are not allowed to delete the event or visit.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Generate_Opportunity_Success</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Generate_Opportunity_Success</shortDescription>
+        <value>All opportunities have been created successfully for accounts.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Generate_Opportunity_Title1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Generate_Opportunity_Title1</shortDescription>
+        <value>Generate Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>CN_Generate_Opportunity_Title2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Generate_Opportunity_Title2</shortDescription>
+        <value>New Opportunity Information</value>
     </labels>
     <labels>
         <fullName>CN_Group_Name</fullName>
@@ -384,6 +692,48 @@
         <protected>false</protected>
         <shortDescription>CN_Group_Synced_Prevent_Delete</shortDescription>
         <value>You cannot delete the Group that was processed to sync to SAP.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Lead_Has_Change_Request</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Lead_Has_Change_Request</shortDescription>
+        <value>This lead had already generated change request.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Lead_Not_Sales_Qualified</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Lead_Not_Sales_Qualified</shortDescription>
+        <value>Lead status is not Sales Qualified.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Lead_Owner_Changed_Notification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Lead_Owner_Changed_Notification</shortDescription>
+        <value>Please kindly note that there is a lead assigned to you.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Lead_Owner_Changed_Notification_Body</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Lead_Owner_Changed_Notification_Body</shortDescription>
+        <value>The lead name is</value>
+    </labels>
+    <labels>
+        <fullName>CN_Lead_Owner_Changed_Notification_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Lead_Owner_Changed_Notification_Title</shortDescription>
+        <value>Please kindly note that there is a lead assigned to you.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Mass_Change_Account_Results</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Mass_Change_Account_Results</shortDescription>
+        <value>Results</value>
     </labels>
     <labels>
         <fullName>CN_Not_Found_BusinessUnit</fullName>
@@ -428,6 +778,41 @@
         <value>Business unit or sales team of the user is not found.</value>
     </labels>
     <labels>
+        <fullName>CN_PRMT_Published_Notification_Body</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_PRMT_Published_Notification_Body</shortDescription>
+        <value>The promotion name is</value>
+    </labels>
+    <labels>
+        <fullName>CN_PRMT_Published_Notification_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_PRMT_Published_Notification_Title</shortDescription>
+        <value>Pls kindly note that the promotion has been published.</value>
+    </labels>
+    <labels>
+        <fullName>CN_PRMT_Status_Not_Ready</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_PRMT_Status_Not_Ready</shortDescription>
+        <value>You can only publish the promotion when status is ready.</value>
+    </labels>
+    <labels>
+        <fullName>CN_PleaseConfirm_Abort</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_PleaseConfirm_Abort</shortDescription>
+        <value>Are you sure to abort this Promotion?</value>
+    </labels>
+    <labels>
+        <fullName>CN_PleaseConfirm_Value_AlreadyPublished</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_PleaseConfirm_Value_AlreadyPublished</shortDescription>
+        <value>Already Published, Please Close.</value>
+    </labels>
+    <labels>
         <fullName>CN_PleaseConfirm_Value_AlreadySubmitted</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -442,11 +827,284 @@
         <value>Back to New</value>
     </labels>
     <labels>
+        <fullName>CN_PleaseConfirm_Value_BackToPlanned</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_PleaseConfirm_Value_BackToPlanned</shortDescription>
+        <value>Back to Planned</value>
+    </labels>
+    <labels>
         <fullName>CN_PleaseConfirm_Value_ReadyForApproval</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>CN_PleaseConfirm_Value_ReadyForApproval</shortDescription>
         <value>Ready for Approval</value>
+    </labels>
+    <labels>
+        <fullName>CN_PleaseConfirm_Value_ReadyForPublish</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_PleaseConfirm_Value_ReadyForPublish</shortDescription>
+        <value>Ready for Publish, and please confirm you&apos;ve already added promotion members.</value>
+    </labels>
+    <labels>
+        <fullName>CN_PromotionMember_No_Permission</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_PromotionMember_No_Permission</shortDescription>
+        <value>You don&apos;t have permission to the promotion member.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Promotion_Can_Not_Published</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Promotion_Can_Not_Published</shortDescription>
+        <value>You can&apos;t publish the promotion, please check the status of the record.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Promotion_Check_PromotionMember</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Promotion_Check_PromotionMember</shortDescription>
+        <value>At least one promotion member when ready for publish</value>
+    </labels>
+    <labels>
+        <fullName>CN_Promotion_Generate_Success</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Promotion_Generate_Success</shortDescription>
+        <value>Generate Promotion Member Success!</value>
+    </labels>
+    <labels>
+        <fullName>CN_Promotion_No_Permission</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Promotion_No_Permission</shortDescription>
+        <value>You don&apos;t have permission to this promotion.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Promotion_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Promotion_Not_Found</shortDescription>
+        <value>No Promotion Found.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Promotion_Not_Found_Product</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Promotion_Not_Found_Product</shortDescription>
+        <value>The product is not found in Promotion.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Promotion_Prevent_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Promotion_Prevent_Delete</shortDescription>
+        <value>It&apos;s not allow delete if promotion had ready for publish, published or aborted</value>
+    </labels>
+    <labels>
+        <fullName>CN_Promotion_Publish_Success</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Promotion_Publish_Success</shortDescription>
+        <value>The promotion has been published successfully.</value>
+    </labels>
+    <labels>
+        <fullName>CN_QTP_Has_Approved_Or_Synced</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_QTP_Has_Approved_Or_Synced</shortDescription>
+        <value>You can‘t delete or create the quote to promotion whose quote is approved or submited for approve or syncing.</value>
+    </labels>
+    <labels>
+        <fullName>CN_QuoteItem_No_Permission</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_QuoteItem_No_Permission</shortDescription>
+        <value>You don&apos;t have permission to this Quote Line Item.</value>
+    </labels>
+    <labels>
+        <fullName>CN_QuoteItem_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_QuoteItem_Not_Found</shortDescription>
+        <value>No Quote Line Item Found.</value>
+    </labels>
+    <labels>
+        <fullName>CN_QuoteItem_Not_Need_Deal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_QuoteItem_Not_Need_Deal</shortDescription>
+        <value>There&apos;s no Quote Line Item to deal with.</value>
+    </labels>
+    <labels>
+        <fullName>CN_QuoteItem_Quote_Has_Approved_Or_Synced</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_QuoteItem_Quote_Has_Approved_Or_Synced</shortDescription>
+        <value>You can‘t delete the quote line item whose quote is approved or submited for approve or syncing.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_AOrDItems_CFRM_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_AOrDItems_CFRM_Msg</shortDescription>
+        <value>Accept/Deny all Quote Line Items?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Apply</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Apply</shortDescription>
+        <value>Are you sure to apply promotion to this quote?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Apply_CFRM_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Apply_CFRM_Msg</shortDescription>
+        <value>Apply Promotion to the Quote?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_CFAA_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_CFAA_Msg</shortDescription>
+        <value>Are you sure to accept all Quote Line Items?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_CFDA_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_CFDA_Msg</shortDescription>
+        <value>Are you sure to deny all Quote Line Items?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Confirm_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Confirm_Msg</shortDescription>
+        <value>Confirm to Send?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Deal_Success_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Deal_Success_Msg</shortDescription>
+        <value>All Quote Line Items have been dealt with.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Had_ApprovedOrSubmit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Had_ApprovedOrSubmit</shortDescription>
+        <value>You cannot apply promotion to the quote that is approved or submitted for approval.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Had_Not_Approved</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Had_Not_Approved</shortDescription>
+        <value>You can‘t accept/deny all quote line items whose quote is not approved.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Had_Synced</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Had_Synced</shortDescription>
+        <value>{0} has been synced yet.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Has_Approved_Or_Synced</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Has_Approved_Or_Synced</shortDescription>
+        <value>You can‘t delete the quote while it is approved or submited for approve or syncing.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Name</shortDescription>
+        <value>Quote</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_No_Permission</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_No_Permission</shortDescription>
+        <value>You don&apos;t have permission to this quote.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Not_Found</shortDescription>
+        <value>No {0} Found.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Not_Found_IN_InternalEmployee</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Not_Found_IN_InternalEmployee</shortDescription>
+        <value>There&apos;s no internal employee available that matches with sales person of the {0}.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Not_Have_Items</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Not_Have_Items</shortDescription>
+        <value>This Quote doesn&apos;t have Quote Line Item.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Retrieve_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Retrieve_Title</shortDescription>
+        <value>Send {0} to SAP</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Send_Success_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Send_Success_Msg</shortDescription>
+        <value>This {0} has been sent to SAP successfully.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Send_To_SAP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Send_To_SAP</shortDescription>
+        <value>Are you sure to send this {0} to SAP?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Warning_Msg_Too_Frequency</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Warning_Msg_Too_Frequency</shortDescription>
+        <value>Too frequency, please wait for a while.</value>
+    </labels>
+    <labels>
+        <fullName>CN_SP_No_Product_List_Price</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_SP_No_Product_List_Price</shortDescription>
+        <value>There is no list price for this product.</value>
+    </labels>
+    <labels>
+        <fullName>CN_SP_Prevent_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_SP_Prevent_Delete</shortDescription>
+        <value>You&apos;re not allowed to delete the promotion product, please check the promotion status.</value>
+    </labels>
+    <labels>
+        <fullName>CN_SR_Approved_Prevent_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_SR_Approved_Prevent_Delete</shortDescription>
+        <value>You cannot delete the sample request that has been approved.</value>
     </labels>
     <labels>
         <fullName>CN_SalesTeam_Synced_Prevent_Delete</fullName>

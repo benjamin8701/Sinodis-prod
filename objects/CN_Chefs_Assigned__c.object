@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>CN_Chef_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Chef__r.LastName + &quot; &quot; + CN_Chef__r.FirstName</formula>
+        <label>Chef Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Chef_Request__c</fullName>
+        <externalId>false</externalId>
+        <label>Chef Request</label>
+        <referenceTo>CN_Chef_Request__c</referenceTo>
+        <relationshipLabel>Chefs Assigneds</relationshipLabel>
+        <relationshipName>Chefs_Assigneds</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>CN_Chef_Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Chef Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Leading Chef</fullName>
+                    <default>false</default>
+                    <label>Leading Chef</label>
+                </value>
+                <value>
+                    <fullName>Supporting Chef</fullName>
+                    <default>false</default>
+                    <label>Supporting Chef</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Chef_Self_Confirm_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Chef Self Confirm Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CN_Chef_UT__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Chef UT</label>
+        <referenceTo>CN_Chef_UT__c</referenceTo>
+        <relationshipLabel>Chefs Assigneds</relationshipLabel>
+        <relationshipName>Chefs_Assigneds</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Chef_Work_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Chef Work End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CN_Chef_Work_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Chef Work Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CN_Chef_Work_Start_and_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(CN_Chef_Work_Start_Date__c)&amp; &apos; ~ &apos; &amp; Text( CN_Chef_Work_End_Date__c )</formula>
+        <label>Chef Work Start and End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Chef_Working_Days__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Chef_Work_End_Date__c -  CN_Chef_Work_Start_Date__c + 1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Chef Working Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Chef__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Chef</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>User.Profile.Name</field>
+                <operation>equals</operation>
+                <value>CN Chef,CN Chef Manager</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Chefs_Assigneds</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Display_in_Calendar__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(CN_Chef_Request__r.CN_Account__r.Name), &quot;&quot;, CN_Chef_Request__r.CN_Account__r.Name + &quot;-&quot;) + 
+IF( ISBLANK(CN_Chef_Request__r.CN_Opportunity__r.Name), &quot;&quot;, CN_Chef_Request__r.CN_Opportunity__r.Name + &quot;-&quot;) + 
+IF( ISBLANK(CN_Chef_Request__r.CN_Campaign__r.Name), &quot;&quot;, CN_Chef_Request__r.CN_Campaign__r.Name + &quot;-&quot;) + 
+CN_Event_Type__c + &quot;-&quot; + 
+CN_Chef__r.LastName + &quot; &quot; + CN_Chef__r.FirstName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Display in Calendar</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Duration_Total__c</fullName>
+        <description>WithOut Weekend</description>
+        <externalId>false</externalId>
+        <formula>Duration__c + ( CN_Duration_Weeks__c * 5)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duration Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Duration_Weeks__c</fullName>
+        <externalId>false</externalId>
+        <formula>FLOOR((CN_Chef_Work_End_Date__c -  CN_Chef_Work_Start_Date__c) / 7)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duration Weeks</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_End_Date_Month_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+MONTH( CN_Chef_Work_End_Date__c ) = 12,
+DATE( YEAR( CN_Chef_Work_End_Date__c ), 12, 31 ),
+DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) + 1, 1 ) - 1
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>End Date Month End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CN_End_Date_Month_First_Day__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH( CN_Chef_Work_End_Date__c ), 1 )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>End Date Month First Day</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CN_Event_Location__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(CN_Chef_Request__r.CN_Event_Location__c)</formula>
+        <label>Event Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Event_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(CN_Chef_Request__r.CN_Event_Type__c)</formula>
+        <label>Event Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Chef_Request_Confirmed__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Chef_Request__r.CN_Confirmed__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Chef Request Confirmed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_My_Assignment__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Chef__c =  $User.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is My Assignment</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Total_days_of_Demo_End_Date_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+MONTH( CN_Chef_Work_End_Date__c ) = 12,
+DAY(DATE( YEAR( CN_Chef_Work_End_Date__c ), 12, 31 )),
+DAY(DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) + 1, 1 ) - 1)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total days of Demo End Date Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Duration__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+ WEEKDAY( CN_Chef_Work_Start_Date__c ) ,
+ 1, CASE(WEEKDAY( CN_Chef_Work_End_Date__c ), 1, 0, 2, 1, 3, 2, 4, 3, 5, 4, 6, 5, 7, 5, 0),
+ 2, CASE(WEEKDAY( CN_Chef_Work_End_Date__c ), 1, 5, 2, 1, 3, 2, 4, 3, 5, 4, 6, 5, 7, 5, 0),
+ 3, CASE(WEEKDAY( CN_Chef_Work_End_Date__c ), 1, 4, 2, 5, 3, 1, 4, 2, 5, 3, 6, 4, 7, 4, 0),
+ 4, CASE(WEEKDAY( CN_Chef_Work_End_Date__c ), 1, 3, 2, 4, 3, 5, 4, 1, 5, 2, 6, 3, 7, 3, 0),
+ 5, CASE(WEEKDAY( CN_Chef_Work_End_Date__c ), 1, 2, 2, 3, 3, 4, 4, 5, 5, 1, 6, 2, 7, 2, 0),
+ 6, CASE(WEEKDAY( CN_Chef_Work_End_Date__c ), 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 1, 7, 1, 0),
+ 7, CASE(WEEKDAY( CN_Chef_Work_End_Date__c ), 1, 0, 2, 1, 3, 2, 4, 3, 5, 4, 6, 5, 7, 5, 0),
+ 0
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Chefs Assigned</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Chef_Name__c</columns>
+        <columns>CN_Chef_Role__c</columns>
+        <columns>CN_Event_Location__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <columns>CN_Is_Chef_Request_Confirmed__c</columns>
+        <columns>CN_Chef_UT__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>CN_Chefs_Assigned__c.CN_Chef_Assigned</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Chris_Lu_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Chris Lu</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Chris Lu-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Cricle_Wong_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Cricle Wong</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Cricle Wong-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_David_Yan_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>David Yan</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-David Yan-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Elise_Zhong_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Elise Zhong</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Elise Zhong-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Felicia_Huang_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Felicia Huang</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Felicia Huang-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Felix_Shi_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Felix Shi</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Felix Shi-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Jack_Lio_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Jack Lio</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Jack Lio-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Jason_Li_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Jason Li</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Jason Li-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Jay_Song_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Jay Song</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Jay Song-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Jessie_Huang_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Jessie Huang</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Jessie Huang-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_King_Yang_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>King Yang</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-King Yang-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Laura_Yu_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Laura Yu</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Laura Yu-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Leafy_NG_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Leafy NG</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Leafy NG-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Louis_Li_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Louis Li</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Louis Li-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Luca_Chen_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Luca Chen</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Luca Chen-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Nicolas_Serrano_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Nicolas Serrano</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Nicolas Serrano-Chef Re</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Ruby_Zhang_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Ruby Zhang</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Ruby Zhang-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Sunny_Sun_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Sunny Sun</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Sunny Sun-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Wendy_Yu_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Wendy Yu</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Wendy Yu-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_My_Assignemnt</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <columns>CN_Chef_Role__c</columns>
+        <columns>CN_Event_Location__c</columns>
+        <columns>CN_Event_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Is_My_Assignment__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>我的分配My Assignemnt</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CA-{0000000000}</displayFormat>
+        <label>Chefs Assigned ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Chefs Assigneds</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>CN_Chef_Assigned</fullName>
+        <active>true</active>
+        <label>CN Chef Assigned</label>
+        <picklistValues>
+            <picklist>CN_Chef_Role__c</picklist>
+            <values>
+                <fullName>Leading Chef</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supporting Chef</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields>CN_Chef_Request__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Event_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Chef_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Chef_Role__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Chef_Work_Start_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Chef_Work_End_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Event_Location__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>CN_Check_Confirm_Editing</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  
+   CN_Chef_Request__r.CN_Confirmed__c = true,
+   NOT(ISCHANGED(CN_Chef_UT__c )),
+   OR(
+   NOT(ISNEW()) &amp;&amp; NOT(ISCHANGED(CN_Chef_Self_Confirm_Time__c )),
+   ISNEW() &amp;&amp; CN_Chef_Self_Confirm_Time__c == NULL)
+)</errorConditionFormula>
+        <errorMessage>It&apos;s not allowed to edit when chef request is confirmed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Check_Demo_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(
+    ISNEW(),
+ISCHANGED(CN_Chef_Work_Start_Date__c ),
+ISCHANGED(CN_Chef_Work_End_Date__c )
+  ),
+   CN_Chef_Work_Start_Date__c &gt;  CN_Chef_Work_End_Date__c 
+)</errorConditionFormula>
+        <errorDisplayField>CN_Chef_Work_Start_Date__c</errorDisplayField>
+        <errorMessage>Chef work end date must greater than Chef work start date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Check_Edit</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c, 
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)), 
+NOT($Profile.Name = &quot;CN Chef Manager&quot;)
+)</errorConditionFormula>
+        <errorMessage>It&apos;s not allowed to create or edit.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

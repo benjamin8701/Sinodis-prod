@@ -238,7 +238,7 @@
         <fields>CN_Sales_Team_UI__c</fields>
         <fields>CN_Sales_Person_Name__c</fields>
         <fields>CN_Sinodis_Finance_AR__c</fields>
-        <fields>CN_Account_Status__c</fields>
+        <fields>CN_Account_Status_For_Display__c</fields>
         <fields>CN_Customer_Status__c</fields>
         <label>Account Compact Layout</label>
     </compactLayouts>
@@ -302,6 +302,51 @@ IF(
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Account_Layer__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Layer</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Layer 100</fullName>
+                    <default>false</default>
+                    <label>Layer 100</label>
+                </value>
+                <value>
+                    <fullName>Layer 80</fullName>
+                    <default>false</default>
+                    <label>Layer 80</label>
+                </value>
+                <value>
+                    <fullName>Layer 50</fullName>
+                    <default>false</default>
+                    <label>Layer 50</label>
+                </value>
+                <value>
+                    <fullName>Layer 20</fullName>
+                    <default>false</default>
+                    <label>Layer 20</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Account_Layer_for_Report__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(TEXT( CN_Account_Layer__c ) = &quot;&quot;, &quot;Undefined Layer&quot;, TEXT( CN_Account_Layer__c ))</formula>
+        <label>Account Layer for Report</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Account_Not_Uploaded_Contract__c</fullName>
         <externalId>false</externalId>
         <formula>CN_Account_Approved_Date__c + 90 &lt;=  TODAY()</formula>
@@ -317,6 +362,17 @@ IF(
         <label>Account Not Uploaded Expect Contract</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Account_RecordType__c</fullName>
+        <externalId>false</externalId>
+        <formula>RecordType.DeveloperName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account RecordType</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Account_Source__c</fullName>
@@ -354,6 +410,116 @@ IF(
                     <fullName>Expositions</fullName>
                     <default>false</default>
                     <label>Expositions</label>
+                </value>
+                <value>
+                    <fullName>Website</fullName>
+                    <default>false</default>
+                    <label>Website</label>
+                </value>
+                <value>
+                    <fullName>Social Media Network</fullName>
+                    <default>false</default>
+                    <label>Social Media Network</label>
+                </value>
+                <value>
+                    <fullName>Marketing Campaign</fullName>
+                    <default>false</default>
+                    <label>Marketing Campaign</label>
+                </value>
+                <value>
+                    <fullName>Digital Campaign</fullName>
+                    <default>false</default>
+                    <label>Digital Campaign</label>
+                </value>
+                <value>
+                    <fullName>Bakery China</fullName>
+                    <default>false</default>
+                    <label>Bakery China</label>
+                </value>
+                <value>
+                    <fullName>CIIE</fullName>
+                    <default>false</default>
+                    <label>CIIE</label>
+                </value>
+                <value>
+                    <fullName>FHC</fullName>
+                    <default>false</default>
+                    <label>FHC</label>
+                </value>
+                <value>
+                    <fullName>Other Trade show</fullName>
+                    <default>false</default>
+                    <label>Other Trade show</label>
+                </value>
+                <value>
+                    <fullName>Sponsorship Event</fullName>
+                    <default>false</default>
+                    <label>Sponsorship Event</label>
+                </value>
+                <value>
+                    <fullName>Customer Service Hotline</fullName>
+                    <default>false</default>
+                    <label>Customer Service Hotline</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Account_Status_For_Display__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+  ISBLANK(TEXT(CN_Account_Status_New__c)) ,  
+  TEXT(CN_Account_Status__c) , 
+  TEXT(CN_Account_Status_New__c)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Status For Display</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Account_Status_New__c</fullName>
+        <externalId>false</externalId>
+        <label>New Account Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Ready for Approval</fullName>
+                    <default>false</default>
+                    <label>Ready for Approval</label>
+                </value>
+                <value>
+                    <fullName>Submitted for Approval</fullName>
+                    <default>false</default>
+                    <label>Submitted for Approval</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -563,6 +729,15 @@ IF(
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Billing_Block_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Block Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>CN_Billing_Block__c</fullName>
@@ -863,6 +1038,27 @@ IF(
         <type>Phone</type>
     </fields>
     <fields>
+        <fullName>CN_Block_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(ISBLANK(CN_Order_Block_Date__c) &amp;&amp; ISBLANK(CN_Delivery_Block_Date__c) &amp;&amp; !ISBLANK(CN_Billing_Block_Date__c),CN_Billing_Block_Date__c,
+	if(ISBLANK(CN_Order_Block_Date__c) &amp;&amp; !ISBLANK(CN_Delivery_Block_Date__c) &amp;&amp; ISBLANK(CN_Billing_Block_Date__c),CN_Delivery_Block_Date__c,
+		if(!ISBLANK(CN_Order_Block_Date__c) &amp;&amp; ISBLANK(CN_Delivery_Block_Date__c) &amp;&amp; ISBLANK(CN_Billing_Block_Date__c),CN_Order_Block_Date__c,
+			if(!ISBLANK(CN_Order_Block_Date__c) &amp;&amp; !ISBLANK(CN_Delivery_Block_Date__c) &amp;&amp; ISBLANK(CN_Billing_Block_Date__c),
+				if(CN_Order_Block_Date__c&lt;CN_Delivery_Block_Date__c,CN_Order_Block_Date__c,CN_Delivery_Block_Date__c),
+			if(!ISBLANK(CN_Order_Block_Date__c) &amp;&amp; ISBLANK(CN_Delivery_Block_Date__c) &amp;&amp; !ISBLANK(CN_Billing_Block_Date__c),
+				if(CN_Order_Block_Date__c&lt;CN_Billing_Block_Date__c,CN_Order_Block_Date__c,CN_Billing_Block_Date__c),
+			if(ISBLANK(CN_Order_Block_Date__c) &amp;&amp; !ISBLANK(CN_Delivery_Block_Date__c) &amp;&amp; !ISBLANK(CN_Billing_Block_Date__c),
+				if(CN_Delivery_Block_Date__c&lt;CN_Billing_Block_Date__c,CN_Delivery_Block_Date__c,CN_Billing_Block_Date__c),
+			if(!ISBLANK(CN_Order_Block_Date__c) &amp;&amp; !ISBLANK(CN_Delivery_Block_Date__c) &amp;&amp; !ISBLANK(CN_Billing_Block_Date__c),
+				if(CN_Order_Block_Date__c &lt; CN_Delivery_Block_Date__c,
+					if(CN_Order_Block_Date__c&lt;CN_Billing_Block_Date__c,CN_Order_Block_Date__c,CN_Billing_Block_Date__c),
+					if(CN_Delivery_Block_Date__c&lt;CN_Billing_Block_Date__c,CN_Delivery_Block_Date__c,CN_Billing_Block_Date__c)),null)))))))</formula>
+        <label>Block Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>CN_Block_Sales_Support__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -932,26 +1128,6 @@ IF(
         <externalId>false</externalId>
         <inlineHelpText>Please search for Food Service.</inlineHelpText>
         <label>Business Unit</label>
-        <lookupFilter>
-            <active>false</active>
-            <booleanFilter>1 OR (2 AND 3)</booleanFilter>
-            <filterItems>
-                <field>$User.CN_Is_Integration_User__c</field>
-                <operation>equals</operation>
-                <value>True</value>
-            </filterItems>
-            <filterItems>
-                <field>CN_Business_Unit__c.CN_Is_Active__c</field>
-                <operation>equals</operation>
-                <value>True</value>
-            </filterItems>
-            <filterItems>
-                <field>CN_Business_Unit__c.CN_Sync_Status__c</field>
-                <operation>equals</operation>
-                <value>Success</value>
-            </filterItems>
-            <isOptional>false</isOptional>
-        </lookupFilter>
         <referenceTo>CN_Business_Unit__c</referenceTo>
         <relationshipLabel>Business Units</relationshipLabel>
         <relationshipName>Accounts</relationshipName>
@@ -1255,6 +1431,17 @@ IF(
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
+        <fullName>CN_Converted_From__c</fullName>
+        <externalId>false</externalId>
+        <label>Converted From</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Country_CN__c</fullName>
         <externalId>false</externalId>
         <label>Country(CN)</label>
@@ -1488,6 +1675,15 @@ IF(
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Delivery_Block_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery Block Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>CN_Delivery_Block__c</fullName>
@@ -1786,6 +1982,28 @@ IF(
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Gaode_Geolocation__c</fullName>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>CN_Gaode_Geolocation</label>
+        <required>false</required>
+        <scale>10</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>CN_Gaode_Response_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>CN_Gaode_Response_Status</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Group_Name_API__c</fullName>
@@ -2132,6 +2350,24 @@ IF(
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CN_Is_Show_Payment_Report__c</fullName>
+        <externalId>false</externalId>
+        <formula>NOT(CN_Sent_Reminder_Level__c = &quot;&quot; || CN_Sent_Reminder_Level__c = &quot;Paid&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Show Payment Report</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_TM_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is TM Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Latest_Approved_Payment_Term__c</fullName>
         <externalId>false</externalId>
         <label>Latest Approved Payment Term</label>
@@ -2433,6 +2669,16 @@ IF(
         </valueSet>
     </fields>
     <fields>
+        <fullName>CN_Map_Link__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(ISNULL(CN_Gaode_Geolocation__Longitude__s) ||ISNULL(CN_Gaode_Geolocation__Latitude__s),HYPERLINK(&apos;&apos;, &apos;尚未获取到经纬度&apos;,&apos;_self&apos;),HYPERLINK(&apos;/apex/Map?lon=&apos;&amp;TEXT(CN_Gaode_Geolocation__Longitude__s)&amp;&apos;&amp;lat=&apos;&amp;TEXT(CN_Gaode_Geolocation__Latitude__s) , &apos;点击跳转到地图&apos;))</formula>
+        <label>Map Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Nature__c</fullName>
         <externalId>false</externalId>
         <label>Nature</label>
@@ -2442,6 +2688,15 @@ IF(
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Need_Sync_Geolocation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CN_Need_Sync_Geolocation</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>CN_Number_Of_Stores__c</fullName>
@@ -2488,6 +2743,37 @@ IF(
         <summaryOperation>count</summaryOperation>
         <trackHistory>false</trackHistory>
         <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CN_Open_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Open Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CN_Open_During_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Today()- CN_Open_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Open During Date</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Order_Block_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Block Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>CN_Order_Block__c</fullName>
@@ -2725,6 +3011,17 @@ IF(
         </valueSet>
     </fields>
     <fields>
+        <fullName>CN_Please_Confirm_Prospect__c</fullName>
+        <externalId>false</externalId>
+        <formula>$Label.CN_Account_Convert_To_Direct</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Please Confirm</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Please_Confirm__c</fullName>
         <externalId>false</externalId>
         <formula>CASE(
@@ -2778,6 +3075,16 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <defaultValue>true</defaultValue>
         <externalId>false</externalId>
         <label>Price determination</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Prospect_Convert__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Prospect be converted to Direct Account flag</description>
+        <externalId>false</externalId>
+        <label>Prospect Convert</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
@@ -3249,9 +3556,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>CN_Route_To_Market__c</fullName>
         <externalId>false</externalId>
         <formula>IF(
-    CONTAINS(RecordType.DeveloperName, &quot;Indirect&quot;),
+    CONTAINS(RecordType.DeveloperName, &quot;_Indirect&quot;),
     &quot;Indirect&quot;,
-    &quot;Direct&quot;
+    IF(
+        CONTAINS(RecordType.DeveloperName, &quot;_Direct&quot;),
+        &quot;Direct&quot;,
+        IF(
+            CONTAINS(RecordType.DeveloperName, &quot;_Prospect&quot;),
+            &quot;Prospect&quot;,
+            &quot;&quot;
+        )
+    )
 )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Route-to-Market</label>
@@ -3580,6 +3895,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Sales_Team_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Sales_Team_UI__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Team Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Sales_Team_UI__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
@@ -3619,6 +3945,18 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <formula>CN_Sales_Team_UI__r.CN_Sales_Team_Code__c</formula>
         <label>Sales Team</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Sent_Reminder_Level__c</fullName>
+        <description>The Sent Reminder Level of the Related Payment Report</description>
+        <externalId>false</externalId>
+        <label>Sent Reminder Level</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -4544,6 +4882,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CN_TM_Remove_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>TM Remove Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>CN_Tax_Classification__c</fullName>
         <defaultValue>&quot;1&quot;</defaultValue>
         <externalId>false</externalId>
@@ -4740,6 +5087,18 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Visit_Addr_CN__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please fill with city and street</inlineHelpText>
+        <label>Visit Address(CN)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CurrencyIsoCode</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -4831,6 +5190,9 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Tier</fullName>
+    </fields>
+    <fields>
         <fullName>Type</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -4849,6 +5211,8 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <columns>CN_Customer_Status__c</columns>
         <columns>CN_Category__c</columns>
         <columns>CN_Sales_Person_Name__c</columns>
+        <columns>CN_Customer_Journey__c</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <label>All Accounts</label>
     </listViews>
@@ -4929,6 +5293,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <columns>CN_Customer_Status__c</columns>
         <columns>CN_Category__c</columns>
         <columns>CN_Sales_Person_Name__c</columns>
+        <columns>CN_Customer_Journey__c</columns>
         <filterScope>Mine</filterScope>
         <label>My Accounts</label>
     </listViews>
@@ -4942,39 +5307,47 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
-                <fullName>Advertisement</fullName>
+                <fullName>Bakery China</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer Event</fullName>
+                <fullName>CIIE</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Employee Referral</fullName>
+                <fullName>Customer Service Hotline</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Google AdWords</fullName>
+                <fullName>Digital Campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Other</fullName>
+                <fullName>FHC</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
+                <fullName>Livestreaming</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Purchased List</fullName>
+                <fullName>Marketing Campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Trade Show</fullName>
+                <fullName>Other Trade show</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Webinar</fullName>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4983,9 +5356,36 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Account_Layer__c</picklist>
+            <values>
+                <fullName>Layer 100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 50</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 80</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Account_Source__c</picklist>
             <values>
+                <fullName>Bakery China</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Brand Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIIE</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4997,11 +5397,70 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Customer Service Hotline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Expositions</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>FHC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Trade show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Public Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Account_Status_New__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6811,39 +7270,47 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
-                <fullName>Advertisement</fullName>
+                <fullName>Bakery China</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer Event</fullName>
+                <fullName>CIIE</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Employee Referral</fullName>
+                <fullName>Customer Service Hotline</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Google AdWords</fullName>
+                <fullName>Digital Campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Other</fullName>
+                <fullName>FHC</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
+                <fullName>Livestreaming</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Purchased List</fullName>
+                <fullName>Marketing Campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Trade Show</fullName>
+                <fullName>Other Trade show</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Webinar</fullName>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -6852,9 +7319,36 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Account_Layer__c</picklist>
+            <values>
+                <fullName>Layer 100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 50</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 80</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Account_Source__c</picklist>
             <values>
+                <fullName>Bakery China</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Brand Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIIE</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -6866,11 +7360,70 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Customer Service Hotline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Expositions</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>FHC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Trade show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Public Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Account_Status_New__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -8680,39 +9233,47 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
-                <fullName>Advertisement</fullName>
+                <fullName>Bakery China</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer Event</fullName>
+                <fullName>CIIE</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Employee Referral</fullName>
+                <fullName>Customer Service Hotline</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Google AdWords</fullName>
+                <fullName>Digital Campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Other</fullName>
+                <fullName>FHC</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
+                <fullName>Livestreaming</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Purchased List</fullName>
+                <fullName>Marketing Campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Trade Show</fullName>
+                <fullName>Other Trade show</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Webinar</fullName>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -8721,9 +9282,36 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Account_Layer__c</picklist>
+            <values>
+                <fullName>Layer 100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 50</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 80</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Account_Source__c</picklist>
             <values>
+                <fullName>Bakery China</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Brand Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIIE</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -8735,11 +9323,70 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Customer Service Hotline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Expositions</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>FHC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Trade show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Public Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Account_Status_New__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10542,46 +11189,54 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
     </recordTypes>
     <recordTypes>
-        <fullName>CN_New_Direct</fullName>
+        <fullName>CN_Edit_Prospect</fullName>
         <active>true</active>
         <compactLayoutAssignment>Account_Compact_Layout</compactLayoutAssignment>
-        <label>Direct Account</label>
+        <label>Edit Prospect</label>
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
-                <fullName>Advertisement</fullName>
+                <fullName>Bakery China</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer Event</fullName>
+                <fullName>CIIE</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Employee Referral</fullName>
+                <fullName>Customer Service Hotline</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Google AdWords</fullName>
+                <fullName>Digital Campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Other</fullName>
+                <fullName>FHC</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
+                <fullName>Livestreaming</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Purchased List</fullName>
+                <fullName>Marketing Campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Trade Show</fullName>
+                <fullName>Other Trade show</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Webinar</fullName>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10590,9 +11245,36 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Account_Layer__c</picklist>
+            <values>
+                <fullName>Layer 100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 50</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 80</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Account_Source__c</picklist>
             <values>
+                <fullName>Bakery China</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Brand Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIIE</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10604,11 +11286,1945 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Customer Service Hotline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Expositions</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>FHC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Trade show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Public Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Account_Status_New__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Account_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Ready for Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Approve_Step__c</picklist>
+            <values>
+                <fullName>Step1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Step2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Step3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Step4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Step5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Billing_Block__c</picklist>
+            <values>
+                <fullName>01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>03</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>04</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>05</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>08</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>09</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YH</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Billing_Department_of_Contact_Person__c</picklist>
+            <values>
+                <fullName>0001</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0002</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0004</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0006</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0008</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0009</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0011</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0012</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0013</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0014</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0017</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0018</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0022</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0023</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0024</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0025</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0026</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0027</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0028</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0029</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0031</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0032</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Category__c</picklist>
+            <values>
+                <fullName>BAPA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coffee%2FTea Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hotel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Restaurant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retailor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Contact_Type__c</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Country_CN__c</picklist>
+            <values>
+                <fullName>CN</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Country_EN__c</picklist>
+            <values>
+                <fullName>CN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Customer_Journey__c</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Customer_Type__c</picklist>
+            <values>
+                <fullName>0001</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0002</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CPDA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Delivery_Block__c</picklist>
+            <values>
+                <fullName>01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>03</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>04</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>05</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>06</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>07</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>08</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>09</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Delivery_Plant__c</picklist>
+            <values>
+                <fullName>P011</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P050</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P060</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Department_of_Contact_Person__c</picklist>
+            <values>
+                <fullName>0001-Purchasing Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0002-Sales Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0003-Administration Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0004-Production Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0005-QA Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0006-Secretary%27s Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0007-Financial Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0008-Legal Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0009-Human Resources Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0010-General Affairs Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0011-Sales Promotion Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0012-International Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0013-Export Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0014-Import Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0015-Public Relation Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0016-Advertising Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0017-Planning Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0018-R%26D Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0019-Product Dev%2E Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0020-Food %26 Beverage Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0021-Service Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0022-Technical Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0023-IT Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0024-Logistics Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0025-Cold Kitchen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0026-Hot Kitchen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0027-Banquet Kitchen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0028-Pastry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0029-Backery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0030-Bar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0031-Receiving</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0032-Kitchen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Incoterms__c</picklist>
+            <values>
+                <fullName>CFR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DAF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DEQ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EXW</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>FAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Invoice_Type__c</picklist>
+            <values>
+                <fullName>General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Latest_Approved_Payment_Term__c</picklist>
+            <values>
+                <fullName>CIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D045</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D090</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M115</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M131</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M231</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Latest_Approved_Reference_Day__c</picklist>
+            <values>
+                <fullName>Delivery_Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fapiao_Day</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Latest_CR_Sync_Status__c</picklist>
+            <values>
+                <fullName>Fail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Need To Sync</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Success</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Latest_Credit_Term_App_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Level__c</picklist>
+            <values>
+                <fullName>Branch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Head Quarter</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Loyalty_level__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Order_Block__c</picklist>
+            <values>
+                <fullName>01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>03</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>99</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Payment_Terms__c</picklist>
+            <values>
+                <fullName>CIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D000</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Payment_Type__c</picklist>
+            <values>
+                <fullName>Bank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QR Code</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Purchasing_Department_of_Contact__c</picklist>
+            <values>
+                <fullName>0001</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0002</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0004</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0006</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0008</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0009</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0011</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0012</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0013</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0014</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0017</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0018</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0022</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0023</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0024</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0025</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0026</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0027</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0028</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0029</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0031</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0032</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Reconciliation_Account__c</picklist>
+            <values>
+                <fullName>11410101</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>11410103</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11410104</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11410201</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11910000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11910001</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11910010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11910020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11910040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11910050</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11910085</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21610101</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21610102</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21610103</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21610201</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Reference_Day__c</picklist>
+            <values>
+                <fullName>Delivery_Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fapiao_Day</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Risk_Category__c</picklist>
+            <values>
+                <fullName>A</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sales_District__c</picklist>
+            <values>
+                <fullName>001</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>002</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>004</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>006</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>008</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>009</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>011</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>012</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>013</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>014</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>017</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>018</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>022</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>023</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>024</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>025</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>026</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sales_Group__c</picklist>
+            <values>
+                <fullName>002</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sales_Office__c</picklist>
+            <values>
+                <fullName>K010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>K020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>K030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>K040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>K050</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sales_Org__c</picklist>
+            <values>
+                <fullName>S010</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sort_Key__c</picklist>
+            <values>
+                <fullName>000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>001</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>002</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>004</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>006</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>008</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>009</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>011</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>012</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>014</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>017</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>018</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>022</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>023</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>024</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>025</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>026</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>027</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>028</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>029</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>031</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>032</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>033</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>034</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>035</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>036</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>037</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>039</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>055</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>061</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>065</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>101</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>105</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Subcategory__c</picklist>
+            <values>
+                <fullName>1 Star Hotel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 Star Hotel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Star Hotel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 Star Hotel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 Star Hotel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Access Bakery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Access Coffee Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Access Ice cream</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Access Pastry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Access Tea Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Airline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Casual Dining - Asian excl CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Casual Dining - Chinese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Casual Dining - Western</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central Kitchen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coffee%2FTea OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Convenience Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Core Bakery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Core Coffee Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Core Ice cream</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Core Pastry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Core Tea Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cruise</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fine Dining - Asian excl CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fine Dining - Chinese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fine Dining - Western</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HORECA OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online B2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online B2C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium Bakery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium Coffee Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium Ice cream</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium Pastry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium Tea Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QSR - Asian exclude Chinese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QSR - Chinese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QSR - Western</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sync_Status__c</picklist>
+            <values>
+                <fullName>Fail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Success</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>CN_New_Direct</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Account_Compact_Layout</compactLayoutAssignment>
+        <label>Direct Account</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Bakery China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIIE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Service Hotline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FHC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Trade show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Account_Layer__c</picklist>
+            <values>
+                <fullName>Layer 100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 50</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 80</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Account_Source__c</picklist>
+            <values>
+                <fullName>Bakery China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brand Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIIE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Recommend</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Service Hotline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expositions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FHC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Trade show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Account_Status_New__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12406,39 +15022,47 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
-                <fullName>Advertisement</fullName>
+                <fullName>Bakery China</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer Event</fullName>
+                <fullName>CIIE</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Employee Referral</fullName>
+                <fullName>Customer Service Hotline</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Google AdWords</fullName>
+                <fullName>Digital Campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Other</fullName>
+                <fullName>FHC</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
+                <fullName>Livestreaming</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Purchased List</fullName>
+                <fullName>Marketing Campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Trade Show</fullName>
+                <fullName>Other Trade show</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Webinar</fullName>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12447,9 +15071,36 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Account_Layer__c</picklist>
+            <values>
+                <fullName>Layer 100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 50</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 80</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Account_Source__c</picklist>
             <values>
+                <fullName>Bakery China</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Brand Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIIE</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12461,11 +15112,70 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Customer Service Hotline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Expositions</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>FHC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Trade show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Public Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Account_Status_New__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -14267,6 +16977,1956 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
     </recordTypes>
+    <recordTypes>
+        <fullName>CN_New_Prospect</fullName>
+        <active>true</active>
+        <label>Prospect</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Bakery China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIIE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Service Hotline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FHC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Trade show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Account_Layer__c</picklist>
+            <values>
+                <fullName>Layer 100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 50</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Layer 80</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Account_Source__c</picklist>
+            <values>
+                <fullName>Bakery China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brand Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIIE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Recommend</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Service Hotline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expositions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FHC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Trade show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Account_Status_New__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Account_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Ready for Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Approve_Step__c</picklist>
+            <values>
+                <fullName>Step1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Step2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Step3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Step4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Step5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Billing_Block__c</picklist>
+            <values>
+                <fullName>01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>03</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>04</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>05</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>08</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>09</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YH</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Billing_Department_of_Contact_Person__c</picklist>
+            <values>
+                <fullName>0001</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0002</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0004</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0006</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0008</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0009</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0011</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0012</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0013</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0014</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0017</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0018</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0022</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0023</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0024</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0025</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0026</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0027</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0028</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0029</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0031</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0032</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Category__c</picklist>
+            <values>
+                <fullName>BAPA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coffee%2FTea Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hotel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Restaurant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retailor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Contact_Type__c</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Country_CN__c</picklist>
+            <values>
+                <fullName>CN</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Country_EN__c</picklist>
+            <values>
+                <fullName>CN</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Customer_Journey__c</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Customer_Type__c</picklist>
+            <values>
+                <fullName>0001</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>0002</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CPDA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Delivery_Block__c</picklist>
+            <values>
+                <fullName>01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>03</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>04</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>05</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>06</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>07</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>08</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>09</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Delivery_Plant__c</picklist>
+            <values>
+                <fullName>P011</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P050</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P060</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Department_of_Contact_Person__c</picklist>
+            <values>
+                <fullName>0001-Purchasing Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0002-Sales Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0003-Administration Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0004-Production Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0005-QA Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0006-Secretary%27s Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0007-Financial Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0008-Legal Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0009-Human Resources Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0010-General Affairs Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0011-Sales Promotion Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0012-International Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0013-Export Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0014-Import Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0015-Public Relation Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0016-Advertising Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0017-Planning Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0018-R%26D Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0019-Product Dev%2E Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0020-Food %26 Beverage Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0021-Service Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0022-Technical Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0023-IT Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0024-Logistics Dept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0025-Cold Kitchen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0026-Hot Kitchen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0027-Banquet Kitchen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0028-Pastry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0029-Backery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0030-Bar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0031-Receiving</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0032-Kitchen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Incoterms__c</picklist>
+            <values>
+                <fullName>CFR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CPT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DAF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DEQ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EXW</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>FAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Invoice_Type__c</picklist>
+            <values>
+                <fullName>General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Latest_Approved_Payment_Term__c</picklist>
+            <values>
+                <fullName>CIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D045</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D090</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M115</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M131</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M231</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Latest_Approved_Reference_Day__c</picklist>
+            <values>
+                <fullName>Delivery_Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fapiao_Day</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Latest_CR_Sync_Status__c</picklist>
+            <values>
+                <fullName>Fail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Need To Sync</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Success</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Latest_Credit_Term_App_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Level__c</picklist>
+            <values>
+                <fullName>Branch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Head Quarter</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Loyalty_level__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Order_Block__c</picklist>
+            <values>
+                <fullName>01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>03</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>99</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Payment_Terms__c</picklist>
+            <values>
+                <fullName>CIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D045</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D090</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M031</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M115</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M131</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M231</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Payment_Type__c</picklist>
+            <values>
+                <fullName>Bank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QR Code</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Purchasing_Department_of_Contact__c</picklist>
+            <values>
+                <fullName>0001</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0002</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0004</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0006</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0008</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0009</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0011</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0012</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0013</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0014</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0017</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0018</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0022</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0023</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0024</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0025</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0026</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0027</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0028</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0029</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0031</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0032</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Reconciliation_Account__c</picklist>
+            <values>
+                <fullName>11410101</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>11410103</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11410104</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11410201</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11910000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11910001</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11910010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11910020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11910040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11910050</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11910085</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21610101</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21610102</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21610103</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21610201</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Reference_Day__c</picklist>
+            <values>
+                <fullName>Delivery_Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fapiao_Day</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Risk_Category__c</picklist>
+            <values>
+                <fullName>A</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sales_District__c</picklist>
+            <values>
+                <fullName>001</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>002</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>004</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>006</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>008</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>009</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>011</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>012</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>013</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>014</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>017</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>018</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>022</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>023</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>024</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>025</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>026</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sales_Group__c</picklist>
+            <values>
+                <fullName>002</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sales_Office__c</picklist>
+            <values>
+                <fullName>K010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>K020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>K030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>K040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>K050</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sales_Org__c</picklist>
+            <values>
+                <fullName>S010</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sort_Key__c</picklist>
+            <values>
+                <fullName>000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>001</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>002</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>004</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>006</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>008</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>009</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>011</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>012</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>014</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>017</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>018</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>022</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>023</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>024</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>025</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>026</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>027</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>028</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>029</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>031</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>032</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>033</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>034</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>035</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>036</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>037</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>039</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>055</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>061</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>065</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>101</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>105</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Subcategory__c</picklist>
+            <values>
+                <fullName>1 Star Hotel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 Star Hotel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Star Hotel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 Star Hotel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 Star Hotel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Access Bakery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Access Coffee Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Access Ice cream</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Access Pastry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Access Tea Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Airline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Casual Dining - Asian excl CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Casual Dining - Chinese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Casual Dining - Western</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central Kitchen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coffee%2FTea OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Convenience Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Core Bakery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Core Coffee Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Core Ice cream</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Core Pastry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Core Tea Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cruise</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fine Dining - Asian excl CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fine Dining - Chinese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fine Dining - Western</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HORECA OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online B2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online B2C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium Bakery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium Coffee Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium Ice cream</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium Pastry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium Tea Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QSR - Asian exclude Chinese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QSR - Chinese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QSR - Western</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sync_Status__c</picklist>
+            <values>
+                <fullName>Fail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Success</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
@@ -14378,6 +19038,135 @@ IF(CN_Is_In_Approving__c , ISCHANGED(  CN_Account_Status__c  ) , FALSE)
         <errorMessage>The Group that be choice is not valid</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>CN_Account_Check_Ready_CommercialNameCN</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,
+  ISPICKVAL(CN_Account_Status__c , &quot;Ready for Approval&quot;),
+  ISBLANK( CN_Store_Name_CN__c )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Store_Name_CN__c</errorDisplayField>
+        <errorMessage>Commercial Name (CN) must be entered.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Account_Check_Ready_CommercialNameEN</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,
+  ISPICKVAL(CN_Account_Status__c , &quot;Ready for Approval&quot;),
+  ISBLANK( CN_Store_Name_EN__c )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Store_Name_CN__c</errorDisplayField>
+        <errorMessage>Commercial Name (EN) must be entered.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Account_Check_Ready_DeliveryAddress</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  ISPICKVAL(CN_Account_Status__c , &quot;Ready for Approval&quot;),
+  RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,
+  ISBLANK(  CN_Invoicing_Address_EN__c )
+)</errorConditionFormula>
+        <errorMessage>Delivery Address(EN) must be entered.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Account_Check_Ready_DeliveryPlant</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  ISPICKVAL(CN_Account_Status__c , &quot;Ready for Approval&quot;),
+  RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,
+  ISBLANK(   TEXT(CN_Delivery_Plant__c) )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Delivery_Plant__c</errorDisplayField>
+        <errorMessage>Delivery Plant must be entered.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Account_Check_Ready_InvoiceType</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,
+  ISPICKVAL(CN_Account_Status__c , &quot;Ready for Approval&quot;),
+  ISBLANK(TEXT(CN_Invoice_Type__c))
+)</errorConditionFormula>
+        <errorDisplayField>CN_Invoice_Type__c</errorDisplayField>
+        <errorMessage>Invoice Type must be entered.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Account_Check_Ready_LicenseNameEN</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,
+  ISPICKVAL(CN_Account_Status__c , &quot;Ready for Approval&quot;),
+  ISBLANK(CN_License_Name_EN__c)
+)</errorConditionFormula>
+        <errorDisplayField>CN_License_Name_EN__c</errorDisplayField>
+        <errorMessage>License Name (EN) must be entered.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Account_Check_Ready_LitigationCity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  ISPICKVAL(CN_Account_Status__c , &quot;Ready for Approval&quot;),
+  RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,
+  ISBLANK(  CN_Litigation_City__c )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Litigation_City__c</errorDisplayField>
+        <errorMessage>Litigation City must be entered.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Account_Check_Ready_PaymentTerm</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,
+  ISPICKVAL(CN_Account_Status__c , &quot;Ready for Approval&quot;),
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  ISBLANK(TEXT(CN_Payment_Terms__c))
+)</errorConditionFormula>
+        <errorDisplayField>CN_Payment_Terms__c</errorDisplayField>
+        <errorMessage>Payment Term must be entered.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Account_Check_Ready_SalesDistrict</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  ISPICKVAL(CN_Account_Status__c , &quot;Ready for Approval&quot;),
+  RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,
+  ISBLANK(  TEXT(CN_Sales_District__c) )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Sales_District__c</errorDisplayField>
+        <errorMessage>Sales District must be entered.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Account_Check_Ready_Subcategory</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,
+  ISPICKVAL(CN_Account_Status__c , &quot;Ready for Approval&quot;),
+  ISBLANK( TEXT( CN_Subcategory__c ))
+)</errorConditionFormula>
+        <errorDisplayField>CN_Subcategory__c</errorDisplayField>
+        <errorMessage>Subcategory must be entered.</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>CN_Account_Check_ST_Vaild</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -14467,6 +19256,7 @@ ISCHANGED(  OwnerId )
   RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,
   ISCHANGED(CN_Account_Status__c),
   ISPICKVAL(CN_Account_Status__c, &quot;Ready for Approval&quot;),
+  NOT(ISBLANK(TEXT(CN_Payment_Terms__c ))),
   IF(ISPICKVAL( CN_Payment_Terms__c , &quot;CIA&quot;)||ISPICKVAL( CN_Payment_Terms__c , &quot;D000&quot;),false  , NOT(ISPICKVAL(CN_Latest_Credit_Term_App_Status__c, &quot;Approved&quot;)))
 )</errorConditionFormula>
         <errorMessage>Please create a credit term application before submitting the account for approval.</errorMessage>
@@ -14593,10 +19383,13 @@ Reference Day</errorMessage>
         <fullName>CN_Check_Post_Code_Length</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
-	$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
-	NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  OR(RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,RecordType.DeveloperName = &apos;CN_New_Direct&apos;),
-	 NOT(REGEX( CN_Post_Code__c , &quot;\\d{6}&quot;) )
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(
+    RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,
+    RecordType.DeveloperName = &apos;CN_New_Direct&apos;),
+    NOT(REGEX( CN_Post_Code__c , &quot;\\d{6}&quot;) 
+  )
 )</errorConditionFormula>
         <errorDisplayField>CN_Post_Code__c</errorDisplayField>
         <errorMessage>Postal code must be six digits.</errorMessage>
@@ -14608,6 +19401,7 @@ Reference Day</errorMessage>
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   OR(RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,RecordType.DeveloperName = &apos;CN_New_Direct&apos;),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  NOT(ISBLANK(TEXT(CN_Payment_Terms__c))),
   IF(
     OR(ISPICKVAL(CN_Payment_Terms__c, &quot;CIA&quot;),ISPICKVAL(CN_Payment_Terms__c, &quot;D000&quot;)),
     FALSE,
@@ -14688,6 +19482,21 @@ Bank Account,
 Invoicing Address and Phone.</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>CN_Prevent_Convert_To_Direct</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+ OR(
+RecordType.DeveloperName = &quot;CN_Edit_Direct&quot;,
+RecordType.DeveloperName = &quot;CN_New_Direct&quot;
+),
+ISNEW(),
+NOT(ISBLANK( CN_Converted_From__c ))
+)</errorConditionFormula>
+        <errorMessage>It&apos;s not allowed to convert new direct account, please select prospect instead.</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>CN_Prevent_Edit_Approved</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -14709,6 +19518,12 @@ Invoicing Address and Phone.</errorMessage>
   NOT(ISCHANGED( CN_Upload_Business_License_No__c)),
   NOT(ISCHANGED( CN_Upload_Contract_No__c)),
   NOT(ISCHANGED( CN_Upload_Hygiene_Certificate_No__c)),
+  NOT(ISCHANGED(  CN_Gaode_Geolocation__Latitude__s )),
+  NOT(ISCHANGED(  CN_Gaode_Geolocation__Longitude__s )),
+  NOT(ISCHANGED(   CN_Gaode_Geolocation__c )),
+  NOT(ISCHANGED(   CN_Need_Sync_Geolocation__c)),
+  NOT(ISCHANGED(   CN_Gaode_Response_Status__c)),
+  NOT(ISCHANGED(CN_Sent_Reminder_Level__c)),
   ISPICKVAL(PRIORVALUE( CN_Account_Status__c ) , &quot;Approved&quot;) 
 )</errorConditionFormula>
         <errorMessage>Pls don&apos;t update when the account has been approved.</errorMessage>
@@ -14791,6 +19606,19 @@ Invoicing Address and Phone.</errorMessage>
   ISPICKVAL(PRIORVALUE(CN_Sync_Status__c) , &quot;Success&quot;) 
 )</errorConditionFormula>
         <errorMessage>E-099 : Pls don&apos;t update sync information when the change request has been synchronized.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Prevent_Existing_Account_Convert</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c, OR(
+RecordType.DeveloperName = &quot;CN_Edit_Prospect&quot;, 
+RecordType.DeveloperName = &quot;CN_Approved_Direct&quot;, 
+RecordType.DeveloperName = &quot;CN_Edit_Direct&quot;, 
+RecordType.DeveloperName = &quot;CN_Edit_Indirect&quot;),
+NOT(ISNEW()),
+ISCHANGED(CN_Converted_From__c)
+)</errorConditionFormula>
+        <errorMessage>Please don&apos;t choose existing Account during Lead Conversion.</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Clone</fullName>

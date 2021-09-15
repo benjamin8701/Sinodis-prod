@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>上级市场活动</value>
+        </caseValues>
+        <name>parent_campaign</name>
+    </fields>
+    <fields>
+        <label><!-- All Attended Members Number --></label>
+        <name>CN_All_Attended_Members_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- All Members Number --></label>
+        <name>CN_All_Members_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- All SKU Number --></label>
+        <name>CN_All_SKU_Number__c</name>
+    </fields>
+    <fields>
+        <label>品牌</label>
+        <name>CN_Brand__c</name>
+        <picklistValues>
+            <masterLabel>5J</masterLabel>
+            <translation><!-- 5J --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANTICHICOLLI</masterLabel>
+            <translation><!-- ANTICHICOLLI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BARNIER OLIVES</masterLabel>
+            <translation><!-- BARNIER OLIVES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BASTIDES</masterLabel>
+            <translation><!-- BASTIDES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEAUFOR</masterLabel>
+            <translation><!-- BEAUFOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BERETTA</masterLabel>
+            <translation><!-- BERETTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEYONG MEAT</masterLabel>
+            <translation><!-- BEYONG MEAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beillevaire</masterLabel>
+            <translation><!-- Beillevaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPRICE DES DIEUX</masterLabel>
+            <translation><!-- CAPRICE DES DIEUX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAVIAR &amp; TRADITIONS</masterLabel>
+            <translation><!-- CAVIAR &amp; TRADITIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COEUR DE LION</masterLabel>
+            <translation><!-- COEUR DE LION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORMAN</masterLabel>
+            <translation><!-- CORMAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabrifin</masterLabel>
+            <translation><!-- Cabrifin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chateau d&apos;Estoublon</masterLabel>
+            <translation><!-- Chateau d&apos;Estoublon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef Studio OIL</masterLabel>
+            <translation><!-- Chef Studio OIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef Studio Pastry</masterLabel>
+            <translation><!-- Chef Studio Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOBLA</masterLabel>
+            <translation><!-- DOBLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DODONI</masterLabel>
+            <translation><!-- DODONI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elle &amp; Vire</masterLabel>
+            <translation><!-- Elle &amp; Vire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FERMES DE LA TREMBLAYE</masterLabel>
+            <translation><!-- FERMES DE LA TREMBLAYE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giovanni Ferrari</masterLabel>
+            <translation><!-- Giovanni Ferrari --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILE DE FRANCE</masterLabel>
+            <translation><!-- ILE DE FRANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IRCA</masterLabel>
+            <translation><!-- IRCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LE RUSTIQUE</masterLabel>
+            <translation><!-- LE RUSTIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOSTE TRADI-FRANCE</masterLabel>
+            <translation><!-- LOSTE TRADI-FRANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lescure</masterLabel>
+            <translation><!-- Lescure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liberty Lane</masterLabel>
+            <translation><!-- Liberty Lane --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milkana</masterLabel>
+            <translation><!-- Milkana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norohy</masterLabel>
+            <translation><!-- Norohy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OVODAN</masterLabel>
+            <translation><!-- OVODAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAVONI</masterLabel>
+            <translation><!-- PAVONI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pomone</masterLabel>
+            <translation><!-- Pomone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUORUM</masterLabel>
+            <translation><!-- QUORUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAVIFRUIT</masterLabel>
+            <translation><!-- RAVIFRUIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REPUBLIC DEL CACAO</masterLabel>
+            <translation><!-- REPUBLIC DEL CACAO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remy Cointreau</masterLabel>
+            <translation><!-- Remy Cointreau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roquefort Papillon</masterLabel>
+            <translation><!-- Roquefort Papillon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rougie</masterLabel>
+            <translation><!-- Rougie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMORET</masterLabel>
+            <translation><!-- SMORET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sabaton</masterLabel>
+            <translation><!-- Sabaton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Agur</masterLabel>
+            <translation><!-- Saint Agur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sevarome</masterLabel>
+            <translation><!-- Sevarome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sosa</masterLabel>
+            <translation><!-- Sosa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urbani Tartufi SRL</masterLabel>
+            <translation><!-- Urbani Tartufi SRL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALRHONA</masterLabel>
+            <translation><!-- VALRHONA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vieuxx Pane</masterLabel>
+            <translation><!-- Vieuxx Pane --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEISS</masterLabel>
+            <translation><!-- WEISS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>tbc</masterLabel>
+            <translation><!-- tbc --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>执行类型</label>
+        <name>CN_Execution_Type__c</name>
+        <picklistValues>
+            <masterLabel>1on1</masterLabel>
+            <translation><!-- 1on1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Display</masterLabel>
+            <translation><!-- Display --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Livestreaming</masterLabel>
+            <translation><!-- Livestreaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Demonstration</masterLabel>
+            <translation><!-- Public Demonstration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short Video</masterLabel>
+            <translation><!-- Short Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution Development</masterLabel>
+            <translation><!-- Solution Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP Class</masterLabel>
+            <translation><!-- VIP Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WeChat</masterLabel>
+            <translation><!-- WeChat --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is My Campaign --></label>
+        <name>CN_Is_My_Campaign__c</name>
+    </fields>
+    <fields>
+        <label>是否新产品发布</label>
+        <name>CN_New_Product_Launch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num Of Generate Opp --></label>
+        <name>CN_Num_Of_Generate_Opp__c</name>
+    </fields>
+    <fields>
+        <help>仅供Live Streaming填写</help>
+        <label>观看人数</label>
+        <name>CN_Number_of_Audiences__c</name>
+    </fields>
+    <fields>
+        <label>产品分类</label>
+        <name>CN_Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>Chef Studio Pastry</masterLabel>
+            <translation><!-- Chef Studio Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dairy</masterLabel>
+            <translation><!-- Dairy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOURMET &amp; GROCERY</masterLabel>
+            <translation><!-- GOURMET &amp; GROCERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PASTRY</masterLabel>
+            <translation><!-- PASTRY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>产品类型</label>
+        <name>CN_Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>BUTTER</masterLabel>
+            <translation><!-- BUTTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEESE</masterLabel>
+            <translation><!-- CHEESE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHOCOLATE &amp; DECORATION</masterLabel>
+            <translation><!-- CHOCOLATE &amp; DECORATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLD CUTS &amp; MEAT</masterLabel>
+            <translation><!-- COLD CUTS &amp; MEAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CREAM</masterLabel>
+            <translation><!-- CREAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOIS GRAS</masterLabel>
+            <translation><!-- FOIS GRAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FROZEN PASTRY</masterLabel>
+            <translation><!-- FROZEN PASTRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROCERY</masterLabel>
+            <translation><!-- GROCERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRE MIX</masterLabel>
+            <translation><!-- PRE MIX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUREE</masterLabel>
+            <translation><!-- PUREE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALUE - ADDED</masterLabel>
+            <translation><!-- VALUE - ADDED --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VIP --></label>
+        <name>CN_VIP__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Parent Campaign Layout</layout>
+        <sections>
+            <label><!-- Campaign Information --></label>
+            <section>Campaign Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>创建销售机会</label>
+        <name>CN_Generate_Opportunity</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Campaign --></label>
+        <name>CN_Campaign</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Parent Campaign --></label>
+        <name>CN_Parent_Campaign</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>当市场活动已完成时，观看人数字段不能为空。</errorMessage>
+        <name>CN_Campaign_Audiences_Number_IsBlank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>市场活动开始时间不能早于今天。</errorMessage>
+        <name>CN_Campaign_Check_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>对于现场直播类型的市场活动，您必须填入观众人数。</errorMessage>
+        <name>CN_Campaign_Check_numOfAud_LiveStreaming</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>当前市场活动已完成，请不要修改任何信息。</errorMessage>
+        <name>CN_Campaign_Completed_Block_Edit</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- ViewAllCampaignMembers --></label>
+        <name>ViewAllCampaignMembers</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ViewCampaignInfluenceReport --></label>
+        <name>ViewCampaignInfluenceReport</name>
+    </webLinks>
+</CustomObjectTranslation>

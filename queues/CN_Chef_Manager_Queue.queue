@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Chef Manager Queue</name>
+    <queueMembers>
+        <roles>
+            <role>CN_Chef_Manager</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>CN_Chef_Request__c</sobjectType>
+    </queueSobject>
+</Queue>

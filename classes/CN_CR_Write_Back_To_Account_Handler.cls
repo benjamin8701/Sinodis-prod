@@ -11,11 +11,19 @@
 public without sharing class CN_CR_Write_Back_To_Account_Handler implements Triggers.Handler{
     public static Boolean isTriggerRun = true;
     public void handle() {
+    system.debug('shuqi++1');
         if(Trigger.isAfter && Trigger.isUpdate) {
             if(CN_CR_Write_Back_To_Account_Handler.isTriggerRun) {
                 handleAfterUpdate();
             }
         }
+        //hotfix realse7 ----by shuqi start
+        if(Trigger.isAfter && Trigger.isInsert) {
+            if(CN_CR_Write_Back_To_Account_Handler.isTriggerRun) {
+                handleAfterInsert();
+            }
+        }
+        //hotfix realse7 ----by shuqi end
     }
     public void handleAfterUpdate() {
         Id crRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_APPD_UPDATE_ACCOUNT).getRecordTypeId();
@@ -31,6 +39,22 @@ public without sharing class CN_CR_Write_Back_To_Account_Handler implements Trig
             CN_CR_Write_Back_To_Account_Handler.isTriggerRun = false;
         }
     }
+    //hotfix realse7 ----by shuqi start
+    public void handleAfterInsert() {
+        Id crOwnerRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_Mass_UPDATE_ACCOUNT_OWNER).getRecordTypeId();
+        Id crFinanceRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_Mass_UPDATE_ACCOUNT_FINANCE_AR).getRecordTypeId();
+        List<CN_Change_Request__c> crList = new List<CN_Change_Request__c>();
+        for(CN_Change_Request__c cr : (List<CN_Change_Request__c>)Trigger.New){            
+            if(cr.RecordTypeId == crOwnerRTId ||cr.RecordTypeId == crFinanceRTId ){
+                crList.add(cr);
+            }
+        }
+        if(crList.size()>0){
+            populateAccountFields(crList);
+            CN_CR_Write_Back_To_Account_Handler.isTriggerRun = false;
+        }
+    }
+    //hotfix realse7 ----by shuqi end
     public void populateAccountFields(List<CN_Change_Request__c> crList){
         Map<String, CN_Change_Request_Fields_Mapping__mdt> crmSettingMap = CN_Change_Request_Fields_Mapping__mdt.getAll(); 
         Map<String, String> fieldMap = new Map<String, String>();

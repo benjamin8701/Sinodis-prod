@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CN_Compalint_Rejected</name>
+    <style>none</style>
+    <subject>客户{!Case.Account}的投诉({!Case.CaseNumber})已被拒绝 / Complaint ({!Case.CaseNumber}) for Customer {!Case.Account} has been rejected..</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

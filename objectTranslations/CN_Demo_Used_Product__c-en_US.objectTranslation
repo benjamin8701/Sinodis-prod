@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Demo Used Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Demo Used Products</value>
+    </caseValues>
+    <fields>
+        <label><!-- Demo Report --></label>
+        <name>CN_Demo_Report__c</name>
+        <relationshipLabel><!-- Demo Used Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>CN_External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>CN_Product__c</name>
+        <relationshipLabel><!-- Demo Used Products --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Demo Used Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CN Demo Used Product --></label>
+        <name>CN_Demo_Used_Product</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Product is inactive --></errorMessage>
+        <name>CN_Check_Product_Acitve</name>
+    </validationRules>
+</CustomObjectTranslation>

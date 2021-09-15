@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>CN_Sample_Request_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>CN_Sample_Request_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>CN_Sample_Request</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>CN_Sample_Request</fullName>
+        <fields>Name</fields>
+        <fields>CN_Account_Name__c</fields>
+        <fields>CN_Opportunity_Name__c</fields>
+        <fields>CN_Sales_Person__c</fields>
+        <fields>CN_Sample_Needed_Date__c</fields>
+        <fields>CN_Sample_Delivery_Method__c</fields>
+        <fields>CN_Sample_Request_Status__c</fields>
+        <label>CN Sample Request</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>CN_Account_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Sample_RequestS_FeedbackS</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Approved_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CN_Approver1_CCE__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Approver1 CCE</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Sample_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Approver2_Channel_Leader__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Approver2 Channel Leader</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Sample_Requests1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_CCE_Team_Email__c</fullName>
+        <defaultValue>$Setup.CN_Approve_Process_Settings__c.CN_MKT_Group_Email__c</defaultValue>
+        <externalId>false</externalId>
+        <label>CCE Team Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_CS_Team_Email__c</fullName>
+        <defaultValue>$Setup.CN_Approve_Process_Settings__c.CN_CS_Group_Email__c</defaultValue>
+        <externalId>false</externalId>
+        <label>CS Team Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Customer_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Account_Name__r.CN_Customer_Code__c</formula>
+        <label>Customer Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Delivery_Address__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Delivery Address is mandatory if delivery method is express delivery.</inlineHelpText>
+        <label>Delivery Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_End_Customer_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>End Customer Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Sample_RequestS_FeedbackS1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Draft__c</fullName>
+        <externalId>false</externalId>
+        <formula>ISPICKVAL( CN_Sample_Request_Status__c , &quot;New&quot;) || ISPICKVAL( CN_Sample_Request_Status__c , &quot;Rejected&quot;) || ISPICKVAL( CN_Sample_Request_Status__c , &quot;Recalled&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Draft</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Item_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Item ID</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipName>Sample_RequestS_FeedbackS</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Opportunity_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity Name</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Opportunity.StageName</field>
+                <operation>equals</operation>
+                <value>Proposal/Demo/Sample</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Sample Requests</relationshipLabel>
+        <relationshipName>Sample_RequestS_FeedbackS</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Order_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product Penetration</fullName>
+                    <default>false</default>
+                    <label>Product Penetration</label>
+                </value>
+                <value>
+                    <fullName>Chef Service</fullName>
+                    <default>false</default>
+                    <label>Chef Service</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Order_Reason_for_Wholepack__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Reason for Wholepack</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>811 Customer Sample</fullName>
+                    <default>true</default>
+                    <label>811 Customer Sample</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Order_Type_for_Wholepack__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Type for Wholepack</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ZFD1 Sample for Customer</fullName>
+                    <default>true</default>
+                    <label>ZFD1 Sample for Customer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Please_Confirm__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+TEXT(CN_Sample_Request_Status__c),
+&quot;New&quot;, $Label.CN_PleaseConfirm_Value_BackToNew,
+&quot;Ready for Approval&quot;, $Label.CN_PleaseConfirm_Value_ReadyForApproval,
+&quot;Submitted for Approval&quot;, $Label.CN_PleaseConfirm_Value_AlreadySubmitted,
+$Label.CN_PleaseConfirm_Value_AlreadySubmitted
+)</formula>
+        <label>Please Confirm</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_SP_Records_Count_All__c</fullName>
+        <externalId>false</externalId>
+        <label>SP Records Count All</label>
+        <summaryForeignKey>CN_Sample_Product__c.CN_Sample_Request__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CN_SP_Records_Count_Delivery_Status_All__c</fullName>
+        <externalId>false</externalId>
+        <label>SP Records Count Delivery Status All</label>
+        <summaryFilterItems>
+            <field>CN_Sample_Product__c.CN_Status_of_Delivery__c</field>
+            <operation>contains</operation>
+            <value>Done, Out of Stock</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CN_Sample_Product__c.CN_Sample_Request__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CN_SP_Records_Count_Delivery_Status_Done__c</fullName>
+        <externalId>false</externalId>
+        <label>SP Records Count Delivery Status Done</label>
+        <summaryFilterItems>
+            <field>CN_Sample_Product__c.CN_Status_of_Delivery__c</field>
+            <operation>equals</operation>
+            <value>Done</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CN_Sample_Product__c.CN_Sample_Request__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CN_Sales_Person__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Account_Name__r.CN_Sales_Person_Name__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Person</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Sample_Delivery_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Sample Delivery Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Include in the delivery tomorrow</fullName>
+                    <default>false</default>
+                    <label>Include in the delivery tomorrow</label>
+                </value>
+                <value>
+                    <fullName>Deliver to Office</fullName>
+                    <default>false</default>
+                    <label>Deliver to Office</label>
+                </value>
+                <value>
+                    <fullName>Self Pick-up</fullName>
+                    <default>false</default>
+                    <label>Self Pick-up</label>
+                </value>
+                <value>
+                    <fullName>Sales to pick up</fullName>
+                    <default>false</default>
+                    <label>Sales to pick up</label>
+                </value>
+                <value>
+                    <fullName>Express Delivery</fullName>
+                    <default>false</default>
+                    <label>Express Delivery</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Sample_Needed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Sample Needed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CN_Sample_Request_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Sample Request Cost</label>
+        <summarizedField>CN_Sample_Product__c.CN_Sample_Cost__c</summarizedField>
+        <summaryForeignKey>CN_Sample_Product__c.CN_Sample_Request__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CN_Sample_Request_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Sample Request Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Ready for Approval</fullName>
+                    <default>false</default>
+                    <label>Ready for Approval</label>
+                </value>
+                <value>
+                    <fullName>Submitted for Approval</fullName>
+                    <default>false</default>
+                    <label>Submitted for Approval</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Recalled</fullName>
+                    <default>false</default>
+                    <label>Recalled</label>
+                </value>
+                <value>
+                    <fullName>Canceled</fullName>
+                    <default>false</default>
+                    <label>Canceled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Url__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT($Api.Partner_Server_URL_340, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_340)) &amp; Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CN_Url</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Warehouse_Location__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(CN_Account_Name__r.CN_Delivery_Plant__c)</formula>
+        <label>Warehouse Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Sample Request</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Sample_Request_Status__c</columns>
+        <columns>CN_Account_Name__c</columns>
+        <columns>CN_Sample_Needed_Date__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_All_Office_Repack_Sample_Requests</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>CN_Sample_Request__c.CN_Office_Repack</value>
+        </filters>
+        <label>All Office Repack Sample Requests</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_China</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CN_All_Whole_Pack_Sample_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Sample_Request_Status__c</columns>
+        <columns>CN_Account_Name__c</columns>
+        <columns>CN_Customer_Code__c</columns>
+        <columns>CN_Sample_Delivery_Method__c</columns>
+        <columns>CN_Sample_Needed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>CN_Sample_Request__c.CN_Whole_Pack</value>
+        </filters>
+        <label>All Whole Pack Sample Requests</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_China</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>SR-{000000000}</displayFormat>
+        <label>Sample Request</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Sample Requests</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>CN_Office_Repack</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>CN_Sample_Request</compactLayoutAssignment>
+        <label>Office Repack</label>
+        <picklistValues>
+            <picklist>CN_Order_Reason__c</picklist>
+            <values>
+                <fullName>Chef Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Penetration</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Order_Reason_for_Wholepack__c</picklist>
+            <values>
+                <fullName>811 Customer Sample</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Order_Type_for_Wholepack__c</picklist>
+            <values>
+                <fullName>ZFD1 Sample for Customer</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sample_Delivery_Method__c</picklist>
+            <values>
+                <fullName>Express Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales to pick up</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sample_Request_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Ready for Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recalled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>CN_Whole_Pack</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>CN_Sample_Request</compactLayoutAssignment>
+        <label>Whole Pack</label>
+        <picklistValues>
+            <picklist>CN_Order_Reason__c</picklist>
+            <values>
+                <fullName>Chef Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Penetration</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Order_Reason_for_Wholepack__c</picklist>
+            <values>
+                <fullName>811 Customer Sample</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Order_Type_for_Wholepack__c</picklist>
+            <values>
+                <fullName>ZFD1 Sample for Customer</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sample_Delivery_Method__c</picklist>
+            <values>
+                <fullName>Deliver to Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Include in the delivery tomorrow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self Pick-up</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sample_Request_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Ready for Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recalled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <excludedStandardButtons>Import</excludedStandardButtons>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Account_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Opportunity_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Sample_Delivery_Method__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Sample_Needed_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Sample_Request_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Warehouse_Location__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>CN_Check_Deliver_Address</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+ISPICKVAL(CN_Sample_Delivery_Method__c, &quot;Express Delivery&quot;),
+ ISBLANK(CN_Delivery_Address__c  ) 
+)</errorConditionFormula>
+        <errorDisplayField>CN_Delivery_Address__c</errorDisplayField>
+        <errorMessage>Delivery Address is mandatory if delivery method is express delivery.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Check_Opp_Stage_On_Create</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+NOT(ISPICKVAL(CN_Opportunity_Name__r.StageName,&quot;Proposal/Demo/Sample&quot;)),
+NOT(ISBLANK(CN_Opportunity_Name__c)),
+ISNEW()
+)</errorConditionFormula>
+        <errorDisplayField>CN_Sample_Request_Status__c</errorDisplayField>
+        <errorMessage>Only the opportunity into stage Proposal/Demo/Sample could create Sample Request.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Check_Prospect_Opportunity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+IF(CN_Opportunity_Name__r.Account.RecordType.Name =&quot;Prospect&quot;, TRUE, FALSE)
+)</errorConditionFormula>
+        <errorMessage>sales CANNOT create wholepack sample request for prospect&apos;s opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Check_Sample_Need_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  ISCHANGED(CN_Sample_Request_Status__c),
+  ISPICKVAL(CN_Sample_Request_Status__c, &quot;Ready for Approval&quot;),
+ CN_Sample_Needed_Date__c &lt; TODAY()
+)</errorConditionFormula>
+        <errorDisplayField>CN_Sample_Needed_Date__c</errorDisplayField>
+        <errorMessage>Sample Needed Date should not less than today</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Prevent_Canceled</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  ISCHANGED(CN_Sample_Request_Status__c ) ,
+ NOT(( ISPICKVAL(PRIORVALUE(CN_Sample_Request_Status__c ), &quot;Approved&quot;) ) ),
+ ISPICKVAL(CN_Sample_Request_Status__c , &quot;Canceled&quot;) 
+)</errorConditionFormula>
+        <errorDisplayField>CN_Sample_Request_Status__c</errorDisplayField>
+        <errorMessage>It&apos;s not allowed cancel sample request which not approved yet.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Prevent_Edit_After_Approved_Canceled</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+	$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+	NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+	OR(
+          ISPICKVAL(CN_Sample_Request_Status__c, &quot;Approved&quot;),
+          ISPICKVAL(CN_Sample_Request_Status__c, &quot;Canceled&quot;),
+          ISPICKVAL(PRIORVALUE(CN_Sample_Request_Status__c)  , &quot;Approved&quot;),
+          ISPICKVAL(PRIORVALUE(CN_Sample_Request_Status__c)  , &quot;Canceled&quot;)
+        ),
+	NOT(AND(
+	  ISPICKVAL(PRIORVALUE(CN_Sample_Request_Status__c) , &quot;Approved&quot;),
+	  ISPICKVAL(CN_Sample_Request_Status__c, &quot;Canceled&quot;)
+	)),
+        NOT(ISCHANGED(CN_SP_Records_Count_All__c)),
+        NOT(ISCHANGED(CN_SP_Records_Count_Delivery_Status_All__c)),
+        NOT(ISCHANGED(CN_SP_Records_Count_Delivery_Status_Done__c)),
+        NOT(ISCHANGED(CN_Sample_Request_Cost__c))
+)</errorConditionFormula>
+        <errorMessage>It&apos;s not allowed to edit.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_SR_Check_Ready_SKU</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+BEGINS(RecordType.DeveloperName, &quot;CN&quot;),
+ISPICKVAL(CN_Sample_Request_Status__c, &quot;Ready for Approval&quot;),
+CN_SP_Records_Count_All__c &lt;= 0
+)</errorConditionFormula>
+        <errorMessage>Please select at least one SKU before submit for approval.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_SR_Prevent_Cancel</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c, 
+BEGINS(RecordType.DeveloperName, &quot;CN&quot;),
+ISPICKVAL(CN_Sample_Request_Status__c, &quot;Canceled&quot;),   NOT(IF(DATEVALUE(CN_Approved_Date__c) = TODAY(), IF(TIMEVALUE(CN_Approved_Date__c) &lt; TIMEVALUE(&quot;19:30:00.000&quot;), TIMEVALUE(NOW())&lt;TIMEVALUE(&quot;19:30:00.000&quot;), IF(DATEVALUE(CN_Approved_Date__c) = TODAY()-1, AND(TIMEVALUE(NOW()) &gt;= TIMEVALUE(&quot;00:00:00.000&quot;), TIMEVALUE(NOW()) &lt; TIMEVALUE(&quot;19:30:00.000&quot;)), false) ), false)))</errorConditionFormula>
+        <errorMessage>You&apos;re not allowed to cancel it now.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_SR_Prevent_Change_Products_Status</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(RecordType.DeveloperName = &quot;CN_Office_Repack&quot;,RecordType.DeveloperName = &quot;CN_Whole_Pack&quot;),
+  OR(
+    AND(
+      CN_SP_Records_Count_Delivery_Status_All__c == CN_SP_Records_Count_All__c,
+      CN_SP_Records_Count_Delivery_Status_All__c &gt; 1,
+      NOT(ISCHANGED(CN_SP_Records_Count_Delivery_Status_All__c)),
+      NOT(ISCHANGED(CN_SP_Records_Count_All__c))
+    ),
+    AND(
+      PRIORVALUE(CN_SP_Records_Count_Delivery_Status_All__c ) ==  PRIORVALUE(CN_SP_Records_Count_All__c),
+      PRIORVALUE(CN_SP_Records_Count_Delivery_Status_All__c ) &gt; 0,
+      OR(
+        ISCHANGED(CN_SP_Records_Count_Delivery_Status_All__c),
+        ISCHANGED(CN_SP_Records_Count_All__c)
+      )
+    )
+  ) 
+)</errorConditionFormula>
+        <errorMessage>You are not allowed to create or eidt the status of sample products when all sample products&apos;s status are not null.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_SR_Prevent_Edit_For_Ready</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+BEGINS(RecordType.DeveloperName, &quot;CN&quot;),
+AND(
+ISPICKVAL(CN_Sample_Request_Status__c, &quot;Ready for Approval&quot;),
+NOT(ISCHANGED(CN_Sample_Request_Status__c))
+)
+)</errorConditionFormula>
+        <errorMessage>You are not allowed to edit when sample request is marked as ready for approval.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>CN_Sample_Feedback_Overdue</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Sample Feedback Overdue</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/lightning/r/Report/00O1e000000JkW6EAK/view?queryScope=userFolders</url>
+    </webLinks>
+</CustomObject>

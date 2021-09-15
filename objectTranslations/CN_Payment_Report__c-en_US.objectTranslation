@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AR Aging Info</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>AR Aging Infos</value>
+    </caseValues>
+    <fields>
+        <label><!-- AR Update Date --></label>
+        <name>CN_AR_Update_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advance Received From Customer Credit --></label>
+        <name>CN_Advance_Received_From_Customer_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advc Received From Custm Credit Dsply --></label>
+        <name>CN_Advc_Received_From_Custm_Credit_Dsply__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>CN_Brand_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>CN_Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>CN_Business_Unit_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>CN_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>CN_Channel_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>CN_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit Display --></label>
+        <name>CN_Credit_Limit_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit --></label>
+        <name>CN_Credit_Limit_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Balance Display --></label>
+        <name>CN_Current_Balance_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Balance --></label>
+        <name>CN_Current_Balance_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Month Display --></label>
+        <name>CN_Current_Month_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Month --></label>
+        <name>CN_Current_Month_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Payment Display --></label>
+        <name>CN_Current_Payment_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Payment --></label>
+        <name>CN_Current_Payment_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Channel --></label>
+        <name>CN_Customer_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code SAP --></label>
+        <name>CN_Customer_Code_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>CN_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>CN_Customer__c</name>
+        <relationshipLabel><!-- AR Aging Infos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date Type --></label>
+        <name>CN_Date_Type_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deliver Block --></label>
+        <name>CN_Deliver_Block_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Given To Customer Display --></label>
+        <name>CN_Deposit_Given_To_Customer_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Given To Customer --></label>
+        <name>CN_Deposit_Given_To_Customer_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Received From Customer Display --></label>
+        <name>CN_Deposit_Received_From_Customer_Dsply__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Received From Customer --></label>
+        <name>CN_Deposit_Received_From_Customer_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details of Arrears --></label>
+        <name>CN_Details_of_Arrears__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance AR Name --></label>
+        <name>CN_Finance_AR_Name_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance AR --></label>
+        <name>CN_Finance_AR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>CN_Group_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>CN_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Activated --></label>
+        <name>CN_Is_Activated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 1 Month Display --></label>
+        <name>CN_Last_1_Month_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 1 Month --></label>
+        <name>CN_Last_1_Month_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 2 Month Display --></label>
+        <name>CN_Last_2_Month_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 2 Month --></label>
+        <name>CN_Last_2_Month_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 3 Month Display --></label>
+        <name>CN_Last_3_Month_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 3 Month --></label>
+        <name>CN_Last_3_Month_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 4 Month Display --></label>
+        <name>CN_Last_4_Month_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 4 Month --></label>
+        <name>CN_Last_4_Month_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 5 Month Display --></label>
+        <name>CN_Last_5_Month_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 5 Month --></label>
+        <name>CN_Last_5_Month_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 6 Month Display --></label>
+        <name>CN_Last_6_Month_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 6 Month --></label>
+        <name>CN_Last_6_Month_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Cases Display --></label>
+        <name>CN_Legal_Cases_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Cases --></label>
+        <name>CN_Legal_Cases_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Name --></label>
+        <name>CN_License_Name_CN_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Name EN --></label>
+        <name>CN_License_Name_EN_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Name EN --></label>
+        <name>CN_License_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Name --></label>
+        <name>CN_License_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Block --></label>
+        <name>CN_Order_Block_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 0 Display --></label>
+        <name>CN_Overdue_0_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 0 --></label>
+        <name>CN_Overdue_0_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 10 Display --></label>
+        <name>CN_Overdue_10_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 10 --></label>
+        <name>CN_Overdue_10_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 120 Display --></label>
+        <name>CN_Overdue_120_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 120 --></label>
+        <name>CN_Overdue_120_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 180 Display --></label>
+        <name>CN_Overdue_180_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 180 --></label>
+        <name>CN_Overdue_180_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 30 Display --></label>
+        <name>CN_Overdue_30_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 30 --></label>
+        <name>CN_Overdue_30_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 360 Display --></label>
+        <name>CN_Overdue_360_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 360 --></label>
+        <name>CN_Overdue_360_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 540 Display --></label>
+        <name>CN_Overdue_540_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 540 --></label>
+        <name>CN_Overdue_540_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 540 Up Display --></label>
+        <name>CN_Overdue_540_Up_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 540 Up --></label>
+        <name>CN_Overdue_540_Up_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 60 Display --></label>
+        <name>CN_Overdue_60_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 60 --></label>
+        <name>CN_Overdue_60_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 60 Up --></label>
+        <name>CN_Overdue_60_Up_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 90 Display --></label>
+        <name>CN_Overdue_90_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue 90 --></label>
+        <name>CN_Overdue_90_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Schedule --></label>
+        <name>CN_Payment_Schedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Term --></label>
+        <name>CN_Payment_Term_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Term --></label>
+        <name>CN_Payment_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recon Diff Deduction Fee Display --></label>
+        <name>CN_Recon_Diff_Deduction_Fee_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recon Diff Deduction Fee --></label>
+        <name>CN_Recon_Diff_Deduction_Fee_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Group --></label>
+        <name>CN_Sales_Group_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office --></label>
+        <name>CN_Sales_Office_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office --></label>
+        <name>CN_Sales_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person Name --></label>
+        <name>CN_Sales_Person_Name_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person --></label>
+        <name>CN_Sales_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Team --></label>
+        <name>CN_Sales_Team_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Team --></label>
+        <name>CN_Sales_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent Reminder Level --></label>
+        <name>CN_Sent_Reminder_Level__c</name>
+        <picklistValues>
+            <masterLabel>Blocked</masterLabel>
+            <translation><!-- Blocked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postpone to Block</masterLabel>
+            <translation><!-- Postpone to Block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reminder 1</masterLabel>
+            <translation><!-- Reminder 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reminder 2</masterLabel>
+            <translation><!-- Reminder 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reminder 3</masterLabel>
+            <translation><!-- Reminder 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Balance SAP  Display --></label>
+        <name>CN_Total_Balance_SAP_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Balance SAP --></label>
+        <name>CN_Total_Balance_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Overdue Display --></label>
+        <name>CN_Total_Overdue_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Overdue --></label>
+        <name>CN_Total_Overdue_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Reminder Amount --></label>
+        <name>CN_Total_Reminder_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transport Date --></label>
+        <name>CN_Transport_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT Balance Display --></label>
+        <name>CN_VAT_Balance_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT Balance --></label>
+        <name>CN_VAT_Balance_SAP__c</name>
+    </fields>
+    <layouts>
+        <layout>Payment Report Layout</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Accounting Transactions --></label>
+            <section>Accounting Transactions</section>
+        </sections>
+        <sections>
+            <label><!-- Accumulative Unpaid Amount --></label>
+            <section>Accumulative Unpaid Amount</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Information --></label>
+            <section>Finance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Overdue Information --></label>
+            <section>Overdue Information</section>
+        </sections>
+        <sections>
+            <label><!-- Reminder --></label>
+            <section>Reminder</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CN Payment Report --></label>
+        <name>CN_Payment_Report</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

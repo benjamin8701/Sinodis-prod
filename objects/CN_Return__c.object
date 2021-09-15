@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Return_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Return_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Return_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Return_Layout</fullName>
+        <fields>CN_Customer_NO__c</fields>
+        <fields>CN_Customer__c</fields>
+        <fields>CN_Return_Type__c</fields>
+        <fields>CN_Return_Reason__c</fields>
+        <fields>CN_Material__c</fields>
+        <fields>CN_Return_Quantity__c</fields>
+        <label>Return Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>CN_Amount_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount/Unit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CN_Batch__c</fullName>
+        <externalId>false</externalId>
+        <label>Batch</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Customer_NO__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Customer__r.CN_Customer_Code__c</formula>
+        <label>Customer NO</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Customer__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Returns</relationshipLabel>
+        <relationshipName>Returns</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>CN_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CN_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Material__r.Description</formula>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Material__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Material</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Returns</relationshipLabel>
+        <relationshipName>Returns</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Plant__c</fullName>
+        <externalId>false</externalId>
+        <label>Plant</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Return_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Return Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Return_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Return Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Return_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Return Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>RE - 订单信息有误</fullName>
+                    <default>false</default>
+                    <label>RE - 订单信息有误</label>
+                </value>
+                <value>
+                    <fullName>RE - 保质期问题 Shelf life</fullName>
+                    <default>false</default>
+                    <label>RE - 保质期问题 Shelf life</label>
+                </value>
+                <value>
+                    <fullName>RE - 产品质量问题 Product Quality issues</fullName>
+                    <default>false</default>
+                    <label>RE - 产品质量问题 Product Quality issues</label>
+                </value>
+                <value>
+                    <fullName>RE - 打错订单信息 CS</fullName>
+                    <default>false</default>
+                    <label>RE - 打错订单信息 CS</label>
+                </value>
+                <value>
+                    <fullName>RE - 订单信息有误 Wrong Order Information</fullName>
+                    <default>false</default>
+                    <label>RE - 订单信息有误 Wrong Order Information</label>
+                </value>
+                <value>
+                    <fullName>RE - 配货有误 Wrong Picking</fullName>
+                    <default>false</default>
+                    <label>RE - 配货有误 Wrong Picking</label>
+                </value>
+                <value>
+                    <fullName>RE - 破损 Damage</fullName>
+                    <default>false</default>
+                    <label>RE - 破损 Damage</label>
+                </value>
+                <value>
+                    <fullName>RE - 其他 Others</fullName>
+                    <default>false</default>
+                    <label>RE - 其他 Others</label>
+                </value>
+                <value>
+                    <fullName>RE - 其他运输原因 Other Delivery Reason</fullName>
+                    <default>false</default>
+                    <label>RE - 其他运输原因 Other Delivery Reason</label>
+                </value>
+                <value>
+                    <fullName>RE - 卫检证书及保函原因 Certificates issues</fullName>
+                    <default>false</default>
+                    <label>RE - 卫检证书及保函原因 Certificates issues</label>
+                </value>
+                <value>
+                    <fullName>RE - 条码问题  Bar Code Issues</fullName>
+                    <default>false</default>
+                    <label>RE - 条码问题  Bar Code Issues</label>
+                </value>
+                <value>
+                    <fullName>RE - 客户退回</fullName>
+                    <default>false</default>
+                    <label>RE - 客户退回</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Sales_Document__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Document</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Total_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CN_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Return</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Customer__c</columns>
+        <columns>CN_Amount_Unit__c</columns>
+        <columns>CN_Batch__c</columns>
+        <columns>CN_Customer_NO__c</columns>
+        <columns>CN_Date__c</columns>
+        <columns>CN_Material__c</columns>
+        <columns>CN_Plant__c</columns>
+        <columns>CN_Return_Quantity__c</columns>
+        <columns>CN_Return_Reason__c</columns>
+        <columns>CN_Return_Type__c</columns>
+        <columns>CN_Sales_Document__c</columns>
+        <columns>CN_Total_Amount__c</columns>
+        <columns>CN_Unit__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>CN_Return__c.CN_Return</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>RO-{0000000000}</displayFormat>
+        <label>Return Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Returns</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>CN_Return</fullName>
+        <active>true</active>
+        <label>CN Return</label>
+        <picklistValues>
+            <picklist>CN_Return_Type__c</picklist>
+            <values>
+                <fullName>RE - 产品质量问题 Product Quality issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RE - 保质期问题 Shelf life</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RE - 其他 Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RE - 其他运输原因 Other Delivery Reason</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RE - 卫检证书及保函原因 Certificates issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RE - 客户退回</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RE - 打错订单信息 CS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RE - 条码问题  Bar Code Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RE - 破损 Damage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RE - 订单信息有误</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RE - 订单信息有误 Wrong Order Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RE - 配货有误 Wrong Picking</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields>CN_Customer__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Amount_Unit__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Batch__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Customer_NO__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Material__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Return_Quantity__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Return_Reason__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Return_Type__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>CN_Return_Account_Has_Approved</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c, 
+  BEGINS(RecordType.DeveloperName, &quot;CN&quot;),
+  ISNEW(),
+  NOT(ISPICKVAL( CN_Customer__r.CN_Sync_Status__c , &quot;Success&quot;))
+)</errorConditionFormula>
+        <errorMessage>You can&apos;t create the returns for the account which is  not synced.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

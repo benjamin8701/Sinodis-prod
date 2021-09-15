@@ -5,8 +5,7 @@
     <excludeButtons>ChangeRecordType</excludeButtons>
     <excludeButtons>CreateCallList</excludeButtons>
     <excludeButtons>CreateSurveyInvitation</excludeButtons>
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -56,6 +55,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CN_Number_Of_Stores__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Account_Layer__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -107,6 +110,10 @@
                 <behavior>Required</behavior>
                 <field>CN_Litigation_City__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Map_Link__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -145,6 +152,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CN_City_EN__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Visit_Addr_CN__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -279,19 +290,24 @@
             <sortOrder>3</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>NewEvent</actionName>
+            <actionName>CN_New_Visit</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>4</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>NewTask</actionName>
+            <actionName>CN_New_Event</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>5</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+            <actionName>CN_New_Task</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>6</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>Clone</actionName>
             <actionType>CustomButton</actionType>
-            <sortOrder>6</sortOrder>
+            <sortOrder>7</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedContent>
@@ -317,6 +333,22 @@
         <relatedList>CN_Ship_to_Party__c.CN_Sold_To_Party_Customer__c</relatedList>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <fields>NAME</fields>
+        <fields>CN_Year_Month__c</fields>
+        <fields>CN_Amount__c</fields>
+        <fields>CN_Due_Date__c</fields>
+        <fields>CN_Net_Due_Date__c</fields>
+        <fields>CN_Arrears_After_Net_Due_Date__c</fields>
+        <fields>CN_Invoice_Number__c</fields>
+        <fields>CN_Tracking_Number__c</fields>
+        <fields>CN_Invoice_Date__c</fields>
+        <fields>CN_Delivery_date__c</fields>
+        <relatedList>CN_Payment_History__c.CN_Customer_Name__c</relatedList>
+        <sortField>CN_Year_Month__c</sortField>
+        <sortOrder>Desc</sortOrder>
+    </relatedLists>
+    <relatedLists>
         <fields>FULL_NAME</fields>
         <fields>CONTACT.TITLE</fields>
         <fields>CONTACT.EMAIL</fields>
@@ -331,6 +363,8 @@
         <fields>CN_Credit_Status__c</fields>
         <fields>CN_Overall_Status__c</fields>
         <relatedList>CN_Sales_Order__c.CN_Sold_To_Account_Name__c</relatedList>
+        <sortField>NAME</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <excludeButtons>MassChangeOwner</excludeButtons>
@@ -357,6 +391,10 @@
         <relatedList>CN_Document__c.CN_Account__c</relatedList>
         <sortField>LAST_UPDATE</sortField>
         <sortOrder>Desc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>CN_Sales_Performance__c.CN_Customer__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

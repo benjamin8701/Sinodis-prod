@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>促销活动参与者</value>
+    </caseValues>
+    <fields>
+        <label>客户名称</label>
+        <name>CN_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner --></label>
+        <name>CN_Account_Owner__c</name>
+        <relationshipLabel>促销活动成员</relationshipLabel>
+    </fields>
+    <fields>
+        <label>客户</label>
+        <name>CN_Account__c</name>
+        <relationshipLabel>促销活动</relationshipLabel>
+    </fields>
+    <fields>
+        <label>类别</label>
+        <name>CN_Category__c</name>
+    </fields>
+    <fields>
+        <label>渠道</label>
+        <name>CN_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>CN_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsPublished --></label>
+        <name>CN_IsPublished__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Promotion Planned --></label>
+        <name>CN_Is_Promotion_Planned__c</name>
+    </fields>
+    <fields>
+        <label>促销活动描述</label>
+        <name>CN_Promotion_Description__c</name>
+    </fields>
+    <fields>
+        <label>促销活动结束日期</label>
+        <name>CN_Promotion_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>促销活动开始日期</label>
+        <name>CN_Promotion_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>促销活动状态</label>
+        <name>CN_Promotion_Status__c</name>
+    </fields>
+    <fields>
+        <label>促销活动</label>
+        <name>CN_Promotion__c</name>
+        <relationshipLabel>促销活动成员</relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Promotion Member Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>促销活动信息</label>
+            <section>Promotion Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>促销活动参与者名称</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Promotion Member --></label>
+        <name>CN_Promotion_Member</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>不可以向已经终止的促销活动增加新的促销活动成员</errorMessage>
+        <name>CN_Check_Create_Promotion_Member</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不可变更客户</errorMessage>
+        <name>CN_Prevent_Change_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不可变更促销活动</errorMessage>
+        <name>CN_Prevent_Change_Promotion</name>
+    </validationRules>
+</CustomObjectTranslation>

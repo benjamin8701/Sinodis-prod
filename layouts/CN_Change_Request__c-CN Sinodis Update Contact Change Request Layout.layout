@@ -67,6 +67,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
+                <field>CN_Contact_Decision_Maker__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
                 <field>CN_Contact_Mobile__c</field>
             </layoutItems>
             <layoutItems>
@@ -122,6 +126,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>New_CN_Contact_Email__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>New_CN_Contact_Decision_Maker__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>

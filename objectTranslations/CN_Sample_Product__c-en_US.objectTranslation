@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sample Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sample Products</value>
+    </caseValues>
+    <fields>
+        <label><!-- Current Status Date --></label>
+        <name>CN_Current_Status_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Status --></label>
+        <name>CN_Current_Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ordered</masterLabel>
+            <translation><!-- Ordered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Negotiation</masterLabel>
+            <translation><!-- Under Negotiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Win</masterLabel>
+            <translation><!-- Win --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Feedback --></label>
+        <name>CN_Customer_Feedback__c</name>
+        <picklistValues>
+            <masterLabel>Negative</masterLabel>
+            <translation><!-- Negative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neutral</masterLabel>
+            <translation><!-- Neutral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive</masterLabel>
+            <translation><!-- Positive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>CN_Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Sales Team --></label>
+        <name>CN_Customer_Sales_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Comments --></label>
+        <name>CN_Delivery_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>CN_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback Date --></label>
+        <name>CN_Feedback_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback Description --></label>
+        <name>CN_Feedback_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deliver Done --></label>
+        <name>CN_Is_Deliver_Done__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is My Sample Product --></label>
+        <name>CN_Is_My_Sample_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Overdue --></label>
+        <name>CN_Is_Overdue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Repack Sample --></label>
+        <name>CN_Is_Repack_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Sample Request Approved --></label>
+        <name>CN_Is_Sample_Request_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item ID --></label>
+        <name>CN_Item_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>CN_Product__c</name>
+        <relationshipLabel><!-- Sample Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Qty per Carton --></label>
+        <name>CN_Qty_per_Carton__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity Needed --></label>
+        <name>CN_Quantity_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU Chinese Description --></label>
+        <name>CN_SKU_Chinese_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU English Description --></label>
+        <name>CN_SKU_English_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Cost --></label>
+        <name>CN_Sample_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Request Type Formula --></label>
+        <name>CN_Sample_Request_Type_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Request Type --></label>
+        <name>CN_Sample_Request_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Request --></label>
+        <name>CN_Sample_Request__c</name>
+        <relationshipLabel><!-- Sample Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sample SKU Code --></label>
+        <name>CN_Sample_SKU_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Unit List Price --></label>
+        <name>CN_Sample_Unit_List_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status of Delivery --></label>
+        <name>CN_Status_of_Delivery__c</name>
+        <picklistValues>
+            <masterLabel>Done</masterLabel>
+            <translation><!-- Done --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Stock</masterLabel>
+            <translation><!-- Out of Stock --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>CN_Unit__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Sample Request Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Delivery Comments --></label>
+            <section>Delivery Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Feedback Description --></label>
+            <section>Feedback Description</section>
+        </sections>
+        <sections>
+            <label><!-- Sample Deliver(Sales to input for wholepack, CCE to input for repack) --></label>
+            <section>Sample Deliver(Sales to input for wholepack, CCE to input for repack)</section>
+        </sections>
+        <sections>
+            <label><!-- Sample Feedback(For Sales Input) --></label>
+            <section>Sample Feedback(For Sales Input)</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update Customer Feedback --></label>
+        <name>CN_Update_Customer_Feedback</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Deliver Status --></label>
+        <name>CN_Update_Deliver_Status</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- CN Sample Product --></label>
+        <name>CN_Sample_Product</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allowed to change deliver status after all sample product deliver status had been selected. --></errorMessage>
+        <name>CN_Check_Deliver_Status_After_Done</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fill in customer feedback after sample deliveried. --></errorMessage>
+        <name>CN_Check_FeedBack</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select Customer Feedback --></errorMessage>
+        <name>CN_Check_Feedback_Message</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product is inactive --></errorMessage>
+        <name>CN_Check_Product_Active</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Product not support office pack --></errorMessage>
+        <name>CN_Check_Product_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Repack Sample&apos;s deliver status is only updated by CCE --></errorMessage>
+        <name>CN_Check_Repack_Deliver_Status_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quantity Need must greater than 0. --></errorMessage>
+        <name>CN_Check_Sample_Quantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wholepack Sample&apos;s deliver status is only updated by Sales Person --></errorMessage>
+        <name>CN_Check_Wholepack_Deliver_Status_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allowed to create new sample product after sample request ready approve or approved. --></errorMessage>
+        <name>CN_Prevent_Create</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allow to edit when ready for approved, approved or canceled. --></errorMessage>
+        <name>CN_Prevent_Edit_After_Ready</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter the delivery status before you enter the current status. --></errorMessage>
+        <name>CN_SP_Check_Current_Status_Delivery</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to edit the current status. --></errorMessage>
+        <name>CN_SP_Check_Current_Status_Sales</name>
+    </validationRules>
+</CustomObjectTranslation>

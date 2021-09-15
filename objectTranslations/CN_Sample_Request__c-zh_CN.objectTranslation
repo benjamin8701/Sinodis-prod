@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>样品申请</value>
+    </caseValues>
+    <fields>
+        <label>客户名称</label>
+        <name>CN_Account_Name__c</name>
+        <relationshipLabel>样品</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approved Date --></label>
+        <name>CN_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver1 CCE --></label>
+        <name>CN_Approver1_CCE__c</name>
+        <relationshipLabel>样品</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver2 Channel Leader --></label>
+        <name>CN_Approver2_Channel_Leader__c</name>
+        <relationshipLabel>样品</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CCE Team Email --></label>
+        <name>CN_CCE_Team_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- CS Team Email --></label>
+        <name>CN_CS_Team_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>CN_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <help>如果送样方式为快递，需填写送样地址</help>
+        <label>送样地址</label>
+        <name>CN_Delivery_Address__c</name>
+    </fields>
+    <fields>
+        <label>终端客户名称</label>
+        <name>CN_End_Customer_Name__c</name>
+        <relationshipLabel>样品</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Draft --></label>
+        <name>CN_Is_Draft__c</name>
+    </fields>
+    <fields>
+        <label>产品编号</label>
+        <name>CN_Item_ID__c</name>
+        <relationshipLabel>样品</relationshipLabel>
+    </fields>
+    <fields>
+        <label>业务机会名称</label>
+        <name>CN_Opportunity_Name__c</name>
+        <relationshipLabel>样品</relationshipLabel>
+    </fields>
+    <fields>
+        <label>试样原因</label>
+        <name>CN_Order_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Chef Service</masterLabel>
+            <translation>活动相关</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Penetration</masterLabel>
+            <translation>产品试样</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>整装领样原因</label>
+        <name>CN_Order_Reason_for_Wholepack__c</name>
+        <picklistValues>
+            <masterLabel>811 Customer Sample</masterLabel>
+            <translation><!-- 811 Customer Sample --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>整装领样订单类型</label>
+        <name>CN_Order_Type_for_Wholepack__c</name>
+        <picklistValues>
+            <masterLabel>ZFD1 Sample for Customer</masterLabel>
+            <translation><!-- ZFD1 Sample for Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>请确认：</label>
+        <name>CN_Please_Confirm__c</name>
+    </fields>
+    <fields>
+        <label><!-- SP Records Count All --></label>
+        <name>CN_SP_Records_Count_All__c</name>
+    </fields>
+    <fields>
+        <label><!-- SP Records Count Delivery Status All --></label>
+        <name>CN_SP_Records_Count_Delivery_Status_All__c</name>
+    </fields>
+    <fields>
+        <label><!-- SP Records Count Delivery Status Done --></label>
+        <name>CN_SP_Records_Count_Delivery_Status_Done__c</name>
+    </fields>
+    <fields>
+        <label>销售人员</label>
+        <name>CN_Sales_Person__c</name>
+    </fields>
+    <fields>
+        <label>送样方式</label>
+        <name>CN_Sample_Delivery_Method__c</name>
+        <picklistValues>
+            <masterLabel>Deliver to Office</masterLabel>
+            <translation>送到办公室</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Express Delivery</masterLabel>
+            <translation>快递</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Include in the delivery tomorrow</masterLabel>
+            <translation>随货送</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales to pick up</masterLabel>
+            <translation>销售当面送</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Pick-up</masterLabel>
+            <translation>自提</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>需样品日期</label>
+        <name>CN_Sample_Needed_Date__c</name>
+    </fields>
+    <fields>
+        <label>样品请求总费用</label>
+        <name>CN_Sample_Request_Cost__c</name>
+    </fields>
+    <fields>
+        <label>样品申请状态</label>
+        <name>CN_Sample_Request_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Approval</masterLabel>
+            <translation><!-- Ready for Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalled</masterLabel>
+            <translation><!-- Recalled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Approval</masterLabel>
+            <translation><!-- Submitted for Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CN_Url --></label>
+        <name>CN_Url__c</name>
+    </fields>
+    <fields>
+        <label>发货仓库</label>
+        <name>CN_Warehouse_Location__c</name>
+    </fields>
+    <layouts>
+        <layout>Office Repack Sample Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>客户信息</label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label>样品请求总费用</label>
+            <section>Sample Request Cost</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Whole Pack Sample Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>客户信息</label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label>样品请求总费用</label>
+            <section>Sample Request Cost</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>样品申请名称</nameFieldLabel>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>取消样品申请</label>
+        <name>CN_Cancel_Sample_Request</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>预审/撤回</label>
+        <name>CN_SR_Ready_for_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Sample Request --></label>
+        <name>Test</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Office Repack --></label>
+        <name>CN_Office_Repack</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Whole Pack --></label>
+        <name>CN_Whole_Pack</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>如果送样方式为快递，需填写送样地址</errorMessage>
+        <name>CN_Check_Deliver_Address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>只有处在Proposal/Demo/Sample阶段的业务机会可以创建样品申请</errorMessage>
+        <name>CN_Check_Opp_Stage_On_Create</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- sales CANNOT create wholepack sample request for prospect&apos;s opportunity --></errorMessage>
+        <name>CN_Check_Prospect_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>需样品日期不能为过去日期</errorMessage>
+        <name>CN_Check_Sample_Need_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不能取消未审批通过的样品申请。</errorMessage>
+        <name>CN_Prevent_Canceled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不能编辑此样品申请。</errorMessage>
+        <name>CN_Prevent_Edit_After_Approved_Canceled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>在准备好提交审批之前请选择至少一个样品。</errorMessage>
+        <name>CN_SR_Check_Ready_SKU</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您现在不能取消此样品申请。</errorMessage>
+        <name>CN_SR_Prevent_Cancel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>所有样品状态标记完成后，不允许新建样品或编辑样品状态。</errorMessage>
+        <name>CN_SR_Prevent_Change_Products_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>预审状态不可编辑。</errorMessage>
+        <name>CN_SR_Prevent_Edit_For_Ready</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CN_Sample_Feedback_Overdue --></label>
+        <name>CN_Sample_Feedback_Overdue</name>
+    </webLinks>
+</CustomObjectTranslation>

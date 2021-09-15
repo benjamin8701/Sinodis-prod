@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>样品</value>
+    </caseValues>
+    <fields>
+        <label><!-- Current Status Date --></label>
+        <name>CN_Current_Status_Date__c</name>
+    </fields>
+    <fields>
+        <label>目前客户情况</label>
+        <name>CN_Current_Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ordered</masterLabel>
+            <translation><!-- Ordered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Negotiation</masterLabel>
+            <translation><!-- Under Negotiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Win</masterLabel>
+            <translation><!-- Win --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>客户反馈</label>
+        <name>CN_Customer_Feedback__c</name>
+        <picklistValues>
+            <masterLabel>Negative</masterLabel>
+            <translation><!-- Negative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neutral</masterLabel>
+            <translation><!-- Neutral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive</masterLabel>
+            <translation><!-- Positive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>顾客名称</label>
+        <name>CN_Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Sales Team --></label>
+        <name>CN_Customer_Sales_Team__c</name>
+    </fields>
+    <fields>
+        <label>备注</label>
+        <name>CN_Delivery_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>CN_External_ID__c</name>
+    </fields>
+    <fields>
+        <label>反馈日期</label>
+        <name>CN_Feedback_Date__c</name>
+    </fields>
+    <fields>
+        <label>反馈情况说明</label>
+        <name>CN_Feedback_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deliver Done --></label>
+        <name>CN_Is_Deliver_Done__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is My Sample Product --></label>
+        <name>CN_Is_My_Sample_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Overdue --></label>
+        <name>CN_Is_Overdue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Repack Sample --></label>
+        <name>CN_Is_Repack_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Sample Request Approved --></label>
+        <name>CN_Is_Sample_Request_Approved__c</name>
+    </fields>
+    <fields>
+        <label>产品编号</label>
+        <name>CN_Item_ID__c</name>
+    </fields>
+    <fields>
+        <label>产品名称</label>
+        <name>CN_Product__c</name>
+        <relationshipLabel><!-- Sample Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Qty per Carton --></label>
+        <name>CN_Qty_per_Carton__c</name>
+    </fields>
+    <fields>
+        <label>产品数量</label>
+        <name>CN_Quantity_Needed__c</name>
+    </fields>
+    <fields>
+        <label>产品描述中文</label>
+        <name>CN_SKU_Chinese_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU English Description --></label>
+        <name>CN_SKU_English_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Cost --></label>
+        <name>CN_Sample_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Request Type Formula --></label>
+        <name>CN_Sample_Request_Type_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Request Type --></label>
+        <name>CN_Sample_Request_Type__c</name>
+    </fields>
+    <fields>
+        <label>样品申请</label>
+        <name>CN_Sample_Request__c</name>
+        <relationshipLabel><!-- Sample Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sample SKU Code --></label>
+        <name>CN_Sample_SKU_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Unit List Price --></label>
+        <name>CN_Sample_Unit_List_Price__c</name>
+    </fields>
+    <fields>
+        <label>交付状态</label>
+        <name>CN_Status_of_Delivery__c</name>
+        <picklistValues>
+            <masterLabel>Done</masterLabel>
+            <translation><!-- Done --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Stock</masterLabel>
+            <translation><!-- Out of Stock --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>CN_Unit__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Sample Request Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>顾客信息</label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Delivery Comments --></label>
+            <section>Delivery Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Feedback Description --></label>
+            <section>Feedback Description</section>
+        </sections>
+        <sections>
+            <label>样品交付情况（整装样品销售填写，分装样品CCE填写）</label>
+            <section>Sample Deliver(Sales to input for wholepack, CCE to input for repack)</section>
+        </sections>
+        <sections>
+            <label>样品反馈（销售填写）</label>
+            <section>Sample Feedback(For Sales Input)</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>样品名称</nameFieldLabel>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>更新客户反馈</label>
+        <name>CN_Update_Customer_Feedback</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>更新交付状态</label>
+        <name>CN_Update_Deliver_Status</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- CN Sample Product --></label>
+        <name>CN_Sample_Product</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>样品全部送达后不可更改送达状态</errorMessage>
+        <name>CN_Check_Deliver_Status_After_Done</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请在样品送达之后填写客户反馈</errorMessage>
+        <name>CN_Check_FeedBack</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>填写反馈情况说明之前请选择客户反馈</errorMessage>
+        <name>CN_Check_Feedback_Message</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>产品已失效</errorMessage>
+        <name>CN_Check_Product_Active</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>此产品不支持分装</errorMessage>
+        <name>CN_Check_Product_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>分装样品的送达信息仅供CCE填写</errorMessage>
+        <name>CN_Check_Repack_Deliver_Status_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>需要样品数量必须大于0</errorMessage>
+        <name>CN_Check_Sample_Quantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>正装样品的送达信息仅供销售人员填写</errorMessage>
+        <name>CN_Check_Wholepack_Deliver_Status_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>预审，审批及取消状态不可添加新样品</errorMessage>
+        <name>CN_Prevent_Create</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>预审，审批及取消状态不可编辑</errorMessage>
+        <name>CN_Prevent_Edit_After_Ready</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>输入客户目前状况前必须输入处理情况</errorMessage>
+        <name>CN_SP_Check_Current_Status_Delivery</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您没有权限编辑目前客户情况</errorMessage>
+        <name>CN_SP_Check_Current_Status_Sales</name>
+    </validationRules>
+</CustomObjectTranslation>

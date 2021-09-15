@@ -91,6 +91,10 @@
                 <behavior>Readonly</behavior>
                 <field>CN_Sales_Org__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Account_Layer__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -192,6 +196,14 @@
                 <behavior>Required</behavior>
                 <field>CN_Delivery_Plant__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Visit_Addr_CN__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Map_Link__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -251,14 +263,19 @@
             <sortOrder>3</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>NewEvent</actionName>
+            <actionName>CN_New_Visit</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>4</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>NewTask</actionName>
+            <actionName>CN_New_Event</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>5</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>CN_New_Task</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>6</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedContent>
@@ -275,6 +292,22 @@
         <fields>Actor</fields>
         <fields>Comments</fields>
         <relatedList>RelatedProcessHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <fields>NAME</fields>
+        <fields>CN_Year_Month__c</fields>
+        <fields>CN_Amount__c</fields>
+        <fields>CN_Due_Date__c</fields>
+        <fields>CN_Net_Due_Date__c</fields>
+        <fields>CN_Arrears_After_Net_Due_Date__c</fields>
+        <fields>CN_Invoice_Number__c</fields>
+        <fields>CN_Tracking_Number__c</fields>
+        <fields>CN_Invoice_Date__c</fields>
+        <fields>CN_Delivery_date__c</fields>
+        <relatedList>CN_Payment_History__c.CN_Customer_Name__c</relatedList>
+        <sortField>CN_Year_Month__c</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <excludeButtons>MassChangeOwner</excludeButtons>
@@ -302,6 +335,8 @@
         <fields>CN_Credit_Status__c</fields>
         <fields>CN_Overall_Status__c</fields>
         <relatedList>CN_Sales_Order__c.CN_Sold_To_Account_Name__c</relatedList>
+        <sortField>NAME</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <excludeButtons>MassChangeOwner</excludeButtons>
@@ -332,7 +367,50 @@
         <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <fields>NAME</fields>
+        <relatedList>CN_Contract__c.CN_Direct_Account_Name__c</relatedList>
+    </relatedLists>
+    <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>TASK.SUBJECT</fields>
+        <fields>TASK.WHO_NAME</fields>
+        <fields>TASK.WHAT_NAME</fields>
+        <fields>ACTIVITY.TASK</fields>
+        <fields>TASK.DUE_DATE</fields>
+        <fields>TASK.STATUS</fields>
+        <fields>TASK.PRIORITY</fields>
+        <fields>CORE.USERS.FULL_NAME</fields>
+        <relatedList>RelatedActivityList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>TASK.SUBJECT</fields>
+        <fields>TASK.WHO_NAME</fields>
+        <fields>TASK.WHAT_NAME</fields>
+        <fields>ACTIVITY.TASK</fields>
+        <fields>TASK.DUE_DATE</fields>
+        <fields>CORE.USERS.FULL_NAME</fields>
+        <fields>TASK.LAST_UPDATE</fields>
+        <relatedList>RelatedHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>CN_Sales_Performance__c.CN_Customer__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>CN_Sent_Reminder_Level__c</fields>
+        <fields>CN_Total_Reminder_Amount__c</fields>
+        <fields>CN_Details_of_Arrears__c</fields>
+        <fields>CN_Payment_Schedule__c</fields>
+        <fields>CN_Comments__c</fields>
+        <fields>CN_Overdue_10_Display__c</fields>
+        <fields>CN_Overdue_30_Display__c</fields>
+        <fields>CN_Overdue_60_Display__c</fields>
+        <fields>CN_Overdue_60_Up_SAP__c</fields>
+        <relatedList>CN_Payment_Report__c.CN_Customer__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

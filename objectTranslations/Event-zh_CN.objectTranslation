@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- By when --></label>
+        <name>CN_By_when__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chef Request Id --></label>
+        <name>CN_Chef_Request_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chef Request --></label>
+        <name>CN_Chef_Request__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Count --></label>
+        <name>CN_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>CN_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Follow Up Event ID --></label>
+        <name>CN_Follow_Up_Event_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Follow-up Priority --></label>
+        <name>CN_Follow_up_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting MInutes --></label>
+        <name>CN_Meeting_MInutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Step --></label>
+        <name>CN_Next_Step__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objective --></label>
+        <name>CN_Objective__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan to Visit Who --></label>
+        <name>CN_Plan_to_Visit_Who__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sample Request --></label>
+        <name>CN_Sample_Request__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status Check --></label>
+        <name>CN_Status_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Diagnose --></label>
+        <name>CN_Status_Diagnose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Before Event --></label>
+        <name>CN_Time_Before_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Status --></label>
+        <name>CN_Visit_Status__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Event Layout</layout>
+        <sections>
+            <label>相关信息</label>
+            <section>Related To</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN Sinodis Visit Layout</layout>
+        <sections>
+            <label>拜访详情</label>
+            <section>Calendar Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>跟进拜访</label>
+            <section>Follow-up Visit</section>
+        </sections>
+        <sections>
+            <label>其他信息</label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label>相关信息</label>
+            <section>Related To</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CN Event --></label>
+        <name>CN_Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New Visit --></label>
+        <name>CN_Visit</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>您在完成此拜访之前必须填入要点记录。</errorMessage>
+        <name>CN_Event_Check_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to cannel the visit after it has been completed --></errorMessage>
+        <name>CN_Event_Check_Status_Cancelled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不允许新建拜访或事件。</errorMessage>
+        <name>CN_Event_Prevent_Creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不允许修改计划下次拜访字段。</errorMessage>
+        <name>CN_Event_Prevent_Edit_ByWhen</name>
+    </validationRules>
+</CustomObjectTranslation>

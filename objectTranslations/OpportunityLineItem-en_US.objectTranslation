@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Interested SKU</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Interested SKUs</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Interested SKU Description</value>
+        </caseValues>
+        <name>opportunity_product_description</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Interested SKU Information</value>
+        </caseValues>
+        <name>opportunity_product_information</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Interested SKU Report</value>
+        </caseValues>
+        <name>opportunity_product_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Potential Quantity per month</value>
+        </caseValues>
+        <name>quantity_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- SKU Description(CN) --></label>
+        <name>CN_SKU_Description_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selling Unit --></label>
+        <name>CN_Selling_Unit__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not alllow to create or edit Interested SKUs if opportunity had closed. --></errorMessage>
+        <name>CN_Prevent_Create_Edit</name>
+    </validationRules>
+</CustomObjectTranslation>

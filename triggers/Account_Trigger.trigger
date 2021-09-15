@@ -1,6 +1,6 @@
 /**************************************************************************************************
  * Name           : Account_Trigger
- * Object         : 
+ * Object         : Account
  * Requirement    : 
  * Target         : 
  * Refer classes  :
@@ -31,7 +31,16 @@ trigger Account_Trigger on Account (before insert, after insert, before update,b
             }
             if(Constants.CN_ACCOUNT_GENERATE_DOCUMENTS_HANDLER_TRIGGER_ON) {
                 triggersObj.bind(Triggers.Evt.AfterInsert, new CN_Account_Generate_Documents_Handler());
-            }  
+            }
+            if(Constants.CN_ACCOUNT_ADDRESS_CHANGE_HANDLER_TRIGGER_ON) {
+                triggersObj.bind(Triggers.Evt.BeforeInsert, new CN_Account_Address_Change_Handler());
+                triggersObj.bind(Triggers.Evt.BeforeUpdate, new CN_Account_Address_Change_Handler());
+            }
+            //CR05 – Tm report by Shuqi - start
+            if(Constants.CN_ACCOUNT_TM_REPORT_HANDLER_TRIGGER_ON) {
+                triggersObj.bind(Triggers.Evt.BeforeUpdate, new CN_Account_TM_REPORT_Handler());
+            }
+            //CR05 – Tm report by Shuqi - end
         }
         triggersObj.execute(); 
     }

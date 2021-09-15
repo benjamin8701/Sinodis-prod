@@ -1,0 +1,215 @@
+<aura:component controller="CN_Mass_Change_Account_Owner_LC_Ctrl" implements="force:appHostable,flexipage:availableForRecordHome,lightning:actionOverride,force:hasRecordId,flexipage:availableForAllPageTypes,force:appHostable" access="global" >
+    
+<aura:attribute name="mapInput" type="Map" default="{}"/>
+<aura:attribute name="queryParam"  type="Map" default="{}" />
+<aura:handler name="init" value="this" action="{!c.doInit}"/>
+<aura:attribute name="userInfo" type="user"/>  
+<aura:attribute name="dataList" type="List" />
+<aura:attribute name="titleMap" type="Map" />
+<aura:attribute name="showLoading" type="Boolean" default="false" />
+<aura:attribute name="showResult" type="Boolean" default="false" />
+<aura:attribute name="showSuccess" type="Boolean" default="false" />
+<aura:attribute name="isTooltip" type="Boolean" default="false"/>
+    
+
+<aura:if isTrue="{!v.showLoading}">
+<lightning:spinner variant="brand" size="large" />
+</aura:if>
+
+<div class="slds-scope">
+    <!-- Advanced -->
+    <lightning:accordion allowMultipleSectionsOpen="true" class="gsp-advanced slds-m-bottom_none">
+        <div class="slds-grid slds-wrap slds-gutters">
+            <div class="slds-col slds-size_1-of-3">
+                <lightning:select name="selectItem" label="{!v.titleMap.titleChangeType}" value="{!v.queryParam.changeTypeList}">
+                    <aura:if isTrue="{!v.userInfo.Profile.Name=='System Administrator' || v.userInfo.Profile.Name=='系统管理员' }">
+                    	<option value="">&nbsp;</option>
+                    </aura:if>
+                    <aura:if isTrue="{!v.userInfo.Profile.Name=='CN Sales MDM'}">
+                    	<option value="Change Owner">Change Owner</option>
+                    </aura:if>
+                    <aura:if isTrue="{!v.userInfo.Profile.Name=='System Administrator' || v.userInfo.Profile.Name=='系统管理员' }">
+                    	<option value="Change Owner">Change Owner</option>
+                    </aura:if>
+                    <aura:if isTrue="{!v.userInfo.Profile.Name=='System Administrator' || v.userInfo.Profile.Name=='系统管理员' }">
+                    <option value="Change Finance AR">Change Finance AR</option>
+                    </aura:if>
+                    <aura:if isTrue="{!v.userInfo.Profile.Name=='CN Finance MDM'}">
+                    <option value="Change Finance AR">Change Finance AR</option>
+                    </aura:if>
+                </lightning:select>
+            </div>
+         </div>
+         <div class="slds-grid slds-wrap slds-gutters">
+            <!-- Keyword input -->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning:input label="{!v.titleMap.titleCurrentUser}" value="{!v.queryParam.UserNumber}" maxlength="6"/>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning:input label="{!v.titleMap.titleChangeUser}" value="{!v.queryParam.changeUserNumber}" maxlength="6"/>
+            </div>
+            <!-- Button -->
+            <div class="slds-col slds-size_1-of-3 slds-m-top_large">
+                <lightning:button variant="brand" label="{!v.titleMap.buttonSearch}" title="{!v.titleMap.buttonSearch}" onclick="{!c.jsSearch}"/>
+                <lightning:button variant="brand" label="{!v.titleMap.buttonAssign}" title="{!v.titleMap.buttonAssign}" onclick="{!c.jsPreProcess}"/>
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap slds-gutters">
+            <div class="slds-col slds-size_1-of-3" style="color: blue; text-align: center;" >
+            	<aura:if isTrue="{!v.dataList[0].eventObj.Owner!=''}">
+                    <tr class="slds-line-height_reset">
+                       <td label="Columns" value="10%" data-label="{!v.dataList[0].eventObj.Owner}">
+                            <div  class="slds-truncate" title="{!v.dataList[0].eventObj.Owner}">{!v.dataList[0].eventObj.Owner}</div>
+                       </td>
+                    </tr>
+                </aura:if>
+            </div>
+            <div class="slds-col slds-size_1-of-3" style="color: blue; text-align: center;" >
+            	<aura:if isTrue="{!v.dataList[0].eventObj.changeuser!=''}">
+                    <tr class="slds-line-height_reset">
+                       <td label="Columns" value="10%" data-label="{!v.dataList[0].eventObj.changeuser}">
+                            <div  class="slds-truncate" title="{!v.dataList[0].eventObj.changeuser}">{!v.dataList[0].eventObj.changeuser}</div>
+                       </td>
+                    </tr>
+                </aura:if>
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap slds-gutters">
+            <div class="slds-col slds-size_1-of-3" >
+                <!--<a style="color: rgb(62, 62, 60);" onclick="{!c.profilePage}" onmouseover="{!c.onmousehover}">Account Customer Code</a>
+                <aura:if isTrue="{!v.isTooltip}">
+                    <lightning:helptext content="Please kindly enter Account Customer Code, Use ',' as the delimiter"/>
+                </aura:if>-->
+                <lightning:textarea  label="{!v.titleMap.titleCustomerCode}" value="{!v.queryParam.CustomerCode}" maxlength="255"/>
+            </div>
+        </div>
+    </lightning:accordion>
+    
+    <aura:iteration items="{!v.dataList}" var="row">
+    	<aura:if isTrue="{!row.eventObj.Show=='Error'}">
+        <tr class="slds-line-height_reset">
+           <td label="Columns" value="10%" data-label="{!v.titleMap.ErrorComment}">
+                <div style="color: red; text-align: center;" class="slds-truncate" title="{!row.eventObj.ErrorComment}">{!row.eventObj.ErrorComment}</div>
+           </td>
+        </tr>
+        </aura:if>
+	</aura:iteration>
+    
+    <aura:if isTrue="{!v.dataList[0].eventObj.Comment3!=''}">
+        <div style="color: red;">{!v.dataList[0].eventObj.Comment3}</div>
+    </aura:if>
+    
+    <aura:if isTrue="{!v.showResult}"> 	
+    <aura:if isTrue="{!v.dataList[0].eventObj.Show=='Result'}">
+    <!-- Search result list -->
+    <div class="slds-section slds-is-open slds-m-top_small">
+    <h3 class="slds-section__title slds-theme_shade">
+    <span class="slds-icon_container slds-icon-utility-chevronright slds-p-left_x-small">
+    <lightning:icon iconName="utility:chevronright" alternativeText="Results" size="xx-small" />
+    <span class="slds-assistive-text">{!v.titleMap.titleResults}</span>
+    </span>
+    <span class="slds-truncate slds-p-horizontal_xx-small" title="{!v.titleMap.titleResults}">{!v.titleMap.titleResults}</span>
+    </h3>
+    <div aria-hidden="false" class="slds-section__content slds-p-horizontal_small">
+        <table class="slds-table slds-table_fixed-layout slds-table_bordered" >
+        <thead>
+                    <tr class="slds-line-height_reset">
+                        <aura:if isTrue="{!v.dataList[0].eventObj.Comment!=''}">
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="{!v.titleMap.Comment}">{!v.titleMap.Comment}</div>
+                            </th>
+                        </aura:if>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="{!v.titleMap.Account.Id}">{!v.titleMap.Account.Id}</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="{!v.titleMap.Account.Name}">{!v.titleMap.Account.Name}</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="{!v.titleMap.Account.CN_Customer_Code__c}">{!v.titleMap.Account.CN_Customer_Code__c}</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="{!v.titleMap.Account.Ownerid}">{!v.titleMap.Account.Ownerid}</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="{!v.titleMap.Account.CN_Sinodis_Finance_AR__c}">{!v.titleMap.Account.CN_Sinodis_Finance_AR__c}</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="{!v.titleMap.Account.Type}">{!v.titleMap.Account.Type}</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="{!v.titleMap.Account.CN_Account_Status__c}">{!v.titleMap.Account.CN_Account_Status__c}</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="{!v.titleMap.Account.CN_Sync_Status__c}">{!v.titleMap.Account.CN_Sync_Status__c}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <aura:iteration items="{!v.dataList}" var="row">
+                        <tr class="slds-hint-parent">
+                            <aura:if isTrue="{!row.eventObj.Comment!=''}">
+                                <td data-label="{!v.titleMap.Comment}" >
+                                    <div class="slds-truncate" title="{!row.eventObj.Comment}">{!row.eventObj.Comment}</div>
+                                </td>
+                            </aura:if>
+                            <td data-label="{!v.titleMap.Account.Id}" >
+                                <div class="slds-truncate" title="{!row.eventObj.Id}">
+                                    <a href="{!'/lightning/r/Account/' + row.eventObj.Id + '/view'}" value="{!row.eventObj.Id}" target="_blank">{!row.eventObj.Id}</a>
+                                </div>
+                        	</td>
+                            <td data-label="{!v.titleMap.Account.Name}" >
+                                <div class="slds-truncate" title="{!row.eventObj.Name}">{!row.eventObj.Name}</div>
+                            </td>
+                            <td data-label="{!v.titleMap.Account.CN_Customer_Code__c}" >
+                                <div class="slds-truncate" title="{!row.eventObj.CN_Customer_Code__c}">{!row.eventObj.CN_Customer_Code__c}</div>
+                            </td>
+                            <td data-label="{!v.titleMap.Account.Ownerid}">
+                                <div class="slds-truncate" title="{!row.eventObj.OwnerId}">{!row.eventObj.OwnerId}</div>
+                            </td>
+                            <td data-label="{!v.titleMap.Account.CN_Sinodis_Finance_AR__c}">
+                                <div class="slds-truncate" title="{!row.eventObj.CN_Sinodis_Finance_AR__c}">{!row.eventObj.CN_Sinodis_Finance_AR__c}</div>
+                            </td>
+                            <td data-label="{!v.titleMap.Account.Type}">
+                                <div class="slds-truncate" title="{!row.eventObj.Type}">{!row.eventObj.Type}</div>
+                            </td>
+                            <td data-label="{!v.titleMap.Account.CN_Account_Status__c}">
+                                <div class="slds-truncate" title="{!row.eventObj.CN_Account_Status__c}">{!row.eventObj.CN_Account_Status__c}</div>
+                            </td>
+                            <td data-label="{!v.titleMap.Account.CN_Sync_Status__c}">
+                                <div class="slds-truncate" title="{!row.eventObj.CN_Sync_Status__c}">{!row.eventObj.CN_Sync_Status__c}</div>
+                            </td>
+                        </tr>
+                    </aura:iteration>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </aura:if>
+    </aura:if>
+
+</div>  
+<aura:if isTrue="{!v.showSuccess}">
+    <div id="gsp_modal_account_binding" >
+<section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_medium"
+        aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+<div class="slds-modal__container">
+<header class="slds-modal__header slds-modal__header_empty">
+<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">	
+    <lightning:icon onclick="{!c.jsCloseAlert}" iconName="utility:close" alternativeText="close" title="close" />
+<span class="slds-assistive-text">Close</span>
+</button>
+</header>
+<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+<p>{!v.titleMap.titleNotice}</p>
+</div>
+<footer class="slds-modal__footer">
+    <lightning:button variant="brand" label="{!v.titleMap.buttonCancel}" title="{!v.titleMap.buttonCancel}" onclick="{!c.jsCloseAlert}"/>
+    <lightning:button variant="brand" label="{!v.titleMap.buttonProcess}" title="{!v.titleMap.buttonProcess}" onclick="{!c.jsProcess}"/>
+</footer>
+</div>
+</section>
+<div class="slds-backdrop slds-backdrop_open"></div>
+</div>
+</aura:if>
+</aura:component>

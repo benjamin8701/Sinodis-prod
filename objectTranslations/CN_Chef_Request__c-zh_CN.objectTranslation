@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>厨师申请</value>
+    </caseValues>
+    <fields>
+        <label>客户名称</label>
+        <name>CN_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label>客户名称</label>
+        <name>CN_Account__c</name>
+        <relationshipLabel>厨师申请</relationshipLabel>
+    </fields>
+    <fields>
+        <help>例如，慕斯蛋糕，奶油蛋糕，提拉米苏</help>
+        <label>应用类型销售</label>
+        <name>CN_Application_Type_Selling__c</name>
+    </fields>
+    <fields>
+        <label>1号审批人</label>
+        <name>CN_Approver_1__c</name>
+        <relationshipLabel>厨师申请</relationshipLabel>
+    </fields>
+    <fields>
+        <label>分配厨师总数</label>
+        <name>CN_Assigned_Chefs_Count__c</name>
+    </fields>
+    <fields>
+        <label>品牌</label>
+        <name>CN_Brand__c</name>
+        <picklistValues>
+            <masterLabel>5J</masterLabel>
+            <translation><!-- 5J --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANTICHICOLLI</masterLabel>
+            <translation><!-- ANTICHICOLLI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BARNIER OLIVES</masterLabel>
+            <translation><!-- BARNIER OLIVES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BASTIDES</masterLabel>
+            <translation><!-- BASTIDES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEAUFOR</masterLabel>
+            <translation><!-- BEAUFOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BERETTA</masterLabel>
+            <translation><!-- BERETTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEYONG MEAT</masterLabel>
+            <translation><!-- BEYONG MEAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beillevaire</masterLabel>
+            <translation><!-- Beillevaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPRICE DES DIEUX</masterLabel>
+            <translation><!-- CAPRICE DES DIEUX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAVIAR &amp; TRADITIONS</masterLabel>
+            <translation><!-- CAVIAR &amp; TRADITIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COEUR DE LION</masterLabel>
+            <translation><!-- COEUR DE LION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORMAN</masterLabel>
+            <translation><!-- CORMAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabrifin</masterLabel>
+            <translation><!-- Cabrifin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chateau d&apos;Estoublon</masterLabel>
+            <translation><!-- Chateau d&apos;Estoublon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef Studio OIL</masterLabel>
+            <translation><!-- Chef Studio OIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef Studio Pastry</masterLabel>
+            <translation><!-- Chef Studio Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOBLA</masterLabel>
+            <translation><!-- DOBLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DODONI</masterLabel>
+            <translation><!-- DODONI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elle &amp; Vire</masterLabel>
+            <translation><!-- Elle &amp; Vire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FERMES DE LA TREMBLAYE</masterLabel>
+            <translation><!-- FERMES DE LA TREMBLAYE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giovanni Ferrari</masterLabel>
+            <translation><!-- Giovanni Ferrari --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILE DE FRANCE</masterLabel>
+            <translation><!-- ILE DE FRANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IRCA</masterLabel>
+            <translation><!-- IRCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LE RUSTIQUE</masterLabel>
+            <translation><!-- LE RUSTIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOSTE TRADI-FRANCE</masterLabel>
+            <translation><!-- LOSTE TRADI-FRANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lescure</masterLabel>
+            <translation><!-- Lescure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liberty Lane</masterLabel>
+            <translation><!-- Liberty Lane --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milkana</masterLabel>
+            <translation><!-- Milkana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norohy</masterLabel>
+            <translation><!-- Norohy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OVODAN</masterLabel>
+            <translation><!-- OVODAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAVONI</masterLabel>
+            <translation><!-- PAVONI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pomone</masterLabel>
+            <translation><!-- Pomone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUORUM</masterLabel>
+            <translation><!-- QUORUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAVIFRUIT</masterLabel>
+            <translation><!-- RAVIFRUIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REPUBLIC DEL CACAO</masterLabel>
+            <translation><!-- REPUBLIC DEL CACAO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remy Cointreau</masterLabel>
+            <translation><!-- Remy Cointreau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roquefort Papillon</masterLabel>
+            <translation><!-- Roquefort Papillon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rougie</masterLabel>
+            <translation><!-- Rougie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMORET</masterLabel>
+            <translation><!-- SMORET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sabaton</masterLabel>
+            <translation><!-- Sabaton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Agur</masterLabel>
+            <translation><!-- Saint Agur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sevarome</masterLabel>
+            <translation><!-- Sevarome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sosa</masterLabel>
+            <translation><!-- Sosa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urbani Tartufi SRL</masterLabel>
+            <translation><!-- Urbani Tartufi SRL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALRHONA</masterLabel>
+            <translation><!-- VALRHONA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vieuxx Pane</masterLabel>
+            <translation><!-- Vieuxx Pane --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEISS</masterLabel>
+            <translation><!-- WEISS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>tbc</masterLabel>
+            <translation><!-- tbc --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>活动名称</label>
+        <name>CN_Campaign_Name__c</name>
+    </fields>
+    <fields>
+        <label>活动名称</label>
+        <name>CN_Campaign__c</name>
+        <relationshipLabel>厨师申请</relationshipLabel>
+    </fields>
+    <fields>
+        <label>厨师备注</label>
+        <name>CN_Comments_for_Chef__c</name>
+    </fields>
+    <fields>
+        <help>如果因为特殊的客户紧急需求或者从上个月延迟到本月，请填写说明</help>
+        <label>紧急情况备注</label>
+        <name>CN_Comments_for_Urgent_Case__c</name>
+    </fields>
+    <fields>
+        <help>客户在用什么竞品？</help>
+        <label>竞争对手品牌</label>
+        <name>CN_Competitor_Brands__c</name>
+    </fields>
+    <fields>
+        <label>确认</label>
+        <name>CN_Confirmed__c</name>
+    </fields>
+    <fields>
+        <help>饮品成本20%，甜品成本30%。</help>
+        <label>成本限制</label>
+        <name>CN_Cost_Limit__c</name>
+    </fields>
+    <fields>
+        <label>客户参与人职务</label>
+        <name>CN_Customer_Attendees_Title__c</name>
+        <picklistValues>
+            <masterLabel>Purchase Manager</masterLabel>
+            <translation><!-- Purchase Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R&amp;D Manager</masterLabel>
+            <translation><!-- R&amp;D Manager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>客户城市</label>
+        <name>CN_Customer_City__c</name>
+    </fields>
+    <fields>
+        <label>客户编号</label>
+        <name>CN_Customer_ID__c</name>
+    </fields>
+    <fields>
+        <label>持续时间</label>
+        <name>CN_Demo_Duration__c</name>
+    </fields>
+    <fields>
+        <label>活动结束日期</label>
+        <name>CN_Demo_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>演示报告数量</label>
+        <name>CN_Demo_Report_Count__c</name>
+    </fields>
+    <fields>
+        <label>活动开始日期</label>
+        <name>CN_Demo_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>描述</label>
+        <name>CN_Description__c</name>
+    </fields>
+    <fields>
+        <label>日历显示字段</label>
+        <name>CN_Display_in_Calendar__c</name>
+    </fields>
+    <fields>
+        <label>结束日期</label>
+        <name>CN_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>活动详细</label>
+        <name>CN_Event_Detail__c</name>
+    </fields>
+    <fields>
+        <label>活动地点占用结束日期上午/下午</label>
+        <name>CN_Event_Location_End_Date_AM_PM__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Location End Date Formula --></label>
+        <name>CN_Event_Location_End_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label>活动地点占用结束日期</label>
+        <name>CN_Event_Location_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>活动地点占用开始日期上午/下午</label>
+        <name>CN_Event_Location_Start_Date_AM_PM__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Location Start Date Formula --></label>
+        <name>CN_Event_Location_Start_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label>活动地点占用开始日期</label>
+        <name>CN_Event_Location_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>展示厨房</label>
+        <name>CN_Event_Location__c</name>
+        <picklistValues>
+            <masterLabel>BJ Chef Studio</masterLabel>
+            <translation><!-- BJ Chef Studio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SH Chef Studio</masterLabel>
+            <translation><!-- SH Chef Studio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SH R&amp;D Center</masterLabel>
+            <translation><!-- SH R&amp;D Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SZ Chef Studio</masterLabel>
+            <translation><!-- SZ Chef Studio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Third Party</masterLabel>
+            <translation><!-- The Third Party --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>活动主题</label>
+        <name>CN_Event_Theme__c</name>
+    </fields>
+    <fields>
+        <label>厨师活动类型</label>
+        <name>CN_Event_Type__c</name>
+        <picklistValues>
+            <masterLabel>1-on-1 service</masterLabel>
+            <translation><!-- 1-on-1 service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Events</masterLabel>
+            <translation><!-- Company Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Solution Approach</masterLabel>
+            <translation><!-- Full Solution Approach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Streaming</masterLabel>
+            <translation><!-- Live Streaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Visit</masterLabel>
+            <translation><!-- Market Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting</masterLabel>
+            <translation><!-- Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OFF</masterLabel>
+            <translation><!-- OFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paperwork</masterLabel>
+            <translation><!-- Paperwork --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Testing</masterLabel>
+            <translation><!-- Product Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Demo</masterLabel>
+            <translation><!-- Public Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recipes R&amp;D</masterLabel>
+            <translation><!-- Recipes R&amp;D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SINODIS Event</masterLabel>
+            <translation><!-- SINODIS Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Practice &amp; Training</masterLabel>
+            <translation><!-- Self Practice &amp; Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short Video</masterLabel>
+            <translation><!-- Short Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP Class</masterLabel>
+            <translation><!-- VIP Class --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>客座厨师</label>
+        <name>CN_Guest_Chef__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deletable --></label>
+        <name>CN_Is_Deletable__c</name>
+    </fields>
+    <fields>
+        <label>是否在同一天提交申请</label>
+        <name>CN_Is_Subimit_Within_One_Day__c</name>
+    </fields>
+    <fields>
+        <help>请输入产品编码与产品品牌</help>
+        <label>主推产品</label>
+        <name>CN_Key_Products_to_Push__c</name>
+    </fields>
+    <fields>
+        <label>MKT/CCE负责人</label>
+        <name>CN_MKT_CCE_PIC__c</name>
+        <relationshipLabel>厨师申请</relationshipLabel>
+    </fields>
+    <fields>
+        <label>业务机会</label>
+        <name>CN_Opportunity__c</name>
+        <relationshipLabel>厨师申请</relationshipLabel>
+    </fields>
+    <fields>
+        <label>所有者姓名</label>
+        <name>CN_Owner_Name__c</name>
+    </fields>
+    <fields>
+        <label>请确认：</label>
+        <name>CN_Please_Confirm_Ready__c</name>
+    </fields>
+    <fields>
+        <label>请确认：</label>
+        <name>CN_Please_Confirm__c</name>
+    </fields>
+    <fields>
+        <help>例如，一份饮品平均成本是32元， 一块蛋糕平均价格是48元。</help>
+        <label>价格定位</label>
+        <name>CN_Price_Positioning__c</name>
+    </fields>
+    <fields>
+        <label>类别</label>
+        <name>CN_Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>Chef Studio Pastry</masterLabel>
+            <translation><!-- Chef Studio Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dairy</masterLabel>
+            <translation><!-- Dairy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOURMET &amp; GROCERY</masterLabel>
+            <translation><!-- GOURMET &amp; GROCERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PASTRY</masterLabel>
+            <translation><!-- PASTRY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>预审日期</label>
+        <name>CN_Ready_Date__c</name>
+    </fields>
+    <fields>
+        <label>销售渠道</label>
+        <name>CN_Sales_Channel__c</name>
+    </fields>
+    <fields>
+        <label>开始日期</label>
+        <name>CN_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>状态</label>
+        <name>CN_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Approval</masterLabel>
+            <translation><!-- Ready for Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Approval</masterLabel>
+            <translation><!-- Submitted for Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>如果选择了第三方活动地址，请填写第三方城市</help>
+        <label>第三方城市</label>
+        <name>CN_The_Third_Party_City__c</name>
+        <relationshipLabel>厨师申请</relationshipLabel>
+    </fields>
+    <fields>
+        <label>今日所在区间</label>
+        <name>CN_Today_Period__c</name>
+    </fields>
+    <fields>
+        <label>月份总天数</label>
+        <name>CN_Total_Days_Of_End_Date_Month__c</name>
+    </fields>
+    <layouts>
+        <layout>CN 1on1 Chef Request</layout>
+        <sections>
+            <label>厨师管理确认信息栏</label>
+            <section>Chef Management Confirmation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>日期信息栏</label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label>描述信息栏</label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN 1on1 Chef Request New</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>日期信息栏</label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label>描述信息栏</label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN MKT_CCE Demo Request</layout>
+        <sections>
+            <label>厨师管理确认信息栏</label>
+            <section>Chef Management Confirmation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>日期信息栏</label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label>描述信息栏</label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN Marketing development Request</layout>
+        <sections>
+            <label>厨师管理确认信息栏</label>
+            <section>Chef Management Confirmation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>日期信息栏</label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label>描述信息栏</label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN Self-Chef Demo Request</layout>
+        <sections>
+            <label>厨师管理确认信息栏</label>
+            <section>Chef Management Confirmation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Chef Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>厨师申请ID</nameFieldLabel>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>确认/取消</label>
+        <name>CN_Confirm</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>预审/撤回</label>
+        <name>CN_Ready_for_Approval</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>发送请求</label>
+        <name>CN_Send_Request</name>
+    </quickActions>
+    <recordTypes>
+        <label>1对1服务厨师申请</label>
+        <name>CN_1on1_Service_Chef_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label>1对1服务厨师申请</label>
+        <name>CN_1on1_Service_Chef_Request_New</name>
+    </recordTypes>
+    <recordTypes>
+        <label>厨师自我工作申请</label>
+        <name>CN_Chef_Self_Work_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Marketing/CCE厨师演示申请</label>
+        <name>CN_Marketing_CCE_Chef_Demo_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Marketing研发申请</label>
+        <name>CN_Marketing_Development_Request</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>如果目前处在本月上旬，请创建次月的厨师申请。如果目前处在本月下旬，请创建次次月的厨师申请</errorMessage>
+        <name>CN_CHECK_DEMO_START_DATE_1ON1_MDR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请创建60天之后的厨师申请</errorMessage>
+        <name>CN_CHECK_DEMO_START_DATE_MTK_DEMO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请至少输入10个字</errorMessage>
+        <name>CN_Check_Application_Type_Selling_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>演示开始日期与结束日期必须在市场活动时间范围内</errorMessage>
+        <name>CN_Check_Campaign_Demo_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>只有未结束的活动可以创建厨师申请</errorMessage>
+        <name>CN_Check_Campaign_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请在确认厨师申请前分配厨师</errorMessage>
+        <name>CN_Check_Chef_Assigned_Count</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不允许复制厨师申请</errorMessage>
+        <name>CN_Check_Clone_Permission</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请至少输入10个字</errorMessage>
+        <name>CN_Check_Competitor_Brands_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>只有厨师经理可以确认厨师申请，且该厨师申请必须已批准</errorMessage>
+        <name>CN_Check_Confirmed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请至少输入10个字</errorMessage>
+        <name>CN_Check_Cost_Limit_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>开始日期不能早于结束日期</errorMessage>
+        <name>CN_Check_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>结束日期必须晚于开始日期</errorMessage>
+        <name>CN_Check_Demo_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>演示不能持续超过14天</errorMessage>
+        <name>CN_Check_Demo_Duration</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>演示开始日期必须晚于或等于今天</errorMessage>
+        <name>CN_Check_Demo_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>批准后不许编辑</errorMessage>
+        <name>CN_Check_Edit_After_Approved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>活动地点占用结束日期必须晚于活动地点占用开始日期</errorMessage>
+        <name>CN_Check_Event_Location_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请在确认厨师活动前填写活动地点日期</errorMessage>
+        <name>CN_Check_Event_Location_Date_On_Comfirm</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请至少输入10个字</errorMessage>
+        <name>CN_Check_Key_Products_to_Push_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>只有处在Proposal/Demo/Sample阶段的业务机会可以创建厨师申请</errorMessage>
+        <name>CN_Check_Opportunty_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请至少输入10个字</errorMessage>
+        <name>CN_Check_Price_Positioning_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>预审时不可编辑</errorMessage>
+        <name>CN_Check_Ready_For_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>开始日期必须晚于或等于今天</errorMessage>
+        <name>CN_Check_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请填写第三方城市</errorMessage>
+        <name>CN_Check_Third_Party_City</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>所选择业务机会必须关联客户</errorMessage>
+        <name>CN_Chef_Request_Check_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>如果已经提交审批或者已批准，不可回到New状态</errorMessage>
+        <name>CN_Prevent_Back_To_New_After_Submit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不允许变更关联活动</errorMessage>
+        <name>CN_Prevent_Change_Campaign</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不允许变更关联业务机会</errorMessage>
+        <name>CN_Prevent_Change_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不允许为市场活动创建厨师申请</errorMessage>
+        <name>CN_Prevent_Create_1ON1WithCampaign</name>
+    </validationRules>
+</CustomObjectTranslation>

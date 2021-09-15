@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>预期金额</value>
+        </caseValues>
+        <name>amount_opportunity</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>预计结束日期</value>
+        </caseValues>
+        <name>close_date_opportunity</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>业务机会描述</value>
+        </caseValues>
+        <name>description_opportunity</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Confirmed --></label>
+        <name>Budget_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label>实际关闭日期</label>
+        <name>CN_Actual_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN_Campaign --></label>
+        <name>CN_Campaign__c</name>
+        <relationshipLabel>业务机会</relationshipLabel>
+    </fields>
+    <fields>
+        <label>客户预计采购日期</label>
+        <name>CN_Expected_Purchase_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate From Lead Id --></label>
+        <name>CN_Generate_From_Lead_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Manual --></label>
+        <name>CN_Is_Manual__c</name>
+    </fields>
+    <fields>
+        <label>丢单原因详细描述</label>
+        <name>CN_Loss_Description__c</name>
+    </fields>
+    <fields>
+        <label>丢单原因</label>
+        <name>CN_Loss_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Canceled products</masterLabel>
+            <translation><!-- Customer Canceled products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead time</masterLabel>
+            <translation><!-- Lead time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost to competitor</masterLabel>
+            <translation><!-- Lost to competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Term</masterLabel>
+            <translation><!-- Payment Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quality</masterLabel>
+            <translation><!-- Quality --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Discovery Completed --></label>
+        <name>Discovery_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROI Analysis Completed --></label>
+        <name>ROI_Analysis_Completed__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- CN Opportunity --></label>
+        <name>CN_Opportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>需要填写实际关单时间。</errorMessage>
+        <name>CN_Check_Actual_Close_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>需要填写客户预计采购日期。</errorMessage>
+        <name>CN_Check_Expected_Purchase_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>需要填写丢单原因。</errorMessage>
+        <name>CN_Check_Loss_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请填写预计金额或选择产品，并且填写预计结束日期。</errorMessage>
+        <name>CN_Check_Proposal_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>实际结束日期应晚于今天。</errorMessage>
+        <name>CN_Opportunity_Check_Actual_Close_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>预计结束日期应晚于今天。</errorMessage>
+        <name>CN_Opportunity_Check_CloseDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>客户预计采购日期应晚于今天。</errorMessage>
+        <name>CN_Opportunity_Check_Purchase_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不允许将阶段回退到Qualification。</errorMessage>
+        <name>CN_Prevent_Back_To_Qualification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>关单后不允许编辑。</errorMessage>
+        <name>CN_Prevent_Edit_After_Close</name>
+    </validationRules>
+</CustomObjectTranslation>

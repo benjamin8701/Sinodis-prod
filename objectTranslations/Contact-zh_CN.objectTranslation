@@ -46,6 +46,14 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Converted From --></label>
+        <name>CN_Converted_From__c</name>
+    </fields>
+    <fields>
+        <label>是否决策者</label>
+        <name>CN_Decision_Maker__c</name>
+    </fields>
+    <fields>
         <label>联系人部门</label>
         <name>CN_Department_Of_Contact_Person__c</name>
         <picklistValues>
@@ -178,6 +186,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- CN Department for API --></label>
+        <name>CN_Department_for_API__c</name>
+    </fields>
+    <fields>
         <label>家庭信息</label>
         <name>CN_Family_Info__c</name>
     </fields>
@@ -273,12 +285,16 @@
         <label>微信号</label>
         <name>CN_Wechat_ID__c</name>
     </fields>
+    <fields>
+        <label>工作语言</label>
+        <name>CN_Working_Language__c</name>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+    </fields>
     <layouts>
         <layout>CN Sinodis Contact Layout</layout>
-        <sections>
-            <label>附加信息</label>
-            <section>Additional Information</section>
-        </sections>
         <sections>
             <label>SAP创建信息</label>
             <section>SAP Creation Information</section>
@@ -308,6 +324,10 @@
     <validationRules>
         <errorMessage>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</errorMessage>
         <name>CN_Check_Phone_NumberFormat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>禁止转化到已存在的数据上。</errorMessage>
+        <name>CN_Prevent_Convert_To_Exsiting</name>
     </validationRules>
     <validationRules>
         <errorMessage>请通过创建一个新建联系人变更请求来创建联系人。请通过创建一个编辑联系人变更请求来编辑现有的联系人。</errorMessage>

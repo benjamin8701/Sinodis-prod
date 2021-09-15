@@ -3,12 +3,14 @@
     <types>
         <members>CN_Acc_Cal_LatestOrder_SCH_Test</members>
         <members>CN_Acc_Send_To_SAP_LC_Ctrl_Test</members>
+        <members>CN_Account_Address_Change_Handler</members>
         <members>CN_Account_Approve_Aging_Handler</members>
         <members>CN_Account_Approve_Aging_Handler_Test</members>
         <members>CN_Account_Calculate_LatestOrder_Batch</members>
         <members>CN_Account_Calculate_LatestOrder_SCH</members>
         <members>CN_Account_Change_Request_LCController</members>
         <members>CN_Account_Change_Request_LCCtrl_Test</members>
+        <members>CN_Account_Gaode_Geolocation_Batch</members>
         <members>CN_Account_Generate_Contact_Handler</members>
         <members>CN_Account_Generate_Documents_Handler</members>
         <members>CN_Account_Generate_ShipTo_Handler</members>
@@ -21,6 +23,7 @@
         <members>CN_Account_Prevent_Delete_Handler</members>
         <members>CN_Account_Prevent_Delete_Handler_Test</members>
         <members>CN_Account_Send_To_SAP_LC_Ctrl</members>
+        <members>CN_Account_TM_REPORT_Handler</members>
         <members>CN_BU_Prevent_Delete_Handler</members>
         <members>CN_BU_Prevent_Delete_Handler_Test</members>
         <members>CN_BU_Send_To_SAP_LC_Ctrl</members>
@@ -42,6 +45,7 @@
         <members>CN_CR_Check_Fields_Change_Handler_Test</members>
         <members>CN_CR_Check_Fields_Handler</members>
         <members>CN_CR_Check_Fields_Handler_Test</members>
+        <members>CN_CR_Contact_Type_Check_Handler</members>
         <members>CN_CR_Generate_Contact_Handler</members>
         <members>CN_CR_Generate_ShipTo_Handler</members>
         <members>CN_CR_Populate_Approver_Handler</members>
@@ -65,33 +69,94 @@
         <members>CN_CTA_Populate_Fields_Handler</members>
         <members>CN_CTA_Populate_FinanceMDM_Handler</members>
         <members>CN_CTA_Prevent_Duplicate_CR_Handler</members>
+        <members>CN_Campaign_Generate_Opp_LC_Ctrl</members>
+        <members>CN_Chef_Request_Assign_Approver_Handler</members>
+        <members>CN_Chef_Request_Chef_Assign_Handler</members>
+        <members>CN_Chef_Request_Event_Handler</members>
+        <members>CN_Chef_Request_Prevent_Delete_Handler</members>
+        <members>CN_Chef_Request_Set_Acc_Handler</members>
+        <members>CN_Chefs_Assigned_Prevent_Delete_Handler</members>
+        <members>CN_Complaint_Closed_LC_Ctrl</members>
+        <members>CN_Complaint_Populate_Status_Handler</members>
+        <members>CN_Complaint_Prevent_Delete_Handler</members>
+        <members>CN_Complaint_Rejected_LC_Ctrl</members>
+        <members>CN_Complaint_Resolved_LC_Ctrl</members>
+        <members>CN_Complaint_Status_Handler</members>
         <members>CN_Contact_Change_Request_LC_Ctrl</members>
         <members>CN_Contact_Prevent_Delete_Handler</members>
         <members>CN_Contact_Prevent_Delete_Handler_Test</members>
+        <members>CN_Contact_Type_Check_Handler</members>
         <members>CN_Contact_Update_FinAREmail_Handler</members>
+        <members>CN_Contact_Write_Back_To_Lead_Handler</members>
+        <members>CN_Contract_Populate_Fields_Handler</members>
+        <members>CN_Demo_Report_Copy_Handler</members>
+        <members>CN_Demo_Report_Prevent_Delete_Handler</members>
+        <members>CN_Demo_Used_Product_Accumulate_Handler</members>
+        <members>CN_Event_Generate_Follow_Visit_Handler</members>
+        <members>CN_Event_Prevent_Delete_Handler</members>
         <members>CN_Group_Prevent_Delete_Handler</members>
         <members>CN_Group_Prevent_Delete_Handler_Test</members>
         <members>CN_Group_Send_To_SAP_LC_Ctrl</members>
         <members>CN_Group_Send_To_SAP_LC_Ctrl_Test</members>
+        <members>CN_Lead_MKT_Assigned_Handler</members>
+        <members>CN_Lead_New_Contact_Request_LC_Ctrl</members>
+        <members>CN_Lead_Owner_Changed_Custom_Notify</members>
+        <members>CN_Mass_Change_Account_Owner_LC_Ctrl</members>
+        <members>CN_Opportunity_Populate_Fields_Handler</members>
         <members>CN_OrderTreeUpsert_WS</members>
         <members>CN_OrderTreeUpsert_WS_Test</members>
+        <members>CN_PromotionLI_Prevent_Delete_Handler</members>
+        <members>CN_PromotionM_Prevent_Delete_Handler</members>
+        <members>CN_PromotionM_Set_Account_Handler</members>
+        <members>CN_Promotion_Prevent_Delete_Handler</members>
+        <members>CN_Promotion_Publish_LC_Ctrl</members>
+        <members>CN_Promotion_Validation_Handler</members>
+        <members>CN_QTP_Prevent_Change_Approved_Handler</members>
+        <members>CN_QuoteItem_Populate_Fields_Handler</members>
+        <members>CN_QuoteItem_Prevent_Delete_Handler</members>
+        <members>CN_Quote_AcceptORDeny_All_Items_LC_Ctrl</members>
+        <members>CN_Quote_Apply_LC_Ctrl</members>
+        <members>CN_Quote_Populate_Approver_Handler</members>
+        <members>CN_Quote_Populate_Fields_Handler</members>
+        <members>CN_Quote_Prevent_Delete_Handler</members>
+        <members>CN_Quote_Send_To_SAP_LC_Ctrl</members>
+        <members>CN_Redirect_Gaode_Map_Controller</members>
+        <members>CN_SP_Populate_Fields_Handler</members>
+        <members>CN_SP_Prevent_Delete_Handler</members>
+        <members>CN_SR_Generate_Event_Visit</members>
+        <members>CN_SR_Populate_Fields_Handler</members>
+        <members>CN_SR_Prevent_Delete_Handler</members>
         <members>CN_ST_Send_To_SAP_LC_Ctrl</members>
         <members>CN_ST_Send_To_SAP_LC_Ctrl_Test</members>
+        <members>CN_SalesPerfor_Populate_Owner_Batch</members>
+        <members>CN_SalesPerfor_Populate_Owner_SCH</members>
         <members>CN_SalesTeam_Prevent_Delete_Handler</members>
         <members>CN_SalesTeam_Prevent_Delete_Handler_Test</members>
         <members>CN_Sales_Order_Send_LC_Ctrl</members>
         <members>CN_Sales_Order_Send_LC_Ctrl_Test</members>
+        <members>CN_Sample_Product_Get_LC_Ctrl</members>
         <members>CN_ShipTo_Prevent_Delete_Handler</members>
         <members>CN_ShipTo_Prevent_Delete_Handler_Test</members>
         <members>CN_Shipto_Change_Request_LC_Ctrl</members>
         <members>Constants</members>
         <members>Context</members>
         <members>CustomException</members>
+        <members>GaodeMapController</members>
         <members>TestDataFactory</members>
         <members>TestHttpMock</members>
         <members>Triggers</members>
         <members>Untils</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CN_Sample_Product_Get_CN_VC</members>
+        <members>CN_Sample_Product_Get_EN_VC</members>
+        <members>CN_Sample_Product_Get_LC</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>Map</members>
+        <name>ApexPage</name>
     </types>
     <types>
         <members>*</members>
@@ -103,12 +168,22 @@
         <members>Account.CN_Account_Approval_V3</members>
         <members>CN_Change_Request__c.CN_CR_Approve_Process</members>
         <members>CN_Change_Request__c.CN_CR_Approve_Process_Auto</members>
+        <members>CN_Chef_Request__c.CN_Chef_Request_1on1</members>
+        <members>CN_Chef_Request__c.CN_Chef_Request_Chef_Self</members>
+        <members>CN_Chef_Request__c.CN_Chef_Request_MKT_DEMO</members>
+        <members>CN_Chef_Request__c.CN_Chef_Request_MKT_DEV</members>
         <members>CN_Credit_Term_Application__c.CN_CTA_Approval_Process</members>
+        <members>CN_Sample_Request__c.CN_SR_Approve_Process</members>
+        <members>Quote.CN_Quote_Approval</members>
         <name>ApprovalProcess</name>
     </types>
     <types>
         <members>*</members>
         <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Sinodis</members>
+        <name>ContentAsset</name>
     </types>
     <types>
         <members>CN_Savencia_Sinodis</members>
@@ -123,10 +198,27 @@
         <name>CustomMetadata</name>
     </types>
     <types>
+        <members>CN_Sinodis_Notification</members>
+        <name>CustomNotificationType</name>
+    </types>
+    <types>
         <members>*</members>
         <members>Account</members>
+        <members>Activity</members>
+        <members>Campaign</members>
+        <members>CampaignMember</members>
+        <members>Case</members>
         <members>Contact</members>
+        <members>Event</members>
+        <members>Lead</members>
+        <members>Opportunity</members>
+        <members>OpportunityLineItem</members>
+        <members>Pricebook2</members>
+        <members>PricebookEntry</members>
         <members>Product2</members>
+        <members>Quote</members>
+        <members>QuoteLineItem</members>
+        <members>Task</members>
         <members>User</members>
         <name>CustomObject</name>
     </types>
@@ -135,13 +227,41 @@
         <name>CustomObjectTranslation</name>
     </types>
     <types>
+        <members>CN_Marketing_Chef_Request_User</members>
+        <members>CN_Marketing_Lead_Manager</members>
+        <members>CN_Marketing_Reassign_Manager</members>
+        <members>CN_Marketing_Update_List_Price</members>
+        <name>CustomPermission</name>
+    </types>
+    <types>
         <members>*</members>
         <name>CustomTab</name>
+    </types>
+    <types>
+        <members>CN_CampaignDashboard</members>
+        <members>CN_CampaignDashboard/bihhOzvrXljIlqeNGMHnRAEnBZIIhG</members>
+        <members>CN_ChefDashboard</members>
+        <members>CN_ChefDashboard/GKuXSxvrcWIGPRYdzoLdtYAMlDtOBH</members>
+        <members>CN_ChefDashboard/nDkuKcyAajSoGrgQmVgWVryCPecXgZ</members>
+        <members>CN_ComplaintDashboard</members>
+        <members>CN_ComplaintDashboard/DaXAidyNJfDCqnOAWVddBGNQxVmAlv</members>
+        <members>CN_LeadDashborad</members>
+        <members>CN_LeadDashborad/iyDVGkUjkIewXfVofmvbRDUNQjSyLQ</members>
+        <members>CN_OpportunityDashboard</members>
+        <members>CN_OpportunityDashboard/BxWLndQeROPrpAGpQyLKGtNmUvzWbs</members>
+        <members>CN_PromotionDashboard</members>
+        <members>CN_PromotionDashboard/gLPLhJFkdCfRTwefhQODOGiUgaVKTn</members>
+        <members>CN_Sales_360_Dashboard</members>
+        <members>CN_Sales_360_Dashboard/nGYoUymLbtFGNMNoQtaMNoyVBNHuHe</members>
+        <members>CN_SampleDashboard</members>
+        <members>CN_SampleDashboard/nwILZOMUGdfiazwtWERzLJJkIGSFPA</members>
+        <name>Dashboard</name>
     </types>
     <types>
         <members>Account.Duplicate_Account_Name</members>
         <members>CN_Ship_to_Party__c.Duplicate_Ship_to</members>
         <members>Contact.Duplicate_Contact_Name</members>
+        <members>Lead.Duplicate_Lead</members>
         <name>DuplicateRule</name>
     </types>
     <types>
@@ -166,8 +286,45 @@
         <members>CN_Email_Folder/CN_CTA_Approval_Notice</members>
         <members>CN_Email_Folder/CN_CTA_Approved</members>
         <members>CN_Email_Folder/CN_CTA_Rejected</members>
+        <members>CN_Email_Folder/CN_Chef_Request_1ON1_Submit</members>
+        <members>CN_Email_Folder/CN_Chef_Request_1on1_Approved</members>
+        <members>CN_Email_Folder/CN_Chef_Request_1on1_Confirmed</members>
+        <members>CN_Email_Folder/CN_Chef_Request_1on1_Rejected</members>
+        <members>CN_Email_Folder/CN_Chef_Request_1on1_Unconfirmed</members>
+        <members>CN_Email_Folder/CN_Chef_Request_Chef_Manager_Approved</members>
+        <members>CN_Email_Folder/CN_Chef_Request_Chef_Manager_Rejected</members>
+        <members>CN_Email_Folder/CN_Chef_Request_Chef_Self_Approved</members>
+        <members>CN_Email_Folder/CN_Chef_Request_Chef_Self_Confirm</members>
+        <members>CN_Email_Folder/CN_Chef_Request_Chef_Self_Rejected</members>
+        <members>CN_Email_Folder/CN_Chef_Request_Chef_Self_Submit</members>
+        <members>CN_Email_Folder/CN_Chef_Request_Chef_Self_Unconfirm</members>
+        <members>CN_Email_Folder/CN_Chef_Request_MKT_DEMO_Approved</members>
+        <members>CN_Email_Folder/CN_Chef_Request_MKT_DEMO_Confirmed</members>
+        <members>CN_Email_Folder/CN_Chef_Request_MKT_DEMO_Rejected</members>
+        <members>CN_Email_Folder/CN_Chef_Request_MKT_DEMO_Submit</members>
+        <members>CN_Email_Folder/CN_Chef_Request_MKT_DEMO_Unconfirmed</members>
+        <members>CN_Email_Folder/CN_Chef_Request_MKT_DEV_Approved</members>
+        <members>CN_Email_Folder/CN_Chef_Request_MKT_DEV_Confirmed</members>
+        <members>CN_Email_Folder/CN_Chef_Request_MKT_DEV_Rejected</members>
+        <members>CN_Email_Folder/CN_Chef_Request_MKT_DEV_Submit</members>
+        <members>CN_Email_Folder/CN_Chef_Request_MKT_DEV_Unconfirmed</members>
+        <members>CN_Email_Folder/CN_Compalint_Rejected</members>
+        <members>CN_Email_Folder/CN_Complaint_Assign_Notification</members>
+        <members>CN_Email_Folder/CN_Complaint_Resolved_Notification</members>
         <members>CN_Email_Folder/CN_Contact_Synced</members>
         <members>CN_Email_Folder/CN_Document_Uploaded</members>
+        <members>CN_Email_Folder/CN_Promotion_Member_Published</members>
+        <members>CN_Email_Folder/CN_Promotion_Published</members>
+        <members>CN_Email_Folder/CN_Quote_Approval</members>
+        <members>CN_Email_Folder/CN_Quote_Approvaled</members>
+        <members>CN_Email_Folder/CN_Quote_Follow_SalesRep</members>
+        <members>CN_Email_Folder/CN_Quote_Rejected</members>
+        <members>CN_Email_Folder/CN_Sample_Request_Approved</members>
+        <members>CN_Email_Folder/CN_Sample_Request_Approved_Cancelled</members>
+        <members>CN_Email_Folder/CN_Sample_Request_Approved_Process_CCE</members>
+        <members>CN_Email_Folder/CN_Sample_Request_Approved_Process_CS</members>
+        <members>CN_Email_Folder/CN_Sample_Request_Rejected</members>
+        <members>CN_Email_Folder/CN_Sample_Request_Submit</members>
         <name>EmailTemplate</name>
     </types>
     <types>
@@ -175,58 +332,148 @@
         <name>FlexiPage</name>
     </types>
     <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+    <types>
         <members>Account-CN Account Direct  Approved</members>
         <members>Account-CN Account Direct Edit</members>
         <members>Account-CN Account Direct New</members>
+        <members>Account-CN Account Direct Read only</members>
         <members>Account-CN Account Indirect Edit</members>
         <members>Account-CN Account Indirect New</members>
+        <members>Account-CN Account Indirect Read only</members>
+        <members>Account-CN Account Prospect Edit</members>
+        <members>Account-CN Account Prospect New</members>
+        <members>Account-CN Account Prospect Read only</members>
         <members>CN_Approval_Aging_Setting__mdt-Approval Aging Setting Layout</members>
         <members>CN_Brand__c-Brand Layout</members>
         <members>CN_Business_Unit__c-Business Unit Layout</members>
+        <members>CN_Campaign_Product__c-Campaign Product Layout</members>
         <members>CN_Change_Request_Fields_Mapping__mdt-CN_Change_Request_Fields_Mapping Layout</members>
+        <members>CN_Change_Request__c-CN Mass Change Account Finance AR Layout</members>
+        <members>CN_Change_Request__c-CN Mass Change Account Owner Layout</members>
         <members>CN_Change_Request__c-CN Sinodis Account Change Request For Finance Layout</members>
         <members>CN_Change_Request__c-CN Sinodis Account Change Request Layout</members>
         <members>CN_Change_Request__c-CN Sinodis New Contact Change Request Layout</members>
         <members>CN_Change_Request__c-CN Sinodis New ShipTo Change Request Layout</members>
         <members>CN_Change_Request__c-CN Sinodis ShipTo Change Request Layout</members>
         <members>CN_Change_Request__c-CN Sinodis Update Contact Change Request Layout</members>
+        <members>CN_Chef_Request__c-CN 1on1 Chef Request</members>
+        <members>CN_Chef_Request__c-CN 1on1 Chef Request New</members>
+        <members>CN_Chef_Request__c-CN MKT_CCE Demo Request</members>
+        <members>CN_Chef_Request__c-CN Marketing development Request</members>
+        <members>CN_Chef_Request__c-CN Self-Chef Demo Request</members>
+        <members>CN_Chef_Request__c-Chef Request Layout</members>
+        <members>CN_Chef_UT__c-CN Chef UT Layout</members>
+        <members>CN_Chefs_Assigned__c-CN Chefs Assigned Layout</members>
+        <members>CN_Chefs_Assigned__c-Chefs Assigned Layout</members>
         <members>CN_City__c-City Layout</members>
+        <members>CN_Contract__c-CN Sinodis Contract Layout</members>
         <members>CN_Credit_Term_Application__c-CN Credit Term Application Layout</members>
+        <members>CN_Demo_Report_Account__c-Demo Report%28Account%29 Layout</members>
+        <members>CN_Demo_Report_Campaign__c-Deme Report%28Campaign%29 Layout</members>
+        <members>CN_Demo_Report__c-Demo Report Layout</members>
+        <members>CN_Demo_Used_Product__c-Demo Used Product Layout</members>
         <members>CN_Distributor_to_End_Customer__c-Distributor to End Customer Layout</members>
         <members>CN_Document__c-Document Layout</members>
         <members>CN_Group__c-Group Layout</members>
         <members>CN_Internal_Employee__c-CN Internal Employee Layout</members>
         <members>CN_Order_Reason__c-Order Reason Layout</members>
+        <members>CN_Payment_History__c-Payment History Layout</members>
+        <members>CN_Payment_Report__c-Payment Report Layout</members>
         <members>CN_Payment_Term_Check__mdt-Payment Term Check Layout</members>
+        <members>CN_Promotion_Line_Item__c-Promotion Line Item Layout</members>
+        <members>CN_Promotion_Member__c-CN Sinodis Promotion Member Layout</members>
+        <members>CN_Promotion__c-CN Sinodis Promotion Layout</members>
         <members>CN_Province__c-Province Layout</members>
+        <members>CN_Quote_To_Promotion__c-CN Quote To Promotion Layout</members>
+        <members>CN_Return__c-CN Sinodis Return Layout</members>
         <members>CN_Sales_Order_Item_Note__c-Sales Order Item Note Layout</members>
         <members>CN_Sales_Order_Item__c-CN Sinodis Sales Order Item Layout</members>
         <members>CN_Sales_Order_Note__c-Sales Order Note Layout</members>
         <members>CN_Sales_Order_Type__c-Sales Order Type Layout</members>
         <members>CN_Sales_Order__c-CN Sinodis Sales Order Layout</members>
+        <members>CN_Sales_Performance__c-CN Sales Performance Layout</members>
+        <members>CN_Sales_Performance__c-CN Sales Target Layout</members>
         <members>CN_Sales_Team__c-Sales Team Layout</members>
+        <members>CN_Sample_Product__c-CN Sinodis Sample Request Item Layout</members>
+        <members>CN_Sample_Request__c-Office Repack Sample Request Layout</members>
+        <members>CN_Sample_Request__c-Whole Pack Sample Request Layout</members>
         <members>CN_Schedule_Line__c-Schedule Line Layout</members>
         <members>CN_Ship_to_Party__c-CN Sinodis Ship to Party Layout</members>
+        <members>Campaign-CN Sinodis Campaign Layout</members>
+        <members>Campaign-CN Sinodis Parent Campaign Layout</members>
+        <members>CampaignMemberStatus-Campaign Member Status Layout</members>
+        <members>Case-CN Complaint Layout</members>
         <members>Contact-CN Sinodis Contact Layout</members>
-        <members>Product2-Product Layout</members>
+        <members>Event-CN Sinodis Event Layout</members>
+        <members>Event-CN Sinodis Visit Layout</members>
+        <members>Global-Global Layout</members>
+        <members>Lead-CN Lead Layout</members>
+        <members>Opportunity-CN Opportunity Layout</members>
+        <members>Pricebook2-CN Price Book Layout</members>
+        <members>PricebookEntry-CN Price Book Entry Layout</members>
+        <members>Product2-CN Product Layout</members>
+        <members>Product2-CN Product Layout</members>
+        <members>Quote-CN Sinodis Quote Layout</members>
+        <members>QuoteLineItem-CN Sinodis Quote Line Item Layout</members>
+        <members>Task-CN Sinodis Task Layout</members>
         <members>User-User Layout</members>
         <name>Layout</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LeadConvertSettings</name>
     </types>
     <types>
         <members>*</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>
+        <members>Account.CN_Lead_VS_Account</members>
         <members>Account.Duplicate_Account_Name</members>
         <members>CN_Ship_to_Party__c.Duplicate_Ship_to</members>
+        <members>Contact.CN_Lead_VS_Contact</members>
         <members>Contact.Duplicate_Contact</members>
+        <members>Lead.CN_Lead_VS_Lead</members>
         <name>MatchingRule</name>
     </types>
     <types>
+        <members>CN_Opportunity_Path</members>
+        <members>CN_Promotion_Path</members>
+        <members>Default</members>
+        <name>PathAssistant</name>
+    </types>
+    <types>
+        <members>CN_CCE_Lead_Qualifier</members>
+        <members>CN_Campaign_Manager</members>
+        <members>CN_Marketing_Chef_Request_User</members>
+        <members>CN_Marketing_Lead_Manager</members>
+        <members>CN_Marketing_Reassign_Manager</members>
+        <members>CN_Marketing_Sample_Manager</members>
+        <members>CN_Marketing_Update_List_Price</members>
+        <members>CN_Product_Edit_Description</members>
+        <members>CN_Promotion_Manager</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>CN_Marketing_Brand_Owner</members>
+        <name>PermissionSetGroup</name>
+    </types>
+    <types>
         <members>Admin</members>
+        <members>CN C%2FS</members>
+        <members>CN CCE</members>
+        <members>CN CEO</members>
         <members>CN CFO</members>
+        <members>CN Chef</members>
+        <members>CN Chef Manager</members>
         <members>CN Finance AR</members>
+        <members>CN Finance Controlling</members>
         <members>CN Finance MDM</members>
+        <members>CN Marketing</members>
+        <members>CN QA</members>
         <members>CN Sales</members>
         <members>CN Sales Lead</members>
         <members>CN Sales MDM</members>
@@ -235,31 +482,160 @@
         <name>Profile</name>
     </types>
     <types>
+        <members>CN_CS_Queue</members>
+        <members>CN_Chef_Manager_Queue</members>
+        <members>CN_QA_Queue</members>
+        <name>Queue</name>
+    </types>
+    <types>
         <members>Account.CN_Account_Request_New_Contact</members>
         <members>Account.CN_Account_Request_New_Ship_To_Party</members>
         <members>Account.CN_Account_Send</members>
         <members>Account.CN_Account_Send</members>
         <members>Account.CN_Account_Status</members>
         <members>Account.CN_Account_Update_Request</members>
+        <members>Account.CN_Convert_to_Direct_Account</members>
         <members>Account.CN_Documents</members>
         <members>Account.CN_Finance_Information</members>
+        <members>Account.CN_Map_Link</members>
         <members>Account.CN_Ready_for_Approval</members>
         <members>CN_Brand__c.CN_Send_To_SAP</members>
         <members>CN_Business_Unit__c.CN_BU_Send</members>
         <members>CN_Change_Request__c.CN_Ready_for_Approval</members>
         <members>CN_Change_Request__c.CN_Send_To_SAP</members>
+        <members>CN_Chef_Request__c.CN_Confirm</members>
+        <members>CN_Chef_Request__c.CN_Ready_for_Approval</members>
+        <members>CN_Chef_Request__c.CN_Send_Request</members>
         <members>CN_Credit_Term_Application__c.CN_Cancel_Application</members>
         <members>CN_Credit_Term_Application__c.CN_Ready_for_Approval</members>
         <members>CN_Group__c.CN_Send_To_SAP</members>
+        <members>CN_New_Event</members>
+        <members>CN_New_Task</members>
+        <members>CN_New_Visit</members>
+        <members>CN_Promotion__c.CN_Abort</members>
+        <members>CN_Promotion__c.CN_Generate_Promotion_Member</members>
+        <members>CN_Promotion__c.CN_PRMT_Ready_for_Publish</members>
+        <members>CN_Promotion__c.CN_Publish_Pomotion</members>
         <members>CN_Sales_Order__c.CN_Retrieve_Status</members>
         <members>CN_Sales_Team__c.CN_Send_To_SAP</members>
+        <members>CN_Sample_Product__c.CN_Update_Customer_Feedback</members>
+        <members>CN_Sample_Product__c.CN_Update_Deliver_Status</members>
+        <members>CN_Sample_Request__c.CN_Cancel_Sample_Request</members>
+        <members>CN_Sample_Request__c.CN_SR_Ready_for_Approval</members>
+        <members>CN_Sample_Request__c.Test</members>
         <members>CN_Ship_to_Party__c.CN_ShipTo_Request_Update</members>
+        <members>Campaign.CN_Generate_Opportunity</members>
+        <members>Case.CN_Complaint_Closed</members>
+        <members>Case.CN_Complaint_Rejected</members>
+        <members>Case.CN_Complaint_Resolved</members>
         <members>Contact.CN_Contact_Update_Request</members>
+        <members>Lead.CN_New_Contact_Request</members>
+        <members>Quote.CN_AcceptOrDeny_All_Quote_Items</members>
+        <members>Quote.CN_Apply</members>
+        <members>Quote.CN_Notify_Finance</members>
+        <members>Quote.CN_Quote_Ready_for_Approval</members>
+        <members>Quote.CN_Send_To_SAP</members>
         <name>QuickAction</name>
     </types>
     <types>
         <members>Talend_Endpoint</members>
         <name>RemoteSiteSetting</name>
+    </types>
+    <types>
+        <members>CN_CampaignReport</members>
+        <members>CN_CampaignReport/CN_Attendance_by_EventExecution_Type</members>
+        <members>CN_CampaignReport/CN_Attendance_by_Execution_Type</members>
+        <members>CN_CampaignReport/CN_Campaigns_by_Event_Type</members>
+        <members>CN_CampaignReport/CN_Campaigns_by_Execution_Type</members>
+        <members>CN_CampaignReport/CN_Complaint_By_Accepted_Date</members>
+        <members>CN_CampaignReport/CN_Lead_Conversion_Rate</members>
+        <members>CN_CampaignReport/CN_Oppo_generated_by_Campaign_Type</members>
+        <members>CN_CampaignReport/CN_Opportunities_Generated_by_Campaign</members>
+        <members>CN_ChefReport</members>
+        <members>CN_ChefReport/CN_Chef_Average_Time_Spent_by_Event_Type</members>
+        <members>CN_ChefReport/CN_Chef_Request_by_Event_type_by_Month</members>
+        <members>CN_ChefReport/CN_Chef_UT</members>
+        <members>CN_ChefReport/CN_Chef_requests_by_Event_Type_by_Chef</members>
+        <members>CN_ComplaintReport</members>
+        <members>CN_ComplaintReport/CN_Complaint_Trend_by_Month_YTD</members>
+        <members>CN_ComplaintReport/CN_Complaint_by_Channel_YTD</members>
+        <members>CN_ComplaintReport/CN_Complaint_by_Reason_YTD</members>
+        <members>CN_ComplaintReport/CN_Complaint_by_Sales_Office_YTD</members>
+        <members>CN_Customer_360_Report</members>
+        <members>CN_Customer_360_Report/CN_Complaint_Case_by_Customer</members>
+        <members>CN_Customer_360_Report/CN_Customer_Status</members>
+        <members>CN_Customer_360_Report/CN_Customer_Status</members>
+        <members>CN_Customer_360_Report/CN_Customer_Visits_Planned</members>
+        <members>CN_Customer_360_Report/CN_No_of_Opportunities_by_Stage</members>
+        <members>CN_Customer_360_Report/CN_Overdue_Payment</members>
+        <members>CN_Customer_360_Report/CN_Sales_Order_Summary</members>
+        <members>CN_Customer_360_Report/CN_Sales_Order_by_Deliver_Status</members>
+        <members>CN_Customer_360_Report/CN_Sample_Items_By_Status_Indirect</members>
+        <members>CN_Customer_360_Report/CN_Sample_Items_by_Status_Direct</members>
+        <members>CN_LeadReport</members>
+        <members>CN_LeadReport/CN_Average_time_of_lead_conversion_days</members>
+        <members>CN_LeadReport/CN_Converted_Prospect_Customers</members>
+        <members>CN_LeadReport/CN_Lead_Conversion</members>
+        <members>CN_LeadReport/CN_Leads_by_Source_Category</members>
+        <members>CN_OpportunityReport</members>
+        <members>CN_OpportunityReport/CN_Expected_Amount_By_Opp_Stage</members>
+        <members>CN_OpportunityReport/CN_Opportunity_By_lost_Reason</members>
+        <members>CN_OpportunityReport/CN_Opportunity_with_Demo</members>
+        <members>CN_OpportunityReport/CN_Opportunity_with_Quotation</members>
+        <members>CN_OpportunityReport/CN_Opportunity_with_Sample</members>
+        <members>CN_PromotionReport</members>
+        <members>CN_PromotionReport/CN_Accetped_Promotion_by_Custom_Category</members>
+        <members>CN_PromotionReport/CN_Customers_with_Accetped_Promotions</members>
+        <members>CN_PromotionReport/CN_Customers_with_Quote_Promotions</members>
+        <members>CN_PromotionReport/CN_Promotion_Targeted_Customers</members>
+        <members>CN_PromotionReport/CN_Promotions_By_Brand</members>
+        <members>CN_PromotionReport/CN_Total_Promotions</members>
+        <members>CN_PromotionReport/CN_Total_Promotions_by_Channel</members>
+        <members>CN_PromotionReport/CN_Total_Promotions_by_Customer_Category</members>
+        <members>CN_PromotionReport/CN_Total_Promotions_by_Promotion_Type</members>
+        <members>CN_Sales_360_Report</members>
+        <members>CN_Sales_360_Report/CN_Achievements_MTD</members>
+        <members>CN_Sales_360_Report/CN_Average_visits_by_Customer_Layer_MTD1</members>
+        <members>CN_Sales_360_Report/CN_Completed_Visits_for_WS_MTD</members>
+        <members>CN_Sales_360_Report/CN_Custom_Status_Trend_Report</members>
+        <members>CN_Sales_360_Report/CN_Customer_Visit_Coverage</members>
+        <members>CN_Sales_360_Report/CN_Customer_Visit_Coverage_Indirect</members>
+        <members>CN_Sales_360_Report/CN_Customer_Visits_Planned_WTD</members>
+        <members>CN_Sales_360_Report/CN_Customer_Visits_Target_per_week1</members>
+        <members>CN_Sales_360_Report/CN_No_Active_Campaigns</members>
+        <members>CN_Sales_360_Report/CN_No_of_Account_by_Stage_YTD</members>
+        <members>CN_Sales_360_Report/CN_No_of_Active_Promotion</members>
+        <members>CN_Sales_360_Report/CN_Opportunity_by_Stage_YTD</members>
+        <members>CN_Sales_360_Report/CN_Over_Due_Payment_Status</members>
+        <members>CN_Sales_360_Report/CN_Visit_Completeness_MTD</members>
+        <members>CN_Sales_360_Report/CN_Visit_Completeness_VS_Planned_MTD</members>
+        <members>CN_Sales_360_Report/CN_Visit_Completeness_VS_Planned_WTD</members>
+        <members>CN_Sales_360_Report/CN_Visit_Completeness_WTD</members>
+        <members>CN_Sales_360_Report/CN_Visits_by_week_MTD</members>
+        <members>CN_SampleReport</members>
+        <members>CN_SampleReport/CN_Sample_Feedback_Overdue</members>
+        <members>CN_SampleReport/CN_Sample_Request_Item_by_Month_YTD</members>
+        <members>CN_SampleReport/CN_Sample_Request_Item_by_Status_YTD</members>
+        <members>TM_Report</members>
+        <members>TM_Report/TM_Account_Report</members>
+        <members>TM_Report/TM_Accounts_History_Report</members>
+        <name>Report</name>
+    </types>
+    <types>
+        <members>CN_Account_Direct_with_sample_with_sample_product</members>
+        <members>CN_Account_Indirect_with_Sample_with_Sample_Item</members>
+        <members>CN_Account_Opportunity</members>
+        <members>CN_Account_Sales_Order_Item</members>
+        <members>CN_Account_With_Cases</members>
+        <members>CN_Account_with_Activities</members>
+        <members>CN_Account_with_Activity</members>
+        <members>CN_Campaign_With_Lead_Conveted_Account</members>
+        <members>CN_Chef_with_Chef_Assigned</members>
+        <members>CN_Lead</members>
+        <members>CN_Promotion_with_Member_with_Quote_Line_Item</members>
+        <members>CN_Promotion_with_Promotion_Line_Item</members>
+        <members>CN_User_Report_Type</members>
+        <name>ReportType</name>
     </types>
     <types>
         <members>CN_0018_Sales_Manager_Food_Service_Wholesale_East</members>
@@ -340,13 +716,27 @@
         <members>CN_2162_Sales_Manager_Food_Service_Key_Account_South</members>
         <members>CN_2171_National_Wholesale_Director</members>
         <members>CN_2174_Sales_Representative_Food_Service_Direct_Sales_North</members>
+        <members>CN_CCE</members>
+        <members>CN_CCE_Assistant</members>
+        <members>CN_CCE_Assistant_DS</members>
+        <members>CN_CCE_Assistant_KA</members>
+        <members>CN_CCE_Assistant_WS</members>
+        <members>CN_CCE_Director</members>
         <members>CN_CEO</members>
+        <members>CN_CS</members>
+        <members>CN_Chef</members>
+        <members>CN_Chef_Manager</members>
         <members>CN_China</members>
         <members>CN_Commercial_Director</members>
         <members>CN_Finance_AR</members>
         <members>CN_Finance_Director</members>
         <members>CN_Finance_MDM</members>
+        <members>CN_MKT_Member</members>
+        <members>CN_Marketing</members>
+        <members>CN_Marketing_Director</members>
+        <members>CN_QA</members>
         <members>CN_Sales_MDM</members>
+        <members>CN_Service</members>
         <members>CN_VACANCY_Channel_Supervisor_Food_Service_Direct_Sales_East</members>
         <members>CN_VACANCY_Channel_Supervisor_Food_Service_Direct_Sales_South</members>
         <members>CN_VACANCY_National_Direct_Sales_Director</members>
@@ -357,7 +747,92 @@
     <types>
         <members>Account</members>
         <members>CN_Change_Request__c</members>
+        <members>CN_Chef_Request__c</members>
+        <members>CN_Customer_Status_Trend__c</members>
+        <members>CN_Promotion_Member__c</members>
+        <members>CN_Promotion__c</members>
+        <members>CN_Sales_Performance__c</members>
+        <members>CN_Sample_Request__c</members>
+        <members>Campaign</members>
+        <members>Case</members>
+        <members>Lead</members>
+        <members>Opportunity</members>
         <name>SharingRules</name>
+    </types>
+    <types>
+        <members>AccountOwnership</members>
+        <members>AccountType</members>
+        <members>CampaignMemberStatus</members>
+        <members>CampaignStatus</members>
+        <members>CampaignType</members>
+        <members>CaseOrigin</members>
+        <members>CasePriority</members>
+        <members>CaseReason</members>
+        <members>CaseStatus</members>
+        <members>CaseType</members>
+        <members>EventSubject</members>
+        <members>EventType</members>
+        <members>LeadSource</members>
+        <members>LeadStatus</members>
+        <members>OpportunityStage</members>
+        <members>OpportunityType</members>
+        <members>Product2Family</members>
+        <members>QuoteStatus</members>
+        <members>Salutation</members>
+        <members>TaskPriority</members>
+        <members>TaskStatus</members>
+        <members>TaskSubject</members>
+        <members>TaskType</members>
+        <name>StandardValueSet</name>
+    </types>
+    <types>
+        <members>AccountOwnership-en_US</members>
+        <members>AccountOwnership-zh_CN</members>
+        <members>AccountType-en_US</members>
+        <members>AccountType-zh_CN</members>
+        <members>CampaignMemberStatus-en_US</members>
+        <members>CampaignMemberStatus-zh_CN</members>
+        <members>CampaignStatus-en_US</members>
+        <members>CampaignStatus-zh_CN</members>
+        <members>CampaignType-en_US</members>
+        <members>CampaignType-zh_CN</members>
+        <members>CaseOrigin-en_US</members>
+        <members>CaseOrigin-zh_CN</members>
+        <members>CasePriority-en_US</members>
+        <members>CasePriority-zh_CN</members>
+        <members>CaseReason-en_US</members>
+        <members>CaseReason-zh_CN</members>
+        <members>CaseStatus-en_US</members>
+        <members>CaseStatus-zh_CN</members>
+        <members>CaseType-en_US</members>
+        <members>CaseType-zh_CN</members>
+        <members>EventSubject-en_US</members>
+        <members>EventSubject-zh_CN</members>
+        <members>EventType-en_US</members>
+        <members>EventType-zh_CN</members>
+        <members>LeadSource-en_US</members>
+        <members>LeadSource-zh_CN</members>
+        <members>LeadStatus-en_US</members>
+        <members>LeadStatus-zh_CN</members>
+        <members>OpportunityStage-en_US</members>
+        <members>OpportunityStage-zh_CN</members>
+        <members>OpportunityType-en_US</members>
+        <members>OpportunityType-zh_CN</members>
+        <members>Product2Family-en_US</members>
+        <members>Product2Family-zh_CN</members>
+        <members>QuoteStatus-en_US</members>
+        <members>QuoteStatus-zh_CN</members>
+        <members>Salutation-en_US</members>
+        <members>Salutation-zh_CN</members>
+        <members>TaskPriority-en_US</members>
+        <members>TaskPriority-zh_CN</members>
+        <members>TaskStatus-en_US</members>
+        <members>TaskStatus-zh_CN</members>
+        <members>TaskSubject-en_US</members>
+        <members>TaskSubject-zh_CN</members>
+        <members>TaskType-en_US</members>
+        <members>TaskType-zh_CN</members>
+        <name>StandardValueSetTranslation</name>
     </types>
     <types>
         <members>*</members>
@@ -375,8 +850,20 @@
     <types>
         <members>Account</members>
         <members>BusinessHours</members>
+        <members>Campaign</members>
+        <members>Case</members>
         <members>Currency</members>
+        <members>Event</members>
         <members>Language</members>
+        <members>LeadConfig</members>
+        <members>Mobile</members>
+        <members>Name</members>
+        <members>Notifications</members>
+        <members>Opportunity</members>
+        <members>PathAssistant</members>
+        <members>Product</members>
+        <members>Quote</members>
+        <members>RecordPage</members>
         <name>Settings</name>
     </types>
     <version>51.0</version>

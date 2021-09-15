@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Chef Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Chef Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>CN_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>CN_Account__c</name>
+        <relationshipLabel><!-- Chef Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- e.g. mousse cake, cream cake, tiramisu --></help>
+        <label><!-- Application Type Selling --></label>
+        <name>CN_Application_Type_Selling__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver1 --></label>
+        <name>CN_Approver_1__c</name>
+        <relationshipLabel><!-- Chef Requests (Approver1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assigned Chefs Count --></label>
+        <name>CN_Assigned_Chefs_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>CN_Brand__c</name>
+        <picklistValues>
+            <masterLabel>5J</masterLabel>
+            <translation><!-- 5J --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANTICHICOLLI</masterLabel>
+            <translation><!-- ANTICHICOLLI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BARNIER OLIVES</masterLabel>
+            <translation><!-- BARNIER OLIVES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BASTIDES</masterLabel>
+            <translation><!-- BASTIDES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEAUFOR</masterLabel>
+            <translation><!-- BEAUFOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BERETTA</masterLabel>
+            <translation><!-- BERETTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEYONG MEAT</masterLabel>
+            <translation><!-- BEYONG MEAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beillevaire</masterLabel>
+            <translation><!-- Beillevaire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPRICE DES DIEUX</masterLabel>
+            <translation><!-- CAPRICE DES DIEUX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAVIAR &amp; TRADITIONS</masterLabel>
+            <translation><!-- CAVIAR &amp; TRADITIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COEUR DE LION</masterLabel>
+            <translation><!-- COEUR DE LION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORMAN</masterLabel>
+            <translation><!-- CORMAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabrifin</masterLabel>
+            <translation><!-- Cabrifin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chateau d&apos;Estoublon</masterLabel>
+            <translation><!-- Chateau d&apos;Estoublon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef Studio OIL</masterLabel>
+            <translation><!-- Chef Studio OIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef Studio Pastry</masterLabel>
+            <translation><!-- Chef Studio Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOBLA</masterLabel>
+            <translation><!-- DOBLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DODONI</masterLabel>
+            <translation><!-- DODONI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elle &amp; Vire</masterLabel>
+            <translation><!-- Elle &amp; Vire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FERMES DE LA TREMBLAYE</masterLabel>
+            <translation><!-- FERMES DE LA TREMBLAYE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giovanni Ferrari</masterLabel>
+            <translation><!-- Giovanni Ferrari --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILE DE FRANCE</masterLabel>
+            <translation><!-- ILE DE FRANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IRCA</masterLabel>
+            <translation><!-- IRCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LE RUSTIQUE</masterLabel>
+            <translation><!-- LE RUSTIQUE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOSTE TRADI-FRANCE</masterLabel>
+            <translation><!-- LOSTE TRADI-FRANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lescure</masterLabel>
+            <translation><!-- Lescure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liberty Lane</masterLabel>
+            <translation><!-- Liberty Lane --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milkana</masterLabel>
+            <translation><!-- Milkana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norohy</masterLabel>
+            <translation><!-- Norohy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OVODAN</masterLabel>
+            <translation><!-- OVODAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAVONI</masterLabel>
+            <translation><!-- PAVONI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pomone</masterLabel>
+            <translation><!-- Pomone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUORUM</masterLabel>
+            <translation><!-- QUORUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAVIFRUIT</masterLabel>
+            <translation><!-- RAVIFRUIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REPUBLIC DEL CACAO</masterLabel>
+            <translation><!-- REPUBLIC DEL CACAO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remy Cointreau</masterLabel>
+            <translation><!-- Remy Cointreau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roquefort Papillon</masterLabel>
+            <translation><!-- Roquefort Papillon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rougie</masterLabel>
+            <translation><!-- Rougie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMORET</masterLabel>
+            <translation><!-- SMORET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sabaton</masterLabel>
+            <translation><!-- Sabaton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Agur</masterLabel>
+            <translation><!-- Saint Agur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sevarome</masterLabel>
+            <translation><!-- Sevarome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sosa</masterLabel>
+            <translation><!-- Sosa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urbani Tartufi SRL</masterLabel>
+            <translation><!-- Urbani Tartufi SRL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALRHONA</masterLabel>
+            <translation><!-- VALRHONA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vieuxx Pane</masterLabel>
+            <translation><!-- Vieuxx Pane --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEISS</masterLabel>
+            <translation><!-- WEISS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>tbc</masterLabel>
+            <translation><!-- tbc --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Campaign Name --></label>
+        <name>CN_Campaign_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>CN_Campaign__c</name>
+        <relationshipLabel><!-- Chef Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments for Chef --></label>
+        <name>CN_Comments_for_Chef__c</name>
+    </fields>
+    <fields>
+        <help><!-- Urgent special customers or last month delayed to this month, please note --></help>
+        <label><!-- Comments for Urgent Case --></label>
+        <name>CN_Comments_for_Urgent_Case__c</name>
+    </fields>
+    <fields>
+        <help><!-- What competitor brands customer is buying? --></help>
+        <label><!-- Competitor Brands --></label>
+        <name>CN_Competitor_Brands__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmed --></label>
+        <name>CN_Confirmed__c</name>
+    </fields>
+    <fields>
+        <help><!-- e.g. drink cost 20%, dessert cost 30% --></help>
+        <label><!-- Cost Limit --></label>
+        <name>CN_Cost_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Attendees Title --></label>
+        <name>CN_Customer_Attendees_Title__c</name>
+        <picklistValues>
+            <masterLabel>Purchase Manager</masterLabel>
+            <translation><!-- Purchase Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R&amp;D Manager</masterLabel>
+            <translation><!-- R&amp;D Manager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer City --></label>
+        <name>CN_Customer_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer ID --></label>
+        <name>CN_Customer_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demo Duration --></label>
+        <name>CN_Demo_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demo End Date --></label>
+        <name>CN_Demo_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demo Report Count --></label>
+        <name>CN_Demo_Report_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demo Start Date --></label>
+        <name>CN_Demo_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>CN_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display in Calendar --></label>
+        <name>CN_Display_in_Calendar__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>CN_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Detail --></label>
+        <name>CN_Event_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Location End Date AM/PM --></label>
+        <name>CN_Event_Location_End_Date_AM_PM__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Location End Date Formula --></label>
+        <name>CN_Event_Location_End_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Location End Date --></label>
+        <name>CN_Event_Location_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Location Start Date AM/PM --></label>
+        <name>CN_Event_Location_Start_Date_AM_PM__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Location Start Date Formula --></label>
+        <name>CN_Event_Location_Start_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Location Start Date --></label>
+        <name>CN_Event_Location_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Location --></label>
+        <name>CN_Event_Location__c</name>
+        <picklistValues>
+            <masterLabel>BJ Chef Studio</masterLabel>
+            <translation><!-- BJ Chef Studio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SH Chef Studio</masterLabel>
+            <translation><!-- SH Chef Studio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SH R&amp;D Center</masterLabel>
+            <translation><!-- SH R&amp;D Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SZ Chef Studio</masterLabel>
+            <translation><!-- SZ Chef Studio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Third Party</masterLabel>
+            <translation><!-- The Third Party --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Theme --></label>
+        <name>CN_Event_Theme__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Type --></label>
+        <name>CN_Event_Type__c</name>
+        <picklistValues>
+            <masterLabel>1-on-1 service</masterLabel>
+            <translation><!-- 1-on-1 service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Events</masterLabel>
+            <translation><!-- Company Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Solution Approach</masterLabel>
+            <translation><!-- Full Solution Approach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Streaming</masterLabel>
+            <translation><!-- Live Streaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Visit</masterLabel>
+            <translation><!-- Market Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting</masterLabel>
+            <translation><!-- Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OFF</masterLabel>
+            <translation><!-- OFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paperwork</masterLabel>
+            <translation><!-- Paperwork --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Testing</masterLabel>
+            <translation><!-- Product Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Demo</masterLabel>
+            <translation><!-- Public Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recipes R&amp;D</masterLabel>
+            <translation><!-- Recipes R&amp;D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SINODIS Event</masterLabel>
+            <translation><!-- SINODIS Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Practice &amp; Training</masterLabel>
+            <translation><!-- Self Practice &amp; Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short Video</masterLabel>
+            <translation><!-- Short Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP Class</masterLabel>
+            <translation><!-- VIP Class --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Guest Chef --></label>
+        <name>CN_Guest_Chef__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deletable --></label>
+        <name>CN_Is_Deletable__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN_Is_Subimit_Within_One_Day --></label>
+        <name>CN_Is_Subimit_Within_One_Day__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please input SKUs or brands. --></help>
+        <label><!-- Key Products to Push --></label>
+        <name>CN_Key_Products_to_Push__c</name>
+    </fields>
+    <fields>
+        <label><!-- MKT/CCE PIC --></label>
+        <name>CN_MKT_CCE_PIC__c</name>
+        <relationshipLabel><!-- Chef Requests (MKT/CCE PIC) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>CN_Opportunity__c</name>
+        <relationshipLabel><!-- Chef Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Owner Name --></label>
+        <name>CN_Owner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Please Confirm --></label>
+        <name>CN_Please_Confirm_Ready__c</name>
+    </fields>
+    <fields>
+        <label><!-- Please Confirm --></label>
+        <name>CN_Please_Confirm__c</name>
+    </fields>
+    <fields>
+        <help><!-- e.g. Average price of one drink is 32 RMB, average price of a cake is 48 RMB. --></help>
+        <label><!-- Price Positioning --></label>
+        <name>CN_Price_Positioning__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>CN_Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>Chef Studio Pastry</masterLabel>
+            <translation><!-- Chef Studio Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dairy</masterLabel>
+            <translation><!-- Dairy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOURMET &amp; GROCERY</masterLabel>
+            <translation><!-- GOURMET &amp; GROCERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PASTRY</masterLabel>
+            <translation><!-- PASTRY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ready Date --></label>
+        <name>CN_Ready_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Channel --></label>
+        <name>CN_Sales_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>CN_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>CN_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Approval</masterLabel>
+            <translation><!-- Ready for Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Approval</masterLabel>
+            <translation><!-- Submitted for Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Must input if event location is selected as the third party --></help>
+        <label><!-- The Third Party City --></label>
+        <name>CN_The_Third_Party_City__c</name>
+        <relationshipLabel><!-- Chef Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Today Period --></label>
+        <name>CN_Today_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Days Of End Date Month --></label>
+        <name>CN_Total_Days_Of_End_Date_Month__c</name>
+    </fields>
+    <layouts>
+        <layout>CN 1on1 Chef Request</layout>
+        <sections>
+            <label><!-- Chef Management Confirmation --></label>
+            <section>Chef Management Confirmation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN 1on1 Chef Request New</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN MKT_CCE Demo Request</layout>
+        <sections>
+            <label><!-- Chef Management Confirmation --></label>
+            <section>Chef Management Confirmation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN Marketing development Request</layout>
+        <sections>
+            <label><!-- Chef Management Confirmation --></label>
+            <section>Chef Management Confirmation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN Self-Chef Demo Request</layout>
+        <sections>
+            <label><!-- Chef Management Confirmation --></label>
+            <section>Chef Management Confirmation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Chef Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Confirm/Unconfirm --></label>
+        <name>CN_Confirm</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Ready for Approval/Back to New --></label>
+        <name>CN_Ready_for_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Request --></label>
+        <name>CN_Send_Request</name>
+    </quickActions>
+    <recordTypes>
+        <label>1 on 1 Service</label>
+        <name>CN_1on1_Service_Chef_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label>1 on 1 Service</label>
+        <name>CN_1on1_Service_Chef_Request_New</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Self-Work</label>
+        <name>CN_Chef_Self_Work_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Marketing/CCE Demo</label>
+        <name>CN_Marketing_CCE_Chef_Demo_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Marketing Development</label>
+        <name>CN_Marketing_Development_Request</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You are only permitted to create chef request scheduled in next month if request is submitted before 15th of current month, if request is submitted after 15th of current month, only chef request scheduled in the month after next month is allowed. --></errorMessage>
+        <name>CN_CHECK_DEMO_START_DATE_1ON1_MDR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are only permitted to create chef request scheduled after 60 days. --></errorMessage>
+        <name>CN_CHECK_DEMO_START_DATE_MTK_DEMO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At least 10 words for Application Type Selling --></errorMessage>
+        <name>CN_Check_Application_Type_Selling_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Demo Start Date and Demo End Date should within Campaign Start Date and End Date. --></errorMessage>
+        <name>CN_Check_Campaign_Demo_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the Campign not cloesd yet, could create Chef Request --></errorMessage>
+        <name>CN_Check_Campaign_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Assign Chefs before Confirm. --></errorMessage>
+        <name>CN_Check_Chef_Assigned_Count</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to clone chef request. --></errorMessage>
+        <name>CN_Check_Clone_Permission</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At least 10 words for Competitor Brands --></errorMessage>
+        <name>CN_Check_Competitor_Brands_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Chef Manager could change the comfirm status and the chef request must be approved. --></errorMessage>
+        <name>CN_Check_Confirmed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At least 10 words for Cost Limit --></errorMessage>
+        <name>CN_Check_Cost_Limit_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start date should not earlier than end date --></errorMessage>
+        <name>CN_Check_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Demo End Date must greater than Demo Start Date. --></errorMessage>
+        <name>CN_Check_Demo_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Demo duration couldn&apos;t over 14 days. --></errorMessage>
+        <name>CN_Check_Demo_Duration</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Demo Start Date must greater than or equal to today. --></errorMessage>
+        <name>CN_Check_Demo_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allowed to edit after approved. --></errorMessage>
+        <name>CN_Check_Edit_After_Approved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Event Location Start date must greater than Event Location End Date --></errorMessage>
+        <name>CN_Check_Event_Location_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input Event Location Date before confirm. --></errorMessage>
+        <name>CN_Check_Event_Location_Date_On_Comfirm</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At least 10 words for Key Products to Push --></errorMessage>
+        <name>CN_Check_Key_Products_to_Push_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the opportunity into stage Proposal/Demo/Sample could create Chef Request --></errorMessage>
+        <name>CN_Check_Opportunty_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At least 10 words for Price Positioning --></errorMessage>
+        <name>CN_Check_Price_Positioning_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allow to edit when it&apos;s ready for approval. --></errorMessage>
+        <name>CN_Check_Ready_For_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start Date must greater than or equal to today --></errorMessage>
+        <name>CN_Check_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input third party city if event location is selected with The Third Party. --></errorMessage>
+        <name>CN_Check_Third_Party_City</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity must related to Account. --></errorMessage>
+        <name>CN_Chef_Request_Check_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allowed back to new after submit for approval and approved. --></errorMessage>
+        <name>CN_Prevent_Back_To_New_After_Submit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allowed to change chef requests campaign. --></errorMessage>
+        <name>CN_Prevent_Change_Campaign</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allowed to change chef requests opportunity. --></errorMessage>
+        <name>CN_Prevent_Change_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to create chef request with campaign --></errorMessage>
+        <name>CN_Prevent_Create_1ON1WithCampaign</name>
+    </validationRules>
+</CustomObjectTranslation>

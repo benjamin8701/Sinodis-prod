@@ -1,0 +1,1733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AdvancedSetup</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AdvancedSetup</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AdvancedSetup</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>CN_Campaign_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>CN_Campaign_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>CN_Campaign</fullName>
+        <fields>Name</fields>
+        <fields>StartDate</fields>
+        <fields>EndDate</fields>
+        <fields>Status</fields>
+        <fields>Type</fields>
+        <fields>IsActive</fields>
+        <label>Campaign</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>CN_Parent</fullName>
+        <fields>Name</fields>
+        <label>Parent</label>
+    </compactLayouts>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>ActualCost</fullName>
+    </fields>
+    <fields>
+        <fullName>AmountAllOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>AmountWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>BudgetedCost</fullName>
+    </fields>
+    <fields>
+        <fullName>CN_All_Attended_Members_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>All Attended Members Number</label>
+        <summaryFilterItems>
+            <field>CampaignMember.CN_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Lead</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>CampaignMember.Status</field>
+            <operation>equals</operation>
+            <value>Attended</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CN_All_Members_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>All Members Number</label>
+        <summaryFilterItems>
+            <field>CampaignMember.CN_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Lead</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CN_All_SKU_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>All SKU Number</label>
+        <summaryForeignKey>CN_Campaign_Product__c.CN_Campaign__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CN_Brand__c</fullName>
+        <externalId>false</externalId>
+        <label>Brand</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>5J</fullName>
+                    <default>false</default>
+                    <label>5J</label>
+                </value>
+                <value>
+                    <fullName>ANTICHICOLLI</fullName>
+                    <default>false</default>
+                    <label>ANTICHICOLLI</label>
+                </value>
+                <value>
+                    <fullName>BARNIER OLIVES</fullName>
+                    <default>false</default>
+                    <label>BARNIER OLIVES</label>
+                </value>
+                <value>
+                    <fullName>BASTIDES</fullName>
+                    <default>false</default>
+                    <label>BASTIDES</label>
+                </value>
+                <value>
+                    <fullName>BEAUFOR</fullName>
+                    <default>false</default>
+                    <label>BEAUFOR</label>
+                </value>
+                <value>
+                    <fullName>Beillevaire</fullName>
+                    <default>false</default>
+                    <label>Beillevaire</label>
+                </value>
+                <value>
+                    <fullName>BERETTA</fullName>
+                    <default>false</default>
+                    <label>BERETTA</label>
+                </value>
+                <value>
+                    <fullName>BEYONG MEAT</fullName>
+                    <default>false</default>
+                    <label>BEYONG MEAT</label>
+                </value>
+                <value>
+                    <fullName>Cabrifin</fullName>
+                    <default>false</default>
+                    <label>Cabrifin</label>
+                </value>
+                <value>
+                    <fullName>CAPRICE DES DIEUX</fullName>
+                    <default>false</default>
+                    <label>CAPRICE DES DIEUX</label>
+                </value>
+                <value>
+                    <fullName>CAVIAR &amp; TRADITIONS</fullName>
+                    <default>false</default>
+                    <label>CAVIAR &amp; TRADITIONS</label>
+                </value>
+                <value>
+                    <fullName>Chateau d&apos;Estoublon</fullName>
+                    <default>false</default>
+                    <label>Chateau d&apos;Estoublon</label>
+                </value>
+                <value>
+                    <fullName>Chef Studio OIL</fullName>
+                    <default>false</default>
+                    <label>Chef Studio OIL</label>
+                </value>
+                <value>
+                    <fullName>Chef Studio Pastry</fullName>
+                    <default>false</default>
+                    <label>Chef Studio Pastry</label>
+                </value>
+                <value>
+                    <fullName>COEUR DE LION</fullName>
+                    <default>false</default>
+                    <label>COEUR DE LION</label>
+                </value>
+                <value>
+                    <fullName>CORMAN</fullName>
+                    <default>false</default>
+                    <label>CORMAN</label>
+                </value>
+                <value>
+                    <fullName>DOBLA</fullName>
+                    <default>false</default>
+                    <label>DOBLA</label>
+                </value>
+                <value>
+                    <fullName>DODONI</fullName>
+                    <default>false</default>
+                    <label>DODONI</label>
+                </value>
+                <value>
+                    <fullName>Elle &amp; Vire</fullName>
+                    <default>false</default>
+                    <label>Elle &amp; Vire</label>
+                </value>
+                <value>
+                    <fullName>FERMES DE LA TREMBLAYE</fullName>
+                    <default>false</default>
+                    <label>FERMES DE LA TREMBLAYE</label>
+                </value>
+                <value>
+                    <fullName>Giovanni Ferrari</fullName>
+                    <default>false</default>
+                    <label>Giovanni Ferrari</label>
+                </value>
+                <value>
+                    <fullName>ILE DE FRANCE</fullName>
+                    <default>false</default>
+                    <label>ILE DE FRANCE</label>
+                </value>
+                <value>
+                    <fullName>IRCA</fullName>
+                    <default>false</default>
+                    <label>IRCA</label>
+                </value>
+                <value>
+                    <fullName>LE RUSTIQUE</fullName>
+                    <default>false</default>
+                    <label>LE RUSTIQUE</label>
+                </value>
+                <value>
+                    <fullName>Lescure</fullName>
+                    <default>false</default>
+                    <label>Lescure</label>
+                </value>
+                <value>
+                    <fullName>Liberty Lane</fullName>
+                    <default>false</default>
+                    <label>Liberty Lane</label>
+                </value>
+                <value>
+                    <fullName>LOSTE TRADI-FRANCE</fullName>
+                    <default>false</default>
+                    <label>LOSTE TRADI-FRANCE</label>
+                </value>
+                <value>
+                    <fullName>Milkana</fullName>
+                    <default>false</default>
+                    <label>Milkana</label>
+                </value>
+                <value>
+                    <fullName>Norohy</fullName>
+                    <default>false</default>
+                    <label>Norohy</label>
+                </value>
+                <value>
+                    <fullName>OVODAN</fullName>
+                    <default>false</default>
+                    <label>OVODAN</label>
+                </value>
+                <value>
+                    <fullName>PAVONI</fullName>
+                    <default>false</default>
+                    <label>PAVONI</label>
+                </value>
+                <value>
+                    <fullName>Pomone</fullName>
+                    <default>false</default>
+                    <label>Pomone</label>
+                </value>
+                <value>
+                    <fullName>QUORUM</fullName>
+                    <default>false</default>
+                    <label>QUORUM</label>
+                </value>
+                <value>
+                    <fullName>RAVIFRUIT</fullName>
+                    <default>false</default>
+                    <label>RAVIFRUIT</label>
+                </value>
+                <value>
+                    <fullName>Remy Cointreau</fullName>
+                    <default>false</default>
+                    <label>Remy Cointreau</label>
+                </value>
+                <value>
+                    <fullName>REPUBLIC DEL CACAO</fullName>
+                    <default>false</default>
+                    <label>REPUBLIC DEL CACAO</label>
+                </value>
+                <value>
+                    <fullName>Roquefort Papillon</fullName>
+                    <default>false</default>
+                    <label>Roquefort Papillon</label>
+                </value>
+                <value>
+                    <fullName>Rougie</fullName>
+                    <default>false</default>
+                    <label>Rougie</label>
+                </value>
+                <value>
+                    <fullName>Sabaton</fullName>
+                    <default>false</default>
+                    <label>Sabaton</label>
+                </value>
+                <value>
+                    <fullName>Saint Agur</fullName>
+                    <default>false</default>
+                    <label>Saint Agur</label>
+                </value>
+                <value>
+                    <fullName>Sevarome</fullName>
+                    <default>false</default>
+                    <label>Sevarome</label>
+                </value>
+                <value>
+                    <fullName>SMORET</fullName>
+                    <default>false</default>
+                    <label>SMORET</label>
+                </value>
+                <value>
+                    <fullName>Sosa</fullName>
+                    <default>false</default>
+                    <label>Sosa</label>
+                </value>
+                <value>
+                    <fullName>tbc</fullName>
+                    <default>false</default>
+                    <label>tbc</label>
+                </value>
+                <value>
+                    <fullName>Urbani Tartufi SRL</fullName>
+                    <default>false</default>
+                    <label>Urbani Tartufi SRL</label>
+                </value>
+                <value>
+                    <fullName>VALRHONA</fullName>
+                    <default>false</default>
+                    <label>VALRHONA</label>
+                </value>
+                <value>
+                    <fullName>Vieuxx Pane</fullName>
+                    <default>false</default>
+                    <label>Vieuxx Pane</label>
+                </value>
+                <value>
+                    <fullName>WEISS</fullName>
+                    <default>false</default>
+                    <label>WEISS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CN_Execution_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Execution Type</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <controllingField>Type</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Public Demonstration</fullName>
+                    <default>false</default>
+                    <label>Public Demonstration</label>
+                </value>
+                <value>
+                    <fullName>VIP Class</fullName>
+                    <default>false</default>
+                    <label>VIP Class</label>
+                </value>
+                <value>
+                    <fullName>1on1</fullName>
+                    <default>false</default>
+                    <label>1on1</label>
+                </value>
+                <value>
+                    <fullName>Livestreaming</fullName>
+                    <default>false</default>
+                    <label>Livestreaming</label>
+                </value>
+                <value>
+                    <fullName>Solution Development</fullName>
+                    <default>false</default>
+                    <label>Solution Development</label>
+                </value>
+                <value>
+                    <fullName>Short Video</fullName>
+                    <default>false</default>
+                    <label>Short Video</label>
+                </value>
+                <value>
+                    <fullName>WeChat</fullName>
+                    <default>false</default>
+                    <label>WeChat</label>
+                </value>
+                <value>
+                    <fullName>Display</fullName>
+                    <default>false</default>
+                    <label>Display</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Corporate Event</controllingFieldValue>
+                <controllingFieldValue>Brand Event</controllingFieldValue>
+                <controllingFieldValue>Co-Branding Event</controllingFieldValue>
+                <controllingFieldValue>Channel Solution</controllingFieldValue>
+                <controllingFieldValue>Cross Category Event</controllingFieldValue>
+                <controllingFieldValue>Digital Campaign</controllingFieldValue>
+                <controllingFieldValue>Road Show</controllingFieldValue>
+                <valueName>Public Demonstration</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Corporate Event</controllingFieldValue>
+                <controllingFieldValue>Brand Event</controllingFieldValue>
+                <controllingFieldValue>Co-Branding Event</controllingFieldValue>
+                <controllingFieldValue>Channel Solution</controllingFieldValue>
+                <controllingFieldValue>Cross Category Event</controllingFieldValue>
+                <controllingFieldValue>Digital Campaign</controllingFieldValue>
+                <valueName>Livestreaming</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Corporate Event</controllingFieldValue>
+                <controllingFieldValue>Brand Event</controllingFieldValue>
+                <controllingFieldValue>Co-Branding Event</controllingFieldValue>
+                <controllingFieldValue>Channel Solution</controllingFieldValue>
+                <controllingFieldValue>Cross Category Event</controllingFieldValue>
+                <controllingFieldValue>Digital Campaign</controllingFieldValue>
+                <valueName>Short Video</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Corporate Event</controllingFieldValue>
+                <controllingFieldValue>Brand Event</controllingFieldValue>
+                <controllingFieldValue>Co-Branding Event</controllingFieldValue>
+                <controllingFieldValue>Channel Solution</controllingFieldValue>
+                <controllingFieldValue>Cross Category Event</controllingFieldValue>
+                <controllingFieldValue>Digital Campaign</controllingFieldValue>
+                <valueName>WeChat</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Corporate Event</controllingFieldValue>
+                <controllingFieldValue>Brand Event</controllingFieldValue>
+                <controllingFieldValue>Co-Branding Event</controllingFieldValue>
+                <controllingFieldValue>Channel Solution</controllingFieldValue>
+                <controllingFieldValue>Cross Category Event</controllingFieldValue>
+                <controllingFieldValue>Road Show</controllingFieldValue>
+                <valueName>Display</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Corporate Event</controllingFieldValue>
+                <controllingFieldValue>Channel Solution</controllingFieldValue>
+                <controllingFieldValue>Cross Category Event</controllingFieldValue>
+                <controllingFieldValue>Digital Campaign</controllingFieldValue>
+                <valueName>Others</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Brand Event</controllingFieldValue>
+                <controllingFieldValue>Co-Branding Event</controllingFieldValue>
+                <controllingFieldValue>Channel Solution</controllingFieldValue>
+                <controllingFieldValue>Cross Category Event</controllingFieldValue>
+                <valueName>Solution Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Channel Solution</controllingFieldValue>
+                <controllingFieldValue>Cross Category Event</controllingFieldValue>
+                <valueName>VIP Class</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Channel Solution</controllingFieldValue>
+                <controllingFieldValue>Cross Category Event</controllingFieldValue>
+                <valueName>1on1</valueName>
+            </valueSettings>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CN_Is_My_Campaign__c</fullName>
+        <externalId>false</externalId>
+        <formula>OwnerId =  $User.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is My Campaign</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_New_Product_Launch__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>New Product Launch</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Num_Of_Generate_Opp__c</fullName>
+        <externalId>false</externalId>
+        <label>Num Of Generate Opp</label>
+        <summaryFilterItems>
+            <field>CampaignMember.CN_Able_to_generate_opportunity__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CN_Number_of_Audiences__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For Live Streaming Only</inlineHelpText>
+        <label>Number of Audiences</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Product_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Category</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dairy</fullName>
+                    <default>false</default>
+                    <label>Dairy</label>
+                </value>
+                <value>
+                    <fullName>GOURMET &amp; GROCERY</fullName>
+                    <default>false</default>
+                    <label>GOURMET &amp; GROCERY</label>
+                </value>
+                <value>
+                    <fullName>PASTRY</fullName>
+                    <default>false</default>
+                    <label>PASTRY</label>
+                </value>
+                <value>
+                    <fullName>Chef Studio Pastry</fullName>
+                    <default>false</default>
+                    <label>Chef Studio Pastry</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CN_Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CHEESE</fullName>
+                    <default>false</default>
+                    <label>CHEESE</label>
+                </value>
+                <value>
+                    <fullName>BUTTER</fullName>
+                    <default>false</default>
+                    <label>BUTTER</label>
+                </value>
+                <value>
+                    <fullName>CREAM</fullName>
+                    <default>false</default>
+                    <label>CREAM</label>
+                </value>
+                <value>
+                    <fullName>COLD CUTS &amp; MEAT</fullName>
+                    <default>false</default>
+                    <label>COLD CUTS &amp; MEAT</label>
+                </value>
+                <value>
+                    <fullName>FOIS GRAS</fullName>
+                    <default>false</default>
+                    <label>FOIS GRAS</label>
+                </value>
+                <value>
+                    <fullName>GROCERY</fullName>
+                    <default>false</default>
+                    <label>GROCERY</label>
+                </value>
+                <value>
+                    <fullName>CHOCOLATE &amp; DECORATION</fullName>
+                    <default>false</default>
+                    <label>CHOCOLATE &amp; DECORATION</label>
+                </value>
+                <value>
+                    <fullName>PUREE</fullName>
+                    <default>false</default>
+                    <label>PUREE</label>
+                </value>
+                <value>
+                    <fullName>PRE MIX</fullName>
+                    <default>false</default>
+                    <label>PRE MIX</label>
+                </value>
+                <value>
+                    <fullName>VALUE - ADDED</fullName>
+                    <default>false</default>
+                    <label>VALUE - ADDED</label>
+                </value>
+                <value>
+                    <fullName>FROZEN PASTRY</fullName>
+                    <default>false</default>
+                    <label>FROZEN PASTRY</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CN_VIP__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(INCLUDES(CN_Execution_Type__c, &quot;VIP Class&quot;), TRUE, FALSE)</formula>
+        <label>VIP</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CampaignMemberRecordTypeId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+    </fields>
+    <fields>
+        <fullName>ExpectedResponse</fullName>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyActualCost</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyAmountAllOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyAmountWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyBudgetedCost</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyExpectedRevenue</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfContacts</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfConvertedLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfResponses</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberSent</fullName>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfContacts</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfConvertedLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfResponses</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberSent</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <type>Picklist</type>
+    </fields>
+    <listViews>
+        <fullName>AllActiveCampaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Active Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>MyActiveCampaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Active Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>Org_Campaign_Hierarchy</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.ACTIVE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>Org_Campaign_Hierarchy</label>
+    </listViews>
+    <recordTypes>
+        <fullName>CN_Campaign</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>CN_Campaign</compactLayoutAssignment>
+        <label>Campaign</label>
+        <picklistValues>
+            <picklist>CN_Brand__c</picklist>
+            <values>
+                <fullName>5J</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ANTICHICOLLI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BARNIER OLIVES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BASTIDES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BEAUFOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BERETTA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BEYONG MEAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beillevaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAPRICE DES DIEUX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAVIAR %26 TRADITIONS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COEUR DE LION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CORMAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cabrifin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chateau d%27Estoublon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chef Studio OIL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chef Studio Pastry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DOBLA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DODONI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Elle %26 Vire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FERMES DE LA TREMBLAYE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Giovanni Ferrari</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ILE DE FRANCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IRCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LE RUSTIQUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOSTE TRADI-FRANCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lescure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Liberty Lane</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Milkana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Norohy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OVODAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAVONI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pomone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUORUM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RAVIFRUIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>REPUBLIC DEL CACAO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remy Cointreau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Roquefort Papillon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rougie</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMORET</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sabaton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saint Agur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sevarome</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sosa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urbani Tartufi SRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VALRHONA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vieuxx Pane</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WEISS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>tbc</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Execution_Type__c</picklist>
+            <values>
+                <fullName>1on1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Display</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Demonstration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Short Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIP Class</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WeChat</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Product_Category__c</picklist>
+            <values>
+                <fullName>Chef Studio Pastry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dairy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GOURMET %26 GROCERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PASTRY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Product_Type__c</picklist>
+            <values>
+                <fullName>BUTTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHEESE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHOCOLATE %26 DECORATION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COLD CUTS %26 MEAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CREAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOIS GRAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FROZEN PASTRY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GROCERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PRE MIX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PUREE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VALUE - ADDED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Aborted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planned</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Brand Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Channel Solution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Co-Branding Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cross Category Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>CN_Parent_Campaign</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>CN_Parent</compactLayoutAssignment>
+        <label>Parent Campaign</label>
+        <picklistValues>
+            <picklist>CN_Brand__c</picklist>
+            <values>
+                <fullName>5J</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ANTICHICOLLI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BARNIER OLIVES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BASTIDES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BEAUFOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BERETTA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BEYONG MEAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beillevaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAPRICE DES DIEUX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAVIAR %26 TRADITIONS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COEUR DE LION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CORMAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cabrifin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chateau d%27Estoublon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chef Studio OIL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chef Studio Pastry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DOBLA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DODONI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Elle %26 Vire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FERMES DE LA TREMBLAYE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Giovanni Ferrari</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ILE DE FRANCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IRCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LE RUSTIQUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOSTE TRADI-FRANCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lescure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Liberty Lane</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Milkana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Norohy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OVODAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAVONI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pomone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUORUM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RAVIFRUIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>REPUBLIC DEL CACAO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remy Cointreau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Roquefort Papillon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rougie</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMORET</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sabaton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saint Agur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sevarome</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sosa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urbani Tartufi SRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VALRHONA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vieuxx Pane</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WEISS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>tbc</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Execution_Type__c</picklist>
+            <values>
+                <fullName>1on1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Display</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Demonstration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Short Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIP Class</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WeChat</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Product_Category__c</picklist>
+            <values>
+                <fullName>Chef Studio Pastry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dairy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GOURMET %26 GROCERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PASTRY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Product_Type__c</picklist>
+            <values>
+                <fullName>BUTTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHEESE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHOCOLATE %26 DECORATION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COLD CUTS %26 MEAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CREAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOIS GRAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FROZEN PASTRY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GROCERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PRE MIX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PUREE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VALUE - ADDED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Aborted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planned</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Brand Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Channel Solution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Co-Branding Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cross Category Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CAMPAIGN.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.START_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CAMPAIGN.NAME</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PARENT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.CAMPAIGN_TYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.START_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.END_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NUM_RESPONSES</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>CN_Campaign_Audiences_Number_IsBlank</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c, OR(RecordType.DeveloperName = &apos;CN_Campaign&apos;, RecordType.DeveloperName = &apos;CN_Parent_Campaign&apos;),  ISPICKVAL(Status, &quot;Completed&quot;),  ISBLANK(CN_Number_of_Audiences__c))</errorConditionFormula>
+        <errorDisplayField>CN_Number_of_Audiences__c</errorDisplayField>
+        <errorMessage>Number of audiences is a must field to input for livestreaming campaign when campaign completes.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Campaign_Check_Start_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c, 
+  OR(
+    RecordType.DeveloperName = &apos;CN_Campaign&apos;, 
+    RecordType.DeveloperName = &apos;CN_Parent_Campaign&apos;
+  ),
+  OR(
+    ISNEW(),
+    ISCHANGED(StartDate)
+  ),  
+  StartDate &lt; TODAY()
+)</errorConditionFormula>
+        <errorDisplayField>StartDate</errorDisplayField>
+        <errorMessage>Start date must not be earlier than today</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Campaign_Check_numOfAud_LiveStreaming</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c, 
+  OR(
+    RecordType.DeveloperName = &apos;CN_Campaign&apos;, 
+    RecordType.DeveloperName = &apos;CN_Parent_Campaign&apos;
+  ),  
+  INCLUDES(CN_Execution_Type__c, &quot;Livestreaming&quot;) ,
+  ISPICKVAL(Status, &quot;Completed&quot;),
+  ISBLANK( CN_Number_of_Audiences__c )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Number_of_Audiences__c</errorDisplayField>
+        <errorMessage>You must enter number of audiences for livestreaming campaign</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Campaign_Completed_Block_Edit</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c, OR(RecordType.DeveloperName = &apos;CN_Campaign&apos;, RecordType.DeveloperName = &apos;CN_Parent_Campaign&apos;), ISPICKVAL(PRIORVALUE(Status), &quot;Completed&quot;))</errorConditionFormula>
+        <errorMessage>You cannot edit anything once completed.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>ViewAllCampaignMembers</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View All Campaign Members</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/camp/rptcmpgncalldown.jsp?scope=1&amp;scopeid={!Campaign_Name}</url>
+        <width>500</width>
+    </webLinks>
+    <webLinks>
+        <fullName>ViewCampaignInfluenceReport</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View Campaign Influence Report</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O?rt=117&amp;break0=CAN&amp;scope=1&amp;scopeid_lkid={!Campaign.Id}&amp;scopeid={!Campaign_Name}&amp;c=CAN&amp;c=MR&amp;c=PCS&amp;c=CFN&amp;c=RN&amp;c=ON&amp;c=OA&amp;c=OS&amp;c=OCD&amp;c=AN&amp;s=OA&amp;duel0=CAN%2CMR%2CCFN%2CRN%2CAN%2CON%2CPCS%2COS%2COCD%2COA&amp;details=yes&amp;format=t</url>
+        <width>500</width>
+    </webLinks>
+</CustomObject>

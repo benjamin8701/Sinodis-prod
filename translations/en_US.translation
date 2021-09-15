@@ -17,12 +17,36 @@
         <name>CN_Account_API_US_PW_Error</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_Account_Button_Assign --></label>
+        <name>CN_Account_Button_Assign</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Button_Cancel --></label>
+        <name>CN_Account_Button_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Button_Clear --></label>
+        <name>CN_Account_Button_Clear</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Button_Process --></label>
+        <name>CN_Account_Button_Process</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Button_Search --></label>
+        <name>CN_Account_Button_Search</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_Account_CFRM_Msg --></label>
         <name>CN_Account_CFRM_Msg</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_Account_Contact_System_Admin --></label>
         <name>CN_Account_Contact_System_Admin</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Convert_To_Direct --></label>
+        <name>CN_Account_Convert_To_Direct</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_Account_CustomLabel_Hour_Is_NULL --></label>
@@ -47,6 +71,58 @@
     <customLabels>
         <label><!-- CN_Account_LC_New_Change_Request --></label>
         <name>CN_Account_LC_New_Change_Request</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Mass_Change_Current --></label>
+        <name>CN_Account_Mass_Change_Current</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Mass_Change_Type --></label>
+        <name>CN_Account_Mass_Change_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Mass_Change_User --></label>
+        <name>CN_Account_Mass_Change_User</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Mass_Customer_Code --></label>
+        <name>CN_Account_Mass_Customer_Code</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Mass_ErrMsg_Check_AccountCode --></label>
+        <name>CN_Account_Mass_ErrMsg_Check_AccountCode</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Mass_ErrMsg_Check_CurrentUser --></label>
+        <name>CN_Account_Mass_ErrMsg_Check_CurrentUser</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Mass_ErrMsg_Check_UpdateUser --></label>
+        <name>CN_Account_Mass_ErrMsg_Check_UpdateUser</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Mass_ErrMsg_Notice --></label>
+        <name>CN_Account_Mass_ErrMsg_Notice</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Mass_ErrMsg_Notice2 --></label>
+        <name>CN_Account_Mass_ErrMsg_Notice2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Mass_ErrMsg_Notice3 --></label>
+        <name>CN_Account_Mass_ErrMsg_Notice3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Mass_Label_Notice --></label>
+        <name>CN_Account_Mass_Label_Notice</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Mass_Label_Results --></label>
+        <name>CN_Account_Mass_Label_Results</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Mass_Notice_Success --></label>
+        <name>CN_Account_Mass_Notice_Success</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_Account_New_Contact_Request --></label>
@@ -193,6 +269,70 @@
         <name>CN_CTA_Has_Same_ExternalIdCR</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_Campaign_DMLException --></label>
+        <name>CN_Campaign_DMLException</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Campaign_Insert_Failed --></label>
+        <name>CN_Campaign_Insert_Failed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Campaign_More_10000 --></label>
+        <name>CN_Campaign_More_10000</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Chef_Request_Confirm_Info_Message --></label>
+        <name>CN_Chef_Request_Confirm_Info_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Chef_Request_Delete_Error_Message --></label>
+        <name>CN_Chef_Request_Delete_Error_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Chef_Request_Uncomfirm_Info_Message --></label>
+        <name>CN_Chef_Request_Uncomfirm_Info_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Chefs_Assigned_Prevent_Delete_Error_Message --></label>
+        <name>CN_Chefs_Assigned_Prevent_Delete_Error_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_Assign_Queue_Check --></label>
+        <name>CN_Complaint_Assign_Queue_Check</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_Can_Not_Closed --></label>
+        <name>CN_Complaint_Can_Not_Closed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_Can_Not_Rejected --></label>
+        <name>CN_Complaint_Can_Not_Rejected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_Can_Not_Resolved --></label>
+        <name>CN_Complaint_Can_Not_Resolved</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_Cannot_Be_Delete --></label>
+        <name>CN_Complaint_Cannot_Be_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_Mannual_Assign_Check --></label>
+        <name>CN_Complaint_Mannual_Assign_Check</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_No_Permission --></label>
+        <name>CN_Complaint_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_Not_Found --></label>
+        <name>CN_Complaint_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_ResolveReason_Null --></label>
+        <name>CN_Complaint_ResolveReason_Null</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_Contact_Account_Has_Synced --></label>
         <name>CN_Contact_Account_Has_Synced</name>
     </customLabels>
@@ -201,12 +341,48 @@
         <name>CN_Contact_Change_Request</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_Contact_Type_Billilng_Only --></label>
+        <name>CN_Contact_Type_Billilng_Only</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Contact_Type_Purchasing --></label>
+        <name>CN_Contact_Type_Purchasing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Create_Event_Subject --></label>
+        <name>CN_Create_Event_Subject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Create_Visit_Subject --></label>
+        <name>CN_Create_Visit_Subject</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_CustomerHierarchy_Confirm_Msg --></label>
         <name>CN_CustomerHierarchy_Confirm_Msg</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_CustomerHierarchy_Warning_Msg_Too_Frequency --></label>
         <name>CN_CustomerHierarchy_Warning_Msg_Too_Frequency</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Demo_Report_Prevent_Delete_Msg --></label>
+        <name>CN_Demo_Report_Prevent_Delete_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Event_Prevent_Delete --></label>
+        <name>CN_Event_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Generate_Opportunity_Success --></label>
+        <name>CN_Generate_Opportunity_Success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Generate_Opportunity_Title1 --></label>
+        <name>CN_Generate_Opportunity_Title1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Generate_Opportunity_Title2 --></label>
+        <name>CN_Generate_Opportunity_Title2</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_Group_Name --></label>
@@ -223,6 +399,30 @@
     <customLabels>
         <label><!-- CN_Group_Synced_Prevent_Delete --></label>
         <name>CN_Group_Synced_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Lead_Has_Change_Request --></label>
+        <name>CN_Lead_Has_Change_Request</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Lead_Not_Sales_Qualified --></label>
+        <name>CN_Lead_Not_Sales_Qualified</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Lead_Owner_Changed_Notification --></label>
+        <name>CN_Lead_Owner_Changed_Notification</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Lead_Owner_Changed_Notification_Body --></label>
+        <name>CN_Lead_Owner_Changed_Notification_Body</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Lead_Owner_Changed_Notification_Title --></label>
+        <name>CN_Lead_Owner_Changed_Notification_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Mass_Change_Account_Results --></label>
+        <name>CN_Mass_Change_Account_Results</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_Not_Found_BusinessUnit --></label>
@@ -249,6 +449,26 @@
         <name>CN_Not_Found_SalesTeamOrBusinessUnit</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_PRMT_Published_Notification_Body --></label>
+        <name>CN_PRMT_Published_Notification_Body</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_PRMT_Published_Notification_Title --></label>
+        <name>CN_PRMT_Published_Notification_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_PRMT_Status_Not_Ready --></label>
+        <name>CN_PRMT_Status_Not_Ready</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_PleaseConfirm_Abort --></label>
+        <name>CN_PleaseConfirm_Abort</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_PleaseConfirm_Value_AlreadyPublished --></label>
+        <name>CN_PleaseConfirm_Value_AlreadyPublished</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_PleaseConfirm_Value_AlreadySubmitted --></label>
         <name>CN_PleaseConfirm_Value_AlreadySubmitted</name>
     </customLabels>
@@ -257,8 +477,164 @@
         <name>CN_PleaseConfirm_Value_BackToNew</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_PleaseConfirm_Value_BackToPlanned --></label>
+        <name>CN_PleaseConfirm_Value_BackToPlanned</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_PleaseConfirm_Value_ReadyForApproval --></label>
         <name>CN_PleaseConfirm_Value_ReadyForApproval</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_PleaseConfirm_Value_ReadyForPublish --></label>
+        <name>CN_PleaseConfirm_Value_ReadyForPublish</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_PromotionMember_No_Permission --></label>
+        <name>CN_PromotionMember_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Promotion_Can_Not_Published --></label>
+        <name>CN_Promotion_Can_Not_Published</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Promotion_Check_PromotionMember --></label>
+        <name>CN_Promotion_Check_PromotionMember</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Promotion_Generate_Success --></label>
+        <name>CN_Promotion_Generate_Success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Promotion_No_Permission --></label>
+        <name>CN_Promotion_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Promotion_Not_Found --></label>
+        <name>CN_Promotion_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Promotion_Not_Found_Product --></label>
+        <name>CN_Promotion_Not_Found_Product</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Promotion_Prevent_Delete --></label>
+        <name>CN_Promotion_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Promotion_Publish_Success --></label>
+        <name>CN_Promotion_Publish_Success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_QTP_Has_Approved_Or_Synced --></label>
+        <name>CN_QTP_Has_Approved_Or_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_QuoteItem_No_Permission --></label>
+        <name>CN_QuoteItem_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_QuoteItem_Not_Found --></label>
+        <name>CN_QuoteItem_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_QuoteItem_Not_Need_Deal --></label>
+        <name>CN_QuoteItem_Not_Need_Deal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_QuoteItem_Quote_Has_Approved_Or_Synced --></label>
+        <name>CN_QuoteItem_Quote_Has_Approved_Or_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_AOrDItems_CFRM_Msg --></label>
+        <name>CN_Quote_AOrDItems_CFRM_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Apply --></label>
+        <name>CN_Quote_Apply</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Apply_CFRM_Msg --></label>
+        <name>CN_Quote_Apply_CFRM_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_CFAA_Msg --></label>
+        <name>CN_Quote_CFAA_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_CFDA_Msg --></label>
+        <name>CN_Quote_CFDA_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Confirm_Msg --></label>
+        <name>CN_Quote_Confirm_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Deal_Success_Msg --></label>
+        <name>CN_Quote_Deal_Success_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Had_ApprovedOrSubmit --></label>
+        <name>CN_Quote_Had_ApprovedOrSubmit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Had_Not_Approved --></label>
+        <name>CN_Quote_Had_Not_Approved</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Had_Synced --></label>
+        <name>CN_Quote_Had_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Has_Approved_Or_Synced --></label>
+        <name>CN_Quote_Has_Approved_Or_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Name --></label>
+        <name>CN_Quote_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_No_Permission --></label>
+        <name>CN_Quote_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Not_Found --></label>
+        <name>CN_Quote_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Not_Found_IN_InternalEmployee --></label>
+        <name>CN_Quote_Not_Found_IN_InternalEmployee</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Not_Have_Items --></label>
+        <name>CN_Quote_Not_Have_Items</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Retrieve_Title --></label>
+        <name>CN_Quote_Retrieve_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Send_Success_Msg --></label>
+        <name>CN_Quote_Send_Success_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Send_To_SAP --></label>
+        <name>CN_Quote_Send_To_SAP</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Warning_Msg_Too_Frequency --></label>
+        <name>CN_Quote_Warning_Msg_Too_Frequency</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_SP_No_Product_List_Price --></label>
+        <name>CN_SP_No_Product_List_Price</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_SP_Prevent_Delete --></label>
+        <name>CN_SP_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_SR_Approved_Prevent_Delete --></label>
+        <name>CN_SR_Approved_Prevent_Delete</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_SalesTeam_Synced_Prevent_Delete --></label>
@@ -308,4 +684,265 @@
         <label><!-- CN_ShipTo_Change_Request --></label>
         <name>CN_ShipTo_Change_Request</name>
     </customLabels>
+    <customTabs>
+        <label><!-- Mass Change Account --></label>
+        <name>CN_Mass_Change_Account_Owner_Tab</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Map --></label>
+        <name>Map</name>
+    </customTabs>
+    <flowDefinitions>
+        <flows/>
+        <fullName>CN_Chef_Assigned_Update</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>CN_Chef_Assignment_link_to_Che_UT</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>CN_Create_Chef_UT_Record</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>CN_SP_Populate_Owner</fullName>
+    </flowDefinitions>
+    <quickActions>
+        <label><!-- New Event --></label>
+        <name>CN_New_Event</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>CN_New_Task</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Visit --></label>
+        <name>CN_New_Visit</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- CN Account Direct with sample with sample product --></description>
+        <label><!-- CN Account Direct with sample with sample product --></label>
+        <name>CN_Account_Direct_with_sample_with_sample_product</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Products --></label>
+            <name>Sample Products</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Requests --></label>
+            <name>Sample Requests</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Requests (Account Name) --></label>
+            <name>Sample Requests (Account Name)</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Account Indirect with Sample with Sample Item --></description>
+        <label><!-- CN Account Indirect with Sample with Sample Item --></label>
+        <name>CN_Account_Indirect_with_Sample_with_Sample_Item</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Products --></label>
+            <name>Sample Products</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Requests --></label>
+            <name>Sample Requests</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Requests (End Customer Name) --></label>
+            <name>Sample Requests (End Customer Name)</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Account Opportunity --></description>
+        <label><!-- CN Account Opportunity --></label>
+        <name>CN_Account_Opportunity</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Account Sales Order Item --></description>
+        <label><!-- CN Account Sales Order Item --></label>
+        <name>CN_Account_Sales_Order_Item</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Sales Order --></label>
+            <name>Sales Order</name>
+        </sections>
+        <sections>
+            <label><!-- Sales Order Item --></label>
+            <name>Sales Order Item</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Account With Cases --></description>
+        <label><!-- CN Account With Cases --></label>
+        <name>CN_Account_With_Cases</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+        <sections>
+            <label><!-- Complaints --></label>
+            <name>Complaints</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Account with Activities --></description>
+        <label><!-- CN Account with Activities --></label>
+        <name>CN_Account_with_Activities</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Account with Activity --></description>
+        <label><!-- CN Account with Activity --></label>
+        <name>CN_Account_with_Activity</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Campaign With Lead Conveted Account --></description>
+        <label><!-- CN Campaign With Lead Conveted Account --></label>
+        <name>CN_Campaign_With_Lead_Conveted_Account</name>
+        <sections>
+            <label><!-- Campaign Members --></label>
+            <name>Campaign Members</name>
+        </sections>
+        <sections>
+            <label><!-- Campaigns --></label>
+            <name>Campaigns</name>
+        </sections>
+        <sections>
+            <label><!-- Lead --></label>
+            <name>Lead</name>
+        </sections>
+        <sections>
+            <label><!-- Lead converted Account --></label>
+            <name>Lead converted Account</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Chef with Chef Assigned --></description>
+        <label><!-- CN Chef with Chef Assigned --></label>
+        <name>CN_Chef_with_Chef_Assigned</name>
+        <sections>
+            <label><!-- Chef UT --></label>
+            <name>Chef UT</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Chef Request Record Type --></label>
+                <name>Chef Request Record Type</name>
+            </columns>
+            <columns>
+                <label><!-- Confirmed --></label>
+                <name>Confirmed</name>
+            </columns>
+            <columns>
+                <label><!-- Event Type --></label>
+                <name>Event Type</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity --></label>
+                <name>Opportunity</name>
+            </columns>
+            <columns>
+                <label><!-- Status --></label>
+                <name>Status</name>
+            </columns>
+            <label><!-- Chefs Assigneds --></label>
+            <name>Chefs Assigneds</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Lead --></description>
+        <label><!-- CN Lead --></label>
+        <name>CN_Lead</name>
+        <sections>
+            <label><!-- Converted Account --></label>
+            <name>Converted Account</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Promotion with Member with Quote Line Item --></description>
+        <label><!-- CN Promotion with Member with Quote Line Item --></label>
+        <name>CN_Promotion_with_Member_with_Quote_Line_Item</name>
+        <sections>
+            <label><!-- Promotion Members --></label>
+            <name>Promotion Members</name>
+        </sections>
+        <sections>
+            <label><!-- Promotions --></label>
+            <name>Promotions</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Line Items --></label>
+            <name>Quote Line Items</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Promotion with Promotion Line Item --></description>
+        <label><!-- CN Promotion with Promotion Line Item --></label>
+        <name>CN_Promotion_with_Promotion_Line_Item</name>
+        <sections>
+            <columns>
+                <label><!-- Product Brand --></label>
+                <name>Product Brand</name>
+            </columns>
+            <label><!-- Promotion Line Items --></label>
+            <name>Promotion Line Items</name>
+        </sections>
+        <sections>
+            <label><!-- Promotions --></label>
+            <name>Promotions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN User Report Type --></description>
+        <label><!-- CN User Report Type --></label>
+        <name>CN_User_Report_Type</name>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
 </Translations>

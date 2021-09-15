@@ -114,16 +114,22 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Product_Record_Page</content>
         <formFactor>Large</formFactor>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Product_Record_Page</content>
         <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>CN_Product</compactLayoutAssignment>
@@ -135,6 +141,17 @@
         <label>CN Product</label>
     </compactLayouts>
     <enableFeeds>false</enableFeeds>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>CN_Base_Unit_of_Measure__c</fullName>
+        <externalId>false</externalId>
+        <label>Base Unit of Measure</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <fields>
         <fullName>CN_Brand__c</fullName>
         <externalId>false</externalId>
@@ -152,6 +169,15 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Detailed_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Detailed Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
     </fields>
     <fields>
         <fullName>CN_Origin__c</fullName>
@@ -233,6 +259,35 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Sample_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Sample Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Repack</fullName>
+                    <default>false</default>
+                    <label>Repack</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Sample_Unit_List_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Sample Unit List Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>CN_Selling_Unit__c</fullName>
         <externalId>false</externalId>
         <label>Selling Unit</label>
@@ -254,9 +309,29 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Standard_Sample_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Standard Sample Unit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Storage_Condition__c</fullName>
         <externalId>false</externalId>
         <label>Storage Condition</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Tax_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax Code</label>
         <length>255</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -314,6 +389,15 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Is_Repack_Sample__c</fullName>
+        <externalId>false</externalId>
+        <formula>ISPICKVAL(CN_Sample_Type__c  , &quot;Repack&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Repack Sample</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -342,34 +426,106 @@
     </fields>
     <listViews>
         <fullName>AllProducts</fullName>
-        <columns>PRODUCT2.NAME</columns>
-        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
-        <columns>PRODUCT2.DESCRIPTION</columns>
-        <columns>PRODUCT2.FAMILY</columns>
-        <columns>CN_Brand__c</columns>
-        <columns>CN_Shelf_Life__c</columns>
         <columns>CN_SKU_Code__c</columns>
-        <columns>CN_Origin__c</columns>
-        <columns>CN_Tax_rate__c</columns>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.DESCRIPTION</columns>
+        <columns>CN_SKU_Description_CN__c</columns>
+        <columns>CN_SKU_Description_EN__c</columns>
+        <columns>CN_Selling_Unit__c</columns>
+        <columns>CN_Shelf_Life__c</columns>
+        <columns>CN_Standard_Sample_Unit__c</columns>
+        <columns>CN_Sample_Unit_List_Price__c</columns>
+        <columns>CN_Sample_Type__c</columns>
         <filterScope>Everything</filterScope>
         <label>All Products</label>
     </listViews>
+    <profileSearchLayouts>
+        <fields>PRODUCT2.NAME</fields>
+        <fields>PRODUCT2.CUSTOMER_PRODUCT_ID</fields>
+        <fields>CN_SKU_Description_CN__c</fields>
+        <fields>CN_SKU_Description_EN__c</fields>
+        <fields>CN_Selling_Unit__c</fields>
+        <fields>PRODUCT2.CREATED_DATE</fields>
+        <profileName>System Administrator</profileName>
+    </profileSearchLayouts>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>CN_Product</fullName>
+        <active>true</active>
+        <label>CN Product</label>
+        <picklistValues>
+            <picklist>CN_Brand__c</picklist>
+            <values>
+                <fullName>AA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Origin__c</picklist>
+            <values>
+                <fullName>AA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Sample_Type__c</picklist>
+            <values>
+                <fullName>Repack</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Family</picklist>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>QuantityUnitOfMeasure</picklist>
+            <values>
+                <fullName>Each</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</customTabListAdditionalFields>
-        <customTabListAdditionalFields>PRODUCT2.DESCRIPTION</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CN_SKU_Description_CN__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CN_SKU_Description_EN__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CN_Selling_Unit__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.CREATED_DATE</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>PRODUCT2.NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>PRODUCT2.FAMILY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CN_SKU_Description_CN__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CN_SKU_Description_EN__c</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>PRODUCT2.NAME</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>PRODUCT2.FAMILY</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CN_SKU_Description_CN__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CN_SKU_Description_EN__c</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>PRODUCT2.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_SKU_Code__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT2.DESCRIPTION</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT2.FAMILY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_SKU_Description_CN__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_SKU_Description_EN__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Selling_Unit__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Shelf_Life__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Standard_Sample_Unit__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Sample_Unit_List_Price__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>CN_Poduct_Prevent_Edit</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  RecordType.DeveloperName = &apos;CN_Product&apos;,
+  OR(ISCHANGED( Name ),ISCHANGED( IsActive ))
+)</errorConditionFormula>
+        <errorMessage>You have no access to update these info of the product:
+Product Name,
+Active.</errorMessage>
+    </validationRules>
 </CustomObject>

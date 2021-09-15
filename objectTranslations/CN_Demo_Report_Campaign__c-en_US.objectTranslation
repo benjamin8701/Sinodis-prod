@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Demo Report(Campaign)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Demo Report(Campaign)</value>
+    </caseValues>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>CN_Activity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>CN_Campaign__c</name>
+        <relationshipLabel><!-- Demo Report(Campaign) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>CN_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chef Request --></label>
+        <name>CN_Chef_Request__c</name>
+        <relationshipLabel><!-- Demo Report(Campaign) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>CN_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>CN_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer ID --></label>
+        <name>CN_Customer_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>CN_Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demo Products --></label>
+        <name>CN_Demo_Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demo Report --></label>
+        <name>CN_Demo_Report__c</name>
+        <relationshipLabel><!-- Demo Report(Campaign) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Event Theme --></label>
+        <name>CN_Event_Theme__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guest Chef --></label>
+        <name>CN_Guest_Chef__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of People --></label>
+        <name>CN_Number_of_People__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Recipes --></label>
+        <name>CN_Number_of_Recipes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Creator --></label>
+        <name>CN_Report_Creator__c</name>
+        <relationshipLabel><!-- Demo Report(Campaign) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SAP Concur Travel Cost --></label>
+        <name>CN_SAP_Concur_Travel_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Attendance --></label>
+        <name>CN_Sales_Attendance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Name --></label>
+        <name>CN_Sales_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>Deme Report(Campaign) Layout</layout>
+        <sections>
+            <label><!-- Attendance Information --></label>
+            <section>Attendance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Cost --></label>
+            <section>Cost</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

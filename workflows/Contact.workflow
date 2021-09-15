@@ -11,6 +11,27 @@
         <senderType>CurrentUser</senderType>
         <template>CN_Email_Folder/CN_Contact_Synced</template>
     </alerts>
+    <fieldUpdates>
+        <fullName>CN_Contact_Clear_Convert_From</fullName>
+        <field>CN_Converted_From__c</field>
+        <name>CN_Contact_Clear_Convert_From</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>CN_Contact_Clear_Convert_From</fullName>
+        <actions>
+            <name>CN_Contact_Clear_Convert_From</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Contact&apos;,
+NOT(  ISBLANK(CN_Converted_From__c ) )
+)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
     <rules>
         <fullName>CN_Contact_Sync_Notification</fullName>
         <actions>

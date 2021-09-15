@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>CN_Marketing_Brand_Owner</label>
+    <permissionSets>CN_Campaign_Manager</permissionSets>
+    <permissionSets>CN_Marketing_Chef_Request_User</permissionSets>
+    <permissionSets>CN_Product_Edit_Description</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

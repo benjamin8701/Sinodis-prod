@@ -91,6 +91,10 @@
                 <behavior>Readonly</behavior>
                 <field>CN_Sales_Org__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Account_Layer__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -137,6 +141,10 @@
                 <behavior>Readonly</behavior>
                 <field>CN_Route_To_Market__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Map_Link__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -179,6 +187,10 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>CN_Delivery_Plant__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Visit_Addr_CN__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -232,6 +244,21 @@
             <actionType>StandardButton</actionType>
             <sortOrder>1</sortOrder>
         </platformActionListItems>
+        <platformActionListItems>
+            <actionName>CN_New_Visit</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>2</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>CN_New_Event</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>3</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>CN_New_Task</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>4</sortOrder>
+        </platformActionListItems>
     </platformActionList>
     <relatedContent>
         <relatedContentItems>
@@ -247,6 +274,22 @@
         <fields>Actor</fields>
         <fields>Comments</fields>
         <relatedList>RelatedProcessHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <fields>NAME</fields>
+        <fields>CN_Year_Month__c</fields>
+        <fields>CN_Amount__c</fields>
+        <fields>CN_Due_Date__c</fields>
+        <fields>CN_Net_Due_Date__c</fields>
+        <fields>CN_Arrears_After_Net_Due_Date__c</fields>
+        <fields>CN_Invoice_Number__c</fields>
+        <fields>CN_Tracking_Number__c</fields>
+        <fields>CN_Invoice_Date__c</fields>
+        <fields>CN_Delivery_date__c</fields>
+        <relatedList>CN_Payment_History__c.CN_Customer_Name__c</relatedList>
+        <sortField>CN_Year_Month__c</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <excludeButtons>MassChangeOwner</excludeButtons>
@@ -267,6 +310,19 @@
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>CN_Distributor_to_End_Customer__c.CN_End_Customer__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <excludeButtons>New</excludeButtons>
+        <fields>NAME</fields>
+        <relatedList>CN_Contract__c.CN_Indirect_Account_Name__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>CASES.CASE_NUMBER</fields>
+        <fields>CASES.SUBJECT</fields>
+        <fields>CASES.CREATED_DATE</fields>
+        <fields>CASES.PRIORITY</fields>
+        <relatedList>Case.CN_End_Customer__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

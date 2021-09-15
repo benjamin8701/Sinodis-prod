@@ -510,6 +510,26 @@
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
+        <fullName>CN_Converted_From__c</fullName>
+        <externalId>false</externalId>
+        <label>Converted From</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Decision_Maker__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Decision Maker</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Department_Of_Contact_Person__c</fullName>
         <externalId>false</externalId>
         <label>Department of Contact Person</label>
@@ -683,6 +703,18 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Department_for_API__c</fullName>
+        <defaultValue>&apos;0007&apos;</defaultValue>
+        <externalId>false</externalId>
+        <label>CN Department for API</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Family_Info__c</fullName>
@@ -896,6 +928,27 @@ INCLUDES(CN_Contact_Type__c , &quot;04&quot;)
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Working_Language__c</fullName>
+        <externalId>false</externalId>
+        <label>Working Language</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Chinese</fullName>
+                    <default>true</default>
+                    <label>Chinese</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
     </fields>
     <fields>
         <fullName>CurrencyIsoCode</fullName>
@@ -1232,41 +1285,60 @@ INCLUDES(CN_Contact_Type__c , &quot;04&quot;)
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Working_Language__c</picklist>
+            <values>
+                <fullName>Chinese</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
-                <fullName>Advertisement</fullName>
+                <fullName>Bakery China</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer Event</fullName>
+                <fullName>CIIE</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Employee Referral</fullName>
+                <fullName>Customer Service Hotline</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Google AdWords</fullName>
+                <fullName>Digital Campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Other</fullName>
+                <fullName>FHC</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
+                <fullName>Livestreaming</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Purchased List</fullName>
+                <fullName>Marketing Campaign</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Trade Show</fullName>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Webinar</fullName>
+                <fullName>Other Trade show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -1368,6 +1440,18 @@ INCLUDES(CN_Contact_Type__c , &quot;04&quot;)
 )</errorConditionFormula>
         <errorDisplayField>Phone</errorDisplayField>
         <errorMessage>Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number).</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Prevent_Convert_To_Exsiting</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+RecordType.DeveloperName = &apos;CN_Contact&apos;,
+NOT(ISNEW()),
+ISCHANGED(CN_Converted_From__c)
+)</errorConditionFormula>
+        <errorMessage>It&apos;s not allowed to convert to exsiting records.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Prevent_CreateOrEdit</fullName>

@@ -207,11 +207,27 @@
     <enableFeeds>true</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>CN_Is_Finance__c</fullName>
+        <externalId>false</externalId>
+        <formula>$Profile.Name = &quot;CN CFO&quot; ||  $Profile.Name = &quot;CN Finance AR&quot; || $Profile.Name = &quot;CN Finance Controlling&quot; || $Profile.Name = &quot;CN Finance MDM&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Finance</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Is_Integration_User__c</fullName>
         <externalId>false</externalId>
         <formula>Profile.Name = &apos;System Integration&apos; || Profile.Name = &apos;System Administrator&apos;</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Is Integration User</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Me__c</fullName>
+        <externalId>false</externalId>
+        <formula>Id =  $User.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Me</label>
         <type>Checkbox</type>
     </fields>
     <fields>
@@ -239,6 +255,14 @@
 )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Is My Team Member</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Sales__c</fullName>
+        <externalId>false</externalId>
+        <formula>Profile.Name = &quot;CN Sales&quot; ||  Profile.Name = &quot;CN Sales Lead&quot; || Profile.Name = &quot;CN Sales Manager&quot; || Profile.Name = &quot;CN CEO&quot; || Profile.Name = &quot;CN Sales MDM&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Sales</label>
         <type>Checkbox</type>
     </fields>
     <fields>

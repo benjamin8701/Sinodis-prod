@@ -17,6 +17,8 @@ public without sharing class CN_Account_Populate_Fields_Handler implements Trigg
         CN_RTIds.add(Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get(Constants.CN_Account_RT_API_NAME_NEW_INDIRECT).getRecordTypeId());
         CN_RTIds.add(Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get(Constants.CN_Account_RT_API_NAME_EDIT_INDIRECT).getRecordTypeId());
         CN_RTIds.add(Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get(Constants.CN_Account_RT_API_NAME_APPROVE_DIRECT).getRecordTypeId());
+        CN_RTIds.add(Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get(Constants.CN_Account_RT_API_NAME_NEW_Prospect).getRecordTypeId());
+        CN_RTIds.add(Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get(Constants.CN_Account_RT_API_NAME_EDIT_Prospect).getRecordTypeId());
         
         if(Trigger.isBefore && Trigger.isInsert) {
             handleBeforeInsert();

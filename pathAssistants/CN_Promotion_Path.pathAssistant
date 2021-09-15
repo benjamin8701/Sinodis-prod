@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>CN_Promotion__c</entityName>
+    <fieldName>CN_Status__c</fieldName>
+    <masterLabel>CN_Promotion_Path</masterLabel>
+    <recordTypeName>CN_Promotion</recordTypeName>
+</PathAssistant>

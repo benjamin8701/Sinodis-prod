@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Able to generate opportunity --></label>
+        <name>CN_Able_to_generate_opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>CN_Type__c</name>
+    </fields>
+    <fields>
+        <label>查看</label>
+        <name>CN_View__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage>您不能将线索添加到市场活动中。</errorMessage>
+        <name>CN_Prevent_NotOwner_Creation</name>
+    </validationRules>
+</CustomObjectTranslation>

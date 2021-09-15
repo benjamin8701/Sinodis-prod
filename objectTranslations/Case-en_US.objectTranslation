@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Complaint</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Complaints</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>License Name</value>
+        </caseValues>
+        <name>case_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Created Date</value>
+        </caseValues>
+        <name>case_created_date</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Complaint Owner</value>
+        </caseValues>
+        <name>case_owner</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Complaint Reason</value>
+        </caseValues>
+        <name>case_reason</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Accepted Date --></label>
+        <name>CN_Accepted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>CN_Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Button --></label>
+        <name>CN_Closed_Button__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complaint Date --></label>
+        <name>CN_Complaint_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>CN_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>CN_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- During Days --></label>
+        <name>CN_During_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Customer --></label>
+        <lookupFilter>
+            <errorMessage><!-- Must select indirect account. --></errorMessage>
+        </lookupFilter>
+        <name>CN_End_Customer__c</name>
+        <relationshipLabel><!-- Complaints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- QA Compliant Number --></label>
+        <name>CN_QA_Compliant_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejected Date --></label>
+        <name>CN_Rejected_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolve Reason --></label>
+        <name>CN_Resolve_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Brand Quality</masterLabel>
+            <translation><!-- Brand Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Service</masterLabel>
+            <translation><!-- Customer Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply Chain</masterLabel>
+            <translation><!-- Supply Chain --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resolved Button --></label>
+        <name>CN_Resolved_Button__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolved Date --></label>
+        <name>CN_Resolved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Batch Number --></label>
+        <name>CN_SAP_Batch_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU CODE --></label>
+        <name>CN_SKU_CODE__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU Quantity --></label>
+        <name>CN_SKU_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office --></label>
+        <name>CN_Sales_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person --></label>
+        <name>CN_Sales_Person__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Complaint Layout</layout>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Product Information --></label>
+            <section>Product Information</section>
+        </sections>
+        <sections>
+            <label><!-- QA Follow-up --></label>
+            <section>QA Follow-up</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Closed --></label>
+        <name>CN_Complaint_Closed</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Rejected --></label>
+        <name>CN_Complaint_Rejected</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Resolved --></label>
+        <name>CN_Complaint_Resolved</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- CN_Complaint --></label>
+        <name>CN_Complaint</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Complaint cannot be later than today --></errorMessage>
+        <name>CN_Check_Complaint_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t set the Resolve Reason as &quot;Brand Quality&quot;. --></errorMessage>
+        <name>CN_Complaint_Check_Reason_CS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t set the Resolve Reason as &quot;Customer Service&quot;. --></errorMessage>
+        <name>CN_Complaint_Check_Reason_QA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to change the status manually. --></errorMessage>
+        <name>CN_Complaint_Check_Status_Accepted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to change the status manually. --></errorMessage>
+        <name>CN_Complaint_Check_Status_Assigned</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to change the status manually --></errorMessage>
+        <name>CN_Complaint_Check_Status_Creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to change the status manually. --></errorMessage>
+        <name>CN_Complaint_Check_Status_New</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to change the status manually. --></errorMessage>
+        <name>CN_Complaint_Check_Status_Rejected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to change the status manually. --></errorMessage>
+        <name>CN_Complaint_Check_Status_Resolved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the creator can close the complaint. --></errorMessage>
+        <name>CN_Complaint_Prevent_Close_Creator</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t edit the complaint while status is &quot;Assigned&quot;. --></errorMessage>
+        <name>CN_Coplaint_Prevent_Edit_Assigned</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t edit the complaint while status is &quot;Closed&quot;. --></errorMessage>
+        <name>CN_Coplaint_Prevent_Edit_Closed</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>客户合同</value>
+    </caseValues>
+    <fields>
+        <label>关联公司</label>
+        <name>CN_Affiliates__c</name>
+    </fields>
+    <fields>
+        <label>业务单元</label>
+        <name>CN_BU__c</name>
+        <picklistValues>
+            <masterLabel>Food Service</masterLabel>
+            <translation><!-- Food Service --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>担保人证件号</label>
+        <name>CN_Certificate_Number_of_Guarantor__c</name>
+    </fields>
+    <fields>
+        <label>担保人证件类型</label>
+        <name>CN_Certificate_Type_of_Guarantor__c</name>
+        <picklistValues>
+            <masterLabel>军官证</masterLabel>
+            <translation><!-- 军官证 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>士官证</masterLabel>
+            <translation><!-- 士官证 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>护照</masterLabel>
+            <translation><!-- 护照 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>港澳通行证</masterLabel>
+            <translation><!-- 港澳通行证 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>身份证</masterLabel>
+            <translation><!-- 身份证 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>有条件返利备注1</label>
+        <name>CN_Conditional_Rebate_Note1__c</name>
+    </fields>
+    <fields>
+        <label>有条件返利备注2</label>
+        <name>CN_Conditional_Rebate_Note2__c</name>
+    </fields>
+    <fields>
+        <label>有条件返利备注3</label>
+        <name>CN_Conditional_Rebate_Note3__c</name>
+    </fields>
+    <fields>
+        <label>合同编号</label>
+        <name>CN_Contract_Number__c</name>
+    </fields>
+    <fields>
+        <label>合同状态</label>
+        <name>CN_Contract_Status__c</name>
+        <picklistValues>
+            <masterLabel>作废</masterLabel>
+            <translation><!-- 作废 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>准备中</masterLabel>
+            <translation><!-- 准备中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>有效</masterLabel>
+            <translation><!-- 有效 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>终止</masterLabel>
+            <translation><!-- 终止 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>续签</masterLabel>
+            <translation><!-- 续签 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>合同类型</label>
+        <name>CN_Contract_Type__c</name>
+        <picklistValues>
+            <masterLabel>BSI合同</masterLabel>
+            <translation><!-- BSI合同 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gerard合同</masterLabel>
+            <translation><!-- Gerard合同 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>“法人”担保人</masterLabel>
+            <translation><!-- “法人”担保人 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>三方转让协议</masterLabel>
+            <translation><!-- 三方转让协议 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>与经销商/终端的3方合同</masterLabel>
+            <translation><!-- 与经销商/终端的3方合同 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>与经销商的2方合同</masterLabel>
+            <translation><!-- 与经销商的2方合同 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>业主为酒店担保</masterLabel>
+            <translation><!-- 业主为酒店担保 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>关联公司担保</masterLabel>
+            <translation><!-- 关联公司担保 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>单品合同</masterLabel>
+            <translation><!-- 单品合同 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>服务合同</masterLabel>
+            <translation><!-- 服务合同 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>标准版本</masterLabel>
+            <translation><!-- 标准版本 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>补充协议</masterLabel>
+            <translation><!-- 补充协议 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>赞助合同</masterLabel>
+            <translation><!-- 赞助合同 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>返利合同</masterLabel>
+            <translation><!-- 返利合同 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>采购协议-客户版本</masterLabel>
+            <translation><!-- 采购协议-客户版本 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>非“法人”担保人</masterLabel>
+            <translation><!-- 非“法人”担保人 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>预付定金</masterLabel>
+            <translation><!-- 预付定金 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>预付款合同</masterLabel>
+            <translation><!-- 预付款合同 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>客户合同编号</label>
+        <name>CN_Customer_Contract_Number__c</name>
+    </fields>
+    <fields>
+        <label>客户备注</label>
+        <name>CN_Customer_Remark__c</name>
+    </fields>
+    <fields>
+        <label>直接客户编号</label>
+        <name>CN_Direct_Account_Code__c</name>
+    </fields>
+    <fields>
+        <label>直接客户名称</label>
+        <name>CN_Direct_Account_Name__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>文件编号</label>
+        <name>CN_Document_Number__c</name>
+    </fields>
+    <fields>
+        <label>结束日期</label>
+        <name>CN_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>财务备注</label>
+        <name>CN_Finance_Remark__c</name>
+    </fields>
+    <fields>
+        <label>担保人</label>
+        <name>CN_Guarantor__c</name>
+    </fields>
+    <fields>
+        <label>间接客户名称</label>
+        <name>CN_Indirect_Account_Name__c</name>
+        <relationshipLabel><!-- Contracts (Indirect Account Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>内部合同编号</label>
+        <name>CN_Internal_Contract_Number__c</name>
+    </fields>
+    <fields>
+        <label>提交发票日</label>
+        <name>CN_Invoice_Submission_Date__c</name>
+    </fields>
+    <fields>
+        <label>原件合同返回日期</label>
+        <name>CN_Original_Contract_Return_Date__c</name>
+    </fields>
+    <fields>
+        <label>付款日</label>
+        <name>CN_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label>支付条件</label>
+        <name>CN_Payment_Term__c</name>
+        <picklistValues>
+            <masterLabel>CIA</masterLabel>
+            <translation><!-- CIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D000</masterLabel>
+            <translation><!-- D000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D003</masterLabel>
+            <translation><!-- D003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D005</masterLabel>
+            <translation><!-- D005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D010</masterLabel>
+            <translation><!-- D010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D015</masterLabel>
+            <translation><!-- D015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D030</masterLabel>
+            <translation><!-- D030 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D045</masterLabel>
+            <translation><!-- D045 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D060</masterLabel>
+            <translation><!-- D060 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D075</masterLabel>
+            <translation><!-- D075 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D090</masterLabel>
+            <translation><!-- D090 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D120</masterLabel>
+            <translation><!-- D120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M110</masterLabel>
+            <translation><!-- M110 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M115</masterLabel>
+            <translation><!-- M115 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M120</masterLabel>
+            <translation><!-- M120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M131</masterLabel>
+            <translation><!-- M131 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M145</masterLabel>
+            <translation><!-- M145 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M231</masterLabel>
+            <translation><!-- M231 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M331</masterLabel>
+            <translation><!-- M331 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>返利额度</label>
+        <name>CN_Rebate_Amount__c</name>
+    </fields>
+    <fields>
+        <label>返利条件1</label>
+        <name>CN_Rebate_Conditions1__c</name>
+    </fields>
+    <fields>
+        <label>返利条件2</label>
+        <name>CN_Rebate_Conditions2__c</name>
+    </fields>
+    <fields>
+        <label>返利条件3</label>
+        <name>CN_Rebate_Conditions3__c</name>
+    </fields>
+    <fields>
+        <label>返利结束日期1</label>
+        <name>CN_Rebate_End_Date1__c</name>
+    </fields>
+    <fields>
+        <label>返利结束日期2</label>
+        <name>CN_Rebate_End_Date2__c</name>
+    </fields>
+    <fields>
+        <label>返利结束日期3</label>
+        <name>CN_Rebate_End_Date3__c</name>
+    </fields>
+    <fields>
+        <label>返利结束日期</label>
+        <name>CN_Rebate_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>返利周期1</label>
+        <name>CN_Rebate_Period1__c</name>
+        <picklistValues>
+            <masterLabel>半年度</masterLabel>
+            <translation><!-- 半年度 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>季度</masterLabel>
+            <translation><!-- 季度 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>年度</masterLabel>
+            <translation><!-- 年度 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>指定时间</masterLabel>
+            <translation><!-- 指定时间 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>月度</masterLabel>
+            <translation><!-- 月度 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>返利周期2</label>
+        <name>CN_Rebate_Period2__c</name>
+        <picklistValues>
+            <masterLabel>半年度</masterLabel>
+            <translation><!-- 半年度 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>季度</masterLabel>
+            <translation><!-- 季度 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>年度</masterLabel>
+            <translation><!-- 年度 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>指定时间</masterLabel>
+            <translation><!-- 指定时间 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>月度</masterLabel>
+            <translation><!-- 月度 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>返利周期3</label>
+        <name>CN_Rebate_Period3__c</name>
+        <picklistValues>
+            <masterLabel>半年度</masterLabel>
+            <translation><!-- 半年度 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>季度</masterLabel>
+            <translation><!-- 季度 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>年度</masterLabel>
+            <translation><!-- 年度 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>指定时间</masterLabel>
+            <translation><!-- 指定时间 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>月度</masterLabel>
+            <translation><!-- 月度 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>返利周期</label>
+        <name>CN_Rebate_Period__c</name>
+        <picklistValues>
+            <masterLabel>半年度</masterLabel>
+            <translation><!-- 半年度 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>季度</masterLabel>
+            <translation><!-- 季度 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>年度</masterLabel>
+            <translation><!-- 年度 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>指定时间</masterLabel>
+            <translation><!-- 指定时间 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>月度</masterLabel>
+            <translation><!-- 月度 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>返利开始日期1</label>
+        <name>CN_Rebate_Start_Date1__c</name>
+    </fields>
+    <fields>
+        <label>返利开始日期2</label>
+        <name>CN_Rebate_Start_Date2__c</name>
+    </fields>
+    <fields>
+        <label>返利开始日期3</label>
+        <name>CN_Rebate_Start_Date3__c</name>
+    </fields>
+    <fields>
+        <label>返利开始日期</label>
+        <name>CN_Rebate_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>返利方式</label>
+        <name>CN_Rebate_Type__c</name>
+        <picklistValues>
+            <masterLabel>客户提供发票</masterLabel>
+            <translation><!-- 客户提供发票 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>票扣</masterLabel>
+            <translation><!-- 票扣 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>红票</masterLabel>
+            <translation><!-- 红票 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>转账</masterLabel>
+            <translation><!-- 转账 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>对账日</label>
+        <name>CN_Reconciliation_Date__c</name>
+    </fields>
+    <fields>
+        <label>参考日期类型</label>
+        <name>CN_Reference_Day__c</name>
+        <picklistValues>
+            <masterLabel>发票日</masterLabel>
+            <translation><!-- 发票日 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>送货日</masterLabel>
+            <translation><!-- 送货日 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>审核日期</label>
+        <name>CN_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label>销售渠道</label>
+        <name>CN_Sales_Channel__c</name>
+        <picklistValues>
+            <masterLabel>DS</masterLabel>
+            <translation><!-- DS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KA</masterLabel>
+            <translation><!-- KA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WS</masterLabel>
+            <translation><!-- WS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>区域</label>
+        <name>CN_Sales_Office__c</name>
+        <picklistValues>
+            <masterLabel>Beijing</masterLabel>
+            <translation><!-- Beijing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chengdu</masterLabel>
+            <translation><!-- Chengdu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guangzhou</masterLabel>
+            <translation><!-- Guangzhou --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shanghai</masterLabel>
+            <translation><!-- Shanghai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shenzhen</masterLabel>
+            <translation><!-- Shenzhen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>所有者</label>
+        <name>CN_Sales_People__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>开始日期</label>
+        <name>CN_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>无条件返利备注</label>
+        <name>CN_Unconditional_Rebate_Note__c</name>
+    </fields>
+    <fields>
+        <label>担保人证件有效期</label>
+        <name>CN_Validity_of_Guarantor_s_Certificate__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Contract Layout</layout>
+        <sections>
+            <label>客户信息</label>
+            <section>Account</section>
+        </sections>
+        <sections>
+            <label>返利条件</label>
+            <section>Conditional Rebate</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>相关日期</label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label>担保</label>
+            <section>Guarantor</section>
+        </sections>
+        <sections>
+            <label>发票及付款</label>
+            <section>Invoicing&amp;Payment</section>
+        </sections>
+        <sections>
+            <label>备注</label>
+            <section>Remark</section>
+        </sections>
+        <sections>
+            <label>无条件返利</label>
+            <section>Unconditional Rebate</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Contract Name</nameFieldLabel>
+    <recordTypes>
+        <label><!-- CN Contract --></label>
+        <name>CN_Contract</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>开始日期应不早于今天</errorMessage>
+        <name>CN_Check_Start_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

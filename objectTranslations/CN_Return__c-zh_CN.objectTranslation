@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>退货</value>
+    </caseValues>
+    <fields>
+        <label>单价</label>
+        <name>CN_Amount_Unit__c</name>
+    </fields>
+    <fields>
+        <label>批号</label>
+        <name>CN_Batch__c</name>
+    </fields>
+    <fields>
+        <label>客户编号</label>
+        <name>CN_Customer_NO__c</name>
+    </fields>
+    <fields>
+        <label>客户名称</label>
+        <name>CN_Customer__c</name>
+        <relationshipLabel><!-- Returns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>日期</label>
+        <name>CN_Date__c</name>
+    </fields>
+    <fields>
+        <label>物料描述</label>
+        <name>CN_Description__c</name>
+    </fields>
+    <fields>
+        <label>物料编号</label>
+        <name>CN_Material__c</name>
+        <relationshipLabel><!-- Returns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>交货工厂</label>
+        <name>CN_Plant__c</name>
+    </fields>
+    <fields>
+        <label>退货数量</label>
+        <name>CN_Return_Quantity__c</name>
+    </fields>
+    <fields>
+        <label>退货原因</label>
+        <name>CN_Return_Reason__c</name>
+    </fields>
+    <fields>
+        <label>退货类型</label>
+        <name>CN_Return_Type__c</name>
+        <picklistValues>
+            <masterLabel>RE - 产品质量问题 Product Quality issues</masterLabel>
+            <translation><!-- RE - 产品质量问题 Product Quality issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE - 保质期问题 Shelf life</masterLabel>
+            <translation><!-- RE - 保质期问题 Shelf life --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE - 其他 Others</masterLabel>
+            <translation><!-- RE - 其他 Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE - 其他运输原因 Other Delivery Reason</masterLabel>
+            <translation><!-- RE - 其他运输原因 Other Delivery Reason --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE - 卫检证书及保函原因 Certificates issues</masterLabel>
+            <translation><!-- RE - 卫检证书及保函原因 Certificates issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE - 客户退回</masterLabel>
+            <translation><!-- RE - 客户退回 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE - 打错订单信息 CS</masterLabel>
+            <translation><!-- RE - 打错订单信息 CS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE - 条码问题  Bar Code Issues</masterLabel>
+            <translation><!-- RE - 条码问题  Bar Code Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE - 破损 Damage</masterLabel>
+            <translation><!-- RE - 破损 Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE - 订单信息有误</masterLabel>
+            <translation><!-- RE - 订单信息有误 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE - 订单信息有误 Wrong Order Information</masterLabel>
+            <translation><!-- RE - 订单信息有误 Wrong Order Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE - 配货有误 Wrong Picking</masterLabel>
+            <translation><!-- RE - 配货有误 Wrong Picking --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>销售文件</label>
+        <name>CN_Sales_Document__c</name>
+    </fields>
+    <fields>
+        <label>合计金额</label>
+        <name>CN_Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label>退货单位</label>
+        <name>CN_Unit__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Return Layout</layout>
+        <sections>
+            <label><!-- Amount --></label>
+            <section>Amount</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Product --></label>
+            <section>Product</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Return Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- CN Return --></label>
+        <name>CN_Return</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>客户未同步，您无法为此客户创建退货。</errorMessage>
+        <name>CN_Return_Account_Has_Approved</name>
+    </validationRules>
+</CustomObjectTranslation>

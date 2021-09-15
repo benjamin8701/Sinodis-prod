@@ -260,7 +260,15 @@
     <fields>
         <fullName>CN_Uploaded_Status_Business_License__c</fullName>
         <externalId>false</externalId>
-        <formula>IF(CN_Account__r.CN_Require_Business_License__c = TRUE, IF (CN_Account__r.CN_Upload_Business_License__c  = TRUE, &quot;已提交/Submitted&quot;, &quot;待提交/Pending Submission&quot;), &quot;不需要/Not Required&quot;)</formula>
+        <formula>IF(
+  CN_Account__r.CN_Require_Business_License__c = TRUE, 
+  IF (
+    CN_Account__r.CN_Upload_Business_License__c  = TRUE, 
+    &quot;已提交/Submitted&quot;, 
+    &quot;待提交/Pending Submission&quot;
+  ), 
+  &quot;不需要/Not Required&quot;
+)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Uploaded Status Business License</label>
         <required>false</required>

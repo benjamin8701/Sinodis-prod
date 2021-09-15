@@ -134,7 +134,9 @@ public without sharing class CN_CR_Check_Fields_Change_Handler implements Trigge
                     changedFieldSet.add(oldFieldName);
                     if(fieldInterfaceMap.get(oldFieldName)) {
                         if('CN_Contact_Type__c'.equals(oldFieldName)) {
-                            if(cr.CN_Contact_Type__c == '04' && (cr.New_CN_Contact_Type__c.contains('01') || cr.New_CN_Contact_Type__c.contains('02'))) {
+                            // houchen.wan 0817 modified 
+                            //if(cr.CN_Contact_Type__c == '04' && (cr.New_CN_Contact_Type__c.contains('01') || cr.New_CN_Contact_Type__c.contains('02'))) {
+                            if( !cr.CN_Contact_Type__c.contains('01') && cr.New_CN_Contact_Type__c.contains('01')) {
                                 isInterfaceField = true;
                             }
                         } else {

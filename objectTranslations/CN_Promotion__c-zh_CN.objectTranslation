@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>促销活动</value>
+    </caseValues>
+    <fields>
+        <label><!-- CS Group Email --></label>
+        <name>CN_CS_Group_Email__c</name>
+    </fields>
+    <fields>
+        <label>评论</label>
+        <name>CN_Comments__c</name>
+    </fields>
+    <fields>
+        <label>客户品牌</label>
+        <name>CN_Customer_Brand__c</name>
+        <relationshipLabel><!-- Promotions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>客户集团名称</label>
+        <name>CN_Customer_Group__c</name>
+        <relationshipLabel><!-- Promotions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>描述</label>
+        <name>CN_Description__c</name>
+    </fields>
+    <fields>
+        <label>结束日期</label>
+        <name>CN_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>CN_Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Published Time --></label>
+        <name>CN_Last_Published_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- MKT Group Email --></label>
+        <name>CN_MKT_Group_Email__c</name>
+    </fields>
+    <fields>
+        <label>请确认：</label>
+        <name>CN_Please_Confirm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion Line Item Count --></label>
+        <name>CN_Promotion_Line_Item_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion Member Count --></label>
+        <name>CN_Promotion_Member_Count__c</name>
+    </fields>
+    <fields>
+        <label>促销类型</label>
+        <name>CN_Promotion_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bundle sells</masterLabel>
+            <translation><!-- Bundle sells --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount</masterLabel>
+            <translation><!-- Discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gifting</masterLabel>
+            <translation><!-- Gifting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rebates</masterLabel>
+            <translation><!-- Rebates --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>发布日期</label>
+        <name>CN_Publish_Date__c</name>
+    </fields>
+    <fields>
+        <label>销售办公室</label>
+        <name>CN_Sales_Office__c</name>
+        <picklistValues>
+            <masterLabel>K010-ShangHai</masterLabel>
+            <translation><!-- K010-ShangHai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K020-BeiJing</masterLabel>
+            <translation><!-- K020-BeiJing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K030-ShenZhen</masterLabel>
+            <translation><!-- K030-ShenZhen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K040-GuangZhou</masterLabel>
+            <translation><!-- K040-GuangZhou --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K050-ChengDu</masterLabel>
+            <translation><!-- K050-ChengDu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K060-DaLian</masterLabel>
+            <translation><!-- K060-DaLian --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>开始日期</label>
+        <name>CN_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>状态</label>
+        <name>CN_Status__c</name>
+        <picklistValues>
+            <masterLabel>Aborted</masterLabel>
+            <translation><!-- Aborted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation><!-- Planned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Published</masterLabel>
+            <translation><!-- Published --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready</masterLabel>
+            <translation><!-- Ready --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>活动渠道</label>
+        <name>Channel__c</name>
+        <picklistValues>
+            <masterLabel>DS</masterLabel>
+            <translation><!-- DS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KA</masterLabel>
+            <translation><!-- KA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WS</masterLabel>
+            <translation><!-- WS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>客户类别</label>
+        <name>Customer_Category__c</name>
+        <picklistValues>
+            <masterLabel>BAPA</masterLabel>
+            <translation><!-- BAPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catering</masterLabel>
+            <translation><!-- Catering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coffee/Tea Shop</masterLabel>
+            <translation><!-- Coffee/Tea Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EC</masterLabel>
+            <translation><!-- EC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotel</masterLabel>
+            <translation><!-- Hotel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM</masterLabel>
+            <translation><!-- OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurant</masterLabel>
+            <translation><!-- Restaurant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retailor</masterLabel>
+            <translation><!-- Retailor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler</masterLabel>
+            <translation><!-- Wholesaler --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Promotion Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>详情</label>
+            <section>Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>促销活动名称</nameFieldLabel>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>中止</label>
+        <name>CN_Abort</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>生成促销活动成员</label>
+        <name>CN_Generate_Promotion_Member</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>预备/撤回</label>
+        <name>CN_PRMT_Ready_for_Publish</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>发布促销</label>
+        <name>CN_Publish_Pomotion</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- CN_Promotion --></label>
+        <name>CN_Promotion</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>至少需要一个促销活动条目</errorMessage>
+        <name>CN_Check_Item_Count_When_Ready</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>结束日期需晚于开始日期</errorMessage>
+        <name>CN_Check_Start_Date_End_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

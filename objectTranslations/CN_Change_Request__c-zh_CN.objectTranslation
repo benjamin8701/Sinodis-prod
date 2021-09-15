@@ -8,8 +8,16 @@
         <label>客户来源</label>
         <name>CN_Account_Account_Source__c</name>
         <picklistValues>
+            <masterLabel>Bakery China</masterLabel>
+            <translation><!-- Bakery China --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Brand Activity</masterLabel>
             <translation><!-- Brand Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIIE</masterLabel>
+            <translation><!-- CIIE --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Cold Visit</masterLabel>
@@ -20,12 +28,48 @@
             <translation><!-- Customer Recommend --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Customer Service Hotline</masterLabel>
+            <translation><!-- Customer Service Hotline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Campaign</masterLabel>
+            <translation><!-- Digital Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Expositions</masterLabel>
             <translation><!-- Expositions --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>FHC</masterLabel>
+            <translation><!-- FHC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Campaign</masterLabel>
+            <translation><!-- Marketing Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Trade show</masterLabel>
+            <translation><!-- Other Trade show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Public Demo</masterLabel>
             <translation><!-- Public Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Network</masterLabel>
+            <translation><!-- Social Media Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship Event</masterLabel>
+            <translation><!-- Sponsorship Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -306,6 +350,26 @@
     <fields>
         <label>开票名称</label>
         <name>CN_Account_Invoicing_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Layer --></label>
+        <name>CN_Account_Layer__c</name>
+        <picklistValues>
+            <masterLabel>Layer 100</masterLabel>
+            <translation><!-- Layer 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 20</masterLabel>
+            <translation><!-- Layer 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 50</masterLabel>
+            <translation><!-- Layer 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 80</masterLabel>
+            <translation><!-- Layer 80 --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label>等级</label>
@@ -1076,6 +1140,10 @@
         <name>CN_Account_URL__c</name>
     </fields>
     <fields>
+        <label>拜访地址(CN)</label>
+        <name>CN_Account_Visit_Addr_CN__c</name>
+    </fields>
+    <fields>
         <label>客户分配组</label>
         <name>CN_Acct_Assgmt_Group__c</name>
     </fields>
@@ -1156,12 +1224,12 @@
         <name>CN_Billing_Email__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
         <label><!-- Billing Mobile Phone --></label>
         <name>CN_Billing_Mobile_Phone__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
         <label><!-- Billing Phone Number --></label>
         <name>CN_Billing_Phone_Number__c</name>
     </fields>
@@ -1214,7 +1282,7 @@
         <name>CN_Contact_Account_Name__c</name>
     </fields>
     <fields>
-        <label><!-- Contact Billing To Address --></label>
+        <label>联系人收票地址</label>
         <name>CN_Contact_Billing_To_Address__c</name>
     </fields>
     <fields>
@@ -1228,6 +1296,10 @@
     <fields>
         <label>联系人姓名（CN）-姓</label>
         <name>CN_Contact_CN_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label>是否决策者</label>
+        <name>CN_Contact_Decision_Maker__c</name>
     </fields>
     <fields>
         <label>联系人部门</label>
@@ -1426,6 +1498,14 @@
         <name>CN_Contact_Wechat_ID__c</name>
     </fields>
     <fields>
+        <label>工作语言</label>
+        <name>CN_Contact_Working_Language__c</name>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label>联系人</label>
         <name>CN_Contact__c</name>
         <relationshipLabel>变更申请</relationshipLabel>
@@ -1482,6 +1562,15 @@
     <fields>
         <label>财务AR</label>
         <name>CN_Finance_AR__c</name>
+        <relationshipLabel>变更申请</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- From Lead Id --></label>
+        <name>CN_From_Lead_Id__c</name>
+    </fields>
+    <fields>
+        <label>来自潜在客户</label>
+        <name>CN_From_Lead__c</name>
         <relationshipLabel>变更申请</relationshipLabel>
     </fields>
     <fields>
@@ -1653,12 +1742,12 @@
         <name>CN_New_Billing_Email__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
         <label><!-- New Billing Mobile Phone --></label>
         <name>CN_New_Billing_Mobile_Phone__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
         <label><!-- New Billing Phone Number --></label>
         <name>CN_New_Billing_Phone_Number__c</name>
     </fields>
@@ -1840,7 +1929,7 @@
         <name>CN_New_Purchasing_Mobile_Phone__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
         <label><!-- New Purchasing Phone Number --></label>
         <name>CN_New_Purchasing_Phone_Number__c</name>
     </fields>
@@ -2007,12 +2096,12 @@
         <name>CN_Purchasing_Email__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
         <label><!-- Purchasing Mobile Phone --></label>
         <name>CN_Purchasing_Mobile_Phone__c</name>
     </fields>
     <fields>
-        <help><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></help>
+        <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX（X为数字）</help>
         <label><!-- Purchasing Phone Number --></label>
         <name>CN_Purchasing_Phone_Number__c</name>
     </fields>
@@ -2284,8 +2373,16 @@
         <label>新客户来源</label>
         <name>New_CN_Account_Account_Source__c</name>
         <picklistValues>
+            <masterLabel>Bakery China</masterLabel>
+            <translation><!-- Bakery China --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Brand Activity</masterLabel>
             <translation><!-- Brand Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIIE</masterLabel>
+            <translation><!-- CIIE --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Cold Visit</masterLabel>
@@ -2296,12 +2393,48 @@
             <translation><!-- Customer Recommend --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Customer Service Hotline</masterLabel>
+            <translation><!-- Customer Service Hotline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Campaign</masterLabel>
+            <translation><!-- Digital Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Expositions</masterLabel>
             <translation><!-- Expositions --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>FHC</masterLabel>
+            <translation><!-- FHC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Campaign</masterLabel>
+            <translation><!-- Marketing Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Trade show</masterLabel>
+            <translation><!-- Other Trade show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Public Demo</masterLabel>
             <translation><!-- Public Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Network</masterLabel>
+            <translation><!-- Social Media Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship Event</masterLabel>
+            <translation><!-- Sponsorship Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -2560,6 +2693,26 @@
     <fields>
         <label>新开票名称</label>
         <name>New_CN_Account_Invoicing_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Account Layer --></label>
+        <name>New_CN_Account_Layer__c</name>
+        <picklistValues>
+            <masterLabel>Layer 100</masterLabel>
+            <translation><!-- Layer 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 20</masterLabel>
+            <translation><!-- Layer 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 50</masterLabel>
+            <translation><!-- Layer 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 80</masterLabel>
+            <translation><!-- Layer 80 --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label>新等级</label>
@@ -3323,6 +3476,10 @@
         <name>New_CN_Account_The_Number_Of_Seats__c</name>
     </fields>
     <fields>
+        <label>新拜访地址(CN)</label>
+        <name>New_CN_Account_Visit_Addr_CN__c</name>
+    </fields>
+    <fields>
         <label>新联系人收票地址</label>
         <name>New_CN_Contact_Billing_To_Address__c</name>
     </fields>
@@ -3337,6 +3494,10 @@
     <fields>
         <label>新联系人姓名（CN）-姓</label>
         <name>New_CN_Contact_CN_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label>新是否决策者</label>
+        <name>New_CN_Contact_Decision_Maker__c</name>
     </fields>
     <fields>
         <label>新联系人部门</label>
@@ -3531,9 +3692,17 @@
         <name>New_CN_Contact_Wechat_ID__c</name>
     </fields>
     <fields>
+        <label>新工作语言</label>
+        <name>New_CN_Contact_Working_Language__c</name>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label>新城市</label>
         <name>New_CN_ShipTo_City_CN__c</name>
-        <relationshipLabel><!-- Change Requests (New City(CN)) --></relationshipLabel>
+        <relationshipLabel>变更申请</relationshipLabel>
     </fields>
     <fields>
         <label>新送达方联系人姓名</label>
@@ -3613,6 +3782,44 @@
         <label>已经上传新合约</label>
         <name>New_CN_Upload_Contract__c</name>
     </fields>
+    <layouts>
+        <layout>CN Mass Change Account Finance AR Layout</layout>
+        <sections>
+            <label>客户信息</label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label>变更申请信息</label>
+            <section>Change Request Information</section>
+        </sections>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>SAP同步信息</label>
+            <section>Sync to SAP</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN Mass Change Account Owner Layout</layout>
+        <sections>
+            <label>客户信息</label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label>变更申请信息</label>
+            <section>Change Request Information</section>
+        </sections>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>SAP同步信息</label>
+            <section>Sync to SAP</section>
+        </sections>
+    </layouts>
     <layouts>
         <layout>CN Sinodis Account Change Request For Finance Layout</layout>
         <sections>
@@ -3819,6 +4026,14 @@
         <name>CN_Approved_Update_Ship_To_Request</name>
     </recordTypes>
     <recordTypes>
+        <label><!-- Change Account Owner --></label>
+        <name>CN_MASS_Change_Account_Owner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Change Account Finance AR --></label>
+        <name>CN_Mass_Change_Account_Finance_AR</name>
+    </recordTypes>
+    <recordTypes>
         <label><!-- New Contact Request --></label>
         <name>CN_New_Contact_Request</name>
     </recordTypes>
@@ -3901,6 +4116,10 @@
     <validationRules>
         <errorMessage>请关闭此页面，从客户/联系人/送达方页面点击按钮创建变更申请。</errorMessage>
         <name>CN_Check_Generate_Source</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select the account which had been synced --></errorMessage>
+        <name>CN_Check_New_Contact_Request_Account</name>
     </validationRules>
     <validationRules>
         <errorMessage>必须且仅为变更请求选择一个请求对象（客户/联系人/送达方）</errorMessage>

@@ -229,6 +229,25 @@
         <template>CN_Email_Folder/CN_Account_Synced</template>
     </alerts>
     <fieldUpdates>
+        <fullName>CN_Acc_Pipulate_DisplayStatus_Rejected</fullName>
+        <field>CN_Account_Status_New__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>CN_Acc_Pipulate_DisplayStatus_Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Acc_Populate_DisplayStatus_Others</fullName>
+        <field>CN_Account_Status_New__c</field>
+        <name>CN_Acc_Populate_DisplayStatus_Others</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>PreviousValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CN_Account_Approved_Date_To_Today</fullName>
         <field>CN_Account_Approved_Date__c</field>
         <formula>TODAY()</formula>
@@ -243,6 +262,36 @@
         <field>CN_Is_In_Approving__c</field>
         <literalValue>1</literalValue>
         <name>CN_Account_Check_In_Approving</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Account_Convert_Clear_Lead_Id</fullName>
+        <field>CN_Converted_From__c</field>
+        <name>CN_Account_Convert_Clear_Lead_Id</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Account_Convert_To_Direct_Action</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>CN_Edit_Direct</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>CN_Account_Convert_To_Direct_Action</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Account_Customer_Populate_Journey</fullName>
+        <field>CN_Customer_Journey__c</field>
+        <literalValue>Customer</literalValue>
+        <name>CN_Account_Customer_Populate_Journey</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -271,6 +320,16 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>CN_Account_Populate</fullName>
+        <field>CN_Visit_Addr_CN__c</field>
+        <formula>CN_City_CN__r.CN_City_CN__c  &amp;  CN_Invoicing_Address_and_Phone__c</formula>
+        <name>CN_Account_Populate_VisitAddress_Convert</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CN_Account_Populate_PaymentTerm</fullName>
         <field>CN_Payment_Terms__c</field>
         <name>CN_Account_Populate_PaymentTerm</name>
@@ -286,6 +345,27 @@
         <name>CN_Account_Populate_Sales_Person_Email</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Account_Prospect_New_to_Edit_Action</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>CN_Edit_Prospect</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>CN_Account_Prospect_New_to_Edit_Action</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Account_Prospect_Populate_Journey</fullName>
+        <field>CN_Customer_Journey__c</field>
+        <literalValue>Prospect</literalValue>
+        <name>CN_Account_Prospect_Populate_Journey</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
@@ -308,6 +388,56 @@
         <name>CN_Account_RecordType_To_EditDirect</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Account_Status_Dispaly_To_New</fullName>
+        <field>CN_Account_Status_New__c</field>
+        <literalValue>New</literalValue>
+        <name>CN_Account_Status_Dispaly_To_New</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Account_Status_Display_To_Approved</fullName>
+        <field>CN_Account_Status_New__c</field>
+        <literalValue>Approved</literalValue>
+        <name>CN_Account_Status_Display_To_Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Account_Status_Display_To_Ready</fullName>
+        <field>CN_Account_Status_New__c</field>
+        <literalValue>Ready for Approval</literalValue>
+        <name>CN_Account_Status_Display_To_Ready</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Account_Status_Display_To_Rejected</fullName>
+        <field>CN_Account_Status_New__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>CN_Account_Status_Display_To_Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Account_Status_Display_To_Submitted</fullName>
+        <field>CN_Account_Status_New__c</field>
+        <literalValue>Submitted for Approval</literalValue>
+        <name>CN_Account_Status_Display_To_Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
@@ -634,7 +764,48 @@
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
+        <fullName>CN_Account_Convert_Clear_Lead_Id</fullName>
+        <actions>
+            <name>CN_Account_Convert_Clear_Lead_Id</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>CN_Account_Populate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
+  OR(
+    RecordType.DeveloperName = &apos;CN_Edit_Prospect&apos;,
+    RecordType.DeveloperName = &apos;CN_Edit_Indirect&apos;,
+    RecordType.DeveloperName = &apos;CN_New_Prospect&apos;,
+    RecordType.DeveloperName = &apos;CN_New_Indirect&apos;
+  ),
+  NOT(ISBLANK(CN_Converted_From__c  ) ) 
+)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_Account_Convert_To_Direct</fullName>
+        <actions>
+            <name>CN_Account_Convert_To_Direct_Action</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>CN_Account_Customer_Populate_Journey</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(      $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,       RecordType.DeveloperName = &quot;CN_Edit_Prospect&quot;,      CN_Prospect_Convert__c = True )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
         <fullName>CN_Account_Direct_New_to_Edit</fullName>
+        <actions>
+            <name>CN_Account_Customer_Populate_Journey</name>
+            <type>FieldUpdate</type>
+        </actions>
         <actions>
             <name>CN_Account_Direct_New_to_Edit_Action</name>
             <type>FieldUpdate</type>
@@ -674,6 +845,10 @@
     <rules>
         <fullName>CN_Account_InDirect_New_to_Edit</fullName>
         <actions>
+            <name>CN_Account_Customer_Populate_Journey</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
             <name>CN_Account_Indirect_New_to_Edit_Action</name>
             <type>FieldUpdate</type>
         </actions>
@@ -690,6 +865,20 @@
         <active>true</active>
         <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c, BEGINS(RecordType.DeveloperName, &apos;CN&apos;), AND(OR(ISNEW(), ISCHANGED(CN_Sales_Person_Email__c)),   NOT(ISBLANK(CN_Sales_Person_Name__r.CN_User_Email__c))))</formula>
         <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_Account_Prospect_New_to_Edit</fullName>
+        <actions>
+            <name>CN_Account_Prospect_New_to_Edit_Action</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>CN_Account_Prospect_Populate_Journey</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    RecordType.DeveloperName = &apos;CN_New_Prospect&apos; )</formula>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
         <fullName>CN_Account_Recover_Sync_Information</fullName>
@@ -756,6 +945,16 @@
 		CN_Block_Sales_Support__c = false 
 	)
 )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_Account_Update_Account_Status_Display</fullName>
+        <actions>
+            <name>CN_Account_Status_Display_To_Ready</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, BEGINS(RecordType.DeveloperName, &apos;CN&apos;), ISCHANGED(CN_Account_Status__c), ISPICKVAL(CN_Account_Status__c, &apos;Ready for Approval&apos;) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

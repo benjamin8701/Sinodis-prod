@@ -37,6 +37,30 @@
         <name>CN_Account_FinAR_Email__c</name>
     </fields>
     <fields>
+        <label><!-- Account Layer --></label>
+        <name>CN_Account_Layer__c</name>
+        <picklistValues>
+            <masterLabel>Layer 100</masterLabel>
+            <translation><!-- Layer 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 20</masterLabel>
+            <translation><!-- Layer 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 50</masterLabel>
+            <translation><!-- Layer 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 80</masterLabel>
+            <translation><!-- Layer 80 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Layer for Report --></label>
+        <name>CN_Account_Layer_for_Report__c</name>
+    </fields>
+    <fields>
         <label><!-- Account Not Uploaded Contract --></label>
         <name>CN_Account_Not_Uploaded_Contract__c</name>
     </fields>
@@ -45,11 +69,23 @@
         <name>CN_Account_Not_Uploaded_Expect_Contract__c</name>
     </fields>
     <fields>
+        <label><!-- Account RecordType --></label>
+        <name>CN_Account_RecordType__c</name>
+    </fields>
+    <fields>
         <label><!-- Account Source --></label>
         <name>CN_Account_Source__c</name>
         <picklistValues>
+            <masterLabel>Bakery China</masterLabel>
+            <translation><!-- Bakery China --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Brand Activity</masterLabel>
             <translation><!-- Brand Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIIE</masterLabel>
+            <translation><!-- CIIE --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Cold Visit</masterLabel>
@@ -60,12 +96,76 @@
             <translation><!-- Customer Recommend --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Customer Service Hotline</masterLabel>
+            <translation><!-- Customer Service Hotline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Campaign</masterLabel>
+            <translation><!-- Digital Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Expositions</masterLabel>
             <translation><!-- Expositions --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>FHC</masterLabel>
+            <translation><!-- FHC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Campaign</masterLabel>
+            <translation><!-- Marketing Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Trade show</masterLabel>
+            <translation><!-- Other Trade show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Public Demo</masterLabel>
             <translation><!-- Public Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Network</masterLabel>
+            <translation><!-- Social Media Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship Event</masterLabel>
+            <translation><!-- Sponsorship Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Status For Display --></label>
+        <name>CN_Account_Status_For_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Account Status --></label>
+        <name>CN_Account_Status_New__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Approval</masterLabel>
+            <translation><!-- Ready for Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Approval</masterLabel>
+            <translation><!-- Submitted for Approval --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -165,6 +265,10 @@
     <fields>
         <label><!-- Bank Account --></label>
         <name>CN_Bank_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Block Date --></label>
+        <name>CN_Billing_Block_Date__c</name>
     </fields>
     <fields>
         <label><!-- Billing Block --></label>
@@ -365,6 +469,10 @@
         <name>CN_Billing_Phone_Number__c</name>
     </fields>
     <fields>
+        <label><!-- Block Date --></label>
+        <name>CN_Block_Date__c</name>
+    </fields>
+    <fields>
         <label><!-- Block Sales Support --></label>
         <name>CN_Block_Sales_Support__c</name>
     </fields>
@@ -520,6 +628,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Converted From --></label>
+        <name>CN_Converted_From__c</name>
+    </fields>
+    <fields>
         <label><!-- Country(CN) --></label>
         <name>CN_Country_CN__c</name>
         <picklistValues>
@@ -599,6 +711,10 @@
             <masterLabel>CPDA-Onetime Customer</masterLabel>
             <translation><!-- CPDA-Onetime Customer --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delivery Block Date --></label>
+        <name>CN_Delivery_Block_Date__c</name>
     </fields>
     <fields>
         <label><!-- Delivery Block --></label>
@@ -806,6 +922,14 @@
         <relationshipLabel><!-- Accounts (Finance AR) --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- CN_Gaode_Geolocation --></label>
+        <name>CN_Gaode_Geolocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN_Gaode_Response_Status --></label>
+        <name>CN_Gaode_Response_Status__c</name>
+    </fields>
+    <fields>
         <label><!-- Group Name API --></label>
         <name>CN_Group_Name_API__c</name>
     </fields>
@@ -962,6 +1086,14 @@
     <fields>
         <label><!-- Is Sales Owner --></label>
         <name>CN_Is_Sales_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Show Payment Report --></label>
+        <name>CN_Is_Show_Payment_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is TM Account --></label>
+        <name>CN_Is_TM_Account__c</name>
     </fields>
     <fields>
         <label><!-- Latest Approved Payment Term --></label>
@@ -1137,8 +1269,16 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Map Link --></label>
+        <name>CN_Map_Link__c</name>
+    </fields>
+    <fields>
         <label><!-- Nature --></label>
         <name>CN_Nature__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN_Need_Sync_Geolocation --></label>
+        <name>CN_Need_Sync_Geolocation__c</name>
     </fields>
     <fields>
         <label><!-- Number of Stores --></label>
@@ -1147,6 +1287,18 @@
     <fields>
         <label><!-- Numbers of Ship-to Party --></label>
         <name>CN_Numbers_of_Ship_to_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Date --></label>
+        <name>CN_Open_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open During Date --></label>
+        <name>CN_Open_During_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Block Date --></label>
+        <name>CN_Order_Block_Date__c</name>
     </fields>
     <fields>
         <label><!-- Order Block --></label>
@@ -1286,6 +1438,10 @@
     </fields>
     <fields>
         <label><!-- Please Confirm --></label>
+        <name>CN_Please_Confirm_Prospect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Please Confirm --></label>
         <name>CN_Please_Confirm__c</name>
     </fields>
     <fields>
@@ -1303,6 +1459,10 @@
     <fields>
         <label><!-- Price determination --></label>
         <name>CN_Price_determination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect Convert --></label>
+        <name>CN_Prospect_Convert__c</name>
     </fields>
     <fields>
         <label><!-- Province(CN) API --></label>
@@ -1757,6 +1917,10 @@
         <name>CN_Sales_Person_SalesTeam_Code__c</name>
     </fields>
     <fields>
+        <label><!-- Sales Team Name --></label>
+        <name>CN_Sales_Team_Name__c</name>
+    </fields>
+    <fields>
         <help><!-- Please search for KA/DS/WS. --></help>
         <label><!-- Sales Team --></label>
         <name>CN_Sales_Team_UI__c</name>
@@ -1765,6 +1929,10 @@
     <fields>
         <label><!-- Sales Team --></label>
         <name>CN_Sales_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent Reminder Level --></label>
+        <name>CN_Sent_Reminder_Level__c</name>
     </fields>
     <fields>
         <label><!-- Ship To Party Change Request Id --></label>
@@ -2194,6 +2362,10 @@
         <name>CN_Synchronized__c</name>
     </fields>
     <fields>
+        <label><!-- TM Remove Date --></label>
+        <name>CN_TM_Remove_Date__c</name>
+    </fields>
+    <fields>
         <label><!-- Tax classification --></label>
         <name>CN_Tax_Classification__c</name>
     </fields>
@@ -2249,6 +2421,11 @@
         <label><!-- Vat Reg No --></label>
         <name>CN_Vat_Reg_No__c</name>
     </fields>
+    <fields>
+        <help><!-- Please fill with city and street --></help>
+        <label><!-- Visit Address(CN) --></label>
+        <name>CN_Visit_Addr_CN__c</name>
+    </fields>
     <layouts>
         <layout>CN Account Direct  Approved</layout>
         <sections>
@@ -2283,7 +2460,39 @@
         </sections>
     </layouts>
     <layouts>
+        <layout>CN Account Direct Read only</layout>
+        <sections>
+            <label><!-- Account Owners --></label>
+            <section>Account Owners</section>
+        </sections>
+        <sections>
+            <label><!-- Adddress --></label>
+            <section>Adddress</section>
+        </sections>
+    </layouts>
+    <layouts>
         <layout>CN Account Indirect Edit</layout>
+        <sections>
+            <label><!-- Account Owners --></label>
+            <section>Account Owners</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN Account Indirect Read only</layout>
+        <sections>
+            <label><!-- Account Owners --></label>
+            <section>Account Owners</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN Account Prospect Edit</layout>
+        <sections>
+            <label><!-- Account Owners --></label>
+            <section>Account Owners</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN Account Prospect Read only</layout>
         <sections>
             <label><!-- Account Owners --></label>
             <section>Account Owners</section>
@@ -2310,12 +2519,20 @@
         <name>CN_Account_Update_Request</name>
     </quickActions>
     <quickActions>
+        <label><!-- Convert to Direct Account --></label>
+        <name>CN_Convert_to_Direct_Account</name>
+    </quickActions>
+    <quickActions>
         <label><!-- Documents --></label>
         <name>CN_Documents</name>
     </quickActions>
     <quickActions>
         <label><!-- Finance Information --></label>
         <name>CN_Finance_Information</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Map Link --></label>
+        <name>CN_Map_Link</name>
     </quickActions>
     <quickActions>
         <label><!-- Ready for Approval/Back to New --></label>
@@ -2334,12 +2551,20 @@
         <name>CN_Edit_Indirect</name>
     </recordTypes>
     <recordTypes>
+        <label><!-- Edit Prospect --></label>
+        <name>CN_Edit_Prospect</name>
+    </recordTypes>
+    <recordTypes>
         <label><!-- Direct Account --></label>
         <name>CN_New_Direct</name>
     </recordTypes>
     <recordTypes>
         <label><!-- Indirect Accont --></label>
         <name>CN_New_Indirect</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prospect --></label>
+        <name>CN_New_Prospect</name>
     </recordTypes>
     <validationRules>
         <errorMessage><!-- Not Allowed to Change Status in Approving. --></errorMessage>
@@ -2356,6 +2581,46 @@
     <validationRules>
         <errorMessage><!-- The Group that be choice is not valid --></errorMessage>
         <name>CN_Account_Check_Group_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Commercial Name (CN) must be entered. --></errorMessage>
+        <name>CN_Account_Check_Ready_CommercialNameCN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Commercial Name (EN) must be entered. --></errorMessage>
+        <name>CN_Account_Check_Ready_CommercialNameEN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Delivery Address(EN) must be entered. --></errorMessage>
+        <name>CN_Account_Check_Ready_DeliveryAddress</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Delivery Plant must be entered. --></errorMessage>
+        <name>CN_Account_Check_Ready_DeliveryPlant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invoice Type must be entered. --></errorMessage>
+        <name>CN_Account_Check_Ready_InvoiceType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- License Name (EN) must be entered. --></errorMessage>
+        <name>CN_Account_Check_Ready_LicenseNameEN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Litigation City must be entered. --></errorMessage>
+        <name>CN_Account_Check_Ready_LitigationCity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Term must be entered. --></errorMessage>
+        <name>CN_Account_Check_Ready_PaymentTerm</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sales District must be entered. --></errorMessage>
+        <name>CN_Account_Check_Ready_SalesDistrict</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Subcategory must be entered. --></errorMessage>
+        <name>CN_Account_Check_Ready_Subcategory</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- The Sales Team that be choice is not valid. --></errorMessage>
@@ -2441,6 +2706,10 @@ Invoicing Address and Phone. --></errorMessage>
         <name>CN_Check_VAT_InvoiceType</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- It&apos;s not allowed to convert new direct account, please select prospect instead. --></errorMessage>
+        <name>CN_Prevent_Convert_To_Direct</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Pls don&apos;t update when the account has been approved. --></errorMessage>
         <name>CN_Prevent_Edit_Approved</name>
     </validationRules>
@@ -2459,6 +2728,10 @@ Invoicing Address and Phone. --></errorMessage>
     <validationRules>
         <errorMessage><!-- E-099 : Pls don&apos;t update sync information when the change request has been synchronized. --></errorMessage>
         <name>CN_Prevent_Edit_Synced_Success</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please don&apos;t choose existing Account during Lead Conversion. --></errorMessage>
+        <name>CN_Prevent_Existing_Account_Convert</name>
     </validationRules>
     <webLinks>
         <label><!-- Clone --></label>

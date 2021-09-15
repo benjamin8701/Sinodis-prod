@@ -17,12 +17,36 @@
         <name>CN_Account_API_US_PW_Error</name>
     </customLabels>
     <customLabels>
+        <label>执行</label>
+        <name>CN_Account_Button_Assign</name>
+    </customLabels>
+    <customLabels>
+        <label>取消</label>
+        <name>CN_Account_Button_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Account_Button_Clear --></label>
+        <name>CN_Account_Button_Clear</name>
+    </customLabels>
+    <customLabels>
+        <label>确认</label>
+        <name>CN_Account_Button_Process</name>
+    </customLabels>
+    <customLabels>
+        <label>检索</label>
+        <name>CN_Account_Button_Search</name>
+    </customLabels>
+    <customLabels>
         <label>发送客户到SAP?</label>
         <name>CN_Account_CFRM_Msg</name>
     </customLabels>
     <customLabels>
         <label>请联系系统管理员。</label>
         <name>CN_Account_Contact_System_Admin</name>
+    </customLabels>
+    <customLabels>
+        <label>您确定将此潜在客户转换为直接客户？</label>
+        <name>CN_Account_Convert_To_Direct</name>
     </customLabels>
     <customLabels>
         <label>错误：延时提醒设置不正确，请联系IT管理员以获得帮助。</label>
@@ -47,6 +71,58 @@
     <customLabels>
         <label>新建变更申请</label>
         <name>CN_Account_LC_New_Change_Request</name>
+    </customLabels>
+    <customLabels>
+        <label>当前员工编号</label>
+        <name>CN_Account_Mass_Change_Current</name>
+    </customLabels>
+    <customLabels>
+        <label>变更类型</label>
+        <name>CN_Account_Mass_Change_Type</name>
+    </customLabels>
+    <customLabels>
+        <label>变更员工编号</label>
+        <name>CN_Account_Mass_Change_User</name>
+    </customLabels>
+    <customLabels>
+        <label>客户代码（使用“,”&lt;半角逗号&gt;进行分隔）</label>
+        <name>CN_Account_Mass_Customer_Code</name>
+    </customLabels>
+    <customLabels>
+        <label>请检查客户代码</label>
+        <name>CN_Account_Mass_ErrMsg_Check_AccountCode</name>
+    </customLabels>
+    <customLabels>
+        <label>请检查当前员工编号</label>
+        <name>CN_Account_Mass_ErrMsg_Check_CurrentUser</name>
+    </customLabels>
+    <customLabels>
+        <label>请检查变更员工编号</label>
+        <name>CN_Account_Mass_ErrMsg_Check_UpdateUser</name>
+    </customLabels>
+    <customLabels>
+        <label>请取消或者完成正在进行的变更申请</label>
+        <name>CN_Account_Mass_ErrMsg_Notice</name>
+    </customLabels>
+    <customLabels>
+        <label>请先完成同步</label>
+        <name>CN_Account_Mass_ErrMsg_Notice2</name>
+    </customLabels>
+    <customLabels>
+        <label>请查看详细信息！</label>
+        <name>CN_Account_Mass_ErrMsg_Notice3</name>
+    </customLabels>
+    <customLabels>
+        <label>请确认执行批量变更客户申请！</label>
+        <name>CN_Account_Mass_Label_Notice</name>
+    </customLabels>
+    <customLabels>
+        <label>结果</label>
+        <name>CN_Account_Mass_Label_Results</name>
+    </customLabels>
+    <customLabels>
+        <label>操作全部成功！</label>
+        <name>CN_Account_Mass_Notice_Success</name>
     </customLabels>
     <customLabels>
         <label>申请新建联系人</label>
@@ -193,6 +269,70 @@
         <name>CN_CTA_Has_Same_ExternalIdCR</name>
     </customLabels>
     <customLabels>
+        <label>无法对该业务机会产品执行DML操作：{0}</label>
+        <name>CN_Campaign_DMLException</name>
+    </customLabels>
+    <customLabels>
+        <label>错误状态：{0} ；错误字段：{1}</label>
+        <name>CN_Campaign_Insert_Failed</name>
+    </customLabels>
+    <customLabels>
+        <label>要创建的业务机会和业务机会产品总记录条数大于10000.</label>
+        <name>CN_Campaign_More_10000</name>
+    </customLabels>
+    <customLabels>
+        <label>是否确认此厨师申请？</label>
+        <name>CN_Chef_Request_Confirm_Info_Message</name>
+    </customLabels>
+    <customLabels>
+        <label>删除前请将厨师申请恢复到New状态，并且清除所有已分配厨师和演示报告。</label>
+        <name>CN_Chef_Request_Delete_Error_Message</name>
+    </customLabels>
+    <customLabels>
+        <label>是否取消此厨师申请的确认？</label>
+        <name>CN_Chef_Request_Uncomfirm_Info_Message</name>
+    </customLabels>
+    <customLabels>
+        <label>无法删除已经确认的厨师分配</label>
+        <name>CN_Chefs_Assigned_Prevent_Delete_Error_Message</name>
+    </customLabels>
+    <customLabels>
+        <label>必须把投诉分配给一个队列。</label>
+        <name>CN_Complaint_Assign_Queue_Check</name>
+    </customLabels>
+    <customLabels>
+        <label>您无法关闭此投诉，请检查此纪录的状态。</label>
+        <name>CN_Complaint_Can_Not_Closed</name>
+    </customLabels>
+    <customLabels>
+        <label>您无法拒绝此投诉，请检查此纪录的状态。</label>
+        <name>CN_Complaint_Can_Not_Rejected</name>
+    </customLabels>
+    <customLabels>
+        <label>您无法标记此投诉为解决状态，请检查此纪录的状态。</label>
+        <name>CN_Complaint_Can_Not_Resolved</name>
+    </customLabels>
+    <customLabels>
+        <label>不允许删除投诉。</label>
+        <name>CN_Complaint_Cannot_Be_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>你现在无法分配此投诉给一个单独用户，请尝试分配给一个队列或检查当前投诉的状态。</label>
+        <name>CN_Complaint_Mannual_Assign_Check</name>
+    </customLabels>
+    <customLabels>
+        <label>您没有访问这个投诉的权限。</label>
+        <name>CN_Complaint_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label>没有找到投诉。</label>
+        <name>CN_Complaint_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label>在您将此投诉标记为&quot;Resolved&quot;之前，必须输入结案原因。</label>
+        <name>CN_Complaint_ResolveReason_Null</name>
+    </customLabels>
+    <customLabels>
         <label>您不能删除其客户已经被标记为准备好提交审批，提交审批，审批通过或者已经同步到SAP的联系人。</label>
         <name>CN_Contact_Account_Has_Synced</name>
     </customLabels>
@@ -201,12 +341,48 @@
         <name>CN_Contact_Change_Request</name>
     </customLabels>
     <customLabels>
+        <label>只能存在一个账单联系人</label>
+        <name>CN_Contact_Type_Billilng_Only</name>
+    </customLabels>
+    <customLabels>
+        <label>至少有一个采购联系人</label>
+        <name>CN_Contact_Type_Purchasing</name>
+    </customLabels>
+    <customLabels>
+        <label>样品派送完成通知</label>
+        <name>CN_Create_Event_Subject</name>
+    </customLabels>
+    <customLabels>
+        <label>随访提醒</label>
+        <name>CN_Create_Visit_Subject</name>
+    </customLabels>
+    <customLabels>
         <label>确认发送？</label>
         <name>CN_CustomerHierarchy_Confirm_Msg</name>
     </customLabels>
     <customLabels>
         <label>您的操作太频繁了，请稍等一下。</label>
         <name>CN_CustomerHierarchy_Warning_Msg_Too_Frequency</name>
+    </customLabels>
+    <customLabels>
+        <label>不允许删除他人创建的演示报告</label>
+        <name>CN_Demo_Report_Prevent_Delete_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>您不允许新建拜访或事件。</label>
+        <name>CN_Event_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>客户的销售机会已创建成功。</label>
+        <name>CN_Generate_Opportunity_Success</name>
+    </customLabels>
+    <customLabels>
+        <label>创建销售机会</label>
+        <name>CN_Generate_Opportunity_Title1</name>
+    </customLabels>
+    <customLabels>
+        <label>新建销售机会信息</label>
+        <name>CN_Generate_Opportunity_Title2</name>
     </customLabels>
     <customLabels>
         <label>集团</label>
@@ -223,6 +399,30 @@
     <customLabels>
         <label>您不可以删除已经与SAP同步的集团。</label>
         <name>CN_Group_Synced_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>已经生成新建联系人申请，请勿重复申请。</label>
+        <name>CN_Lead_Has_Change_Request</name>
+    </customLabels>
+    <customLabels>
+        <label>线索状态不是Sales Qualified。</label>
+        <name>CN_Lead_Not_Sales_Qualified</name>
+    </customLabels>
+    <customLabels>
+        <label>请注意有一个线索分配给你。</label>
+        <name>CN_Lead_Owner_Changed_Notification</name>
+    </customLabels>
+    <customLabels>
+        <label>线索的名字是</label>
+        <name>CN_Lead_Owner_Changed_Notification_Body</name>
+    </customLabels>
+    <customLabels>
+        <label>请注意有一个线索分配给你。</label>
+        <name>CN_Lead_Owner_Changed_Notification_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Mass_Change_Account_Results --></label>
+        <name>CN_Mass_Change_Account_Results</name>
     </customLabels>
     <customLabels>
         <label>在客户层次中没有找到用户的业务部门。</label>
@@ -249,6 +449,26 @@
         <name>CN_Not_Found_SalesTeamOrBusinessUnit</name>
     </customLabels>
     <customLabels>
+        <label>促销活动的名称是</label>
+        <name>CN_PRMT_Published_Notification_Body</name>
+    </customLabels>
+    <customLabels>
+        <label>请注意该促销活动已被发布。</label>
+        <name>CN_PRMT_Published_Notification_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>该促销活动只有在准备发布状态才可以发布。</label>
+        <name>CN_PRMT_Status_Not_Ready</name>
+    </customLabels>
+    <customLabels>
+        <label>是否确认终止此优惠活动？</label>
+        <name>CN_PleaseConfirm_Abort</name>
+    </customLabels>
+    <customLabels>
+        <label>已发布，请关闭。</label>
+        <name>CN_PleaseConfirm_Value_AlreadyPublished</name>
+    </customLabels>
+    <customLabels>
         <label>已经提交审批，请关闭。</label>
         <name>CN_PleaseConfirm_Value_AlreadySubmitted</name>
     </customLabels>
@@ -257,8 +477,164 @@
         <name>CN_PleaseConfirm_Value_BackToNew</name>
     </customLabels>
     <customLabels>
+        <label>撤销检查</label>
+        <name>CN_PleaseConfirm_Value_BackToPlanned</name>
+    </customLabels>
+    <customLabels>
         <label>检查审批</label>
         <name>CN_PleaseConfirm_Value_ReadyForApproval</name>
+    </customLabels>
+    <customLabels>
+        <label>检查发布，在发布前请确认已添加促销客户。</label>
+        <name>CN_PleaseConfirm_Value_ReadyForPublish</name>
+    </customLabels>
+    <customLabels>
+        <label>您没有访问促销活动成员的权限。</label>
+        <name>CN_PromotionMember_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label>您无法发表此促销活动，请检查此记录的状态。</label>
+        <name>CN_Promotion_Can_Not_Published</name>
+    </customLabels>
+    <customLabels>
+        <label>至少需要一个促销活动成员</label>
+        <name>CN_Promotion_Check_PromotionMember</name>
+    </customLabels>
+    <customLabels>
+        <label>促销活动成员生成成功！</label>
+        <name>CN_Promotion_Generate_Success</name>
+    </customLabels>
+    <customLabels>
+        <label>您没有访问这个促销的权限。</label>
+        <name>CN_Promotion_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label>没有找到促销活动。</label>
+        <name>CN_Promotion_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label>于促销活动中没有找到该产品</label>
+        <name>CN_Promotion_Not_Found_Product</name>
+    </customLabels>
+    <customLabels>
+        <label>当促销活动被标记为准备发布、已经发布或终止时，不允许删除</label>
+        <name>CN_Promotion_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>该促销活动已发布成功。</label>
+        <name>CN_Promotion_Publish_Success</name>
+    </customLabels>
+    <customLabels>
+        <label>报价已经提交审批、已经审批通过或正在同步，您不能删除或创建报价应用促销活动信息。</label>
+        <name>CN_QTP_Has_Approved_Or_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label>您没有访问这个报价行项目的权限。</label>
+        <name>CN_QuoteItem_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label>没有找到报价行项目。</label>
+        <name>CN_QuoteItem_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label>没有报价行项目需要被处理。</label>
+        <name>CN_QuoteItem_Not_Need_Deal</name>
+    </customLabels>
+    <customLabels>
+        <label>报价已经提交审批、已经审批通过或正在同步，您不能删除此报价行项目。</label>
+        <name>CN_QuoteItem_Quote_Has_Approved_Or_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label>接受/拒绝所有报价行项目？</label>
+        <name>CN_Quote_AOrDItems_CFRM_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>确认为此报价应用促销价？</label>
+        <name>CN_Quote_Apply</name>
+    </customLabels>
+    <customLabels>
+        <label>为此报价应用促销价？</label>
+        <name>CN_Quote_Apply_CFRM_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>接受所有报价行项目报价？</label>
+        <name>CN_Quote_CFAA_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>拒绝所有报价行项目报价？</label>
+        <name>CN_Quote_CFDA_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>确认发送？</label>
+        <name>CN_Quote_Confirm_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>所有报价行项目处理完成</label>
+        <name>CN_Quote_Deal_Success_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>您不能为已经提交审批或已经审批通过的报价应用促销价。</label>
+        <name>CN_Quote_Had_ApprovedOrSubmit</name>
+    </customLabels>
+    <customLabels>
+        <label>报价单仍未通过审批， 因此您不能更新客户是否接受报价行项目的状态。</label>
+        <name>CN_Quote_Had_Not_Approved</name>
+    </customLabels>
+    <customLabels>
+        <label>{0}已经同步完成。</label>
+        <name>CN_Quote_Had_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label>您不能删除已经提交审批、已经审批通过或正在同步的报价。</label>
+        <name>CN_Quote_Has_Approved_Or_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label>报价</label>
+        <name>CN_Quote_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>您没有访问这个报价的权限。</label>
+        <name>CN_Quote_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label>没有找到{0}。</label>
+        <name>CN_Quote_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label>在内部员工中没有找到匹配的销售人员。</label>
+        <name>CN_Quote_Not_Found_IN_InternalEmployee</name>
+    </customLabels>
+    <customLabels>
+        <label>此报价没有报价行项目。</label>
+        <name>CN_Quote_Not_Have_Items</name>
+    </customLabels>
+    <customLabels>
+        <label>发送{0}</label>
+        <name>CN_Quote_Retrieve_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>{0}已经被成功发送到SAP。</label>
+        <name>CN_Quote_Send_Success_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>您确定发送这个{0}到SAP吗？</label>
+        <name>CN_Quote_Send_To_SAP</name>
+    </customLabels>
+    <customLabels>
+        <label>您的操作太频繁了，请稍等一下。</label>
+        <name>CN_Quote_Warning_Msg_Too_Frequency</name>
+    </customLabels>
+    <customLabels>
+        <label>这个产品没有定义对应的销售价格。</label>
+        <name>CN_SP_No_Product_List_Price</name>
+    </customLabels>
+    <customLabels>
+        <label>不允许删除促销活动产品，请检查促销活动状态。</label>
+        <name>CN_SP_Prevent_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>您不可以删除已经审批通过的样品申请。</label>
+        <name>CN_SR_Approved_Prevent_Delete</name>
     </customLabels>
     <customLabels>
         <label>您不可以删除已经与SAP同步的销售团队。</label>
@@ -308,4 +684,266 @@
         <label>申请变更送达方</label>
         <name>CN_ShipTo_Change_Request</name>
     </customLabels>
+    <customTabs>
+        <label>批量变更客户</label>
+        <name>CN_Mass_Change_Account_Owner_Tab</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Map --></label>
+        <name>Map</name>
+    </customTabs>
+    <flowDefinitions>
+        <flows/>
+        <fullName>CN_Chef_Assigned_Update</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>CN_Chef_Assignment_link_to_Che_UT</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>CN_Create_Chef_UT_Record</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>CN_SP_Populate_Owner</fullName>
+    </flowDefinitions>
+    <quickActions>
+        <label><!-- New Event --></label>
+        <name>CN_New_Event</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>CN_New_Task</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>新建客户拜访</label>
+        <name>CN_New_Visit</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- CN Account Direct with sample with sample product --></description>
+        <label><!-- CN Account Direct with sample with sample product --></label>
+        <name>CN_Account_Direct_with_sample_with_sample_product</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Products --></label>
+            <name>Sample Products</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Requests --></label>
+            <name>Sample Requests</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Requests (Account Name) --></label>
+            <name>Sample Requests (Account Name)</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Account Indirect with Sample with Sample Item --></description>
+        <label><!-- CN Account Indirect with Sample with Sample Item --></label>
+        <name>CN_Account_Indirect_with_Sample_with_Sample_Item</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Products --></label>
+            <name>Sample Products</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Requests --></label>
+            <name>Sample Requests</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Requests (End Customer Name) --></label>
+            <name>Sample Requests (End Customer Name)</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Account Opportunity --></description>
+        <label><!-- CN Account Opportunity --></label>
+        <name>CN_Account_Opportunity</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Account Sales Order Item --></description>
+        <label><!-- CN Account Sales Order Item --></label>
+        <name>CN_Account_Sales_Order_Item</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Sales Order --></label>
+            <name>Sales Order</name>
+        </sections>
+        <sections>
+            <label><!-- Sales Order Item --></label>
+            <name>Sales Order Item</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Account With Cases --></description>
+        <label><!-- CN Account With Cases --></label>
+        <name>CN_Account_With_Cases</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+        <sections>
+            <label><!-- Complaints --></label>
+            <name>Complaints</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Account with Activities --></description>
+        <label><!-- CN Account with Activities --></label>
+        <name>CN_Account_with_Activities</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Account with Activity --></description>
+        <label><!-- CN Account with Activity --></label>
+        <name>CN_Account_with_Activity</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Campaign With Lead Conveted Account --></description>
+        <label><!-- CN Campaign With Lead Conveted Account --></label>
+        <name>CN_Campaign_With_Lead_Conveted_Account</name>
+        <sections>
+            <label><!-- Campaign Members --></label>
+            <name>Campaign Members</name>
+        </sections>
+        <sections>
+            <label><!-- Campaigns --></label>
+            <name>Campaigns</name>
+        </sections>
+        <sections>
+            <label><!-- Lead --></label>
+            <name>Lead</name>
+        </sections>
+        <sections>
+            <label><!-- Lead converted Account --></label>
+            <name>Lead converted Account</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Chef with Chef Assigned --></description>
+        <label><!-- CN Chef with Chef Assigned --></label>
+        <name>CN_Chef_with_Chef_Assigned</name>
+        <sections>
+            <label><!-- Chef UT --></label>
+            <name>Chef UT</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Chef Request Record Type --></label>
+                <name>Chef Request Record Type</name>
+            </columns>
+            <columns>
+                <label><!-- Confirmed --></label>
+                <name>Confirmed</name>
+            </columns>
+            <columns>
+                <label><!-- Event Type --></label>
+                <name>Event Type</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunity --></label>
+                <name>Opportunity</name>
+            </columns>
+            <columns>
+                <label><!-- Status --></label>
+                <name>Status</name>
+            </columns>
+            <label><!-- Chefs Assigneds --></label>
+            <name>Chefs Assigneds</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Lead --></description>
+        <label><!-- CN Lead --></label>
+        <name>CN_Lead</name>
+        <sections>
+            <label><!-- Converted Account --></label>
+            <name>Converted Account</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Promotion with Member with Quote Line Item --></description>
+        <label><!-- CN Promotion with Member with Quote Line Item --></label>
+        <name>CN_Promotion_with_Member_with_Quote_Line_Item</name>
+        <sections>
+            <label><!-- Promotion Members --></label>
+            <name>Promotion Members</name>
+        </sections>
+        <sections>
+            <label><!-- Promotions --></label>
+            <name>Promotions</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Line Items --></label>
+            <name>Quote Line Items</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Promotion with Promotion Line Item --></description>
+        <label><!-- CN Promotion with Promotion Line Item --></label>
+        <name>CN_Promotion_with_Promotion_Line_Item</name>
+        <sections>
+            <columns>
+                <label><!-- Product Brand --></label>
+                <name>Product Brand</name>
+            </columns>
+            <label><!-- Promotion Line Items --></label>
+            <name>Promotion Line Items</name>
+        </sections>
+        <sections>
+            <label><!-- Promotions --></label>
+            <name>Promotions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN User Report Type --></description>
+        <label><!-- CN User Report Type --></label>
+        <name>CN_User_Report_Type</name>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
 </Translations>

@@ -1,0 +1,23 @@
+投诉({!Case.CaseNumber})已分配给您，
+请点击以下链接
+
+{!Case.Link}
+
+查看额外信息。
+
+
+谢谢，
+Salesforce
+
+------------------------English Version Scroll Down------------------------
+The complaint ({!Case.CaseNumber})  has been assigned to you.
+Please click the following link
+
+{!Case.Link}
+
+to view additional information. 
+
+
+
+Thank you,
+Salesforce

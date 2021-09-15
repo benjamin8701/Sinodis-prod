@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Expected Amount</value>
+        </caseValues>
+        <name>amount_opportunity</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Expected Close Date</value>
+        </caseValues>
+        <name>close_date_opportunity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Opportunity Description</value>
+        </caseValues>
+        <name>description_opportunity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Budget Confirmed --></label>
+        <name>Budget_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Close Date --></label>
+        <name>CN_Actual_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN_Campaign --></label>
+        <name>CN_Campaign__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expected Purchase Date --></label>
+        <name>CN_Expected_Purchase_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate From Lead Id --></label>
+        <name>CN_Generate_From_Lead_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Manual --></label>
+        <name>CN_Is_Manual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loss Description --></label>
+        <name>CN_Loss_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loss Reason --></label>
+        <name>CN_Loss_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Canceled products</masterLabel>
+            <translation><!-- Customer Canceled products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead time</masterLabel>
+            <translation><!-- Lead time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost to competitor</masterLabel>
+            <translation><!-- Lost to competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Term</masterLabel>
+            <translation><!-- Payment Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quality</masterLabel>
+            <translation><!-- Quality --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Discovery Completed --></label>
+        <name>Discovery_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROI Analysis Completed --></label>
+        <name>ROI_Analysis_Completed__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- CN Opportunity --></label>
+        <name>CN_Opportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Actual Close Date is required when closed won. --></errorMessage>
+        <name>CN_Check_Actual_Close_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expected Purchase Date is required when closed won. --></errorMessage>
+        <name>CN_Check_Expected_Purchase_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Loss Reason is required when Closed Lost or Closed Cancelled --></errorMessage>
+        <name>CN_Check_Loss_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s required to input expected amount or select interested SKUs, and chooes expected close date. --></errorMessage>
+        <name>CN_Check_Proposal_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Actual close date should later than today. --></errorMessage>
+        <name>CN_Opportunity_Check_Actual_Close_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expect close date should later than today. --></errorMessage>
+        <name>CN_Opportunity_Check_CloseDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expected purchase date should later than today. --></errorMessage>
+        <name>CN_Opportunity_Check_Purchase_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allowed to change the stage back to Qualification --></errorMessage>
+        <name>CN_Prevent_Back_To_Qualification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allow to edit after close. --></errorMessage>
+        <name>CN_Prevent_Edit_After_Close</name>
+    </validationRules>
+</CustomObjectTranslation>

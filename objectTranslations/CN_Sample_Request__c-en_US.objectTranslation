@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sample Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sample Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>CN_Account_Name__c</name>
+        <relationshipLabel><!-- Sample Requests (Account Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approved Date --></label>
+        <name>CN_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver1 CCE --></label>
+        <name>CN_Approver1_CCE__c</name>
+        <relationshipLabel><!-- Sample Requests (Approver1 CCE) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver2 Channel Leader --></label>
+        <name>CN_Approver2_Channel_Leader__c</name>
+        <relationshipLabel><!-- Sample Requests (Approver2 Channel Leader) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CCE Team Email --></label>
+        <name>CN_CCE_Team_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- CS Team Email --></label>
+        <name>CN_CS_Team_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>CN_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Delivery Address is mandatory if delivery method is express delivery. --></help>
+        <label><!-- Delivery Address --></label>
+        <name>CN_Delivery_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Customer Name --></label>
+        <name>CN_End_Customer_Name__c</name>
+        <relationshipLabel><!-- Sample Requests (End Customer Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Draft --></label>
+        <name>CN_Is_Draft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item ID --></label>
+        <name>CN_Item_ID__c</name>
+        <relationshipLabel><!-- Sample Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>CN_Opportunity_Name__c</name>
+        <relationshipLabel><!-- Sample Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Reason --></label>
+        <name>CN_Order_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Chef Service</masterLabel>
+            <translation><!-- Chef Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Penetration</masterLabel>
+            <translation><!-- Product Penetration --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Reason for Wholepack --></label>
+        <name>CN_Order_Reason_for_Wholepack__c</name>
+        <picklistValues>
+            <masterLabel>811 Customer Sample</masterLabel>
+            <translation><!-- 811 Customer Sample --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Type for Wholepack --></label>
+        <name>CN_Order_Type_for_Wholepack__c</name>
+        <picklistValues>
+            <masterLabel>ZFD1 Sample for Customer</masterLabel>
+            <translation><!-- ZFD1 Sample for Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Please Confirm --></label>
+        <name>CN_Please_Confirm__c</name>
+    </fields>
+    <fields>
+        <label><!-- SP Records Count All --></label>
+        <name>CN_SP_Records_Count_All__c</name>
+    </fields>
+    <fields>
+        <label><!-- SP Records Count Delivery Status All --></label>
+        <name>CN_SP_Records_Count_Delivery_Status_All__c</name>
+    </fields>
+    <fields>
+        <label><!-- SP Records Count Delivery Status Done --></label>
+        <name>CN_SP_Records_Count_Delivery_Status_Done__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person --></label>
+        <name>CN_Sales_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Delivery Method --></label>
+        <name>CN_Sample_Delivery_Method__c</name>
+        <picklistValues>
+            <masterLabel>Deliver to Office</masterLabel>
+            <translation><!-- Deliver to Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Express Delivery</masterLabel>
+            <translation><!-- Express Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Include in the delivery tomorrow</masterLabel>
+            <translation><!-- Include in the delivery tomorrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales to pick up</masterLabel>
+            <translation><!-- Sales to pick up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Pick-up</masterLabel>
+            <translation><!-- Self Pick-up --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sample Needed Date --></label>
+        <name>CN_Sample_Needed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Request Cost --></label>
+        <name>CN_Sample_Request_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Request Status --></label>
+        <name>CN_Sample_Request_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Approval</masterLabel>
+            <translation><!-- Ready for Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalled</masterLabel>
+            <translation><!-- Recalled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Approval</masterLabel>
+            <translation><!-- Submitted for Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CN_Url --></label>
+        <name>CN_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse Location --></label>
+        <name>CN_Warehouse_Location__c</name>
+    </fields>
+    <layouts>
+        <layout>Office Repack Sample Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sample Request Cost --></label>
+            <section>Sample Request Cost</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Whole Pack Sample Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sample Request Cost --></label>
+            <section>Sample Request Cost</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Cancel Sample Request --></label>
+        <name>CN_Cancel_Sample_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Ready for Approval/Back to New --></label>
+        <name>CN_SR_Ready_for_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Sample Request --></label>
+        <name>Test</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Office Repack --></label>
+        <name>CN_Office_Repack</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Whole Pack --></label>
+        <name>CN_Whole_Pack</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Delivery Address is mandatory if delivery method is express delivery. --></errorMessage>
+        <name>CN_Check_Deliver_Address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the opportunity into stage Proposal/Demo/Sample could create Sample Request. --></errorMessage>
+        <name>CN_Check_Opp_Stage_On_Create</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- sales CANNOT create wholepack sample request for prospect&apos;s opportunity --></errorMessage>
+        <name>CN_Check_Prospect_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sample Needed Date should not less than today --></errorMessage>
+        <name>CN_Check_Sample_Need_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allowed cancel sample request which not approved yet. --></errorMessage>
+        <name>CN_Prevent_Canceled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allowed to edit. --></errorMessage>
+        <name>CN_Prevent_Edit_After_Approved_Canceled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select at least one SKU before submit for approval. --></errorMessage>
+        <name>CN_SR_Check_Ready_SKU</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You&apos;re not allowed to cancel it now. --></errorMessage>
+        <name>CN_SR_Prevent_Cancel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to create or eidt the status of sample products when all sample products&apos;s status are not null. --></errorMessage>
+        <name>CN_SR_Prevent_Change_Products_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to edit when sample request is marked as ready for approval. --></errorMessage>
+        <name>CN_SR_Prevent_Edit_For_Ready</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CN_Sample_Feedback_Overdue --></label>
+        <name>CN_Sample_Feedback_Overdue</name>
+    </webLinks>
+</CustomObjectTranslation>

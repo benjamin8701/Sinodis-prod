@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>行项目编号</value>
+        </caseValues>
+        <name>quotelineitem_name</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>合计不含税</value>
+        </caseValues>
+        <name>quotelineitem_subtotal</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>折后价不含税</value>
+        </caseValues>
+        <name>quotelineitem_totalprice</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>折后价含税</value>
+        </caseValues>
+        <name>quotelineitem_totalpricewithtax</name>
+    </fields>
+    <fields>
+        <label>客户是否接受报价</label>
+        <name>CN_Customer_Acceptance__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>报价拒绝原因</label>
+        <name>CN_Denied_Reason__c</name>
+    </fields>
+    <fields>
+        <label>折扣</label>
+        <name>CN_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>CN_External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Quote Approved --></label>
+        <name>CN_Is_Quote_Approved__c</name>
+    </fields>
+    <fields>
+        <label>行项目编号</label>
+        <name>CN_Line_Item_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Price --></label>
+        <name>CN_Minimum_Price__c</name>
+    </fields>
+    <fields>
+        <label>原产国</label>
+        <name>CN_Origin__c</name>
+    </fields>
+    <fields>
+        <label>产品编码</label>
+        <name>CN_Product_Code__c</name>
+    </fields>
+    <fields>
+        <label>P1促销指导价</label>
+        <name>CN_Promo_Price_P1__c</name>
+    </fields>
+    <fields>
+        <label>P2促销指导价</label>
+        <name>CN_Promo_Price_P2__c</name>
+    </fields>
+    <fields>
+        <label>P3促销指导价</label>
+        <name>CN_Promo_Price_P3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promo Price P4 --></label>
+        <name>CN_Promo_Price_P4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion Member --></label>
+        <name>CN_Promotion_Member__c</name>
+        <relationshipLabel><!-- Quote Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>箱规</label>
+        <name>CN_Qty_per_Carton__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Status --></label>
+        <name>CN_Quote_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Sync Status --></label>
+        <name>CN_Quote_Sync_Status__c</name>
+    </fields>
+    <fields>
+        <label>产品描述中文</label>
+        <name>CN_SKU_Description_CN__c</name>
+    </fields>
+    <fields>
+        <label>产品描述英文</label>
+        <name>CN_SKU_Description_EN__c</name>
+    </fields>
+    <fields>
+        <label>销售价含税</label>
+        <name>CN_Sales_Price_with_Tax__c</name>
+    </fields>
+    <fields>
+        <label>出货单位</label>
+        <name>CN_Selling_Unit__c</name>
+    </fields>
+    <fields>
+        <label>保质期</label>
+        <name>CN_Shelf_Life__c</name>
+    </fields>
+    <fields>
+        <label>税金</label>
+        <name>CN_Tax_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax --></label>
+        <name>CN_Tax__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Quote Line Item Layout</layout>
+        <sections>
+            <label><!-- Addtional Information --></label>
+            <section>Addtional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Price Information --></label>
+            <section>Price Information</section>
+        </sections>
+        <sections>
+            <label><!-- Product Information --></label>
+            <section>Product Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage>报价已经审批通过，请勿更新或新增报价行项目。</errorMessage>
+        <name>CN_Prevent_Edit_Approved</name>
+    </validationRules>
+</CustomObjectTranslation>
