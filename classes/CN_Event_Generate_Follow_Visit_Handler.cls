@@ -55,6 +55,7 @@ public without sharing class CN_Event_Generate_Follow_Visit_Handler implements T
 
 
     public void generateFollowUpVisit(List<Event> generateEventList) {
+        Id visitRTId = Schema.SObjectType.Event.getRecordTypeInfosByDeveloperName().get(Constants.CN_EV_RT_API_NAME_NEW).getRecordTypeId();
 
         Map<String,Integer> byWhenStringWeekNumIntegerMap = new Map<String,Integer>();
         byWhenStringWeekNumIntegerMap.put(Constants.CN_EV_By_WHEN_ONE,7);
@@ -64,6 +65,7 @@ public without sharing class CN_Event_Generate_Follow_Visit_Handler implements T
         List<Event> newEventList = new List<Event>();
         for(Event visit : generateEventList){
             Event e = new Event();
+            e.recordTypeId = visitRTId;
             e.subject = visit.Subject;
             e.StartDateTime = visit.StartDateTime.addDays(byWhenStringWeekNumIntegerMap.get(visit.CN_By_when__c));
             e.EndDateTime = visit.EndDateTime.addDays(byWhenStringWeekNumIntegerMap.get(visit.CN_By_when__c));

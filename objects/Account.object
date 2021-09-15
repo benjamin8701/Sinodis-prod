@@ -11634,7 +11634,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <picklist>CN_Country_EN__c</picklist>
             <values>
                 <fullName>CN</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -11656,7 +11656,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <picklist>CN_Customer_Type__c</picklist>
             <values>
                 <fullName>0001</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
             <values>
                 <fullName>0002</fullName>
@@ -11930,6 +11930,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Invoice_Type__c</picklist>
             <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
             </values>
@@ -12111,6 +12119,82 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>D000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D030</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D045</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D090</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M031</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M110</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M115</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M120</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M131</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M231</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -17717,6 +17801,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>CN_Invoice_Type__c</picklist>
+            <values>
+                <fullName>Electronic General Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic VAT Invoice</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>General Invoice</fullName>
                 <default>false</default>
