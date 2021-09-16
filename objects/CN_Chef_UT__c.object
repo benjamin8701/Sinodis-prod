@@ -163,10 +163,9 @@
         <fullName>CN_Description__c</fullName>
         <externalId>false</externalId>
         <label>Description</label>
-        <length>32768</length>
+        <required>false</required>
         <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>5</visibleLines>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>CN_Month__c</fullName>

@@ -4,8 +4,8 @@
     <assignments>
         <name>Add_to_New_Chef_UT_Record_List</name>
         <label>Add to New Chef UT Record List</label>
-        <locationX>752</locationX>
-        <locationY>432</locationY>
+        <locationX>720</locationX>
+        <locationY>423</locationY>
         <assignmentItems>
             <assignToReference>NewChefUTRecords</assignToReference>
             <operator>Add</operator>
@@ -14,14 +14,14 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Loop_Date_List</targetReference>
+            <targetReference>Loop_Month</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Assign_Create_New_Chef_UT</name>
         <label>Assign Create New Chef UT</label>
-        <locationX>1483</locationX>
-        <locationY>260</locationY>
+        <locationX>1422</locationX>
+        <locationY>270</locationY>
         <assignmentItems>
             <assignToReference>CreateNewChefUT</assignToReference>
             <operator>Assign</operator>
@@ -36,8 +36,8 @@
     <assignments>
         <name>Assign_Default_Create_New_Chef_UT</name>
         <label>Assign Default Create New Chef UT</label>
-        <locationX>969</locationX>
-        <locationY>34</locationY>
+        <locationX>980</locationX>
+        <locationY>38</locationY>
         <assignmentItems>
             <assignToReference>CreateNewChefUT</assignToReference>
             <operator>Assign</operator>
@@ -50,68 +50,126 @@
         </connector>
     </assignments>
     <assignments>
-        <name>Assing_Month_List</name>
-        <label>Assing Month List</label>
-        <locationX>158</locationX>
-        <locationY>306</locationY>
+        <name>Assign_Year</name>
+        <label>Assign Year</label>
+        <locationX>121</locationX>
+        <locationY>336</locationY>
         <assignmentItems>
-            <assignToReference>DateList</assignToReference>
+            <assignToReference>List_Year</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>$Flow.CurrentDate</elementReference>
+                <elementReference>Current_Year</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>DateList</assignToReference>
+            <assignToReference>List_Year</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>Month_1</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>DateList</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Month_2</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>DateList</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Month_3</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>DateList</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Month_4</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>DateList</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Month_5</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>DateList</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Month_6</elementReference>
+                <elementReference>Current_Year_1</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Get_Chef_UT_Record_Type_ID</targetReference>
+            <targetReference>Get_Integration_User_ID</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assing_Month_List</name>
+        <label>Assing Month List</label>
+        <locationX>125</locationX>
+        <locationY>207</locationY>
+        <assignmentItems>
+            <assignToReference>List_Month</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>1</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>List_Month</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>2</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>List_Month</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>List_Month</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>4</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>List_Month</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>5</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>List_Month</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>6</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>List_Month</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>7</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>List_Month</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>8</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>List_Month</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>9</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>List_Month</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>10</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>List_Month</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>11</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>List_Month</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>12</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_Year</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Create_New_Chef_UT</name>
         <label>Create New Chef UT</label>
-        <locationX>916</locationX>
-        <locationY>428</locationY>
+        <locationX>879</locationX>
+        <locationY>412</locationY>
         <assignmentItems>
             <assignToReference>NewChefUT.RecordTypeId</assignToReference>
             <operator>Assign</operator>
@@ -123,14 +181,21 @@
             <assignToReference>NewChefUT.CN_Year__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>Search_Year</elementReference>
+                <elementReference>Loop_Year</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>NewChefUT.CN_Month__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>Search_Month</elementReference>
+                <elementReference>Loop_Month</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewChefUT.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Integration_User_ID.Id</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -140,8 +205,8 @@
     <decisions>
         <name>Check_Chef_UT_Record</name>
         <label>Check Chef UT Record</label>
-        <locationX>1543</locationX>
-        <locationY>72</locationY>
+        <locationX>1418</locationX>
+        <locationY>37</locationY>
         <defaultConnector>
             <targetReference>Loop_Current_Chef_UT_List</targetReference>
         </defaultConnector>
@@ -153,14 +218,14 @@
                 <leftValueReference>Loop_Current_Chef_UT_List.CN_Year__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>Search_Year</elementReference>
+                    <elementReference>Loop_Year</elementReference>
                 </rightValue>
             </conditions>
             <conditions>
                 <leftValueReference>Loop_Current_Chef_UT_List.CN_Month__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>Search_Month</elementReference>
+                    <elementReference>Loop_Month</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -172,8 +237,8 @@
     <decisions>
         <name>Check_New_Chef_UT_Records</name>
         <label>Check New Chef UT  Records</label>
-        <locationX>460</locationX>
-        <locationY>425</locationY>
+        <locationX>468</locationX>
+        <locationY>422</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>New_Chef_UT_Records_Is_Not_Null</name>
@@ -194,10 +259,10 @@
     <decisions>
         <name>Check_to_Create_New_Chef_UT</name>
         <label>Check to Create New Chef UT</label>
-        <locationX>1005</locationX>
-        <locationY>264</locationY>
+        <locationX>1053</locationX>
+        <locationY>241</locationY>
         <defaultConnector>
-            <targetReference>Loop_Date_List</targetReference>
+            <targetReference>Loop_Month</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -226,53 +291,13 @@
         <dataType>String</dataType>
         <expression>Text(Year({!$Flow.CurrentDate})+1)</expression>
     </formulas>
-    <formulas>
-        <name>Month_1</name>
-        <dataType>Date</dataType>
-        <expression>ADDMONTHS ({!$Flow.CurrentDate} ,1)</expression>
-    </formulas>
-    <formulas>
-        <name>Month_2</name>
-        <dataType>Date</dataType>
-        <expression>ADDMONTHS ({!$Flow.CurrentDate} ,2)</expression>
-    </formulas>
-    <formulas>
-        <name>Month_3</name>
-        <dataType>Date</dataType>
-        <expression>ADDMONTHS ({!$Flow.CurrentDate} ,3)</expression>
-    </formulas>
-    <formulas>
-        <name>Month_4</name>
-        <dataType>Date</dataType>
-        <expression>ADDMONTHS ({!$Flow.CurrentDate} ,4)</expression>
-    </formulas>
-    <formulas>
-        <name>Month_5</name>
-        <dataType>Date</dataType>
-        <expression>ADDMONTHS ({!$Flow.CurrentDate} ,5)</expression>
-    </formulas>
-    <formulas>
-        <name>Month_6</name>
-        <dataType>Date</dataType>
-        <expression>ADDMONTHS ({!$Flow.CurrentDate} ,6)</expression>
-    </formulas>
-    <formulas>
-        <name>Search_Month</name>
-        <dataType>String</dataType>
-        <expression>Text(Month({!Loop_Date_List}))</expression>
-    </formulas>
-    <formulas>
-        <name>Search_Year</name>
-        <dataType>String</dataType>
-        <expression>Text(Year({!Loop_Date_List}))</expression>
-    </formulas>
     <interviewLabel>CN Create Chef UT  Record {!$Flow.CurrentDateTime}</interviewLabel>
     <label>CN Create Chef UT  Record</label>
     <loops>
         <name>Loop_Current_Chef_UT_List</name>
         <label>Loop  Current Chef UT  List</label>
-        <locationX>1183</locationX>
-        <locationY>73</locationY>
+        <locationX>1150</locationX>
+        <locationY>45</locationY>
         <collectionReference>Get_Chef_UT</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -283,14 +308,28 @@
         </noMoreValuesConnector>
     </loops>
     <loops>
-        <name>Loop_Date_List</name>
-        <label>Loop Date List</label>
-        <locationX>560</locationX>
-        <locationY>74</locationY>
-        <collectionReference>DateList</collectionReference>
+        <name>Loop_Month</name>
+        <label>Loop Month</label>
+        <locationX>711</locationX>
+        <locationY>55</locationY>
+        <collectionReference>List_Month</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
             <targetReference>Assign_Default_Create_New_Chef_UT</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Loop_Year</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_Year</name>
+        <label>Loop Year</label>
+        <locationX>503</locationX>
+        <locationY>66</locationY>
+        <collectionReference>List_Year</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Loop_Month</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
             <targetReference>Check_New_Chef_UT_Records</targetReference>
@@ -318,18 +357,18 @@
     <recordCreates>
         <name>Create_Chef_UT_Record</name>
         <label>Create Chef UT Record</label>
-        <locationX>474</locationX>
-        <locationY>590</locationY>
+        <locationX>473</locationX>
+        <locationY>591</locationY>
         <inputReference>NewChefUTRecords</inputReference>
     </recordCreates>
     <recordLookups>
         <name>Get_Chef_UT</name>
         <label>Get Chef UT</label>
-        <locationX>365</locationX>
-        <locationY>61</locationY>
+        <locationX>356</locationX>
+        <locationY>100</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Loop_Date_List</targetReference>
+            <targetReference>Loop_Year</targetReference>
         </connector>
         <filterLogic>1 AND ( 2 OR 3 )</filterLogic>
         <filters>
@@ -360,8 +399,8 @@
     <recordLookups>
         <name>Get_Chef_UT_Record_Type_ID</name>
         <label>Get Chef UT Record Type ID</label>
-        <locationX>335</locationX>
-        <locationY>309</locationY>
+        <locationX>308</locationX>
+        <locationY>432</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Get_Chef_UT</targetReference>
@@ -386,6 +425,34 @@
             <assignToReference>ChefUTRecordTypeId</assignToReference>
             <field>Id</field>
         </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Integration_User_ID</name>
+        <label>Get Integration User ID</label>
+        <locationX>152</locationX>
+        <locationY>465</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Chef_UT_Record_Type_ID</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CN_Is_Integration_User__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
         <locationX>32</locationX>
@@ -429,6 +496,20 @@
     <variables>
         <name>DateList</name>
         <dataType>Date</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>List_Month</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>List_Year</name>
+        <dataType>String</dataType>
         <isCollection>true</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>

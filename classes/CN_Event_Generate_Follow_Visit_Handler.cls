@@ -70,6 +70,7 @@ public without sharing class CN_Event_Generate_Follow_Visit_Handler implements T
             e.StartDateTime = visit.StartDateTime.addDays(byWhenStringWeekNumIntegerMap.get(visit.CN_By_when__c));
             e.EndDateTime = visit.EndDateTime.addDays(byWhenStringWeekNumIntegerMap.get(visit.CN_By_when__c));
             e.CN_Visit_Status__c = Constants.CN_EV_VISIT_STATUS_PLANNED;
+            e.WhoId = visit.WhoId;
             e.IsAllDayEvent = true;
             e.IsReminderSet = true;
             e.CN_Time_Before_Event__c = Constants.CN_EV_TIME_BEFORE_EVENT_PLANNED;
