@@ -22,7 +22,7 @@
                 <td>{!sp.CN_SKU_English_Description__c}</td>
                 <td>{!sp.CN_Qty_per_Carton__c}</td>
                 <td>{!sp.CN_Unit__c}</td>
-                <td>{!sp.CN_Sample_Unit_List_Price__c}</td>
+                <td>{!sp.CN_List_Price__c}</td>
                 <td>{!sp.CN_Quantity_Needed__c}</td>
                 <td>{!sp.CN_Sample_Cost__c}</td>
                 <apex:variable var="rowNum" value="{!rowNum + 1}" />

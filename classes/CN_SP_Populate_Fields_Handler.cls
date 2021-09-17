@@ -79,6 +79,7 @@ public without sharing class CN_SP_Populate_Fields_Handler implements Triggers.H
                     if(listPrice == 0) {
                         sp.addError(system.Label.CN_SP_No_Product_List_Price);
                     } else {
+                        sp.CN_Pricebook_Price__c = listPrice;
                         sp.CN_Sample_Cost__c = listPrice * sp.CN_Quantity_Needed__c;
                     }
                 }

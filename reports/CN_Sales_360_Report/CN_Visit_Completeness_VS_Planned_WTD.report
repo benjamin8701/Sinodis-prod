@@ -37,6 +37,13 @@
             <operator>equals</operator>
             <value>Planned,Completed,Cancelled</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Event.CN_Visit</value>
+        </criteriaItems>
         <language>en_US</language>
     </filter>
     <format>Summary</format>

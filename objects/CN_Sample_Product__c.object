@@ -364,6 +364,34 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_List_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+  RecordType.DeveloperName = &apos;CN_Whole_Pack&apos;, 
+  CN_Pricebook_Price__c,
+  CN_Sample_Unit_List_Price__c 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>List Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CN_Pricebook_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Pricebook Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>CN_Product__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>

@@ -18,6 +18,9 @@
     <columns>
         <field>Account.CN_License_Name_EN__c</field>
     </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
     <currency>CNY</currency>
     <filter>
         <criteriaItems>

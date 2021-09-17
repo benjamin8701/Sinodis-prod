@@ -9,6 +9,10 @@
         <value>Chefs Assigneds</value>
     </caseValues>
     <fields>
+        <label><!-- Chef Confirmed Date --></label>
+        <name>CN_Chef_Confirmed_Date__c</name>
+    </fields>
+    <fields>
         <label><!-- Chef Name --></label>
         <name>CN_Chef_Name__c</name>
     </fields>

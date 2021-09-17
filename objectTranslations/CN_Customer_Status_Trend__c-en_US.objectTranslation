@@ -13,6 +13,10 @@
         <name>CN_Category__c</name>
     </fields>
     <fields>
+        <label><!-- Customer Owner --></label>
+        <name>CN_Customer_Owner__c</name>
+    </fields>
+    <fields>
         <label><!-- Customer Status History --></label>
         <name>CN_Customer_Status_History__c</name>
     </fields>

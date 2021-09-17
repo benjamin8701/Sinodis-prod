@@ -4,6 +4,7 @@
         <enabled>true</enabled>
         <name>CN_Marketing_Lead_Manager</name>
     </customPermissions>
+    <description>Permission to CRU Lead And Transfer Record.</description>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
@@ -3011,6 +3012,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Chefs_Assigned__c.CN_Chef_Confirmed_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Chefs_Assigned__c.CN_Chef_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3612,6 +3618,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Customer_Status_Trend__c.CN_Category__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Customer_Status_Trend__c.CN_Customer_Owner__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -5581,6 +5592,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Sample_Product__c.CN_List_Price__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Sample_Product__c.CN_Pricebook_Price__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Sample_Product__c.CN_Product__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -5742,6 +5763,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Sample_Request__c.CN_Sample_Delivery_Method__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Sample_Request__c.CN_Sample_Feedback_Overdue__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -7012,6 +7038,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.CN_Campaign__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.CN_Created_By_Others__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

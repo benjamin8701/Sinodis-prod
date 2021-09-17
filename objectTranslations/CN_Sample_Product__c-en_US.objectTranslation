@@ -97,6 +97,14 @@
         <name>CN_Item_ID__c</name>
     </fields>
     <fields>
+        <label><!-- List Price --></label>
+        <name>CN_List_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricebook Price --></label>
+        <name>CN_Pricebook_Price__c</name>
+    </fields>
+    <fields>
         <label><!-- Product --></label>
         <name>CN_Product__c</name>
         <relationshipLabel><!-- Sample Products --></relationshipLabel>

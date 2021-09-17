@@ -718,6 +718,11 @@
         <columns>CORE.USERS.ALIAS</columns>
         <columns>CN_Converted_Contact_Id_From_CR__c</columns>
         <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Closed - Converted</value>
+        </filters>
         <label>All Leads</label>
         <sharedTo>
             <roleAndSubordinates>CN_China</roleAndSubordinates>
@@ -1060,6 +1065,21 @@
     </searchLayouts>
     <sharingModel>Private</sharingModel>
     <validationRules>
+        <fullName>CN_Check_Change_Status_Backwards</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  NOT(ISNEW()),
+  OR(
+    AND(ISCHANGED(Status),ISPICKVAL(PRIORVALUE(Status), &quot;MKT Qualified&quot;),ISPICKVAL(Status , &quot;Open&quot;)),
+    AND(ISCHANGED(Status),ISPICKVAL(PRIORVALUE(Status), &quot;Assigned&quot;),OR( ISPICKVAL(Status, &quot;MKT Qualified&quot;), ISPICKVAL(Status , &quot;Open&quot;)))
+  )
+)</errorConditionFormula>
+        <errorDisplayField>Status</errorDisplayField>
+        <errorMessage>It&apos;s not allow to select this status.</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>CN_Check_Close_Reason</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -1129,14 +1149,14 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
         <fullName>CN_Check_MKT_Change_Status</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
-$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
-NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
- $Permission.CN_Marketing_Lead_Manager,
-OR(
-  NOT(ISNEW()) &amp;&amp; ISCHANGED(Status ) &amp;&amp;
-  NOT(ISPICKVAL( Status , &quot;MKT Qualified&quot;) ) &amp;&amp; NOT(ISPICKVAL( Status , &quot;Open&quot;) ),
-  ISNEW() &amp;&amp; NOT(ISPICKVAL( Status , &quot;MKT Qualified&quot;)) &amp;&amp; NOT(ISPICKVAL( Status , &quot;Open&quot;) )
-)
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  $Permission.CN_Marketing_Lead_Manager,
+  NOT( AND(ISPICKVAL(PRIORVALUE(Status), &quot;Open&quot;),ISPICKVAL( Status , &quot;Closed - Dead&quot;)) ),
+  OR(
+    NOT(ISNEW()) &amp;&amp; ISCHANGED(Status) &amp;&amp; NOT(ISPICKVAL( Status , &quot;MKT Qualified&quot;) ) &amp;&amp; NOT(ISPICKVAL( Status , &quot;Open&quot;) ),
+    ISNEW() &amp;&amp; NOT(ISPICKVAL( Status , &quot;MKT Qualified&quot;)) &amp;&amp; NOT(ISPICKVAL( Status , &quot;Open&quot;) )
+  )
 )</errorConditionFormula>
         <errorDisplayField>Status</errorDisplayField>
         <errorMessage>It&apos;s not allow to select this status.</errorMessage>
@@ -1174,6 +1194,7 @@ NOT(OR(REGEX( Phone , &apos;1\\d{10}&apos;),REGEX(Phone ,&apos;\\d{3,4}-\\d{8}(-
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
 RecordType.DeveloperName = &apos;CN_Lead&apos;,
+NOT(ISBLANK( CN_Zip_Postal_Code__c ) ),
 NOT(REGEX(CN_Zip_Postal_Code__c, &quot;\\d{6}&quot;) )
 )</errorConditionFormula>
         <errorDisplayField>CN_Zip_Postal_Code__c</errorDisplayField>

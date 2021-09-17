@@ -1367,6 +1367,7 @@ Unique Id</description>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
+        <columns>CN_Customer_Channel__c</columns>
         <columns>CN_Customer_Code__c</columns>
         <columns>CN_Customer__c</columns>
         <columns>CN_Sales_Person__c</columns>

@@ -150,6 +150,7 @@
         </platformActionListItems>
     </platformActionList>
     <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
         <fields>NAME</fields>
         <fields>CN_Account__c</fields>
         <fields>CN_Category__c</fields>

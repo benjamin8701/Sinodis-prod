@@ -154,6 +154,15 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
+        <fullName>CN_Chef_Confirmed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Chef Confirmed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>CN_Chef_Name__c</fullName>
         <externalId>false</externalId>
         <formula>CN_Chef__r.LastName + &quot; &quot; + CN_Chef__r.FirstName</formula>
@@ -497,6 +506,11 @@ DAY(DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) +
             <field>CN_Is_My_Assignment__c</field>
             <operation>equals</operation>
             <value>1</value>
+        </filters>
+        <filters>
+            <field>CN_Chef_Work_End_Date__c</field>
+            <operation>greaterThan</operation>
+            <value>TODAY</value>
         </filters>
         <label>Assigned to Me</label>
     </listViews>
@@ -963,6 +977,7 @@ DAY(DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) +
   
    CN_Chef_Request__r.CN_Confirmed__c = true,
    NOT(ISCHANGED(CN_Chef_UT__c )),
+   NOT(ISCHANGED(CN_Chef_Confirmed_Date__c)),
    OR(
    NOT(ISNEW()) &amp;&amp; NOT(ISCHANGED(CN_Chef_Self_Confirm_Time__c )),
    ISNEW() &amp;&amp; CN_Chef_Self_Confirm_Time__c == NULL)

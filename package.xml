@@ -284,6 +284,7 @@
         <members>CN_Email_Folder/CN_CTA_Approval_Notice</members>
         <members>CN_Email_Folder/CN_CTA_Approved</members>
         <members>CN_Email_Folder/CN_CTA_Rejected</members>
+        <members>CN_Email_Folder/CN_Chef_Assigned_Notification</members>
         <members>CN_Email_Folder/CN_Chef_Request_1ON1_Submit</members>
         <members>CN_Email_Folder/CN_Chef_Request_1on1_Approved</members>
         <members>CN_Email_Folder/CN_Chef_Request_1on1_Confirmed</members>
@@ -311,6 +312,7 @@
         <members>CN_Email_Folder/CN_Complaint_Resolved_Notification</members>
         <members>CN_Email_Folder/CN_Contact_Synced</members>
         <members>CN_Email_Folder/CN_Document_Uploaded</members>
+        <members>CN_Email_Folder/CN_Opportunity_Created_Notification</members>
         <members>CN_Email_Folder/CN_Promotion_Member_Published</members>
         <members>CN_Email_Folder/CN_Promotion_Published</members>
         <members>CN_Email_Folder/CN_Quote_Approval</members>
@@ -447,10 +449,11 @@
         <members>CN_CCE_Lead_Qualifier</members>
         <members>CN_Campaign_Manager</members>
         <members>CN_Marketing_Chef_Request_User</members>
+        <members>CN_Marketing_Edit_PromoAndMini_Price</members>
         <members>CN_Marketing_Lead_Manager</members>
         <members>CN_Marketing_Reassign_Manager</members>
         <members>CN_Marketing_Sample_Manager</members>
-        <members>CN_Marketing_Update_List_Price</members>
+        <members>CN_Marketing_View_Price_Book</members>
         <members>CN_Product_Edit_Description</members>
         <members>CN_Promotion_Manager</members>
         <name>PermissionSet</name>
@@ -591,6 +594,8 @@
         <members>CN_PromotionReport/CN_Total_Promotions_by_Channel</members>
         <members>CN_PromotionReport/CN_Total_Promotions_by_Customer_Category</members>
         <members>CN_PromotionReport/CN_Total_Promotions_by_Promotion_Type</members>
+        <members>CN_Promotion_Custome_Data_Filter</members>
+        <members>CN_Promotion_Custome_Data_Filter/CN_Customer_data_filter</members>
         <members>CN_Sales_360_Report</members>
         <members>CN_Sales_360_Report/CN_Achievements_MTD</members>
         <members>CN_Sales_360_Report/CN_Average_visits_by_Customer_Layer_MTD1</members>

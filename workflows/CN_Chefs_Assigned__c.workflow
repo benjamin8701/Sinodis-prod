@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CN_Chef_Assigned_Notification</fullName>
+        <description>CN_Chef_Assigned_Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>CN_Chef__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CN_Email_Folder/CN_Chef_Assigned_Notification</template>
+    </alerts>
     <fieldUpdates>
         <fullName>CN_Chefs_Assigned_Set_Unique_Id</fullName>
         <field>CN_External_Id__c</field>
@@ -10,6 +21,20 @@
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
+    <rules>
+        <fullName>CN_Chef_Assigned_Notification</fullName>
+        <actions>
+            <name>CN_Chef_Assigned_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>And
+( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,  
+  CN_Chef_Request__r.CN_Confirmed__c ,
+  ISCHANGED(  CN_Chef_Confirmed_Date__c ) 
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
     <rules>
         <fullName>CN_Chefs_Assigned_Set_Unique_ID</fullName>
         <actions>

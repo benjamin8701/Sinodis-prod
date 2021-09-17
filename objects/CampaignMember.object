@@ -270,12 +270,13 @@
     <sharingModel>ControlledByLeadOrContact</sharingModel>
     <validationRules>
         <fullName>CN_Prevent_NotOwner_Creation</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   ISNEW(),
   NOT( Lead.CN_Is_From_Web_To_Lead__c ),
+  ISNULL(Lead.CN_Campaign__c ),
   Campaign.OwnerId &lt;&gt;  $User.Id 
 )</errorConditionFormula>
         <errorMessage>You are not allowed to add campaign member to campaign.</errorMessage>

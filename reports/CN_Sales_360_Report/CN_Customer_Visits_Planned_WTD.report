@@ -17,7 +17,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Planned</value>
+            <value>Planned,Completed,Cancelled</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>

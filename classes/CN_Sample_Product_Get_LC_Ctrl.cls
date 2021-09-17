@@ -8,6 +8,7 @@ global without sharing class CN_Sample_Product_Get_LC_Ctrl {
                                                     CN_SKU_English_Description__c,
                                                     CN_Qty_per_Carton__c,
                                                     CN_Unit__c,
+                                                    CN_List_Price__c,
                                                     CN_Sample_Unit_List_Price__c,
                                                     CN_Quantity_Needed__c,
                                                     CN_Sample_Cost__c

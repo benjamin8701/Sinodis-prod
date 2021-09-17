@@ -1590,12 +1590,27 @@
             <field>CN_Customer_Sales_Team__c</field>
             <table>Account.Sample_RequestS_FeedbackS1__r.Sample_Products__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Pricebook_Price__c</field>
+            <table>Account.Sample_RequestS_FeedbackS1__r.Sample_Products__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_List_Price__c</field>
+            <table>Account.Sample_RequestS_FeedbackS1__r.Sample_Products__r</table>
+        </columns>
         <masterLabel>Sample Products</masterLabel>
     </sections>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CN_Approved_Date__c</field>
+            <table>Account.Sample_RequestS_FeedbackS1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Sample_Feedback_Overdue__c</field>
             <table>Account.Sample_RequestS_FeedbackS1__r</table>
         </columns>
         <masterLabel>Sample Requests</masterLabel>

@@ -33,9 +33,13 @@
         <name>CN_Actual_Close_Date__c</name>
     </fields>
     <fields>
-        <label><!-- CN_Campaign --></label>
+        <label><!-- Campaign --></label>
         <name>CN_Campaign__c</name>
         <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CN Created By Others --></label>
+        <name>CN_Created_By_Others__c</name>
     </fields>
     <fields>
         <label><!-- Expected Purchase Date --></label>

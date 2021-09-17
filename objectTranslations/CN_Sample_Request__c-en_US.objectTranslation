@@ -136,6 +136,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Sample Feedback Overdue --></label>
+        <name>CN_Sample_Feedback_Overdue__c</name>
+    </fields>
+    <fields>
         <label><!-- Sample Needed Date --></label>
         <name>CN_Sample_Needed_Date__c</name>
     </fields>
@@ -274,8 +278,4 @@
         <errorMessage><!-- You are not allowed to edit when sample request is marked as ready for approval. --></errorMessage>
         <name>CN_SR_Prevent_Edit_For_Ready</name>
     </validationRules>
-    <webLinks>
-        <label><!-- CN_Sample_Feedback_Overdue --></label>
-        <name>CN_Sample_Feedback_Overdue</name>
-    </webLinks>
 </CustomObjectTranslation>

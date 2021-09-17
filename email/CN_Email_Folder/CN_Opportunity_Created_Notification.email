@@ -1,0 +1,32 @@
+新的业务机会已经创建
+
+业务机会 : {!Opportunity.Name}
+客户代码 : {!Account.CN_Customer_Code__c}
+客户名称 : {!Opportunity.Account}
+
+           
+请点击以下链接 
+
+{!OpportunityLink} 
+
+查看详细信息
+
+谢谢，   
+Salesforce
+
+==========================For English Version Scroll Down======================
+New opportunity has been created
+
+Opportunity Name :  {!Opportunity.Name}
+Customer Code  : {!Account.CN_Customer_Code__c}
+Customer Name : {!Opportunity.Account}
+
+Please click the following link
+
+{!OpportunityLink} 
+
+ to view additional information. 
+
+
+Thank you,
+Salesforce

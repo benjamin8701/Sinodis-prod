@@ -5,6 +5,10 @@
         <value>厨师分配</value>
     </caseValues>
     <fields>
+        <label><!-- Chef Confirmed Date --></label>
+        <name>CN_Chef_Confirmed_Date__c</name>
+    </fields>
+    <fields>
         <label>厨师姓名</label>
         <name>CN_Chef_Name__c</name>
     </fields>

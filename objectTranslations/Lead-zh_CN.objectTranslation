@@ -299,7 +299,7 @@
         <name>lead_views</name>
     </fields>
     <fields>
-        <label><!-- CN_Campaign --></label>
+        <label>市场活动</label>
         <name>CN_Campaign__c</name>
         <relationshipLabel>线索</relationshipLabel>
     </fields>
@@ -418,6 +418,10 @@
         <label><!-- CN Lead --></label>
         <name>CN_Lead</name>
     </recordTypes>
+    <validationRules>
+        <errorMessage>不可选择此状态</errorMessage>
+        <name>CN_Check_Change_Status_Backwards</name>
+    </validationRules>
     <validationRules>
         <errorMessage>关闭时请填写原因</errorMessage>
         <name>CN_Check_Close_Reason</name>

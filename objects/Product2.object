@@ -244,7 +244,7 @@
         <label>SKU Description CN</label>
         <length>255</length>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -254,7 +254,7 @@
         <label>SKU Description EN</label>
         <length>255</length>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -263,7 +263,7 @@
         <externalId>false</externalId>
         <label>Sample Type</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Picklist</type>
         <valueSet>
             <restricted>true</restricted>
@@ -284,7 +284,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -314,7 +314,7 @@
         <label>Standard Sample Unit</label>
         <length>255</length>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -386,7 +386,7 @@
     </fields>
     <fields>
         <fullName>IsActive</fullName>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
     </fields>
     <fields>
         <fullName>Is_Repack_Sample__c</fullName>
@@ -426,18 +426,43 @@
     </fields>
     <listViews>
         <fullName>AllProducts</fullName>
-        <columns>CN_SKU_Code__c</columns>
         <columns>PRODUCT2.NAME</columns>
-        <columns>PRODUCT2.DESCRIPTION</columns>
         <columns>CN_SKU_Description_CN__c</columns>
         <columns>CN_SKU_Description_EN__c</columns>
+        <columns>CN_Brand__c</columns>
         <columns>CN_Selling_Unit__c</columns>
+        <columns>CN_Base_Unit_of_Measure__c</columns>
         <columns>CN_Shelf_Life__c</columns>
         <columns>CN_Standard_Sample_Unit__c</columns>
         <columns>CN_Sample_Unit_List_Price__c</columns>
         <columns>CN_Sample_Type__c</columns>
         <filterScope>Everything</filterScope>
-        <label>All Products</label>
+        <filters>
+            <field>PRODUCT2.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Active Products</label>
+    </listViews>
+    <listViews>
+        <fullName>All_InActive_Products</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>CN_SKU_Description_CN__c</columns>
+        <columns>CN_SKU_Description_EN__c</columns>
+        <columns>CN_Brand__c</columns>
+        <columns>CN_Selling_Unit__c</columns>
+        <columns>CN_Base_Unit_of_Measure__c</columns>
+        <columns>CN_Shelf_Life__c</columns>
+        <columns>CN_Standard_Sample_Unit__c</columns>
+        <columns>CN_Sample_Unit_List_Price__c</columns>
+        <columns>CN_Sample_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PRODUCT2.ACTIVE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All InActive Products</label>
     </listViews>
     <profileSearchLayouts>
         <fields>PRODUCT2.NAME</fields>

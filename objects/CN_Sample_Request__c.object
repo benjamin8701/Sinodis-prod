@@ -217,7 +217,11 @@
     </fields>
     <fields>
         <fullName>CN_CCE_Team_Email__c</fullName>
-        <defaultValue>$Setup.CN_Approve_Process_Settings__c.CN_MKT_Group_Email__c</defaultValue>
+        <defaultValue>IF(
+  $RecordType.DeveloperName = &apos;CN_Office_Repack&apos;, 
+  $Setup.CN_Approve_Process_Settings__c.CN_MKT_Group_Email__c,
+  null
+)</defaultValue>
         <externalId>false</externalId>
         <label>CCE Team Email</label>
         <required>false</required>
@@ -228,7 +232,11 @@
     </fields>
     <fields>
         <fullName>CN_CS_Team_Email__c</fullName>
-        <defaultValue>$Setup.CN_Approve_Process_Settings__c.CN_CS_Group_Email__c</defaultValue>
+        <defaultValue>IF(
+  $RecordType.DeveloperName = &apos;CN_Whole_Pack&apos;,
+  $Setup.CN_Approve_Process_Settings__c.CN_CS_Group_Email__c,
+  null
+)</defaultValue>
         <externalId>false</externalId>
         <label>CS Team Email</label>
         <required>false</required>
@@ -489,6 +497,18 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Sample_Feedback_Overdue__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/lightning/r/Report/00O1e000000JkW6EAK/view?queryScope=userFolders&quot;,&quot;Click Here&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sample Feedback Overdue</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Sample_Needed_Date__c</fullName>
@@ -893,17 +913,16 @@ CN_SP_Records_Count_All__c &lt;= 0
     <validationRules>
         <fullName>CN_SR_Prevent_Cancel</fullName>
         <active>true</active>
-        <errorConditionFormula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c, 
-	BEGINS(RecordType.DeveloperName,&quot;CN&quot;),
-	ISPICKVAL(CN_Sample_Request_Status__c,&quot;Canceled&quot;),  
-	NOT(
-		IF(DATEVALUE(CN_Approved_Date__c) = TODAY(), 
-			IF(TIMEVALUE(CN_Approved_Date__c) &lt; TIMEVALUE(&quot;19:30:00.000&quot;), TIMEVALUE(NOW())&lt;TIMEVALUE(&quot;19:30:00.000&quot;), 
-				false 
-				),
-				IF(DATEVALUE(CN_Approved_Date__c) = TODAY()-1, AND(TIMEVALUE(NOW()) &gt;= TIMEVALUE(&quot;00:00:00.000&quot;), TIMEVALUE(NOW()) &lt; TIMEVALUE(&quot;19:30:00.000&quot;)), false))
-		)
-	)</errorConditionFormula>
+        <errorConditionFormula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+BEGINS(RecordType.DeveloperName,&quot;CN&quot;),
+ISPICKVAL(CN_Sample_Request_Status__c,&quot;Canceled&quot;),
+
+IF(DATEVALUE(CN_Approved_Date__c) = TODAY(),
+	IF(TIMEVALUE(CN_Approved_Date__c) &lt; TIMEVALUE(&quot;19:30:00.000&quot;), TIMEVALUE(NOW())&gt;TIMEVALUE(&quot;19:30:00.000&quot;),false),
+	IF(DATEVALUE(CN_Approved_Date__c) = TODAY()-1, TIMEVALUE(NOW()) &gt; TIMEVALUE(&quot;19:30:00.000&quot;), false)
+)
+
+)</errorConditionFormula>
         <errorMessage>You&apos;re not allowed to cancel it now.</errorMessage>
     </validationRules>
     <validationRules>
@@ -946,23 +965,4 @@ NOT(ISCHANGED(CN_Sample_Request_Status__c))
         <errorMessage>You are not allowed to edit when sample request is marked as ready for approval.</errorMessage>
     </validationRules>
     <visibility>Public</visibility>
-    <webLinks>
-        <fullName>CN_Sample_Feedback_Overdue</fullName>
-        <availability>online</availability>
-        <displayType>link</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <hasMenubar>false</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>false</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>url</linkType>
-        <masterLabel>Sample Feedback Overdue</masterLabel>
-        <openType>newWindow</openType>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>false</showsLocation>
-        <showsStatus>false</showsStatus>
-        <url>/lightning/r/Report/00O1e000000JkW6EAK/view?queryScope=userFolders</url>
-    </webLinks>
 </CustomObject>

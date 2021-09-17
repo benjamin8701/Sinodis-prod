@@ -5213,6 +5213,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <columns>CN_Sales_Person_Name__c</columns>
         <columns>CN_Customer_Journey__c</columns>
         <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
         <label>All Accounts</label>
     </listViews>

@@ -225,7 +225,7 @@
         <fullName>CN_Campaign__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>CN_Campaign</label>
+        <label>Campaign</label>
         <referenceTo>Campaign</referenceTo>
         <relationshipLabel>Opportunities</relationshipLabel>
         <relationshipName>Opportunities</relationshipName>
@@ -234,6 +234,16 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Created_By_Others__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.OwnerId  &lt;&gt;  CreatedById</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CN Created By Others</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>CN_Expected_Purchase_Date__c</fullName>

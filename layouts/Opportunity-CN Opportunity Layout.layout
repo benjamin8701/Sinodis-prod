@@ -26,7 +26,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>CampaignId</field>
+                <field>CN_Campaign__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
