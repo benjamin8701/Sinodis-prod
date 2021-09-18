@@ -8,16 +8,15 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>HorizontalBarStacked</chartType>
+        <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
-        <expandOthers>true</expandOthers>
-        <groupingColumn>Campaign.CN_Execution_Type__c</groupingColumn>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>MEMBER_STATUS</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>MEMBER_STATUS</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
-        <showPercentage>false</showPercentage>
-        <showTotal>false</showTotal>
+        <showPercentage>true</showPercentage>
+        <showTotal>true</showTotal>
         <showValues>false</showValues>
         <size>Medium</size>
         <summaryAxisRange>Auto</summaryAxisRange>
@@ -107,17 +106,24 @@
             <operator>notEqual</operator>
             <value>Campaign.CN_Parent_Campaign</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_ID</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>7011e000000A5Ez</value>
+        </criteriaItems>
         <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Campaign.CN_Execution_Type__c</field>
+        <field>MEMBER_STATUS</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>MEMBER_STATUS</field>
+        <field>Campaign.CN_Execution_Type__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name># Attendance by Execution Type</name>
@@ -131,7 +137,7 @@
     </params>
     <reportType>CampaignWithCampaignMembers</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
 </Report>

@@ -21,6 +21,9 @@
     <columns>
         <field>USERS.NAME</field>
     </columns>
+    <columns>
+        <field>Account.CN_OwnerId__c</field>
+    </columns>
     <currency>CNY</currency>
     <filter>
         <criteriaItems>

@@ -737,10 +737,6 @@
             <name>CN_Account_Convert_Clear_Lead_Id</name>
             <type>FieldUpdate</type>
         </actions>
-        <actions>
-            <name>CN_Account_Populate</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>true</active>
         <formula>AND(
   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 

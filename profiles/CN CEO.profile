@@ -1212,6 +1212,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.CN_OwnerId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.CN_Parent_Up_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -8988,13 +8993,6 @@
         <layout>Task-CN Sinodis Task Layout</layout>
         <recordType>Task.CN_Task</recordType>
     </layoutAssignments>
-    <loginFlows>
-        <flow>te</flow>
-        <flowType>UI</flowType>
-        <friendlyName>fffff</friendlyName>
-        <uiLoginFlowType>VisualWorkflow</uiLoginFlowType>
-        <useLightningRuntime>true</useLightningRuntime>
-    </loginFlows>
     <loginIpRanges>
         <endAddress>255.255.255.255</endAddress>
         <startAddress>0.0.0.0</startAddress>
