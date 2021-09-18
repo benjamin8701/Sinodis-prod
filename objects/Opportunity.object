@@ -481,11 +481,11 @@
         <columns>ACCOUNT.NAME</columns>
         <columns>OPPORTUNITY.AMOUNT</columns>
         <columns>OPPORTUNITY.CLOSE_DATE</columns>
-        <columns>OPPORTUNITY.STAGE_NAME</columns>
-        <columns>OPPORTUNITY.PROBABILITY</columns>
         <columns>OPPORTUNITY.TYPE</columns>
-        <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
         <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <label>All Opportunities</label>
     </listViews>
@@ -537,6 +537,11 @@
     </listViews>
     <listViews>
         <fullName>MyOpportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
         <filterScope>Mine</filterScope>
         <label>My Opportunities</label>
     </listViews>

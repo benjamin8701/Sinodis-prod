@@ -1321,6 +1321,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- OwnerId --></label>
+        <name>CN_OwnerId__c</name>
+    </fields>
+    <fields>
         <label><!-- Parent UP Code --></label>
         <name>CN_Parent_Up_Code__c</name>
     </fields>

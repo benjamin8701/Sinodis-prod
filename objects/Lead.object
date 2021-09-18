@@ -667,15 +667,15 @@
     <listViews>
         <fullName>AllOpenLeads</fullName>
         <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
+        <columns>CN_Customer_Category__c</columns>
         <columns>LEAD.LEAD_SOURCE</columns>
-        <columns>LEAD.TITLE</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>CN_Province__c</columns>
+        <columns>CN_City__c</columns>
+        <columns>CN_Street__c</columns>
+        <columns>CN_Zip_Postal_Code__c</columns>
         <columns>LEAD.STATUS</columns>
-        <columns>CORE.USERS.FIRST_NAME</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>LEAD.UNREAD</columns>
         <columns>LEAD.CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <filters>
@@ -709,20 +709,19 @@
     <listViews>
         <fullName>CN_All_Leads</fullName>
         <columns>FULL_NAME</columns>
-        <columns>LEAD.EMAIL</columns>
+        <columns>CN_Customer_Category__c</columns>
+        <columns>LEAD.LEAD_SOURCE</columns>
         <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
+        <columns>CN_Province__c</columns>
+        <columns>LEAD.CITY</columns>
+        <columns>CN_Zip_Postal_Code__c</columns>
+        <columns>LEAD.ZIP</columns>
+        <columns>CN_Street__c</columns>
         <columns>LEAD.STATUS</columns>
         <columns>LEAD.UNREAD</columns>
-        <columns>LEAD.CREATED_DATE</columns>
         <columns>CORE.USERS.ALIAS</columns>
-        <columns>CN_Converted_Contact_Id_From_CR__c</columns>
+        <columns>LEAD.CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Closed - Converted</value>
-        </filters>
         <label>All Leads</label>
         <sharedTo>
             <roleAndSubordinates>CN_China</roleAndSubordinates>
@@ -731,14 +730,22 @@
     <listViews>
         <fullName>CN_My_Leads</fullName>
         <columns>FULL_NAME</columns>
-        <columns>LEAD.EMAIL</columns>
+        <columns>CN_Customer_Category__c</columns>
+        <columns>LEAD.LEAD_SOURCE</columns>
         <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
+        <columns>CN_Province__c</columns>
+        <columns>CN_City__c</columns>
+        <columns>CN_Zip_Postal_Code__c</columns>
+        <columns>CN_Street__c</columns>
         <columns>LEAD.STATUS</columns>
         <columns>LEAD.UNREAD</columns>
         <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Mine</filterScope>
+        <filters>
+            <field>LEAD.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lead.CN_Lead</value>
+        </filters>
         <label>My Leads</label>
         <sharedTo>
             <roleAndSubordinates>CN_China</roleAndSubordinates>

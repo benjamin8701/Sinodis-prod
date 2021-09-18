@@ -603,6 +603,11 @@
             <field>CN_Customer_Feedback__c</field>
             <operation>equals</operation>
         </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>CN_Sample_Product__c.CN_Sample_Product</value>
+        </filters>
         <label>My Sample Feedbacks (Sales View)</label>
         <sharedTo>
             <roleAndSubordinates>CN_Commercial_Director</roleAndSubordinates>
@@ -631,6 +636,11 @@
             <field>CN_Is_Repack_Sample__c</field>
             <operation>equals</operation>
             <value>1</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>CN_Sample_Product__c.CN_Sample_Product</value>
         </filters>
         <label>Repack Sample Products (CCE View)</label>
         <sharedTo>

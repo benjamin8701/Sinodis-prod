@@ -607,9 +607,13 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
-        <columns>CN_Sample_Request_Status__c</columns>
+        <columns>RECORDTYPE</columns>
         <columns>CN_Account_Name__c</columns>
         <columns>CN_Sample_Needed_Date__c</columns>
+        <columns>CN_Order_Reason__c</columns>
+        <columns>CN_Sample_Delivery_Method__c</columns>
+        <columns>CN_Sample_Request_Cost__c</columns>
+        <columns>CN_Sample_Request_Status__c</columns>
         <columns>CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
@@ -617,6 +621,13 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <listViews>
         <fullName>CN_All_Office_Repack_Sample_Requests</fullName>
         <columns>NAME</columns>
+        <columns>CN_Account_Name__c</columns>
+        <columns>CN_Sample_Needed_Date__c</columns>
+        <columns>CN_Order_Reason__c</columns>
+        <columns>CN_Sample_Delivery_Method__c</columns>
+        <columns>CN_Sample_Request_Cost__c</columns>
+        <columns>CN_Sample_Request_Status__c</columns>
+        <columns>CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>RECORDTYPE</field>
@@ -631,11 +642,13 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <listViews>
         <fullName>CN_All_Whole_Pack_Sample_Requests</fullName>
         <columns>NAME</columns>
-        <columns>CN_Sample_Request_Status__c</columns>
         <columns>CN_Account_Name__c</columns>
-        <columns>CN_Customer_Code__c</columns>
-        <columns>CN_Sample_Delivery_Method__c</columns>
         <columns>CN_Sample_Needed_Date__c</columns>
+        <columns>CN_Order_Reason__c</columns>
+        <columns>CN_Sample_Delivery_Method__c</columns>
+        <columns>CN_Sample_Request_Cost__c</columns>
+        <columns>CN_Sample_Request_Status__c</columns>
+        <columns>CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>RECORDTYPE</field>

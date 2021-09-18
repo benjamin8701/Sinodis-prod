@@ -873,6 +873,7 @@
         <columns>CAMPAIGN.STATUS</columns>
         <columns>CORE.USERS.FIRST_NAME</columns>
         <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>CN_New_Product_Launch__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CAMPAIGN.ACTIVE</field>

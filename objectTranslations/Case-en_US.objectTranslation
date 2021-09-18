@@ -148,15 +148,15 @@
         </sections>
     </layouts>
     <quickActions>
-        <label><!-- Closed --></label>
+        <label><!-- Close --></label>
         <name>CN_Complaint_Closed</name>
     </quickActions>
     <quickActions>
-        <label><!-- Rejected --></label>
+        <label><!-- Reject --></label>
         <name>CN_Complaint_Rejected</name>
     </quickActions>
     <quickActions>
-        <label><!-- Resolved --></label>
+        <label><!-- Resolve --></label>
         <name>CN_Complaint_Resolved</name>
     </quickActions>
     <recordTypes>
