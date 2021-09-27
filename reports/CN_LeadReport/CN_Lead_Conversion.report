@@ -18,11 +18,21 @@
     <columns>
         <field>Lead$ConvertedAccount</field>
     </columns>
+    <columns>
+        <field>Lead$ConvertedAccount.CN_Customer_Journey__c</field>
+    </columns>
     <currency>CNY</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF(Text(Lead.ConvertedAccount.CN_Customer_Journey__c)=&quot;&quot;,&quot;Un-Converted&quot;,Text(Lead.ConvertedAccount.CN_Customer_Journey__c))</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Customer Journey</label>
+        <scale>2</scale>
+    </customDetailFormulas>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Lead$ConvertedAccount.CN_Customer_Journey__c</field>
+        <field>CDF1</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Lead Conversion</name>
@@ -34,7 +44,7 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
-    <showSubTotals>true</showSubTotals>
+    <showSubTotals>false</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Lead$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

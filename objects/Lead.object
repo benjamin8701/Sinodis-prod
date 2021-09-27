@@ -713,15 +713,19 @@
         <columns>LEAD.LEAD_SOURCE</columns>
         <columns>LEAD.COMPANY</columns>
         <columns>CN_Province__c</columns>
-        <columns>LEAD.CITY</columns>
+        <columns>CN_City__c</columns>
         <columns>CN_Zip_Postal_Code__c</columns>
-        <columns>LEAD.ZIP</columns>
         <columns>CN_Street__c</columns>
         <columns>LEAD.STATUS</columns>
         <columns>LEAD.UNREAD</columns>
         <columns>CORE.USERS.ALIAS</columns>
         <columns>LEAD.CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lead.CN_Lead</value>
+        </filters>
         <label>All Leads</label>
         <sharedTo>
             <roleAndSubordinates>CN_China</roleAndSubordinates>

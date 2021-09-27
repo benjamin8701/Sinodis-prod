@@ -203,21 +203,6 @@
             <sortOrder>0</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>CN_New_Visit</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>4</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>CN_New_Event</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>5</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>CN_New_Task</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>6</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>Delete</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>1</sortOrder>
@@ -231,6 +216,21 @@
             <actionName>Account.CN_Convert_to_Direct_Account</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>3</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>CN_New_Visit</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>4</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>CN_New_Event</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>5</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>CN_New_Task</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>6</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <quickActionList>
@@ -267,28 +267,21 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
-        <fields>CAMPAIGN.NAME</fields>
-        <fields>CAMPAIGN.CAMPAIGN_TYPE</fields>
-        <fields>CAMPAIGN.START_DATE</fields>
-        <fields>CAMPAIGN.BUDGETED_COST</fields>
-        <fields>CAMPAIGN.STATUS</fields>
-        <relatedList>RelatedAccountCampaignList</relatedList>
+        <fields>NAME</fields>
+        <fields>CN_Promotion_Status__c</fields>
+        <fields>CN_Promotion_Start_Date__c</fields>
+        <fields>CN_Promotion_End_Date__c</fields>
+        <fields>CN_Promotion_Description__c</fields>
+        <relatedList>CN_Promotion_Member__c.CN_Account__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <excludeButtons>MassChangeOwner</excludeButtons>
-        <fields>NAME</fields>
-        <fields>CN_Year_Month__c</fields>
-        <fields>CN_Amount__c</fields>
-        <fields>CN_Due_Date__c</fields>
-        <fields>CN_Net_Due_Date__c</fields>
-        <fields>CN_Arrears_After_Net_Due_Date__c</fields>
-        <fields>CN_Invoice_Number__c</fields>
-        <fields>CN_Tracking_Number__c</fields>
-        <fields>CN_Invoice_Date__c</fields>
-        <fields>CN_Delivery_date__c</fields>
-        <relatedList>CN_Payment_History__c.CN_Customer_Name__c</relatedList>
-        <sortField>CN_Year_Month__c</sortField>
-        <sortOrder>Desc</sortOrder>
+        <fields>CAMPAIGN.NAME</fields>
+        <fields>CAMPAIGN.START_DATE</fields>
+        <fields>CAMPAIGN.CAMPAIGN_TYPE</fields>
+        <fields>CM.STATUS</fields>
+        <fields>CM.RESPONDED</fields>
+        <fields>CM.LAST_UPDATE</fields>
+        <relatedList>RelatedCampaignList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>OPPORTUNITY.NAME</fields>
@@ -306,41 +299,30 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>CN_Contact_Name__c</fields>
+        <fields>CN_Delivery_Address_CN__c</fields>
+        <relatedList>CN_Ship_to_Party__c.CN_Sold_To_Party_Customer__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>CN_Sample_Request_Status__c</fields>
+        <fields>CN_Sample_Delivery_Method__c</fields>
+        <fields>CN_Sample_Needed_Date__c</fields>
+        <fields>CN_Sample_Request_Cost__c</fields>
         <relatedList>CN_Sample_Request__c.CN_Account_Name__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>CASES.CASE_NUMBER</fields>
-        <fields>CASES.STATUS</fields>
-        <fields>CASES.CREATED_DATE_DATE_ONLY</fields>
-        <fields>CASES.SUBJECT</fields>
-        <relatedList>RelatedCaseList</relatedList>
+        <fields>NAME</fields>
+        <fields>CN_Confirmed__c</fields>
+        <fields>CN_Demo_Start_Date__c</fields>
+        <fields>CN_Demo_End_Date__c</fields>
+        <fields>CN_Event_Location__c</fields>
+        <fields>CN_Event_Theme__c</fields>
+        <fields>CN_Key_Products_to_Push__c</fields>
+        <relatedList>CN_Chef_Request__c.CN_Account__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <relatedList>RelatedContentNoteList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <relatedList>RelatedFileList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>ACTIVITY.TASK</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>TASK.STATUS</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <fields>EVENT.LOCATION</fields>
-        <fields>TASK.WHAT_NAME</fields>
-        <relatedList>RelatedActivityList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>ACTIVITY.TASK</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>EVENT.LOCATION</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <fields>TASK.WHAT_NAME</fields>
-        <relatedList>RelatedHistoryList</relatedList>
+        <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

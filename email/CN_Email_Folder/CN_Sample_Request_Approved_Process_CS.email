@@ -1,5 +1,4 @@
-<messaging:emailTemplate subject="已为客户{!relatedTo.CN_Account_Name__r.CN_Customer_Code__c}-{!relatedTo.Name}创建整装样品申请
-/Wholepack Sample Request has been created for Customer{!relatedTo.CN_Account_Name__r.CN_Customer_Code__c}-{!relatedTo.Name}" recipientType="User" relatedToType="CN_Sample_Request__c">
+<messaging:emailTemplate subject="{!relatedTo.CN_Account_Name_Formula__c} 的整装样品申请 {!relatedTo.Name}已创建" recipientType="User" relatedToType="CN_Sample_Request__c">
   <messaging:htmlEmailBody >
   请处理已批准的样品申请:<br/>
   请点击以下链接<br/>
@@ -12,6 +11,10 @@
   <tr>
   <td>客户代码:</td>
   <td>{!relatedTo.CN_Account_Name__r.CN_Customer_Code__c}</td>
+  </tr>
+  <tr>
+  <td>创建人:</td>
+  <td>{!relatedTo.CN_Creator_Name__c}</td>
   </tr>
   <tr>
   <td>整装订单类型:</td>
@@ -34,8 +37,8 @@
   <td>{!relatedTo.CN_Delivery_Address__c}</td>
   </tr>
   </table> 
-  样品申请SKUs:<br/>
-  <c:CN_Sample_Product_Get_CN_VC SRId="{!relatedTo.Id}" /><br/><br/>
+  样品申请SKUs:&nbsp;{!relatedTo.CN_SP_Records_Count_All_Formula__c}<br/>
+  <c:CN_Sample_Product_Get_CN_VC SRId="{!relatedTo.Id}" isCCEOrCS="false"/><br/><br/>
   谢谢,<br/>
   Salesforce<br/>
   ==========================For English Version Scroll Down======================<br/>
@@ -50,6 +53,10 @@
   <tr>
   <td>Customer Code:</td>
   <td>{!relatedTo.CN_Account_Name__r.CN_Customer_Code__c}</td>
+  </tr>
+  <tr>
+  <td>Creator:</td>
+  <td>{!relatedTo.CN_Creator_Name__c}</td>
   </tr>
   <tr>
   <td>Order Type for Wholepack:</td>
@@ -72,8 +79,8 @@
   <td>{!relatedTo.CN_Delivery_Address__c}</td>
   </tr>
   </table> 
-  Sample Request SKUs:<br/>
-  <c:CN_Sample_Product_Get_EN_VC SRId="{!relatedTo.Id}" /><br/><br/>
+  Sample Request SKUs:&nbsp;{!relatedTo.CN_SP_Records_Count_All_Formula__c}<br/>
+  <c:CN_Sample_Product_Get_EN_VC SRId="{!relatedTo.Id}" isCCEOrCS="false"/><br/><br/>
   Thank you,<br/>
   Salesforce
   </messaging:htmlEmailBody>

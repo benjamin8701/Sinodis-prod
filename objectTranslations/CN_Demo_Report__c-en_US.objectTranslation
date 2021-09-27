@@ -80,6 +80,14 @@
     <fields>
         <label><!-- Sales Attendance --></label>
         <name>CN_Sales_Attendance__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Sales Name --></label>

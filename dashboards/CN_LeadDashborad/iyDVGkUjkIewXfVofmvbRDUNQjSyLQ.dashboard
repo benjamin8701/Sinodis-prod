@@ -266,8 +266,8 @@
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
-                <expandOthers>false</expandOthers>
-                <groupingColumn>Lead$ConvertedAccount.CN_Customer_Journey__c</groupingColumn>
+                <expandOthers>true</expandOthers>
+                <groupingColumn>CDF1</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
@@ -280,7 +280,7 @@
                 <report>CN_LeadReport/CN_Lead_Conversion</report>
                 <showPercentage>true</showPercentage>
                 <showTotal>true</showTotal>
-                <showValues>false</showValues>
+                <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>

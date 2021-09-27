@@ -164,6 +164,19 @@
                     <value>&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://savenciasinodis--cndev04.lightning.force.com/lightning/r/Report/00O1e000000JkvkEAC/view?queryScope=userFolders&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Filter Customers by Criteria&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://savenciasinodis--cndev04.lightning.force.com/dataImporter/dataImporter.app?objectSelection=CN_Promotion_Member__c&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Upload Target Customers to Promotion&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>CN CCE</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>

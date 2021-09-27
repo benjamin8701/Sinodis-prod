@@ -5,7 +5,7 @@
     <encodingKey>UTF-8</encodingKey>
     <name>CN_Sample_Request_Approved_Cancelled</name>
     <style>none</style>
-    <subject>Wholepack Sample Request has been created for Customer{!relatedTo.CN_Account_Name__r.CN_Customer_Code__c}-{!relatedTo.Name}</subject>
+    <subject>客户-的整装/分装样品申请已取消 /Whole/Re Pack Sample Request has been cancelled for Customer-</subject>
     <type>visualforce</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

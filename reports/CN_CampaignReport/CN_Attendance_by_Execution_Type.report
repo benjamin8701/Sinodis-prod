@@ -106,13 +106,6 @@
             <operator>notEqual</operator>
             <value>Campaign.CN_Parent_Campaign</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>CAMPAIGN_ID</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>7011e000000A5Ez</value>
-        </criteriaItems>
         <language>en_US</language>
     </filter>
     <format>Summary</format>

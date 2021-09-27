@@ -1,5 +1,6 @@
 <apex:component controller="CN_Sample_Product_Get_LC_Ctrl" access="global">
     <apex:attribute name="SRId" type="Id" description="Id of the Sample Request" assignTo="{!sampleRequestId}" />
+    <apex:attribute name="isCCEOrCS" type="String" description="If profile is cce the value is true" />
     <apex:variable value="{!1}" var="rowNum" />
     <table border="2" cellspacing="5">
         <tr>
@@ -7,12 +8,11 @@
             <td>Sample SKU Code</td>
             <td>Sample SKU Description(CN)</td>
             <td>Sample SKU Description(EN)</td>
-            <td>Package(Qty per Carton) </td>
-            <td>Unit</td>
-            <td>List Price</td>
             <td>Quantity</td>
-            <td>Sample Value</td>
-
+            <td style="{!if(isCCEOrCS='true','','display:none')}">Package(Qty per Carton) </td>
+            <td>Base Unit of Measure</td>
+            <td style="{!if(isCCEOrCS='true','','display:none')}">Sample Unit List Price </td>
+            <td style="{!if(isCCEOrCS='true','','display:none')}">Sample Value</td>
         </tr>
         <apex:repeat value="{!spList}" var="sp">
             <tr>
@@ -20,11 +20,11 @@
                 <td>{!sp.CN_Sample_SKU_Code__c}</td>
                 <td>{!sp.CN_SKU_Chinese_Description__c}</td>
                 <td>{!sp.CN_SKU_English_Description__c}</td>
-                <td>{!sp.CN_Qty_per_Carton__c}</td>
-                <td>{!sp.CN_Unit__c}</td>
-                <td>{!sp.CN_List_Price__c}</td>
                 <td>{!sp.CN_Quantity_Needed__c}</td>
-                <td>{!sp.CN_Sample_Cost__c}</td>
+                <td style="{!if(isCCEOrCS='true','','display:none')}">{!sp.CN_Qty_per_Carton__c}</td>
+                <td>{!sp.CN_Unit__c}</td>
+                <td style="{!if(isCCEOrCS='true','','display:none')}">{!sp.CN_List_Price__c}</td>
+                <td style="{!if(isCCEOrCS='true','','display:none')}">{!sp.CN_Sample_Cost__c}</td>
                 <apex:variable var="rowNum" value="{!rowNum + 1}" />
             </tr>
         </apex:repeat>

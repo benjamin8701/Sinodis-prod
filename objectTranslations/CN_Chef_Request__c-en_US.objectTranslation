@@ -263,6 +263,14 @@
         <label><!-- Customer Attendees Title --></label>
         <name>CN_Customer_Attendees_Title__c</name>
         <picklistValues>
+            <masterLabel>Business Owner</masterLabel>
+            <translation><!-- Business Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef</masterLabel>
+            <translation><!-- Chef --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Purchase Manager</masterLabel>
             <translation><!-- Purchase Manager --></translation>
         </picklistValues>
@@ -443,6 +451,10 @@
             <translation><!-- Self Practice &amp; Training --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Shooting</masterLabel>
+            <translation><!-- Shooting --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Short Video</masterLabel>
             <translation><!-- Short Video --></translation>
         </picklistValues>
@@ -492,7 +504,7 @@
     </fields>
     <fields>
         <help><!-- e.g. Average price of one drink is 32 RMB, average price of a cake is 48 RMB. --></help>
-        <label><!-- Price Positioning --></label>
+        <label><!-- Price Positioning(Customer price) --></label>
         <name>CN_Price_Positioning__c</name>
     </fields>
     <fields>
@@ -565,11 +577,19 @@
         <label><!-- Total Days Of End Date Month --></label>
         <name>CN_Total_Days_Of_End_Date_Month__c</name>
     </fields>
+    <fields>
+        <label><!-- Using the Entire Kitchen? --></label>
+        <name>CN_Using_The_Entire_Kitchen__c</name>
+    </fields>
     <layouts>
         <layout>CN 1on1 Chef Request</layout>
         <sections>
             <label><!-- Chef Management Confirmation --></label>
             <section>Chef Management Confirmation</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
         </sections>
         <sections>
             <label><!-- Custom Links --></label>
@@ -606,6 +626,10 @@
             <section>Chef Management Confirmation</section>
         </sections>
         <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
@@ -616,6 +640,18 @@
         <sections>
             <label><!-- Description --></label>
             <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Info --></label>
+            <section>Info</section>
+        </sections>
+        <sections>
+            <label><!-- Key Product to Push --></label>
+            <section>Key Product to Push</section>
         </sections>
     </layouts>
     <layouts>
@@ -625,6 +661,10 @@
             <section>Chef Management Confirmation</section>
         </sections>
         <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
@@ -636,6 +676,18 @@
             <label><!-- Description --></label>
             <section>Description</section>
         </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Info --></label>
+            <section>Info</section>
+        </sections>
+        <sections>
+            <label><!-- Key Products to Push --></label>
+            <section>Key Products to Push</section>
+        </sections>
     </layouts>
     <layouts>
         <layout>CN Self-Chef Demo Request</layout>
@@ -644,8 +696,16 @@
             <section>Chef Management Confirmation</section>
         </sections>
         <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
         </sections>
     </layouts>
     <layouts>
@@ -658,6 +718,10 @@
     <quickActions>
         <label><!-- Confirm/Unconfirm --></label>
         <name>CN_Confirm</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Confirm/Unconfirm --></label>
+        <name>CN_Confirm_Self_Work</name>
     </quickActions>
     <quickActions>
         <label><!-- Ready for Approval/Back to New --></label>

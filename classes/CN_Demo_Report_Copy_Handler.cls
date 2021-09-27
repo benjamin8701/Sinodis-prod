@@ -34,7 +34,9 @@ public without sharing class CN_Demo_Report_Copy_Handler implements Triggers.Han
             if(crList.size() > 0) {
                 for(CN_Chef_Request__c cr: crList) {
                     crIdRTNameMap.put(cr.Id, cr.RecordType.DeveloperName);
-                    crIdParentIdMap.put(cr.Id, cr.CN_Account__c == null? cr.CN_Campaign__c: cr.CN_Account__c);
+                    if(cr.CN_Account__c != null || cr.CN_Campaign__c != null){
+                        crIdParentIdMap.put(cr.Id, cr.CN_Account__c == null? cr.CN_Campaign__c: cr.CN_Account__c);
+                    }
                 }
                 List<CN_Demo_Report__c> demoReportAccountList = new List<CN_Demo_Report__c>();
                 List<CN_Demo_Report__c> demoReportCampaignList = new List<CN_Demo_Report__c>();
@@ -86,7 +88,7 @@ public without sharing class CN_Demo_Report_Copy_Handler implements Triggers.Han
                     draForUpdate.CN_Number_of_People__c = demorReport.CN_Number_of_People__c;
                     draForUpdate.CN_Number_of_Recipes__c = demorReport.CN_Number_of_Recipes__c;
                     draForUpdate.CN_Report_Creator__c = demorReport.CreatedById;
-                    draForUpdate.CN_Sales_Attendance__c = demorReport.CN_Sales_Attendance__c;
+                    draForUpdate.CN_Sales_Attendance__c = 'Yes'.equals(demorReport.CN_Sales_Attendance__c)? true: false;
                     draForUpdate.CN_Sales_Name__c = demorReport.CN_Sales_Name__c;
                     draForUpdate.CN_SAP_Concur_Travel_Cost__c = demorReport.CN_SAP_Concur_Travel_Cost__c;
                     updateList.add(draForUpdate);
@@ -111,7 +113,7 @@ public without sharing class CN_Demo_Report_Copy_Handler implements Triggers.Han
                     drcForUpdate.CN_Number_of_People__c = demorReport.CN_Number_of_People__c;
                     drcForUpdate.CN_Number_of_Recipes__c = demorReport.CN_Number_of_Recipes__c;
                     drcForUpdate.CN_Report_Creator__c = demorReport.CreatedById;
-                    drcForUpdate.CN_Sales_Attendance__c = demorReport.CN_Sales_Attendance__c;
+                    drcForUpdate.CN_Sales_Attendance__c = 'Yes'.equals(demorReport.CN_Sales_Attendance__c)? true: false;
                     drcForUpdate.CN_Sales_Name__c = demorReport.CN_Sales_Name__c;
                     drcForUpdate.CN_SAP_Concur_Travel_Cost__c = demorReport.CN_SAP_Concur_Travel_Cost__c;
                     updateList.add(drcForUpdate);
@@ -149,26 +151,28 @@ public without sharing class CN_Demo_Report_Copy_Handler implements Triggers.Han
         List<CN_Demo_Report_Account__c> demoReportList = new List<CN_Demo_Report_Account__c>();
         if(demoReportAccountList.size() > 0) {
             for(CN_Demo_Report__c dr: demoReportAccountList) {
-                CN_Demo_Report_Account__c dra = new CN_Demo_Report_Account__c();
-                dra.CN_Chef_Request__c = dr.CN_Chef_Request__c;
-                dra.Name = dr.Name;
-                dra.CN_Demo_Report__c = dr.Id;
-                dra.CN_Account__c = crIdParentIdMap.get(dr.CN_Chef_Request__c);
-                dra.CN_Activity_Type__c = dr.CN_Activity_Type__c;
-                dra.CN_Channel__c = dr.CN_Channel__c;
-                dra.CN_City__c = dr.CN_City__c;
-                dra.CN_Comments__c = dr.CN_Comments__c;
-                dra.CN_Customer_ID__c = dr.CN_Customer_ID__c;
-                dra.CN_Customer_Name__c = dr.CN_Customer_Name__c;
-                dra.CN_Event_Theme__c = dr.CN_Event_Theme__c;
-                dra.CN_Guest_Chef__c = dr.CN_Guest_Chef__c;
-                dra.CN_Number_of_People__c = dr.CN_Number_of_People__c;
-                dra.CN_Number_of_Recipes__c = dr.CN_Number_of_Recipes__c;
-                dra.CN_Report_Creator__c = dr.CreatedById;
-                dra.CN_Sales_Attendance__c = dr.CN_Sales_Attendance__c;
-                dra.CN_Sales_Name__c = dr.CN_Sales_Name__c;
-                dra.CN_SAP_Concur_Travel_Cost__c = dr.CN_SAP_Concur_Travel_Cost__c;
-                demoReportList.add(dra);
+                if(crIdParentIdMap.containsKey(dr.CN_Chef_Request__c)){
+                    CN_Demo_Report_Account__c dra = new CN_Demo_Report_Account__c();
+                    dra.CN_Chef_Request__c = dr.CN_Chef_Request__c;
+                    dra.Name = dr.Name;
+                    dra.CN_Demo_Report__c = dr.Id;
+                    dra.CN_Account__c = crIdParentIdMap.get(dr.CN_Chef_Request__c);
+                    dra.CN_Activity_Type__c = dr.CN_Activity_Type__c;
+                    dra.CN_Channel__c = dr.CN_Channel__c;
+                    dra.CN_City__c = dr.CN_City__c;
+                    dra.CN_Comments__c = dr.CN_Comments__c;
+                    dra.CN_Customer_ID__c = dr.CN_Customer_ID__c;
+                    dra.CN_Customer_Name__c = dr.CN_Customer_Name__c;
+                    dra.CN_Event_Theme__c = dr.CN_Event_Theme__c;
+                    dra.CN_Guest_Chef__c = dr.CN_Guest_Chef__c;
+                    dra.CN_Number_of_People__c = dr.CN_Number_of_People__c;
+                    dra.CN_Number_of_Recipes__c = dr.CN_Number_of_Recipes__c;
+                    dra.CN_Report_Creator__c = dr.CreatedById;
+                    dra.CN_Sales_Attendance__c = 'Yes'.equals(dr.CN_Sales_Attendance__c)? true: false;
+                    dra.CN_Sales_Name__c = dr.CN_Sales_Name__c;
+                    dra.CN_SAP_Concur_Travel_Cost__c = dr.CN_SAP_Concur_Travel_Cost__c;
+                    demoReportList.add(dra);
+                }
             }
         }
         return demoReportList;
@@ -178,26 +182,28 @@ public without sharing class CN_Demo_Report_Copy_Handler implements Triggers.Han
         List<CN_Demo_Report_Campaign__c> demoReportList = new List<CN_Demo_Report_Campaign__c>();
         if(demoReportCampaignList.size() > 0) {
             for(CN_Demo_Report__c dr: demoReportCampaignList) {
-                CN_Demo_Report_Campaign__c dra = new CN_Demo_Report_Campaign__c();
-                dra.CN_Chef_Request__c = dr.CN_Chef_Request__c;
-                dra.Name = dr.Name;
-                dra.CN_Demo_Report__c = dr.Id;
-                dra.CN_Campaign__c = crIdParentIdMap.get(dr.CN_Chef_Request__c);
-                dra.CN_Activity_Type__c = dr.CN_Activity_Type__c;
-                dra.CN_Channel__c = dr.CN_Channel__c;
-                dra.CN_City__c = dr.CN_City__c;
-                dra.CN_Comments__c = dr.CN_Comments__c;
-                dra.CN_Customer_ID__c = dr.CN_Customer_ID__c;
-                dra.CN_Customer_Name__c = dr.CN_Customer_Name__c;
-                dra.CN_Event_Theme__c = dr.CN_Event_Theme__c;
-                dra.CN_Guest_Chef__c = dr.CN_Guest_Chef__c;
-                dra.CN_Number_of_People__c = dr.CN_Number_of_People__c;
-                dra.CN_Number_of_Recipes__c = dr.CN_Number_of_Recipes__c;
-                dra.CN_Report_Creator__c = dr.CreatedById;
-                dra.CN_Sales_Attendance__c = dr.CN_Sales_Attendance__c;
-                dra.CN_Sales_Name__c = dr.CN_Sales_Name__c;
-                dra.CN_SAP_Concur_Travel_Cost__c = dr.CN_SAP_Concur_Travel_Cost__c;
-                demoReportList.add(dra);
+                if(crIdParentIdMap.containsKey(dr.CN_Chef_Request__c)){
+                    CN_Demo_Report_Campaign__c dra = new CN_Demo_Report_Campaign__c();
+                    dra.CN_Chef_Request__c = dr.CN_Chef_Request__c;
+                    dra.Name = dr.Name;
+                    dra.CN_Demo_Report__c = dr.Id;
+                    dra.CN_Campaign__c = crIdParentIdMap.get(dr.CN_Chef_Request__c);
+                    dra.CN_Activity_Type__c = dr.CN_Activity_Type__c;
+                    dra.CN_Channel__c = dr.CN_Channel__c;
+                    dra.CN_City__c = dr.CN_City__c;
+                    dra.CN_Comments__c = dr.CN_Comments__c;
+                    dra.CN_Customer_ID__c = dr.CN_Customer_ID__c;
+                    dra.CN_Customer_Name__c = dr.CN_Customer_Name__c;
+                    dra.CN_Event_Theme__c = dr.CN_Event_Theme__c;
+                    dra.CN_Guest_Chef__c = dr.CN_Guest_Chef__c;
+                    dra.CN_Number_of_People__c = dr.CN_Number_of_People__c;
+                    dra.CN_Number_of_Recipes__c = dr.CN_Number_of_Recipes__c;
+                    dra.CN_Report_Creator__c = dr.CreatedById;
+                    dra.CN_Sales_Attendance__c =  'Yes'.equals(dr.CN_Sales_Attendance__c)? true: false;
+                    dra.CN_Sales_Name__c = dr.CN_Sales_Name__c;
+                    dra.CN_SAP_Concur_Travel_Cost__c = dr.CN_SAP_Concur_Travel_Cost__c;
+                    demoReportList.add(dra);
+                }
             }
         }
         return demoReportList;

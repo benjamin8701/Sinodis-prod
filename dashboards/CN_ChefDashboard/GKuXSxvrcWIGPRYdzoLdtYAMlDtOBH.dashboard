@@ -91,24 +91,28 @@
             <operator>equals</operator>
             <values>Recipes R&amp;D</values>
         </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Shooting</values>
+        </dashboardFilterOptions>
         <name>Event Type</name>
     </dashboardFilters>
     <dashboardFilters>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>Nicolas Serrano</values>
+            <values>Serrano Nicolas</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>Simon Jiang</values>
+            <values>Jiang Simon</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>Ruby Zhang</values>
+            <values>Zhang Ruby</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>Chris Lu</values>
+            <values>Lu Chris</values>
         </dashboardFilterOptions>
         <name>Chef Name</name>
     </dashboardFilters>
@@ -120,9 +124,8 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
                 <chartSummary>
-                    <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>CN_Chef_Request__c.CN_Demo_Duration__c</column>
+                    <column>RowCount</column>
                 </chartSummary>
                 <componentType>ColumnStacked</componentType>
                 <dashboardFilterColumns>
@@ -251,7 +254,7 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Chef Average Time Spent by Event Type</header>
+                <header>Chef Average Time Spent by Activity Type</header>
                 <legendPosition>Right</legendPosition>
                 <report>CN_ChefReport/CN_Chef_Average_Time_Spent_by_Event_Type</report>
                 <showPercentage>false</showPercentage>
@@ -260,7 +263,7 @@
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>10</rowIndex>
-            <rowSpan>13</rowSpan>
+            <rowSpan>12</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>6</colSpan>
@@ -301,7 +304,7 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Total Time Spent by Event Type</header>
+                <header>Total Time Spent by Activity Type</header>
                 <legendPosition>Right</legendPosition>
                 <report>CN_ChefReport/CN_Chef_Average_Time_Spent_by_Event_Type</report>
                 <showPercentage>false</showPercentage>
@@ -310,14 +313,14 @@
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>10</rowIndex>
-            <rowSpan>13</rowSpan>
+            <rowSpan>12</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>12</numberOfColumns>
         <rowHeight>36</rowHeight>
     </dashboardGridLayout>
     <dashboardType>MyTeamUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>da.huang@accenture.com.savencia</runningUser>
+    <runningUser>c.qiu@accenture.com</runningUser>
     <textColor>#000000</textColor>
     <title>Chef Dashboard</title>
     <titleColor>#000000</titleColor>

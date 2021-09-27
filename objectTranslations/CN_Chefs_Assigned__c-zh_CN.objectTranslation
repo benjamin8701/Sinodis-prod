@@ -51,6 +51,10 @@
         <name>CN_Chef_Work_Start_and_End_Date__c</name>
     </fields>
     <fields>
+        <label><!-- Chef Working Days(Except OFF) --></label>
+        <name>CN_Chef_Working_Days_Except_Off__c</name>
+    </fields>
+    <fields>
         <label><!-- Chef Working Days --></label>
         <name>CN_Chef_Working_Days__c</name>
     </fields>

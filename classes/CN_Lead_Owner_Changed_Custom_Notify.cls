@@ -9,9 +9,12 @@
  * Modify History : 
  **************************************************************************************************/
 public without sharing class CN_Lead_Owner_Changed_Custom_Notify implements Triggers.Handler{
+    public static Boolean isTriggerRun = true;
     public void handle() {
 		if(Trigger.isBefore && Trigger.isUpdate) {
-            handleBeforeUpdate();
+            if(CN_CR_Generate_Contact_Handler.isTriggerRun) {
+                handleBeforeUpdate();
+            }
         }   
     }
     public void handleBeforeUpdate() {
@@ -27,6 +30,7 @@ public without sharing class CN_Lead_Owner_Changed_Custom_Notify implements Trig
         if(cnLeadList.size() > 0) {
             notifyUsers(cnLeadList);
         }
+        CN_CR_Generate_Contact_Handler.isTriggerRun = false;
     }
 
     public static void notifyUsers(List<Lead> cnLeadList) {

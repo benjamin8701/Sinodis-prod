@@ -13,6 +13,7 @@
         </picklistValues>
     </fields>
     <fields>
+        <help><!-- 请把产品描述包括图片填写到详细描述中，其他内容，如产品配方，证书等需要通过文档上传 / Please fill in the product description, including pictures, into the detailed description. Other content, such as product formulas, certificates, etc., need to be uploaded through the document. --></help>
         <label>详细描述</label>
         <name>CN_Detailed_Description__c</name>
     </fields>

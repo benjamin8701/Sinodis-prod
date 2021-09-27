@@ -168,7 +168,6 @@
         <fields>EndDate</fields>
         <fields>Status</fields>
         <fields>Type</fields>
-        <fields>IsActive</fields>
         <label>Campaign</label>
     </compactLayouts>
     <compactLayouts>
@@ -485,6 +484,45 @@
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
+        <fullName>CN_Campaign_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Campaign Id</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Channel</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>KA</fullName>
+                    <default>false</default>
+                    <label>KA</label>
+                </value>
+                <value>
+                    <fullName>WS</fullName>
+                    <default>false</default>
+                    <label>WS</label>
+                </value>
+                <value>
+                    <fullName>DS</fullName>
+                    <default>false</default>
+                    <label>DS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
         <fullName>CN_Execution_Type__c</fullName>
         <externalId>false</externalId>
         <label>Execution Type</label>
@@ -509,6 +547,21 @@
                     <fullName>1on1</fullName>
                     <default>false</default>
                     <label>1on1</label>
+                </value>
+                <value>
+                    <fullName>VIP Dinner</fullName>
+                    <default>false</default>
+                    <label>VIP Dinner</label>
+                </value>
+                <value>
+                    <fullName>Tasting</fullName>
+                    <default>false</default>
+                    <label>Tasting</label>
+                </value>
+                <value>
+                    <fullName>On-Site Order</fullName>
+                    <default>false</default>
+                    <label>On-Site Order</label>
                 </value>
                 <value>
                     <fullName>Livestreaming</fullName>
@@ -609,7 +662,20 @@
             <valueSettings>
                 <controllingFieldValue>Channel Solution</controllingFieldValue>
                 <controllingFieldValue>Cross Category Event</controllingFieldValue>
+                <controllingFieldValue>Road Show</controllingFieldValue>
                 <valueName>1on1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Road Show</controllingFieldValue>
+                <valueName>VIP Dinner</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Road Show</controllingFieldValue>
+                <valueName>Tasting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Road Show</controllingFieldValue>
+                <valueName>On-Site Order</valueName>
             </valueSettings>
         </valueSet>
         <visibleLines>4</visibleLines>
@@ -620,6 +686,14 @@
         <formula>OwnerId =  $User.Id</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Is My Campaign</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Within_6_Months__c</fullName>
+        <externalId>false</externalId>
+        <formula>StartDate  &gt;= ADDMONTHS(ToDay(),-6) &amp;&amp; StartDate &lt;= ToDay()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CN_Is_Within_6_Months</label>
         <type>Checkbox</type>
     </fields>
     <fields>
@@ -867,13 +941,15 @@
     <listViews>
         <fullName>AllActiveCampaigns</fullName>
         <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CN_Execution_Type__c</columns>
+        <columns>CN_Channel__c</columns>
         <columns>CAMPAIGN.START_DATE</columns>
         <columns>CAMPAIGN.END_DATE</columns>
-        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
         <columns>CAMPAIGN.STATUS</columns>
-        <columns>CORE.USERS.FIRST_NAME</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
         <columns>CN_New_Product_Launch__c</columns>
+        <columns>CAMPAIGN.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CAMPAIGN.ACTIVE</field>
@@ -885,10 +961,14 @@
     <listViews>
         <fullName>MyActiveCampaigns</fullName>
         <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CN_Execution_Type__c</columns>
+        <columns>CN_Channel__c</columns>
         <columns>CAMPAIGN.START_DATE</columns>
         <columns>CAMPAIGN.END_DATE</columns>
-        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CN_New_Product_Launch__c</columns>
         <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.CREATED_DATE</columns>
         <filterScope>Mine</filterScope>
         <filters>
             <field>CAMPAIGN.ACTIVE</field>
@@ -1109,6 +1189,21 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Channel__c</picklist>
+            <values>
+                <fullName>DS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Execution_Type__c</picklist>
             <values>
                 <fullName>1on1</fullName>
@@ -1120,6 +1215,10 @@
             </values>
             <values>
                 <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On-Site Order</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -1139,7 +1238,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Tasting</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>VIP Class</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIP Dinner</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -1469,6 +1576,21 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Channel__c</picklist>
+            <values>
+                <fullName>DS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Execution_Type__c</picklist>
             <values>
                 <fullName>1on1</fullName>
@@ -1635,6 +1757,7 @@
         <lookupDialogsAdditionalFields>CAMPAIGN.NAME</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CAMPAIGN.NAME</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>CAMPAIGN.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Channel__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>PARENT_NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CAMPAIGN.CAMPAIGN_TYPE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CAMPAIGN.STATUS</searchResultsAdditionalFields>
@@ -1644,13 +1767,6 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
-    <validationRules>
-        <fullName>CN_Campaign_Audiences_Number_IsBlank</fullName>
-        <active>false</active>
-        <errorConditionFormula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c, OR(RecordType.DeveloperName = &apos;CN_Campaign&apos;, RecordType.DeveloperName = &apos;CN_Parent_Campaign&apos;),  ISPICKVAL(Status, &quot;Completed&quot;),  ISBLANK(CN_Number_of_Audiences__c))</errorConditionFormula>
-        <errorDisplayField>CN_Number_of_Audiences__c</errorDisplayField>
-        <errorMessage>Number of audiences is a must field to input for livestreaming campaign when campaign completes.</errorMessage>
-    </validationRules>
     <validationRules>
         <fullName>CN_Campaign_Check_Start_Date</fullName>
         <active>true</active>
@@ -1688,8 +1804,18 @@
     <validationRules>
         <fullName>CN_Campaign_Completed_Block_Edit</fullName>
         <active>true</active>
-        <errorConditionFormula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c, OR(RecordType.DeveloperName = &apos;CN_Campaign&apos;, RecordType.DeveloperName = &apos;CN_Parent_Campaign&apos;), ISPICKVAL(PRIORVALUE(Status), &quot;Completed&quot;))</errorConditionFormula>
-        <errorMessage>You cannot edit anything once completed.</errorMessage>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c, 
+OR(
+    RecordType.DeveloperName = &apos;CN_Campaign&apos;, 
+    RecordType.DeveloperName = &apos;CN_Parent_Campaign&apos;
+   ), 
+OR(
+    ISPICKVAL(PRIORVALUE(Status), &quot;Completed&quot;),
+    ISPICKVAL(PRIORVALUE(Status), &quot;Aborted&quot;)
+   )
+)</errorConditionFormula>
+        <errorMessage>You cannot edit anything once completed or aborted.</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>ViewAllCampaignMembers</fullName>

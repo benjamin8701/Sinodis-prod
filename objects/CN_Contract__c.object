@@ -1155,9 +1155,9 @@
         <fullName>All</fullName>
         <columns>NAME</columns>
         <columns>CN_Contract_Number__c</columns>
+        <columns>CN_Direct_Account_Name__c</columns>
         <columns>CN_Contract_Type__c</columns>
         <columns>CN_Contract_Status__c</columns>
-        <columns>CN_Direct_Account_Name__c</columns>
         <columns>CN_Indirect_Account_Name__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>

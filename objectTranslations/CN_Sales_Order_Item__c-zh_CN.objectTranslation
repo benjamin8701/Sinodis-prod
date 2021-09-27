@@ -5,6 +5,11 @@
         <value>销售订单明细</value>
     </caseValues>
     <fields>
+        <label><!-- Campaign Product --></label>
+        <name>CN_Campaign_Product__c</name>
+        <relationshipLabel><!-- Sales Order Item --></relationshipLabel>
+    </fields>
+    <fields>
         <label>确认金额</label>
         <name>CN_Confirmed_Value__c</name>
     </fields>
@@ -51,6 +56,10 @@
     <fields>
         <label>毛重</label>
         <name>CN_Gross_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Created Yesterday --></label>
+        <name>CN_Is_Created_Yesterday__c</name>
     </fields>
     <fields>
         <label>拒绝原因</label>

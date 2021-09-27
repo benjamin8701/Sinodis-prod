@@ -9,6 +9,11 @@
         <value>Sample Products</value>
     </caseValues>
     <fields>
+        <label><!-- Campaign Product --></label>
+        <name>CN_Campaign_Product__c</name>
+        <relationshipLabel><!-- Sample Products --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Current Status Date --></label>
         <name>CN_Current_Status_Date__c</name>
     </fields>
@@ -73,6 +78,10 @@
         <name>CN_Feedback_Description__c</name>
     </fields>
     <fields>
+        <label><!-- Is Created Yesterday --></label>
+        <name>CN_Is_Created_Yesterday__c</name>
+    </fields>
+    <fields>
         <label><!-- Is Deliver Done --></label>
         <name>CN_Is_Deliver_Done__c</name>
     </fields>
@@ -126,8 +135,16 @@
         <name>CN_SKU_English_Description__c</name>
     </fields>
     <fields>
+        <label><!-- Sales Office --></label>
+        <name>CN_Sales_Office__c</name>
+    </fields>
+    <fields>
         <label><!-- Sample Cost --></label>
         <name>CN_Sample_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Needed Date --></label>
+        <name>CN_Sample_Needed_Date__c</name>
     </fields>
     <fields>
         <label><!-- Sample Request Type Formula --></label>

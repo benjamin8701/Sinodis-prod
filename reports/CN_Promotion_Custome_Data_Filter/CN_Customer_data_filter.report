@@ -7,6 +7,9 @@
         <field>CDF1</field>
     </columns>
     <columns>
+        <field>Account.CN_Customer_Code__c</field>
+    </columns>
+    <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
@@ -34,7 +37,7 @@
         <field>Account.CN_Business_Unit__c</field>
     </columns>
     <columns>
-        <field>Account.CN_Sales_Team_UI__c</field>
+        <field>Account.CN_Sales_Team_Name__c</field>
     </columns>
     <columns>
         <field>Account.CN_Account_Layer__c</field>
@@ -105,7 +108,7 @@
             <value></value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.CN_Sales_Team__c</column>
+            <column>Account.CN_Sales_Team_Name__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
@@ -117,6 +120,13 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>,Layer 100,Layer 80,Layer 50,Layer 20</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.CN_Customer_Code__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value></value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
@@ -131,6 +141,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.CN_Customer_Code__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

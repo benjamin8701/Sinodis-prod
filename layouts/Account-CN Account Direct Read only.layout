@@ -2,8 +2,7 @@
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <excludeButtons>ChangeOwnerOne</excludeButtons>
     <excludeButtons>ChangeRecordType</excludeButtons>
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>Edit</excludeButtons>
@@ -272,9 +271,10 @@
     </relatedContent>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>CN_Promotion_Status__c</fields>
         <fields>CN_Promotion_Start_Date__c</fields>
         <fields>CN_Promotion_End_Date__c</fields>
-        <fields>CN_Promotion_Status__c</fields>
+        <fields>CN_Promotion_Description__c</fields>
         <relatedList>CN_Promotion_Member__c.CN_Account__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -364,6 +364,10 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>CN_Sample_Request_Status__c</fields>
+        <fields>CN_Sample_Delivery_Method__c</fields>
+        <fields>CN_Sample_Needed_Date__c</fields>
+        <fields>CN_Sample_Request_Cost__c</fields>
         <relatedList>CN_Sample_Request__c.CN_Account_Name__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -388,6 +392,11 @@
     <relatedLists>
         <excludeButtons>MassChangeOwner</excludeButtons>
         <fields>NAME</fields>
+        <fields>CN_Contract_Type__c</fields>
+        <fields>CN_Contract_Status__c</fields>
+        <fields>CN_Guarantor__c</fields>
+        <fields>CN_Payment_Term__c</fields>
+        <fields>CN_Rebate_Type__c</fields>
         <relatedList>CN_Contract__c.CN_Direct_Account_Name__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -419,10 +428,6 @@
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>CN_Sales_Performance__c.CN_Customer__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

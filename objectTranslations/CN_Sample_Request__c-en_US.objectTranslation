@@ -9,6 +9,10 @@
         <value>Sample Requests</value>
     </caseValues>
     <fields>
+        <label><!-- Account Name Formula --></label>
+        <name>CN_Account_Name_Formula__c</name>
+    </fields>
+    <fields>
         <label><!-- Account Name --></label>
         <name>CN_Account_Name__c</name>
         <relationshipLabel><!-- Sample Requests (Account Name) --></relationshipLabel>
@@ -36,12 +40,16 @@
         <name>CN_CS_Team_Email__c</name>
     </fields>
     <fields>
+        <label><!-- Creator Name --></label>
+        <name>CN_Creator_Name__c</name>
+    </fields>
+    <fields>
         <label><!-- Customer Code --></label>
         <name>CN_Customer_Code__c</name>
     </fields>
     <fields>
         <help><!-- Delivery Address is mandatory if delivery method is express delivery. --></help>
-        <label><!-- Delivery Address --></label>
+        <label><!-- Delivery Address+Contact+Phone Number --></label>
         <name>CN_Delivery_Address__c</name>
     </fields>
     <fields>
@@ -94,6 +102,10 @@
     <fields>
         <label><!-- Please Confirm --></label>
         <name>CN_Please_Confirm__c</name>
+    </fields>
+    <fields>
+        <label><!-- SP Records Count All Formula --></label>
+        <name>CN_SP_Records_Count_All_Formula__c</name>
     </fields>
     <fields>
         <label><!-- SP Records Count All --></label>
@@ -196,6 +208,10 @@
         <sections>
             <label><!-- Customer Information --></label>
             <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Delivery Address --></label>
+            <section>Delivery Address</section>
         </sections>
         <sections>
             <label><!-- Sample Request Cost --></label>

@@ -54,37 +54,43 @@ public without sharing class CN_SR_Generate_Event_Visit implements Triggers.Hand
             if(sr.CN_SP_Records_Count_Delivery_Status_All__c == sr.CN_SP_Records_Count_All__c && sr.CN_SP_Records_Count_Delivery_Status_Done__c >= 1) {
                 Event eventObj7 = new Event(
                     RecordTypeId = eventRTId,
-                    Subject = String.format(System.Label.CN_Create_Event_Subject,new List<String>{sr.Name}),
+                    Subject = String.format(System.Label.CN_Create_Event_Subject,new List<String>{sr.CN_Account_Name_Formula__c,sr.Name}),
                     OwnerId = sr.OwnerId,
                     WhatId = sr.CN_Account_Name__c,
                     Type = 'Others',
                     IsAllDayEvent = true,
                     StartDateTime = sr.CN_Sample_Needed_Date__c + 7,
                     EndDateTime = sr.CN_Sample_Needed_Date__c + 7,
+                    IsReminderSet = true,
+                    ReminderDateTime  = sr.CN_Sample_Needed_Date__c + 6,
                     CN_Sample_Request__c = sr.Id                   
                 );
                 etNewList.add(eventObj7);
                 Event eventObj14 = new Event(
                     RecordTypeId = eventRTId,
-                    Subject = String.format(System.Label.CN_Create_Event_Subject,new List<String>{sr.Name}),
+                    Subject = String.format(System.Label.CN_Create_Event_Subject,new List<String>{sr.CN_Account_Name_Formula__c,sr.Name}),
                     OwnerId = sr.OwnerId,
                     WhatId = sr.CN_Account_Name__c,
                     Type = 'Others',
                     IsAllDayEvent = true,
                     StartDateTime = sr.CN_Sample_Needed_Date__c + 14,
                     EndDateTime = sr.CN_Sample_Needed_Date__c + 14,
+                    IsReminderSet = true,
+                    ReminderDateTime  = sr.CN_Sample_Needed_Date__c + 13,
                     CN_Sample_Request__c = sr.Id
                 );
                 etNewList.add(eventObj14);
                 Event visitObj = new Event(
                     RecordTypeId = visitRTId,
-                    Subject = System.Label.CN_Create_Visit_Subject,
+                    Subject = System.label.CN_Event_Follow_Visit_Subject_SR + ' ' + sr.CN_Account_Name_Formula__c,
                     OwnerId = sr.OwnerId,
                     WhatId = sr.CN_Account_Name__c,
                     Type = 'Visit',
                     IsAllDayEvent = true,
                     StartDateTime = sr.CN_Sample_Needed_Date__c + 5,
                     EndDateTime = sr.CN_Sample_Needed_Date__c + 5,
+                    IsReminderSet = true,
+                    ReminderDateTime  = sr.CN_Sample_Needed_Date__c + 4,
                     CN_Sample_Request__c = sr.Id                   
                 );
                 etNewList.add(visitObj);

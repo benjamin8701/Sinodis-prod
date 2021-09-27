@@ -7,7 +7,7 @@
            
 请点击以下链接 
 
-{!OpportunityLink} 
+{!Opportunity.Link}
 
 查看详细信息
 
@@ -23,7 +23,7 @@ Customer Name : {!Opportunity.Account}
 
 Please click the following link
 
-{!OpportunityLink} 
+{!Opportunity.Link}
 
  to view additional information. 
 

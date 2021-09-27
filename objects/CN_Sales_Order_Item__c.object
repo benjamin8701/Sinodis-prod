@@ -154,6 +154,19 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
+        <fullName>CN_Campaign_Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Campaign Product</label>
+        <referenceTo>CN_Campaign_Product__c</referenceTo>
+        <relationshipLabel>Sales Order Item</relationshipLabel>
+        <relationshipName>Sales_Order_Item</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>CN_Confirmed_Value__c</fullName>
         <externalId>false</externalId>
         <label>Confirmed Value</label>
@@ -265,6 +278,15 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Created_Yesterday__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(CreatedDate ) = TODAY()-1</formula>
+        <label>Is Created Yesterday</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>CN_Item_Reject_Reason__c</fullName>

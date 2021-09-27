@@ -27,7 +27,7 @@
   </tr>
   </table> 
   样品申请SKUs:<br/>
-  <c:CN_Sample_Product_Get_CN_VC SRId="{!relatedTo.Id}" /><br/><br/>
+  <c:CN_Sample_Product_Get_CN_VC SRId="{!relatedTo.Id}"/><br/><br/>
   谢谢,<br/>
   Salesforce<br/>
   ==========================For English Version Scroll Down======================<br/>
@@ -57,7 +57,7 @@
   </tr>
   </table> 
   Sample Request SKUs:<br/>
-  <c:CN_Sample_Product_Get_EN_VC SRId="{!relatedTo.Id}" /><br/><br/>
+  <c:CN_Sample_Product_Get_EN_VC SRId="{!relatedTo.Id}"/><br/><br/>
   Thank you,<br/>
   Salesforce
   </messaging:htmlEmailBody>

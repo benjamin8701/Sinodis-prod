@@ -106,7 +106,7 @@
         <name>CN_Net_Due_Date__c</name>
     </fields>
     <fields>
-        <label><!-- Sales Persion --></label>
+        <label><!-- Sales Person --></label>
         <name>CN_Sales_Persion__c</name>
     </fields>
     <fields>

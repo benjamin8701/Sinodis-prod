@@ -663,6 +663,10 @@
             <section>Customer Information</section>
         </sections>
         <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
             <label>产品信息</label>
             <section>Product Information</section>
         </sections>

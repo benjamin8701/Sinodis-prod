@@ -87,7 +87,7 @@ public without sharing class CN_Campaign_Generate_Opp_LC_Ctrl {
         List<Opportunity> oppList = new List<Opportunity>();
         if(accIds.size() > 0) {
             accPBIdMap = getPriceBook(accIds);
-            Map<Id,Account> accMap = new Map<Id,Account>([Select Id,Name From Account Where Id in :accIds]);
+            Map<Id,Account> accMap = new Map<Id,Account>([Select Id,Name,OwnerId From Account Where Id in :accIds]);
             Map<Id,List<Opportunity>> accOppsMap = new Map<Id,List<Opportunity>>();
             
             for(Opportunity opp : [SELECT AccountId,Account.Name, CN_Campaign__c FROM Opportunity WHERE AccountId in :accIds AND CN_Campaign__c = :campId]){
@@ -104,6 +104,7 @@ public without sharing class CN_Campaign_Generate_Opp_LC_Ctrl {
                         Opportunity oppNewObj = new Opportunity(
                                     AccountId = accId,
                                     Name = campName + accMap.get(accId).Name,
+                                    OwnerId = accMap.get(accId).OwnerId,
                                     StageName = 'Qualification',
                                     CloseDate = oppObj.CloseDate!=null ? oppObj.CloseDate : System.Today().addDays(90),
                                     Pricebook2Id = accPBIdMap.get(accId),

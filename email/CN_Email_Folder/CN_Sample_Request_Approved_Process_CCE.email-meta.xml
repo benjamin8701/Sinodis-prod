@@ -5,7 +5,7 @@
     <encodingKey>UTF-8</encodingKey>
     <name>CN_Sample_Request_Approved_Process_CCE</name>
     <style>none</style>
-    <subject>已为客户-创建整装样品申请 /Wholepack Sample Request has been created for Customer-</subject>
+    <subject>已为客户-创建分装样品申请 /Repack Sample Request has been created for Customer-</subject>
     <type>visualforce</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

@@ -12,6 +12,11 @@
         <label>Visit</label>
     </standardValue>
     <standardValue>
+        <fullName>Chef Self Work</fullName>
+        <default>false</default>
+        <label>Chef Self Work</label>
+    </standardValue>
+    <standardValue>
         <fullName>Others</fullName>
         <default>false</default>
         <label>Others</label>

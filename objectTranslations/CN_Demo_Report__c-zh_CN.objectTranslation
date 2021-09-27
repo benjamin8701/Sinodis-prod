@@ -74,8 +74,16 @@
         <name>CN_SAP_Concur_Travel_Cost__c</name>
     </fields>
     <fields>
-        <label>销售参会人员</label>
+        <label>销售参会</label>
         <name>CN_Sales_Attendance__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label>销售代表</label>

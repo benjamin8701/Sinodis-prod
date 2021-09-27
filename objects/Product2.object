@@ -173,11 +173,12 @@
     <fields>
         <fullName>CN_Detailed_Description__c</fullName>
         <externalId>false</externalId>
+        <inlineHelpText>请把产品描述包括图片填写到详细描述中，其他内容，如产品配方，证书等需要通过文档上传 / Please fill in the product description, including pictures, into the detailed description. Other content, such as product formulas, certificates, etc., need to be uploaded through the document.</inlineHelpText>
         <label>Detailed Description</label>
         <length>32768</length>
         <trackHistory>false</trackHistory>
         <type>Html</type>
-        <visibleLines>10</visibleLines>
+        <visibleLines>50</visibleLines>
     </fields>
     <fields>
         <fullName>CN_Origin__c</fullName>
@@ -442,6 +443,11 @@
             <operation>equals</operation>
             <value>1</value>
         </filters>
+        <filters>
+            <field>PRODUCT2.RECORD_TYPE</field>
+            <operation>equals</operation>
+            <value>Product2.CN_Product</value>
+        </filters>
         <label>All Active Products</label>
     </listViews>
     <listViews>
@@ -463,6 +469,36 @@
             <value>0</value>
         </filters>
         <label>All InActive Products</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Repack_Products</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>CN_SKU_Description_CN__c</columns>
+        <columns>CN_SKU_Description_EN__c</columns>
+        <columns>CN_Brand__c</columns>
+        <columns>CN_Selling_Unit__c</columns>
+        <columns>CN_Base_Unit_of_Measure__c</columns>
+        <columns>CN_Shelf_Life__c</columns>
+        <columns>CN_Standard_Sample_Unit__c</columns>
+        <columns>CN_Sample_Unit_List_Price__c</columns>
+        <columns>CN_Sample_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PRODUCT2.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CN_Sample_Type__c</field>
+            <operation>equals</operation>
+            <value>Repack</value>
+        </filters>
+        <filters>
+            <field>PRODUCT2.RECORD_TYPE</field>
+            <operation>equals</operation>
+            <value>Product2.CN_Product</value>
+        </filters>
+        <label>All Repack Products</label>
     </listViews>
     <profileSearchLayouts>
         <fields>PRODUCT2.NAME</fields>

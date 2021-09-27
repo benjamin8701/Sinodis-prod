@@ -8,7 +8,7 @@
     },
     confirmAction : function(component, event, helper) {
         var dismissActionPanel = $A.get("e.force:closeQuickAction");
-        dismissActionPanel.fire();
+        //
         let updateStatusToRejectedAction = component.get("c.updateStatusToRejected"); 
         updateStatusToRejectedAction.setParams({
             "recordId" : component.get("v.recordId")
@@ -35,7 +35,7 @@
             } catch (error) {
                 errorMsg = "";
             }
-            
+            dismissActionPanel.fire();
             var toastEvent = $A.get("e.force:showToast");
             toastEvent.setParams({
                 "title": "Error!",

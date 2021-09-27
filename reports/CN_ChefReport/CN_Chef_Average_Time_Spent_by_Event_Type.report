@@ -40,7 +40,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>1-on-1 service,Public Demo,VIP Class,Live Streaming,Short Video,SINODIS Event,Full Solution Approach,Product Testing,Recipes R&amp;D</value>
+            <value>1-on-1 service,Public Demo,VIP Class,Live Streaming,Short Video,SINODIS Event,Full Solution Approach,OFF,Paperwork,Self Practice &amp; Training,Market Visit,Meeting,Company Events,Others,Product Testing,Recipes R&amp;D</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>

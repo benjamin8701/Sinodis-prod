@@ -16,7 +16,7 @@
     </columns>
     <currency>CNY</currency>
     <customDetailFormulas>
-        <calculatedFormula>CONVERTED_DATE-DATEVALUE(CREATED_DATE)</calculatedFormula>
+        <calculatedFormula>CONVERTED_DATE-DATEVALUE(CREATED_DATE)+1</calculatedFormula>
         <dataType>Double</dataType>
         <developerName>CDF1</developerName>
         <label>Converted Time</label>

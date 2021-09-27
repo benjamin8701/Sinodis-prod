@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -235,6 +234,11 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
+            <actionName>CN_New_Task</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>4</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>Edit</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>0</sortOrder>
@@ -254,11 +258,6 @@
             <actionType>QuickAction</actionType>
             <sortOrder>3</sortOrder>
         </platformActionListItems>
-        <platformActionListItems>
-            <actionName>CN_New_Task</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>4</sortOrder>
-        </platformActionListItems>
     </platformActionList>
     <relatedContent>
         <relatedContentItems>
@@ -268,35 +267,25 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
-        <fields>CreatedDate</fields>
-        <fields>StepStatus</fields>
-        <fields>OriginalActor</fields>
-        <fields>Actor</fields>
-        <fields>Comments</fields>
-        <relatedList>RelatedProcessHistoryList</relatedList>
+        <fields>NAME</fields>
+        <relatedList>CN_Distributor_to_End_Customer__c.CN_End_Customer__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <excludeButtons>MassChangeOwner</excludeButtons>
         <fields>NAME</fields>
-        <fields>CN_Year_Month__c</fields>
-        <fields>CN_Amount__c</fields>
-        <fields>CN_Due_Date__c</fields>
-        <fields>CN_Net_Due_Date__c</fields>
-        <fields>CN_Arrears_After_Net_Due_Date__c</fields>
-        <fields>CN_Invoice_Number__c</fields>
-        <fields>CN_Tracking_Number__c</fields>
-        <fields>CN_Invoice_Date__c</fields>
-        <fields>CN_Delivery_date__c</fields>
-        <relatedList>CN_Payment_History__c.CN_Customer_Name__c</relatedList>
-        <sortField>CN_Year_Month__c</sortField>
-        <sortOrder>Desc</sortOrder>
+        <fields>CN_Promotion_Status__c</fields>
+        <fields>CN_Promotion_Start_Date__c</fields>
+        <fields>CN_Promotion_End_Date__c</fields>
+        <fields>CN_Promotion_Description__c</fields>
+        <relatedList>CN_Promotion_Member__c.CN_Account__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <excludeButtons>MassChangeOwner</excludeButtons>
-        <fields>NAME</fields>
-        <fields>CN_Contact_Name__c</fields>
-        <fields>CN_Delivery_Address_CN__c</fields>
-        <relatedList>CN_Ship_to_Party__c.CN_Sold_To_Party_Customer__c</relatedList>
+        <fields>CAMPAIGN.NAME</fields>
+        <fields>CAMPAIGN.START_DATE</fields>
+        <fields>CAMPAIGN.CAMPAIGN_TYPE</fields>
+        <fields>CM.STATUS</fields>
+        <fields>CM.RESPONDED</fields>
+        <fields>CM.LAST_UPDATE</fields>
+        <relatedList>RelatedCampaignList</relatedList>
     </relatedLists>
     <relatedLists>
         <excludeButtons>MassAddToCampaign</excludeButtons>
@@ -308,8 +297,11 @@
         <relatedList>RelatedContactList</relatedList>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
         <fields>NAME</fields>
-        <relatedList>CN_Distributor_to_End_Customer__c.CN_End_Customer__c</relatedList>
+        <fields>CN_Contact_Name__c</fields>
+        <fields>CN_Delivery_Address_CN__c</fields>
+        <relatedList>CN_Ship_to_Party__c.CN_Sold_To_Party_Customer__c</relatedList>
     </relatedLists>
     <relatedLists>
         <excludeButtons>MassChangeOwner</excludeButtons>

@@ -217,6 +217,26 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Campaign Id --></label>
+        <name>CN_Campaign_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>CN_Channel__c</name>
+        <picklistValues>
+            <masterLabel>DS</masterLabel>
+            <translation><!-- DS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KA</masterLabel>
+            <translation><!-- KA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WS</masterLabel>
+            <translation><!-- WS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Execution Type --></label>
         <name>CN_Execution_Type__c</name>
         <picklistValues>
@@ -230,6 +250,10 @@
         <picklistValues>
             <masterLabel>Livestreaming</masterLabel>
             <translation><!-- Livestreaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On-Site Order</masterLabel>
+            <translation><!-- On-Site Order --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Others</masterLabel>
@@ -248,8 +272,16 @@
             <translation><!-- Solution Development --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Tasting</masterLabel>
+            <translation><!-- Tasting --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>VIP Class</masterLabel>
             <translation><!-- VIP Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP Dinner</masterLabel>
+            <translation><!-- VIP Dinner --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>WeChat</masterLabel>
@@ -259,6 +291,10 @@
     <fields>
         <label><!-- Is My Campaign --></label>
         <name>CN_Is_My_Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN_Is_Within_6_Months --></label>
+        <name>CN_Is_Within_6_Months__c</name>
     </fields>
     <fields>
         <label><!-- New Product Launch --></label>
@@ -369,10 +405,6 @@
         <name>CN_Parent_Campaign</name>
     </recordTypes>
     <validationRules>
-        <errorMessage><!-- Number of audiences is a must field to input for livestreaming campaign when campaign completes. --></errorMessage>
-        <name>CN_Campaign_Audiences_Number_IsBlank</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- Start date must not be earlier than today --></errorMessage>
         <name>CN_Campaign_Check_Start_Date</name>
     </validationRules>
@@ -381,7 +413,7 @@
         <name>CN_Campaign_Check_numOfAud_LiveStreaming</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- You cannot edit anything once completed. --></errorMessage>
+        <errorMessage><!-- You cannot edit anything once completed or aborted. --></errorMessage>
         <name>CN_Campaign_Completed_Block_Edit</name>
     </validationRules>
     <webLinks>

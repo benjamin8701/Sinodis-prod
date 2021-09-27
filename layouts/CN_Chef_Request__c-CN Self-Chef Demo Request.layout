@@ -22,23 +22,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>CN_Event_Location__c</field>
+                <field>CN_Event_Type__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>CN_Event_Location_Start_Date__c</field>
+                <field>CN_Start_Date__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>CN_Event_Location_Start_Date_AM_PM__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>CN_Event_Location_End_Date__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>CN_Event_Location_End_Date_AM_PM__c</field>
+                <behavior>Readonly</behavior>
+                <field>CN_Owner_Name__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -47,27 +39,28 @@
                 <field>CN_Status__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Owner_Name__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
-                <field>CN_Start_Date__c</field>
+                <field>CN_Event_Location__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>CN_End_Date__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>CN_Event_Type__c</field>
-            </layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>false</detailHeading>
+        <editHeading>false</editHeading>
+        <label>Description</label>
+        <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CN_Description__c</field>
             </layoutItems>
         </layoutColumns>
-        <style>TwoColumnsTopToBottom</style>
+        <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
         <customLabel>true</customLabel>
@@ -80,13 +73,21 @@
                 <field>CN_Confirmed__c</field>
             </layoutItems>
         </layoutColumns>
+        <layoutColumns/>
+        <style>TwoColumnsLeftToRight</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>false</detailHeading>
+        <editHeading>false</editHeading>
+        <label>Comments</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CN_Comments_for_Chef__c</field>
             </layoutItems>
         </layoutColumns>
-        <style>TwoColumnsLeftToRight</style>
+        <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -135,7 +136,7 @@
             <sortOrder>2</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>CN_Chef_Request__c.CN_Confirm</actionName>
+            <actionName>CN_Chef_Request__c.CN_Confirm_Self_Work</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>3</sortOrder>
         </platformActionListItems>

@@ -122,6 +122,10 @@
         <members>CN_Quote_Prevent_Delete_Handler</members>
         <members>CN_Quote_Send_To_SAP_LC_Ctrl</members>
         <members>CN_Redirect_Gaode_Map_Controller</members>
+        <members>CN_SOItem_Populate_CampaignPro_Batch</members>
+        <members>CN_SOItem_Populate_CampaignPro_SCH</members>
+        <members>CN_SP_Populate_Campaign_Product_Batch</members>
+        <members>CN_SP_Populate_Campaign_Product_SCH</members>
         <members>CN_SP_Populate_Fields_Handler</members>
         <members>CN_SP_Prevent_Delete_Handler</members>
         <members>CN_SR_Generate_Event_Visit</members>
@@ -233,6 +237,19 @@
     </types>
     <types>
         <members>*</members>
+        <members>standard-Account</members>
+        <members>standard-Campaign</members>
+        <members>standard-Case</members>
+        <members>standard-Contact</members>
+        <members>standard-Dashboard</members>
+        <members>standard-Event</members>
+        <members>standard-Lead</members>
+        <members>standard-Opportunity</members>
+        <members>standard-Pricebook2</members>
+        <members>standard-Product2</members>
+        <members>standard-Quote</members>
+        <members>standard-Report</members>
+        <members>standard-Task</members>
         <name>CustomTab</name>
     </types>
     <types>
@@ -243,6 +260,8 @@
         <members>CN_ChefDashboard/nDkuKcyAajSoGrgQmVgWVryCPecXgZ</members>
         <members>CN_ComplaintDashboard</members>
         <members>CN_ComplaintDashboard/DaXAidyNJfDCqnOAWVddBGNQxVmAlv</members>
+        <members>CN_CustomerVisitDashboard</members>
+        <members>CN_CustomerVisitDashboard/nGYoUymLbtFGNMNoQtaMNoyVBNHuHe1</members>
         <members>CN_LeadDashborad</members>
         <members>CN_LeadDashborad/iyDVGkUjkIewXfVofmvbRDUNQjSyLQ</members>
         <members>CN_OpportunityDashboard</members>
@@ -494,6 +513,7 @@
         <members>Account.CN_Account_Send</members>
         <members>Account.CN_Account_Send</members>
         <members>Account.CN_Account_Status</members>
+        <members>Account.CN_Account_Type</members>
         <members>Account.CN_Account_Update_Request</members>
         <members>Account.CN_Convert_to_Direct_Account</members>
         <members>Account.CN_Documents</members>
@@ -505,6 +525,7 @@
         <members>CN_Change_Request__c.CN_Ready_for_Approval</members>
         <members>CN_Change_Request__c.CN_Send_To_SAP</members>
         <members>CN_Chef_Request__c.CN_Confirm</members>
+        <members>CN_Chef_Request__c.CN_Confirm_Self_Work</members>
         <members>CN_Chef_Request__c.CN_Ready_for_Approval</members>
         <members>CN_Chef_Request__c.CN_Send_Request</members>
         <members>CN_Credit_Term_Application__c.CN_Cancel_Application</members>
@@ -548,9 +569,9 @@
         <members>CN_CampaignReport/CN_Attendance_by_Execution_Type</members>
         <members>CN_CampaignReport/CN_Campaigns_by_Event_Type</members>
         <members>CN_CampaignReport/CN_Campaigns_by_Execution_Type</members>
-        <members>CN_CampaignReport/CN_Complaint_By_Accepted_Date</members>
         <members>CN_CampaignReport/CN_Lead_Conversion_Rate</members>
         <members>CN_CampaignReport/CN_Oppo_generated_by_Campaign_Type</members>
+        <members>CN_CampaignReport/CN_Oppo_generated_by_Execution_Type</members>
         <members>CN_CampaignReport/CN_Opportunities_Generated_by_Campaign</members>
         <members>CN_ChefReport</members>
         <members>CN_ChefReport/CN_Chef_Average_Time_Spent_by_Event_Type</members>
@@ -558,13 +579,26 @@
         <members>CN_ChefReport/CN_Chef_UT</members>
         <members>CN_ChefReport/CN_Chef_requests_by_Event_Type_by_Chef</members>
         <members>CN_ComplaintReport</members>
+        <members>CN_ComplaintReport/CN_Complaint_By_Accepted_Date</members>
         <members>CN_ComplaintReport/CN_Complaint_Trend_by_Month_YTD</members>
         <members>CN_ComplaintReport/CN_Complaint_by_Channel_YTD</members>
         <members>CN_ComplaintReport/CN_Complaint_by_Reason_YTD</members>
         <members>CN_ComplaintReport/CN_Complaint_by_Sales_Office_YTD</members>
+        <members>CN_ComplaintReport/CN_Product_Sampling_Feedback</members>
+        <members>CN_ComplaintReport/CN_Product_Sampling_Status</members>
+        <members>CN_ComplaintReport/CN_Purchased_Customers_By_Channel</members>
+        <members>CN_CustomerVisitReport</members>
+        <members>CN_CustomerVisitReport/CN_Completed_Visits_for_WS_MTD_KjP</members>
+        <members>CN_CustomerVisitReport/CN_Copy_of_Average_visits_by_Customer_Lay_5mR</members>
+        <members>CN_CustomerVisitReport/CN_Copy_of_Customer_Visits_Target_per_wee_fWX</members>
+        <members>CN_CustomerVisitReport/CN_Copy_of_Visits_by_week_MTD_733</members>
+        <members>CN_CustomerVisitReport/CN_Customer_Visit_Coverage_Indirect_jl0</members>
+        <members>CN_CustomerVisitReport/CN_Customer_Visit_Coverage_yc4</members>
+        <members>CN_CustomerVisitReport/CN_Customer_Visits_Planned_WTD_HwV</members>
+        <members>CN_CustomerVisitReport/CN_Visit_Completeness_VS_Planned_0uU</members>
+        <members>CN_CustomerVisitReport/CN_Visit_Completeness_VS_Planned_PGW</members>
         <members>CN_Customer_360_Report</members>
         <members>CN_Customer_360_Report/CN_Complaint_Case_by_Customer</members>
-        <members>CN_Customer_360_Report/CN_Customer_Status</members>
         <members>CN_Customer_360_Report/CN_Customer_Status</members>
         <members>CN_Customer_360_Report/CN_Customer_Visits_Planned</members>
         <members>CN_Customer_360_Report/CN_No_of_Opportunities_by_Stage</members>
@@ -633,6 +667,9 @@
         <members>CN_Account_with_Activities</members>
         <members>CN_Account_with_Activity</members>
         <members>CN_Campaign_With_Lead_Conveted_Account</members>
+        <members>CN_Campaign_With_Opportunity</members>
+        <members>CN_Campaign_with_Product_with_SP</members>
+        <members>CN_Campaign_with_product_with_SOI</members>
         <members>CN_Chef_with_Chef_Assigned</members>
         <members>CN_Lead</members>
         <members>CN_Promotion_with_Member_with_Quote_Line_Item</members>
@@ -751,6 +788,7 @@
         <members>Account</members>
         <members>CN_Change_Request__c</members>
         <members>CN_Chef_Request__c</members>
+        <members>CN_Chef_UT__c</members>
         <members>CN_Customer_Status_Trend__c</members>
         <members>CN_Promotion_Member__c</members>
         <members>CN_Promotion__c</members>

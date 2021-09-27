@@ -2519,6 +2519,10 @@
         <name>CN_Account_Status</name>
     </quickActions>
     <quickActions>
+        <label><!-- Account Type --></label>
+        <name>CN_Account_Type</name>
+    </quickActions>
+    <quickActions>
         <label><!-- Request Change --></label>
         <name>CN_Account_Update_Request</name>
     </quickActions>

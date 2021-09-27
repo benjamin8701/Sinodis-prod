@@ -82,7 +82,7 @@
     </dashboardFilters>
     <dashboardGridLayout>
         <dashboardGridComponents>
-            <colSpan>3</colSpan>
+            <colSpan>6</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
@@ -115,8 +115,8 @@
             <rowSpan>5</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>3</columnIndex>
+            <colSpan>6</colSpan>
+            <columnIndex>6</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartSummary>
@@ -149,72 +149,6 @@
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
-            <columnIndex>6</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartSummary>
-                    <column>RowCount</column>
-                </chartSummary>
-                <componentType>Metric</componentType>
-                <dashboardFilterColumns>
-                    <column>FK_$CN_Promotion__c.Customer_Category__c</column>
-                </dashboardFilterColumns>
-                <dashboardFilterColumns>
-                    <column>FK_$CN_Promotion__c.CN_Start_Date__c</column>
-                </dashboardFilterColumns>
-                <dashboardFilterColumns>
-                    <column>FK_$CN_Promotion__c.Channel__c</column>
-                </dashboardFilterColumns>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <groupingSortProperties/>
-                <header>#Customers with Quote Promotions</header>
-                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>1.0</indicatorBreakpoint2>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>CN_PromotionReport/CN_Customers_with_Quote_Promotions</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>0</rowIndex>
-            <rowSpan>5</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>9</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartSummary>
-                    <column>RowCount</column>
-                </chartSummary>
-                <componentType>Metric</componentType>
-                <dashboardFilterColumns>
-                    <column>FK_$CN_Promotion__c.Customer_Category__c</column>
-                </dashboardFilterColumns>
-                <dashboardFilterColumns>
-                    <column>FK_$CN_Promotion__c.CN_Start_Date__c</column>
-                </dashboardFilterColumns>
-                <dashboardFilterColumns>
-                    <column>FK_$CN_Promotion__c.Channel__c</column>
-                </dashboardFilterColumns>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <groupingSortProperties/>
-                <header># Customers with Accetped Promotions</header>
-                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>1.0</indicatorBreakpoint2>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>CN_PromotionReport/CN_Customers_with_Accetped_Promotions</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>0</rowIndex>
-            <rowSpan>5</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>4</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
@@ -255,11 +189,11 @@
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>5</rowIndex>
-            <rowSpan>8</rowSpan>
+            <rowSpan>7</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>4</colSpan>
-            <columnIndex>4</columnIndex>
+            <colSpan>3</colSpan>
+            <columnIndex>3</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
@@ -300,11 +234,11 @@
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>5</rowIndex>
-            <rowSpan>8</rowSpan>
+            <rowSpan>7</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>4</colSpan>
-            <columnIndex>8</columnIndex>
+            <colSpan>3</colSpan>
+            <columnIndex>6</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
@@ -346,57 +280,11 @@
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>5</rowIndex>
-            <rowSpan>8</rowSpan>
+            <rowSpan>7</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>4</colSpan>
-            <columnIndex>0</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartAxisRange>Auto</chartAxisRange>
-                <chartSummary>
-                    <aggregate>Unique</aggregate>
-                    <axisBinding>y</axisBinding>
-                    <column>CN_Promotion__c.Promotion_Members2__r$Id</column>
-                </chartSummary>
-                <componentType>Bar</componentType>
-                <dashboardFilterColumns>
-                    <column>CN_Promotion__c$Customer_Category__c</column>
-                </dashboardFilterColumns>
-                <dashboardFilterColumns>
-                    <column>CN_Promotion__c$CN_Start_Date__c</column>
-                </dashboardFilterColumns>
-                <dashboardFilterColumns>
-                    <column>CN_Promotion__c$Channel__c</column>
-                </dashboardFilterColumns>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>false</enableHover>
-                <expandOthers>false</expandOthers>
-                <groupingColumn>CN_Promotion__c$Customer_Category__c</groupingColumn>
-                <groupingSortProperties>
-                    <groupingSorts>
-                        <groupingLevel>g1</groupingLevel>
-                        <sortOrder>a</sortOrder>
-                    </groupingSorts>
-                </groupingSortProperties>
-                <header>Accetped Promotion by Custom Category</header>
-                <legendPosition>Bottom</legendPosition>
-                <report>CN_PromotionReport/CN_Accetped_Promotion_by_Custom_Category</report>
-                <showPercentage>false</showPercentage>
-                <showPicturesOnCharts>false</showPicturesOnCharts>
-                <showValues>true</showValues>
-                <sortBy>RowLabelAscending</sortBy>
-                <useReportChart>false</useReportChart>
-            </dashboardComponent>
-            <rowIndex>13</rowIndex>
-            <rowSpan>8</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>4</colSpan>
-            <columnIndex>4</columnIndex>
+            <colSpan>3</colSpan>
+            <columnIndex>9</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
@@ -436,15 +324,15 @@
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>13</rowIndex>
-            <rowSpan>8</rowSpan>
+            <rowIndex>5</rowIndex>
+            <rowSpan>7</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>12</numberOfColumns>
         <rowHeight>36</rowHeight>
     </dashboardGridLayout>
     <dashboardType>MyTeamUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>c.qiu@accenture.com</runningUser>
+    <runningUser>anqi.huang@accenture.com</runningUser>
     <textColor>#000000</textColor>
     <title>Promotion Dashboard</title>
     <titleColor>#000000</titleColor>

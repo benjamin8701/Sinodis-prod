@@ -448,6 +448,10 @@
         <picklistValues>
             <picklist>Type</picklist>
             <values>
+                <fullName>Chef Self Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Demo</fullName>
                 <default>false</default>
             </values>

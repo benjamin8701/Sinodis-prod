@@ -62,17 +62,34 @@ public without sharing class CN_Event_Generate_Follow_Visit_Handler implements T
         byWhenStringWeekNumIntegerMap.put(Constants.CN_EV_By_WHEN_TWO,14);
         byWhenStringWeekNumIntegerMap.put(Constants.CN_EV_By_WHEN_THREE,21);
 
+        Set<Id> accIdSet = new Set<Id>();
+        for(Event visit : generateEventList){
+            accIdSet.add(visit.AccountId);
+        }
+
+        List<Account> accList = [Select Id,Name From Account Where Id IN: accIdSet];
+        Map<Id,String> accIdAccountNameStringName = new Map<Id,String>();
+        for(Account acc : accList){
+            accIdAccountNameStringName.put(acc.Id, acc.Name);
+        }
+
         List<Event> newEventList = new List<Event>();
         for(Event visit : generateEventList){
             Event e = new Event();
             e.recordTypeId = visitRTId;
-            e.subject = visit.Subject;
+            if(visit.CN_Sample_Request__c != null){
+                e.subject = System.label.CN_Event_Follow_Visit_Subject_SR + ' ' + accIdAccountNameStringName.get(visit.AccountId);
+                e.CN_Sample_Request__c = visit.CN_Sample_Request__c;
+            }else{
+                e.subject = visit.subject;
+            }
             e.StartDateTime = visit.StartDateTime.addDays(byWhenStringWeekNumIntegerMap.get(visit.CN_By_when__c));
             e.EndDateTime = visit.EndDateTime.addDays(byWhenStringWeekNumIntegerMap.get(visit.CN_By_when__c));
             e.CN_Visit_Status__c = Constants.CN_EV_VISIT_STATUS_PLANNED;
             e.WhoId = visit.WhoId;
             e.IsAllDayEvent = true;
             e.IsReminderSet = true;
+            e.ReminderDateTime  = visit.StartDateTime.addDays(byWhenStringWeekNumIntegerMap.get(visit.CN_By_when__c)-1);
             e.CN_Time_Before_Event__c = Constants.CN_EV_TIME_BEFORE_EVENT_PLANNED;
             e.CN_Plan_to_Visit_Who__c = visit.CN_Plan_to_Visit_Who__c;
             e.WhatId = visit.WhatId;

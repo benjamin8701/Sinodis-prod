@@ -126,4 +126,19 @@ ISCHANGED(CN_Account_Name__c),
 CN_Account_Name__r.CN_Sales_Team_UI__r.Name == &apos;KA&apos;)</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
+    <rules>
+        <fullName>CN_Sample_Request_Approved_Cancelled</fullName>
+        <actions>
+            <name>CN_Sample_Request_Approved_Cancelled</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, 
+  NOT(ISNEW()),
+  ISCHANGED( CN_Sample_Request_Status__c ), 
+  ISPICKVAL( CN_Sample_Request_Status__c  , &apos;Canceled&apos;) 
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
 </Workflow>

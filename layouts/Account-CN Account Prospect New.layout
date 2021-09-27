@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -284,6 +283,10 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>CN_Sample_Request_Status__c</fields>
+        <fields>CN_Sample_Delivery_Method__c</fields>
+        <fields>CN_Sample_Needed_Date__c</fields>
+        <fields>CN_Sample_Request_Cost__c</fields>
         <relatedList>CN_Sample_Request__c.CN_Account_Name__c</relatedList>
     </relatedLists>
     <relatedLists>

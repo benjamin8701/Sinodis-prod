@@ -154,6 +154,19 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
+        <fullName>CN_Campaign_Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Campaign Product</label>
+        <referenceTo>CN_Campaign_Product__c</referenceTo>
+        <relationshipLabel>Sample Products</relationshipLabel>
+        <relationshipName>Sample_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>CN_Current_Status_Date__c</fullName>
         <externalId>false</externalId>
         <label>Current Status Date</label>
@@ -254,11 +267,10 @@
         <fullName>CN_Delivery_Comments__c</fullName>
         <externalId>false</externalId>
         <label>Delivery Comments</label>
-        <length>32768</length>
+        <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>CN_External_ID__c</fullName>
@@ -285,11 +297,20 @@
         <fullName>CN_Feedback_Description__c</fullName>
         <externalId>false</externalId>
         <label>Feedback Description</label>
-        <length>32768</length>
+        <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Created_Yesterday__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(CreatedDate ) = TODAY()-1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Created Yesterday</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>CN_Is_Deliver_Done__c</fullName>
@@ -318,10 +339,10 @@
     CN_Is_Sample_Request_Approved__c,
     ISPICKVAL(CN_Status_of_Delivery__c, &quot;Done&quot;),
     IF( 
-        CN_Current_Status_Date__c = null &amp;&amp;  CN_Feedback_Date__c = null,  
+        ISBLANK(CN_Current_Status_Date__c) &amp;&amp; ISBLANK(CN_Feedback_Date__c),  
         (TODAY() -  CN_Sample_Request__r.CN_Sample_Needed_Date__c) &gt; 14, 
         IF(
-             CN_Current_Status_Date__c = null, 
+             ISBLANK(CN_Current_Status_Date__c), 
             (CN_Feedback_Date__c -  CN_Sample_Request__r.CN_Sample_Needed_Date__c) &gt; 14 ,
             (CN_Current_Status_Date__c -  CN_Sample_Request__r.CN_Sample_Needed_Date__c) &gt; 14
          )
@@ -367,7 +388,8 @@
         <fullName>CN_List_Price__c</fullName>
         <externalId>false</externalId>
         <formula>IF( 
-  RecordType.DeveloperName = &apos;CN_Whole_Pack&apos;, 
+  
+  CN_Sample_Request__r.RecordType.DeveloperName  = &apos;CN_Whole_Pack&apos;, 
   CN_Pricebook_Price__c,
   CN_Sample_Unit_List_Price__c 
 )</formula>
@@ -459,6 +481,18 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Sales_Office__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(CN_Sample_Request__r.CN_Account_Name__r.CN_Sales_Office__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Office</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Sample_Cost__c</fullName>
         <externalId>false</externalId>
         <label>Sample Cost</label>
@@ -468,6 +502,17 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CN_Sample_Needed_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Sample_Request__r.CN_Sample_Needed_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sample Needed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>CN_Sample_Request_Type_Formula__c</fullName>
@@ -556,7 +601,7 @@
     <fields>
         <fullName>CN_Unit__c</fullName>
         <externalId>false</externalId>
-        <formula>CN_Product__r.CN_Standard_Sample_Unit__c</formula>
+        <formula>CN_Product__r.CN_Base_Unit_of_Measure__c</formula>
         <label>Unit</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -581,6 +626,7 @@
     <listViews>
         <fullName>CN_My_Sample_Feedbacks_Sales_View</fullName>
         <columns>NAME</columns>
+        <columns>CN_Customer_Name__c</columns>
         <columns>CN_Product__c</columns>
         <columns>CN_SKU_Chinese_Description__c</columns>
         <columns>CN_Quantity_Needed__c</columns>
@@ -616,8 +662,11 @@
     <listViews>
         <fullName>CN_Repack_Sample_Products_CCE_View</fullName>
         <columns>NAME</columns>
-        <columns>CN_SKU_Chinese_Description__c</columns>
+        <columns>CN_Sales_Office__c</columns>
+        <columns>CN_Sample_Needed_Date__c</columns>
+        <columns>CN_Customer_Name__c</columns>
         <columns>CN_Product__c</columns>
+        <columns>CN_SKU_Chinese_Description__c</columns>
         <columns>CN_Quantity_Needed__c</columns>
         <columns>CN_Sample_Unit_List_Price__c</columns>
         <columns>CN_Status_of_Delivery__c</columns>

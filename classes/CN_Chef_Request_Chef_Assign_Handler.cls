@@ -20,8 +20,11 @@ public without sharing class CN_Chef_Request_Chef_Assign_Handler implements Trig
 
         List<CN_Chef_Request__c> confirmCRList = new List<CN_Chef_Request__c>();
         List<CN_Chef_Request__c> unConfirmCRList = new List<CN_Chef_Request__c>();
+        List<Event> eventList = new List<Event>();
 
         Id chefRequestChefSelfRTId = Schema.SObjectType.CN_Chef_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CHEF_REQUEST_CHEF_SELF_RT_API_NAME).getRecordTypeId();
+        Id chefRequestMKTDEVRTId = Schema.SObjectType.Event.getRecordTypeInfosByDeveloperName().get(Constants.CN_EVENT_RT_API_NAME).getRecordTypeId();
+
         for(CN_Chef_Request__c cr: (List<CN_Chef_Request__c>)Trigger.new) {
             if(cr.RecordTypeId == chefRequestChefSelfRTId) {
                 CN_Chef_Request__c oldCr = (CN_Chef_Request__c)Trigger.oldMap.get(cr.Id);
@@ -37,9 +40,61 @@ public without sharing class CN_Chef_Request_Chef_Assign_Handler implements Trig
             List<CN_Chefs_Assigned__c> caList = generateChefAssignList(confirmCRList);
             if(caList.size() > 0) {
                 upsert caList CN_External_Id__c;
+
+                List<CN_Chefs_Assigned__c> caListAfterUpsert = [SELECT Id, 
+                                                            CN_Chef_Request__c, 
+                                                            CN_Chef_Request__r.CN_Account_Name__c,
+                                                            CN_Chef_Request__r.CN_Campaign_Name__c, 
+                                                            CN_Chef_Request__r.CN_Event_Type__c, 
+                                                            CN_Chef_Request__r.CN_Event_Location__c, 
+                                                            CN_Chef_Request__r.CN_Demo_Start_Date__c, 
+                                                            CN_Chef_Request__r.CN_Demo_End_Date__c, 
+                                                            CN_Chef_Request__r.CN_Account__c, 
+                                                            CN_Chef_Request__r.CN_Campaign__c,
+                                                            CN_Chef_Request__r.RecordTypeId,
+                                                            CN_Chef_Request__r.RecordType.Name,
+                                                            CN_Chef__c,
+                                                            CN_Chef_Name__c,
+                                                            CN_Display_in_Calendar__c,
+                                                            CN_Chef_Work_Start_Date__c,
+                                                            CN_Chef_Work_End_Date__c
+                                                        FROM CN_Chefs_Assigned__c 
+                                                        WHERE CN_Chef_Request__c in: confirmCRList
+                                                        LIMIT 50000];
+
+                for(CN_Chefs_Assigned__c ca: caListAfterUpsert) {
+                    Event evt = new Event();
+                    evt.RecordTypeId = chefRequestMKTDEVRTId;
+                    evt.OwnerId = ca.CN_Chef__c;
+                    evt.CN_Chef_Request_Id__c = ca.CN_Chef_Request__c;
+                    evt.CN_Chef_Request__c = ca.CN_Chef_Request__c;
+                    evt.Subject = ca.CN_Chef_Request__r.RecordType.Name + '-' + ca.CN_Chef_Request__r.CN_Event_Type__c + '-' + ca.CN_Chef_Name__c;
+                    evt.IsReminderSet = true;
+                    evt.Type = 'Chef Self Work';
+                    evt.IsAllDayEvent = true;
+                    Date endDate = ca.CN_Chef_Work_End_Date__c.addDays(-1);
+                    evt.ReminderDateTime = Datetime.newInstance(endDate.year(), endDate.month(), endDate.day(), 8, 0, 0);
+                    evt.StartDateTime = ca.CN_Chef_Work_Start_Date__c;
+                    evt.EndDateTime = ca.CN_Chef_Work_End_Date__c;
+                    evt.WhatId = ca.CN_Chef_Request__c;
+                    eventList.add(evt);
+                }
+                if(eventList.size() > 0) {
+                    insert eventList;
+                }
             }
         }
         if(unConfirmCRList.size() > 0) {
+            Set<Id> crIdSet = new Set<Id>();
+            for(CN_Chef_Request__c cr: unConfirmCRList) {
+                crIdSet.add(cr.Id);
+            }
+            if(crIdSet.size() > 0) {
+                eventList = [SELECT Id, CN_Chef_Request_Id__c FROM Event WHERE CN_Chef_Request_Id__c in: crIdSet];
+            }
+            if(eventList.size() > 0) {
+                delete eventList;
+            }
             List<CN_Chefs_Assigned__c> caList = getDeleteChefAssignList(unConfirmCRList);
             if(caList.size() > 0) {
                 delete caList;

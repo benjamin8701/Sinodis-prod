@@ -111,14 +111,18 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Overdue_90_SAP__c</field>
+                <field>CN_Overdue_60_Up_SAP__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Total_Overdue_Display__c</field>
+                <field>CN_Total_Overdue_SAP__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Overdue_90_SAP__c</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CN_Overdue_120_SAP__c</field>
@@ -154,21 +158,21 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Credit_Limit_Display__c</field>
+                <field>CN_Credit_Limit_SAP__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Current_Balance_Display__c</field>
+                <field>CN_Current_Balance_SAP__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Current_Payment_Display__c</field>
+                <field>CN_Current_Payment_SAP__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_VAT_Balance_Display__c</field>
+                <field>CN_VAT_Balance_SAP__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -181,33 +185,33 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Current_Month_Display__c</field>
+                <field>CN_Last_1_Month_SAP__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Last_1_Month_Display__c</field>
+                <field>CN_Last_3_Month_SAP__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Last_2_Month_Display__c</field>
+                <field>CN_Last_5_Month_SAP__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Last_3_Month_Display__c</field>
+                <field>CN_Current_Month_SAP__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Last_4_Month_Display__c</field>
+                <field>CN_Last_2_Month_SAP__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Last_5_Month_Display__c</field>
+                <field>CN_Last_4_Month_SAP__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Last_6_Month_Display__c</field>
+                <field>CN_Last_6_Month_SAP__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -220,21 +224,21 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Deposit_Given_To_Customer_Display__c</field>
+                <field>CN_Deposit_Given_To_Customer_SAP__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Deposit_Received_From_Customer_Dsply__c</field>
+                <field>CN_Deposit_Received_From_Customer_SAP__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Recon_Diff_Deduction_Fee_Display__c</field>
+                <field>CN_Recon_Diff_Deduction_Fee_SAP__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Advc_Received_From_Custm_Credit_Dsply__c</field>
+                <field>CN_Advance_Received_From_Customer_Credit__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

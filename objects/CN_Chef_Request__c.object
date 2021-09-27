@@ -261,131 +261,11 @@
         <valueSet>
             <restricted>true</restricted>
             <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Milkana</fullName>
-                    <default>false</default>
-                    <label>Milkana</label>
-                </value>
-                <value>
-                    <fullName>Liberty Lane</fullName>
-                    <default>false</default>
-                    <label>Liberty Lane</label>
-                </value>
-                <value>
-                    <fullName>COEUR DE LION</fullName>
-                    <default>false</default>
-                    <label>COEUR DE LION</label>
-                </value>
-                <value>
-                    <fullName>LE RUSTIQUE</fullName>
-                    <default>false</default>
-                    <label>LE RUSTIQUE</label>
-                </value>
-                <value>
-                    <fullName>DODONI</fullName>
-                    <default>false</default>
-                    <label>DODONI</label>
-                </value>
-                <value>
-                    <fullName>Beillevaire</fullName>
-                    <default>false</default>
-                    <label>Beillevaire</label>
-                </value>
-                <value>
-                    <fullName>Saint Agur</fullName>
-                    <default>false</default>
-                    <label>Saint Agur</label>
-                </value>
-                <value>
-                    <fullName>FERMES DE LA TREMBLAYE</fullName>
-                    <default>false</default>
-                    <label>FERMES DE LA TREMBLAYE</label>
-                </value>
-                <value>
-                    <fullName>QUORUM</fullName>
-                    <default>false</default>
-                    <label>QUORUM</label>
-                </value>
-                <value>
-                    <fullName>Elle &amp; Vire</fullName>
-                    <default>false</default>
-                    <label>Elle &amp; Vire</label>
-                </value>
-                <value>
-                    <fullName>Roquefort Papillon</fullName>
-                    <default>false</default>
-                    <label>Roquefort Papillon</label>
-                </value>
-                <value>
-                    <fullName>Giovanni Ferrari</fullName>
-                    <default>false</default>
-                    <label>Giovanni Ferrari</label>
-                </value>
-                <value>
-                    <fullName>ILE DE FRANCE</fullName>
-                    <default>false</default>
-                    <label>ILE DE FRANCE</label>
-                </value>
-                <value>
-                    <fullName>Cabrifin</fullName>
-                    <default>false</default>
-                    <label>Cabrifin</label>
-                </value>
-                <value>
-                    <fullName>SMORET</fullName>
-                    <default>false</default>
-                    <label>SMORET</label>
-                </value>
-                <value>
-                    <fullName>CAPRICE DES DIEUX</fullName>
-                    <default>false</default>
-                    <label>CAPRICE DES DIEUX</label>
-                </value>
-                <value>
-                    <fullName>Vieuxx Pane</fullName>
-                    <default>false</default>
-                    <label>Vieuxx Pane</label>
-                </value>
-                <value>
-                    <fullName>CORMAN</fullName>
-                    <default>false</default>
-                    <label>CORMAN</label>
-                </value>
-                <value>
-                    <fullName>Lescure</fullName>
-                    <default>false</default>
-                    <label>Lescure</label>
-                </value>
-                <value>
-                    <fullName>BEYONG MEAT</fullName>
-                    <default>false</default>
-                    <label>BEYONG MEAT</label>
-                </value>
+                <sorted>true</sorted>
                 <value>
                     <fullName>5J</fullName>
                     <default>false</default>
                     <label>5J</label>
-                </value>
-                <value>
-                    <fullName>BASTIDES</fullName>
-                    <default>false</default>
-                    <label>BASTIDES</label>
-                </value>
-                <value>
-                    <fullName>BERETTA</fullName>
-                    <default>false</default>
-                    <label>BERETTA</label>
-                </value>
-                <value>
-                    <fullName>LOSTE TRADI-FRANCE</fullName>
-                    <default>false</default>
-                    <label>LOSTE TRADI-FRANCE</label>
-                </value>
-                <value>
-                    <fullName>Rougie</fullName>
-                    <default>false</default>
-                    <label>Rougie</label>
                 </value>
                 <value>
                     <fullName>ANTICHICOLLI</fullName>
@@ -398,9 +278,44 @@
                     <label>BARNIER OLIVES</label>
                 </value>
                 <value>
+                    <fullName>BASTIDES</fullName>
+                    <default>false</default>
+                    <label>BASTIDES</label>
+                </value>
+                <value>
                     <fullName>BEAUFOR</fullName>
                     <default>false</default>
                     <label>BEAUFOR</label>
+                </value>
+                <value>
+                    <fullName>Beillevaire</fullName>
+                    <default>false</default>
+                    <label>Beillevaire</label>
+                </value>
+                <value>
+                    <fullName>BERETTA</fullName>
+                    <default>false</default>
+                    <label>BERETTA</label>
+                </value>
+                <value>
+                    <fullName>BEYONG MEAT</fullName>
+                    <default>false</default>
+                    <label>BEYONG MEAT</label>
+                </value>
+                <value>
+                    <fullName>Cabrifin</fullName>
+                    <default>false</default>
+                    <label>Cabrifin</label>
+                </value>
+                <value>
+                    <fullName>CAPRICE DES DIEUX</fullName>
+                    <default>false</default>
+                    <label>CAPRICE DES DIEUX</label>
+                </value>
+                <value>
+                    <fullName>CAVIAR &amp; TRADITIONS</fullName>
+                    <default>false</default>
+                    <label>CAVIAR &amp; TRADITIONS</label>
                 </value>
                 <value>
                     <fullName>Chateau d&apos;Estoublon</fullName>
@@ -413,34 +328,19 @@
                     <label>Chef Studio OIL</label>
                 </value>
                 <value>
-                    <fullName>CAVIAR &amp; TRADITIONS</fullName>
+                    <fullName>Chef Studio Pastry</fullName>
                     <default>false</default>
-                    <label>CAVIAR &amp; TRADITIONS</label>
+                    <label>Chef Studio Pastry</label>
                 </value>
                 <value>
-                    <fullName>Urbani Tartufi SRL</fullName>
+                    <fullName>COEUR DE LION</fullName>
                     <default>false</default>
-                    <label>Urbani Tartufi SRL</label>
+                    <label>COEUR DE LION</label>
                 </value>
                 <value>
-                    <fullName>VALRHONA</fullName>
+                    <fullName>CORMAN</fullName>
                     <default>false</default>
-                    <label>VALRHONA</label>
-                </value>
-                <value>
-                    <fullName>WEISS</fullName>
-                    <default>false</default>
-                    <label>WEISS</label>
-                </value>
-                <value>
-                    <fullName>REPUBLIC DEL CACAO</fullName>
-                    <default>false</default>
-                    <label>REPUBLIC DEL CACAO</label>
-                </value>
-                <value>
-                    <fullName>IRCA</fullName>
-                    <default>false</default>
-                    <label>IRCA</label>
+                    <label>CORMAN</label>
                 </value>
                 <value>
                     <fullName>DOBLA</fullName>
@@ -448,29 +348,59 @@
                     <label>DOBLA</label>
                 </value>
                 <value>
-                    <fullName>RAVIFRUIT</fullName>
+                    <fullName>DODONI</fullName>
                     <default>false</default>
-                    <label>RAVIFRUIT</label>
+                    <label>DODONI</label>
                 </value>
                 <value>
-                    <fullName>tbc</fullName>
+                    <fullName>Elle &amp; Vire</fullName>
                     <default>false</default>
-                    <label>tbc</label>
+                    <label>Elle &amp; Vire</label>
                 </value>
                 <value>
-                    <fullName>Sabaton</fullName>
+                    <fullName>FERMES DE LA TREMBLAYE</fullName>
                     <default>false</default>
-                    <label>Sabaton</label>
+                    <label>FERMES DE LA TREMBLAYE</label>
                 </value>
                 <value>
-                    <fullName>Sevarome</fullName>
+                    <fullName>Giovanni Ferrari</fullName>
                     <default>false</default>
-                    <label>Sevarome</label>
+                    <label>Giovanni Ferrari</label>
                 </value>
                 <value>
-                    <fullName>Sosa</fullName>
+                    <fullName>ILE DE FRANCE</fullName>
                     <default>false</default>
-                    <label>Sosa</label>
+                    <label>ILE DE FRANCE</label>
+                </value>
+                <value>
+                    <fullName>IRCA</fullName>
+                    <default>false</default>
+                    <label>IRCA</label>
+                </value>
+                <value>
+                    <fullName>LE RUSTIQUE</fullName>
+                    <default>false</default>
+                    <label>LE RUSTIQUE</label>
+                </value>
+                <value>
+                    <fullName>Lescure</fullName>
+                    <default>false</default>
+                    <label>Lescure</label>
+                </value>
+                <value>
+                    <fullName>Liberty Lane</fullName>
+                    <default>false</default>
+                    <label>Liberty Lane</label>
+                </value>
+                <value>
+                    <fullName>LOSTE TRADI-FRANCE</fullName>
+                    <default>false</default>
+                    <label>LOSTE TRADI-FRANCE</label>
+                </value>
+                <value>
+                    <fullName>Milkana</fullName>
+                    <default>false</default>
+                    <label>Milkana</label>
                 </value>
                 <value>
                     <fullName>Norohy</fullName>
@@ -483,11 +413,6 @@
                     <label>OVODAN</label>
                 </value>
                 <value>
-                    <fullName>Remy Cointreau</fullName>
-                    <default>false</default>
-                    <label>Remy Cointreau</label>
-                </value>
-                <value>
                     <fullName>PAVONI</fullName>
                     <default>false</default>
                     <label>PAVONI</label>
@@ -498,9 +423,84 @@
                     <label>Pomone</label>
                 </value>
                 <value>
-                    <fullName>Chef Studio Pastry</fullName>
+                    <fullName>QUORUM</fullName>
                     <default>false</default>
-                    <label>Chef Studio Pastry</label>
+                    <label>QUORUM</label>
+                </value>
+                <value>
+                    <fullName>RAVIFRUIT</fullName>
+                    <default>false</default>
+                    <label>RAVIFRUIT</label>
+                </value>
+                <value>
+                    <fullName>Remy Cointreau</fullName>
+                    <default>false</default>
+                    <label>Remy Cointreau</label>
+                </value>
+                <value>
+                    <fullName>REPUBLIC DEL CACAO</fullName>
+                    <default>false</default>
+                    <label>REPUBLIC DEL CACAO</label>
+                </value>
+                <value>
+                    <fullName>Roquefort Papillon</fullName>
+                    <default>false</default>
+                    <label>Roquefort Papillon</label>
+                </value>
+                <value>
+                    <fullName>Rougie</fullName>
+                    <default>false</default>
+                    <label>Rougie</label>
+                </value>
+                <value>
+                    <fullName>Sabaton</fullName>
+                    <default>false</default>
+                    <label>Sabaton</label>
+                </value>
+                <value>
+                    <fullName>Saint Agur</fullName>
+                    <default>false</default>
+                    <label>Saint Agur</label>
+                </value>
+                <value>
+                    <fullName>Sevarome</fullName>
+                    <default>false</default>
+                    <label>Sevarome</label>
+                </value>
+                <value>
+                    <fullName>SMORET</fullName>
+                    <default>false</default>
+                    <label>SMORET</label>
+                </value>
+                <value>
+                    <fullName>Sosa</fullName>
+                    <default>false</default>
+                    <label>Sosa</label>
+                </value>
+                <value>
+                    <fullName>tbc</fullName>
+                    <default>false</default>
+                    <label>tbc</label>
+                </value>
+                <value>
+                    <fullName>Urbani Tartufi SRL</fullName>
+                    <default>false</default>
+                    <label>Urbani Tartufi SRL</label>
+                </value>
+                <value>
+                    <fullName>VALRHONA</fullName>
+                    <default>false</default>
+                    <label>VALRHONA</label>
+                </value>
+                <value>
+                    <fullName>Vieuxx Pane</fullName>
+                    <default>false</default>
+                    <label>Vieuxx Pane</label>
+                </value>
+                <value>
+                    <fullName>WEISS</fullName>
+                    <default>false</default>
+                    <label>WEISS</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -607,6 +607,11 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
+                    <fullName>Business Owner</fullName>
+                    <default>false</default>
+                    <label>Business Owner</label>
+                </value>
+                <value>
                     <fullName>R&amp;D Manager</fullName>
                     <default>false</default>
                     <label>R&amp;D Manager</label>
@@ -615,6 +620,11 @@
                     <fullName>Purchase Manager</fullName>
                     <default>false</default>
                     <label>Purchase Manager</label>
+                </value>
+                <value>
+                    <fullName>Chef</fullName>
+                    <default>false</default>
+                    <label>Chef</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -978,6 +988,11 @@ DATETIMEVALUE(TEXT(CN_Event_Location_End_Date__c) + &quot; 20:00:00&quot;)
                     <default>false</default>
                     <label>Recipes R&amp;D</label>
                 </value>
+                <value>
+                    <fullName>Shooting</fullName>
+                    <default>false</default>
+                    <label>Shooting</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -1100,7 +1115,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>CN_Price_Positioning__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>e.g. Average price of one drink is 32 RMB, average price of a cake is 48 RMB.</inlineHelpText>
-        <label>Price Positioning</label>
+        <label>Price Positioning(Customer price)</label>
         <length>255</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -1258,6 +1273,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <type>Number</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>CN_Using_The_Entire_Kitchen__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Using the Entire Kitchen?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
     <label>Chef Request</label>
     <listViews>
         <fullName>All</fullName>
@@ -1274,6 +1298,87 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <columns>CN_Status__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Confirmed</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CN_Account_Name__c</columns>
+        <columns>CN_Product_Category__c</columns>
+        <columns>CN_Brand__c</columns>
+        <columns>CN_Event_Theme__c</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Event_Location__c</columns>
+        <columns>CN_Demo_Start_Date__c</columns>
+        <columns>CN_Demo_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All - Confirmed</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Waiting_for_Confirm</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CN_Account_Name__c</columns>
+        <columns>CN_Product_Category__c</columns>
+        <columns>CN_Brand__c</columns>
+        <columns>CN_Event_Theme__c</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Event_Location__c</columns>
+        <columns>CN_Demo_Start_Date__c</columns>
+        <columns>CN_Demo_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </filters>
+        <filters>
+            <field>CN_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All - Waiting for Confirm</label>
+        <sharedTo>
+            <role>CN_Chef_Manager</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All_Waiting_for_Demo_Report</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CN_Account_Name__c</columns>
+        <columns>CN_Product_Category__c</columns>
+        <columns>CN_Brand__c</columns>
+        <columns>CN_Event_Theme__c</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Event_Location__c</columns>
+        <columns>CN_Demo_Start_Date__c</columns>
+        <columns>CN_Demo_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CN_Demo_Report_Count__c</field>
+            <operation>lessOrEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>notEqual</operation>
+            <value>CN_Chef_Request__c.CN_Chef_Self_Work_Request</value>
+        </filters>
+        <label>All - Waiting for Demo Report</label>
+        <sharedTo>
+            <role>CN_Chef_Manager</role>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>CN_Brand_5J_Chef_Req</fullName>
@@ -2120,7 +2225,12 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <operation>equals</operation>
             <value>The Third Party</value>
         </filters>
-        <label>Location-Confirmed-3nd Party-Chef Req</label>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Location-Confirmed-Entire-3nd Party</label>
     </listViews>
     <listViews>
         <fullName>CN_Location_Confirmed_BJ_Studio_Chef_Req</fullName>
@@ -2142,7 +2252,147 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <operation>equals</operation>
             <value>BJ Chef Studio</value>
         </filters>
-        <label>Location-Confirmed-BJ Studio-Chef Req</label>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Location-Confirmed-Entire-BJ Studio</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Location_Confirmed_Partial_3nd_Party</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Confirmed__c</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Demo_Start_Date__c</columns>
+        <columns>CN_Demo_End_Date__c</columns>
+        <columns>CN_Account__c</columns>
+        <columns>CN_Campaign__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CN_Event_Location__c</field>
+            <operation>equals</operation>
+            <value>The Third Party</value>
+        </filters>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Location-Confirmed-Partial-3nd Party</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Location_Confirmed_Partial_BJ_Studio</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Confirmed__c</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Demo_Start_Date__c</columns>
+        <columns>CN_Demo_End_Date__c</columns>
+        <columns>CN_Account__c</columns>
+        <columns>CN_Campaign__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CN_Event_Location__c</field>
+            <operation>equals</operation>
+            <value>BJ Chef Studio</value>
+        </filters>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Location-Confirmed-Partial-BJ Studio</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Location_Confirmed_Partial_SH_R_D</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Confirmed__c</columns>
+        <columns>CN_Demo_Start_Date__c</columns>
+        <columns>CN_Demo_End_Date__c</columns>
+        <columns>CN_Account__c</columns>
+        <columns>CN_Campaign__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CN_Event_Location__c</field>
+            <operation>equals</operation>
+            <value>SH R&amp;D Center</value>
+        </filters>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Location-Confirmed-Partial-SH R&amp;D</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Location_Confirmed_Partial_SH_Studio</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Confirmed__c</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Demo_Start_Date__c</columns>
+        <columns>CN_Demo_End_Date__c</columns>
+        <columns>CN_Account__c</columns>
+        <columns>CN_Campaign__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CN_Event_Location__c</field>
+            <operation>equals</operation>
+            <value>SH Chef Studio</value>
+        </filters>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Location-Confirmed-Partial-SH Studio</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Location_Confirmed_Partial_SZ_Studio</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Confirmed__c</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Demo_Start_Date__c</columns>
+        <columns>CN_Demo_End_Date__c</columns>
+        <columns>CN_Account__c</columns>
+        <columns>CN_Campaign__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CN_Event_Location__c</field>
+            <operation>equals</operation>
+            <value>SZ Chef Studio</value>
+        </filters>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Location-Confirmed-Partial-SZ Studio</label>
     </listViews>
     <listViews>
         <fullName>CN_Location_Confirmed_SH_R_D_Chef_Req</fullName>
@@ -2164,7 +2414,12 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <operation>equals</operation>
             <value>SH R&amp;D Center</value>
         </filters>
-        <label>Location-Confirmed-SH R&amp;D-Chef Req</label>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Location-Confirmed-Entire-SH R&amp;D</label>
     </listViews>
     <listViews>
         <fullName>CN_Location_Confirmed_SH_Studio_Chef_Req</fullName>
@@ -2186,7 +2441,12 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <operation>equals</operation>
             <value>SH Chef Studio</value>
         </filters>
-        <label>Location-Confirmed-SH Studio-Chef Req</label>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Location-Confirmed-Entire-SH Studio</label>
     </listViews>
     <listViews>
         <fullName>CN_Location_Confirmed_SZ_Studio_Chef_Req</fullName>
@@ -2208,7 +2468,12 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <operation>equals</operation>
             <value>SZ Chef Studio</value>
         </filters>
-        <label>Location-Confirmed-SZ Studio-Chef Req</label>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Location-Confirmed-Entire-SZ Studio</label>
     </listViews>
     <listViews>
         <fullName>CN_Location_Unconfirmed_3nd_Party_Chef_Req</fullName>
@@ -2230,7 +2495,12 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <operation>equals</operation>
             <value>The Third Party</value>
         </filters>
-        <label>Location-Unconfirmed-3nd Party-Chef Req</label>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Location-Unconfirmed-Entire-3nd Party</label>
     </listViews>
     <listViews>
         <fullName>CN_Location_Unconfirmed_BJ_Studio_Chef_Req</fullName>
@@ -2252,7 +2522,120 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <operation>equals</operation>
             <value>BJ Chef Studio</value>
         </filters>
-        <label>Location-Unconfirmed-BJ Studio-Chef Req</label>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Location-Unconfirmed-Entire-BJ Studio</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Location_Unconfirmed_Partial_3nd_Party</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Confirmed__c</columns>
+        <columns>CN_Demo_Start_Date__c</columns>
+        <columns>CN_Demo_End_Date__c</columns>
+        <columns>CN_Account__c</columns>
+        <columns>CN_Campaign__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CN_Event_Location__c</field>
+            <operation>equals</operation>
+            <value>The Third Party</value>
+        </filters>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Location-Unconfirmed-Partial-3nd Party</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Location_Unconfirmed_Partial_BJ_Studio</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Confirmed__c</columns>
+        <columns>CN_Demo_Start_Date__c</columns>
+        <columns>CN_Demo_End_Date__c</columns>
+        <columns>CN_Account__c</columns>
+        <columns>CN_Campaign__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CN_Event_Location__c</field>
+            <operation>equals</operation>
+            <value>BJ Chef Studio</value>
+        </filters>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Location-Unconfirmed-Partial-BJ Studio</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Location_Unconfirmed_Partial_SH_R_D</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Confirmed__c</columns>
+        <columns>CN_Demo_Start_Date__c</columns>
+        <columns>CN_Demo_End_Date__c</columns>
+        <columns>CN_Account__c</columns>
+        <columns>CN_Campaign__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CN_Event_Location__c</field>
+            <operation>equals</operation>
+            <value>SH R&amp;D Center</value>
+        </filters>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Location-Unconfirmed-Partial-SH R&amp;D</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Location_Unconfirmed_Partial_SZ_Studio</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Confirmed__c</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Demo_Start_Date__c</columns>
+        <columns>CN_Demo_End_Date__c</columns>
+        <columns>CN_Campaign__c</columns>
+        <columns>CN_Account__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CN_Event_Location__c</field>
+            <operation>equals</operation>
+            <value>SZ Chef Studio</value>
+        </filters>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Location-Unconfirmed-Partial-SZ Studio</label>
     </listViews>
     <listViews>
         <fullName>CN_Location_Unconfirmed_SH_R_D_Chef_Req</fullName>
@@ -2274,7 +2657,12 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <operation>equals</operation>
             <value>SH R&amp;D Center</value>
         </filters>
-        <label>Location-Unconfirmed-SH R&amp;D-Chef Req</label>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Location-Unconfirmed-Entire-SH R&amp;D</label>
     </listViews>
     <listViews>
         <fullName>CN_Location_Unconfirmed_SH_Studio_Chef_Req</fullName>
@@ -2296,7 +2684,12 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <operation>equals</operation>
             <value>SH Chef Studio</value>
         </filters>
-        <label>Location-Unconfirmed-SH Studio-Chef Req</label>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Location-Unconfirmed-Entire-SH Studio</label>
     </listViews>
     <listViews>
         <fullName>CN_Location_Unconfirmed_SZ_Studio_Chef_Req</fullName>
@@ -2318,7 +2711,12 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <operation>equals</operation>
             <value>SZ Chef Studio</value>
         </filters>
-        <label>Location-Unconfirmed-SZ Studio-Chef Req</label>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Location-Unconfirmed-Entire-SZ Studio</label>
     </listViews>
     <listViews>
         <fullName>CN_Type_1_on_1_Service_Chef_Req</fullName>
@@ -2592,6 +2990,21 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </filters>
         <label>Type-VIP Class-Chef Req</label>
     </listViews>
+    <listViews>
+        <fullName>My_Chef_Request</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CN_Account_Name__c</columns>
+        <columns>CN_Product_Category__c</columns>
+        <columns>CN_Brand__c</columns>
+        <columns>CN_Event_Theme__c</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Event_Location__c</columns>
+        <columns>CN_Demo_Start_Date__c</columns>
+        <columns>CN_Demo_End_Date__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Chef Request</label>
+    </listViews>
     <nameField>
         <displayFormat>CDR-{0000000000}</displayFormat>
         <label>Chef Request ID</label>
@@ -2802,6 +3215,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>CN_Customer_Attendees_Title__c</picklist>
+            <values>
+                <fullName>Business Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chef</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>Purchase Manager</fullName>
                 <default>false</default>
@@ -3113,6 +3534,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Customer_Attendees_Title__c</picklist>
             <values>
+                <fullName>Business Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chef</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Purchase Manager</fullName>
                 <default>false</default>
             </values>
@@ -3147,10 +3576,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <picklist>CN_Event_Location__c</picklist>
             <values>
                 <fullName>BJ Chef Studio</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not Applicable</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -3423,6 +3848,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Customer_Attendees_Title__c</picklist>
             <values>
+                <fullName>Business Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chef</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Purchase Manager</fullName>
                 <default>false</default>
             </values>
@@ -3554,7 +3987,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>CN_Marketing_CCE_Chef_Demo_Request</fullName>
         <active>true</active>
         <compactLayoutAssignment>CN_MKT_Compact</compactLayoutAssignment>
-        <label>Marketing/CCE Chef Demo Request</label>
+        <label>Chef Demo Request</label>
         <picklistValues>
             <picklist>CN_Brand__c</picklist>
             <values>
@@ -3753,6 +4186,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Customer_Attendees_Title__c</picklist>
             <values>
+                <fullName>Business Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chef</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Purchase Manager</fullName>
                 <default>false</default>
             </values>
@@ -3790,10 +4231,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Not Applicable</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SH Chef Studio</fullName>
                 <default>false</default>
             </values>
@@ -3821,15 +4258,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product Testing</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Public Demo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recipes R%26D</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4091,6 +4520,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Customer_Attendees_Title__c</picklist>
             <values>
+                <fullName>Business Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chef</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Purchase Manager</fullName>
                 <default>false</default>
             </values>
@@ -4128,10 +4565,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Not Applicable</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SH Chef Studio</fullName>
                 <default>false</default>
             </values>
@@ -4156,6 +4589,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Recipes R%26D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shooting</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4243,7 +4680,7 @@ CN_Demo_Start_Date__c  &lt; TODAY() + 60
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Application_Type_Selling_Length</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
@@ -4258,7 +4695,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Campaign_Demo_Date</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
@@ -4315,7 +4752,7 @@ CN_Confirmed__c = TRUE,
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Competitor_Brands_Length</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
@@ -4345,7 +4782,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Cost_Limit_Length</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
@@ -4436,6 +4873,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
 ISCHANGED(CN_Confirmed__c ),
+NOT( RecordType.DeveloperName = &quot;CN_Chef_Self_Work_Request&quot;),
 CN_Confirmed__c,
  OR(
    ISBLANK(CN_Event_Location_Start_Date__c  ) ,
@@ -4448,7 +4886,7 @@ CN_Confirmed__c,
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Key_Products_to_Push_Length</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
@@ -4477,7 +4915,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Price_Positioning_Length</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),

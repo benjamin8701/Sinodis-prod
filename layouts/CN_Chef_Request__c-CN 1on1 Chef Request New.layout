@@ -21,10 +21,6 @@
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Account__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
                 <field>CN_Opportunity__c</field>
             </layoutItems>
@@ -35,14 +31,6 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>CN_Event_Location__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>CN_Event_Theme__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CN_The_Third_Party_City__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -55,16 +43,12 @@
                 <field>CN_Status__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Sales_Channel__c</field>
+                <behavior>Required</behavior>
+                <field>CN_Event_Theme__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Customer_ID__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Customer_City__c</field>
+                <behavior>Edit</behavior>
+                <field>CN_The_Third_Party_City__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -81,21 +65,21 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>CN_Demo_End_Date__c</field>
+                <field>CN_Event_Location_Start_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>CN_Event_Location_End_Date__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>CN_Event_Location_Start_Date__c</field>
+                <field>CN_Demo_End_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>CN_Event_Location_Start_Date_AM_PM__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>CN_Event_Location_End_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -115,6 +99,10 @@
                 <field>CN_Price_Positioning__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Customer_Attendees_Title__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Required</behavior>
                 <field>CN_Cost_Limit__c</field>
             </layoutItems>
@@ -130,18 +118,12 @@
                 <behavior>Required</behavior>
                 <field>CN_Key_Products_to_Push__c</field>
             </layoutItems>
-        </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CN_Customer_Attendees_Title__c</field>
-            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CN_Comments_for_Urgent_Case__c</field>
             </layoutItems>
         </layoutColumns>
-        <style>TwoColumnsLeftToRight</style>
+        <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -174,6 +156,11 @@
     </layoutSections>
     <platformActionList>
         <actionListContext>Record</actionListContext>
+        <platformActionListItems>
+            <actionName>Edit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>0</sortOrder>
+        </platformActionListItems>
         <platformActionListItems>
             <actionName>CN_Chef_Request__c.CN_Ready_for_Approval</actionName>
             <actionType>QuickAction</actionType>
@@ -213,11 +200,6 @@
             <actionName>Clone</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>8</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Edit</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>0</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedLists>

@@ -171,6 +171,18 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>CN_Account_Name_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Account_Name__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name Formula</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Account_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -246,6 +258,18 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Creator_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.LastName &amp; &apos; &apos; &amp; CreatedBy.FirstName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Creator Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Customer_Code__c</fullName>
         <externalId>false</externalId>
         <formula>CN_Account_Name__r.CN_Customer_Code__c</formula>
@@ -260,7 +284,7 @@
         <fullName>CN_Delivery_Address__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Delivery Address is mandatory if delivery method is express delivery.</inlineHelpText>
-        <label>Delivery Address</label>
+        <label>Delivery Address+Contact+Phone Number</label>
         <length>255</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -400,6 +424,18 @@ TEXT(CN_Sample_Request_Status__c),
 $Label.CN_PleaseConfirm_Value_AlreadySubmitted
 )</formula>
         <label>Please Confirm</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_SP_Records_Count_All_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(CN_SP_Records_Count_All__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SP Records Count All Formula</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -860,7 +896,7 @@ ISNEW()
         <errorConditionFormula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-IF(CN_Opportunity_Name__r.Account.RecordType.Name =&quot;Prospect&quot;, TRUE, FALSE)
+IF(CN_Opportunity_Name__r.Account.RecordType.DeveloperName=&quot;CN_Edit_Prospect&quot;, TRUE, FALSE)
 )</errorConditionFormula>
         <errorMessage>sales CANNOT create wholepack sample request for prospect&apos;s opportunity</errorMessage>
     </validationRules>
@@ -929,12 +965,14 @@ CN_SP_Records_Count_All__c &lt;= 0
         <errorConditionFormula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 BEGINS(RecordType.DeveloperName,&quot;CN&quot;),
 ISPICKVAL(CN_Sample_Request_Status__c,&quot;Canceled&quot;),
-
-IF(DATEVALUE(CN_Approved_Date__c) = TODAY(),
-	IF(TIMEVALUE(CN_Approved_Date__c) &lt; TIMEVALUE(&quot;19:30:00.000&quot;), TIMEVALUE(NOW())&gt;TIMEVALUE(&quot;19:30:00.000&quot;),false),
-	IF(DATEVALUE(CN_Approved_Date__c) = TODAY()-1, TIMEVALUE(NOW()) &gt; TIMEVALUE(&quot;19:30:00.000&quot;), false)
+Not(
+IF(DATEVALUE(CN_Approved_Date__c) = Datevalue(now()),
+IF(TIMEVALUE(CN_Approved_Date__c +(0.04167 * 8) ) &lt; TIMEVALUE(&quot;19:30:00.000&quot;), TIMEVALUE(NOW()+(0.04167 * 8))&lt;TIMEVALUE(&quot;19:30:00.000&quot;),false),
+IF(DATEVALUE(CN_Approved_Date__c) = Datevalue(now()-1),
+	IF(TIMEVALUE(CN_Approved_Date__c +(0.04167 * 8) ) &gt; TIMEVALUE(&quot;19:30:00.000&quot;), TIMEVALUE(NOW()+0.04167 * 8)&lt;TIMEVALUE(&quot;19:30:00.000&quot;),false)
+, false)
 )
-
+)
 )</errorConditionFormula>
         <errorMessage>You&apos;re not allowed to cancel it now.</errorMessage>
     </validationRules>

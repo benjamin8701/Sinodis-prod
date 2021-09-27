@@ -58,6 +58,19 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;b style=&quot;font-family: sans-serif; font-size: 12px; color: rgb(253, 0, 0);&quot;&gt;&lt;u&gt;Note&lt;/u&gt;: &lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10px; color: rgb(253, 0, 0);&quot;&gt;Please fill in the product description, including pictures, into the detailed description. Other content, such as product formulas, certificates, etc., need to be uploaded through the document. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10px; font-family: sans-serif; color: rgb(253, 0, 0);&quot;&gt;请把产品描述包括图片填写到详细描述中，其他内容，如产品配方，证书等需要通过文档上传。&lt;/span&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>parentFieldApiName</name>
                     <value>Product2.Id</value>
                 </componentInstanceProperties>

@@ -1810,6 +1810,16 @@
             <field>CN_Material_Number__c.CN_Weight_Unit__c</field>
             <table>Account.Sales_Order__r.Sales_Order_Item__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Campaign_Product__c</field>
+            <table>Account.Sales_Order__r.Sales_Order_Item__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Is_Created_Yesterday__c</field>
+            <table>Account.Sales_Order__r.Sales_Order_Item__r</table>
+        </columns>
         <masterLabel>Sales Order Item</masterLabel>
     </sections>
 </ReportType>

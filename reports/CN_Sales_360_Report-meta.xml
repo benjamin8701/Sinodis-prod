@@ -15,10 +15,5 @@
         <sharedTo>CN_Commercial_Director</sharedTo>
         <sharedToType>RoleAndSubordinates</sharedToType>
     </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>CN_Marketing</sharedTo>
-        <sharedToType>RoleAndSubordinates</sharedToType>
-    </folderShares>
     <name>Sales 360 Report</name>
 </ReportFolder>

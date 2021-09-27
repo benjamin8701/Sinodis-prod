@@ -253,8 +253,11 @@
         </actions>
         <active>true</active>
         <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_1on1_Service_Chef_Request&apos;,
- CN_Confirmed__c )</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+NOT( ISNEW() ) ,
+ISCHANGED(CN_Confirmed__c ) ,
+CN_Confirmed__c 
+ )</formula>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>CN_Chef_Request_1on1_Uncomfirm</fullName>
@@ -264,8 +267,10 @@
         </actions>
         <active>true</active>
         <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_1on1_Service_Chef_Request&apos;,
+NOT(ISNEW()),
+ISCHANGED(CN_Confirmed__c),
  NOT(CN_Confirmed__c) )</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>CN_Chef_Request_Change_RT_1on1</fullName>
@@ -287,9 +292,11 @@
         <formula>AND(
   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
   RecordType.DeveloperName = &apos;CN_Chef_Self_Work_Request&apos;,
+NOT(ISNEW()),
+ISCHANGED(CN_Confirmed__c),
   CN_Confirmed__c 
 )</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>CN_Chef_Request_Chef_Self_Unonfirm</fullName>
@@ -301,6 +308,7 @@
         <formula>AND(
   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
   RecordType.DeveloperName = &apos;CN_Chef_Self_Work_Request&apos;, 
+ NOT(ISNEW()),
   ISCHANGED(CN_Confirmed__c),
   NOT(CN_Confirmed__c)
 )</formula>
@@ -314,8 +322,10 @@
         </actions>
         <active>true</active>
         <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Marketing_CCE_Chef_Demo_Request&apos;,
+NOT(ISNEW()),
+ISCHANGED(CN_Confirmed__c ),
  CN_Confirmed__c )</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>CN_Chef_Request_MKT_DEMO_Unconfirm</fullName>
@@ -325,8 +335,10 @@
         </actions>
         <active>true</active>
         <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Marketing_CCE_Chef_Demo_Request&apos;,
+NOT(ISNEW()),
+ISCHANGED(CN_Confirmed__c),
  NOT(CN_Confirmed__c) )</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>CN_Chef_Request_MKT_DEV_Confirm</fullName>
@@ -338,9 +350,11 @@
         <formula>AND(
   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
   RecordType.DeveloperName = &apos;CN_Marketing_Development_Request&apos;,
+  NOT(ISNEW()),
+  ISCHANGED(CN_Confirmed__c),
   CN_Confirmed__c 
 )</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>CN_Chef_Request_MKT_DEV_Unconfirm</fullName>
@@ -350,8 +364,10 @@
         </actions>
         <active>true</active>
         <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Marketing_Development_Request&apos;,
+NOT(ISNEW()),
+ISCHANGED(CN_Confirmed__c),
  NOT(CN_Confirmed__c) )</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>CN_Chef_Request_Set_Ready_Date</fullName>

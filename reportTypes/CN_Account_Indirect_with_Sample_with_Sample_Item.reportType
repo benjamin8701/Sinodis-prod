@@ -1605,6 +1605,26 @@
             <field>CN_List_Price__c</field>
             <table>Account.Sample_RequestS_FeedbackS1__r.Sample_Products__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Campaign_Product__c</field>
+            <table>Account.Sample_RequestS_FeedbackS1__r.Sample_Products__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Is_Created_Yesterday__c</field>
+            <table>Account.Sample_RequestS_FeedbackS1__r.Sample_Products__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Sample_Needed_Date__c</field>
+            <table>Account.Sample_RequestS_FeedbackS1__r.Sample_Products__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Sales_Office__c</field>
+            <table>Account.Sample_RequestS_FeedbackS1__r.Sample_Products__r</table>
+        </columns>
         <masterLabel>Sample Products</masterLabel>
     </sections>
     <sections>
@@ -1616,6 +1636,21 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CN_Sample_Feedback_Overdue__c</field>
+            <table>Account.Sample_RequestS_FeedbackS1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_SP_Records_Count_All_Formula__c</field>
+            <table>Account.Sample_RequestS_FeedbackS1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Account_Name_Formula__c</field>
+            <table>Account.Sample_RequestS_FeedbackS1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Creator_Name__c</field>
             <table>Account.Sample_RequestS_FeedbackS1__r</table>
         </columns>
         <masterLabel>Sample Requests</masterLabel>

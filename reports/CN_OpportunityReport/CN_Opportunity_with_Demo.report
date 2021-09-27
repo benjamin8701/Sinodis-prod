@@ -34,8 +34,8 @@
     <crossFilters>
         <operation>with</operation>
         <primaryTableColumn>OPPORTUNITY_ID</primaryTableColumn>
-        <relatedTable>CN_Sample_Request__c</relatedTable>
-        <relatedTableJoinColumn>CN_Opportunity_Name__c</relatedTableJoinColumn>
+        <relatedTable>CN_Chef_Request__c</relatedTable>
+        <relatedTableJoinColumn>CN_Opportunity__c</relatedTableJoinColumn>
     </crossFilters>
     <currency>CNY</currency>
     <format>Summary</format>

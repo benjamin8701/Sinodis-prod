@@ -29,17 +29,6 @@
     <dashboardFilters>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>Planned</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Completed</values>
-        </dashboardFilterOptions>
-        <name>Campaign Status</name>
-    </dashboardFilters>
-    <dashboardFilters>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
             <values>CHEESE</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
@@ -84,6 +73,41 @@
         </dashboardFilterOptions>
         <name>Product Type</name>
     </dashboardFilters>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Corporate Event</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Brand Event</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Co-Branding Event</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Channel Solution</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Cross Category Event</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Digital Campaign</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Road Show</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Others</values>
+        </dashboardFilterOptions>
+        <name>Campaign Type</name>
+    </dashboardFilters>
     <dashboardGridLayout>
         <dashboardGridComponents>
             <colSpan>6</colSpan>
@@ -100,10 +124,10 @@
                     <column>START_DATE</column>
                 </dashboardFilterColumns>
                 <dashboardFilterColumns>
-                    <column>CAMPAIGN_STATUS</column>
+                    <column>Campaign.CN_Product_Type__c</column>
                 </dashboardFilterColumns>
                 <dashboardFilterColumns>
-                    <column>Campaign.CN_Product_Type__c</column>
+                    <column>CAMPAIGN_TYPE</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -149,10 +173,10 @@
                     <column>START_DATE</column>
                 </dashboardFilterColumns>
                 <dashboardFilterColumns>
-                    <column>CAMPAIGN_STATUS</column>
+                    <column>Campaign.CN_Product_Type__c</column>
                 </dashboardFilterColumns>
                 <dashboardFilterColumns>
-                    <column>Campaign.CN_Product_Type__c</column>
+                    <column>CAMPAIGN_TYPE</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -198,10 +222,10 @@
                     <column>START_DATE</column>
                 </dashboardFilterColumns>
                 <dashboardFilterColumns>
-                    <column>CAMPAIGN_STATUS</column>
+                    <column>Campaign.CN_Product_Type__c</column>
                 </dashboardFilterColumns>
                 <dashboardFilterColumns>
-                    <column>Campaign.CN_Product_Type__c</column>
+                    <column>CAMPAIGN_TYPE</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -247,10 +271,10 @@
                     <column>START_DATE</column>
                 </dashboardFilterColumns>
                 <dashboardFilterColumns>
-                    <column>CAMPAIGN_STATUS</column>
+                    <column>Campaign.CN_Product_Type__c</column>
                 </dashboardFilterColumns>
                 <dashboardFilterColumns>
-                    <column>Campaign.CN_Product_Type__c</column>
+                    <column>CAMPAIGN_TYPE</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -291,15 +315,15 @@
                     <axisBinding>y</axisBinding>
                     <column>RowCount</column>
                 </chartSummary>
-                <componentType>ColumnStacked</componentType>
+                <componentType>Column</componentType>
                 <dashboardFilterColumns>
-                    <column>CAMPAIGN_STARTDATE</column>
+                    <column>Campaign$EndDate</column>
                 </dashboardFilterColumns>
                 <dashboardFilterColumns>
-                    <column>CAMPAIGN_STATUS</column>
+                    <column>Campaign$CN_Product_Type__c</column>
                 </dashboardFilterColumns>
                 <dashboardFilterColumns>
-                    <column>Campaign.CN_Product_Type__c</column>
+                    <column>Campaign$Type</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -307,23 +331,18 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>CAMPAIGN_TYPE</groupingColumn>
-                <groupingColumn>STAGE_NAME</groupingColumn>
+                <groupingColumn>Campaign$Type</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
-                    <groupingSorts>
-                        <groupingLevel>g2</groupingLevel>
-                        <sortOrder>a</sortOrder>
-                    </groupingSorts>
                 </groupingSortProperties>
-                <header># Oppo generated by Campaign Type</header>
-                <legendPosition>Right</legendPosition>
+                <header>Oppo generated by Campaign Type</header>
+                <legendPosition>Bottom</legendPosition>
                 <report>CN_CampaignReport/CN_Oppo_generated_by_Campaign_Type</report>
                 <showPercentage>false</showPercentage>
-                <showValues>false</showValues>
+                <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
@@ -342,13 +361,13 @@
                 </chartSummary>
                 <componentType>BarStacked</componentType>
                 <dashboardFilterColumns>
-                    <column>CAMPAIGN_STARTDATE</column>
+                    <column>Campaign$EndDate</column>
                 </dashboardFilterColumns>
                 <dashboardFilterColumns>
-                    <column>CAMPAIGN_STATUS</column>
+                    <column>Campaign$CN_Product_Type__c</column>
                 </dashboardFilterColumns>
                 <dashboardFilterColumns>
-                    <column>Campaign.CN_Product_Type__c</column>
+                    <column>Campaign$Type</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -356,8 +375,8 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>Campaign.CN_Execution_Type__c</groupingColumn>
-                <groupingColumn>STAGE_NAME</groupingColumn>
+                <groupingColumn>Campaign$Type</groupingColumn>
+                <groupingColumn>Campaign.Opportunities__r$StageName</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
@@ -368,7 +387,7 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header># Oppo generated by Execution Type</header>
+                <header>Oppo generated by Execution Type</header>
                 <legendPosition>Right</legendPosition>
                 <report>CN_CampaignReport/CN_Oppo_generated_by_Execution_Type</report>
                 <showPercentage>false</showPercentage>
@@ -384,7 +403,7 @@
     </dashboardGridLayout>
     <dashboardType>MyTeamUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>da.huang@accenture.com.savencia</runningUser>
+    <runningUser>c.qiu@accenture.com</runningUser>
     <textColor>#000000</textColor>
     <title>Campaign Dashboard</title>
     <titleColor>#000000</titleColor>

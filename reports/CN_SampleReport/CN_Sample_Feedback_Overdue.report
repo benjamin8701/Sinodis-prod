@@ -30,6 +30,21 @@
     <columns>
         <field>CHILD_NAME</field>
     </columns>
+    <columns>
+        <field>CN_Sample_Request__c.CN_Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>CN_Sample_Product__c.CN_Product__c</field>
+    </columns>
+    <columns>
+        <field>CN_Sample_Product__c.CN_Status_of_Delivery__c</field>
+    </columns>
+    <columns>
+        <field>CN_Sample_Request__c.CN_Sample_Needed_Date__c</field>
+    </columns>
+    <columns>
+        <field>CN_Sample_Product__c.CN_Feedback_Date__c</field>
+    </columns>
     <currency>CNY</currency>
     <filter>
         <criteriaItems>

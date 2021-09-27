@@ -349,7 +349,7 @@
         <name>CN_Contact_Type_Purchasing</name>
     </customLabels>
     <customLabels>
-        <label>请提交{0}的客户反馈</label>
+        <label>请提交 {0} {1}  的客户反馈</label>
         <name>CN_Create_Event_Subject</name>
     </customLabels>
     <customLabels>
@@ -367,6 +367,10 @@
     <customLabels>
         <label>不允许删除他人创建的演示报告</label>
         <name>CN_Demo_Report_Prevent_Delete_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>样品申请随访提醒</label>
+        <name>CN_Event_Follow_Visit_Subject_SR</name>
     </customLabels>
     <customLabels>
         <label>您不允许新建拜访或事件。</label>
@@ -694,6 +698,10 @@
     </customTabs>
     <flowDefinitions>
         <flows/>
+        <fullName>CN_CST</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
         <fullName>CN_Chef_Assigned_Update</fullName>
     </flowDefinitions>
     <flowDefinitions>
@@ -849,6 +857,10 @@
         <label><!-- CN Campaign With Lead Conveted Account --></label>
         <name>CN_Campaign_With_Lead_Conveted_Account</name>
         <sections>
+            <columns>
+                <label><!-- Lead: Converted Account: Customer Journey --></label>
+                <name>Lead: Converted Account: Customer Journey</name>
+            </columns>
             <label><!-- Campaign Members --></label>
             <name>Campaign Members</name>
         </sections>
@@ -856,13 +868,52 @@
             <label><!-- Campaigns --></label>
             <name>Campaigns</name>
         </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Campaign With Opportunity --></description>
+        <label><!-- CN Campaign With Opportunity --></label>
+        <name>CN_Campaign_With_Opportunity</name>
         <sections>
-            <label><!-- Lead --></label>
-            <name>Lead</name>
+            <label><!-- Campaigns --></label>
+            <name>Campaigns</name>
         </sections>
         <sections>
-            <label><!-- Lead converted Account --></label>
-            <name>Lead converted Account</name>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Campaign with Product with SP --></description>
+        <label><!-- CN Campaign with Product with SP --></label>
+        <name>CN_Campaign_with_Product_with_SP</name>
+        <sections>
+            <label><!-- Campaign Products --></label>
+            <name>Campaign Products</name>
+        </sections>
+        <sections>
+            <label><!-- Campaigns --></label>
+            <name>Campaigns</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Products --></label>
+            <name>Sample Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Campaign with product with SOI --></description>
+        <label><!-- CN Campaign with product with SOI --></label>
+        <name>CN_Campaign_with_product_with_SOI</name>
+        <sections>
+            <label><!-- Campaign Products --></label>
+            <name>Campaign Products</name>
+        </sections>
+        <sections>
+            <label><!-- Campaigns --></label>
+            <name>Campaigns</name>
+        </sections>
+        <sections>
+            <label><!-- Sales Order Item --></label>
+            <name>Sales Order Item</name>
         </sections>
     </reportTypes>
     <reportTypes>

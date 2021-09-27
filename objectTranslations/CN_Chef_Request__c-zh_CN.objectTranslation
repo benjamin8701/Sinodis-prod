@@ -259,6 +259,14 @@
         <label>客户参与人职务</label>
         <name>CN_Customer_Attendees_Title__c</name>
         <picklistValues>
+            <masterLabel>Business Owner</masterLabel>
+            <translation><!-- Business Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef</masterLabel>
+            <translation><!-- Chef --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Purchase Manager</masterLabel>
             <translation><!-- Purchase Manager --></translation>
         </picklistValues>
@@ -439,6 +447,10 @@
             <translation><!-- Self Practice &amp; Training --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Shooting</masterLabel>
+            <translation><!-- Shooting --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Short Video</masterLabel>
             <translation><!-- Short Video --></translation>
         </picklistValues>
@@ -465,7 +477,7 @@
         <name>CN_Key_Products_to_Push__c</name>
     </fields>
     <fields>
-        <label>MKT/CCE负责人</label>
+        <label>活动负责人</label>
         <name>CN_MKT_CCE_PIC__c</name>
         <relationshipLabel>厨师申请</relationshipLabel>
     </fields>
@@ -487,8 +499,8 @@
         <name>CN_Please_Confirm__c</name>
     </fields>
     <fields>
-        <help>例如，一份饮品平均成本是32元， 一块蛋糕平均价格是48元。</help>
-        <label>价格定位</label>
+        <help>例如，一份饮品的平均售价为32元</help>
+        <label>价格定位( 客户售价）</label>
         <name>CN_Price_Positioning__c</name>
     </fields>
     <fields>
@@ -561,11 +573,19 @@
         <label>月份总天数</label>
         <name>CN_Total_Days_Of_End_Date_Month__c</name>
     </fields>
+    <fields>
+        <label>占用整个厨房？</label>
+        <name>CN_Using_The_Entire_Kitchen__c</name>
+    </fields>
     <layouts>
         <layout>CN 1on1 Chef Request</layout>
         <sections>
             <label>厨师管理确认信息栏</label>
             <section>Chef Management Confirmation</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
         </sections>
         <sections>
             <label><!-- Custom Links --></label>
@@ -602,6 +622,10 @@
             <section>Chef Management Confirmation</section>
         </sections>
         <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
@@ -612,6 +636,18 @@
         <sections>
             <label>描述信息栏</label>
             <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Info --></label>
+            <section>Info</section>
+        </sections>
+        <sections>
+            <label><!-- Key Product to Push --></label>
+            <section>Key Product to Push</section>
         </sections>
     </layouts>
     <layouts>
@@ -621,6 +657,10 @@
             <section>Chef Management Confirmation</section>
         </sections>
         <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
@@ -632,6 +672,18 @@
             <label>描述信息栏</label>
             <section>Description</section>
         </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Info --></label>
+            <section>Info</section>
+        </sections>
+        <sections>
+            <label><!-- Key Products to Push --></label>
+            <section>Key Products to Push</section>
+        </sections>
     </layouts>
     <layouts>
         <layout>CN Self-Chef Demo Request</layout>
@@ -640,8 +692,16 @@
             <section>Chef Management Confirmation</section>
         </sections>
         <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
         </sections>
     </layouts>
     <layouts>
@@ -656,6 +716,11 @@
         <aspect>Master</aspect>
         <label>确认/取消</label>
         <name>CN_Confirm</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>确认/取消</label>
+        <name>CN_Confirm_Self_Work</name>
     </quickActions>
     <quickActions>
         <aspect>Master</aspect>
@@ -680,11 +745,11 @@
         <name>CN_Chef_Self_Work_Request</name>
     </recordTypes>
     <recordTypes>
-        <label>Marketing/CCE厨师演示申请</label>
+        <label>厨师演示申请</label>
         <name>CN_Marketing_CCE_Chef_Demo_Request</name>
     </recordTypes>
     <recordTypes>
-        <label>Marketing研发申请</label>
+        <label>研发申请</label>
         <name>CN_Marketing_Development_Request</name>
     </recordTypes>
     <validationRules>

@@ -11,7 +11,7 @@
         <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Campaign.CampaignMembers$Account.CN_Customer_Journey__c</groupingColumn>
+        <groupingColumn>Campaign.CampaignMembers$Lead.ConvertedAccount.CN_Customer_Journey__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>true</showAxisLabels>
@@ -45,7 +45,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Campaign.CampaignMembers$Account.CN_Customer_Journey__c</field>
+        <field>Campaign.CampaignMembers$Lead.ConvertedAccount.CN_Customer_Journey__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Lead Conversion Rate %</name>
@@ -59,7 +59,7 @@
     </params>
     <reportType>CN_Campaign_With_Lead_Conveted_Account__c</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>

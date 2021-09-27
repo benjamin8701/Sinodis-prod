@@ -98,7 +98,9 @@ public without sharing class CN_Chef_Request_Event_Handler implements Triggers.H
                                                             CN_Chef_Request__r.RecordTypeId,
                                                             CN_Chef__c,
                                                             CN_Chef_Name__c,
-                                                            CN_Display_in_Calendar__c
+                                                            CN_Display_in_Calendar__c,
+                                                            CN_Chef_Work_Start_Date__c,
+                                                            CN_Chef_Work_End_Date__c
                                                         FROM CN_Chefs_Assigned__c 
                                                         WHERE CN_Chef_Request__c in: crIdSet
                                                         LIMIT 50000];
@@ -114,10 +116,10 @@ public without sharing class CN_Chef_Request_Event_Handler implements Triggers.H
                         evt.Type = 'Demo';
                         evt.IsAllDayEvent = true;
                         evt.Location = ca.CN_Chef_Request__r.CN_Event_Location__c;
-                        Date endDate = ca.CN_Chef_Request__r.CN_Demo_End_Date__c.addDays(-1);
+                        Date endDate = ca.CN_Chef_Work_End_Date__c.addDays(-1);
                         evt.ReminderDateTime = Datetime.newInstance(endDate.year(), endDate.month(), endDate.day(), 8, 0, 0);
-                        evt.StartDateTime = ca.CN_Chef_Request__r.CN_Demo_Start_Date__c;
-                        evt.EndDateTime = ca.CN_Chef_Request__r.CN_Demo_End_Date__c;
+                        evt.StartDateTime = ca.CN_Chef_Work_Start_Date__c;
+                        evt.EndDateTime = ca.CN_Chef_Work_End_Date__c;
                         evt.WhatId = ca.CN_Chef_Request__r.CN_Account__c == null? ca.CN_Chef_Request__r.CN_Campaign__c: ca.CN_Chef_Request__r.CN_Account__c;
                         eventList.add(evt);
 

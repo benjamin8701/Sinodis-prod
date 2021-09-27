@@ -11,18 +11,23 @@
 public without sharing class CN_Complaint_Rejected_LC_Ctrl {
     @auraEnabled
     public static Map<String, Object> updateStatusToRejected(String recordId) {
+    //public static void updateStatusToRejected(String recordId) {
 		
         List<Profile> profileList = [SELECT Id, Name FROM Profile WHERE Id=:userinfo.getProfileId() LIMIT 1];
         String myProflieName = profileList[0].Name;
         String errorMessage = '';
-
+		
         if(String.isBlank(recordId)) {
             throw new AuraHandledException(System.Label.CN_Complaint_Not_Found);
         }
+        
         Boolean hasCreatePermission = Untils.checkObjectCreatePermission('Case');
+        
         if(!hasCreatePermission) {
             throw new AuraHandledException(System.Label.CN_Complaint_No_Permission);
         }
+
+        
         List<Case> compList = [SELECT Id,
                                         CreatedById,
                                         Status
@@ -31,8 +36,9 @@ public without sharing class CN_Complaint_Rejected_LC_Ctrl {
         if(compList.isEmpty()) {
             throw new AuraHandledException(System.Label.CN_Complaint_Not_Found);
         }
-
+		
         Case caseToUpdate = compList[0];
+        
         if( Constants.CN_CA_STATUS_ASSIGNED.equals(caseToUpdate.Status)
             && (Constants.CN_PROFILE_NAME_CS.equals(myProflieName) || Constants.CN_PROFILE_NAME_QA.equals(myProflieName) || Constants.CN_PROFILE_NAME_ADMIN.equals(myProflieName))) 
         {
@@ -41,15 +47,22 @@ public without sharing class CN_Complaint_Rejected_LC_Ctrl {
         }else{
             throw new AuraHandledException(System.Label.CN_Complaint_Can_Not_Rejected);
         }
+
         try{
+            system.debug('here1');
         	update caseToUpdate;    
         }catch(exception ex){
             throw new AuraHandledException(ex.getMessage());
         }
+        system.debug('here2');
+        
         
         return new Map<String, Object>{
-            'errorMessage' => errorMessage            
+            //'errorMessage' => errorMessage            
+            'errorMessage' => 'hello'            
         };
+		
+  
     }
     
 }

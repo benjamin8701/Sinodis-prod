@@ -1377,10 +1377,10 @@ Unique Id</description>
         <columns>CN_Total_Reminder_Amount__c</columns>
         <columns>CN_Payment_Schedule__c</columns>
         <columns>CN_Comments__c</columns>
-        <columns>CN_Overdue_10_Display__c</columns>
-        <columns>CN_Overdue_30_Display__c</columns>
-        <columns>CN_Overdue_60_Display__c</columns>
-        <columns>CN_Overdue_90_Display__c</columns>
+        <columns>CN_Overdue_10_SAP__c</columns>
+        <columns>CN_Overdue_30_SAP__c</columns>
+        <columns>CN_Overdue_60_SAP__c</columns>
+        <columns>CN_Overdue_60_Up_SAP__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>RECORDTYPE</field>

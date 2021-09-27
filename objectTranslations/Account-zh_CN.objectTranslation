@@ -2505,6 +2505,10 @@
         <name>CN_Account_Status</name>
     </quickActions>
     <quickActions>
+        <label><!-- Account Type --></label>
+        <name>CN_Account_Type</name>
+    </quickActions>
+    <quickActions>
         <aspect>Master</aspect>
         <label>申请变更</label>
         <name>CN_Account_Update_Request</name>
