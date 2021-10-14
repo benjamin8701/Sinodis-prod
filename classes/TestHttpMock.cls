@@ -14,7 +14,10 @@ global class TestHttpMock implements HttpCalloutMock {
         res.setHeader('Content-Type', 'application/json');
         String url = req.getEndpoint();
         System.debug(url);
-        if(url.contains('SO')){
+        if(url.contains('gaode')){
+            res.setBody('{"status":"1","info":"OK","infocode":"10000","count":"1","geocodes":[{"formatted_address":"辽宁省大连市沙河口区星巴克咖啡","country":"中国","province":"辽宁省","citycode":"0411","city":"大连市","district":"沙河口区","township":[],"neighborhood":{"name":[],"type":[]},"building":{"name":[],"type":[]},"adcode":"210204","street":[],"number":[],"location":"121.544772,38.884784","level":"兴趣点"}]}');
+            res.setStatusCode(200);
+        } else if(url.contains('SO')){
             if(url.contains('200')) {
                 if(url.contains('SOE')){
                     res.setBody('{"CN_Up_Code__c": "00001","CN_Overall_Status__c": "A", "CN_Rejection_Status__c": "B","CN_Delivery_Status__c": "C","CN_Credit_Status__c": "","CN_Overall_Blocked_Status__c": "","CN_Sync_Status__c": "E","CN_Sync_Error_Message__c": "AAAAAAA","Sales_Order_Item__r": [ {"CN_Up_Code__c": "000011","CN_DN_Number__c": "1234567891","CN_Overall_Status__c": "A","CN_Delilvery_Status__c": "B"}, {"CN_Up_Code__c": "000012","CN_DN_Number__c": "1234567892","CN_Overall_Status__c": "B","CN_Delilvery_Status__c": "C"}]}');

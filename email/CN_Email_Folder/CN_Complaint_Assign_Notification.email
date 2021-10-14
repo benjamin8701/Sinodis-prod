@@ -1,23 +1,31 @@
-投诉({!Case.CaseNumber})已分配给您，
+投诉{!Case.CaseNumber}已提交:
+
+客户名称:{!Case.CN_Customer_Name__c}
+客户代码:{!Case.CN_Customer_Code__c}
+销售办公室:{!Case.CN_Sales_Office__c}
+投诉原因:{!Case.Reason}
+
 请点击以下链接
 
 {!Case.Link}
 
-查看额外信息。
-
-
+查看额外信息
 谢谢，
 Salesforce
-
 ------------------------English Version Scroll Down------------------------
-The complaint ({!Case.CaseNumber})  has been assigned to you.
+
+The complaint {!Case.CaseNumber} has been submitted: 
+
+Customer Name: {!Case.CN_Customer_Name__c}
+Customer Code: {!Case.CN_Customer_Code__c}
+Sales Office: {!Case.CN_Sales_Office__c}
+Complaint Reason: {!Case.Reason}
+
 Please click the following link
 
 {!Case.Link}
 
-to view additional information. 
-
-
+to view additional information.
 
 Thank you,
 Salesforce

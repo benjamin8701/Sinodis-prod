@@ -11,7 +11,7 @@
         <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>false</expandOthers>
-        <groupingColumn>Campaign.Campaign_Products__r.Sample_Products__r$CN_Current_Status__c</groupingColumn>
+        <groupingColumn>Campaign.Campaign_Products__r.Sample_Products__r$CN_Customer_Feedback__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>true</showAxisLabels>
@@ -48,7 +48,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Campaign.Campaign_Products__r.Sample_Products__r$CN_Current_Status__c</field>
+        <field>Campaign.Campaign_Products__r.Sample_Products__r$CN_Customer_Feedback__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Product Sampling Feedback</name>

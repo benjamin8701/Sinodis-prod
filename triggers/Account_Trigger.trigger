@@ -8,7 +8,7 @@
  * Create Date    : 2021-04-29
  * Modify History : 
  **************************************************************************************************/
-trigger Account_Trigger on Account (before insert, after insert, before update,before delete) {
+trigger Account_Trigger on Account (before insert, after insert, after update, before update,before delete) {
     if(Untils.isTriggerEnabled() && Constants.ACCOUNT_TRIGGER_ON) {
         Triggers triggersObj = new Triggers();
         if(Context.ApplyTo(Constants.CN_Code) && Constants.CN_ACCOUNT_TRIGGER_ON) {
@@ -31,6 +31,7 @@ trigger Account_Trigger on Account (before insert, after insert, before update,b
             }
             if(Constants.CN_ACCOUNT_GENERATE_DOCUMENTS_HANDLER_TRIGGER_ON) {
                 triggersObj.bind(Triggers.Evt.AfterInsert, new CN_Account_Generate_Documents_Handler());
+                triggersObj.bind(Triggers.Evt.AfterUpdate, new CN_Account_Generate_Documents_Handler());
             }
             if(Constants.CN_ACCOUNT_ADDRESS_CHANGE_HANDLER_TRIGGER_ON) {
                 triggersObj.bind(Triggers.Evt.BeforeInsert, new CN_Account_Address_Change_Handler());

@@ -528,6 +528,17 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>CN_Indirect_Account_TEXT__c</fullName>
+        <externalId>false</externalId>
+        <label>Indirect Account Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Internal_Contract_Number__c</fullName>
         <caseSensitive>false</caseSensitive>
         <externalId>true</externalId>
@@ -538,6 +549,19 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Internal_Employee__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Internal Employee</label>
+        <referenceTo>CN_Internal_Employee__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>CN_Invoice_Submission_Date__c</fullName>
@@ -563,10 +587,12 @@
         <fullName>CN_Payment_Date__c</fullName>
         <externalId>false</externalId>
         <label>Payment Date</label>
+        <length>255</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Date</type>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Payment_Term__c</fullName>
@@ -767,7 +793,7 @@
     <fields>
         <fullName>CN_Rebate_Period1__c</fullName>
         <externalId>false</externalId>
-        <label>Rebate Period1</label>
+        <label>Rebate 1</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -807,7 +833,7 @@
     <fields>
         <fullName>CN_Rebate_Period2__c</fullName>
         <externalId>false</externalId>
-        <label>Rebate Period2</label>
+        <label>Rebate 2</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -847,7 +873,7 @@
     <fields>
         <fullName>CN_Rebate_Period3__c</fullName>
         <externalId>false</externalId>
-        <label>Rebate Period3</label>
+        <label>Rebate 3</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -887,7 +913,7 @@
     <fields>
         <fullName>CN_Rebate_Period__c</fullName>
         <externalId>false</externalId>
-        <label>Rebate Period</label>
+        <label>Rebate</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -1067,6 +1093,16 @@
                     <default>false</default>
                     <label>WS</label>
                 </value>
+                <value>
+                    <fullName>BSI</fullName>
+                    <default>false</default>
+                    <label>BSI</label>
+                </value>
+                <value>
+                    <fullName>Gerard</fullName>
+                    <default>false</default>
+                    <label>Gerard</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -1106,6 +1142,11 @@
                     <fullName>Chengdu</fullName>
                     <default>false</default>
                     <label>Chengdu</label>
+                </value>
+                <value>
+                    <fullName>Tianjin</fullName>
+                    <default>false</default>
+                    <label>Tianjin</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1506,7 +1547,15 @@
         <picklistValues>
             <picklist>CN_Sales_Channel__c</picklist>
             <values>
+                <fullName>BSI</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>DS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gerard</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -1538,6 +1587,10 @@
             </values>
             <values>
                 <fullName>Shenzhen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tianjin</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

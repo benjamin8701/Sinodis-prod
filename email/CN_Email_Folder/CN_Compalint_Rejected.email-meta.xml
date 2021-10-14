@@ -4,7 +4,7 @@
     <encodingKey>UTF-8</encodingKey>
     <name>CN_Compalint_Rejected</name>
     <style>none</style>
-    <subject>客户{!Case.Account}的投诉({!Case.CaseNumber})已被拒绝 / Complaint ({!Case.CaseNumber}) for Customer {!Case.Account} has been rejected..</subject>
+    <subject>{!Case.CN_Sales_Office__c}-{!Case.Account}的投诉({!Case.CaseNumber})已被拒绝/ Complaint {!Case.CaseNumber} for {!Case.CN_Sales_Office__c} - {!Case.Account} has been rejected.</subject>
     <type>text</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

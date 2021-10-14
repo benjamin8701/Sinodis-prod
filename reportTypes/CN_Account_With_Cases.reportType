@@ -1511,6 +1511,56 @@
             <field>CN_During_Days__c</field>
             <table>Account.Cases</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Base_Unit_of_Measure__c</field>
+            <table>Account.Cases</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Please_Confirm__c</field>
+            <table>Account.Cases</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Submit_Datetime__c</field>
+            <table>Account.Cases</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Resolve_Comments__c</field>
+            <table>Account.Cases</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Resolve_Description__c</field>
+            <table>Account.Cases</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Reject_Reason__c</field>
+            <table>Account.Cases</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_If_Creator_Equals_Account_Sales__c</field>
+            <table>Account.Cases</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Reject_Datetime__c</field>
+            <table>Account.Cases</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Customer_Name__c</field>
+            <table>Account.Cases</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Is_My_Case__c</field>
+            <table>Account.Cases</table>
+        </columns>
         <masterLabel>Complaints</masterLabel>
     </sections>
 </ReportType>

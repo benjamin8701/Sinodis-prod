@@ -46,9 +46,7 @@ public without sharing class CN_Complaint_Populate_Status_Handler implements Tri
         }
         
         for(Case comp : complaintList){
-            if(ownerIdSet_Group.contains(comp.OwnerId)){
-                comp.Status = Constants.CN_CA_STATUS_ASSIGNED;
-            }else if(!ownerIdSet_Group.contains(comp.OwnerId)
+            if(!ownerIdSet_Group.contains(comp.OwnerId)
                     && ownerIdSet_Group.contains(((Case)Trigger.OldMap.get(comp.Id)).OwnerId)
                     && !Constants.CN_CA_STATUS_REJECTED.equals(comp.Status)
                     && !Constants.CN_CA_STATUS_RESOLVED.equals(comp.Status)){

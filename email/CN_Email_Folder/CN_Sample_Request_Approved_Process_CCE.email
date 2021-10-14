@@ -13,10 +13,6 @@
   <td>{!relatedTo.CN_Account_Name__r.CN_Customer_Code__c}</td>
   </tr>
   <tr>
-  <td>创建人:</td>
-  <td>{!relatedTo.CN_Creator_Name__c}</td>
-  </tr>
-  <tr>
   <td>分装订单类型:</td>
   <td>{!relatedTo.CN_Order_Type_for_Wholepack__c}</td>
   </tr>
@@ -31,6 +27,10 @@
   <tr>
   <td>送样方式:</td>
   <td>{!relatedTo.CN_Sample_Delivery_Method__c}</td>
+  </tr>
+  <tr>
+  <td>创建人:</td>
+  <td>{!relatedTo.CN_Creator_Name__c}</td>
   </tr>
   <tr>
   <td>收货地址:</td>
@@ -55,10 +55,6 @@
   <td>{!relatedTo.CN_Account_Name__r.CN_Customer_Code__c}</td>
   </tr>
   <tr>
-  <td>Creator:</td>
-  <td>{!relatedTo.CN_Creator_Name__c}</td>
-  </tr>
-  <tr>
   <td>Order Type for Repack:</td>
   <td>{!relatedTo.CN_Order_Type_for_Wholepack__c}</td>
   </tr>
@@ -73,6 +69,10 @@
   <tr>
   <td>Sample Delivery Method:</td>
   <td>{!relatedTo.CN_Sample_Delivery_Method__c}</td>
+  </tr>
+  <tr>
+  <td>Creator:</td>
+  <td>{!relatedTo.CN_Creator_Name__c}</td>
   </tr>
   <tr>
   <td>Delivery Address:</td>

@@ -3,6 +3,9 @@
     <doesSendEmailToMembers>true</doesSendEmailToMembers>
     <name>Chef Manager Queue</name>
     <queueMembers>
+        <users>
+            <user>chef.manager1@accenture.com</user>
+        </users>
     </queueMembers>
     <queueSobject>
         <sobjectType>CN_Chef_Request__c</sobjectType>

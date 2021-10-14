@@ -3058,11 +3058,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>CN_Chefs_Assigned__c.CN_Chef_Working_Days_Except_Off__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>CN_Chefs_Assigned__c.CN_Chef_Working_Days__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3168,6 +3163,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Comment__c.CN_Comment__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Comment__c.CN_Is_Finance__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Contract__c.CN_Affiliates__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3258,7 +3263,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Contract__c.CN_Indirect_Account_TEXT__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Contract__c.CN_Internal_Contract_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Contract__c.CN_Internal_Employee__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3649,6 +3664,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Customer_Status_Trend__c.CN_Execution_Time__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Customer_Status_Trend__c.CN_Is_Populated_Owner__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6128,7 +6148,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Campaign.CN_Customer_Category__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Campaign.CN_Execution_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.CN_Is_Chef_Creator__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6353,6 +6383,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.CN_Base_Unit_of_Measure__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.CN_Brand__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -6373,6 +6408,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.CN_Customer_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.CN_Duration__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -6388,12 +6428,47 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.CN_If_Creator_Equals_Account_Sales__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_Is_My_Case__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_Please_Confirm__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.CN_QA_Compliant_Number__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.CN_Reject_Datetime__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_Reject_Reason__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.CN_Rejected_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_Resolve_Comments__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_Resolve_Description__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6434,6 +6509,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.CN_Sales_Person__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_Submit_Datetime__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -7128,6 +7208,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.CN_Is_Assigned_to_Me__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.CN_Is_Manual__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -7284,6 +7369,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Product2.CN_Base_Unit_of_Measure__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Product2.CN_Brand_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

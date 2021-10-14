@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <sharingOwnerRules>
+        <fullName>CN_CASE_CS_QUEUE_SHARE_TO_SERVICE</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CN_CASE_CS_QUEUE_SHARE_TO_SERVICE</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_Service</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <queue>CN_CS_Queue</queue>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CN_CASE_QA_QUEUE_SHARE_TO_SERVICE</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CN_CASE_QA_QUEUE_SHARE_TO_SERVICE</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_Service</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <queue>CN_QA_Queue</queue>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CN_CASE_SHARE_TO_SERVICE</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CN_CASE_SHARE_TO_SERVICE</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_Service</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_China</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
         <fullName>CN_Complaint_All_To_CD</fullName>
         <accessLevel>Read</accessLevel>
         <label>CN_Complaint_All_To_CD</label>

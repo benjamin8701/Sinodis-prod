@@ -102,7 +102,7 @@
         <name>CN_NetDueDate_is_Null__c</name>
     </fields>
     <fields>
-        <label><!-- Net Due Date --></label>
+        <label><!-- Actual Payment Date --></label>
         <name>CN_Net_Due_Date__c</name>
     </fields>
     <fields>

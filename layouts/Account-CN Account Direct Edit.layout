@@ -326,9 +326,13 @@
     </relatedLists>
     <relatedLists>
         <fields>CASES.CASE_NUMBER</fields>
+        <fields>ACCOUNT.NAME</fields>
         <fields>CASES.SUBJECT</fields>
-        <fields>CASES.CREATED_DATE</fields>
-        <fields>CASES.PRIORITY</fields>
+        <fields>CASES.STATUS</fields>
+        <fields>CASES.REASON</fields>
+        <fields>CN_Complaint_Date__c</fields>
+        <fields>CN_Resolve_Reason__c</fields>
+        <fields>CN_Resolved_Date__c</fields>
         <relatedList>Case.CN_End_Customer__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -474,6 +478,15 @@
         <fields>CORE.USERS.FULL_NAME</fields>
         <fields>TASK.LAST_UPDATE</fields>
         <relatedList>RelatedHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>CN_Comment__c</fields>
+        <fields>CREATED_DATE</fields>
+        <fields>CREATEDBY_USER</fields>
+        <relatedList>CN_Comment__c.CN_Customer_Name__c</relatedList>
+        <sortField>CREATED_DATE</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

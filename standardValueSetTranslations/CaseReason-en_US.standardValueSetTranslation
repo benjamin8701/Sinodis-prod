@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <valueTranslation>
-        <masterLabel>Customer</masterLabel>
-        <translation><!-- Customer --></translation>
-    </valueTranslation>
-    <valueTranslation>
         <masterLabel>Customer Service</masterLabel>
         <translation><!-- Customer Service --></translation>
     </valueTranslation>
     <valueTranslation>
-        <masterLabel>Logistics</masterLabel>
-        <translation><!-- Logistics --></translation>
-    </valueTranslation>
-    <valueTranslation>
         <masterLabel>Quality</masterLabel>
         <translation><!-- Quality --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Supply Chain</masterLabel>
+        <translation><!-- Supply Chain --></translation>
     </valueTranslation>
 </StandardValueSetTranslation>

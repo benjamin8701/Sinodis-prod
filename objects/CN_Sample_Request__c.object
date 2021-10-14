@@ -207,7 +207,7 @@
         <fullName>CN_Approver1_CCE__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Approver1 CCE</label>
+        <label>Approver1 Manager</label>
         <referenceTo>User</referenceTo>
         <relationshipName>Sample_Requests</relationshipName>
         <required>false</required>

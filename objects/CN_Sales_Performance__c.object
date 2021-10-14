@@ -769,6 +769,7 @@ SAP传的是编号</description>
     <listViews>
         <fullName>All_Sales_Target</fullName>
         <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
         <columns>CN_Target_Year__c</columns>
         <columns>CN_Target_Month__c</columns>
         <columns>CN_Target_Sales_Person__c</columns>

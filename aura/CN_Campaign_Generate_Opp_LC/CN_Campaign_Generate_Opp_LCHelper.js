@@ -2,15 +2,25 @@
     
     getPicklistValues: function(component, event) {
         var action = component.get("c.getStageFieldValue");
+        var campId = component.get("v.recordId");
+        action.setParams({
+            campaignId : campId
+        });
         action.setCallback(this, function(response) {
             var state = response.getState();
             if (state === "SUCCESS") {
-                var result = response.getReturnValue();
+                let returnValue = response.getReturnValue();
+                var result = returnValue["options"];
                 var fieldMap = [];
                 for(var key in result){
                     fieldMap.push({key: key, value: result[key]});
                 }
                 component.set("v.fieldMap", fieldMap);
+
+                let isChefCreateVIP = returnValue["isChefCreateVIP"];
+                if(isChefCreateVIP) {
+                    component.set("v.opportunity.CloseDate", returnValue["endDate"]);
+                }
             }
         });
         $A.enqueueAction(action);
@@ -40,6 +50,7 @@
         var opportunity = component.get("v.opportunity");
         var campId = component.get("v.recordId");
         console.log("campId====: " + JSON.stringify(campId));
+        console.log("campId====: " + JSON.stringify(opportunity));
         var action = component.get("c.generateOpp");
         action.setParams({
             oppObj : opportunity,
@@ -47,6 +58,8 @@
         });
         action.setCallback(this,function(response){
             var state = response.getState();
+            console.log(2);
+            console.log(state);
             if(state === "SUCCESS"){
                 var successMeg = $A.get("{!$Label.c.CN_Generate_Opportunity_Success}");
                 alert(successMeg);
@@ -60,6 +73,7 @@
                 }
             }
         });       
+        console.log(1);
         $A.enqueueAction(action);
     }
 })

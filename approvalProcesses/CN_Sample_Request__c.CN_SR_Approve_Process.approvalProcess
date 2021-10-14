@@ -24,7 +24,7 @@
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>CCE</label>
+        <label>Manager</label>
         <name>CN_CCE</name>
     </approvalStep>
     <approvalStep>
@@ -41,6 +41,10 @@
                 <field>CN_Sample_Request__c.CN_Sample_Request_Cost__c</field>
                 <operation>greaterThan</operation>
                 <value>CNY 500</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>CN_Sample_Request__c.CN_Approver2_Channel_Leader__c</field>
+                <operation>notEqual</operation>
             </criteriaItems>
         </entryCriteria>
         <label>Channel Leader</label>
@@ -101,10 +105,6 @@ NOT(ISBLANK(CN_Approver1_CCE__c  ) )
     <label>CN_SR_Approve_Process</label>
     <processOrder>1</processOrder>
     <recallActions>
-        <action>
-            <name>CN_Sample_Request_Approved_Cancelled</name>
-            <type>Alert</type>
-        </action>
         <action>
             <name>CN_SR_Update_Status_Recalled</name>
             <type>FieldUpdate</type>

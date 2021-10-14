@@ -28,6 +28,9 @@
         <field>Case.CN_Accepted_Date__c</field>
     </columns>
     <columns>
+        <field>Case.CN_Resolved_Date__c</field>
+    </columns>
+    <columns>
         <field>STATUS</field>
     </columns>
     <currency>CNY</currency>
@@ -37,7 +40,14 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Accepted,Resolved,Closed</value>
+            <value>Resolved,Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.CN_Resolve_Reason__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
@@ -47,7 +57,7 @@
         <field>Case.CN_During_Days__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name># Complaint By Accepted Date</name>
+    <name># Complaint By Resolved Date</name>
     <params>
         <name>units</name>
         <value>h</value>

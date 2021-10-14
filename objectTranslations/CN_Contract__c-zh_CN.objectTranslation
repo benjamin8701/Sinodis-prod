@@ -194,13 +194,22 @@
         <name>CN_Guarantor__c</name>
     </fields>
     <fields>
-        <label>间接客户名称</label>
+        <label><!-- Indirect Account Name --></label>
         <name>CN_Indirect_Account_Name__c</name>
         <relationshipLabel><!-- Contracts (Indirect Account Name) --></relationshipLabel>
     </fields>
     <fields>
+        <label>间接客户名称</label>
+        <name>CN_Indirect_Account_TEXT__c</name>
+    </fields>
+    <fields>
         <label>内部合同编号</label>
         <name>CN_Internal_Contract_Number__c</name>
+    </fields>
+    <fields>
+        <label>销售人员</label>
+        <name>CN_Internal_Employee__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
     </fields>
     <fields>
         <label>提交发票日</label>
@@ -327,7 +336,7 @@
         <name>CN_Rebate_End_Date__c</name>
     </fields>
     <fields>
-        <label>返利周期1</label>
+        <label>返利1</label>
         <name>CN_Rebate_Period1__c</name>
         <picklistValues>
             <masterLabel>半年度</masterLabel>
@@ -351,7 +360,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label>返利周期2</label>
+        <label>返利2</label>
         <name>CN_Rebate_Period2__c</name>
         <picklistValues>
             <masterLabel>半年度</masterLabel>
@@ -375,7 +384,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label>返利周期3</label>
+        <label>返利3</label>
         <name>CN_Rebate_Period3__c</name>
         <picklistValues>
             <masterLabel>半年度</masterLabel>
@@ -399,7 +408,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label>返利周期</label>
+        <label>返利</label>
         <name>CN_Rebate_Period__c</name>
         <picklistValues>
             <masterLabel>半年度</masterLabel>
@@ -482,8 +491,16 @@
         <label>销售渠道</label>
         <name>CN_Sales_Channel__c</name>
         <picklistValues>
+            <masterLabel>BSI</masterLabel>
+            <translation><!-- BSI --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>DS</masterLabel>
             <translation><!-- DS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gerard</masterLabel>
+            <translation><!-- Gerard --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>KA</masterLabel>
@@ -517,6 +534,10 @@
             <masterLabel>Shenzhen</masterLabel>
             <translation><!-- Shenzhen --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>Tianjin</masterLabel>
+            <translation><!-- Tianjin --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label>所有者</label>
@@ -542,7 +563,7 @@
             <section>Account</section>
         </sections>
         <sections>
-            <label>返利条件</label>
+            <label>有条件返利</label>
             <section>Conditional Rebate</section>
         </sections>
         <sections>

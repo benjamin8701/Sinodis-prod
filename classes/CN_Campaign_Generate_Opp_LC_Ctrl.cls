@@ -33,7 +33,7 @@ public without sharing class CN_Campaign_Generate_Opp_LC_Ctrl {
     }
  
     @AuraEnabled 
-    public static Map<String, String> getStageFieldValue() {
+    public static Map<String, Object> getStageFieldValue(Id campaignId) {
         Map<String, String> options = new Map<String, String>();
         
         Schema.DescribeFieldResult fieldResult = Opportunity.StageName.getDescribe();
@@ -43,7 +43,19 @@ public without sharing class CN_Campaign_Generate_Opp_LC_Ctrl {
             
             options.put(p.getValue(), p.getLabel());
         }
-        return options;
+
+        Boolean isChefCreateVIP = false;
+        Date endDate = null;
+        List<Campaign> campaignList = [SELECT Id, CN_Is_Chef_Creator__c, CN_VIP__c, EndDate FROM Campaign WHERE Id =: campaignId];
+        if(campaignList.size() > 0) {
+            isChefCreateVIP = campaignList[0].CN_Is_Chef_Creator__c && campaignList[0].CN_VIP__c? true: false;
+            endDate = campaignList[0].EndDate.addMonths(1);
+        }
+        return new Map<String, Object>{
+            'options' => options,
+            'isChefCreateVIP' => isChefCreateVIP,
+            'endDate' => endDate
+        };
     }
 
     public static void createOpp(Opportunity oppObj, String campId,String campName){

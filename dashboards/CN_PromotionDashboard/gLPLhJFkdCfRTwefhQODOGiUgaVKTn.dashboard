@@ -243,9 +243,8 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
                 <chartSummary>
-                    <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>CN_Promotion__c.CN_Is_Active__c</column>
+                    <column>RowCount</column>
                 </chartSummary>
                 <componentType>Bar</componentType>
                 <dashboardFilterColumns>
@@ -332,7 +331,7 @@
     </dashboardGridLayout>
     <dashboardType>MyTeamUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>anqi.huang@accenture.com</runningUser>
+    <runningUser>c.qiu@accenture.com</runningUser>
     <textColor>#000000</textColor>
     <title>Promotion Dashboard</title>
     <titleColor>#000000</titleColor>

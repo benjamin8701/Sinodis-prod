@@ -416,12 +416,8 @@
             <section>Account Information</section>
         </sections>
         <sections>
-            <label><!-- Accounting Transactions --></label>
-            <section>Accounting Transactions</section>
-        </sections>
-        <sections>
-            <label><!-- Accumulative Unpaid Amount --></label>
-            <section>Accumulative Unpaid Amount</section>
+            <label><!-- Accounting Traction --></label>
+            <section>Accounting Traction</section>
         </sections>
         <sections>
             <label><!-- Custom Links --></label>
@@ -438,6 +434,10 @@
         <sections>
             <label><!-- Reminder --></label>
             <section>Reminder</section>
+        </sections>
+        <sections>
+            <label><!-- Sales History --></label>
+            <section>Sales History</section>
         </sections>
     </layouts>
     <recordTypes>

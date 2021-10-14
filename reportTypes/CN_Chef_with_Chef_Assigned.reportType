@@ -268,11 +268,6 @@
             <field>CN_Chef_Confirmed_Date__c</field>
             <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CN_Chef_Working_Days_Except_Off__c</field>
-            <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
-        </columns>
         <masterLabel>Chefs Assigneds</masterLabel>
     </sections>
 </ReportType>

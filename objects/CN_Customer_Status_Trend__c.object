@@ -208,6 +208,16 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>CN_Is_Populated_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>OwnerId = CN_Customer_Owner__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Populated Owner</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_License_Name_CN__c</fullName>
         <externalId>false</externalId>
         <label>License Name CN</label>

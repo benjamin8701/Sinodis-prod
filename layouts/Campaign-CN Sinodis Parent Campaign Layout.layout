@@ -27,6 +27,10 @@
                 <behavior>Edit</behavior>
                 <field>CN_New_Product_Launch__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Customer_Category__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -345,7 +345,7 @@
     <fields>
         <fullName>CN_Net_Due_Date__c</fullName>
         <externalId>false</externalId>
-        <label>Net Due Date</label>
+        <label>Actual Payment Date</label>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
@@ -441,7 +441,7 @@
             <operation>equals</operation>
             <value>1</value>
         </filters>
-        <label>All Net Due Date Is Null</label>
+        <label>All Actual payment date Is Blank</label>
     </listViews>
     <nameField>
         <displayFormat>PH-{0000000000}</displayFormat>

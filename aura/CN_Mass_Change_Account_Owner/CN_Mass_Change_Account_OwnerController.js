@@ -7,7 +7,7 @@
                 "CN_Customer_Code__c",
                 "Ownerid",
                 "CN_Sinodis_Finance_AR__c",
-                "Type",
+                "CN_Route_To_Market__c",
                 "CN_Account_Status__c",
                 "CN_Sync_Status__c"
             ]

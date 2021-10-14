@@ -26,7 +26,7 @@
                 <field>CN_Customer_Contract_Number__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>CN_Contract_Type__c</field>
             </layoutItems>
         </layoutColumns>
@@ -34,10 +34,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CN_Contract_Status__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Sales_People__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -72,7 +68,11 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>CN_Indirect_Account_Name__c</field>
+                <field>CN_Indirect_Account_TEXT__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Internal_Employee__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -325,7 +325,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>CN_Conditional_Rebate_Note3__c</field>
+                <field>CN_Rebate_Conditions3__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -342,7 +342,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>CN_Rebate_Conditions3__c</field>
+                <field>CN_Conditional_Rebate_Note3__c</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
@@ -379,9 +379,9 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>Edit</actionName>
+            <actionName>Clone</actionName>
             <actionType>StandardButton</actionType>
-            <sortOrder>0</sortOrder>
+            <sortOrder>1</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>Delete</actionName>
@@ -389,9 +389,9 @@
             <sortOrder>2</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Clone</actionName>
+            <actionName>Edit</actionName>
             <actionType>StandardButton</actionType>
-            <sortOrder>1</sortOrder>
+            <sortOrder>0</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedLists>

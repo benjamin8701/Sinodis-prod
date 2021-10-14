@@ -2,28 +2,36 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>CN_Acc_Cal_LatestOrder_SCH_Test</members>
+        <members>CN_Acc_Cal_LatestOrder_SCH_Test</members>
+        <members>CN_Acc_Send_To_SAP_LC_Ctrl_Test</members>
         <members>CN_Acc_Send_To_SAP_LC_Ctrl_Test</members>
         <members>CN_Account_Address_Change_Handler</members>
         <members>CN_Account_Approve_Aging_Handler</members>
+        <members>CN_Account_Approve_Aging_Handler_Test</members>
         <members>CN_Account_Approve_Aging_Handler_Test</members>
         <members>CN_Account_Calculate_LatestOrder_Batch</members>
         <members>CN_Account_Calculate_LatestOrder_SCH</members>
         <members>CN_Account_Change_Request_LCController</members>
         <members>CN_Account_Change_Request_LCCtrl_Test</members>
         <members>CN_Account_Gaode_Geolocation_Batch</members>
+        <members>CN_Account_Gaode_Geolocation_Batch_Test</members>
         <members>CN_Account_Generate_Contact_Handler</members>
         <members>CN_Account_Generate_Documents_Handler</members>
         <members>CN_Account_Generate_ShipTo_Handler</members>
         <members>CN_Account_New_ConRequest_LC_Ctrl_Test</members>
+        <members>CN_Account_New_ConRequest_LC_Ctrl_Test</members>
         <members>CN_Account_New_Contact_Request_LC_Ctrl</members>
+        <members>CN_Account_New_ShipTo_LC_Ctrl_Test</members>
         <members>CN_Account_New_ShipTo_LC_Ctrl_Test</members>
         <members>CN_Account_New_ShipTo_Request_LC_Ctrl</members>
         <members>CN_Account_Populate_Approver_Handler</members>
         <members>CN_Account_Populate_Fields_Handler</members>
         <members>CN_Account_Prevent_Delete_Handler</members>
         <members>CN_Account_Prevent_Delete_Handler_Test</members>
+        <members>CN_Account_Prevent_Delete_Handler_Test</members>
         <members>CN_Account_Send_To_SAP_LC_Ctrl</members>
         <members>CN_Account_TM_REPORT_Handler</members>
+        <members>CN_Account_TM_REPORT_Handler_Test</members>
         <members>CN_BU_Prevent_Delete_Handler</members>
         <members>CN_BU_Prevent_Delete_Handler_Test</members>
         <members>CN_BU_Send_To_SAP_LC_Ctrl</members>
@@ -41,15 +49,20 @@
         <members>CN_CR_Approve_Aging_Handler</members>
         <members>CN_CR_Change_RecordType_Handler</members>
         <members>CN_CR_Change_RecordType_Handler_Test</members>
+        <members>CN_CR_Change_RecordType_Handler_Test</members>
         <members>CN_CR_Check_Fields_Change_Handler</members>
+        <members>CN_CR_Check_Fields_Change_Handler_Test</members>
         <members>CN_CR_Check_Fields_Change_Handler_Test</members>
         <members>CN_CR_Check_Fields_Handler</members>
         <members>CN_CR_Check_Fields_Handler_Test</members>
+        <members>CN_CR_Check_Fields_Handler_Test</members>
         <members>CN_CR_Contact_Type_Check_Handler</members>
+        <members>CN_CR_Contact_Type_Check_Handler_Test</members>
         <members>CN_CR_Generate_Contact_Handler</members>
         <members>CN_CR_Generate_ShipTo_Handler</members>
         <members>CN_CR_Populate_Approver_Handler</members>
         <members>CN_CR_Prevent_Delete_Handler</members>
+        <members>CN_CR_Prevent_Delete_Handler_Test</members>
         <members>CN_CR_Prevent_Delete_Handler_Test</members>
         <members>CN_CR_Prevent_Duplicate_CR_Handler</members>
         <members>CN_CR_Send_To_SAP_LC_Ctrl</members>
@@ -59,19 +72,29 @@
         <members>CN_CR_Write_Back_To_Contact_Handler</members>
         <members>CN_CR_Write_Back_To_Handler_Test</members>
         <members>CN_CR_Write_Back_To_Shipto_Handler</members>
+        <members>CN_CST_Populate_Owner_Batch</members>
+        <members>CN_CST_Populate_Owner_Batch_Test</members>
+        <members>CN_CST_Populate_Owner_SCH</members>
         <members>CN_CTA_Approve_Aging_Handler</members>
+        <members>CN_CTA_Approve_Aging_Handler_Test</members>
         <members>CN_CTA_Approve_Aging_Handler_Test</members>
         <members>CN_CTA_Generate_CR_Handler</members>
         <members>CN_CTA_Generate_CR_Handler_Test</members>
+        <members>CN_CTA_Generate_CR_Handler_Test</members>
         <members>CN_CTA_Populate_Account_Handler</members>
         <members>CN_CTA_Populate_Approver_Hander</members>
+        <members>CN_CTA_Populate_Approver_Hander_Test</members>
         <members>CN_CTA_Populate_Approver_Hander_Test</members>
         <members>CN_CTA_Populate_Fields_Handler</members>
         <members>CN_CTA_Populate_FinanceMDM_Handler</members>
         <members>CN_CTA_Prevent_Duplicate_CR_Handler</members>
         <members>CN_Campaign_Generate_Opp_LC_Ctrl</members>
+        <members>CN_Campaign_Generate_Opp_LC_Ctrl_Test</members>
+        <members>CN_Case_Populate_Status_Handler_Test</members>
+        <members>CN_Chef_Req_Assign_Approver_Handler_Test</members>
         <members>CN_Chef_Request_Assign_Approver_Handler</members>
         <members>CN_Chef_Request_Chef_Assign_Handler</members>
+        <members>CN_Chef_Request_Chef_Assign_Handler_Test</members>
         <members>CN_Chef_Request_Event_Handler</members>
         <members>CN_Chef_Request_Prevent_Delete_Handler</members>
         <members>CN_Chef_Request_Set_Acc_Handler</members>
@@ -81,29 +104,39 @@
         <members>CN_Complaint_Prevent_Delete_Handler</members>
         <members>CN_Complaint_Rejected_LC_Ctrl</members>
         <members>CN_Complaint_Resolved_LC_Ctrl</members>
-        <members>CN_Complaint_Status_Handler</members>
         <members>CN_Contact_Change_Request_LC_Ctrl</members>
         <members>CN_Contact_Prevent_Delete_Handler</members>
         <members>CN_Contact_Prevent_Delete_Handler_Test</members>
+        <members>CN_Contact_Prevent_Delete_Handler_Test</members>
         <members>CN_Contact_Type_Check_Handler</members>
+        <members>CN_Contact_Type_Check_Handler_Test</members>
         <members>CN_Contact_Update_FinAREmail_Handler</members>
         <members>CN_Contact_Write_Back_To_Lead_Handler</members>
+        <members>CN_Contact_Write_To_Lead_Handler_Test</members>
         <members>CN_Contract_Populate_Fields_Handler</members>
+        <members>CN_Contract_Populate_Fields_Handler_Test</members>
         <members>CN_Demo_Report_Copy_Handler</members>
+        <members>CN_Demo_Report_Copy_Handler_Test</members>
         <members>CN_Demo_Report_Prevent_Delete_Handler</members>
         <members>CN_Demo_Used_Product_Accumulate_Handler</members>
         <members>CN_Event_Generate_Follow_Visit_Handler</members>
         <members>CN_Event_Prevent_Delete_Handler</members>
+        <members>CN_Event_Prevent_Delete_Handler_Test</members>
         <members>CN_Group_Prevent_Delete_Handler</members>
         <members>CN_Group_Prevent_Delete_Handler_Test</members>
         <members>CN_Group_Send_To_SAP_LC_Ctrl</members>
         <members>CN_Group_Send_To_SAP_LC_Ctrl_Test</members>
         <members>CN_Lead_MKT_Assigned_Handler</members>
+        <members>CN_Lead_MKT_Assigned_Handler_Test</members>
+        <members>CN_Lead_MKT_Assigned_Handler_Test</members>
+        <members>CN_Lead_New_ConRequest_LC_Ctrl_Test</members>
         <members>CN_Lead_New_Contact_Request_LC_Ctrl</members>
         <members>CN_Lead_Owner_Changed_Custom_Notify</members>
+        <members>CN_Mass_Change_Acc_Owner_LC_Ctrl_Test</members>
         <members>CN_Mass_Change_Account_Owner_LC_Ctrl</members>
         <members>CN_Opportunity_Populate_Fields_Handler</members>
         <members>CN_OrderTreeUpsert_WS</members>
+        <members>CN_OrderTreeUpsert_WS_Test</members>
         <members>CN_OrderTreeUpsert_WS_Test</members>
         <members>CN_PromotionLI_Prevent_Delete_Handler</members>
         <members>CN_PromotionM_Prevent_Delete_Handler</members>
@@ -112,42 +145,59 @@
         <members>CN_Promotion_Prevent_Delete_Handler</members>
         <members>CN_Promotion_Publish_LC_Ctrl</members>
         <members>CN_Promotion_Validation_Handler</members>
+        <members>CN_Promotion_Validation_Handler_Test</members>
         <members>CN_QTP_Prevent_Change_Approved_Handler</members>
         <members>CN_QuoteItem_Populate_Fields_Handler</members>
+        <members>CN_QuoteItem_Populate_Handler_Test</members>
         <members>CN_QuoteItem_Prevent_Delete_Handler</members>
         <members>CN_Quote_AcceptORDeny_All_Items_LC_Ctrl</members>
+        <members>CN_Quote_Accept_All_Items_LC_Ctrl_Test</members>
+        <members>CN_Quote_Apply_LC_Ctrl</members>
         <members>CN_Quote_Apply_LC_Ctrl</members>
         <members>CN_Quote_Populate_Approver_Handler</members>
+        <members>CN_Quote_Populate_Approver_Handler</members>
         <members>CN_Quote_Populate_Fields_Handler</members>
+        <members>CN_Quote_Populate_Fields_Handler_Test</members>
         <members>CN_Quote_Prevent_Delete_Handler</members>
         <members>CN_Quote_Send_To_SAP_LC_Ctrl</members>
+        <members>CN_Quote_Send_To_SAP_LC_Ctrl_Test</members>
         <members>CN_Redirect_Gaode_Map_Controller</members>
+        <members>CN_SOItem_Populate_CampaignP_Batch_Test</members>
         <members>CN_SOItem_Populate_CampaignPro_Batch</members>
         <members>CN_SOItem_Populate_CampaignPro_SCH</members>
+        <members>CN_SP_Populate_Campaign_Pro_Batch_Test</members>
         <members>CN_SP_Populate_Campaign_Product_Batch</members>
         <members>CN_SP_Populate_Campaign_Product_SCH</members>
         <members>CN_SP_Populate_Fields_Handler</members>
+        <members>CN_SP_Populate_Product_Handler_Test</members>
         <members>CN_SP_Prevent_Delete_Handler</members>
         <members>CN_SR_Generate_Event_Visit</members>
         <members>CN_SR_Populate_Fields_Handler</members>
+        <members>CN_SR_Populate_Fields_Handler_Test</members>
         <members>CN_SR_Prevent_Delete_Handler</members>
         <members>CN_ST_Send_To_SAP_LC_Ctrl</members>
         <members>CN_ST_Send_To_SAP_LC_Ctrl_Test</members>
         <members>CN_SalesPerfor_Populate_Owner_Batch</members>
+        <members>CN_SalesPerfor_Populate_Owner_Batch_Test</members>
         <members>CN_SalesPerfor_Populate_Owner_SCH</members>
         <members>CN_SalesTeam_Prevent_Delete_Handler</members>
         <members>CN_SalesTeam_Prevent_Delete_Handler_Test</members>
         <members>CN_Sales_Order_Send_LC_Ctrl</members>
         <members>CN_Sales_Order_Send_LC_Ctrl_Test</members>
         <members>CN_Sample_Product_Get_LC_Ctrl</members>
+        <members>CN_Sample_Product_Get_LC_Ctrl_Test</members>
         <members>CN_ShipTo_Prevent_Delete_Handler</members>
+        <members>CN_ShipTo_Prevent_Delete_Handler_Test</members>
         <members>CN_ShipTo_Prevent_Delete_Handler_Test</members>
         <members>CN_Shipto_Change_Request_LC_Ctrl</members>
         <members>Constants</members>
         <members>Context</members>
         <members>CustomException</members>
         <members>GaodeMapController</members>
+        <members>GaodeMapControllerTest</members>
         <members>TestDataFactory</members>
+        <members>TestDataFactory</members>
+        <members>TestHttpMock</members>
         <members>TestHttpMock</members>
         <members>Triggers</members>
         <members>Untils</members>
@@ -388,6 +438,7 @@
         <members>CN_Chefs_Assigned__c-CN Chefs Assigned Layout</members>
         <members>CN_Chefs_Assigned__c-Chefs Assigned Layout</members>
         <members>CN_City__c-City Layout</members>
+        <members>CN_Comment__c-CN Comment Layout</members>
         <members>CN_Contract__c-CN Sinodis Contract Layout</members>
         <members>CN_Credit_Term_Application__c-CN Credit Term Application Layout</members>
         <members>CN_Demo_Report_Account__c-Demo Report%28Account%29 Layout</members>
@@ -550,6 +601,7 @@
         <members>Case.CN_Complaint_Closed</members>
         <members>Case.CN_Complaint_Rejected</members>
         <members>Case.CN_Complaint_Resolved</members>
+        <members>Case.CN_Submit_Complaint</members>
         <members>Contact.CN_Contact_Update_Request</members>
         <members>Lead.CN_New_Contact_Request</members>
         <members>Quote.CN_AcceptOrDeny_All_Quote_Items</members>
@@ -578,11 +630,14 @@
         <members>CN_ChefReport/CN_Chef_Request_by_Event_type_by_Month</members>
         <members>CN_ChefReport/CN_Chef_UT</members>
         <members>CN_ChefReport/CN_Chef_requests_by_Event_Type_by_Chef</members>
+        <members>CN_ChefReport/CN_Demo_Report</members>
         <members>CN_ComplaintReport</members>
         <members>CN_ComplaintReport/CN_Complaint_By_Accepted_Date</members>
         <members>CN_ComplaintReport/CN_Complaint_Trend_by_Month_YTD</members>
+        <members>CN_ComplaintReport/CN_Complaint_by_Brand_YTD</members>
         <members>CN_ComplaintReport/CN_Complaint_by_Channel_YTD</members>
         <members>CN_ComplaintReport/CN_Complaint_by_Reason_YTD</members>
+        <members>CN_ComplaintReport/CN_Complaint_by_Resolved_Reason_YTD</members>
         <members>CN_ComplaintReport/CN_Complaint_by_Sales_Office_YTD</members>
         <members>CN_ComplaintReport/CN_Product_Sampling_Feedback</members>
         <members>CN_ComplaintReport/CN_Product_Sampling_Status</members>
@@ -630,6 +685,8 @@
         <members>CN_PromotionReport/CN_Total_Promotions_by_Promotion_Type</members>
         <members>CN_Promotion_Custome_Data_Filter</members>
         <members>CN_Promotion_Custome_Data_Filter/CN_Customer_data_filter</members>
+        <members>CN_SalesMDMReport</members>
+        <members>CN_SalesMDMReport/CN_All_Sales_Users_Personnel_Number_Rx9</members>
         <members>CN_Sales_360_Report</members>
         <members>CN_Sales_360_Report/CN_Achievements_MTD</members>
         <members>CN_Sales_360_Report/CN_Average_visits_by_Customer_Layer_MTD1</members>
@@ -654,6 +711,7 @@
         <members>CN_SampleReport/CN_Sample_Request_Item_by_Month_YTD</members>
         <members>CN_SampleReport/CN_Sample_Request_Item_by_Status_YTD</members>
         <members>TM_Report</members>
+        <members>TM_Report/CN_Account_without_Document</members>
         <members>TM_Report/TM_Account_Report</members>
         <members>TM_Report/TM_Accounts_History_Report</members>
         <name>Report</name>
@@ -664,6 +722,7 @@
         <members>CN_Account_Opportunity</members>
         <members>CN_Account_Sales_Order_Item</members>
         <members>CN_Account_With_Cases</members>
+        <members>CN_Account_With_Comments</members>
         <members>CN_Account_with_Activities</members>
         <members>CN_Account_with_Activity</members>
         <members>CN_Campaign_With_Lead_Conveted_Account</members>
@@ -675,6 +734,7 @@
         <members>CN_Promotion_with_Member_with_Quote_Line_Item</members>
         <members>CN_Promotion_with_Promotion_Line_Item</members>
         <members>CN_User_Report_Type</members>
+        <members>Chef_Requests_with_Demo_Reports_with_Demo_Report_to_Products</members>
         <name>ReportType</name>
     </types>
     <types>

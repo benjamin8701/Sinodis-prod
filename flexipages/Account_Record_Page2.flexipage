@@ -241,7 +241,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListComponentOverride</name>
-                    <value>NONE</value>
+                    <value>ADVGRID</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>rowsToDisplay</name>
@@ -519,7 +519,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListApiName</name>
-                    <value>ProcessSteps</value>
+                    <value>Sales_Performance__r</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListComponentOverride</name>
@@ -544,7 +544,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListApiName</name>
-                    <value>Sales_Performance__r</value>
+                    <value>ProcessSteps</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListComponentOverride</name>
@@ -603,18 +603,10 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>lookupFieldName</name>
-                    <value>Id</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>updateQuickActionName</name>
-                    <value>Account.CN_Finance_Information</value>
-                </componentInstanceProperties>
-                <componentName>console:relatedRecord</componentName>
+                <componentName>runtime_sales_activities:activityPanel</componentName>
             </componentInstance>
         </itemInstances>
-        <name>Facet-a83933cc-b80b-4200-8ca2-cf3039b9019b</name>
+        <name>Facet-0fdd47a1-ae5d-423e-8cfa-0393233ae036</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -646,6 +638,23 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>lookupFieldName</name>
+                    <value>Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>updateQuickActionName</name>
+                    <value>Account.CN_Finance_Information</value>
+                </componentInstanceProperties>
+                <componentName>console:relatedRecord</componentName>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-a83933cc-b80b-4200-8ca2-cf3039b9019b</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>createQuickActionName</name>
                     <value>NewAccount</value>
                 </componentInstanceProperties>
@@ -665,15 +674,6 @@
             </componentInstance>
         </itemInstances>
         <name>Facet-429244f1-0ad0-465c-9841-8fc6be176b73</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentName>runtime_sales_activities:activityPanel</componentName>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-0fdd47a1-ae5d-423e-8cfa-0393233ae036</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -711,11 +711,11 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-a83933cc-b80b-4200-8ca2-cf3039b9019b</value>
+                    <value>Facet-0fdd47a1-ae5d-423e-8cfa-0393233ae036</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
-                    <value>财务信息Financial Information</value>
+                    <value>Standard.Tab.activity</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
             </componentInstance>
@@ -737,11 +737,11 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-429244f1-0ad0-465c-9841-8fc6be176b73</value>
+                    <value>Facet-a83933cc-b80b-4200-8ca2-cf3039b9019b</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
-                    <value>文件Documents</value>
+                    <value>财务信息Financial Information</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
             </componentInstance>
@@ -750,11 +750,11 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-0fdd47a1-ae5d-423e-8cfa-0393233ae036</value>
+                    <value>Facet-429244f1-0ad0-465c-9841-8fc6be176b73</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
-                    <value>Standard.Tab.activity</value>
+                    <value>文件Documents</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
             </componentInstance>
@@ -843,6 +843,38 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Account.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>Comments__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>ADVGRID</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.CN_Is_Finance__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

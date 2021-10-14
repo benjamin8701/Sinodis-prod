@@ -22,9 +22,9 @@
         <name>CN_Approved_Date__c</name>
     </fields>
     <fields>
-        <label><!-- Approver1 CCE --></label>
+        <label><!-- Approver1 Manager --></label>
         <name>CN_Approver1_CCE__c</name>
-        <relationshipLabel><!-- Sample Requests (Approver1 CCE) --></relationshipLabel>
+        <relationshipLabel><!-- Sample Requests (Approver1 Manager) --></relationshipLabel>
     </fields>
     <fields>
         <label><!-- Approver2 Channel Leader --></label>

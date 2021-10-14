@@ -50,6 +50,10 @@
         <name>CN_Generate_From_Lead_Id__c</name>
     </fields>
     <fields>
+        <label><!-- Is Assigned to Me --></label>
+        <name>CN_Is_Assigned_to_Me__c</name>
+    </fields>
+    <fields>
         <label><!-- Is Manual --></label>
         <name>CN_Is_Manual__c</name>
     </fields>

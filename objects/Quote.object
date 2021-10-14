@@ -891,7 +891,7 @@
   CN_Effective_Date__c &lt;  TODAY()
 )</errorConditionFormula>
         <errorDisplayField>CN_Effective_Date__c</errorDisplayField>
-        <errorMessage>Effective Date should be earlier than today.</errorMessage>
+        <errorMessage>Effective Date shouldn&apos;t be earlier than today.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Quote_Check_Opp_Stage</fullName>

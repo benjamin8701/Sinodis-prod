@@ -203,8 +203,17 @@
         <relationshipLabel><!-- Contracts (Indirect Account Name) --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Indirect Account Name --></label>
+        <name>CN_Indirect_Account_TEXT__c</name>
+    </fields>
+    <fields>
         <label><!-- Internal Contract Number --></label>
         <name>CN_Internal_Contract_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Employee --></label>
+        <name>CN_Internal_Employee__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
     </fields>
     <fields>
         <label><!-- Invoice Submission Date --></label>
@@ -331,7 +340,7 @@
         <name>CN_Rebate_End_Date__c</name>
     </fields>
     <fields>
-        <label><!-- Rebate Period1 --></label>
+        <label><!-- Rebate 1 --></label>
         <name>CN_Rebate_Period1__c</name>
         <picklistValues>
             <masterLabel>半年度</masterLabel>
@@ -355,7 +364,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Rebate Period2 --></label>
+        <label><!-- Rebate 2 --></label>
         <name>CN_Rebate_Period2__c</name>
         <picklistValues>
             <masterLabel>半年度</masterLabel>
@@ -379,7 +388,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Rebate Period3 --></label>
+        <label><!-- Rebate 3 --></label>
         <name>CN_Rebate_Period3__c</name>
         <picklistValues>
             <masterLabel>半年度</masterLabel>
@@ -403,7 +412,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Rebate Period --></label>
+        <label><!-- Rebate --></label>
         <name>CN_Rebate_Period__c</name>
         <picklistValues>
             <masterLabel>半年度</masterLabel>
@@ -486,8 +495,16 @@
         <label><!-- Sales Channel --></label>
         <name>CN_Sales_Channel__c</name>
         <picklistValues>
+            <masterLabel>BSI</masterLabel>
+            <translation><!-- BSI --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>DS</masterLabel>
             <translation><!-- DS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gerard</masterLabel>
+            <translation><!-- Gerard --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>KA</masterLabel>
@@ -520,6 +537,10 @@
         <picklistValues>
             <masterLabel>Shenzhen</masterLabel>
             <translation><!-- Shenzhen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tianjin</masterLabel>
+            <translation><!-- Tianjin --></translation>
         </picklistValues>
     </fields>
     <fields>

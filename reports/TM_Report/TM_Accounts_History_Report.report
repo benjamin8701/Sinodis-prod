@@ -30,7 +30,7 @@
         <language>en_US</language>
     </filter>
     <format>Tabular</format>
-    <name>TM Accounts History Report</name>
+    <name>Overall TM Account Report</name>
     <params>
         <name>co</name>
         <value>1</value>

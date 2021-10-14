@@ -286,6 +286,17 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>CN_Base_Unit_of_Measure__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product.CN_Base_Unit_of_Measure__c</formula>
+        <label>Base Unit of Measure</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Brand__c</fullName>
         <externalId>false</externalId>
         <formula>TEXT(Product.CN_Brand__c)</formula>
@@ -330,9 +341,21 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Duration__c</fullName>
         <externalId>false</externalId>
-        <formula>IF(  ISBLANK(CN_Accepted_Date__c ), 0, CN_Accepted_Date__c -  DATEVALUE(CreatedDate) )</formula>
+        <formula>IF(  ISBLANK( CN_Resolved_Date__c ), 0, CN_Resolved_Date__c -  DATEVALUE(CreatedDate) )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Duration</label>
         <precision>18</precision>
@@ -387,9 +410,44 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>CN_If_Creator_Equals_Account_Sales__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedById =  Account.OwnerId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>If Creator Equals Account Sales</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_My_Case__c</fullName>
+        <externalId>false</externalId>
+        <formula>OR(
+   OwnerId =  $User.Id ,
+   $Profile.Name = &apos;System Administrator&apos;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is My Case</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Please_Confirm__c</fullName>
+        <externalId>false</externalId>
+        <formula>$Label.CN_Complaint_Submit_Message</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Please Confirm</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_QA_Compliant_Number__c</fullName>
         <externalId>false</externalId>
-        <label>QA Compliant Number</label>
+        <label>QA Complaint Number</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -397,6 +455,26 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Reject_Datetime__c</fullName>
+        <externalId>false</externalId>
+        <label>Reject Datetime</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CN_Reject_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Reject Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>CN_Rejected_Date__c</fullName>
@@ -407,6 +485,52 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CN_Resolve_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Resolve Comments</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Return</fullName>
+                    <default>false</default>
+                    <label>Return</label>
+                </value>
+                <value>
+                    <fullName>Sampling</fullName>
+                    <default>false</default>
+                    <label>Sampling</label>
+                </value>
+                <value>
+                    <fullName>Explanation</fullName>
+                    <default>false</default>
+                    <label>Explanation</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Resolve_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Resolve Description</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>CN_Resolve_Reason__c</fullName>
@@ -503,7 +627,7 @@
     <fields>
         <fullName>CN_Sales_Office__c</fullName>
         <externalId>false</externalId>
-        <formula>CreatedBy.CN_Sales_Office__c</formula>
+        <formula>CASE(Account.Owner.CN_Sales_Office__c, &apos;K010&apos;, &apos;K010-ShangHai&apos;, &apos;K020&apos;, &apos;K020-BeiJing&apos;,&apos;&apos;,&apos;K030-ShenZhen&apos;,&apos;K040&apos;,&apos;K040-GuangZhou&apos;,&apos;K050&apos;,&apos;K050-ChengDu&apos;,&apos;K060&apos;,&apos;K060-DaLian&apos;,&apos;&apos;)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Sales Office</label>
         <required>false</required>
@@ -523,6 +647,16 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Submit_Datetime__c</fullName>
+        <externalId>false</externalId>
+        <label>Submit Datetime</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
     </fields>
     <fields>
         <fullName>ClosedDate</fullName>
@@ -787,6 +921,25 @@
         <businessProcess>CN_Support_Process</businessProcess>
         <label>CN_Complaint</label>
         <picklistValues>
+            <picklist>CN_Resolve_Comments__c</picklist>
+            <values>
+                <fullName>Explanation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sampling</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Resolve_Reason__c</picklist>
             <values>
                 <fullName>Brand Quality</fullName>
@@ -842,19 +995,15 @@
         <picklistValues>
             <picklist>Reason</picklist>
             <values>
-                <fullName>Customer</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Customer Service</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Logistics</fullName>
+                <fullName>Quality</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Quality</fullName>
+                <fullName>Supply Chain</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -901,6 +1050,18 @@
         <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>CN_Case_Check_Product_Info</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  ISPICKVAL(Reason , &quot;Quality&quot;), 
+  ISBLANK(ProductId)|| ISBLANK( CN_SAP_Batch_Number__c )  || ISBLANK( CN_SKU_Quantity__c )
+)</errorConditionFormula>
+        <errorDisplayField>Reason</errorDisplayField>
+        <errorMessage>Please fill in Product, SKU Quantity and SAP Batch Number</errorMessage>
+    </validationRules>
     <validationRules>
         <fullName>CN_Check_Complaint_Date</fullName>
         <active>true</active>
@@ -1004,7 +1165,7 @@
   NOT(ISNEW()),
   ISPICKVAL( PRIORVALUE(Status) , &apos;New&apos;),
   OR(
-    AND(ISPICKVAL( Status, &apos;Assigned&apos;),NOT(ISCHANGED(OwnerId))),
+    AND(ISPICKVAL( Status, &apos;Assigned&apos;),NOT(ISCHANGED( CN_Submit_Datetime__c ))),
     NOT(OR(ISPICKVAL(Status, &apos;New&apos;),ISPICKVAL(Status,&apos;Assigned&apos;)))
   )
 )</errorConditionFormula>
@@ -1020,7 +1181,7 @@
   BEGINS(RecordType.DeveloperName,&quot;CN&quot;),
   ISPICKVAL( PRIORVALUE(Status) , &apos;Rejected&apos;),
   OR(
-    AND(ISPICKVAL( Status, &apos;Assigned&apos;),NOT(ISCHANGED(OwnerId))),
+    AND(ISPICKVAL( Status, &apos;Assigned&apos;),NOT(ISCHANGED( CN_Submit_Datetime__c))),
     NOT(OR(ISPICKVAL(Status, &apos;Rejected&apos;),ISPICKVAL(Status,&apos;Assigned&apos;)))
   )
 )</errorConditionFormula>

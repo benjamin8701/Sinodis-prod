@@ -32,7 +32,7 @@ public without sharing class CN_SR_Populate_Fields_Handler implements Triggers.H
         }
         if(srList.size() > 0) {
             populateAccount(srList);
-            populateApprover1(srList);
+            //populateApprover1(srList);
             populateApprover2(srList);
             
         }
@@ -55,7 +55,7 @@ public without sharing class CN_SR_Populate_Fields_Handler implements Triggers.H
         }
         if(srList1.size() > 0) {
             populateAccount(srList1);
-            populateApprover1(srList1);
+            populateApprover2(srList1);
             // createSRSharing(srList1);
         }
         if(srList2.size() > 0) {
@@ -74,7 +74,7 @@ public without sharing class CN_SR_Populate_Fields_Handler implements Triggers.H
             }
         }
         if(srList.size() > 0) {
-            createSRSharing(srList);
+            //createSRSharing(srList);
         }
     }
 
@@ -95,6 +95,7 @@ public without sharing class CN_SR_Populate_Fields_Handler implements Triggers.H
             sr.CN_Account_Name__c = oppAccountIdMap.get(sr.CN_Opportunity_Name__c);
         }
     }
+    /*
     public void populateApprover1(List<CN_Sample_Request__c> srList) {
         CN_Approve_Process_Settings__c settings = CN_Approve_Process_Settings__c.getInstance();
         Set<Id> accIdSet = new Set<Id>();
@@ -131,6 +132,7 @@ public without sharing class CN_SR_Populate_Fields_Handler implements Triggers.H
             }
         }
     }
+    */
     public void populateApprover2(List<CN_Sample_Request__c> srList) {
         CN_Approve_Process_Settings__c settings = CN_Approve_Process_Settings__c.getInstance();
         
@@ -155,6 +157,7 @@ public without sharing class CN_SR_Populate_Fields_Handler implements Triggers.H
         Map<Id, User> ownerMap = new Map<Id, User>(ownerList);
         for(CN_Sample_Request__c sr : srList) {
 
+            sr.CN_Approver1_CCE__c = null;
             sr.CN_Approver2_Channel_Leader__c = null;
 
             User owner = ownerMap.get(sr.OwnerId);
@@ -196,15 +199,24 @@ public without sharing class CN_SR_Populate_Fields_Handler implements Triggers.H
             levelList.add(CDUserId);
 
             if(String.isNotBlank(owner.Title)) {
+
+                sr.CN_Approver1_CCE__c = getLatestApprover(Constants.CN_USER_TITLE_MANAGER, levelMap, levelList);
+
                 String CMId = titleUserIdMap.get(Constants.CN_USER_TITLE_CM);
                 if(String.isNotBlank(CMId)) {
-                    sr.CN_Approver2_Channel_Leader__c = CMId;
+                    if(CMId != sr.CN_Approver1_CCE__c) {
+                        sr.CN_Approver2_Channel_Leader__c = CMId;
+                    }
                 } else {
-                    sr.CN_Approver2_Channel_Leader__c = getLatestApprover(Constants.CN_USER_TITLE_CM, levelMap, levelList);
+                    String latestApproverId = getLatestApprover(Constants.CN_USER_TITLE_CM, levelMap, levelList);
+                    if(sr.CN_Approver1_CCE__c != latestApproverId) {
+                        sr.CN_Approver2_Channel_Leader__c = getLatestApprover(Constants.CN_USER_TITLE_CM, levelMap, levelList);
+                    }
                 }
             }
         }
     }
+    /*
     public void createSRSharing(List<CN_Sample_Request__c> srList) {
         List<CN_Sample_Request__Share> srsList = new List<CN_Sample_Request__Share>();
         for(CN_Sample_Request__c sr : srList) {
@@ -218,6 +230,7 @@ public without sharing class CN_SR_Populate_Fields_Handler implements Triggers.H
         }
         insert srsList;
     }
+    */
     public String getLatestApprover(String title, Map<String, Integer> levelMap, List<String> levelList) {
         String latestApproverId = null;
         if(levelMap.containsKey(title)) {

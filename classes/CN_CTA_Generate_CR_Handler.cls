@@ -20,7 +20,7 @@ public without sharing class CN_CTA_Generate_CR_Handler implements Triggers.Hand
         Id ctaRTId = Schema.SObjectType.CN_Credit_Term_Application__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CTA_RT_API_NAME).getRecordTypeId();
         List<CN_Credit_Term_Application__c> ctaList = new List<CN_Credit_Term_Application__c>();
         Map<Id,Id> ctaIdaccIdMap = new Map<Id,Id>();
-        for(CN_Credit_Term_Application__c cta : (List<CN_Credit_Term_Application__c>)Trigger.New) {          
+        for(CN_Credit_Term_Application__c cta : (List<CN_Credit_Term_Application__c>)Trigger.New) {     
             if(Constants.CN_CTA_STATUS_APPROVALED.equals(cta.CN_Status__c) && cta.CN_Status__c <> ((CN_Credit_Term_Application__c)Trigger.oldMap.get(cta.Id)).CN_Status__c 
             && Constants.CN_ACCOUNT_SYNC_STATUS_SUCCESS.equals(cta.CN_Account_Sync_Status__c)){
                 ctaList.add(cta);

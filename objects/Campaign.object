@@ -523,6 +523,65 @@
         <visibleLines>4</visibleLines>
     </fields>
     <fields>
+        <fullName>CN_Customer_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Category</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BAPA</fullName>
+                    <default>false</default>
+                    <label>BAPA</label>
+                </value>
+                <value>
+                    <fullName>Restaurant</fullName>
+                    <default>false</default>
+                    <label>Restaurant</label>
+                </value>
+                <value>
+                    <fullName>Catering</fullName>
+                    <default>false</default>
+                    <label>Catering</label>
+                </value>
+                <value>
+                    <fullName>Coffee/Tea Shop</fullName>
+                    <default>false</default>
+                    <label>Coffee/Tea Shop</label>
+                </value>
+                <value>
+                    <fullName>OEM</fullName>
+                    <default>false</default>
+                    <label>OEM</label>
+                </value>
+                <value>
+                    <fullName>EC</fullName>
+                    <default>false</default>
+                    <label>EC</label>
+                </value>
+                <value>
+                    <fullName>Hotel</fullName>
+                    <default>false</default>
+                    <label>Hotel</label>
+                </value>
+                <value>
+                    <fullName>Wholesaler</fullName>
+                    <default>false</default>
+                    <label>Wholesaler</label>
+                </value>
+                <value>
+                    <fullName>Retailor</fullName>
+                    <default>false</default>
+                    <label>Retailor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
         <fullName>CN_Execution_Type__c</fullName>
         <externalId>false</externalId>
         <label>Execution Type</label>
@@ -679,6 +738,14 @@
             </valueSettings>
         </valueSet>
         <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Chef_Creator__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.Profile.Name = &quot;CN Chef&quot; ||  CreatedBy.Profile.Name = &quot;CN Chef Manager&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Chef Creator</label>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>CN_Is_My_Campaign__c</fullName>
@@ -1204,6 +1271,45 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Customer_Category__c</picklist>
+            <values>
+                <fullName>BAPA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coffee%2FTea Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hotel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Restaurant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retailor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Execution_Type__c</picklist>
             <values>
                 <fullName>1on1</fullName>
@@ -1591,6 +1697,45 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Customer_Category__c</picklist>
+            <values>
+                <fullName>BAPA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coffee%2FTea Shop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hotel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Restaurant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retailor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Execution_Type__c</picklist>
             <values>
                 <fullName>1on1</fullName>
@@ -1767,6 +1912,21 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>CN_Campaign_Check_Customer_Category</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c, 
+  OR(
+    RecordType.DeveloperName = &apos;CN_Campaign&apos;, 
+    RecordType.DeveloperName = &apos;CN_Parent_Campaign&apos;
+  ),
+  ISPICKVAL(Type, &apos;Road Show&apos;),
+  ISNULL(CN_Customer_Category__c ) 
+)</errorConditionFormula>
+        <errorDisplayField>CN_Customer_Category__c</errorDisplayField>
+        <errorMessage>Customer category is mandatory to choose when event type of campaign is road show.</errorMessage>
+    </validationRules>
     <validationRules>
         <fullName>CN_Campaign_Check_Start_Date</fullName>
         <active>true</active>

@@ -1463,6 +1463,11 @@
             <field>CN_Created_By_Others__c</field>
             <table>Account.Opportunities</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Is_Assigned_to_Me__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
         <masterLabel>Opportunities</masterLabel>
     </sections>
 </ReportType>

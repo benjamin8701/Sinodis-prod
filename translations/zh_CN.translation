@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Translations xmlns="http://soap.sforce.com/2006/04/metadata">
     <customApplications>
-        <label><!-- Savencia-Sinodis --></label>
+        <label><!-- Sinodis --></label>
         <name>CN_Savencia_Sinodis</name>
     </customApplications>
     <customLabels>
@@ -317,6 +317,14 @@
         <name>CN_Complaint_Cannot_Be_Delete</name>
     </customLabels>
     <customLabels>
+        <label>您不能将解决结案原因设置为&quot;Brand Quality&quot;。</label>
+        <name>CN_Complaint_Check_Reason_CS_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>您不能将解决结案原因设置为&quot;Customer Service&quot;。</label>
+        <name>CN_Complaint_Check_Reason_QA_Msg</name>
+    </customLabels>
+    <customLabels>
         <label>你现在无法分配此投诉给一个单独用户，请尝试分配给一个队列或检查当前投诉的状态。</label>
         <name>CN_Complaint_Mannual_Assign_Check</name>
     </customLabels>
@@ -329,8 +337,24 @@
         <name>CN_Complaint_Not_Found</name>
     </customLabels>
     <customLabels>
+        <label>在您将此投诉标记为&quot;Rejected&quot;之前，必须输入拒绝原因。</label>
+        <name>CN_Complaint_RejectReason_Null</name>
+    </customLabels>
+    <customLabels>
+        <label>在您将此投诉标记为&quot;Resolved&quot;之前，必须输入结案建议。</label>
+        <name>CN_Complaint_ResolveComments_Null</name>
+    </customLabels>
+    <customLabels>
         <label>在您将此投诉标记为&quot;Resolved&quot;之前，必须输入结案原因。</label>
         <name>CN_Complaint_ResolveReason_Null</name>
+    </customLabels>
+    <customLabels>
+        <label>您不能将解决结案原因设置为</label>
+        <name>CN_Complaint_ResolveReason_VR_ErrorMsg</name>
+    </customLabels>
+    <customLabels>
+        <label>确认提交投诉？</label>
+        <name>CN_Complaint_Submit_Message</name>
     </customLabels>
     <customLabels>
         <label>您不能删除其客户已经被标记为准备好提交审批，提交审批，审批通过或者已经同步到SAP的联系人。</label>
@@ -724,6 +748,21 @@
         <flows/>
         <fullName>CN_SP_Populate_Owner</fullName>
     </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>tt</name>
+                </fields>
+                <name>ttttttt</name>
+            </screens>
+        </flows>
+        <fullName>te</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>test</fullName>
+    </flowDefinitions>
     <quickActions>
         <label><!-- New Event --></label>
         <name>CN_New_Event</name>
@@ -824,6 +863,19 @@
         <sections>
             <label><!-- Complaints --></label>
             <name>Complaints</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Account With Comments --></description>
+        <label><!-- CN Account With Comments --></label>
+        <name>CN_Account_With_Comments</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <name>Comments</name>
         </sections>
     </reportTypes>
     <reportTypes>
@@ -1003,6 +1055,19 @@
         <sections>
             <label><!-- Users --></label>
             <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Chef Requests with Demo Reports with Demo Report to Products --></description>
+        <label><!-- Chef Requests with Demo Reports with Demo Report to Products --></label>
+        <name>Chef_Requests_with_Demo_Reports_with_Demo_Report_to_Products</name>
+        <sections>
+            <label><!-- Chef Requests --></label>
+            <name>Chef Requests</name>
+        </sections>
+        <sections>
+            <label><!-- Demo Reports --></label>
+            <name>Demo Reports</name>
         </sections>
     </reportTypes>
 </Translations>

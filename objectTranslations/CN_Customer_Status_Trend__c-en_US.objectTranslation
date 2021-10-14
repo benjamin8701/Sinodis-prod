@@ -29,6 +29,10 @@
         <name>CN_Execution_Time__c</name>
     </fields>
     <fields>
+        <label><!-- Is Populated Owner --></label>
+        <name>CN_Is_Populated_Owner__c</name>
+    </fields>
+    <fields>
         <label><!-- License Name CN --></label>
         <name>CN_License_Name_CN__c</name>
     </fields>

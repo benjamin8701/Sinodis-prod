@@ -15,22 +15,21 @@
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 	<aura:attribute name="recordId" type="String"/>
     <aura:attribute name="showLoading" type="Boolean" default="false" />
-    <!-- <aura:attribute name="modalContentMessage" type="String" default="Complaint has been rejected!"/>-->
     <aura:attribute name="modalContentMessage" type="String" default="Please confirm this rejecte action!"/>
     <aura:attribute name="confirmMsg" type="String" default="Complaint Rejected"/>
+    <aura:attribute name="rejectReason" type="String" default=""/>
+    <aura:attribute name="errorMessage" type="String" default=""/>
+    <aura:attribute name="rejectReason_Null" type="String" default="{!$Label.c.CN_Complaint_RejectReason_Null}"/>
     
     <header>
         <div class="modal-header slds-modal__header slds_size_1-of-1">           
             <h4 class="slds-align_absolute-left slds-text--heading_small">{!v.confirmMsg}</h4>
         </div>
     </header>
+    <div class="slds-col slds-size_1-of-1">{!v.errorMessage}</div>
 	<body>
     	<div class="slds-modal__content slds-p-vertical_medium slds-p-horizontal_small">
-        	<div class="slds-grid slds-gutters slds-wrap slds-m-bottom_medium">
-                 <div class="slds-col slds-size_1-of-1">
-                    {!v.modalContentMessage}
-                 </div>
-            </div>
+        	<lightning:input name="Reject Reason" type="String" required="true" label="Reject Reason" value="{!v.rejectReason}" />
         </div>
     </body>
     <footer>

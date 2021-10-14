@@ -153,6 +153,16 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Brand_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(CN_Brand__c)</formula>
+        <label>Brand Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Brand__c</fullName>
         <externalId>false</externalId>
         <label>Brand</label>

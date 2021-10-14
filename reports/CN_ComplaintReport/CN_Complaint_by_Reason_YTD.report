@@ -42,7 +42,7 @@
         <field>REASON</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Complaint by Reason YTD</name>
+    <name>Complaint by Raised Reason YTD</name>
     <params>
         <name>units</name>
         <value>h</value>

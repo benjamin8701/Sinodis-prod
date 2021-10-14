@@ -236,6 +236,46 @@
         </picklistValues>
     </fields>
     <fields>
+        <label>客户类别</label>
+        <name>CN_Customer_Category__c</name>
+        <picklistValues>
+            <masterLabel>BAPA</masterLabel>
+            <translation><!-- BAPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catering</masterLabel>
+            <translation><!-- Catering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coffee/Tea Shop</masterLabel>
+            <translation><!-- Coffee/Tea Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EC</masterLabel>
+            <translation><!-- EC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotel</masterLabel>
+            <translation><!-- Hotel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM</masterLabel>
+            <translation><!-- OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurant</masterLabel>
+            <translation><!-- Restaurant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retailor</masterLabel>
+            <translation><!-- Retailor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler</masterLabel>
+            <translation><!-- Wholesaler --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label>执行类型</label>
         <name>CN_Execution_Type__c</name>
         <picklistValues>
@@ -286,6 +326,10 @@
             <masterLabel>WeChat</masterLabel>
             <translation><!-- WeChat --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Chef Creator --></label>
+        <name>CN_Is_Chef_Creator__c</name>
     </fields>
     <fields>
         <label><!-- Is My Campaign --></label>
@@ -404,6 +448,10 @@
         <label><!-- Parent Campaign --></label>
         <name>CN_Parent_Campaign</name>
     </recordTypes>
+    <validationRules>
+        <errorMessage>市场活动类型是Road Show时，客户类型必填</errorMessage>
+        <name>CN_Campaign_Check_Customer_Category</name>
+    </validationRules>
     <validationRules>
         <errorMessage>市场活动开始时间不能早于今天。</errorMessage>
         <name>CN_Campaign_Check_Start_Date</name>

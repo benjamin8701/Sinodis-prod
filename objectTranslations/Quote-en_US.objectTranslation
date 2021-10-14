@@ -250,7 +250,7 @@
         <name>CN_Quote_Check_EffectiveExpirationDate</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Effective Date should be earlier than today. --></errorMessage>
+        <errorMessage><!-- Effective Date shouldn&apos;t be earlier than today. --></errorMessage>
         <name>CN_Quote_Check_Effective_Date</name>
     </validationRules>
     <validationRules>

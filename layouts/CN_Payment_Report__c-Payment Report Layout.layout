@@ -181,7 +181,7 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>Accumulative Unpaid Amount</label>
+        <label>Sales History</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -220,7 +220,7 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>Accounting Transactions</label>
+        <label>Accounting Traction</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>

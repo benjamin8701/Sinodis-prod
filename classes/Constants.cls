@@ -11,9 +11,9 @@ public without sharing class Constants {
     public static Boolean CN_ACCOUNT_APPROVE_AGING_HANDLER_TRIGGER_ON = true;
     public static Boolean CN_ACCOUNT_GENERATE_DOCUMENTS_HANDLER_TRIGGER_ON = true;
     public static Boolean CN_ACCOUNT_ADDRESS_CHANGE_HANDLER_TRIGGER_ON = true;
-    //CR05 � Tm report by Shuqi - start
+    //CR05 - Tm report by Shuqi - start
     public static Boolean CN_ACCOUNT_TM_REPORT_HANDLER_TRIGGER_ON = true;
-    //CR05 � Tm report by Shuqi - end   
+    //CR05 - Tm report by Shuqi - end   
     
     public static final String CN_Account_RT_API_NAME_NEW_DIRECT = 'CN_New_Direct';
     public static final String CN_Account_RT_API_NAME_EDIT_DIRECT = 'CN_Edit_Direct';
@@ -320,9 +320,9 @@ public without sharing class Constants {
 
 
 	//User Sales Team
-	public static final String CN_SALES_TEAM1 = '0000900012';
-	public static final String CN_SALES_TEAM2 = '0000900013';
-	public static final String CN_SALES_TEAM3 = '0000900014';
+	public static final String CN_SALES_TEAM1 = '900012';
+	public static final String CN_SALES_TEAM2 = '900013';
+	public static final String CN_SALES_TEAM3 = '900014';
 
 	//Event
 	public static final String CN_VISIT_RT_API_NAME = 'CN_Visit';

@@ -197,6 +197,7 @@
     </fields>
     <fields>
         <fullName>Amount</fullName>
+        <inlineHelpText>Potential amount per month</inlineHelpText>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
@@ -266,6 +267,16 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Assigned_to_Me__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedById &lt;&gt;  OwnerId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Assigned to Me</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>CN_Is_Manual__c</fullName>
@@ -490,6 +501,22 @@
         <label>All Opportunities</label>
     </listViews>
     <listViews>
+        <fullName>CN_My_Assinged_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CN_Is_Assigned_to_Me__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Assigned Opportunities</label>
+    </listViews>
+    <listViews>
         <fullName>ClosingNextMonth</fullName>
         <filterScope>Everything</filterScope>
         <filters>
@@ -566,7 +593,13 @@
         <columns>OPPORTUNITY.AMOUNT</columns>
         <columns>OPPORTUNITY.CLOSE_DATE</columns>
         <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
         <filterScope>Mine</filterScope>
+        <filters>
+            <field>CN_Is_Assigned_to_Me__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
         <label>My Opportunities</label>
     </listViews>
     <listViews>
@@ -853,11 +886,22 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
         <errorConditionFormula>AND(
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  OR(
-   ISPICKVAL( PRIORVALUE(StageName) , &quot;Closed Won&quot;),
-   ISPICKVAL( PRIORVALUE(StageName) , &quot;Closed Lost&quot;),
-   ISPICKVAL( PRIORVALUE(StageName) , &quot;Closed Cancelled&quot;)
-  ) 
+		  OR(
+		   ISPICKVAL( PRIORVALUE(StageName) , &quot;Closed Won&quot;) &amp;&amp; ISPICKVAL( (StageName) , &quot;Closed Cancelled&quot;) &amp;&amp; (
+				(ISCHANGED(CN_Actual_Close_Date__c))||
+				(ISCHANGED(CN_Campaign__c))||
+				(ISCHANGED(CloseDate))||
+				(ISCHANGED(Amount))||
+				(ISCHANGED(CN_Expected_Purchase_Date__c))||
+				(ISCHANGED(Name))||
+				(ISCHANGED(OwnerId))||
+				(ISCHANGED(Type))||
+				(ISCHANGED(Description))
+		   ),
+		   ISPICKVAL( PRIORVALUE(StageName) , &quot;Closed Won&quot;) &amp;&amp; NOT(ISPICKVAL( (StageName) , &quot;Closed Cancelled&quot;)),
+		   ISPICKVAL( PRIORVALUE(StageName) , &quot;Closed Lost&quot;),
+		   ISPICKVAL( PRIORVALUE(StageName) , &quot;Closed Cancelled&quot;)
+		  )
 )</errorConditionFormula>
         <errorDisplayField>StageName</errorDisplayField>
         <errorMessage>It&apos;s not allow to edit after close.</errorMessage>

@@ -1632,9 +1632,9 @@ IF(
   ISBLANK(CN_Latest_Order_Create_Date__c) ,
   NULL,
   IF(
-    TODAY() &lt; ADDMONTHS(CN_Latest_Order_Create_Date__c,3) ,
+    TODAY() &lt; ADDMONTHS(CN_Latest_Order_Create_Date__c,1) ,
     &quot;Active&quot; ,
-    IF(TODAY() &lt;  ADDMONTHS(CN_Latest_Order_Create_Date__c,6),&quot;Sleep&quot;,&quot;Dead&quot;)
+    IF(TODAY() &lt;  ADDMONTHS(CN_Latest_Order_Create_Date__c,3),&quot;Sleep&quot;,&quot;Dead&quot;)
   )
 
 )</formula>
@@ -2756,7 +2756,7 @@ IF(
     <fields>
         <fullName>CN_Open_During_Date__c</fullName>
         <externalId>false</externalId>
-        <formula>Today()- CN_Open_Date__c</formula>
+        <formula>Today()- CN_Open_Date__c + 1</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Open During Date</label>
         <precision>18</precision>
@@ -5219,12 +5219,13 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <columns>ACCOUNT.NAME</columns>
         <columns>CN_Route_To_Market__c</columns>
         <columns>CN_Customer_Code__c</columns>
-        <columns>CN_Store_Name_CN__c</columns>
-        <columns>CN_Sales_Team_UI__c</columns>
-        <columns>CN_Subcategory__c</columns>
         <columns>CN_Category__c</columns>
+        <columns>CN_Subcategory__c</columns>
+        <columns>CN_Group_Name__c</columns>
+        <columns>CN_Brand__c</columns>
         <columns>CN_Sales_Person_Name__c</columns>
         <columns>CN_Finance_AR__c</columns>
+        <columns>CN_Customer_Status__c</columns>
         <columns>ACCOUNT.CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <label>All Accounts</label>
@@ -5299,14 +5300,47 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <label>Accounts To Be Blocked</label>
     </listViews>
     <listViews>
-        <fullName>MyAccounts</fullName>
+        <fullName>CN_My_Customers</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>CN_Customer_Code__c</columns>
         <columns>CN_Store_Name_CN__c</columns>
-        <columns>CN_Customer_Status__c</columns>
         <columns>CN_Category__c</columns>
-        <columns>CN_Sales_Person_Name__c</columns>
-        <columns>CN_Customer_Journey__c</columns>
+        <columns>CN_Subcategory__c</columns>
+        <columns>CN_Customer_Status__c</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.CN_Approved_Direct,Account.CN_New_Direct,Account.CN_Edit_Direct,Account.CN_Edit_Indirect,Account.CN_New_Indirect</value>
+        </filters>
+        <label>My Customers</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_My_Prospects</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CN_Category__c</columns>
+        <columns>CN_Subcategory__c</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.CN_Edit_Prospect,Account.CN_New_Prospect</value>
+        </filters>
+        <label>My Prospects</label>
+    </listViews>
+    <listViews>
+        <fullName>MyAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CN_Route_To_Market__c</columns>
+        <columns>CN_Customer_Code__c</columns>
+        <columns>CN_Category__c</columns>
+        <columns>CN_Subcategory__c</columns>
+        <columns>CN_Group_Name__c</columns>
+        <columns>CN_Brand__c</columns>
+        <columns>CN_Customer_Status__c</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
         <filterScope>Mine</filterScope>
         <label>My Accounts</label>
     </listViews>

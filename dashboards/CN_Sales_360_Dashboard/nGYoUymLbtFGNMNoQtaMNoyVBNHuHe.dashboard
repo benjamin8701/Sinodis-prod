@@ -24,8 +24,8 @@
                 <gaugeMin>0.0</gaugeMin>
                 <groupingSortProperties/>
                 <header>Achievements % MTD</header>
-                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
+                <indicatorBreakpoint1>60.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>80.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
@@ -503,7 +503,7 @@
     </dashboardGridLayout>
     <dashboardType>MyTeamUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>anqi.huang@accenture.com</runningUser>
+    <runningUser>c.qiu@accenture.com</runningUser>
     <textColor>#000000</textColor>
     <title>Sales 360 Dashboard</title>
     <titleColor>#000000</titleColor>

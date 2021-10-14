@@ -44,4 +44,26 @@
             <roleAndSubordinates>CN_Marketing</roleAndSubordinates>
         </sharedFrom>
     </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CN_SHARE_ALL_TO_CHEF</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CN_SHARE_ALL_TO_CHEF</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_Chef_Manager</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_China</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CN_SHARE_ALL_TO_MARKETING</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CN_SHARE_ALL_TO_MARKETING</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_Marketing</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_China</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
 </SharingRules>

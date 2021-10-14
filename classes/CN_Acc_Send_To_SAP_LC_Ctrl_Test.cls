@@ -16,21 +16,15 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
     }
     @isTest
     private static void controllerTest_200() {
+        TestDataFactory testFactory = new TestDataFactory();
+        testFactory.makeFactoryAccount();
+
         List<User> userList = [SELECT Id, LastName FROM User];
         Map<String, Id> lastNameUserIdMap = new Map<String, Id>();
         for(User usr: userList) {
             lastNameUserIdMap.put(usr.LastName, usr.Id);
         }
-
-        CN_Approve_Process_Settings__c approveSetting = new CN_Approve_Process_Settings__c(
-            CN_CEO_UserId__c = lastNameUserIdMap.get('CEO'),
-            CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
-            CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
-            CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
-            CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
-        );
-        insert approveSetting;
+        
 
         Talend_Setting__c talendSetting = new Talend_Setting__c();
         talendSetting.Change_Request_Endpoint__c = 'http://127.0.0.1/CR/200';
@@ -48,6 +42,8 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
         insert talendSetting;
 
         User salesRep = [SELECT Id FROM User WHERE lastName = 'Sales1'][0];
+        Account acc_factory = [SELECT Id FROM Account WHERE CN_License_Name_EN__c = 'TestAccount_Factory'][0];
+
         CN_Province__c province = [SELECT Id FROM CN_Province__c WHERE Province_Code__c = '010'][0];
         CN_City__c city = [SELECT Id FROM CN_City__c WHERE CN_City_Code__c = '010'][0];
         CN_Business_Unit__c businessUnit = [SELECT Id FROM CN_Business_Unit__c WHERE CN_Business_Unit_Code__c = '0000900001'][0];
@@ -113,28 +109,14 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
     }
     @isTest
     private static void controllerTest_500() {
+        TestDataFactory testFactory = new TestDataFactory();
+        testFactory.makeFactoryAccount();
+
         List<User> userList = [SELECT Id, LastName FROM User];
         Map<String, Id> lastNameUserIdMap = new Map<String, Id>();
         for(User usr: userList) {
             lastNameUserIdMap.put(usr.LastName, usr.Id);
         }
-        Trigger_Switcher_Setting__c setting = new Trigger_Switcher_Setting__c(
-            SetupOwnerId = UserInfo.getOrganizationId(),
-            EnableFlow__c = true,
-            EnableTrigger__c = true,
-            EnableValidationRule__c = true
-        );
-        insert setting;
-
-        CN_Approve_Process_Settings__c approveSetting = new CN_Approve_Process_Settings__c(
-            CN_CEO_UserId__c = lastNameUserIdMap.get('CEO'),
-            CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
-            CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
-            CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
-			CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
-        );
-        insert approveSetting;
 
         Talend_Setting__c talendSetting = new Talend_Setting__c();
         talendSetting.Change_Request_Endpoint__c = 'http://127.0.0.1/CR/500';
@@ -197,28 +179,14 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
     }
     @isTest
     private static void controllerTest_400() {
+        TestDataFactory testFactory = new TestDataFactory();
+        testFactory.makeFactoryAccount();
+
         List<User> userList = [SELECT Id, LastName FROM User];
         Map<String, Id> lastNameUserIdMap = new Map<String, Id>();
         for(User usr: userList) {
             lastNameUserIdMap.put(usr.LastName, usr.Id);
         }
-        Trigger_Switcher_Setting__c setting = new Trigger_Switcher_Setting__c(
-            SetupOwnerId = UserInfo.getOrganizationId(),
-            EnableFlow__c = true,
-            EnableTrigger__c = true,
-            EnableValidationRule__c = true
-        );
-        insert setting;
-
-        CN_Approve_Process_Settings__c approveSetting = new CN_Approve_Process_Settings__c(
-            CN_CEO_UserId__c = lastNameUserIdMap.get('CEO'),
-            CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
-            CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
-            CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
-			CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
-        );
-        insert approveSetting;
 
         Talend_Setting__c talendSetting = new Talend_Setting__c();
         talendSetting.Change_Request_Endpoint__c = 'http://127.0.0.1/CR/400';
@@ -281,28 +249,14 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
     }
     @isTest
     private static void controllerTest_401() {
+        TestDataFactory testFactory = new TestDataFactory();
+        testFactory.makeFactoryAccount();
+
         List<User> userList = [SELECT Id, LastName FROM User];
         Map<String, Id> lastNameUserIdMap = new Map<String, Id>();
         for(User usr: userList) {
             lastNameUserIdMap.put(usr.LastName, usr.Id);
         }
-        Trigger_Switcher_Setting__c setting = new Trigger_Switcher_Setting__c(
-            SetupOwnerId = UserInfo.getOrganizationId(),
-            EnableFlow__c = true,
-            EnableTrigger__c = true,
-            EnableValidationRule__c = true
-        );
-        insert setting;
-
-        CN_Approve_Process_Settings__c approveSetting = new CN_Approve_Process_Settings__c(
-            CN_CEO_UserId__c = lastNameUserIdMap.get('CEO'),
-            CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
-            CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
-            CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
-			CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
-        );
-        insert approveSetting;
 
         Talend_Setting__c talendSetting = new Talend_Setting__c();
         talendSetting.Change_Request_Endpoint__c = 'http://127.0.0.1/CR/401';
@@ -365,28 +319,14 @@ private class CN_Acc_Send_To_SAP_LC_Ctrl_Test {
     }
     @isTest
     private static void controllerTest_404() {
+        TestDataFactory testFactory = new TestDataFactory();
+        testFactory.makeFactoryAccount();
+
         List<User> userList = [SELECT Id, LastName FROM User];
         Map<String, Id> lastNameUserIdMap = new Map<String, Id>();
         for(User usr: userList) {
             lastNameUserIdMap.put(usr.LastName, usr.Id);
         }
-        Trigger_Switcher_Setting__c setting = new Trigger_Switcher_Setting__c(
-            SetupOwnerId = UserInfo.getOrganizationId(),
-            EnableFlow__c = true,
-            EnableTrigger__c = true,
-            EnableValidationRule__c = true
-        );
-        insert setting;
-
-        CN_Approve_Process_Settings__c approveSetting = new CN_Approve_Process_Settings__c(
-            CN_CEO_UserId__c = lastNameUserIdMap.get('CEO'),
-            CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
-            CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
-            CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
-            CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
-			CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
-        );
-        insert approveSetting;
 
         Talend_Setting__c talendSetting = new Talend_Setting__c();
         talendSetting.Change_Request_Endpoint__c = 'http://127.0.0.1/CR/404';

@@ -594,6 +594,16 @@
             <field>Parent.HierarchyNumberOfWonOpportunities</field>
             <table>Campaign</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Customer_Category__c</field>
+            <table>Campaign</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Is_Chef_Creator__c</field>
+            <table>Campaign</table>
+        </columns>
         <masterLabel>Campaigns</masterLabel>
     </sections>
     <sections>

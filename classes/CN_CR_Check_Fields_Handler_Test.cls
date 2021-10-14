@@ -17,45 +17,21 @@ private class CN_CR_Check_Fields_Handler_Test {
 
     @isTest
     private static void handleBeforeUpdate() {
+        TestDataFactory testFactory = new TestDataFactory();
+        Id updateAccountRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_ACCOUNT).getRecordTypeId();Id updateContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_CONTACT).getRecordTypeId();
 
-        Id updateAccountRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_ACCOUNT).getRecordTypeId();
-        Id updateContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_CONTACT).getRecordTypeId();
-        Id updateShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_SHIPTO).getRecordTypeId();
-        Id newContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_CONTACT).getRecordTypeId();
-        Id newShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_SHIPTO).getRecordTypeId();
+        List<Account> accList_factory = testFactory.makeAccounts(10);
+        testFactory.approveAccount(accList_factory);
 
-        integer num_factory = 10;
-        List<Account> accList_factory = TestDataFactory.makeAccounts(10);
         List<User> userList = [SELECT Id, LastName FROM User];
         Map<String, Id> lastNameUserIdMap = new Map<String, Id>();
         for(User usr: userList) {
             lastNameUserIdMap.put(usr.LastName, usr.Id);
         }
 
-        User salesRep = [SELECT Id FROM User WHERE lastName = 'Sales1'][0];
-        User AR = [SELECT Id FROM User WHERE lastName = 'FinanceAR'][0];
-        CN_Province__c province = [SELECT Id FROM CN_Province__c WHERE Province_Code__c = '010'][0];
-        CN_City__c city = [SELECT Id FROM CN_City__c WHERE CN_City_Code__c = '010'][0];
-        CN_Business_Unit__c businessUnit = [SELECT Id FROM CN_Business_Unit__c WHERE CN_Business_Unit_Code__c = '0000900001'][0];
-        CN_Sales_Team__c salesTeam = [SELECT Id FROM CN_Sales_Team__c WHERE CN_Sales_Team_Code__c = '0000901001'][0];
+        User salesRep = New User(Id = lastNameUserIdMap.get('Sales1'));
+        User AR = New User(Id = lastNameUserIdMap.get('FinanceAR'));
 
-        System.runAs(salesRep) {
-
-            List<Account> accList_updateEx = new List<Account>();
-            for(Account acc : accList_factory){
-                Account acc_updateEx = new Account();
-                acc_updateEx.Id = acc.Id;
-                acc_updateEx.CN_Sync_Status__c = Constants.CN_ACCOUNT_SYNC_STATUS_SUCCESS;
-                acc_updateEx.CN_Account_Status__c = Constants.CN_ACCOUNT_ACCOUNT_STATUS_APPROVED;
-                accList_updateEx.add(acc_updateEx);
-            }
-            Database.DMLOptions dml = new Database.DMLOptions(); 
-            dml.DuplicateRuleHeader.allowSave = true;
-            dml.DuplicateRuleHeader.runAsCurrentUser = true;
-            dml.OptAllOrNone = true;
-            Database.SaveResult[] srList = Database.update(accList_updateEx, dml);
-            
-        }
         System.runAs(AR) {
             List<CN_Change_Request__c> crList = new List<CN_Change_Request__c>();
             for(Account acc : accList_factory){
@@ -69,7 +45,6 @@ private class CN_CR_Check_Fields_Handler_Test {
                 cr.New_CN_Account_License_Name_EN__c = 'TestClass_Account_update';
                 cr.CN_Is_Generate_From_Action__c = true;
                 cr.RecordTypeId = updateAccountRTId;
-                system.debug('lastNameUserIdMap.get(FinanceAR):    '+lastNameUserIdMap.get('FinanceAR'));
                 cr.New_CN_Account_Owner__c = lastNameUserIdMap.get('FinanceAR');
                 crList.add(cr);
             }
@@ -86,19 +61,24 @@ private class CN_CR_Check_Fields_Handler_Test {
             List<CN_Change_Request__c> crList_update = new List<CN_Change_Request__c>();
             CN_Change_Request__c cr1_update = new CN_Change_Request__c();
             cr1_update.id = crList[num_update++].Id;
-            cr1_update.New_CN_Contact_Type__c = '01;02;04';
+            // cr1_update.New_CN_Contact_Type__c = '01;02;04';
             cr1_update.CN_Change_Request_Status__c = Constants.CN_CR_STATUS_READY_FOR_APPROVAL;
             cr1_update.New_CN_Account_Owner__c = salesRep.Id;
             crList_update.add(cr1_update);
 
             CN_Change_Request__c cr2_update = new CN_Change_Request__c();
             cr2_update.id = crList[num_update++].Id;
-            cr2_update.New_CN_Contact_Type__c = '01;02;04';
+            // cr2_update.New_CN_Contact_Type__c = '01;02;04';
             crList_update.add(cr2_update);
 
             update crList_update;
 
-
+            CN_CR_Check_Fields_Handler handler = new CN_CR_Check_Fields_Handler();
+            Set<Id> errorchangeRequestIdSet = New Set<Id>();
+            errorchangeRequestIdSet.add(crList[num_update++].Id);
+            try {
+                handler.salesPersonIsNotTrue(errorchangeRequestIdSet, crList_update);
+            } catch (Exception e) {}
 
             Test.stopTest();
         }

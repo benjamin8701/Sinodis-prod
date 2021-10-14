@@ -238,7 +238,8 @@
 		$User.Id = ManagerId ,
 		$User.Id = Manager.ManagerId ,
 		$User.Id = Manager.Manager.ManagerId,
-		$User.Id = Manager.Manager.Manager.ManagerId
+		$User.Id = Manager.Manager.Manager.ManagerId,
+		$User.Id = Manager.Manager.Manager.Manager.ManagerId
 	),
 	IF(
 		OR(
@@ -247,7 +248,8 @@
 			$User.Title=&apos;Assistant Regional Manager&apos;,
 			$User.Title=&apos;Regional Manager&apos;,
 			$User.Title=&apos;Channel Manager&apos;,
-			$User.Title=&apos;Commerical Director&apos;), 
+			$User.Title=&apos;Commerical Director&apos;,
+                        $User.Title=&apos;CEO&apos;), 
 		True, 
 		False
 	), 

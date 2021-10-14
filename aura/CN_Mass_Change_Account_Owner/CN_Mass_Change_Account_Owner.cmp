@@ -135,14 +135,14 @@
                             <div class="slds-truncate" title="{!v.titleMap.Account.CN_Sinodis_Finance_AR__c}">{!v.titleMap.Account.CN_Sinodis_Finance_AR__c}</div>
                         </th>
                         <th class="" scope="col">
-                            <div class="slds-truncate" title="{!v.titleMap.Account.Type}">{!v.titleMap.Account.Type}</div>
+                            <div class="slds-truncate" title="{!v.titleMap.Account.CN_Route_To_Market__c}">{!v.titleMap.Account.CN_Route_To_Market__c}</div>
                         </th>
                         <th class="" scope="col">
                             <div class="slds-truncate" title="{!v.titleMap.Account.CN_Account_Status__c}">{!v.titleMap.Account.CN_Account_Status__c}</div>
                         </th>
-                        <th class="" scope="col">
+                        <!--th class="" scope="col">
                             <div class="slds-truncate" title="{!v.titleMap.Account.CN_Sync_Status__c}">{!v.titleMap.Account.CN_Sync_Status__c}</div>
-                        </th>
+                        </th-->
                     </tr>
                 </thead>
                 <tbody>
@@ -176,9 +176,9 @@
                             <td data-label="{!v.titleMap.Account.CN_Account_Status__c}">
                                 <div class="slds-truncate" title="{!row.eventObj.CN_Account_Status__c}">{!row.eventObj.CN_Account_Status__c}</div>
                             </td>
-                            <td data-label="{!v.titleMap.Account.CN_Sync_Status__c}">
+                            <!--td data-label="{!v.titleMap.Account.CN_Sync_Status__c}">
                                 <div class="slds-truncate" title="{!row.eventObj.CN_Sync_Status__c}">{!row.eventObj.CN_Sync_Status__c}</div>
-                            </td>
+                            </td-->
                         </tr>
                     </aura:iteration>
                 </tbody>

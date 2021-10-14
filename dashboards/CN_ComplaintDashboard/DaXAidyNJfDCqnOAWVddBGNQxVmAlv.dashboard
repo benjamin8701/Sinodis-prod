@@ -103,7 +103,7 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header># Complaint by Reason YTD</header>
+                <header># Complaint by Raised Reason YTD</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>
                 <report>CN_ComplaintReport/CN_Complaint_by_Reason_YTD</report>
@@ -144,7 +144,7 @@
                 <header># Complaint By Brand YTD Top 10</header>
                 <legendPosition>Bottom</legendPosition>
                 <maxValuesDisplayed>10</maxValuesDisplayed>
-                <report>CN_ComplaintReport/CN_Complaint_by_Channel_YTD</report>
+                <report>CN_ComplaintReport/CN_Complaint_by_Brand_YTD</report>
                 <showPercentage>false</showPercentage>
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
@@ -214,7 +214,7 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header># Complaint By Accepted Date</header>
+                <header># Complaint By Resolved Date</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>CN_ComplaintReport/CN_Complaint_By_Accepted_Date</report>
                 <showPercentage>false</showPercentage>
@@ -225,12 +225,48 @@
             <rowIndex>8</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>4</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>Case.CN_Resolve_Reason__c</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header># Complaint by Resolved Reason YTD</header>
+                <legendPosition>Right</legendPosition>
+                <report>CN_ComplaintReport/CN_Complaint_by_Resolved_Reason_YTD</report>
+                <showPercentage>false</showPercentage>
+                <showTotal>true</showTotal>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>16</rowIndex>
+            <rowSpan>8</rowSpan>
+        </dashboardGridComponents>
         <numberOfColumns>12</numberOfColumns>
         <rowHeight>36</rowHeight>
     </dashboardGridLayout>
     <dashboardType>MyTeamUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>da.huang@accenture.com.savencia</runningUser>
+    <runningUser>c.qiu@accenture.com</runningUser>
     <textColor>#000000</textColor>
     <title>Complaint Dashboard</title>
     <titleColor>#000000</titleColor>

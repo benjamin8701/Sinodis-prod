@@ -4,7 +4,7 @@
     <encodingKey>UTF-8</encodingKey>
     <name>CN Complaint Resolved Notification</name>
     <style>none</style>
-    <subject>客户{!Case.Account}的投诉({!Case.CaseNumber})已得到解决 / Complaint ({!Case.CaseNumber}) for Customer {!Case.Account} has been resolved.</subject>
+    <subject>{!Case.CN_Sales_Office__c} - {!Case.Account}的投诉{!Case.CaseNumber}已得到解决 / Complaint {!Case.CaseNumber} for {!Case.CN_Sales_Office__c} - {!Case.Account} has been resolved.</subject>
     <type>text</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

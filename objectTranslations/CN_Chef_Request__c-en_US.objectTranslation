@@ -744,7 +744,7 @@
         <name>CN_Chef_Self_Work_Request</name>
     </recordTypes>
     <recordTypes>
-        <label>Marketing/CCE Demo</label>
+        <label>Chef Demo Request</label>
         <name>CN_Marketing_CCE_Chef_Demo_Request</name>
     </recordTypes>
     <recordTypes>

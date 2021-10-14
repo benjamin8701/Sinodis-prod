@@ -18,7 +18,7 @@
         <name>CN_Approved_Date__c</name>
     </fields>
     <fields>
-        <label><!-- Approver1 CCE --></label>
+        <label><!-- Approver1 Manager --></label>
         <name>CN_Approver1_CCE__c</name>
         <relationshipLabel>样品</relationshipLabel>
     </fields>

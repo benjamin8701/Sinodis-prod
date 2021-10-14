@@ -547,6 +547,20 @@
         <value>You are not allowed to delete the complaint.</value>
     </labels>
     <labels>
+        <fullName>CN_Complaint_Check_Reason_CS_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Check_Reason_CS_Msg</shortDescription>
+        <value>You can&apos;t set the Resolve Reason as &quot;Brand Quality&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Check_Reason_QA_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Check_Reason_QA_Msg</shortDescription>
+        <value>You can&apos;t set the Resolve Reason as &quot;Customer Service&quot;.</value>
+    </labels>
+    <labels>
         <fullName>CN_Complaint_Mannual_Assign_Check</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -568,11 +582,39 @@
         <value>No Complaint Found.</value>
     </labels>
     <labels>
+        <fullName>CN_Complaint_RejectReason_Null</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_RejectReason_Null</shortDescription>
+        <value>You must input reject reason before you reject the complaint.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_ResolveComments_Null</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_ResolveComments_Null</shortDescription>
+        <value>You must input resolve comments before you resolved the complaint.</value>
+    </labels>
+    <labels>
         <fullName>CN_Complaint_ResolveReason_Null</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>CN_Complaint_ResolveReason_Null</shortDescription>
         <value>You must input resolve reason before you resolved the complaint.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_ResolveReason_VR_ErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_ResolveReason_VR_ErrorMsg</shortDescription>
+        <value>You can&apos;t set the Resolve Reason as</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Submit_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Submit_Message</shortDescription>
+        <value>Are you sure to submit the complaint?</value>
     </labels>
     <labels>
         <fullName>CN_Contact_Account_Has_Synced</fullName>

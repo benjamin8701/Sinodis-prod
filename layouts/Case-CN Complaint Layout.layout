@@ -42,10 +42,6 @@
                 <field>Reason</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CN_Resolve_Reason__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>ClosedDate</field>
             </layoutItems>
@@ -103,17 +99,21 @@
         <label>Product Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>ProductId</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CN_SKU_CODE__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Base_Unit_of_Measure__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>CN_SKU_Quantity__c</field>
             </layoutItems>
             <layoutItems>
@@ -127,15 +127,23 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>QA Follow-up</label>
+        <label>QA-C/S Follow-up</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CN_QA_Compliant_Number__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Rejected_Date__c</field>
+                <behavior>Edit</behavior>
+                <field>CN_Resolve_Reason__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Resolve_Comments__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Resolve_Description__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -146,6 +154,14 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CN_Resolved_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Reject_Reason__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Rejected_Date__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

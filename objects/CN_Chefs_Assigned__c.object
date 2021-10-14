@@ -273,20 +273,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>CN_Chef_Working_Days_Except_Off__c</fullName>
-        <externalId>false</externalId>
-        <formula>If(  ISPICKVAL(CN_Chef_Request__r.CN_Event_Type__c , &apos;OFF&apos;)  , 0 , CN_Chef_Work_End_Date__c - CN_Chef_Work_Start_Date__c + 1)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Chef Working Days(Except OFF)</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>1</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>CN_Chef_Working_Days__c</fullName>
         <externalId>false</externalId>
         <formula>CN_Chef_Work_End_Date__c -  CN_Chef_Work_Start_Date__c + 1</formula>
@@ -699,14 +685,14 @@ DAY(DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) +
         <filters>
             <field>CN_Chef__c</field>
             <operation>equals</operation>
-            <value>Jack Lio</value>
+            <value>Jack Li</value>
         </filters>
         <filters>
             <field>CN_Is_Chef_Request_Confirmed__c</field>
             <operation>equals</operation>
             <value>0</value>
         </filters>
-        <label>Chef-Unconfirmed-Jack Lio-Chef Req</label>
+        <label>Chef-Unconfirmed-Jack Li-Chef Req</label>
     </listViews>
     <listViews>
         <fullName>CN_Chef_Unconfirmed_Jason_Li_Chef_Req</fullName>

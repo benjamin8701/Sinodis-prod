@@ -46,6 +46,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Account_Gaode_Geolocation_Batch_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Account_Generate_Contact_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -95,6 +99,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CN_Account_TM_REPORT_Handler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Account_TM_REPORT_Handler_Test</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -186,6 +194,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_CR_Contact_Type_Check_Handler_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_CR_Generate_Contact_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -238,6 +250,18 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_CST_Populate_Owner_Batch</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_CST_Populate_Owner_Batch_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_CST_Populate_Owner_SCH</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_CTA_Approve_Aging_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -282,11 +306,27 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Campaign_Generate_Opp_LC_Ctrl_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Case_Populate_Status_Handler_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Chef_Req_Assign_Approver_Handler_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Chef_Request_Assign_Approver_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CN_Chef_Request_Chef_Assign_Handler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Chef_Request_Chef_Assign_Handler_Test</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -326,10 +366,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>CN_Complaint_Status_Handler</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>CN_Contact_Change_Request_LC_Ctrl</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -346,6 +382,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Contact_Type_Check_Handler_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Contact_Update_FinAREmail_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -354,11 +394,23 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Contact_Write_To_Lead_Handler_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Contract_Populate_Fields_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Contract_Populate_Fields_Handler_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Demo_Report_Copy_Handler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Demo_Report_Copy_Handler_Test</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -375,6 +427,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CN_Event_Prevent_Delete_Handler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Event_Prevent_Delete_Handler_Test</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -398,11 +454,23 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Lead_MKT_Assigned_Handler_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Lead_New_ConRequest_LC_Ctrl_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Lead_New_Contact_Request_LC_Ctrl</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CN_Lead_Owner_Changed_Custom_Notify</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Mass_Change_Acc_Owner_LC_Ctrl_Test</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -450,6 +518,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Promotion_Validation_Handler_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_QTP_Prevent_Change_Approved_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -458,11 +530,19 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_QuoteItem_Populate_Handler_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_QuoteItem_Prevent_Delete_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CN_Quote_AcceptORDeny_All_Items_LC_Ctrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Quote_Accept_All_Items_LC_Ctrl_Test</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -478,6 +558,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Quote_Populate_Fields_Handler_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Quote_Prevent_Delete_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -486,7 +570,15 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Quote_Send_To_SAP_LC_Ctrl_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Redirect_Gaode_Map_Controller</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_SOItem_Populate_CampaignP_Batch_Test</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -495,6 +587,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CN_SOItem_Populate_CampaignPro_SCH</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_SP_Populate_Campaign_Pro_Batch_Test</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -510,6 +606,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_SP_Populate_Product_Handler_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_SP_Prevent_Delete_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -519,6 +619,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CN_SR_Populate_Fields_Handler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_SR_Populate_Fields_Handler_Test</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -535,6 +639,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CN_SalesPerfor_Populate_Owner_Batch</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_SalesPerfor_Populate_Owner_Batch_Test</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -559,6 +667,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CN_Sample_Product_Get_LC_Ctrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Sample_Product_Get_LC_Ctrl_Test</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -587,6 +699,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>GaodeMapController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>GaodeMapControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -3698,11 +3814,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>CN_Chefs_Assigned__c.CN_Chef_Working_Days_Except_Off__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>CN_Chefs_Assigned__c.CN_Chef_Working_Days__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3807,6 +3918,16 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Comment__c.CN_Comment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Comment__c.CN_Is_Finance__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>CN_Contract__c.CN_Affiliates__c</field>
         <readable>true</readable>
@@ -3898,7 +4019,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Contract__c.CN_Indirect_Account_TEXT__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CN_Contract__c.CN_Internal_Contract_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Contract__c.CN_Internal_Employee__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4289,6 +4420,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CN_Customer_Status_Trend__c.CN_Execution_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Customer_Status_Trend__c.CN_Is_Populated_Owner__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6773,7 +6909,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Campaign.CN_Customer_Category__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Campaign.CN_Execution_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.CN_Is_Chef_Creator__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6998,6 +7144,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.CN_Base_Unit_of_Measure__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.CN_Brand__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -7018,6 +7169,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.CN_Customer_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.CN_Duration__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -7032,13 +7188,48 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_If_Creator_Equals_Account_Sales__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_Is_My_Case__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_Please_Confirm__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Case.CN_QA_Compliant_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case.CN_Reject_Datetime__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.CN_Reject_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case.CN_Rejected_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.CN_Resolve_Comments__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.CN_Resolve_Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -7079,6 +7270,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.CN_Sales_Person__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.CN_Submit_Datetime__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -7773,6 +7969,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.CN_Is_Assigned_to_Me__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.CN_Is_Manual__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -7929,6 +8130,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Product2.CN_Base_Unit_of_Measure__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Product2.CN_Brand_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -8793,6 +8999,13 @@
         <recordType>CN_City__c.CN_City</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>CN_Comment__c-CN Comment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CN_Comment__c-CN Comment Layout</layout>
+        <recordType>CN_Comment__c.CN_Comment</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>CN_Contract__c-CN Sinodis Contract Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -9177,6 +9390,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>CN_City__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>CN_Comment__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -9686,6 +9908,11 @@
     <recordTypeVisibilities>
         <default>true</default>
         <recordType>CN_City__c.CN_City</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>CN_Comment__c.CN_Comment</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
