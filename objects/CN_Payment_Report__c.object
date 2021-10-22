@@ -519,7 +519,7 @@ Unique Id</description>
     <fields>
         <fullName>CN_Finance_AR__c</fullName>
         <externalId>false</externalId>
-        <formula>CN_Customer__r.CN_Finance_AR__r.LastName &amp; CN_Customer__r.CN_Finance_AR__r.FirstName</formula>
+        <formula>CN_Customer__r.CN_Sinodis_Finance_AR__r.Name</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Finance AR</label>
         <required>false</required>
