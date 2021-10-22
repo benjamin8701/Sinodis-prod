@@ -23,7 +23,7 @@ global class CN_Account_Gaode_Geolocation_Batch implements Schedulable,Database.
     }
     
     global void execute(Database.BatchableContext BC, List<Account> scope){
-        system.debug('===execute==');
+        system.debug('===execute=='+scope);
         CN_Gaode_Setting__c setting = CN_Gaode_Setting__c.getInstance();        
         List<Account> needUpdate = new List<Account>();
         Http http;        
@@ -32,10 +32,13 @@ global class CN_Account_Gaode_Geolocation_Batch implements Schedulable,Database.
             HttpRequest req = new HttpRequest();
             HttpResponse res = new HttpResponse();
             String endpoint = setting.Geolocation_Endpoint__c;
-            endpoint += '?key='+ setting.Web_Key__c+'&address='+a.CN_Visit_Addr_CN__c+'&output=JSON';
+            endpoint += '?key='+ setting.Web_Key__c+'&address='+EncodingUtil.urlEncode(a.CN_Visit_Addr_CN__c, 'UTF-8')+'&output=JSON';
+
             req.setEndpoint(endpoint);
             req.setMethod('GET');
             res = http.send(req);
+            system.debug('getStatusCode'+res.getStatusCode());
+            system.debug('getbody'+res.getbody());
             if(res.getStatusCode() == 200){               
                 Map <String, Object> root = (Map <String, Object>) JSON.deserializeUntyped(res.getBody());
                 String status = String.valueof(root.get('info'));
