@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>CN_SHARE_ALL_CHEF_UT_TO_CHEF_MANAGER</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>CN_SHARE_ALL_CHEF_UT_TO_CHEF_MANAGER</label>
+        <sharedTo>
+            <role>CN_Chef_Manager</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>CN Chef UT</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

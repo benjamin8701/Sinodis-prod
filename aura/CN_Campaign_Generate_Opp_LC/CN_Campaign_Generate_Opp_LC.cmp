@@ -1,0 +1,56 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="CN_Campaign_Generate_Opp_LC_Ctrl">
+    <aura:attribute name="fieldMap" type="Map"/>
+    <aura:attribute name="opportunity" type="Opportunity" default="{'sobjectType':'Opportunity',
+                                                       'Name': '',
+                                                       'CloseDate': '',
+                                                       'StageName': ''}"/>
+    <aura:attribute name="title1" type="String" default="Generate Opportunity"/>
+    <aura:attribute name="title2" type="String" default="New Opportunity Information"/>
+    <aura:attribute name="isBtnDisabled" type="Boolean" default="true"/>
+    <aura:attribute name="dispalyHidden" type="String" default="display: hidden"/>
+    <!--Declare Handler-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>    
+  <center>
+      <h2 class="inlineTitle slds-p-top--medium slds-p-horizontal--medium slds-p-bottom--medium slds-text-heading--medium" 
+            style="font-size:20px">
+            {!v.title1}
+            <hr size="1" noshade=""></hr>
+      </h2>
+  </center>
+   <h2 class="slds-section__title slds-theme--shade primaryPaletteBorder test-id__section-header-container"> 
+        {!v.title2}
+   </h2>
+    
+    <div class="container-fluid">
+    <!-- 
+    <div class="form-group">
+        <lightning:input name="Name" type="text" label="Opportunity Name" value="{!v.opportunity.Name}" />
+    </div>
+	-->
+    <div class="form-group">
+        <lightning:input name="CloseDate" type="date" label="Expected Close Date" value="{!v.opportunity.CloseDate}" />
+    </div>
+	<!--
+    <div class="form-group">
+        <lightning:select aura:id="industryPicklist" value="{!v.opportunity.StageName}" onchange="{!c.handleOnChange}" name="industryPicklist" label="Stage" required="true">
+            <option value="">None</option>
+            <aura:iteration items="{!v.fieldMap}" var="i" indexVar="key">
+                <option text="{!i.value}" value="{!i.key}" selected="{!i.key==v.opportunity.StageName}" />
+            </aura:iteration>
+        </lightning:select>
+    </div>
+	 -->   
+    <br/>
+    <center>
+        <lightning:button variant="Brand" 
+                          label="Save" 
+                          title="Save" 
+                          onclick="{!c.save}"
+                          disabled="{!v.isBtnDisabled}"/>
+        <lightning:button variant="Neutral" 
+                          label="Cancel" 
+                          title="Cancel" 
+                          onclick="{!c.cancel}"/>
+    </center>
+    </div>
+</aura:component>

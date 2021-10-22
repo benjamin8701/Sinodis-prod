@@ -1,0 +1,37 @@
+有一个报价单申请需要您的批准
+
+客户名称:{!Quote.CN_Customer_Name__c}
+客户代码:{!Quote.CN_Customer_Code__c}
+客户生命周期:{!Quote.CN_Customer_Journey__c}
+报价单ID:{!Quote.CN_Quote_Number__c}
+生效日期:{!Quote.CN_Effective_Date__c}
+失效日期:{!Quote.ExpirationDate}
+
+请点击以下链接
+
+{!Quote.Link}
+
+查看额外信息
+
+
+ 谢谢，
+Salesforce
+------------------------English Version Scroll Down------------------------
+
+There’s a quotation pending your approval.
+Customer: {!Quote.CN_Customer_Name__c}
+Customer Code: {!Quote.CN_Customer_Code__c}
+Customer Journey: {!Quote.CN_Customer_Journey__c}
+Quote ID:{!Quote.CN_Quote_Number__c}
+Effective Date:{!Quote.CN_Effective_Date__c}
+Expired Date:{!Quote.ExpirationDate}
+
+Please click the following link
+
+{!Quote.Link}
+
+to view additional information. 
+
+
+Thank you,
+Salesforce

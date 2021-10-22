@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>CN_SP_Sales_To_SalesMDM</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>CN_SP_Sales_To_SalesMDM</label>
+        <sharedTo>
+            <role>CN_Sales_MDM</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_Commercial_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

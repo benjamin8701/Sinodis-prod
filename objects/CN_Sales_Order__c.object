@@ -1006,8 +1006,12 @@
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
-        <columns>CREATEDBY_USER</columns>
-        <columns>CREATED_DATE</columns>
+        <columns>CN_Up_Code__c</columns>
+        <columns>CN_Sold_To_Account_Name__c</columns>
+        <columns>CN_Order_Net_Value__c</columns>
+        <columns>CN_Tax_Amount__c</columns>
+        <columns>CN_Total_Amount_With_Tax__c</columns>
+        <columns>CN_Total_Confirmed_Value__c</columns>
         <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>

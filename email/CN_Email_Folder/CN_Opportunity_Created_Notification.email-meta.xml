@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CN_Opportunity_Created_Notification</name>
+    <style>none</style>
+    <subject>新的业务机会 -  {!Opportunity.Name} 已经创建 / New opportunity -  {!Opportunity.Name}  has been created</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

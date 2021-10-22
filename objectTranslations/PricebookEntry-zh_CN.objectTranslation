@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>最低价</label>
+        <name>CN_Minimum_Price__c</name>
+    </fields>
+    <fields>
+        <label>P1促销指导价</label>
+        <name>CN_Promo_Price_P1__c</name>
+    </fields>
+    <fields>
+        <label>P2促销指导价</label>
+        <name>CN_Promo_Price_P2__c</name>
+    </fields>
+    <fields>
+        <label>P3促销指导价</label>
+        <name>CN_Promo_Price_P3__c</name>
+    </fields>
+    <fields>
+        <label>P4促销指导价</label>
+        <name>CN_Promo_Price_P4__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage>不允许更改价目表价格</errorMessage>
+        <name>CN_Prevent_Edit_List_Price</name>
+    </validationRules>
+</CustomObjectTranslation>

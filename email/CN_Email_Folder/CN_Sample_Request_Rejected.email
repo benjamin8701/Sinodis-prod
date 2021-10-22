@@ -1,0 +1,30 @@
+您的样品申请已被拒绝
+
+客户名称:{!CN_Sample_Request__c.CN_Account_Name__c}
+客户代码:{!CN_Sample_Request__c.CN_Customer_Code__c}
+样品申请类型:{!CN_Sample_Request__c.RecordType}
+
+请点击以下链接
+{!CN_Sample_Request__c.Link}
+
+查看额外信息
+
+
+谢谢，      
+Salesforce
+==========================For English Version Scroll Down======================
+Your Sample Request has been rejected:
+
+Customer Name:{!CN_Sample_Request__c.CN_Account_Name__c}
+Customer Code:{!CN_Sample_Request__c.CN_Customer_Code__c}
+Sample Request Type:{!CN_Sample_Request__c.RecordType}
+
+Please click the following link
+{!CN_Sample_Request__c.Link}
+
+ to view additional information. 
+
+
+
+Thank you,
+Salesforce

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Assigned</masterLabel>
+        <translation><!-- Assigned --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed - Converted</masterLabel>
+        <translation><!-- Closed - Converted --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed - Dead</masterLabel>
+        <translation><!-- Closed - Dead --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MKT Qualified</masterLabel>
+        <translation><!-- MKT Qualified --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Open</masterLabel>
+        <translation><!-- Open --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sales Qualified</masterLabel>
+        <translation><!-- Sales Qualified --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

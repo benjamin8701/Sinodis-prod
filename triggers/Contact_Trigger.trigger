@@ -25,6 +25,15 @@ trigger Contact_Trigger on Contact (after insert, after update, after delete, af
             if(Constants.CN_CONTACT_PREVENT_DELETE_HANDLER_TRIGGER_ON){
                 triggersObj.bind(Triggers.Evt.beforeDelete, new CN_Contact_Prevent_Delete_Handler());
             }
+            // Added By Jessica Wang 2021-07-22 Start
+            if(Constants.CN_CONTACT_WRITE_BACK_TO_LEAD_HANDLER_TRIGGER_ON){
+                triggersObj.bind(Triggers.Evt.afterInsert, new CN_Contact_Write_Back_To_Lead_Handler());
+            }
+            // Added By Jessica Wang 2021-07-22 End
+            if(Constants.CN_CONTACT_TYPE_CHECK_HANDLER_TRIGGER_ON){
+                triggersObj.bind(Triggers.Evt.beforeInsert, new CN_Contact_Type_Check_Handler());
+                triggersObj.bind(Triggers.Evt.beforeUpdate, new CN_Contact_Type_Check_Handler());
+            }
         }
         triggersObj.execute(); 
     }

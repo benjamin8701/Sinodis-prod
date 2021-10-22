@@ -78,6 +78,14 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Converted From --></label>
+        <name>CN_Converted_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Maker --></label>
+        <name>CN_Decision_Maker__c</name>
+    </fields>
+    <fields>
         <label><!-- Department of Contact Person --></label>
         <name>CN_Department_Of_Contact_Person__c</name>
         <picklistValues>
@@ -210,6 +218,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- CN Department for API --></label>
+        <name>CN_Department_for_API__c</name>
+    </fields>
+    <fields>
         <label><!-- Family Info --></label>
         <name>CN_Family_Info__c</name>
     </fields>
@@ -305,12 +317,16 @@
         <label><!-- Wechat ID --></label>
         <name>CN_Wechat_ID__c</name>
     </fields>
+    <fields>
+        <label><!-- Working Language --></label>
+        <name>CN_Working_Language__c</name>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+    </fields>
     <layouts>
         <layout>CN Sinodis Contact Layout</layout>
-        <sections>
-            <label><!-- Additional Information --></label>
-            <section>Additional Information</section>
-        </sections>
         <sections>
             <label><!-- SAP Creation Information --></label>
             <section>SAP Creation Information</section>
@@ -339,6 +355,10 @@
     <validationRules>
         <errorMessage><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></errorMessage>
         <name>CN_Check_Phone_NumberFormat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allowed to convert to exsiting records. --></errorMessage>
+        <name>CN_Prevent_Convert_To_Exsiting</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Please create contact via creating a new contact change request. 

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Bakery China</masterLabel>
+        <translation><!-- Bakery China --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CIIE</masterLabel>
+        <translation><!-- CIIE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Customer Service Hotline</masterLabel>
+        <translation><!-- Customer Service Hotline --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Digital Campaign</masterLabel>
+        <translation><!-- Digital Campaign --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>FHC</masterLabel>
+        <translation><!-- FHC --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Livestreaming</masterLabel>
+        <translation><!-- Livestreaming --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Marketing Campaign</masterLabel>
+        <translation><!-- Marketing Campaign --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Network</masterLabel>
+        <translation><!-- Network --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Other Trade show</masterLabel>
+        <translation><!-- Other Trade show --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Social Media</masterLabel>
+        <translation><!-- Social Media --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sponsorship Event</masterLabel>
+        <translation><!-- Sponsorship Event --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Website</masterLabel>
+        <translation><!-- Website --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

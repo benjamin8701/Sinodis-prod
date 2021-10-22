@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CN_Chef_Request_1ON1_Submit</name>
+    <style>none</style>
+    <subject>客户{!CN_Chef_Request__c.CN_Account__c}的厨师演示申请等待您的批准/Demo Request for Customer{!CN_Chef_Request__c.CN_Account__c} is pending your approval.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

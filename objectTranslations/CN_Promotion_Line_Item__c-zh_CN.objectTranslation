@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>促销活动行项目</value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>CN_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Promotion Planned --></label>
+        <name>CN_Is_Promotion_Planned__c</name>
+    </fields>
+    <fields>
+        <label>产品</label>
+        <name>CN_Product__c</name>
+        <relationshipLabel>促销活动条目</relationshipLabel>
+    </fields>
+    <fields>
+        <label>促销价格</label>
+        <name>CN_Promotion_Price__c</name>
+    </fields>
+    <fields>
+        <label>促销活动</label>
+        <name>CN_Promotion__c</name>
+        <relationshipLabel>促销活动条目</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Promotion status --></label>
+        <name>CN_Promotion_status__c</name>
+    </fields>
+    <layouts>
+        <layout>Promotion Line Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>促销活动行项目编号</nameFieldLabel>
+    <recordTypes>
+        <label><!-- CN Promotion Line Item --></label>
+        <name>CN_Promotion_Line_Item</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>优惠价格必须大于0</errorMessage>
+        <name>CN_Check_Price</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>产品已失效</errorMessage>
+        <name>CN_Check_Product_Active</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>促销活动处于非Planned状态不可添加新的促销活动条目</errorMessage>
+        <name>CN_Prevent_Create_New_Item</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>非处于Planned状态不可编辑</errorMessage>
+        <name>CN_Prevent_Edit_Item</name>
+    </validationRules>
+</CustomObjectTranslation>

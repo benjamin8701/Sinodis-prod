@@ -1,0 +1,35 @@
+投诉({!Case.CaseNumber})已被拒绝:
+
+客户名称:{!Case.Account}
+客户代码:{!Case.CN_Customer_Code__c}
+销售办公室: {!Case.CN_Sales_Office__c}
+解决原因:{!Case.CN_Resolve_Reason__c}
+
+请点击以下链接
+
+{!Case.Link}
+
+查看额外信息。
+
+
+谢谢，
+Salesforce
+
+------------------------English Version Scroll Down------------------------
+The complaint ({!Case.CaseNumber})  has been rejected: 
+
+Customer Name: {!Case.Account}
+Customer Code: {!Case.CN_Customer_Code__c}
+Sales Office: {!Case.CN_Sales_Office__c}
+Resolve Reason: {!Case.CN_Resolve_Reason__c}
+                 
+Please click the following link
+
+{!Case.Link}
+
+to view additional information. 
+
+
+
+Thank you,
+Salesforce

@@ -1,0 +1,12 @@
+.THIS {
+}
+
+.THIS.slds-scope {
+	height: auto;
+	min-height: 560px;
+	margin-top: 0rem;
+	margin-bottom: 1rem;
+	background-color: white;
+	border-radius: .25rem;
+	padding: 1rem 1rem 0.75rem 1rem;
+}

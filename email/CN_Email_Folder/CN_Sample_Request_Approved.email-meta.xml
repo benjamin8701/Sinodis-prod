@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CN_Sample_Request_Approved</name>
+    <style>none</style>
+    <subject>您的客户{!CN_Sample_Request__c.CN_Account_Name__c}样品申请已被批准/Your Sample Request for Customer {!CN_Sample_Request__c.CN_Account_Name__c} has been approved</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CN_Quote_Approval</name>
+    <style>none</style>
+    <subject>{!Quote.CN_Sales_Person_Name__c} Quotation for Customer{!Quote.CN_Customer_Name__c} is pending your approval / {!Quote.CN_Sales_Person_Name__c}的客户{!Quote.CN_Customer_Name__c}的报价单申请等待您的批准</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -16,6 +16,7 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
     }
     @isTest
     private static void controllerTest_200() {
+        TestDataFactory testDataFactory = new TestDataFactory();
 
         List<User> userList = [SELECT Id, LastName FROM User];
         Map<String, Id> lastNameUserIdMap = new Map<String, Id>();
@@ -38,13 +39,13 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.User_Name__c = 'Name';
         insert talendSetting;
 
-        Account acc = TestDataFactory.makeAccounts(1)[0];
+        Account acc = testDataFactory.makeAccounts(1,false)[0];
         User salesRep = [SELECT Id FROM User WHERE lastName = 'Sales1'][0];
 
         Id newContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_CONTACT).getRecordTypeId();
         CN_Change_Request__c cr = new CN_Change_Request__c();
         cr.RecordTypeId = newContactRTId;
-        cr.New_CN_Contact_Type__c = '01;02';
+        cr.New_CN_Contact_Type__c = '04';
         cr.New_CN_Contact_License_Name__c = acc.Id;
         cr.New_CN_Contact_Title__c = 'CR Contact Title';
         cr.New_CN_Contact_Dept_Of_Contact_Person__c = '0002';
@@ -85,6 +86,7 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
     }
     @isTest
     private static void controllerTest_500() {
+        TestDataFactory testDataFactory = new TestDataFactory();
 
         List<User> userList = [SELECT Id, LastName FROM User];
         Map<String, Id> lastNameUserIdMap = new Map<String, Id>();
@@ -107,13 +109,13 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.User_Name__c = 'Name';
         insert talendSetting;
 
-        Account acc = TestDataFactory.makeAccounts(1)[0];
+        Account acc = testDataFactory.makeAccounts(1,false)[0];
         User salesRep = [SELECT Id FROM User WHERE lastName = 'Sales1'][0];
 
         Id newContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_CONTACT).getRecordTypeId();
         CN_Change_Request__c cr = new CN_Change_Request__c();
         cr.RecordTypeId = newContactRTId;
-        cr.New_CN_Contact_Type__c = '01;02';
+        cr.New_CN_Contact_Type__c = '04';
         cr.New_CN_Contact_License_Name__c = acc.Id;
         cr.New_CN_Contact_Title__c = 'CR Contact Title';
         cr.New_CN_Contact_Dept_Of_Contact_Person__c = '0002';
@@ -134,6 +136,7 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
     }
     @isTest
     private static void controllerTest_400() {
+        TestDataFactory testDataFactory = new TestDataFactory();
 
         List<User> userList = [SELECT Id, LastName FROM User];
         Map<String, Id> lastNameUserIdMap = new Map<String, Id>();
@@ -156,13 +159,13 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.User_Name__c = 'Name';
         insert talendSetting;
 
-        Account acc = TestDataFactory.makeAccounts(1)[0];
+        Account acc = testDataFactory.makeAccounts(1,false)[0];
         User salesRep = [SELECT Id FROM User WHERE lastName = 'Sales1'][0];
 
         Id newContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_CONTACT).getRecordTypeId();
         CN_Change_Request__c cr = new CN_Change_Request__c();
         cr.RecordTypeId = newContactRTId;
-        cr.New_CN_Contact_Type__c = '01;02';
+        cr.New_CN_Contact_Type__c = '04';
         cr.New_CN_Contact_License_Name__c = acc.Id;
         cr.New_CN_Contact_Title__c = 'CR Contact Title';
         cr.New_CN_Contact_Dept_Of_Contact_Person__c = '0002';
@@ -183,6 +186,7 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
     }
     @isTest
     private static void controllerTest_401() {
+        TestDataFactory testDataFactory = new TestDataFactory();
 
         List<User> userList = [SELECT Id, LastName FROM User];
         Map<String, Id> lastNameUserIdMap = new Map<String, Id>();
@@ -205,13 +209,13 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.User_Name__c = 'Name';
         insert talendSetting;
 
-        Account acc = TestDataFactory.makeAccounts(1)[0];
+        Account acc = testDataFactory.makeAccounts(1,false)[0];
         User salesRep = [SELECT Id FROM User WHERE lastName = 'Sales1'][0];
 
         Id newContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_CONTACT).getRecordTypeId();
         CN_Change_Request__c cr = new CN_Change_Request__c();
         cr.RecordTypeId = newContactRTId;
-        cr.New_CN_Contact_Type__c = '01;02';
+        cr.New_CN_Contact_Type__c = '04';
         cr.New_CN_Contact_License_Name__c = acc.Id;
         cr.New_CN_Contact_Title__c = 'CR Contact Title';
         cr.New_CN_Contact_Dept_Of_Contact_Person__c = '0002';
@@ -232,6 +236,7 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
     }
     @isTest
     private static void controllerTest_404() {
+        TestDataFactory testDataFactory = new TestDataFactory();
 
         List<User> userList = [SELECT Id, LastName FROM User];
         Map<String, Id> lastNameUserIdMap = new Map<String, Id>();
@@ -254,13 +259,13 @@ private class CN_CR_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.User_Name__c = 'Name';
         insert talendSetting;
 
-        Account acc = TestDataFactory.makeAccounts(1)[0];
+        Account acc = testDataFactory.makeAccounts(1,false)[0];
         User salesRep = [SELECT Id FROM User WHERE lastName = 'Sales1'][0];
 
         Id newContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_CONTACT).getRecordTypeId();
         CN_Change_Request__c cr = new CN_Change_Request__c();
         cr.RecordTypeId = newContactRTId;
-        cr.New_CN_Contact_Type__c = '01;02';
+        cr.New_CN_Contact_Type__c = '04';
         cr.New_CN_Contact_License_Name__c = acc.Id;
         cr.New_CN_Contact_Title__c = 'CR Contact Title';
         cr.New_CN_Contact_Dept_Of_Contact_Person__c = '0002';

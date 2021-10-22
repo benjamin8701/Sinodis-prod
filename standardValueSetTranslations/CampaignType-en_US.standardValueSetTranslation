@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Brand Event</masterLabel>
+        <translation><!-- Brand Event --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Channel Solution</masterLabel>
+        <translation><!-- Channel Solution --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Co-Branding Event</masterLabel>
+        <translation><!-- Co-Branding Event --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Corporate Event</masterLabel>
+        <translation><!-- Corporate Event --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cross Category Event</masterLabel>
+        <translation><!-- Cross Category Event --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Digital Campaign</masterLabel>
+        <translation><!-- Digital Campaign --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Road Show</masterLabel>
+        <translation><!-- Road Show --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

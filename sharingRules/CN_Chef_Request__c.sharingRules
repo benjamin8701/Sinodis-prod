@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>CN_CHEF_REQUEST_SHARE_TO_SALES_MDM</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CN_CHEF_REQUEST_SHARE_TO_SALES_MDM</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_Sales_MDM</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_Commercial_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CN_SHARE_ALL_CHEF_REQUEST_TO_CHEF</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CN_SHARE_ALL_CHEF_REQUEST_TO_CHEF</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_Chef_Manager</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_China</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CN_SHARE_ALL_CHEF_REQUEST_TO_CHEF_MANAGER</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>CN_SHARE_ALL_CHEF_REQUEST_TO_CHEF_MANAGER</label>
+        <sharedTo>
+            <role>CN_Chef_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_China</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>
