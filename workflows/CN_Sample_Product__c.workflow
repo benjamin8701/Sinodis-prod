@@ -67,14 +67,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c, 
-CN_Sample_Request__r.RecordType.DeveloperName  = &apos;CN_Office_Repack&apos;,
-OR(
-   ISNEW(),
-   ISCHANGED(CN_Product__c), 
-   ISCHANGED(CN_Quantity_Needed__c)
-)
-)</formula>
+        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c,  CN_Sample_Request__r.RecordType.DeveloperName  = &apos;CN_Office_Repack&apos;, OR(    ISNEW(),    ISCHANGED(CN_Product__c),     ISCHANGED(CN_Quantity_Needed__c) ) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -84,9 +77,7 @@ OR(
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Sample_Product&apos;,
-ISCHANGED( CN_Product__c) || ISCHANGED( CN_Sample_Request__c) || ISNEW()
-)</formula>
+        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Sample_Product&apos;, ISCHANGED( CN_Product__c) || ISCHANGED( CN_Sample_Request__c) || ISNEW() )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

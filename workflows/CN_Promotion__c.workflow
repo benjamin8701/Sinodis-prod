@@ -22,8 +22,7 @@
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c, BEGINS(RecordType.DeveloperName, &apos;CN&apos;), ISCHANGED(CN_Status__c),
-ISPICKVAL(CN_Status__c, &quot;Published&quot;))</formula>
+        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c, BEGINS(RecordType.DeveloperName, &apos;CN&apos;), ISCHANGED(CN_Status__c), ISPICKVAL(CN_Status__c, &quot;Published&quot;))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

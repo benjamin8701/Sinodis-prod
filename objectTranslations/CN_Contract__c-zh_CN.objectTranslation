@@ -194,7 +194,7 @@
         <name>CN_Guarantor__c</name>
     </fields>
     <fields>
-        <label><!-- Indirect Account Name --></label>
+        <label>间接客户名称</label>
         <name>CN_Indirect_Account_Name__c</name>
         <relationshipLabel><!-- Contracts (Indirect Account Name) --></relationshipLabel>
     </fields>

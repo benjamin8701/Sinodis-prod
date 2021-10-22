@@ -1380,11 +1380,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>PushCount</field>
-            <table>Account.Opportunities</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>LastStageChangeDate</field>
             <table>Account.Opportunities</table>
         </columns>

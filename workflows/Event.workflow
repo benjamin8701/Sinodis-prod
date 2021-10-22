@@ -17,12 +17,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(   
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
-  RecordType.DeveloperName = &quot;CN_Visit&quot;, 
-  ISCHANGED(CN_Meeting_MInutes__c),
-  NOT(ISBLANK(CN_Meeting_MInutes__c))
-)</formula>
+        <formula>AND(      $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,   RecordType.DeveloperName = &quot;CN_Visit&quot;,    ISCHANGED(CN_Meeting_MInutes__c),   NOT(ISBLANK(CN_Meeting_MInutes__c)) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

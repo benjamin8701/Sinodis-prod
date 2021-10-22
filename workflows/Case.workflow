@@ -151,15 +151,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
-  RecordType.DeveloperName = &apos;CN_Complaint&apos;,
-  OR(
-    ISPICKVAL(PRIORVALUE(Status) ,&apos;New&apos;),
-    ISPICKVAL(PRIORVALUE(Status) , &apos;Rejected&apos;)
-  ),
-  ISPICKVAL(Status , &apos;Assigned&apos;)
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    RecordType.DeveloperName = &apos;CN_Complaint&apos;,   OR(     ISPICKVAL(PRIORVALUE(Status) ,&apos;New&apos;),     ISPICKVAL(PRIORVALUE(Status) , &apos;Rejected&apos;)   ),   ISPICKVAL(Status , &apos;Assigned&apos;) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -169,11 +161,7 @@
             <type>Alert</type>
         </actions>
         <active>false</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
-  RecordType.DeveloperName = &apos;CN_Complaint&apos;,
-  OR(ISCHANGED( OwnerId ),ISNEW())
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    RecordType.DeveloperName = &apos;CN_Complaint&apos;,   OR(ISCHANGED( OwnerId ),ISNEW()) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -187,16 +175,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
-  RecordType.DeveloperName = &apos;CN_Complaint&apos;,
-  OR(
-    ISPICKVAL(PRIORVALUE(Status) ,&apos;New&apos;),
-    ISPICKVAL(PRIORVALUE(Status) , &apos;Rejected&apos;)
-  ),
-  ISPICKVAL(Status , &apos;Assigned&apos;),
-  ISPICKVAL(Reason , &apos;Customer Service&apos;)
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    RecordType.DeveloperName = &apos;CN_Complaint&apos;,   OR(     ISPICKVAL(PRIORVALUE(Status) ,&apos;New&apos;),     ISPICKVAL(PRIORVALUE(Status) , &apos;Rejected&apos;)   ),   ISPICKVAL(Status , &apos;Assigned&apos;),   ISPICKVAL(Reason , &apos;Customer Service&apos;) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -210,16 +189,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
-  RecordType.DeveloperName = &apos;CN_Complaint&apos;,
-  OR(
-    ISPICKVAL(PRIORVALUE(Status) ,&apos;New&apos;),
-    ISPICKVAL(PRIORVALUE(Status) , &apos;Rejected&apos;)
-  ),
-  ISPICKVAL( Status, &apos;Assigned&apos;),
-  NOT(ISPICKVAL(Reason , &apos;Customer Service&apos;))
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    RecordType.DeveloperName = &apos;CN_Complaint&apos;,   OR(     ISPICKVAL(PRIORVALUE(Status) ,&apos;New&apos;),     ISPICKVAL(PRIORVALUE(Status) , &apos;Rejected&apos;)   ),   ISPICKVAL( Status, &apos;Assigned&apos;),   NOT(ISPICKVAL(Reason , &apos;Customer Service&apos;)) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -229,12 +199,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
-  RecordType.DeveloperName = &quot;CN_Complaint&quot;,
-  ISPICKVAL(Status , &quot;Accepted&quot;),
-  ISCHANGED(Status) 
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,   RecordType.DeveloperName = &quot;CN_Complaint&quot;,   ISPICKVAL(Status , &quot;Accepted&quot;),   ISCHANGED(Status)  )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -244,12 +209,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
-  RecordType.DeveloperName = &quot;CN_Complaint&quot;,
-  ISPICKVAL(Status , &quot;Rejected&quot;),
-  ISCHANGED(Status) 
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,   RecordType.DeveloperName = &quot;CN_Complaint&quot;,   ISPICKVAL(Status , &quot;Rejected&quot;),   ISCHANGED(Status)  )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -259,12 +219,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
-  RecordType.DeveloperName = &quot;CN_Complaint&quot;,
-  ISPICKVAL(Status , &quot;Resolved&quot;),
-  ISCHANGED(Status) 
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,   RecordType.DeveloperName = &quot;CN_Complaint&quot;,   ISPICKVAL(Status , &quot;Resolved&quot;),   ISCHANGED(Status)  )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -274,12 +229,7 @@
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
-  RecordType.DeveloperName = &apos;CN_Complaint&apos;, 
-  ISPICKVAL( Status , &apos;Rejected&apos;),
-  ISCHANGED( Status ) 
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    RecordType.DeveloperName = &apos;CN_Complaint&apos;,    ISPICKVAL( Status , &apos;Rejected&apos;),   ISCHANGED( Status )  )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -289,12 +239,7 @@
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
-  RecordType.DeveloperName = &apos;CN_Complaint&apos;, 
-  ISPICKVAL( Status , &apos;Resolved&apos;),
-  ISCHANGED( Status ) 
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    RecordType.DeveloperName = &apos;CN_Complaint&apos;,    ISPICKVAL( Status , &apos;Resolved&apos;),   ISCHANGED( Status )  )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

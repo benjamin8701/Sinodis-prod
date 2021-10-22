@@ -447,6 +447,7 @@
         <columns>CN_Standard_Sample_Unit__c</columns>
         <columns>CN_Sample_Unit_List_Price__c</columns>
         <columns>CN_Sample_Type__c</columns>
+        <columns>PRODUCT2.CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>PRODUCT2.ACTIVE</field>

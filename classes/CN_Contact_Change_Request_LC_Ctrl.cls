@@ -15,7 +15,6 @@ public without sharing class CN_Contact_Change_Request_LC_Ctrl {
         String soql = 'SELECT ' + selectFields + ' FROM Contact WHERE Id = \'' + recordId + '\'';
         List<Contact> accList = Database.query(soql);
         Contact sourceContact = accList[0];
-        
         if(!Constants.CN_ACCOUNT_SYNC_STATUS_SUCCESS.equals(sourceContact.CN_Account_Sync_Status__c)) {
             throw new AuraHandledException(System.Label.CN_Account_Not_Synced);
         }

@@ -9685,7 +9685,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
         <recordType>CN_Chef_Request__c.CN_Chef_Self_Work_Request</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -9721,7 +9720,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
         <recordType>CN_Contract__c.CN_Contract</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -9867,7 +9865,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
         <recordType>Campaign.CN_Campaign</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>

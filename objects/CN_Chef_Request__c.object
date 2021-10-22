@@ -2197,15 +2197,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <label>Brand-tbc-Chef Req</label>
     </listViews>
     <listViews>
-        <fullName>CN_Chef_Manager_Queue_CN_Chef_Request</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Chef Manager Queue</label>
-        <queue>CN_Chef_Manager_Queue</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>CN_Location_Confirmed_3nd_Party_Chef_Req</fullName>
         <columns>NAME</columns>
         <columns>CN_Confirmed__c</columns>
@@ -2609,6 +2600,33 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <value>0</value>
         </filters>
         <label>Location-Unconfirmed-Partial-SH R&amp;D</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Location_Unconfirmed_Partial_SH_Studio</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Event_Type__c</columns>
+        <columns>CN_Confirmed__c</columns>
+        <columns>CN_Demo_Start_Date__c</columns>
+        <columns>CN_Demo_End_Date__c</columns>
+        <columns>CN_Account__c</columns>
+        <columns>CN_Campaign__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CN_Event_Location__c</field>
+            <operation>equals</operation>
+            <value>SH Chef Studio</value>
+        </filters>
+        <filters>
+            <field>CN_Using_The_Entire_Kitchen__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Location-Unconfirmed-Partial-SH Studio</label>
     </listViews>
     <listViews>
         <fullName>CN_Location_Unconfirmed_Partial_SZ_Studio</fullName>

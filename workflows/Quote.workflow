@@ -202,10 +202,7 @@
     <rules>
         <fullName>CN_Quote_SalesRep_Follow</fullName>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,    
-  RecordType.DeveloperName = &quot;CN_Quote&quot;
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,       RecordType.DeveloperName = &quot;CN_Quote&quot; )</formula>
         <triggerType>onCreateOnly</triggerType>
         <workflowTimeTriggers>
             <actions>

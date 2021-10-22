@@ -38,17 +38,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, 
-  RecordType.DeveloperName = &apos;CN_Payment_Report&apos;, 
-  OR(
-    AND(
-      ISNEW(), 
-      NOT( ISBLANK(TEXT(CN_Sent_Reminder_Level__c) ) )
-    ),
-    ISCHANGED(CN_Sent_Reminder_Level__c)
-  )
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,    RecordType.DeveloperName = &apos;CN_Payment_Report&apos;,    OR(     AND(       ISNEW(),        NOT( ISBLANK(TEXT(CN_Sent_Reminder_Level__c) ) )     ),     ISCHANGED(CN_Sent_Reminder_Level__c)   ) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -58,11 +48,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
-  $Profile.Name = &quot;CN Finance AR&quot;,
-  NOT(ISNEW())
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,   $Profile.Name = &quot;CN Finance AR&quot;,   NOT(ISNEW()) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -72,9 +58,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
- $Profile.Name = &quot;System Integration&quot;
-)</formula>
+        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,  $Profile.Name = &quot;System Integration&quot; )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

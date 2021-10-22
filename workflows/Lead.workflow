@@ -47,11 +47,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
-  RecordType.DeveloperName = &apos;CN_Lead&apos;,  
-  $Profile.Name = &quot;System Integration&quot;
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    RecordType.DeveloperName = &apos;CN_Lead&apos;,     $Profile.Name = &quot;System Integration&quot; )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -61,13 +57,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND( 
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
-  RecordType.DeveloperName = &apos;CN_Lead&apos;,  
-  ISPICKVAL( Status , &quot;MKT Qualified&quot;),  
-  ISCHANGED( OwnerId ),  
-  Owner:User.Profile.Name = &quot;CN Sales&quot; ||  Owner:User.Profile.Name = &quot;CN Sales Lead&quot; ||  Owner:User.Profile.Name = &quot;CN Sales Manager&quot; 
-)</formula>
+        <formula>AND(    $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    RecordType.DeveloperName = &apos;CN_Lead&apos;,     ISPICKVAL( Status , &quot;MKT Qualified&quot;),     ISCHANGED( OwnerId ),     Owner:User.Profile.Name = &quot;CN Sales&quot; ||  Owner:User.Profile.Name = &quot;CN Sales Lead&quot; ||  Owner:User.Profile.Name = &quot;CN Sales Manager&quot;  )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

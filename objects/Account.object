@@ -19522,13 +19522,10 @@ Reference Day</errorMessage>
         <fullName>CN_Check_Post_Code_Length</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
-  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  OR(
-    RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,
-    RecordType.DeveloperName = &apos;CN_New_Direct&apos;),
-    NOT(REGEX( CN_Post_Code__c , &quot;\\d{6}&quot;) 
-  )
+	$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+	NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(RecordType.DeveloperName = &apos;CN_Edit_Direct&apos;,RecordType.DeveloperName = &apos;CN_New_Direct&apos;),
+	 NOT(REGEX( CN_Post_Code__c , &quot;\\d{6}&quot;) )
 )</errorConditionFormula>
         <errorDisplayField>CN_Post_Code__c</errorDisplayField>
         <errorMessage>Postal code must be six digits.</errorMessage>

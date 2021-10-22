@@ -17,9 +17,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c 
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c  )</formula>
         <triggerType>onCreateOnly</triggerType>
     </rules>
 </Workflow>

@@ -17,11 +17,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, 
-  RecordType.DeveloperName = &apos;CN_Sales_Target&apos;,
-  OR(ISNEW(),ISCHANGED(  CN_Target_Sales_Person__c ),ISCHANGED(CN_Target_Year__c),ISCHANGED(CN_Target_Month__c))
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,    RecordType.DeveloperName = &apos;CN_Sales_Target&apos;,   OR(ISNEW(),ISCHANGED(  CN_Target_Sales_Person__c ),ISCHANGED(CN_Target_Year__c),ISCHANGED(CN_Target_Month__c)) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

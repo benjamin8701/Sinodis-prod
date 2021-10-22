@@ -252,11 +252,7 @@
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_1on1_Service_Chef_Request&apos;,
-NOT( ISNEW() ) ,
-ISCHANGED(CN_Confirmed__c ) ,
-CN_Confirmed__c 
- )</formula>
+        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_1on1_Service_Chef_Request&apos;, NOT( ISNEW() ) , ISCHANGED(CN_Confirmed__c ) , CN_Confirmed__c   )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -266,10 +262,7 @@ CN_Confirmed__c
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_1on1_Service_Chef_Request&apos;,
-NOT(ISNEW()),
-ISCHANGED(CN_Confirmed__c),
- NOT(CN_Confirmed__c) )</formula>
+        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_1on1_Service_Chef_Request&apos;, NOT(ISNEW()), ISCHANGED(CN_Confirmed__c),  NOT(CN_Confirmed__c) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -289,13 +282,7 @@ ISCHANGED(CN_Confirmed__c),
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
-  RecordType.DeveloperName = &apos;CN_Chef_Self_Work_Request&apos;,
-NOT(ISNEW()),
-ISCHANGED(CN_Confirmed__c),
-  CN_Confirmed__c 
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    RecordType.DeveloperName = &apos;CN_Chef_Self_Work_Request&apos;, NOT(ISNEW()), ISCHANGED(CN_Confirmed__c),   CN_Confirmed__c  )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -305,13 +292,7 @@ ISCHANGED(CN_Confirmed__c),
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
-  RecordType.DeveloperName = &apos;CN_Chef_Self_Work_Request&apos;, 
- NOT(ISNEW()),
-  ISCHANGED(CN_Confirmed__c),
-  NOT(CN_Confirmed__c)
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    RecordType.DeveloperName = &apos;CN_Chef_Self_Work_Request&apos;,   NOT(ISNEW()),   ISCHANGED(CN_Confirmed__c),   NOT(CN_Confirmed__c) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -321,10 +302,7 @@ ISCHANGED(CN_Confirmed__c),
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Marketing_CCE_Chef_Demo_Request&apos;,
-NOT(ISNEW()),
-ISCHANGED(CN_Confirmed__c ),
- CN_Confirmed__c )</formula>
+        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Marketing_CCE_Chef_Demo_Request&apos;, NOT(ISNEW()), ISCHANGED(CN_Confirmed__c ),  CN_Confirmed__c )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -334,10 +312,7 @@ ISCHANGED(CN_Confirmed__c ),
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Marketing_CCE_Chef_Demo_Request&apos;,
-NOT(ISNEW()),
-ISCHANGED(CN_Confirmed__c),
- NOT(CN_Confirmed__c) )</formula>
+        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Marketing_CCE_Chef_Demo_Request&apos;, NOT(ISNEW()), ISCHANGED(CN_Confirmed__c),  NOT(CN_Confirmed__c) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -347,13 +322,7 @@ ISCHANGED(CN_Confirmed__c),
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
-  RecordType.DeveloperName = &apos;CN_Marketing_Development_Request&apos;,
-  NOT(ISNEW()),
-  ISCHANGED(CN_Confirmed__c),
-  CN_Confirmed__c 
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    RecordType.DeveloperName = &apos;CN_Marketing_Development_Request&apos;,   NOT(ISNEW()),   ISCHANGED(CN_Confirmed__c),   CN_Confirmed__c  )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -363,10 +332,7 @@ ISCHANGED(CN_Confirmed__c),
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Marketing_Development_Request&apos;,
-NOT(ISNEW()),
-ISCHANGED(CN_Confirmed__c),
- NOT(CN_Confirmed__c) )</formula>
+        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Marketing_Development_Request&apos;, NOT(ISNEW()), ISCHANGED(CN_Confirmed__c),  NOT(CN_Confirmed__c) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -376,10 +342,7 @@ ISCHANGED(CN_Confirmed__c),
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_1on1_Service_Chef_Request&apos;,
- ISCHANGED( CN_Status__c ) ,
- ISPICKVAL( CN_Status__c, &quot;Ready for Approval&quot;)
-)</formula>
+        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_1on1_Service_Chef_Request&apos;,  ISCHANGED( CN_Status__c ) ,  ISPICKVAL( CN_Status__c, &quot;Ready for Approval&quot;) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

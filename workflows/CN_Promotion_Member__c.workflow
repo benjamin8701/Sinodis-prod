@@ -38,12 +38,7 @@
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-    $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, 
-    BEGINS(RecordType.DeveloperName, &apos;CN&apos;), 
-    ISCHANGED(CN_IsPublished__c),
-    CN_IsPublished__c  
-  )</formula>
+        <formula>AND(     $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,      BEGINS(RecordType.DeveloperName, &apos;CN&apos;),      ISCHANGED(CN_IsPublished__c),     CN_IsPublished__c     )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -53,9 +48,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Promotion_Member&apos;,
-ISCHANGED( CN_Account__c ) || ISCHANGED( CN_Promotion__c ) || ISNEW()
-)</formula>
+        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Promotion_Member&apos;, ISCHANGED( CN_Account__c ) || ISCHANGED( CN_Promotion__c ) || ISNEW() )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -69,11 +62,7 @@ ISCHANGED( CN_Account__c ) || ISCHANGED( CN_Promotion__c ) || ISNEW()
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>And(
-    $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, 
-    BEGINS(RecordType.DeveloperName, &apos;CN&apos;), 
-    ISPICKVAL(CN_Promotion__r.CN_Status__c , &apos;Published&apos;) 
-  )</formula>
+        <formula>And(     $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,      BEGINS(RecordType.DeveloperName, &apos;CN&apos;),      ISPICKVAL(CN_Promotion__r.CN_Status__c , &apos;Published&apos;)    )</formula>
         <triggerType>onCreateOnly</triggerType>
     </rules>
 </Workflow>

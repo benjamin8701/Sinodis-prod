@@ -1044,17 +1044,6 @@
         </filters>
         <label>My Active Campaigns</label>
     </listViews>
-    <listViews>
-        <fullName>Org_Campaign_Hierarchy</fullName>
-        <columns>CAMPAIGN.NAME</columns>
-        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
-        <columns>CAMPAIGN.ACTIVE</columns>
-        <columns>CAMPAIGN.STATUS</columns>
-        <columns>CAMPAIGN.START_DATE</columns>
-        <columns>CAMPAIGN.END_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <label>Org_Campaign_Hierarchy</label>
-    </listViews>
     <recordTypes>
         <fullName>CN_Campaign</fullName>
         <active>true</active>

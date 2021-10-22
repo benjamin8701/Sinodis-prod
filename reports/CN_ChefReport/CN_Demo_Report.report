@@ -46,7 +46,6 @@
         <columns>
             <field>CHILD_CREATED_DATE</field>
         </columns>
-        <currency>CNY</currency>
         <filter>
             <criteriaItems>
                 <column>CN_Chef_Request__c.CN_Status__c</column>
@@ -63,7 +62,7 @@
                 <value>1</value>
             </criteriaItems>
         </filter>
-        <format>Tabular</format>
+        <format>Summary</format>
         <name>Demo Reports</name>
         <params>
             <name>co</name>
@@ -86,7 +85,6 @@
         <columns>
             <field>CN_Chef_Request__c.Demo_Reports__r$CN_Demo_Used_Products__c</field>
         </columns>
-        <currency>CNY</currency>
         <filter>
             <criteriaItems>
                 <column>CN_Chef_Request__c$CN_Status__c</column>
@@ -103,7 +101,7 @@
                 <value>1</value>
             </criteriaItems>
         </filter>
-        <format>Tabular</format>
+        <format>Summary</format>
         <name>Used Products</name>
         <params>
             <name>co</name>

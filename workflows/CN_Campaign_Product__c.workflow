@@ -17,10 +17,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
-  ISCHANGED( CN_Product__c) || ISCHANGED( CN_Campaign__c) || ISNEW()
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    ISCHANGED( CN_Product__c) || ISCHANGED( CN_Campaign__c) || ISNEW() )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

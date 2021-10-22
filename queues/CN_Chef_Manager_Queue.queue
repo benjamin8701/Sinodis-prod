@@ -3,6 +3,10 @@
     <doesSendEmailToMembers>true</doesSendEmailToMembers>
     <name>Chef Manager Queue</name>
     <queueMembers>
+        <users>
+            <user>simon.jiang@sinodis.com.cn</user>
+            <user>alan.xiong@sinodis.com.cn</user>
+        </users>
     </queueMembers>
     <queueSobject>
         <sobjectType>CN_Chef_Request__c</sobjectType>

@@ -266,7 +266,7 @@
     </dashboardGridLayout>
     <dashboardType>MyTeamUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>da.huang@accenture.com.savencia</runningUser>
+    <runningUser>system.support@savencia.com</runningUser>
     <textColor>#000000</textColor>
     <title>Complaint Dashboard</title>
     <titleColor>#000000</titleColor>

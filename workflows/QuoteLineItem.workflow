@@ -36,11 +36,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , 
-  ISCHANGED( CN_Customer_Acceptance__c ),
-  ISPICKVAL(CN_Customer_Acceptance__c , &quot;Accepted&quot;)
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    ISCHANGED( CN_Customer_Acceptance__c ),   ISPICKVAL(CN_Customer_Acceptance__c , &quot;Accepted&quot;) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -50,9 +46,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c 
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c  )</formula>
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
@@ -62,16 +56,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(   
-    $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
-    OR(
-        ISNEW(),
-        AND(
-          NOT(ISNEW()),
-          ISCHANGED( Product2Id )
-        )
-    )
-)</formula>
+        <formula>AND(        $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,     OR(         ISNEW(),         AND(           NOT(ISNEW()),           ISCHANGED( Product2Id )         )     ) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>
