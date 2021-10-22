@@ -237,6 +237,7 @@
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
+        <members>LOGO</members>
         <members>Sinodis</members>
         <name>ContentAsset</name>
     </types>
@@ -625,6 +626,8 @@
         <members>CN_CampaignReport/CN_Oppo_generated_by_Campaign_Type</members>
         <members>CN_CampaignReport/CN_Oppo_generated_by_Execution_Type</members>
         <members>CN_CampaignReport/CN_Opportunities_Generated_by_Campaign</members>
+        <members>CN_Campaign_Customer_Data_Filter</members>
+        <members>CN_Campaign_Customer_Data_Filter/CN_Campaign_Customer_data_filter</members>
         <members>CN_ChefReport</members>
         <members>CN_ChefReport/CN_Chef_Average_Time_Spent_by_Event_Type</members>
         <members>CN_ChefReport/CN_Chef_Request_by_Event_type_by_Month</members>

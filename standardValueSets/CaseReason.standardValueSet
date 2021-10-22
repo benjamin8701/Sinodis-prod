@@ -13,10 +13,4 @@
         <label>Supply Chain</label>
         <cssExposed>false</cssExposed>
     </standardValue>
-    <standardValue>
-        <fullName>Customer Service</fullName>
-        <default>false</default>
-        <label>Customer Service</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
 </StandardValueSet>

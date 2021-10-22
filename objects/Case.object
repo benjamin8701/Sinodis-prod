@@ -355,7 +355,7 @@
     <fields>
         <fullName>CN_Duration__c</fullName>
         <externalId>false</externalId>
-        <formula>IF(  ISBLANK( CN_Resolved_Date__c ), 0, CN_Resolved_Date__c -  DATEVALUE(CreatedDate) )</formula>
+        <formula>IF(  ISBLANK( CN_Resolved_Date__c ), 0, CN_Resolved_Date__c - CN_Accepted_Date__c )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Duration</label>
         <precision>18</precision>
@@ -556,14 +556,15 @@
                     <label>Supply Chain</label>
                 </value>
                 <value>
-                    <fullName>Customer Service</fullName>
-                    <default>false</default>
-                    <label>Customer Service</label>
-                </value>
-                <value>
                     <fullName>Customer</fullName>
                     <default>false</default>
                     <label>Customer</label>
+                </value>
+                <value>
+                    <fullName>Customer Service</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Customer Service</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -950,10 +951,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer Service</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supply Chain</fullName>
                 <default>false</default>
             </values>
@@ -994,10 +991,6 @@
         </picklistValues>
         <picklistValues>
             <picklist>Reason</picklist>
-            <values>
-                <fullName>Customer Service</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Quality</fullName>
                 <default>false</default>

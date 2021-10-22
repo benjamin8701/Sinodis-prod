@@ -96,17 +96,16 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>REASON</groupingColumn>
+                <groupingColumn>Case.CN_Resolve_Reason__c</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header># Complaint by Raised Reason YTD</header>
+                <header># Complaint by Resolved Reason YTD</header>
                 <legendPosition>Right</legendPosition>
-                <maxValuesDisplayed>6</maxValuesDisplayed>
-                <report>CN_ComplaintReport/CN_Complaint_by_Reason_YTD</report>
+                <report>CN_ComplaintReport/CN_Complaint_by_Resolved_Reason_YTD</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -141,7 +140,7 @@
                         <sortOrder>d</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header># Complaint By Brand YTD Top 10</header>
+                <header>#  Brand quality Complaint YTD Top 10</header>
                 <legendPosition>Bottom</legendPosition>
                 <maxValuesDisplayed>10</maxValuesDisplayed>
                 <report>CN_ComplaintReport/CN_Complaint_by_Brand_YTD</report>
@@ -242,16 +241,17 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>Case.CN_Resolve_Reason__c</groupingColumn>
+                <groupingColumn>REASON</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header># Complaint by Resolved Reason YTD</header>
+                <header># Complaint by Raised Reason YTD</header>
                 <legendPosition>Right</legendPosition>
-                <report>CN_ComplaintReport/CN_Complaint_by_Resolved_Reason_YTD</report>
+                <maxValuesDisplayed>6</maxValuesDisplayed>
+                <report>CN_ComplaintReport/CN_Complaint_by_Reason_YTD</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -266,7 +266,7 @@
     </dashboardGridLayout>
     <dashboardType>MyTeamUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>c.qiu@accenture.com</runningUser>
+    <runningUser>da.huang@accenture.com.savencia</runningUser>
     <textColor>#000000</textColor>
     <title>Complaint Dashboard</title>
     <titleColor>#000000</titleColor>

@@ -672,10 +672,6 @@
             <translation><!-- Customer --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Customer Service</masterLabel>
-            <translation><!-- Customer Service --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Supply Chain</masterLabel>
             <translation><!-- Supply Chain --></translation>
         </picklistValues>

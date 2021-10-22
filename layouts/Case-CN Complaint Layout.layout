@@ -99,7 +99,7 @@
         <label>Product Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>ProductId</field>
             </layoutItems>
             <layoutItems>
@@ -113,11 +113,11 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>CN_SKU_Quantity__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>CN_SAP_Batch_Number__c</field>
             </layoutItems>
         </layoutColumns>

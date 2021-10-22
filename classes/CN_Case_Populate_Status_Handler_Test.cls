@@ -35,7 +35,7 @@ private class CN_Case_Populate_Status_Handler_Test {
 
         List<Case> complaintList = new List<Case>();
         System.runAs(salesRep) {
-            for(integer n=0;n<3;n++){
+            for(integer n=0;n<2;n++){
                 Case complaint = new Case();
                 complaint.RecordTypeId = complaintRTId;
                 complaint.Subject = '';
@@ -50,7 +50,6 @@ private class CN_Case_Populate_Status_Handler_Test {
             }
 			complaintList[0].Reason = 'Quality';
             complaintList[1].Reason = 'Quality';
-            complaintList[2].Reason = 'Customer Service';
             
             insert complaintList;
         }
@@ -91,11 +90,6 @@ private class CN_Case_Populate_Status_Handler_Test {
             ownerId = CS.Id
         );
         complaintList_Update2.add(complaint_Update2_2);
-        Case complaint_Update2_3 = new Case(
-            Id = complaintList[2].id,
-            ownerId = QA.Id
-        );
-        complaintList_Update2.add(complaint_Update2_3);
         update complaintList_Update2;
         
         CN_Complaint_Resolved_LC_Ctrl.getInitInfo(complaintList[1].id);
@@ -111,23 +105,9 @@ private class CN_Case_Populate_Status_Handler_Test {
         }catch(Exception e){}
 
         CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved(complaintList[1].id, 'resolveDescription', 'Supply Chain', 'Return');
-        CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved(complaintList[2].id, 'resolveDescription', 'Supply Chain', 'Return');
-
-        try{
-            System.runAs(CS) {
-                CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved(complaintList[1].id, 'resolveDescription', 'Brand Quality', 'Return');
-            }
-        }catch(Exception e){}
-
-        try{
-            System.runAs(QA) {
-                CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved(complaintList[1].id, 'resolveDescription', 'Customer Service', 'Return');
-            }
-        }catch(Exception e){}
         
         System.runAs(salesRep) {
             CN_Complaint_Closed_LC_Ctrl.updateStatusToClosed(complaintList[1].id);
-            CN_Complaint_Closed_LC_Ctrl.updateStatusToClosed(complaintList[2].id);
         }
 
         try{

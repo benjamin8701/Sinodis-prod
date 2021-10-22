@@ -13,11 +13,14 @@ public without sharing class CN_CR_Check_Fields_Change_Handler implements Trigge
     Id updateAccountRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_ACCOUNT).getRecordTypeId();
     Id updateContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_CONTACT).getRecordTypeId();
     Id updateShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_SHIPTO).getRecordTypeId();
+    Id newContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_CONTACT).getRecordTypeId();
+
     Map<Id, Set<String>> crIdChangedFieldNameMap = new Map<Id, Set<String>>();
     public void handle() {
         this.cnRTIdSet.add(this.updateAccountRTId);
         this.cnRTIdSet.add(this.updateContactRTId);
         this.cnRTIdSet.add(this.updateShiptoRTId);
+        this.cnRTIdSet.add(this.newContactRTId);
         if(Trigger.isBefore && Trigger.isUpdate) {
             handleBeforeUpdate();
         }
@@ -133,18 +136,27 @@ public without sharing class CN_CR_Check_Fields_Change_Handler implements Trigge
                 if(cr.get(oldFieldName) != cr.get(fieldMap.get(oldFieldName))) {
                     changedFieldSet.add(oldFieldName);
                     if(fieldInterfaceMap.get(oldFieldName)) {
-                        if('CN_Contact_Type__c'.equals(oldFieldName)) {
-                            // houchen.wan 0817 modified 
-                            //if(cr.CN_Contact_Type__c == '04' && (cr.New_CN_Contact_Type__c.contains('01') || cr.New_CN_Contact_Type__c.contains('02'))) {
-                            if( !cr.CN_Contact_Type__c.contains('01') && cr.New_CN_Contact_Type__c.contains('01')) {
-                                isInterfaceField = true;
-                            }
-                        } else {
                             isInterfaceField = true;
-                        }
                     }
                 }
             }
+
+            if(newContactRTId == cr.recordTypeId){
+                if(cr.New_CN_Contact_Type__c.contains('01')){
+                    isInterfaceField = true;
+                }else{
+                    isInterfaceField = false;
+                }
+            }else if(updateContactRTId == cr.recordTypeId){
+                if(cr.New_CN_Contact_Type__c.contains('01')){
+                    if(!cr.CN_Contact_Type__c?.contains('01')){
+                        isInterfaceField = true;
+                    }
+                }else{
+                    isInterfaceField = false;
+                }
+            }
+
             if(changedFieldSet.size() == 0) {
                 cr.addError(System.Label.CN_CR_AT_LEAST_ONE_FIELD_CHANGE);
             } else {
