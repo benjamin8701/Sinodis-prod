@@ -7,7 +7,6 @@
         <field>Account$CN_Open_Date__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
         <field>Account$CN_Open_During_Date__c</field>
     </columns>
     <columns>
@@ -17,24 +16,20 @@
         <field>Account.Comments__r$LastModifiedDate</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
         <field>Account$CN_Upload_Business_License_No__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
         <field>Account$CN_Upload_Bank_Information_FaPiao_No__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
         <field>Account$CN_Upload_Hygiene_Certificate_No__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
         <field>Account$CN_Upload_Contract_No__c</field>
     </columns>
     <currency>CNY</currency>
     <filter>
-        <booleanFilter>1 AND (2 OR 3 OR 4) AND 5 AND 6</booleanFilter>
+        <booleanFilter>1 AND (2 OR 3 OR 4) AND 5 AND 6 AND 7</booleanFilter>
         <criteriaItems>
             <column>Account$CN_Customer_Code__c</column>
             <columnToColumn>false</columnToColumn>
@@ -77,6 +72,13 @@
             <operator>greaterThan</operator>
             <value>20</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account$CN_Sync_Error_Message__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Data Migration</value>
+        </criteriaItems>
         <language>en_US</language>
     </filter>
     <format>Summary</format>
@@ -93,13 +95,15 @@
     <name>Account without Document</name>
     <params>
         <name>co</name>
-        <value>0</value>
+        <value>1</value>
     </params>
     <reportType>CN_Account_With_Comments__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>false</showSubTotals>
+    <sortColumn>Account$CN_Open_During_Date__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
