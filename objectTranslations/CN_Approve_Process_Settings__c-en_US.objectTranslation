@@ -9,6 +9,18 @@
         <value>CN Approve Process Settings</value>
     </caseValues>
     <fields>
+        <label><!-- CCE1 KA --></label>
+        <name>CN_CCE1_KA__c</name>
+    </fields>
+    <fields>
+        <label><!-- CCE2 DS --></label>
+        <name>CN_CCE2_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- CCE3 WS --></label>
+        <name>CN_CCE3_WS__c</name>
+    </fields>
+    <fields>
         <label><!-- CEO User ID --></label>
         <name>CN_CEO_UserId__c</name>
     </fields>
@@ -17,12 +29,20 @@
         <name>CN_CFO_UserId__c</name>
     </fields>
     <fields>
+        <label><!-- CS Group Email --></label>
+        <name>CN_CS_Group_Email__c</name>
+    </fields>
+    <fields>
         <label><!-- Finance AR User ID --></label>
         <name>CN_Finance_AR_UserId__c</name>
     </fields>
     <fields>
         <label><!-- Finance MDM User ID --></label>
         <name>CN_Finance_MDM_UserId__c</name>
+    </fields>
+    <fields>
+        <label><!-- MKT Group Email --></label>
+        <name>CN_MKT_Group_Email__c</name>
     </fields>
     <fields>
         <label><!-- Sales MDM User ID --></label>

@@ -198,6 +198,10 @@
             <type>FieldUpdate</type>
         </action>
         <action>
+            <name>CN_Account_Status_Display_To_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
             <name>CN_Account_Status_To_Approved</name>
             <type>FieldUpdate</type>
         </action>
@@ -211,6 +215,10 @@
         <action>
             <name>CN_Account_Final_Rejected_Notification</name>
             <type>Alert</type>
+        </action>
+        <action>
+            <name>CN_Account_Status_Display_To_Rejected</name>
+            <type>FieldUpdate</type>
         </action>
         <action>
             <name>CN_Account_Status_To_Draft</name>
@@ -232,6 +240,10 @@
             <type>FieldUpdate</type>
         </action>
         <action>
+            <name>CN_Account_Status_Display_To_Submitted</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
             <name>CN_Account_Status_To_Submitted</name>
             <type>FieldUpdate</type>
         </action>
@@ -243,6 +255,10 @@
     <label>CN Account Approval V2</label>
     <processOrder>1</processOrder>
     <recallActions>
+        <action>
+            <name>CN_Account_Status_Dispaly_To_New</name>
+            <type>FieldUpdate</type>
+        </action>
         <action>
             <name>CN_Account_Status_To_Draft</name>
             <type>FieldUpdate</type>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Price Book Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Price Book Setting</value>
+    </caseValues>
+    <fields>
+        <label><!-- Price Book 0000900012 --></label>
+        <name>CN_Price_Book1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Book 0000900013 --></label>
+        <name>CN_Price_Book2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Book 0000900014 --></label>
+        <name>CN_Price_Book3__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

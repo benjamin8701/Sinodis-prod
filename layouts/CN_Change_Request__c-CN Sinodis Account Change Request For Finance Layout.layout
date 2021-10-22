@@ -102,6 +102,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
+                <field>CN_Account_Visit_Addr_CN__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
                 <field>CN_Account_Potential_Volume_Market__c</field>
             </layoutItems>
             <layoutItems>
@@ -111,6 +115,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CN_Account_Account_Source__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Account_Layer__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -184,6 +192,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>New_CN_Account_Visit_Addr_CN__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>New_CN_Account_Potential_Volume_Market__c</field>
             </layoutItems>
             <layoutItems>
@@ -193,6 +205,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>New_CN_Account_Account_Source__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>New_CN_Account_Layer__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

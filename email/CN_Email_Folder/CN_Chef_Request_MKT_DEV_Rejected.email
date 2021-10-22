@@ -1,0 +1,35 @@
+您的厨师演示申请已被拒绝
+
+活动类型:{!CN_Chef_Request__c.CN_Event_Type__c}
+活动主题:{!CN_Chef_Request__c.CN_Event_Theme__c}
+活动位置:{!CN_Chef_Request__c.CN_Event_Location__c}
+
+请点击以下链接
+
+ {!CN_Chef_Request__c.Link}
+
+ 查看额外信息
+
+
+ 谢谢，
+ Salesforce
+
+==========================For English Version Scroll Down======================
+Your request has been rejected
+
+Event Type:{!CN_Chef_Request__c.CN_Event_Type__c}
+Event Theme: {!CN_Chef_Request__c.CN_Event_Theme__c}
+Event Location: {!CN_Chef_Request__c.CN_Event_Location__c}
+
+
+
+Please click the following link
+
+ {!CN_Chef_Request__c.Link}
+
+to view additional information. 
+
+
+
+Thank you,
+Salesforce

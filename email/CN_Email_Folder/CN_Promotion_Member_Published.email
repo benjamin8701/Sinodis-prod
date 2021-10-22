@@ -1,0 +1,32 @@
+已经向你的客户发布了新的促销活动。
+
+开始日期:{!CN_Promotion_Member__c.CN_Promotion_Start_Date__c}
+结束日期:{!CN_Promotion_Member__c.CN_Promotion_End_Date__c}
+促销活动描述:{!CN_Promotion_Member__c.CN_Promotion_Description__c}   
+           
+请点击以下链接
+
+{!CN_Promotion_Member__c.Link} 
+
+查看额外信息
+
+
+谢谢，   
+Salesforce
+==========================For English Version Scroll Down======================
+New promotion has been published to your customers. 
+
+Start Date: {!CN_Promotion_Member__c.CN_Promotion_Start_Date__c}
+End Date: {!CN_Promotion_Member__c.CN_Promotion_End_Date__c}
+Promotion Description:{!CN_Promotion_Member__c.CN_Promotion_Description__c}
+
+Please click the following link
+
+{!CN_Promotion_Member__c.Link}
+
+ to view additional information. 
+
+
+
+Thank you,
+Salesforce

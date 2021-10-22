@@ -4,6 +4,10 @@
         <field>CN_Account_Status__c</field>
         <formula>CASE( TEXT( Account.CN_Account_Status__c ) , &quot;New&quot;, &quot;Ready for Approval&quot;, &quot;Ready for Approval&quot;, &quot;New&quot;, &quot;New&quot;)</formula>
     </fieldOverrides>
+    <fieldOverrides>
+        <field>CN_Account_Status_New__c</field>
+        <formula>CASE( TEXT( Account.CN_Account_Status__c ) , &quot;New&quot;, &quot;Ready for Approval&quot;, &quot;Ready for Approval&quot;, &quot;New&quot;, &quot;New&quot;)</formula>
+    </fieldOverrides>
     <label>Ready for Approval/Back to New</label>
     <optionsCreateFeedItem>false</optionsCreateFeedItem>
     <quickActionLayout>

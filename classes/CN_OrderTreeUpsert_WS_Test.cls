@@ -16,8 +16,8 @@ private class CN_OrderTreeUpsert_WS_Test {
     }
     @isTest
     private static void postTest() {
-
-        Account acc = TestDataFactory.makeAccounts(1)[0];
+        TestDataFactory testDataFactory = new TestDataFactory();
+        Account acc = testDataFactory.makeAccounts(1,false)[0];
         acc.CN_Customer_Code__c = 'ACC00001';
         update acc;
         CN_Ship_to_Party__c stp = [SELECT Id, CN_UP_Code__c FROM CN_Ship_to_Party__c WHERE CN_Sold_To_Party_Customer__c =: acc.Id][0];
@@ -36,8 +36,8 @@ private class CN_OrderTreeUpsert_WS_Test {
     }
     @isTest
     private static void postTest_Error() {
-
-        Account acc = TestDataFactory.makeAccounts(1)[0];
+        TestDataFactory testDataFactory = new TestDataFactory();
+        Account acc = testDataFactory.makeAccounts(1,false)[0];
         acc.CN_Customer_Code__c = 'ACC00001';
         update acc;
         CN_Ship_to_Party__c stp = [SELECT Id, CN_UP_Code__c FROM CN_Ship_to_Party__c WHERE CN_Sold_To_Party_Customer__c =: acc.Id][0];

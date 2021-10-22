@@ -8,7 +8,10 @@
  * Create Date    : 2021-04-29
  * Modify History : 
  **************************************************************************************************/
-trigger Change_Request_Trigger on CN_Change_Request__c (before insert, before update, after update,before delete) {
+//hotfix realse7 ----by shuqi start
+//trigger Change_Request_Trigger on CN_Change_Request__c (before insert, before update, after update,before delete) {
+trigger Change_Request_Trigger on CN_Change_Request__c (before insert, before update, after insert, after update,before delete) {
+//hotfix realse7 ----by shuqi end
     if(Untils.isTriggerEnabled() && Constants.CR_TRIGGER_ON) {
         Triggers triggersObj = new Triggers();
         if(Context.ApplyTo(Constants.CN_Code) && Constants.CN_CR_TRIGGER_ON) {
@@ -51,7 +54,14 @@ trigger Change_Request_Trigger on CN_Change_Request__c (before insert, before up
                 triggersObj.bind(Triggers.Evt.AfterUpdate, new CN_CR_Update_Sync_Status_Handler() );
             }
             if(Constants.CN_CR_WRITE_BACK_TO_ACCOUNT_HANDLER_TRIGGER_ON) {
+                //hotfix realse7 ----by shuqi start
+                triggersObj.bind(Triggers.Evt.AfterInsert, new CN_CR_Write_Back_To_Account_Handler());
+                //hotfix realse7 ----by shuqi end
                 triggersObj.bind(Triggers.Evt.AfterUpdate, new CN_CR_Write_Back_To_Account_Handler());
+            }
+	    if(Constants.CN_CR_CHECK_FIELDS_HANDLER_TRIGGER_ON) {
+                triggersObj.bind(Triggers.Evt.beforeInsert, new CN_CR_Contact_Type_Check_Handler());
+                triggersObj.bind(Triggers.Evt.BeforeUpdate, new CN_CR_Contact_Type_Check_Handler());
             }
         }
         triggersObj.execute(); 

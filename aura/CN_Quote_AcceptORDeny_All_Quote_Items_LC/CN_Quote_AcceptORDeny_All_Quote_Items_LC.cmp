@@ -1,0 +1,49 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickActionWithoutHeader" controller="CN_Quote_AcceptORDeny_All_Items_LC_Ctrl" access="global" >
+	<aura:html tag="style">
+        .cuf-content {
+        	padding: 0 0rem !important;
+        }
+        .slds-p-around–medium {
+        	padding: 0rem !important;
+        }
+        .slds-modal__content{
+        	overflow-y:hidden !important;
+        	height:unset !important;
+        	max-height:unset !important;
+        }
+    </aura:html>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+	<aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="showLoading" type="Boolean" default="false" />
+    <aura:attribute name="isBtnDisabled" type="Boolean" default="true"/>
+	<aura:attribute name="modalContentMessage" type="String" default="..."/>
+    <aura:attribute name="confirmMsg" type="String" default="{!$Label.c.CN_Quote_AOrDItems_CFRM_Msg}"/>
+    <aura:attribute name="ifAcceptedAllItems" type="Boolean" default="false"/>
+    <aura:attribute name="ifApproved" type="Boolean" default="false"/>
+    
+    <aura:if isTrue="{!v.showLoading}">
+        <div class="loading_wheel">
+		<lightning:spinner variant="brand" size="large" />
+        </div>
+	</aura:if>
+    <header>
+        <div class="modal-header slds-modal__header slds_size_1-of-1">           
+            <h4 class="slds-align_absolute-left slds-text--heading_small">{!v.confirmMsg}</h4>
+        </div>
+    </header>
+	<body>
+    	<div class="slds-modal__content slds-p-vertical_medium slds-p-horizontal_small">
+        	<div class="slds-grid slds-gutters slds-wrap slds-m-bottom_medium">
+                 <div class="slds-col slds-size_1-of-1">
+                    {!v.modalContentMessage}
+                 </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="slds-col modal-footer slds-modal__footer">
+            <lightning:button variant="brand" label="Confirm" onclick="{!c.confirmAction}" disabled="{!v.isBtnDisabled}" />
+            <lightning:button variant="brand" label="Cancel" onclick="{!c.closeAction}"/>
+        </div>
+    </footer>
+</aura:component>

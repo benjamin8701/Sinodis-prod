@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>Campaign</label>
+        <name>CN_Campaign__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>CN_City__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Converted Contact Id From CR --></label>
+        <name>CN_Converted_Contact_Id_From_CR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted From Lead Id --></label>
+        <name>CN_Converted_From_Lead_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>CN_Country__c</name>
+        <picklistValues>
+            <masterLabel>CN</masterLabel>
+            <translation><!-- CN --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Category --></label>
+        <name>CN_Customer_Category__c</name>
+        <picklistValues>
+            <masterLabel>BAPA</masterLabel>
+            <translation><!-- BAPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catering</masterLabel>
+            <translation><!-- Catering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coffee/Tea Shop</masterLabel>
+            <translation><!-- Coffee/Tea Shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EC</masterLabel>
+            <translation><!-- EC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Baker</masterLabel>
+            <translation><!-- Home Baker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotel</masterLabel>
+            <translation><!-- Hotel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM</masterLabel>
+            <translation><!-- OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurant</masterLabel>
+            <translation><!-- Restaurant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retailor</masterLabel>
+            <translation><!-- Retailor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler</masterLabel>
+            <translation><!-- Wholesaler --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Converted Display --></label>
+        <name>CN_Is_Converted_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is From Web To Lead --></label>
+        <name>CN_Is_From_Web_To_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Province --></label>
+        <name>CN_Province__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason of lead dead --></label>
+        <name>CN_Reason_Lead_Dead__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please fill with city and street --></help>
+        <label><!-- Visit Address --></label>
+        <name>CN_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volume(kg)/Size of Lead --></label>
+        <name>CN_Volume_Size_of_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wechat ID --></label>
+        <name>CN_Wechat_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip/Postal Code --></label>
+        <name>CN_Zip_Postal_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Lead Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Contact Request --></label>
+        <name>CN_New_Contact_Request</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- CN Lead --></label>
+        <name>CN_Lead</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allow to select this status. --></errorMessage>
+        <name>CN_Check_Change_Status_Backwards</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input reason when lead closed. --></errorMessage>
+        <name>CN_Check_Close_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Name is required. --></errorMessage>
+        <name>CN_Check_First_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select Sales Person. --></errorMessage>
+        <name>CN_Check_MDM_Change_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- IT&apos;s not allowed to select this status. --></errorMessage>
+        <name>CN_Check_MDM_Change_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allow to change owner. --></errorMessage>
+        <name>CN_Check_MKT_Change_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allow to select this status. --></errorMessage>
+        <name>CN_Check_MKT_Change_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></errorMessage>
+        <name>CN_Check_MobilePhone_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the number in the format of 1XXXXXXXXXX or XXX-XXXXXXXX or XXXX-XXXXXXXX-XXX (X is number). --></errorMessage>
+        <name>CN_Check_Phone_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Postal code must be six digits. --></errorMessage>
+        <name>CN_Check_Post_Code_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allow to select previous status --></errorMessage>
+        <name>CN_Check_Sales_Change_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please keep Lead status as open --></errorMessage>
+        <name>CN_Check_Sales_Create_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Lead had been converted into contact. --></errorMessage>
+        <name>CN_Prevent_Edit_New_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allow to edit after lead dead. --></errorMessage>
+        <name>CN_Prevent_Eidt_When_Dead</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

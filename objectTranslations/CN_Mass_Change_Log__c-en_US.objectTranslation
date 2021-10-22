@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mass Change Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mass Change Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccountId --></label>
+        <name>CN_AccountId__c</name>
+        <relationshipLabel><!-- Mass Change Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- After User Number --></label>
+        <name>CN_After_User_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Before User number --></label>
+        <name>CN_Before_User_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- ChangeUser --></label>
+        <name>CN_ChangeUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Type --></label>
+        <name>CN_Change_Type__c</name>
+        <picklistValues>
+            <masterLabel>Change Finance AR</masterLabel>
+            <translation><!-- Change Finance AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Owner</masterLabel>
+            <translation><!-- Change Owner --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

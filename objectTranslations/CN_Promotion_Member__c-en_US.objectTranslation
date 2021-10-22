@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Promotion Member</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Promotion Members</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>CN_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner --></label>
+        <name>CN_Account_Owner__c</name>
+        <relationshipLabel><!-- Promotion Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>CN_Account__c</name>
+        <relationshipLabel>Promotion</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>CN_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>CN_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>CN_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsPublished --></label>
+        <name>CN_IsPublished__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Promotion Planned --></label>
+        <name>CN_Is_Promotion_Planned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion Description --></label>
+        <name>CN_Promotion_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion End Date --></label>
+        <name>CN_Promotion_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion Start Date --></label>
+        <name>CN_Promotion_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion Status --></label>
+        <name>CN_Promotion_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion --></label>
+        <name>CN_Promotion__c</name>
+        <relationshipLabel><!-- Promotion Members --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Promotion Member Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Promotion Information --></label>
+            <section>Promotion Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Promotion Member --></label>
+        <name>CN_Promotion_Member</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to add new promotion member while promotion is aborted. --></errorMessage>
+        <name>CN_Check_Create_Promotion_Member</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allow change Account. --></errorMessage>
+        <name>CN_Prevent_Change_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allow change Promotion. --></errorMessage>
+        <name>CN_Prevent_Change_Promotion</name>
+    </validationRules>
+</CustomObjectTranslation>

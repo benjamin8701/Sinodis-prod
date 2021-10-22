@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>End Date Time</value>
+        </caseValues>
+        <name>end_date_activity</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Start Date Time</value>
+        </caseValues>
+        <name>start_date_activity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- By when --></label>
+        <name>CN_By_when__c</name>
+        <picklistValues>
+            <masterLabel>One week after</masterLabel>
+            <translation><!-- One week after --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Three weeks after</masterLabel>
+            <translation><!-- Three weeks after --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Two weeks after</masterLabel>
+            <translation><!-- Two weeks after --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Chef Request Id --></label>
+        <name>CN_Chef_Request_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chef Request --></label>
+        <name>CN_Chef_Request__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Count --></label>
+        <name>CN_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>CN_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Follow Up Event ID --></label>
+        <name>CN_Follow_Up_Event_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Follow-up Priority --></label>
+        <name>CN_Follow_up_Priority__c</name>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation><!-- General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Meeting MInutes --></label>
+        <name>CN_Meeting_MInutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Step --></label>
+        <name>CN_Next_Step__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objective --></label>
+        <name>CN_Objective__c</name>
+        <picklistValues>
+            <masterLabel>Contract negotiation</masterLabel>
+            <translation><!-- Contract negotiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demo Service</masterLabel>
+            <translation><!-- Demo Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistic Problem Communication</masterLabel>
+            <translation><!-- Logistic Problem Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New product launch recommend</masterLabel>
+            <translation><!-- New product launch recommend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price negotiation</masterLabel>
+            <translation><!-- Price negotiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular Product recommend</masterLabel>
+            <translation><!-- Regular Product recommend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample Feedback Collect</masterLabel>
+            <translation><!-- Sample Feedback Collect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cold visit</masterLabel>
+            <translation><!-- cold visit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Plan to Visit Who --></label>
+        <name>CN_Plan_to_Visit_Who__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sample Request --></label>
+        <name>CN_Sample_Request__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status Check --></label>
+        <name>CN_Status_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Diagnose --></label>
+        <name>CN_Status_Diagnose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Before Event --></label>
+        <name>CN_Time_Before_Event__c</name>
+        <picklistValues>
+            <masterLabel>1 day</masterLabel>
+            <translation><!-- 1 day --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Visit Status --></label>
+        <name>CN_Visit_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation><!-- Planned --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

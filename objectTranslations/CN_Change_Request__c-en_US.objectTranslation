@@ -12,8 +12,16 @@
         <label><!-- Account Source --></label>
         <name>CN_Account_Account_Source__c</name>
         <picklistValues>
+            <masterLabel>Bakery China</masterLabel>
+            <translation><!-- Bakery China --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Brand Activity</masterLabel>
             <translation><!-- Brand Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIIE</masterLabel>
+            <translation><!-- CIIE --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Cold Visit</masterLabel>
@@ -24,12 +32,48 @@
             <translation><!-- Customer Recommend --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Customer Service Hotline</masterLabel>
+            <translation><!-- Customer Service Hotline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Campaign</masterLabel>
+            <translation><!-- Digital Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Expositions</masterLabel>
             <translation><!-- Expositions --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>FHC</masterLabel>
+            <translation><!-- FHC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Campaign</masterLabel>
+            <translation><!-- Marketing Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Trade show</masterLabel>
+            <translation><!-- Other Trade show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Public Demo</masterLabel>
             <translation><!-- Public Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Network</masterLabel>
+            <translation><!-- Social Media Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship Event</masterLabel>
+            <translation><!-- Sponsorship Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -310,6 +354,26 @@
     <fields>
         <label><!-- Invoicing Name (Bill to party) --></label>
         <name>CN_Account_Invoicing_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Layer --></label>
+        <name>CN_Account_Layer__c</name>
+        <picklistValues>
+            <masterLabel>Layer 100</masterLabel>
+            <translation><!-- Layer 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 20</masterLabel>
+            <translation><!-- Layer 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 50</masterLabel>
+            <translation><!-- Layer 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 80</masterLabel>
+            <translation><!-- Layer 80 --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Account Level --></label>
@@ -1080,6 +1144,10 @@
         <name>CN_Account_URL__c</name>
     </fields>
     <fields>
+        <label><!-- Visit Address(CN) --></label>
+        <name>CN_Account_Visit_Addr_CN__c</name>
+    </fields>
+    <fields>
         <label><!-- Acct assgmt group --></label>
         <name>CN_Acct_Assgmt_Group__c</name>
     </fields>
@@ -1232,6 +1300,10 @@
     <fields>
         <label><!-- Contact Name(CN))-Last Name --></label>
         <name>CN_Contact_CN_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision maker --></label>
+        <name>CN_Contact_Decision_Maker__c</name>
     </fields>
     <fields>
         <label><!-- Department of Contact person --></label>
@@ -1430,6 +1502,14 @@
         <name>CN_Contact_Wechat_ID__c</name>
     </fields>
     <fields>
+        <label><!-- Working Language --></label>
+        <name>CN_Contact_Working_Language__c</name>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Contact --></label>
         <name>CN_Contact__c</name>
         <relationshipLabel><!-- Change Requests (Contact) --></relationshipLabel>
@@ -1487,6 +1567,15 @@
         <label><!-- Finance AR --></label>
         <name>CN_Finance_AR__c</name>
         <relationshipLabel><!-- Change Requests (Finance AR) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- From Lead Id --></label>
+        <name>CN_From_Lead_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Lead --></label>
+        <name>CN_From_Lead__c</name>
+        <relationshipLabel><!-- Change Requests --></relationshipLabel>
     </fields>
     <fields>
         <label><!-- Incoterms --></label>
@@ -2288,8 +2377,16 @@
         <label><!-- New Account Source --></label>
         <name>New_CN_Account_Account_Source__c</name>
         <picklistValues>
+            <masterLabel>Bakery China</masterLabel>
+            <translation><!-- Bakery China --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Brand Activity</masterLabel>
             <translation><!-- Brand Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIIE</masterLabel>
+            <translation><!-- CIIE --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Cold Visit</masterLabel>
@@ -2300,12 +2397,48 @@
             <translation><!-- Customer Recommend --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Customer Service Hotline</masterLabel>
+            <translation><!-- Customer Service Hotline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Campaign</masterLabel>
+            <translation><!-- Digital Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Expositions</masterLabel>
             <translation><!-- Expositions --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>FHC</masterLabel>
+            <translation><!-- FHC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Campaign</masterLabel>
+            <translation><!-- Marketing Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Trade show</masterLabel>
+            <translation><!-- Other Trade show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Public Demo</masterLabel>
             <translation><!-- Public Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Network</masterLabel>
+            <translation><!-- Social Media Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship Event</masterLabel>
+            <translation><!-- Sponsorship Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -2564,6 +2697,26 @@
     <fields>
         <label><!-- New Invoicing Name (Bill to party) --></label>
         <name>New_CN_Account_Invoicing_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Account Layer --></label>
+        <name>New_CN_Account_Layer__c</name>
+        <picklistValues>
+            <masterLabel>Layer 100</masterLabel>
+            <translation><!-- Layer 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 20</masterLabel>
+            <translation><!-- Layer 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 50</masterLabel>
+            <translation><!-- Layer 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layer 80</masterLabel>
+            <translation><!-- Layer 80 --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- New Account Level --></label>
@@ -3327,6 +3480,10 @@
         <name>New_CN_Account_The_Number_Of_Seats__c</name>
     </fields>
     <fields>
+        <label><!-- New Visit Address(CN) --></label>
+        <name>New_CN_Account_Visit_Addr_CN__c</name>
+    </fields>
+    <fields>
         <label><!-- New Contact Billing To Address --></label>
         <name>New_CN_Contact_Billing_To_Address__c</name>
     </fields>
@@ -3341,6 +3498,10 @@
     <fields>
         <label><!-- New Contact Name(CN))-Last Name --></label>
         <name>New_CN_Contact_CN_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Decision maker --></label>
+        <name>New_CN_Contact_Decision_Maker__c</name>
     </fields>
     <fields>
         <label><!-- New Department of Contact person --></label>
@@ -3535,6 +3696,14 @@
         <name>New_CN_Contact_Wechat_ID__c</name>
     </fields>
     <fields>
+        <label><!-- New Working Language --></label>
+        <name>New_CN_Contact_Working_Language__c</name>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- New City(CN) --></label>
         <name>New_CN_ShipTo_City_CN__c</name>
         <relationshipLabel><!-- Change Requests (New City(CN)) --></relationshipLabel>
@@ -3617,6 +3786,44 @@
         <label><!-- New Upload Contract --></label>
         <name>New_CN_Upload_Contract__c</name>
     </fields>
+    <layouts>
+        <layout>CN Mass Change Account Finance AR Layout</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Change Request Information --></label>
+            <section>Change Request Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Sync to SAP --></label>
+            <section>Sync to SAP</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN Mass Change Account Owner Layout</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Change Request Information --></label>
+            <section>Change Request Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Sync to SAP --></label>
+            <section>Sync to SAP</section>
+        </sections>
+    </layouts>
     <layouts>
         <layout>CN Sinodis Account Change Request For Finance Layout</layout>
         <sections>
@@ -3820,6 +4027,14 @@
         <name>CN_Approved_Update_Ship_To_Request</name>
     </recordTypes>
     <recordTypes>
+        <label><!-- Change Account Owner --></label>
+        <name>CN_MASS_Change_Account_Owner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Change Account Finance AR --></label>
+        <name>CN_Mass_Change_Account_Finance_AR</name>
+    </recordTypes>
+    <recordTypes>
         <label><!-- New Contact Request --></label>
         <name>CN_New_Contact_Request</name>
     </recordTypes>
@@ -3914,6 +4129,10 @@ Invoicing Address and Phone. --></errorMessage>
     <validationRules>
         <errorMessage><!-- Please close this page and create change request from quick action. 请关闭此页面，从客户/联系人/运送人页面点击按钮创建变更申请。 --></errorMessage>
         <name>CN_Check_Generate_Source</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select the account which had been synced --></errorMessage>
+        <name>CN_Check_New_Contact_Request_Account</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- At least related to one Account/Contact/Ship-to and no more than one relation on Account/Contact/Ship-to for the change request. --></errorMessage>

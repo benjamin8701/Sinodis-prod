@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>总金额</value>
+        </caseValues>
+        <name>quote_grandtotal</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>报价单名称</value>
+        </caseValues>
+        <name>quote_name</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>报价单链接</value>
+        </caseValues>
+        <name>quote_number</name>
+    </fields>
+    <fields>
+        <label><!-- Accepted Item Num --></label>
+        <name>CN_Accepted_Item_Num__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approve Step --></label>
+        <name>CN_Approve_Step__c</name>
+        <picklistValues>
+            <masterLabel>Step1</masterLabel>
+            <translation><!-- Step1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step10</masterLabel>
+            <translation><!-- Step10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step11</masterLabel>
+            <translation><!-- Step11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step12</masterLabel>
+            <translation><!-- Step12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step2</masterLabel>
+            <translation><!-- Step2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step3</masterLabel>
+            <translation><!-- Step3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step4</masterLabel>
+            <translation><!-- Step4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step5</masterLabel>
+            <translation><!-- Step5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step6</masterLabel>
+            <translation><!-- Step6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step7</masterLabel>
+            <translation><!-- Step7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step8</masterLabel>
+            <translation><!-- Step8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step9</masterLabel>
+            <translation><!-- Step9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approver 10 --></label>
+        <name>CN_Approver_10__c</name>
+        <relationshipLabel><!-- Quotes (Approver 10) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 11 --></label>
+        <name>CN_Approver_11__c</name>
+        <relationshipLabel><!-- Quotes (Approver 11) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 12 --></label>
+        <name>CN_Approver_12__c</name>
+        <relationshipLabel><!-- Quotes (Approver 12) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 1 --></label>
+        <name>CN_Approver_1__c</name>
+        <relationshipLabel><!-- Quotes (Approver 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 2 --></label>
+        <name>CN_Approver_2__c</name>
+        <relationshipLabel><!-- Quotes (Approver 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 3 --></label>
+        <name>CN_Approver_3__c</name>
+        <relationshipLabel><!-- Quotes (Approver 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 4 --></label>
+        <name>CN_Approver_4__c</name>
+        <relationshipLabel><!-- Quotes (Approver 4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 5 --></label>
+        <name>CN_Approver_5__c</name>
+        <relationshipLabel><!-- Quotes (Approver 5) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 6 --></label>
+        <name>CN_Approver_6__c</name>
+        <relationshipLabel><!-- Quotes (Approver 6) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 7 --></label>
+        <name>CN_Approver_7__c</name>
+        <relationshipLabel><!-- Quotes (Approver 7) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 8 --></label>
+        <name>CN_Approver_8__c</name>
+        <relationshipLabel><!-- Quotes (Approver 8) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 9 --></label>
+        <name>CN_Approver_9__c</name>
+        <relationshipLabel><!-- Quotes (Approver 9) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Approver --></label>
+        <name>CN_Current_Approver__c</name>
+        <relationshipLabel><!-- Quotes (Current Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>CN_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Journey --></label>
+        <name>CN_Customer_Journey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>CN_Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label>生效日期</label>
+        <name>CN_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label>是否接受全部报价行项目</label>
+        <name>CN_Is_All_Accepted__c</name>
+    </fields>
+    <fields>
+        <label>是否接受/拒绝全部报价行项目</label>
+        <name>CN_Is_All_Signed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Num --></label>
+        <name>CN_Item_Num__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Sign Num --></label>
+        <name>CN_Item_Sign_Num__c</name>
+    </fields>
+    <fields>
+        <label><!-- Please Confirm --></label>
+        <name>CN_Please_Confirm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Cross Channel --></label>
+        <name>CN_Quote_Is_Cross_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Number From Setting --></label>
+        <name>CN_Quote_Number_Setting__c</name>
+    </fields>
+    <fields>
+        <label>报价单编号</label>
+        <name>CN_Quote_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person Name --></label>
+        <name>CN_Sales_Person_Name__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>同步错误消息</label>
+        <name>CN_Sync_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label>同步状态</label>
+        <name>CN_Sync_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>同步时间</label>
+        <name>CN_Sync_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synchronized --></label>
+        <name>CN_Synchronized__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Quote Layout</layout>
+        <sections>
+            <label>SAP创建信息</label>
+            <section>SAP Creation Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Accept/Deny All Quote Items --></label>
+        <name>CN_AcceptOrDeny_All_Quote_Items</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Apply --></label>
+        <name>CN_Apply</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>CN_Notify_Finance</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Ready for Approval/Back to New --></label>
+        <name>CN_Quote_Ready_for_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send To SAP --></label>
+        <name>CN_Send_To_SAP</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- CN Quote --></label>
+        <name>CN_Quote</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>失效日期应晚于生效日期。</errorMessage>
+        <name>CN_Quote_Check_EffectiveExpirationDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>生效日期应不早于今天。</errorMessage>
+        <name>CN_Quote_Check_Effective_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不能为处于Qualification阶段的业务机会创建报价。</errorMessage>
+        <name>CN_Quote_Check_Opp_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- 第一个审批人不能为空 --></errorMessage>
+        <name>CN_Quote_Check_Prices</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不允许更新已经审批通过的报价。</errorMessage>
+        <name>CN_Quote_Prevent_Edit_Approved</name>
+    </validationRules>
+</CustomObjectTranslation>

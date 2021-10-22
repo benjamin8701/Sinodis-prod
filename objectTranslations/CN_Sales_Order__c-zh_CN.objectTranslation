@@ -497,7 +497,7 @@
             <section>Sync Information</section>
         </sections>
         <sections>
-            <label><!-- System Information --></label>
+            <label>系统信息</label>
             <section>System Information</section>
         </sections>
     </layouts>

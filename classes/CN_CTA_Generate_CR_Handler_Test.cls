@@ -18,7 +18,9 @@ private class CN_CTA_Generate_CR_Handler_Test {
     }
     @isTest
     private static void handleBeforeUpdateTest() {
-        accList_factory = TestDataFactory.makeAccounts(18);
+        TestDataFactory testDataFactory = new TestDataFactory();
+        accList_factory = testDataFactory.makeAccounts(18,false);
+        testDataFactory.makeCustomSetting();
         List<User> userList = [SELECT Id, LastName FROM User];
         Map<String, Id> lastNameUserIdMap = new Map<String, Id>();
         for(User usr: userList) {

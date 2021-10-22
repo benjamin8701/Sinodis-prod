@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CN_Gaode_Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CN_GaoDe_Setting</value>
+    </caseValues>
+    <fields>
+        <label><!-- Geolocation_Endpoint --></label>
+        <name>Geolocation_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- JS_Key --></label>
+        <name>JS_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Layer100 Icon Name --></label>
+        <name>Layer100_Icon_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Layer20 Icon Name --></label>
+        <name>Layer20_Icon_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Layer50 Icon Name --></label>
+        <name>Layer50_Icon_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Layer80 Icon Name --></label>
+        <name>Layer80_Icon_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect Icon Name --></label>
+        <name>Prospect_Icon_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Undefined_Icon_Name --></label>
+        <name>Undefined_Icon_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web_Key --></label>
+        <name>Web_Key__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

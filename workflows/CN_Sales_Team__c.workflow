@@ -52,17 +52,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, 
-  RecordType.DeveloperName = &quot;CN_Sales_Team&quot;,
-  NOT(ISNEW()), 
-  NOT(ISBLANK(TEXT(CN_Sync_Status__c) )),
-  OR(
-    ISCHANGED(Name), 
-    ISCHANGED( CN_City_API__c ),
-     ISCHANGED( CN_Business_Unit__c ) 
-  )
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,    RecordType.DeveloperName = &quot;CN_Sales_Team&quot;,   NOT(ISNEW()),    NOT(ISBLANK(TEXT(CN_Sync_Status__c) )),   OR(     ISCHANGED(Name),      ISCHANGED( CN_City_API__c ),      ISCHANGED( CN_Business_Unit__c )    ) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

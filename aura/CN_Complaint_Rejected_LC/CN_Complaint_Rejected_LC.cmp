@@ -1,0 +1,41 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickActionWithoutHeader" controller="CN_Complaint_Rejected_LC_Ctrl" access="global" >
+	<aura:html tag="style">
+        .cuf-content {
+        	padding: 0 0rem !important;
+        }
+        .slds-p-around–medium {
+        	padding: 0rem !important;
+        }
+        .slds-modal__content{
+        	overflow-y:hidden !important;
+        	height:unset !important;
+        	max-height:unset !important;
+        }
+    </aura:html>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+	<aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="showLoading" type="Boolean" default="false" />
+    <aura:attribute name="modalContentMessage" type="String" default="Please confirm this rejecte action!"/>
+    <aura:attribute name="confirmMsg" type="String" default="Complaint Rejected"/>
+    <aura:attribute name="rejectReason" type="String" default=""/>
+    <aura:attribute name="errorMessage" type="String" default=""/>
+    <aura:attribute name="rejectReason_Null" type="String" default="{!$Label.c.CN_Complaint_RejectReason_Null}"/>
+    
+    <header>
+        <div class="modal-header slds-modal__header slds_size_1-of-1">           
+            <h4 class="slds-align_absolute-left slds-text--heading_small">{!v.confirmMsg}</h4>
+        </div>
+    </header>
+    <div class="slds-col slds-size_1-of-1">{!v.errorMessage}</div>
+	<body>
+    	<div class="slds-modal__content slds-p-vertical_medium slds-p-horizontal_small">
+        	<lightning:input name="Reject Reason" type="String" required="true" label="Reject Reason" value="{!v.rejectReason}" />
+        </div>
+    </body>
+    <footer>
+        <div class="slds-col modal-footer slds-modal__footer">
+            <lightning:button variant="brand" label="Confirm" onclick="{!c.confirmAction}"/>
+            <lightning:button  label="Cancel" onclick="{!c.closeAction}"/>
+        </div>
+    </footer>
+</aura:component>

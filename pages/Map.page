@@ -1,0 +1,380 @@
+<apex:page controller="GaodeMapController"  sidebar="false" showHeader="false">
+    <head>
+        <title>{!title}</title>
+        <style>
+
+            .amap-marker-label{
+				border-radius: 30px;
+            }
+            
+            html, body, #container {
+				height: 100%;
+				width: 100%;
+            }
+            
+            .content-window-card {
+				position: relative;
+				box-shadow: none;
+				bottom: 0;
+				left: 0;
+				width: auto;
+				padding: 0;
+            }
+            
+            .content-window-card p {
+				height: 2rem;
+            }
+            
+            .custom-info {
+				border: solid 1px silver;
+            }
+            
+            div.info-top {
+				position: relative;
+				background: none repeat scroll 0 0 #F9F9F9;
+				border-bottom: 1px solid #CCC;
+				border-radius: 5px 5px 0 0;
+            }
+            
+            div.info-top div {
+				display: inline-block;
+				color: #333333;
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 31px;
+				padding: 0 10px;
+            }
+            
+            div.info-top img {
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				transition-duration: 0.25s;
+            }
+            
+            div.info-top img:hover {
+				box-shadow: 0px 0px 5px #000;
+            }
+            
+            div.info-middle {
+				font-size: 12px;
+				padding: 10px 6px;
+				line-height: 20px;
+            }
+            
+            div.info-bottom {
+				height: 0px;
+				width: 100%;
+				clear: both;
+				text-align: center;
+            }
+            
+            div.info-bottom img {
+				position: relative;
+				z-index: 104;
+            }
+            
+            span {
+				margin-left: 5px;
+				font-size: 11px;
+            }
+            
+            .info-middle img {
+				float: left;
+				margin-right: 6px;
+            }
+            #pickerBox {
+				position: absolute;
+				z-index: 9999;
+				top: 50px;
+				right: 30px;
+				width: 300px;
+			}
+        
+			#pickerInput {
+				width: 200px;
+				padding: 5px 5px;
+			}
+			
+			#poiInfo {
+				background: #fff;
+			}
+			
+			.amap_lib_placeSearch .poibox.highlight {
+				background-color: #CAE1FF;
+			}
+			
+			.amap_lib_placeSearch .poi-more {
+				display: none!important;
+			}
+			.map-icon {
+				padding: .25rem 0.75rem;
+				margin-bottom: 1rem;
+				border-radius: .25rem;
+				position: fixed;            
+				background-color: white;
+				width: auto;
+				min-width: 3rem;
+				border-width: 0;            
+				bottom: 0;
+				box-shadow: 0 2px 6px 0 rgb(114 124 245 / 50%);
+			}
+			.map-icon div{
+				text-align: center;
+			}
+			.legend-icon {
+				width:8px;
+				height:10px;
+				vertical-align:middle;
+			}
+        </style>
+        
+	</head>
+    <body>
+        <script src="https://webapi.amap.com/maps?v=2.0&key={!key}"></script>
+        <script src="//webapi.amap.com/ui/1.1/main.js?v=1.1.1"></script>
+        <div id="log"></div>
+        
+        <div id="pickerBox">
+            <input id="pickerInput" placeholder="输入关键字选取地点" />
+            <div id="poiInfo"></div>
+        </div>
+        <div id="container"></div>
+        <div class="map-icon">
+            <div><h4>图标示例</h4></div>
+			<p><img class="legend-icon" src="/resource/GaodeMap_Icon/L100.png" /><span>Layer 100</span></p> 
+            <p><img class="legend-icon" src="/resource/GaodeMap_Icon/L80.png" /><span>Layer 80</span></p>
+            <p><img class="legend-icon" src="/resource/GaodeMap_Icon/L50.png" /><span>Layer 50</span></p>
+            <p><img class="legend-icon" src="/resource/GaodeMap_Icon/L20.png" /><span>Layer 20</span></p>
+            <p><img class="legend-icon" src="/resource/GaodeMap_Icon/Prospect.png" /><span>Prospect</span></p>
+            <p><img class="legend-icon" src="/resource/GaodeMap_Icon/Undefined.png" /><span>Undefined</span></p>
+        </div>
+        <script>                        
+            /*
+                1.if can get lon and lat from url, then set it as center and display accounts nearby
+                2.if not, get position from device, then set it as center and display accounts nearby
+                3.if still not, lost center... 
+                JS old version --> 1.4.15, new version --> 2.0
+                document.getElementById('log').innerHTML = document.body.clientHeight+'||'+document.body.clientWidth;
+            */
+
+            let lon ;
+            let lat ;
+            let markers = [];
+            //let currentPosition = [121.54099429608365,38.888712605293485];
+            let lat_in_url = getGeolocationVariable('lat');
+            let lon_in_url = getGeolocationVariable('lon');
+               
+            map = new AMap.Map('container', {
+                viewMode: '2D',
+                lang: "en",
+                zoom:15, //初始化地图层级            
+            });
+             
+            AMap.plugin('AMap.Geolocation', function() {
+				var geolocation = new AMap.Geolocation({
+					// 是否使用高精度定位，默认：true
+					enableHighAccuracy: true,
+					// 设置定位超时时间，默认：无穷大
+					timeout: 5000,
+					// 定位按钮的停靠位置的偏移量，默认：Pixel(10, 20)
+					buttonOffset: new AMap.Pixel(10, 20),
+					//定位成功后调整地图视野范围使定位位置及精度范围视野内可见，默认：false
+					zoomToAccuracy: false,     
+					//  定位按钮的排放位置,  RB表示右下
+					buttonPosition: 'RB',
+					showButton:true	,
+					GeoLocationFirst : true,
+				})
+                map.addControl(geolocation);
+                    
+				geolocation.on('complete', onComplete);
+				geolocation.on('error', onError);
+				if(lat_in_url && lon_in_url){
+					currentPosition = [lon_in_url,lat_in_url];
+					map.setCenter(currentPosition);
+					lon = lon_in_url;
+					lat = lat_in_url;
+					setMarker();
+				}else{
+					geolocation.getCurrentPosition();
+				}
+            })
+            
+			function onComplete (data) {
+					console.log('onComplete');
+					lon = data.position.lng;
+					lat = data.position.lat;                    
+					currentPosition = [lon,lat];
+					map.setCenter(currentPosition);
+					setMarker();
+				}
+			function onError (data) {
+				// 定位出错
+				alert('定位获取失败，请稍后再试');
+				console.log('Error'+data.message);
+			}
+            //start
+            AMapUI.loadUI(['misc/PoiPicker'], function(PoiPicker) {
+    
+                var poiPicker = new PoiPicker({
+                    input: 'pickerInput'
+                });
+                poiPickerReady(poiPicker);
+            });
+    
+            function poiPickerReady(poiPicker) {
+    
+                window.poiPicker = poiPicker;
+                var marker = new AMap.Marker();
+                var infoWindow = new AMap.InfoWindow({
+                    offset: new AMap.Pixel(0, -20)
+                });
+    
+                //选取了某个POI
+                poiPicker.on('poiPicked', function(poiResult) {   
+                    var source = poiResult.source,
+                        poi = poiResult.item,
+                        info = {
+                            source: source,
+                            id: poi.id,
+                            name: poi.name,
+                            location: poi.location.toString(),
+                            address: poi.address
+                        };
+    
+                    marker.setMap(map);
+                    marker.setPosition(poi.location);
+                    map.setCenter(marker.getPosition());
+                    lon = marker.getPosition().lng;
+                    lat = marker.getPosition().lat;
+                    map.remove(markers);
+                    markers = [];
+                    setMarker();
+                });
+    
+            }
+            //end
+              
+            function setMarker(){
+                console.log('start-set');
+                Visualforce.remoting.Manager.invokeAction(
+                    '{!$RemoteAction.GaodeMapController.getAccount}',lon,lat,function(result, event){
+                        if (event.status){                           
+                            if(result.length>2){
+                                AMapUI.loadUI(['overlay/SimpleMarker'], function(SimpleMarker) {
+                                    var iconTheme = 'fresh';
+                                    var iconStyles = SimpleMarker.getBuiltInIconStyles(iconTheme);
+                                    JSON.parse(result).forEach(function(item){
+                                        console.log(item.name);
+                                        console.log(item.iconUrl);                                    
+                                        var marker = new SimpleMarker({
+                                            iconTheme: iconTheme,
+                                            //使用内置的iconStyle
+                                            iconStyle: {                                                
+                                                src: item.iconUrl,
+                                                style: {
+                                                    width:'36px',
+                                                    height:'44px'
+                                                },
+                                            },
+                                            //图标文字
+                                            /*
+                                            iconLabel: {
+                                                //A,B,C.....
+                                                innerHTML: item.tire,
+                                                style: {                                                
+                                                    color: 'white'
+                                                }
+                                            },
+                                            */
+                                            map: map,
+                                            position: [item.lon,item.lat],
+                                            offset: new AMap.Pixel(-18, -40),
+                                        });                                    
+                                        marker.on('click', function(){
+                                            infoWindow.open(map, marker.getPosition());
+                                        });
+                                        var title = item.name,
+                                        content = [];                                                
+                                        content.push("<a href='"+item.url+"' target='_blank'>详细信息</a>");
+                                        //实例化信息窗体
+                                        var infoWindow = new AMap.InfoWindow({
+                                            isCustom: true,  //使用自定义窗体
+                                            content: createInfoWindow(title, content.join("<br/>")),
+                                            offset: new AMap.Pixel(22, -40)
+                                        });
+                                        
+                                        markers.push(marker);
+                                    })
+                                    map.add(markers);
+                                });
+                            }
+                        }else{
+                            //附近没有Account
+                            alert("附近没有Account!");
+                        }                                        
+                    },
+                    {escape: false}             
+                );                                  
+            }                                      
+    
+            function getGeolocationVariable(variable){
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+                for (var i=0;i<vars.length;i++) {
+                    var pair = vars[i].split("=");
+                    if(pair[0] == variable){return pair[1];}
+                }
+                return(false);
+            }
+        
+            //构建自定义信息窗体
+            function createInfoWindow(title, content) {
+                var info = document.createElement("div");
+                info.className = "custom-info input-card content-window-card";
+                
+                //可以通过下面的方式修改自定义窗体的宽高
+                info.style.width = "200px";        
+                // 定义顶部标题
+                var top = document.createElement("div");
+                var titleD = document.createElement("div");
+                var closeX = document.createElement("img");
+                top.className = "info-top";
+                titleD.innerHTML = title;
+                closeX.src = "https://webapi.amap.com/images/close2.gif";
+                closeX.onclick = closeInfoWindow;
+                
+                top.appendChild(titleD);
+                top.appendChild(closeX);
+                info.appendChild(top);
+                
+                // 定义中部内容
+                var middle = document.createElement("div");
+                middle.className = "info-middle";
+                middle.style.backgroundColor = 'white';
+                middle.innerHTML = content;
+                info.appendChild(middle);
+                
+                // 定义底部内容
+                var bottom = document.createElement("div");
+                bottom.className = "info-bottom";
+                bottom.style.position = 'relative';
+                bottom.style.top = '0px';
+                bottom.style.margin = '0 auto';
+                var sharp = document.createElement("img");
+                sharp.src = "https://webapi.amap.com/images/sharp.png";
+                bottom.appendChild(sharp);
+                info.appendChild(bottom);
+                
+                return info;
+            }
+            
+            //关闭信息窗体
+            function closeInfoWindow() {
+                map.clearInfoWindow();
+            }
+           
+        </script>
+	</body>
+</apex:page>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>销售目标及达成</value>
+    </caseValues>
+    <fields>
+        <label><!-- AR Checker --></label>
+        <name>CN_AR_Checker_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Num --></label>
+        <name>CN_Batch_Num_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Date --></label>
+        <name>CN_Billing_Date_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing No --></label>
+        <name>CN_Billing_No_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Type --></label>
+        <name>CN_Billing_Type_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled --></label>
+        <name>CN_Cancelled_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>CN_Customer_Code_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>CN_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>CN_Customer_Name_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Owner --></label>
+        <name>CN_Customer_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>CN_Customer__c</name>
+        <relationshipLabel>销售目标及达成</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DN Item --></label>
+        <name>CN_DN_Item_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- DN Number --></label>
+        <name>CN_DN_Number_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>CN_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>CN_External_ID_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance AR --></label>
+        <name>CN_Finance_AR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>CN_Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Customer Owner Changed --></label>
+        <name>CN_Is_Customer_Owner_Changed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is This Month --></label>
+        <name>CN_Is_This_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>CN_Material_CN_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>CN_Material_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>CN_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Weight --></label>
+        <name>CN_Net_Weight_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person --></label>
+        <name>CN_Performance_Sales_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material Group --></label>
+        <name>CN_Product_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>CN_Product__c</name>
+        <relationshipLabel><!-- Sales Performance --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Qty Uom --></label>
+        <name>CN_Qty_Uom_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>CN_Quantity_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Returns --></label>
+        <name>CN_Returns_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- SO Item --></label>
+        <name>CN_SO_Item_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Amount --></label>
+        <name>CN_Sale_Amount_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Net Value --></label>
+        <name>CN_Sale_Net_Value_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Document --></label>
+        <name>CN_Sales_Document_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office --></label>
+        <name>CN_Sales_Office_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person --></label>
+        <name>CN_Sales_Person_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target External Id --></label>
+        <name>CN_Target_External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Month --></label>
+        <name>CN_Target_Month__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Office --></label>
+        <name>CN_Target_Sales_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person --></label>
+        <lookupFilter>
+            <errorMessage><!-- You just can choose sales user --></errorMessage>
+        </lookupFilter>
+        <name>CN_Target_Sales_Person__c</name>
+        <relationshipLabel><!-- Sales Performance --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Target Year --></label>
+        <name>CN_Target_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weight Unit --></label>
+        <name>CN_Weight_Unit_SAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Month --></label>
+        <name>CN_Year_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>CN_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Amount --></label>
+        <name>Target_Amount__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Sales Performance Layout</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Amount --></label>
+            <section>Amount</section>
+        </sections>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Information --></label>
+            <section>Sales Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CN Sales Target Layout</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Amount --></label>
+            <section>Amount</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>销售目标及达成名称</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Sales Performance --></label>
+        <name>CN_Sales_Performance</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Target --></label>
+        <name>CN_Sales_Target</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>年份必须为2开头的四位数字</errorMessage>
+        <name>CN_Check_Year</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不能创建销售目标及达成</errorMessage>
+        <name>CN_Prevent_Create_Performance</name>
+    </validationRules>
+</CustomObjectTranslation>

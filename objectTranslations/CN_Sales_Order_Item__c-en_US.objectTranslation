@@ -9,6 +9,11 @@
         <value>Sales Order Item</value>
     </caseValues>
     <fields>
+        <label><!-- Campaign Product --></label>
+        <name>CN_Campaign_Product__c</name>
+        <relationshipLabel><!-- Sales Order Item --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Confirmed Value --></label>
         <name>CN_Confirmed_Value__c</name>
     </fields>
@@ -55,6 +60,10 @@
     <fields>
         <label><!-- Gross Weight --></label>
         <name>CN_Gross_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Created Yesterday --></label>
+        <name>CN_Is_Created_Yesterday__c</name>
     </fields>
     <fields>
         <label><!-- Reason for rejection --></label>

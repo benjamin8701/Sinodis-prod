@@ -1,0 +1,24 @@
+<apex:component controller="CN_Sample_Product_Get_LC_Ctrl" access="global">
+    <apex:attribute name="SRId" type="Id" description="Id of the Sample Request" assignTo="{!sampleRequestId}" />
+    <apex:variable value="{!1}" var="rowNum" />
+    <table border="2" cellspacing="5">
+        <tr>
+            <td>No.</td>
+            <td>Sample SKU Code</td>
+            <td>Sample SKU Description(CN)</td>
+            <td>Unit</td>
+            <td>Quantity</td>
+
+        </tr>
+        <apex:repeat value="{!spList}" var="sp">
+            <tr>
+                <td>{!FLOOR(rowNum)}</td>
+                <td>{!sp.CN_Sample_SKU_Code__c}</td>
+                <td>{!sp.CN_SKU_Chinese_Description__c}</td>
+                <td>{!sp.CN_Unit__c}</td>
+                <td>{!sp.CN_Quantity_Needed__c}</td>
+                <apex:variable var="rowNum" value="{!rowNum + 1}" />
+            </tr>
+        </apex:repeat>
+    </table>
+</apex:component>

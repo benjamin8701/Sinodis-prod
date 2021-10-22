@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>CN_SHARE_ALL_CCE_SR_TO_FINANCE</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CN_SHARE_ALL_CCE_SR_TO_FINANCE</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_Finance_Director</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_CCE_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CN_SHARE_ALL_CCE_SR_TO_MKT</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>CN_SHARE_ALL_CCE_SR_TO_MKT</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_Marketing</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_CCE_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CN_SHARE_ALL_CCE_SR_TO_SALES_DIRECTOR</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CN_SHARE_ALL_CCE_SR_TO_SALES_DIRECTOR</label>
+        <sharedTo>
+            <role>CN_CCE_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_CCE_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

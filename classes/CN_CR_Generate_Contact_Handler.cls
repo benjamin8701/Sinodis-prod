@@ -51,10 +51,27 @@ public without sharing class CN_CR_Generate_Contact_Handler implements Triggers.
                         conSuccessIdSet.add(sr.getId());
                     }
                 }
+                Map<Id, Id> leadIdConIdMap = new Map<Id, Id>();
                 for(Contact con : conList) {
                     if(conSuccessIdSet.contains(con.Id)) {
                         crMap.get(con.CN_Change_Request__c).CN_Contact__c = con.Id;
                         crMap.get(con.CN_Change_Request__c).CN_External_Id__c = con.Id;
+                        if(String.isNotBlank(con.CN_Converted_From__c)) {
+                            leadIdConIdMap.put(con.CN_Converted_From__c, con.Id);
+                        }
+                    }
+                }
+                if(leadIdConIdMap.size() > 0) {
+                    List<Lead> leadList = new List<Lead>();
+                    for(Id leadId: leadIdConIdMap.keySet()) {
+                        Lead lead = new Lead();
+                        lead.Id = leadId;
+                        lead.CN_Converted_Contact_Id_From_CR__c = leadIdConIdMap.get(leadId);
+                        lead.Status = Constants.CN_LEAD_STATUS_CLOSED_CONVERTED;
+                        leadList.add(lead);
+                    }
+                    if(leadList.size() > 0) {
+                        Database.update(leadList, false);
                     }
                 }
             }
@@ -67,6 +84,13 @@ public without sharing class CN_CR_Generate_Contact_Handler implements Triggers.
         List<Contact> conList = new List<Contact>();
         for(CN_Change_Request__c cr : crList) {
              Contact con = new Contact(
+                 // Added By Jessica Wang 2021-07-22 Start
+                 CN_Converted_From__c = cr.CN_From_Lead_Id__c,
+                 // Added By Jessica Wang 2021-07-22 End
+                 // Added By Dezheng Du 2021-08-18 Start
+                 CN_Decision_Maker__c = cr.New_CN_Contact_Decision_Maker__c,
+                 CN_Working_Language__c = cr.New_CN_Contact_Working_Language__c,
+                 // Added By Dezheng Du 2021-08-18 End
                  RecordTypeId = contactRTId,
                  CN_Change_Request__c = cr.Id,
                  Title = cr.New_CN_Contact_Title__c,

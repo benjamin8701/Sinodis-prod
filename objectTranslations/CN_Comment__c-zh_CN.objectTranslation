@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>财务备注</value>
+    </caseValues>
+    <fields>
+        <label>财务备注</label>
+        <name>CN_Comment__c</name>
+    </fields>
+    <fields>
+        <label>客户</label>
+        <name>CN_Customer_Name__c</name>
+        <relationshipLabel>财务备注</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CN Is Finance --></label>
+        <name>CN_Is_Finance__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Comment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>财务备注编号</nameFieldLabel>
+    <recordTypes>
+        <label><!-- CN Comment --></label>
+        <name>CN_Comment</name>
+    </recordTypes>
+</CustomObjectTranslation>

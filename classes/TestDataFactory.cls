@@ -4,14 +4,16 @@ public class TestDataFactory {
     public static List<UserRole> userRoleList = null; 
 
     public static void makeBaseData(){
-        makeRoleFuture();
+        makeRoleFuture();       //CCE的role也需要手动添加
         makeOrder();
+        
         List<sObject> objectList = new List<sObject>();
         objectList.add(makeProvince('010-Beijing', '010'));
         objectList.add(makeCity('010-Beijing', '010', 'K010', '010'));
         objectList.add(makeCity('020-Beijing', '020', 'K020', '010'));
         objectList.add(makeInternalImployee('TestUser1', 'Test0001', 'TestUser1@example.com', 'Sales'));
         objectList.add(makeInternalImployee('TestUser2', 'Test0002', 'TestUser2@example.com', 'AR'));
+        objectList.add(makeInternalImployee('TestUser6', 'Test0021', 'TestUser6@example.com', 'AR'));
         objectList.add(makeInternalImployee('TestUser3', 'Test00012', 'TestUser3@example.com', 'Sales'));
         objectList.add(makeInternalImployee('TestUser4', 'Test0012', 'TestUser4@example.com', 'Sales'));
         objectList.add(makeInternalImployee('TestUser5', 'Test0013', 'TestUser5@example.com', 'Sales'));
@@ -31,9 +33,17 @@ public class TestDataFactory {
         objectList.add(makeGroup('RETAIL_SalesTeam_Group', '0000901003', 'retail group'));
         objectList.add(makeGroup('INTERCOMPANY_SalesTeam_Group', '0000901004', 'intercompany group'));
 
-        objectList.add(makeProduct('TestProduct', 'P00001'));
+        objectList.add(makeProduct('TestProduct00001', 'P00001'));
+        objectList.add(makeProduct('TestProduct00002', 'P00002'));
+
+        ObjectList.Add(makePriceBook('Pricebook WS', 'test pricebook description', 'WS',false));
+        ObjectList.Add(makePriceBook('Pricebook DS', 'test pricebook description', 'DS',false));
+        ObjectList.Add(makePriceBook('Pricebook KA', 'test pricebook description', 'KA',false));
+        
 
         insert objectList;
+
+        makePriceBookEntry();
         makeUserFuture();
     }
 
@@ -154,6 +164,7 @@ public class TestDataFactory {
         objectList.add(makeUser('CEO', 'CN Sales Lead', 'CN_CEO', 'CEO', 'Test0003', '0000901001', ''));
         objectList.add(makeUser('CFO', 'CN CFO', 'CN_Finance_Director', 'CFO', 'Test0004', '0000901001', ''));
         objectList.add(makeUser('FinanceAR', 'CN Finance AR', 'CN_Finance_AR', 'Finance AR', 'Test0002', '0000901001', ''));
+        objectList.add(makeUser('FinanceAR2', 'CN Finance AR', 'CN_Finance_AR', 'Finance AR', 'Test0021', '0000901001', ''));
         objectList.add(makeUser('FinanceMDM', 'CN Finance MDM', 'CN_Finance_MDM', 'Finance MDM', 'Test0006', '0000901001', ''));
         objectList.add(makeUser('SalesMDM', 'CN Sales MDM', 'CN_Sales_MDM', 'Sales MDM', 'Test0007', '0000901001', ''));
         objectList.add(makeUser('CD', 'CN Sales Lead', 'CN_Commercial_Director', 'Commerical Director', 'Test0008', '0000901001', ''));
@@ -163,7 +174,16 @@ public class TestDataFactory {
         objectList.add(makeUser('Manager', 'CN Sales Manager', 'CN_Manager', 'Manager', 'Test0012', '0000901001', ''));
         objectList.add(makeUser('Sales1', 'CN Sales', 'CN_Sales', 'Sales Rep', 'Test0001', '0000901001', 'K010'));
         objectList.add(makeUser('Sales2', 'CN Sales', 'CN_Sales', 'Sales Rep', 'Test00012', '0000901001', 'K020'));
+        objectList.add(makeUser('Sales3', 'CN Sales', 'CN_Sales', 'Sales Rep', 'Test00019', '0000901001', 'K030'));
         objectList.add(makeUser('WholeSalesDevelopmentSupervisor', 'CN Sales Manager', 'CN_RM', 'Regional Manager', 'Test0013', '0000901001', 'K010'));
+        objectList.add(makeUser('CCE1_KA', 'CN CCE', 'CN_CCE', '', 'Test0014', '', ''));
+        objectList.add(makeUser('CCE2_DS', 'CN CCE', 'CN_CCE', '', 'Test0015', '', ''));
+        objectList.add(makeUser('CCE3_WS', 'CN CCE', 'CN_CCE', '', 'Test0016', '', ''));
+        objectList.add(makeUser('ChefManager', 'CN Chef Manager', 'CN_Chef_Manager', '', 'Test0017', '', ''));
+        objectList.add(makeUser('Chef', 'CN Chef', 'CN_Chef', '', 'Test0018', '', ''));
+        objectList.add(makeUser('QA', 'CN QA', 'CN_QA', '', 'Test0019', '', ''));
+        objectList.add(makeUser('CS', 'CN C/S', 'CN_CS', '', 'Test0020', '', ''));
+        system.debug('makeUserFuture objectList:          ' + objectList);
         insert objectList;
 
         List<User> userList = [SELECT Id, LastName FROM User];
@@ -179,7 +199,20 @@ public class TestDataFactory {
         objectListForUpdate.add(makeUser(lastNameIdMap.get('Manager'), lastNameIdMap.get('ARM')));
         objectListForUpdate.add(makeUser(lastNameIdMap.get('Sales1'), lastNameIdMap.get('Manager')));
         objectListForUpdate.add(makeUser(lastNameIdMap.get('Sales2'), lastNameIdMap.get('Manager')));
+        objectListForUpdate.add(makeUser(lastNameIdMap.get('Sales3'), lastNameIdMap.get('CD')));
         update objectListForUpdate;
+
+        
+        List<PermissionSet> psList = [SELECT Id, Name FROM PermissionSet];
+        Map<String, Id> psMap = new Map<String, Id>();
+        for(PermissionSet ps: psList) {
+            psMap.put(ps.Name, ps.Id);
+        }
+
+        List<PermissionSetAssignment> psaList = new List<PermissionSetAssignment>();
+        psaList.add(new PermissionSetAssignment(AssigneeId = lastNameIdMap.get('CCE1_KA'), PermissionSetId = psMap.get('CN_Promotion_Manager')));
+        insert psaList;
+
     }
 
     private static Id getRecordTypeId(String objectName, String recordTypeName) {
@@ -229,6 +262,66 @@ public class TestDataFactory {
         return product;
     }
     
+    private static Pricebook2 makePriceBook(String name,String description,String channel,Boolean isStandard){
+        Id visitRTId = Schema.SObjectType.Pricebook2.getRecordTypeInfosByDeveloperName().get(Constants.CN_PB_RT_API_NAME).getRecordTypeId();
+        Pricebook2 pricebook = new Pricebook2();
+        if(isStandard == true){
+            pricebook.Id = Test.getStandardPricebookId();
+        }else{
+            pricebook.Name = name;
+            pricebook.Description = description;
+            pricebook.CN_Channel__c = channel;
+            pricebook.IsActive = true;
+            pricebook.RecordTypeId = visitRTId;
+        }
+        pricebook.CN_Effective_Date__c = System.today();
+        pricebook.CN_Expiration_Date__c = System.today() + 2;
+        return pricebook;
+    }
+
+    private static void makePriceBookEntry(){
+        List<PricebookEntry> pbEntryList = new List<PricebookEntry>();
+        List<PricebookEntry> pbEntryList_Standard = new List<PricebookEntry>();
+
+        List<Pricebook2> pricebookList = [Select Id,IsStandard,CN_Channel__c From Pricebook2];
+        List<Product2> productList = [Select Id,name From Product2];
+
+        for(Product2 product : productList){
+            PricebookEntry pbEntry = new PricebookEntry(
+                UnitPrice  = 1,
+                CN_Minimum_Price__c  = 2,
+                CN_Promo_Price_P1__c = 5,
+                CN_Promo_Price_P2__c = 10,
+                CN_Promo_Price_P3__c = 20,
+                CN_Promo_Price_P4__c = 30,
+                IsActive = true,
+                Pricebook2Id  = Test.getStandardPricebookId(),
+                Product2Id  = product.Id
+            );
+            pbEntryList_Standard.add(pbEntry);
+        }
+        insert pbEntryList_Standard;
+
+        for(Pricebook2 pb : pricebookList){
+            for(Product2 product : productList){
+                PricebookEntry pbEntry = new PricebookEntry(
+                    UnitPrice  = 1,
+                    CN_Minimum_Price__c  = 2,
+                    CN_Promo_Price_P1__c = 5,
+                    CN_Promo_Price_P2__c = 10,
+                    CN_Promo_Price_P3__c = 20,
+                    CN_Promo_Price_P4__c = 30,
+                    IsActive = true,
+                    Pricebook2Id  = pb.Id,
+                    Product2Id  = product.Id
+                );
+                pbEntryList.add(pbEntry);
+            }
+        }
+        
+        insert pbEntryList;
+    }
+
     public static void makeOrder(){
         List<sObject> objectList = new List<sObject>();
         objectList.add(makeOrderType('Standard order','CNY','OR1'));
@@ -273,11 +366,13 @@ public class TestDataFactory {
         return salesgroup;
     }
 
+    public List<Account> makeFactoryAccount(){
+        makeCustomSetting();
+        List<Account> accList = makeAccounts(1,true);
+        return accList;
+    }
 
-    public static List<Account> makeAccounts(integer num){
-
-        List<String> nameWord  = new List<String>{'测','试','上','海','春','夏','秋','冬','乾','坤','震','巽','坎','离','艮','兑','老','少','阳','阴'};
-
+    public void makeCustomSetting(){
         List<User> userList = [SELECT Id, LastName FROM User];
         Map<String, Id> lastNameUserIdMap = new Map<String, Id>();
         for(User usr: userList) {
@@ -290,16 +385,63 @@ public class TestDataFactory {
             EnableValidationRule__c = false
         );
         insert setting;
-
+        
         CN_Approve_Process_Settings__c approveSetting = new CN_Approve_Process_Settings__c(
             CN_CEO_UserId__c = lastNameUserIdMap.get('CEO'),
             CN_CFO_UserId__c = lastNameUserIdMap.get('CFO'),
             CN_Finance_AR_UserId__c = lastNameUserIdMap.get('FinanceAR'),
             CN_Finance_MDM_UserId__c = lastNameUserIdMap.get('FinanceMDM'),
             CN_Sales_MDM_UserId__c = lastNameUserIdMap.get('SalesMDM'),
-            CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor')
+            CN_WholeSales_Development_Supervisor__c = lastNameUserIdMap.get('WholeSalesDevelopmentSupervisor'),
+            CN_CCE1_KA__c = lastNameUserIdMap.get('CCE1_KA'),
+            CN_CCE2_DS__c = lastNameUserIdMap.get('CCE2_DS'),
+            CN_CCE3_WS__c = lastNameUserIdMap.get('CCE3_WS'),
+            CN_MKT_Group_Email__c = 'MKTGroup@testSavencia.com',
+            CN_CS_Group_Email__c = 'CSGroup@testSavencia.com'
         );
         insert approveSetting;
+
+        CN_Quote_Number_Setting__c quoteNumberSetting = new CN_Quote_Number_Setting__c(
+            CN_Quote_Number__c = 0,
+            CN_DateTime__c = System.Now()
+        );
+        insert quoteNumberSetting;
+
+        CN_Gaode_Setting__c gaodeSetting = new CN_Gaode_Setting__c(
+            Geolocation_Endpoint__c = 'https://127.0.0.1/gaode/',
+            JS_Key__c = '59b6a65f0f51fe55555fb555f4b55555',
+            Layer100_Icon_Name__c = 'L100.png',
+            Layer80_Icon_Name__c = 'L80.png',
+            Layer50_Icon_Name__c = 'L50.png',
+            Layer20_Icon_Name__c = 'L20.png',
+            Prospect_Icon_Name__c = 'Undefined.png',
+            Undefined_Icon_Name__c = 'Prospect.png',
+            Web_Key__c = '7dc3056f733bbb2155555e555wd55555'
+        );
+        insert gaodeSetting;
+
+        List<Pricebook2> pbList = [Select Id,CN_Channel__c From Pricebook2];
+        CN_Price_Book_Setting__c priceBookSetting = new CN_Price_Book_Setting__c();
+        for(Pricebook2 pb : pbList){
+            if(pb.CN_Channel__c == 'DS'){
+                priceBookSetting.CN_Price_Book1__c = pb.Id;
+            }else if(pb.CN_Channel__c == 'KA'){
+                priceBookSetting.CN_Price_Book2__c = pb.Id;
+            }else if(pb.CN_Channel__c == 'WS'){
+                priceBookSetting.CN_Price_Book3__c = pb.Id;
+            }
+        }
+        insert priceBookSetting;
+    }
+
+    public List<Account> makeAccounts(integer num) {
+        makeCustomSetting();
+        return makeAccounts(num, false);
+    }
+    
+    public List<Account> makeAccounts(integer num,Boolean isFactory){
+
+        List<String> nameWord  = new List<String>{'测甲','试乙','上丙','海丁','春戊','夏己','秋庚','冬辛','乾甲','坤乙','震丙','巽丁','坎戊','离丁','艮己','兑庚','老辛','少甲','阳乙','阴丙'};
 
         User salesRep = [SELECT Id FROM User WHERE lastName = 'Sales1'][0];
         CN_Province__c province = [SELECT Id FROM CN_Province__c WHERE Province_Code__c = '010'][0];
@@ -312,7 +454,7 @@ public class TestDataFactory {
         System.runAs(salesRep) {
             Id newDirectRTId = Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get(Constants.CN_Account_RT_API_NAME_NEW_DIRECT).getRecordTypeId();
 
-            for(integer n = 0; n < num ; n++){
+            for(integer n = 1; n <= num ; n++){
                 Account acc = new Account();
                 acc.RecordTypeId = newDirectRTId;
                 String accName = 'A';
@@ -331,11 +473,19 @@ public class TestDataFactory {
                     }
                 }
                 acc.Name = accName;
-                acc.CN_License_Name_EN__c = 'TestAccount';
-                acc.CN_Store_Name_EN__c = 'TestAccount';
-                acc.CN_Store_Name_CN__c = 'TestAccount';
+                if(isFactory == true){
+                    acc.Name = 'TestAccount_Factory';
+                    acc.CN_License_Name_EN__c = 'TestAccount_Factory';
+                    acc.CN_Store_Name_EN__c = 'TestAccount_Factory';
+                    acc.CN_Store_Name_CN__c = 'TestAccount_Factory';
+                }else{
+                    acc.CN_License_Name_EN__c = 'TestAccount';
+                    acc.CN_Store_Name_EN__c = 'TestAccount';
+                    acc.CN_Store_Name_CN__c = 'TestAccount';
+                }
                 acc.CN_Sales_District__c = '001';
                 //acc.CN_Customer_Group__c = '01';
+                acc.CN_Litigation_City__c = 'Dalian大连';
                 acc.CN_Category__c = 'BAPA';
                 acc.CN_Subcategory__c = 'Access Bakery';
                 acc.CN_Province_CN__c = province.Id;
@@ -350,9 +500,12 @@ public class TestDataFactory {
                 acc.CN_Invoicing_Address_and_Phone__c = 'ABCDEF';
                 acc.CN_Business_Unit_UI__c = businessUnit.Id;
                 acc.CN_Sales_Team_UI__c = salesTeam.Id;
+                acc.CN_Visit_Addr_CN__c = 'Visit Address';
                 accList.add(acc);
             }
             insert accList;
+
+            system.debug('accList[0].recordTypeId'+ accList[0].recordTypeId);
 
             List<CN_Document__c> docList = new List<CN_Document__c>();
             for(Account acc : accList){
@@ -383,26 +536,122 @@ public class TestDataFactory {
                 con.CN_Bill_To_Address__c = 'ABCDE';
                 conList.add(con);
             }
-            insert conList;
+            Database.DMLOptions dml_contact = new Database.DMLOptions();
+            dml_contact.DuplicateRuleHeader.allowSave = true;
+            dml_contact.DuplicateRuleHeader.runAsCurrentUser = true;
+            dml_contact.OptAllOrNone = true;
+            Database.SaveResult[] conList_result = Database.insert(conList, dml_contact);
 
             Set<Id> accIdSet = new Set<Id>();
             for(Account acc : accList){
                 accIdSet.add(acc.Id);
             }
-            List<CN_Ship_to_Party__c> stpList_update = new List<CN_Ship_to_Party__c>();
-            List<CN_Ship_to_Party__c> stpList = [SELECT Id, CN_Sold_To_Party_Customer__c, CN_Customer_Name__c, CN_Contact_Name__c, CN_Mobile_Phone__c, CN_Telephone__c FROM CN_Ship_to_Party__c WHERE CN_Sold_To_Party_Customer__c In: accIdSet];
-            for(CN_Ship_to_Party__c stp : stpList){
-                CN_Ship_to_Party__c st_update = new CN_Ship_to_Party__c();
-                st_update.Id = stp.Id;
-                stp.CN_Customer_Name__c = 'ABCDE';
-                stp.CN_Contact_Name__c = 'BCDEF';
-                stp.CN_Mobile_Phone__c = '13013001301';
-                stp.CN_Telephone__c = '13013001301';
-                stpList_update.add(st_update);
+            List<CN_Ship_to_Party__c> shipToList = new List<CN_Ship_to_Party__c>();
+                for(Account acc : accList) {
+                    CN_Ship_to_Party__c shipTo = new CN_Ship_to_Party__c(
+                        CN_Sold_To_Party_Customer__c = acc.Id,
+                        CN_Customer_Type__c = '0002',
+                        CN_Delivery_Address_CN__c = acc.CN_Invoicing_Address_and_Phone__c,
+                        CN_Delivery_Plant__c = acc.CN_Delivery_Plant__c,
+                        CN_Province_CN__c = acc.CN_Province_CN__c,
+                        CN_City_CN__c = acc.CN_City_CN__c,
+                        CN_Delivery_Address_EN__c = acc.CN_Invoicing_Address_EN__c
+                    );
+                shipToList.add(shipTo);
             }
-            update stpList_update;
-
+            Database.DMLOptions dml = new Database.DMLOptions(); 
+            dml.DuplicateRuleHeader.allowSave = true;
+            dml.DuplicateRuleHeader.runAsCurrentUser = true;
+            dml.OptAllOrNone = true;
+            Database.SaveResult[] srList = Database.insert(shipToList, dml);
         }
         return accList;
+    }
+
+    public void approveAccount(Account acc){
+        List<Account> accList = new List<Account>();
+        accList.add(acc);
+        approveAccount(accList);
+    }
+
+    public void approveAccount(List<Account> accList){
+        List<Account> accList_update1 = new List<Account>();
+            for(Account acc : accList){
+                Account acc_update1 = new Account();
+                acc_update1.Id = acc.Id;
+                acc_update1.CN_Visit_Addr_CN__c = 'Visit Address Change';
+                acc_update1.CN_Account_Status__c = 'Ready for Approval';
+                accList_update1.add(acc_update1);
+            }
+            update accList_update1;
+
+            List<Account> accList_update2 = new List<Account>();
+            for(Account acc : accList){
+                Account acc_update2 = new Account();
+                acc_update2.Id = acc.Id;
+                acc_update2.CN_Account_Status__c = 'Submitted for Approval';
+                accList_update2.add(acc_update2);
+            }
+            update accList_update2;
+
+            List<Account> accList_update3 = new List<Account>();
+            for(Account acc : accList){
+                Account acc_update3 = new Account();
+                acc_update3.Id = acc.Id;
+                acc_update3.CN_Customer_Code__c = acc.Name;
+                acc_update3.CN_Account_Status__c = 'Approved';
+                acc_update3.CN_Sync_Status__c = 'Success';
+                acc_update3.CN_Approve_Step__c = '';
+                accList_update3.add(acc_update3);
+            }
+            update accList_update3;
+    }
+
+    public List<Opportunity> makeOpp(List<Account> accList) {
+        List<Opportunity> oppList = new List<Opportunity>();
+        Id oppRTId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName().get('CN_Opportunity').getRecordTypeId();
+
+        if(accList.size() > 0) {
+            for(Account acc: accList) {
+                Opportunity opp = new Opportunity(
+                    Name = acc.Name,
+                    AccountId = acc.Id,
+                    RecordTypeId = oppRTId,
+                    Amount = 500,
+                    CloseDate = Date.Today().addMonths(1),
+                    StageName = 'Qualification'
+                );
+                oppList.add(opp);
+            }
+        }
+        return oppList;
+    }
+
+    public Opportunity makeOpp(Account acc) {
+        Opportunity opp = new Opportunity();
+        List<Account> accList = new List<Account>{acc};
+        List<Opportunity> oppList = makeOpp(accList);
+        if(oppList.size() > 0) {
+            opp = oppList[0];
+        }
+        return opp;
+    }
+
+    public Campaign makeCampaign() {
+        Campaign cam = new Campaign();
+        Id camRTId = Schema.SObjectType.Campaign.getRecordTypeInfosByDeveloperName().get('CN_Campaign').getRecordTypeId();
+        cam.RecordTypeId = camRTId;
+        cam.Name = 'TestCampaign';
+        cam.Status = 'Planned';
+        cam.Type = 'Corporate Event';
+        cam.StartDate = Date.today().addMonths(3);
+        cam.EndDate = Date.today().addMonths(3).addDays(13);
+        cam.CN_Execution_Type__c = 'Public Demonstration';
+        cam.CN_Channel__c = 'KA';
+        cam.CN_Customer_Category__c = 'BAPA';
+        cam.CN_Product_Category__c = 'Dairy';
+        cam.CN_Product_Type__c = 'CHEESE';
+        cam.CN_Brand__c = '5J';
+        return cam;
     }
 }

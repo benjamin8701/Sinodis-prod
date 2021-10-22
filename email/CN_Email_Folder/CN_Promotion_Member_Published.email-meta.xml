@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CN_Promotion_Member_Published</name>
+    <style>none</style>
+    <subject>新的促销活动{!CN_Promotion_Member__c.CN_Promotion__c}已经发布/New Promotion {!CN_Promotion_Member__c.CN_Promotion__c} has been published.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
