@@ -18,6 +18,9 @@
             <field>CN_CS_Team_Email__c</field>
             <type>email</type>
         </recipients>
+		<recipients>
+            <type>creator</type>
+        </recipients>
         <senderType>CurrentUser</senderType>
         <template>CN_Email_Folder/CN_Sample_Request_Approved_Process_CS</template>
     </alerts>
@@ -64,6 +67,9 @@
         <recipients>
             <field>CN_CCE_Team_Email__c</field>
             <type>email</type>
+        </recipients>
+		<recipients>
+            <type>creator</type>
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>CN_Email_Folder/CN_Sample_Request_Approved_Process_CCE</template>

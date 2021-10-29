@@ -541,7 +541,7 @@
     <fields>
         <fullName>CN_Internal_Contract_Number__c</fullName>
         <caseSensitive>false</caseSensitive>
-        <externalId>true</externalId>
+        <externalId>false</externalId>
         <label>Internal Contract Number</label>
         <length>255</length>
         <required>false</required>
