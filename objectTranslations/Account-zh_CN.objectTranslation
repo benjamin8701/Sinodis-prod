@@ -285,12 +285,44 @@
             <translation><!-- 09    Check Debit Memo --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>10</masterLabel>
-            <translation><!-- 10 --></translation>
+            <masterLabel>10-YH Rejected by Customer</masterLabel>
+            <translation><!-- 10-YH Rejected by Customer --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>YH    Rejected by Customer</masterLabel>
-            <translation><!-- YH    Rejected by Customer --></translation>
+            <masterLabel>S0-Overdue Payment</masterLabel>
+            <translation><!-- S0-Overdue Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S1-Credit Limit</masterLabel>
+            <translation><!-- S1-Credit Limit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2-Food License Lack</masterLabel>
+            <translation><!-- S2-Food License Lack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S3-Addr. certif. Lack</masterLabel>
+            <translation><!-- S3-Addr. certif. Lack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S4-Others License Lack</masterLabel>
+            <translation><!-- S4-Others License Lack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S5-Missing Order</masterLabel>
+            <translation><!-- S5-Missing Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S6-Obsolete</masterLabel>
+            <translation><!-- S6-Obsolete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S7-Inactive SF</masterLabel>
+            <translation><!-- S7-Inactive SF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YH Rejected by Customer</masterLabel>
+            <translation><!-- YH Rejected by Customer --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -741,6 +773,38 @@
         <picklistValues>
             <masterLabel>10 Not achieve MOQ</masterLabel>
             <translation><!-- 10 Not achieve MOQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S0-Overdue Payment</masterLabel>
+            <translation><!-- S0-Overdue Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S1-Credit Limit</masterLabel>
+            <translation><!-- S1-Credit Limit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2-Food License Lack</masterLabel>
+            <translation><!-- S2-Food License Lack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S3-Addr. certif. Lack</masterLabel>
+            <translation><!-- S3-Addr. certif. Lack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S4-Others License Lack</masterLabel>
+            <translation><!-- S4-Others License Lack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S5-Missing Order</masterLabel>
+            <translation><!-- S5-Missing Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S6-Obsolete</masterLabel>
+            <translation><!-- S6-Obsolete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S7-Inactive SF</masterLabel>
+            <translation><!-- S7-Inactive SF --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -1301,6 +1365,38 @@
         <picklistValues>
             <masterLabel>99    test (e)</masterLabel>
             <translation><!-- 99    test (e) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S0-Overdue Payment</masterLabel>
+            <translation><!-- S0-Overdue Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S1-Credit Limit</masterLabel>
+            <translation><!-- S1-Credit Limit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2-Food License Lack</masterLabel>
+            <translation><!-- S2-Food License Lack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S3-Addr. certif. Lack</masterLabel>
+            <translation><!-- S3-Addr. certif. Lack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S4-Others License Lack</masterLabel>
+            <translation><!-- S4-Others License Lack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S5-Missing Order</masterLabel>
+            <translation><!-- S5-Missing Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S6-Obsolete</masterLabel>
+            <translation><!-- S6-Obsolete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S7-Inactive SF</masterLabel>
+            <translation><!-- S7-Inactive SF --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -2433,6 +2529,10 @@
         <sections>
             <label>地址</label>
             <section>Address</section>
+        </sections>
+        <sections>
+            <label>开票</label>
+            <section>Invoicing</section>
         </sections>
     </layouts>
     <layouts>
