@@ -662,7 +662,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Demo Report Reminder</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Feedback Reminder</fullName>
                 <default>false</default>
             </values>
             <values>

@@ -50,7 +50,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label>顾客名称</label>
+        <label>客户名称</label>
         <name>CN_Customer_Name__c</name>
     </fields>
     <fields>
@@ -123,6 +123,11 @@
         <name>CN_Quantity_Needed__c</name>
     </fields>
     <fields>
+        <help>如果实际产品数量为空或为0，则回自动填入产品数量</help>
+        <label>实发产品数量</label>
+        <name>CN_Real_Quantity__c</name>
+    </fields>
+    <fields>
         <label>产品描述中文</label>
         <name>CN_SKU_Chinese_Description__c</name>
     </fields>
@@ -143,7 +148,7 @@
         <name>CN_Sample_Needed_Date__c</name>
     </fields>
     <fields>
-        <label><!-- Sample Request Type Formula --></label>
+        <label>申请类型</label>
         <name>CN_Sample_Request_Type_Formula__c</name>
     </fields>
     <fields>
@@ -164,6 +169,10 @@
         <name>CN_Sample_Unit_List_Price__c</name>
     </fields>
     <fields>
+        <label>分装单位</label>
+        <name>CN_Sample_Unit__c</name>
+    </fields>
+    <fields>
         <label>交付状态</label>
         <name>CN_Status_of_Delivery__c</name>
         <picklistValues>
@@ -176,7 +185,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Unit --></label>
+        <label>单位</label>
         <name>CN_Unit__c</name>
     </fields>
     <layouts>
@@ -250,6 +259,10 @@
         <name>CN_Check_Sample_Quantity</name>
     </validationRules>
     <validationRules>
+        <errorMessage>实发样品数量必须大于0且小于等于需要样品数量</errorMessage>
+        <name>CN_Check_Sample_Real_Quantity</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>正装样品的送达信息仅供销售人员填写</errorMessage>
         <name>CN_Check_Wholepack_Deliver_Status_Edit</name>
     </validationRules>
@@ -260,6 +273,10 @@
     <validationRules>
         <errorMessage>预审，审批及取消状态不可编辑</errorMessage>
         <name>CN_Prevent_Edit_After_Ready</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>样品申请批准前，交付信息不可更改</errorMessage>
+        <name>CN_Prevent_Edit_Before_Approved</name>
     </validationRules>
     <validationRules>
         <errorMessage>输入客户目前状况前必须输入处理情况</errorMessage>

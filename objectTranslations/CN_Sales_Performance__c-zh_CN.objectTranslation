@@ -203,7 +203,11 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Sales Office --></label>
+        <label><!-- Target Sales Channel --></label>
+        <name>CN_Target_Sales_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Office Name --></label>
         <name>CN_Target_Sales_Office__c</name>
     </fields>
     <fields>

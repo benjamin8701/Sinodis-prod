@@ -1,4 +1,4 @@
-<messaging:emailTemplate subject="{!relatedTo.CN_Account_Name_Formula__c} 的分装样品申请 {!relatedTo.Name}已创建" recipientType="User" relatedToType="CN_Sample_Request__c">
+<messaging:emailTemplate subject="分装样品申请 {!relatedTo.Name} - {!relatedTo.CN_Account_Name_Formula__c}" recipientType="User" relatedToType="CN_Sample_Request__c">
   <messaging:htmlEmailBody >
   请处理已批准的样品申请:<br/>
   请点击以下链接<br/>
@@ -10,31 +10,31 @@
   </tr>
   <tr>
   <td>客户代码:</td>
-  <td>{!relatedTo.CN_Account_Name__r.CN_Customer_Code__c}</td>
+  <td>{!relatedTo.CN_Customer_Code__c}</td>
   </tr>
   <tr>
-  <td>分装订单类型:</td>
-  <td>{!relatedTo.CN_Order_Type_for_Wholepack__c}</td>
+  <td>销售区域:</td>
+  <td>{!relatedTo.CN_Sales_Office__c}</td>
   </tr>
   <tr>
-  <td>分装订单原因:</td>
-  <td>{!relatedTo.CN_Order_Reason_for_Wholepack__c}</td>
-  </tr>
-  <tr>
-  <td>仓库位置:</td>
-  <td>{!relatedTo.CN_Warehouse_Location__c}</td>
+  <td>销售渠道:</td>
+  <td>{!relatedTo.CN_Sales_Team__c}</td>
   </tr>
   <tr>
   <td>送样方式:</td>
   <td>{!relatedTo.CN_Sample_Delivery_Method__c}</td>
   </tr>
   <tr>
-  <td>创建人:</td>
+  <td>申请人:</td>
   <td>{!relatedTo.CN_Creator_Name__c}</td>
   </tr>
   <tr>
   <td>收货地址:</td>
   <td>{!relatedTo.CN_Delivery_Address__c}</td>
+  </tr>
+  <tr>
+  <td>备注:</td>
+  <td>{!relatedTo.CN_Remark__c}</td>
   </tr>
   </table> 
   样品申请SKUs:&nbsp;{!relatedTo.CN_SP_Records_Count_All_Formula__c}<br/>
@@ -52,19 +52,15 @@
   </tr>
   <tr>
   <td>Customer Code:</td>
-  <td>{!relatedTo.CN_Account_Name__r.CN_Customer_Code__c}</td>
+  <td>{!relatedTo.CN_Customer_Code__c}</td>
   </tr>
   <tr>
-  <td>Order Type for Repack:</td>
-  <td>{!relatedTo.CN_Order_Type_for_Wholepack__c}</td>
+  <td>Sales Office:</td>
+  <td>{!relatedTo.CN_Sales_Office__c}</td>
   </tr>
   <tr>
-  <td>Order Reason for Repack:</td>
-  <td>{!relatedTo.CN_Order_Reason_for_Wholepack__c}</td>
-  </tr>
-  <tr>
-  <td>Warehouse Location:</td>
-  <td>{!relatedTo.CN_Warehouse_Location__c}</td>
+  <td>Sales Team:</td>
+  <td>{!relatedTo.CN_Sales_Team__c}</td>
   </tr>
   <tr>
   <td>Sample Delivery Method:</td>
@@ -77,6 +73,10 @@
   <tr>
   <td>Delivery Address:</td>
   <td>{!relatedTo.CN_Delivery_Address__c}</td>
+  </tr>
+  <tr>
+  <td>Remark:</td>
+  <td>{!relatedTo.CN_Remark__c}</td>
   </tr>
   </table> 
   Sample Request SKUs:&nbsp;{!relatedTo.CN_SP_Records_Count_All_Formula__c}<br/>

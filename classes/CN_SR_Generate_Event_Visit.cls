@@ -12,18 +12,18 @@ public without sharing class CN_SR_Generate_Event_Visit implements Triggers.Hand
     Set<Id> cnRTIdSet = new Set<Id>();
     Id cnOfficeRepackRTId = Schema.SObjectType.CN_Sample_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_SR_OFFICE_REPACK_RT_API_NAME).getRecordTypeId();
     Id cnWholePackRTId = Schema.SObjectType.CN_Sample_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_SR_WHOLE_PACK_RT_API_NAME).getRecordTypeId();
-    Id eventRTId = Schema.SObjectType.Event.getRecordTypeInfosByDeveloperName().get(Constants.CN_EVENT_RT_API_NAME).getRecordTypeId();
-    Id visitRTId = Schema.SObjectType.Event.getRecordTypeInfosByDeveloperName().get(Constants.CN_VISIT_RT_API_NAME).getRecordTypeId();
+    Id taskRTId = Schema.SObjectType.Task.getRecordTypeInfosByDeveloperName().get(Constants.CN_TASK_RT_API_NAME).getRecordTypeId();
+    
     public void handle() {
         this.cnRTIdSet.add(this.cnOfficeRepackRTId);
         this.cnRTIdSet.add(this.cnWholePackRTId);
-        if(Trigger.isBefore && Trigger.isInsert) {
-            handleBeforeInsert();
-        } else if(Trigger.isBefore && Trigger.isUpdate) {
-            handleBeforeUpdate();
+        if(Trigger.isAfter && Trigger.isInsert) {
+            handleAfterInsert();
+        } else if(Trigger.isAfter && Trigger.isUpdate) {
+            handleAfterUpdate();
         }        
     }
-    public void handleBeforeInsert() {
+    public void handleAfterInsert() {
         List<CN_Sample_Request__c> srList = new List<CN_Sample_Request__c>();
         for(CN_Sample_Request__c sr : (List<CN_Sample_Request__c>)Trigger.new) {
             if(cnRTIdSet.contains(sr.RecordTypeId)) {
@@ -34,7 +34,7 @@ public without sharing class CN_SR_Generate_Event_Visit implements Triggers.Hand
             generateEventVisit(srList);           
         }
     }
-    public void handleBeforeUpdate() {
+    public void handleAfterUpdate() {
         List<CN_Sample_Request__c> srList = new List<CN_Sample_Request__c>();
         for(CN_Sample_Request__c sr : (List<CN_Sample_Request__c>)Trigger.new) {
             CN_Sample_Request__c oldSr = (CN_Sample_Request__c)Trigger.oldMap.get(sr.Id);
@@ -49,53 +49,35 @@ public without sharing class CN_SR_Generate_Event_Visit implements Triggers.Hand
         }
     }
     public void generateEventVisit(List<CN_Sample_Request__c> srList) {
-        List<Event> etNewList = new List<Event>();
+        List<Task> taskNewList = new List<Task>();
         for(CN_Sample_Request__c sr : srList) {
             if(sr.CN_SP_Records_Count_Delivery_Status_All__c == sr.CN_SP_Records_Count_All__c && sr.CN_SP_Records_Count_Delivery_Status_Done__c >= 1) {
-                Event eventObj7 = new Event(
-                    RecordTypeId = eventRTId,
-                    Subject = String.format(System.Label.CN_Create_Event_Subject,new List<String>{sr.CN_Account_Name_Formula__c,sr.Name}),
+                Task taskObj14 = new Task(
+                    RecordTypeId = taskRTId,
+                    Subject = 'Sample Feedback Reminder',
                     OwnerId = sr.OwnerId,
-                    WhatId = sr.CN_Account_Name__c,
-                    Type = 'Others',
-                    IsAllDayEvent = true,
-                    StartDateTime = sr.CN_Sample_Needed_Date__c + 7,
-                    EndDateTime = sr.CN_Sample_Needed_Date__c + 7,
+                    WhatId = sr.Id,
+                    Status = 'Open',
+                    Priority = 'Normal',
+                    ActivityDate = sr.CN_Sample_Needed_Date__c + 14,
                     IsReminderSet = true,
-                    ReminderDateTime  = sr.CN_Sample_Needed_Date__c + 6,
-                    CN_Sample_Request__c = sr.Id                   
+                    ReminderDateTime  = sr.CN_Sample_Needed_Date__c + 13
                 );
-                etNewList.add(eventObj7);
-                Event eventObj14 = new Event(
-                    RecordTypeId = eventRTId,
-                    Subject = String.format(System.Label.CN_Create_Event_Subject,new List<String>{sr.CN_Account_Name_Formula__c,sr.Name}),
+                taskNewList.add(taskObj14);
+                Task taskObj5 = new Task(
+                    RecordTypeId = taskRTId,
+                    Subject = 'Sample Feedback Reminder',
                     OwnerId = sr.OwnerId,
-                    WhatId = sr.CN_Account_Name__c,
-                    Type = 'Others',
-                    IsAllDayEvent = true,
-                    StartDateTime = sr.CN_Sample_Needed_Date__c + 14,
-                    EndDateTime = sr.CN_Sample_Needed_Date__c + 14,
+                    WhatId = sr.Id,
+                    Status = 'Open',
+                    Priority = 'Normal',
+                    ActivityDate = sr.CN_Sample_Needed_Date__c + 5,
                     IsReminderSet = true,
-                    ReminderDateTime  = sr.CN_Sample_Needed_Date__c + 13,
-                    CN_Sample_Request__c = sr.Id
+                    ReminderDateTime  = sr.CN_Sample_Needed_Date__c + 4
                 );
-                etNewList.add(eventObj14);
-                Event visitObj = new Event(
-                    RecordTypeId = visitRTId,
-                    Subject = System.label.CN_Event_Follow_Visit_Subject_SR + ' ' + sr.CN_Account_Name_Formula__c,
-                    OwnerId = sr.OwnerId,
-                    WhatId = sr.CN_Account_Name__c,
-                    Type = 'Visit',
-                    IsAllDayEvent = true,
-                    StartDateTime = sr.CN_Sample_Needed_Date__c + 5,
-                    EndDateTime = sr.CN_Sample_Needed_Date__c + 5,
-                    IsReminderSet = true,
-                    ReminderDateTime  = sr.CN_Sample_Needed_Date__c + 4,
-                    CN_Sample_Request__c = sr.Id                   
-                );
-                etNewList.add(visitObj);
+                taskNewList.add(taskObj5);
             }
         }
-        insert etNewList;
+        insert taskNewList;
     }
 }

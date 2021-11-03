@@ -162,6 +162,17 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>CN_Chefs_Assigned__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Chefs Assigned</label>
+        <referenceTo>CN_Chefs_Assigned__c</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>CN_Count__c</fullName>
         <externalId>false</externalId>
         <formula>1</formula>

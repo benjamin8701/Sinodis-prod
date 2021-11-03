@@ -130,6 +130,10 @@
         <name>CN_Check_Number_Of_Recipes</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- You must input Number of Recipes --></errorMessage>
+        <name>CN_Check_Number_Of_Recipes_Required</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Only creator could edit --></errorMessage>
         <name>CN_Demo_Report_Only_Change_Self_Report</name>
     </validationRules>

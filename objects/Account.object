@@ -789,12 +789,52 @@ IF(
                 <value>
                     <fullName>10</fullName>
                     <default>false</default>
-                    <label>10</label>
+                    <label>10-YH Rejected by Customer</label>
                 </value>
                 <value>
                     <fullName>YH</fullName>
                     <default>false</default>
-                    <label>YH    Rejected by Customer</label>
+                    <label>YH Rejected by Customer</label>
+                </value>
+                <value>
+                    <fullName>S0</fullName>
+                    <default>false</default>
+                    <label>S0-Overdue Payment</label>
+                </value>
+                <value>
+                    <fullName>S1</fullName>
+                    <default>false</default>
+                    <label>S1-Credit Limit</label>
+                </value>
+                <value>
+                    <fullName>S2</fullName>
+                    <default>false</default>
+                    <label>S2-Food License Lack</label>
+                </value>
+                <value>
+                    <fullName>S3</fullName>
+                    <default>false</default>
+                    <label>S3-Addr. certif. Lack</label>
+                </value>
+                <value>
+                    <fullName>S4</fullName>
+                    <default>false</default>
+                    <label>S4-Others License Lack</label>
+                </value>
+                <value>
+                    <fullName>S5</fullName>
+                    <default>false</default>
+                    <label>S5-Missing Order</label>
+                </value>
+                <value>
+                    <fullName>S6</fullName>
+                    <default>false</default>
+                    <label>S6-Obsolete</label>
+                </value>
+                <value>
+                    <fullName>S7</fullName>
+                    <default>false</default>
+                    <label>S7-Inactive SF</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1746,6 +1786,46 @@ IF(
                     <fullName>10</fullName>
                     <default>false</default>
                     <label>10 Not achieve MOQ</label>
+                </value>
+                <value>
+                    <fullName>S0</fullName>
+                    <default>false</default>
+                    <label>S0-Overdue Payment</label>
+                </value>
+                <value>
+                    <fullName>S1</fullName>
+                    <default>false</default>
+                    <label>S1-Credit Limit</label>
+                </value>
+                <value>
+                    <fullName>S2</fullName>
+                    <default>false</default>
+                    <label>S2-Food License Lack</label>
+                </value>
+                <value>
+                    <fullName>S3</fullName>
+                    <default>false</default>
+                    <label>S3-Addr. certif. Lack</label>
+                </value>
+                <value>
+                    <fullName>S4</fullName>
+                    <default>false</default>
+                    <label>S4-Others License Lack</label>
+                </value>
+                <value>
+                    <fullName>S5</fullName>
+                    <default>false</default>
+                    <label>S5-Missing Order</label>
+                </value>
+                <value>
+                    <fullName>S6</fullName>
+                    <default>false</default>
+                    <label>S6-Obsolete</label>
+                </value>
+                <value>
+                    <fullName>S7</fullName>
+                    <default>false</default>
+                    <label>S7-Inactive SF</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -2806,6 +2886,46 @@ IF(
                     <fullName>99</fullName>
                     <default>false</default>
                     <label>99    test (e)</label>
+                </value>
+                <value>
+                    <fullName>S0</fullName>
+                    <default>false</default>
+                    <label>S0-Overdue Payment</label>
+                </value>
+                <value>
+                    <fullName>S1</fullName>
+                    <default>false</default>
+                    <label>S1-Credit Limit</label>
+                </value>
+                <value>
+                    <fullName>S2</fullName>
+                    <default>false</default>
+                    <label>S2-Food License Lack</label>
+                </value>
+                <value>
+                    <fullName>S3</fullName>
+                    <default>false</default>
+                    <label>S3-Addr. certif. Lack</label>
+                </value>
+                <value>
+                    <fullName>S4</fullName>
+                    <default>false</default>
+                    <label>S4-Others License Lack</label>
+                </value>
+                <value>
+                    <fullName>S5</fullName>
+                    <default>false</default>
+                    <label>S5-Missing Order</label>
+                </value>
+                <value>
+                    <fullName>S6</fullName>
+                    <default>false</default>
+                    <label>S6-Obsolete</label>
+                </value>
+                <value>
+                    <fullName>S7</fullName>
+                    <default>false</default>
+                    <label>S7-Inactive SF</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -5592,6 +5712,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>YH</fullName>
                 <default>false</default>
             </values>
@@ -5869,6 +6021,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6270,6 +6454,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>99</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -7555,6 +7771,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>YH</fullName>
                 <default>false</default>
             </values>
@@ -7832,6 +8080,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -8233,6 +8513,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>99</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9518,6 +9830,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>YH</fullName>
                 <default>false</default>
             </values>
@@ -9795,6 +10139,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10196,6 +10572,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>99</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11477,6 +11885,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>YH</fullName>
                 <default>false</default>
             </values>
@@ -11754,6 +12194,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12155,6 +12627,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>99</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13428,6 +13932,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>YH</fullName>
                 <default>false</default>
             </values>
@@ -13705,6 +14241,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -14106,6 +14674,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>99</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -15391,6 +15991,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>YH</fullName>
                 <default>false</default>
             </values>
@@ -15668,6 +16300,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16069,6 +16733,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>99</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -17349,6 +18045,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>YH</fullName>
                 <default>false</default>
             </values>
@@ -17626,6 +18354,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18027,6 +18787,38 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>99</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

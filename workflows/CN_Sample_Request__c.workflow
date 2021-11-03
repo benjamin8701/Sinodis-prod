@@ -75,6 +75,45 @@
         <template>CN_Email_Folder/CN_Sample_Request_Approved_Process_CCE</template>
     </alerts>
     <fieldUpdates>
+        <fullName>CN_SR_Empty_ConditionType</fullName>
+        <field>CN_Condition_Type__c</field>
+        <name>CN_SR_Empty_ConditionType</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_SR_Populate_ConditionType</fullName>
+        <field>CN_Condition_Type__c</field>
+        <literalValue>5TMK2104 – TM sample</literalValue>
+        <name>CN_SR_Populate_ConditionType</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_SR_Populate_OrderType_ZFD1</fullName>
+        <field>CN_Order_Type_for_Wholepack__c</field>
+        <literalValue>ZFD1 Sample for Customer</literalValue>
+        <name>CN_SR_Populate_OrderType_ZFD1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_SR_Populate_OrderType_ZFD3</fullName>
+        <field>CN_Order_Type_for_Wholepack__c</field>
+        <literalValue>ZFD3 - BPP sample</literalValue>
+        <name>CN_SR_Populate_OrderType_ZFD3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CN_SR_Update_Approved_Date</fullName>
         <field>CN_Approved_Date__c</field>
         <formula>NOW()</formula>
@@ -128,6 +167,52 @@
         <fullName>CN_SR_Populate_Approver1_CCE1</fullName>
         <active>false</active>
         <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c, NOT(ISBLANK(CN_Account_Name__c)),  ISCHANGED(CN_Account_Name__c),  CN_Account_Name__r.CN_Sales_Team_UI__r.Name == &apos;KA&apos;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_SR_Populate_OrderType_ZFD1</fullName>
+        <actions>
+            <name>CN_SR_Empty_ConditionType</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>CN_SR_Populate_OrderType_ZFD1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If the Account has the customer Code , populate the Order type for wholesales with ZFD1</description>
+        <formula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
+  RecordType.DeveloperName = &quot;CN_Whole_Pack&quot;,
+  OR(
+     ISCHANGED(CN_Opportunity_Name__c),
+     ISNEW()
+  ),
+  NOT(ISBLANK(CN_Opportunity_Name__r.Account.CN_Customer_Code__c))
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_SR_Populate_OrderType_ZFD3</fullName>
+        <actions>
+            <name>CN_SR_Populate_ConditionType</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>CN_SR_Populate_OrderType_ZFD3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If the Account has not the customer Code , populate the Order type for wholesales with ZFD3</description>
+        <formula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
+  RecordType.DeveloperName = &quot;CN_Whole_Pack&quot;,
+  OR(
+     ISCHANGED(CN_Opportunity_Name__c),
+     ISNEW()
+  ),
+  ISBLANK(CN_Opportunity_Name__r.Account.CN_Customer_Code__c)
+)</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

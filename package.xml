@@ -92,6 +92,8 @@
         <members>CN_Campaign_Generate_Opp_LC_Ctrl_Test</members>
         <members>CN_Case_Populate_Status_Handler_Test</members>
         <members>CN_Chef_Req_Assign_Approver_Handler_Test</members>
+        <members>CN_Chef_Assigned_Reset_WorkDate_Handler</members>
+        <members>CN_Chef_Request_Auto_Confirm_Handler</members>
         <members>CN_Chef_Request_Assign_Approver_Handler</members>
         <members>CN_Chef_Request_Chef_Assign_Handler</members>
         <members>CN_Chef_Request_Chef_Assign_Handler_Test</members>
@@ -169,6 +171,7 @@
         <members>CN_SP_Populate_Campaign_Product_Batch</members>
         <members>CN_SP_Populate_Campaign_Product_SCH</members>
         <members>CN_SP_Populate_Fields_Handler</members>
+        <members>CN_SP_Populate_Product_Handler</members>
         <members>CN_SP_Populate_Product_Handler_Test</members>
         <members>CN_SP_Prevent_Delete_Handler</members>
         <members>CN_SR_Generate_Event_Visit</members>
@@ -395,6 +398,7 @@
         <members>CN_Email_Folder/CN_Sample_Request_Approved_Process_CS</members>
         <members>CN_Email_Folder/CN_Sample_Request_Rejected</members>
         <members>CN_Email_Folder/CN_Sample_Request_Submit</members>
+        <members>CN_Email_Folder/CN_Chef_Assigned_Notification_Manager</members>
         <name>EmailTemplate</name>
     </types>
     <types>
@@ -717,6 +721,8 @@
         <members>TM_Report/CN_Account_without_Document</members>
         <members>TM_Report/TM_Account_Report</members>
         <members>TM_Report/TM_Accounts_History_Report</members>
+        <members>CN_CCE_Report</members>
+        <members>CN_CCE_Report/CN_Repack_Sample_Request</members>
         <name>Report</name>
     </types>
     <types>

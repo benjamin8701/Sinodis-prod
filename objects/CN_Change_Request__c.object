@@ -41061,7 +41061,10 @@ OR(
         <errorConditionFormula>AND(
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  ISPICKVAL(CN_Change_Request_Status__c, &quot;Approved&quot;),
+  OR(
+    ISPICKVAL(CN_Change_Request_Status__c, &quot;Approved&quot;),
+    ISPICKVAL( PRIORVALUE(CN_Change_Request_Status__c), &quot;Approved&quot;)
+  ),
   NOT(ISCHANGED( CN_Sync_Status__c )),
   NOT(IF(RecordType.DeveloperName = &quot;CN_MASS_Change_Account_Owner&quot;, TRUE, FALSE)),
   NOT(IF(RecordType.DeveloperName = &quot;CN_Mass_Change_Account_Finance_AR&quot;, TRUE, FALSE))

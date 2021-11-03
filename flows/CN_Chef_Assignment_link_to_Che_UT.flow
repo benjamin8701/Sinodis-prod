@@ -4,8 +4,8 @@
     <assignments>
         <name>Assign_Chef_Assigned_Recode_Chef_UT</name>
         <label>Assign Chef Assigned Recode Chef UT</label>
-        <locationX>930</locationX>
-        <locationY>237</locationY>
+        <locationX>976</locationX>
+        <locationY>255</locationY>
         <assignmentItems>
             <assignToReference>Input_ChefAssignedRecord.CN_Chef_UT__c</assignToReference>
             <operator>Assign</operator>
@@ -20,8 +20,8 @@
     <decisions>
         <name>Check_Chef_Assigned_Record</name>
         <label>Check Chef Assigned Record</label>
-        <locationX>497</locationX>
-        <locationY>92</locationY>
+        <locationX>441</locationX>
+        <locationY>119</locationY>
         <defaultConnector>
             <targetReference>Check_Chef_End_Work_Day_And_Chef</targetReference>
         </defaultConnector>
@@ -42,8 +42,8 @@
     <decisions>
         <name>Check_Chef_End_Work_Day_And_Chef</name>
         <label>Check Chef End Work Day And Chef</label>
-        <locationX>347</locationX>
-        <locationY>247</locationY>
+        <locationX>438</locationX>
+        <locationY>239</locationY>
         <defaultConnector>
             <targetReference>Get_Record_Type_ID</targetReference>
         </defaultConnector>
@@ -65,19 +65,38 @@
                     <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
+            <label>Chef End Work Day Or Chef Is Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Chef_UT_is_updated</name>
+        <label>Check Chef UT is updated</label>
+        <locationX>799</locationX>
+        <locationY>214</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Updated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Input_ChefAssignedRecord.CN_Chef_UT__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>RecordID_ChefUTID</elementReference>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Assign_Chef_Assigned_Recode_Chef_UT</targetReference>
             </connector>
-            <label>Chef End Work Day Or Chef Is Null</label>
+            <label>Is Updated</label>
         </rules>
     </decisions>
     <decisions>
         <name>Check_Chef_UT_Record</name>
         <label>Check Chef UT Record</label>
-        <locationX>654</locationX>
-        <locationY>401</locationY>
+        <locationX>656</locationX>
+        <locationY>377</locationY>
         <defaultConnector>
-            <targetReference>Assign_Chef_Assigned_Recode_Chef_UT</targetReference>
+            <targetReference>Check_Chef_UT_is_updated</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -153,8 +172,8 @@
     <recordLookups>
         <name>Get_Chef_UT_Record_ID</name>
         <label>Get Chef UT Record ID</label>
-        <locationX>486</locationX>
-        <locationY>391</locationY>
+        <locationX>520</locationX>
+        <locationY>422</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Check_Chef_UT_Record</targetReference>
@@ -190,8 +209,8 @@
     <recordLookups>
         <name>Get_Record_Type_ID</name>
         <label>Get Chef UT Record Type ID</label>
-        <locationX>290</locationX>
-        <locationY>374</locationY>
+        <locationX>350</locationX>
+        <locationY>429</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Get_Chef_UT_Record_ID</targetReference>
@@ -224,7 +243,7 @@
         <locationY>305</locationY>
         <inputReference>Input_ChefAssignedRecord</inputReference>
     </recordUpdates>
-    <runInMode>SystemModeWithoutSharing</runInMode>
+    <runInMode>DefaultMode</runInMode>
     <start>
         <locationX>68</locationX>
         <locationY>94</locationY>

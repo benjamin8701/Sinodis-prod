@@ -160,6 +160,28 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
+        <fullName>CN_Account_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Code</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Affiliates__c</fullName>
         <externalId>false</externalId>
         <label>Affiliates</label>
@@ -184,7 +206,7 @@
                 <sorted>false</sorted>
                 <value>
                     <fullName>Food Service</fullName>
-                    <default>false</default>
+                    <default>true</default>
                     <label>Food Service</label>
                 </value>
             </valueSetDefinition>
@@ -515,6 +537,19 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_If_Need_Populate_Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>OR(
+  CN_Account_Code__c != CN_Direct_Account_Name__r.CN_Customer_Code__c,
+  CN_Account_Name__c !=  CN_Direct_Account_Name__r.Name 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>If Need Populate Account Name</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Indirect_Account_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -540,7 +575,6 @@
     </fields>
     <fields>
         <fullName>CN_Internal_Contract_Number__c</fullName>
-        <caseSensitive>false</caseSensitive>
         <externalId>false</externalId>
         <label>Internal Contract Number</label>
         <length>255</length>
@@ -1195,12 +1229,23 @@
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
-        <columns>CN_Contract_Number__c</columns>
+        <columns>CN_Internal_Contract_Number__c</columns>
+        <columns>CN_Document_Number__c</columns>
+        <columns>CN_Direct_Account_Code__c</columns>
         <columns>CN_Direct_Account_Name__c</columns>
         <columns>CN_Contract_Type__c</columns>
+        <columns>CN_Sales_Channel__c</columns>
+        <columns>CN_Sales_Office__c</columns>
+        <columns>CN_Sales_People__c</columns>
+        <columns>CN_Start_Date__c</columns>
+        <columns>CN_End_Date__c</columns>
         <columns>CN_Contract_Status__c</columns>
-        <columns>CN_Indirect_Account_Name__c</columns>
         <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>CN_Contract__c.CN_Contract</value>
+        </filters>
         <label>All</label>
     </listViews>
     <nameField>

@@ -9,6 +9,7 @@
             <td>中文描述</td>
             <td>英文描述</td>
             <td>领取数量</td>
+            <td style="{!if(isCCEOrCS='true','','display:none')}">分装样品单位</td>
             <td style="{!if(isCCEOrCS='true','','display:none')}">包装规格</td>
             <td>基本计量单位</td>
             <td style="{!if(isCCEOrCS='true','','display:none')}">单价</td>
@@ -21,6 +22,7 @@
                 <td>{!sp.CN_SKU_Chinese_Description__c}</td>
                 <td>{!sp.CN_SKU_English_Description__c}</td>
                 <td>{!sp.CN_Quantity_Needed__c}</td>
+                <td style="{!if(isCCEOrCS='true','','display:none')}">{!sp.CN_Sample_Unit__c}</td>
                 <td style="{!if(isCCEOrCS='true','','display:none')}">{!sp.CN_Qty_per_Carton__c}</td>
                 <td>{!sp.CN_Unit__c}</td>
                 <td style="{!if(isCCEOrCS='true','','display:none')}">{!sp.CN_List_Price__c}</td>

@@ -65,6 +65,22 @@
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
+        <fullName>CN_Account_To_Chef_Manager</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>CN_Account_To_Chef_Manager</label>
+        <sharedTo>
+            <role>CN_Chef_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_China</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
         <fullName>CN_Account_To_Finance</fullName>
         <accessLevel>Edit</accessLevel>
         <accountSettings>

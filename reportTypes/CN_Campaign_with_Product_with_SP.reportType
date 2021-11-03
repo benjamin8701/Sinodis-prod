@@ -870,6 +870,16 @@
             <field>CN_Sales_Office__c</field>
             <table>Campaign.Campaign_Products__r.Sample_Products__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Real_Quantity__c</field>
+            <table>Campaign.Campaign_Products__r.Sample_Products__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Sample_Unit__c</field>
+            <table>Campaign.Campaign_Products__r.Sample_Products__r</table>
+        </columns>
         <masterLabel>Sample Products</masterLabel>
     </sections>
 </ReportType>

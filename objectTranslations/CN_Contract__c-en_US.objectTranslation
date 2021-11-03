@@ -9,6 +9,14 @@
         <value>Contracts</value>
     </caseValues>
     <fields>
+        <label><!-- Account Code --></label>
+        <name>CN_Account_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>CN_Account_Name__c</name>
+    </fields>
+    <fields>
         <label><!-- Affiliates --></label>
         <name>CN_Affiliates__c</name>
     </fields>
@@ -196,6 +204,10 @@
     <fields>
         <label><!-- Guarantor --></label>
         <name>CN_Guarantor__c</name>
+    </fields>
+    <fields>
+        <label><!-- If Need Populate Account Name --></label>
+        <name>CN_If_Need_Populate_Account_Name__c</name>
     </fields>
     <fields>
         <label><!-- Indirect Account Name --></label>

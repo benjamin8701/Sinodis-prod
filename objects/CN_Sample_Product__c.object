@@ -459,6 +459,19 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Real_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If the Real Quantity equal to zero or blank ,it will be populated with Quantity Needed.</inlineHelpText>
+        <label>Real Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_SKU_Chinese_Description__c</fullName>
         <externalId>false</externalId>
         <formula>CN_Product__r.CN_SKU_Description_CN__c</formula>
@@ -574,6 +587,17 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>CN_Sample_Unit__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Product__r.CN_Standard_Sample_Unit__c</formula>
+        <label>Sample Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Status_of_Delivery__c</fullName>
         <externalId>false</externalId>
         <label>Status of Delivery</label>
@@ -624,8 +648,9 @@
         <label>All</label>
     </listViews>
     <listViews>
-        <fullName>CN_My_Sample_Feedbacks_Sales_View</fullName>
+        <fullName>CN_My_Sample_Feedbacks_Repack</fullName>
         <columns>NAME</columns>
+        <columns>CN_Sample_Request__c</columns>
         <columns>CN_Customer_Name__c</columns>
         <columns>CN_Product__c</columns>
         <columns>CN_SKU_Chinese_Description__c</columns>
@@ -654,7 +679,93 @@
             <operation>equals</operation>
             <value>CN_Sample_Product__c.CN_Sample_Product</value>
         </filters>
-        <label>My Sample Feedbacks (Sales View)</label>
+        <filters>
+            <field>CN_Sample_Request_Type_Formula__c</field>
+            <operation>equals</operation>
+            <value>Office Repack</value>
+        </filters>
+        <label>My Sample Feedbacks - Repack</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_Commercial_Director</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CN_My_Sample_Feedbacks_Sales_View</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Sample_Request__c</columns>
+        <columns>CN_Sample_Request_Type_Formula__c</columns>
+        <columns>CN_Customer_Name__c</columns>
+        <columns>CN_Product__c</columns>
+        <columns>CN_SKU_Chinese_Description__c</columns>
+        <columns>CN_Quantity_Needed__c</columns>
+        <columns>CN_Status_of_Delivery__c</columns>
+        <columns>CN_Delivery_Comments__c</columns>
+        <columns>CN_Customer_Feedback__c</columns>
+        <columns>CN_Feedback_Description__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Is_My_Sample_Product__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Sample_Request_Approved__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CN_Customer_Feedback__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>CN_Sample_Product__c.CN_Sample_Product</value>
+        </filters>
+        <label>All My Sample Feedbacks</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_Commercial_Director</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CN_My_Sample_Feedbacks_Whole_Pack</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Sample_Request__c</columns>
+        <columns>CN_Customer_Name__c</columns>
+        <columns>CN_Product__c</columns>
+        <columns>CN_SKU_Chinese_Description__c</columns>
+        <columns>CN_Quantity_Needed__c</columns>
+        <columns>CN_Real_Quantity__c</columns>
+        <columns>CN_Status_of_Delivery__c</columns>
+        <columns>CN_Delivery_Comments__c</columns>
+        <columns>CN_Customer_Feedback__c</columns>
+        <columns>CN_Feedback_Description__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Is_My_Sample_Product__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Sample_Request_Approved__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CN_Customer_Feedback__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>CN_Sample_Product__c.CN_Sample_Product</value>
+        </filters>
+        <filters>
+            <field>CN_Sample_Request_Type_Formula__c</field>
+            <operation>equals</operation>
+            <value>Whole Pack</value>
+        </filters>
+        <label>My Sample Feedbacks - Whole Pack</label>
         <sharedTo>
             <roleAndSubordinates>CN_Commercial_Director</roleAndSubordinates>
         </sharedTo>
@@ -662,13 +773,17 @@
     <listViews>
         <fullName>CN_Repack_Sample_Products_CCE_View</fullName>
         <columns>NAME</columns>
+        <columns>CN_Sample_Request__c</columns>
         <columns>CN_Sales_Office__c</columns>
+        <columns>CN_Customer_Sales_Team__c</columns>
         <columns>CN_Sample_Needed_Date__c</columns>
         <columns>CN_Customer_Name__c</columns>
         <columns>CN_Product__c</columns>
         <columns>CN_SKU_Chinese_Description__c</columns>
         <columns>CN_Quantity_Needed__c</columns>
         <columns>CN_Sample_Unit_List_Price__c</columns>
+        <columns>CN_Sample_Unit__c</columns>
+        <columns>CN_Real_Quantity__c</columns>
         <columns>CN_Status_of_Delivery__c</columns>
         <columns>CN_Delivery_Comments__c</columns>
         <filterScope>Everything</filterScope>
@@ -858,6 +973,20 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
         <errorMessage>Quantity Need must greater than 0.</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>CN_Check_Sample_Real_Quantity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+OR(  
+  CN_Real_Quantity__c &gt; CN_Quantity_Needed__c ,
+  CN_Real_Quantity__c  &lt;= 0
+)
+)</errorConditionFormula>
+        <errorDisplayField>CN_Real_Quantity__c</errorDisplayField>
+        <errorMessage>Real Quantity must greater than 0 and less than Quantity Needed.</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>CN_Check_Wholepack_Deliver_Status_Edit</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -889,16 +1018,35 @@ ISNEW(),
         <fullName>CN_Prevent_Edit_After_Ready</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
-$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
-NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-NOT(CN_Sample_Request__r.CN_Is_Draft__c), 
-NOT(ISCHANGED(CN_Customer_Feedback__c )),
-NOT(ISCHANGED( CN_Feedback_Description__c )),
-NOT(ISCHANGED(  CN_Feedback_Date__c )),
-NOT(ISCHANGED(   CN_Delivery_Comments__c )),
-NOT(ISCHANGED( CN_Status_of_Delivery__c ))
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  NOT(CN_Sample_Request__r.CN_Is_Draft__c), 
+  OR(
+    ISCHANGED(CN_Sample_Request__c),
+    ISCHANGED(CN_Product__c),
+    ISCHANGED(CN_Quantity_Needed__c),
+    ISCHANGED(CN_Sample_Cost__c)
+  )
 )</errorConditionFormula>
         <errorMessage>It&apos;s not allow to edit when ready for approved, approved or canceled.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Prevent_Edit_Before_Approved</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  NOT(  ISPICKVAL(CN_Sample_Request__r.CN_Sample_Request_Status__c, &apos;Approved&apos;) ), 
+  OR(
+    NOT(ISBLANK(TEXT(CN_Status_of_Delivery__c))),
+    NOT(ISBLANK(CN_Delivery_Comments__c)),
+    NOT(ISBLANK(TEXT(CN_Current_Status__c))),
+    NOT(ISBLANK(TEXT(CN_Customer_Feedback__c))),
+    NOT(ISBLANK(CN_Feedback_Description__c)),
+    AND( NOT(ISNEW()),ISCHANGED(CN_Real_Quantity__c))
+  )
+)</errorConditionFormula>
+        <errorMessage>You can&apos;t edit sample deliver information before sample request is approved</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_SP_Check_Current_Status_Delivery</fullName>

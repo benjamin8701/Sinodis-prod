@@ -216,13 +216,17 @@
         <excludeButtons>MassChangeOwner</excludeButtons>
         <fields>NAME</fields>
         <fields>RECORDTYPE</fields>
+        <fields>CN_Sample_Delivery_Method__c</fields>
         <fields>CN_Order_Reason__c</fields>
+        <fields>CN_Sample_Needed_Date__c</fields>
+        <fields>CN_Sample_Request_Status__c</fields>
         <relatedList>CN_Sample_Request__c.CN_Opportunity_Name__c</relatedList>
+        <sortField>NAME</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <excludeButtons>MassChangeOwner</excludeButtons>
         <fields>NAME</fields>
-        <fields>CN_Customer_ID__c</fields>
         <fields>CN_Event_Location__c</fields>
         <fields>CN_Event_Theme__c</fields>
         <fields>CN_Event_Type__c</fields>

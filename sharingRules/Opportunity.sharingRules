@@ -56,6 +56,17 @@
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
+        <fullName>CN_OPP_SHARE_TO_CHEF_MANAGER</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>CN_OPP_SHARE_TO_CHEF_MANAGER</label>
+        <sharedTo>
+            <role>CN_Chef_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_China</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
         <fullName>CN_OPP_SHARE_TO_MKT</fullName>
         <accessLevel>Read</accessLevel>
         <label>CN_OPP_SHARE_TO_MKT</label>

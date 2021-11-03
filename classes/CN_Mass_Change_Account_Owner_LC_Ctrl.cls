@@ -48,7 +48,7 @@ public without sharing class CN_Mass_Change_Account_Owner_LC_Ctrl {
                 'CN_Customer_Code__c','CN_Route_To_Market__c'
             };
             String soqlStr = 'SELECT ' + String.join(new List<String>(selectedFieldsSet), ', ') + ' FROM Account';
-            String soqlStrCr = 'Select CN_Account_Name__c, CN_Change_Request_Status__c, CN_Sync_Status__c from CN_Change_Request__c where ( CN_Change_Request_Status__c !=\'Approved\' or ( CN_Change_Request_Status__c = \'Approved\' and CN_Sync_Status__c not in(\'No Need To Sync\', \'Success\') ) ) and CN_Account_Name__c in';
+            String soqlStrCr = 'Select CN_Account_Name__c, CN_Change_Request_Status__c, CN_Sync_Status__c from CN_Change_Request__c where ( CN_Change_Request_Status__c !=\'Approved\' or ( CN_Change_Request_Status__c = \'Approved\' and CN_Sync_Status__c not in(\'No Need To Sync\', \'Success\') ) )  and CN_Account_Name__c in';
             String soqlStrRecordType = 'Select id, name from RecordType where name in (\'Change Account Owner\',\'Change Account Finance AR\')';
 
             if( changetype == 'Change Owner' && (CustomerCode == null || CustomerCode == '') && (UserNumber != null || UserNumber != '')) {
@@ -236,6 +236,7 @@ public without sharing class CN_Mass_Change_Account_Owner_LC_Ctrl {
                             crList.New_CN_Account_Owner__c = userMap.get(changeUserNumber).id;
                             crList.recordtypeid = RecordTypeMap.get('Change Account Owner').id;
                             crList.CN_Change_Request_Status__c = 'Approved' ;
+                            crList.CN_Sync_Status__c = 'No Need To Sync';
                             crList.CN_External_Id__c = accRow.Id;
                             changeRequestListNew.add(crList);
                             CN_Mass_Change_Log__c chLog = new CN_Mass_Change_Log__c();
@@ -251,6 +252,7 @@ public without sharing class CN_Mass_Change_Account_Owner_LC_Ctrl {
                             crList.New_CN_Account_Sinodis_Finance_AR__c = financeMap.get(changeUserNumber).id;
                             crList.recordtypeid = RecordTypeMap.get('Change Account Finance AR').id;
                             crList.CN_Change_Request_Status__c = 'Approved' ;
+                            crList.CN_Sync_Status__c = 'No Need To Sync';
                             crList.CN_External_Id__c = accRow.Id;
                             changeRequestListNew.add(crList);
                             CN_Mass_Change_Log__c chLog = new CN_Mass_Change_Log__c();

@@ -475,10 +475,22 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
         <errorConditionFormula>AND( 
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-CN_Number_of_Recipes__c &lt;= 0
+IF( NOT(ISBLANK(CN_Number_of_Recipes__c )) ,CN_Number_of_Recipes__c &lt;= 0,False)
 )</errorConditionFormula>
         <errorDisplayField>CN_Number_of_Recipes__c</errorDisplayField>
         <errorMessage>Number of Recipes must greater than 0.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Check_Number_Of_Recipes_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  NOT(IF($Profile.Name = &quot;CN Sales&quot; || $Profile.Name = &quot;CN Sales Lead&quot; ||$Profile.Name = &quot;CN Sales Manager&quot;, TRUE, FALSE)),
+  ISBLANK(CN_Number_of_Recipes__c )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Number_of_Recipes__c</errorDisplayField>
+        <errorMessage>You must input Number of Recipes</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Demo_Report_Only_Change_Self_Report</fullName>

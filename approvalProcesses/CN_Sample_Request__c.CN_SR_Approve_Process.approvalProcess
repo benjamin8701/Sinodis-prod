@@ -8,12 +8,13 @@
     <approvalPageFields>
         <field>Name</field>
         <field>Owner</field>
-        <field>CN_Account_Name__c</field>
         <field>CN_Customer_Code__c</field>
+        <field>CN_Account_Name__c</field>
         <field>CN_Sample_Request_Cost__c</field>
-        <field>CN_Approver1_CCE__c</field>
-        <field>CN_Approver2_Channel_Leader__c</field>
         <field>CN_Sample_Feedback_Overdue__c</field>
+        <field>RecordType</field>
+        <field>CN_Sample_Delivery_Method__c</field>
+        <field>CN_Remark__c</field>
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
