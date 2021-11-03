@@ -1264,7 +1264,7 @@
             <picklist>CN_BU__c</picklist>
             <values>
                 <fullName>Food Service</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
         </picklistValues>
         <picklistValues>
