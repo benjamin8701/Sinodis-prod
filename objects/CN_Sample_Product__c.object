@@ -978,9 +978,10 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
         <errorConditionFormula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+NOT(ISCHANGED(CN_Quantity_Needed__c )),
 OR(  
   CN_Real_Quantity__c &gt; CN_Quantity_Needed__c ,
-  CN_Real_Quantity__c  &lt;= 0
+  CN_Real_Quantity__c  &lt; 0
 )
 )</errorConditionFormula>
         <errorDisplayField>CN_Real_Quantity__c</errorDisplayField>

@@ -99,8 +99,11 @@
         <active>true</active>
         <formula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Sample_Product&apos;,
-ISBLANK(CN_Real_Quantity__c)
+OR(
+  ISNEW(),
+  ISCHANGED( CN_Quantity_Needed__c )
+)
 )</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>
