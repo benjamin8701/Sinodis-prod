@@ -8207,11 +8207,23 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>PricebookEntry.CN_Promo_Price_P1__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>PricebookEntry.CN_Promo_Price_P2__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PricebookEntry.CN_Promo_Price_P3__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PricebookEntry.CN_Promo_Price_P4__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
