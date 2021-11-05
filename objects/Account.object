@@ -836,6 +836,17 @@ IF(
                     <default>false</default>
                     <label>S7-Inactive SF</label>
                 </value>
+                <value>
+                    <fullName>S8</fullName>
+                    <default>false</default>
+                    <label>S8-Legal Case</label>
+                </value>
+                <value>
+                    <fullName>YH</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>YH Rejected by Customer</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -1826,6 +1837,11 @@ IF(
                     <fullName>S7</fullName>
                     <default>false</default>
                     <label>S7-Inactive SF</label>
+                </value>
+                <value>
+                    <fullName>S8</fullName>
+                    <default>false</default>
+                    <label>S8-Legal Case</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -2926,6 +2942,11 @@ IF(
                     <fullName>S7</fullName>
                     <default>false</default>
                     <label>S7-Inactive SF</label>
+                </value>
+                <value>
+                    <fullName>S8</fullName>
+                    <default>false</default>
+                    <label>S8-Legal Case</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -5747,6 +5768,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>YH</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>S8</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Billing_Department_of_Contact_Person__c</picklist>
@@ -6053,6 +6078,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S8</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -6486,6 +6515,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S8</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -7806,6 +7839,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>YH</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>S8</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Billing_Department_of_Contact_Person__c</picklist>
@@ -8112,6 +8149,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S8</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -8545,6 +8586,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S8</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -9865,6 +9910,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>YH</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>S8</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Billing_Department_of_Contact_Person__c</picklist>
@@ -10171,6 +10220,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S8</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10604,6 +10657,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S8</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11920,6 +11977,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>YH</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>S8</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Billing_Department_of_Contact_Person__c</picklist>
@@ -12226,6 +12287,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S8</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12659,6 +12724,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S8</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13967,6 +14036,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>YH</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>S8</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Billing_Department_of_Contact_Person__c</picklist>
@@ -14273,6 +14346,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S8</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -14706,6 +14783,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S8</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16026,6 +16107,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>YH</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>S8</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Billing_Department_of_Contact_Person__c</picklist>
@@ -16332,6 +16417,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S8</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16765,6 +16854,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S8</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18080,6 +18173,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>YH</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>S8</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Billing_Department_of_Contact_Person__c</picklist>
@@ -18386,6 +18483,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S8</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18819,6 +18920,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S8</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
