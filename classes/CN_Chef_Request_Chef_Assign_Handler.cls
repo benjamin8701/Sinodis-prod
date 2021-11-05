@@ -116,6 +116,7 @@ public without sharing class CN_Chef_Request_Chef_Assign_Handler implements Trig
                 ca.CN_Chef_Work_End_Date__c = cr.CN_End_Date__c;
                 ca.CN_External_Id__c = cr.Id + '-' + cr.OwnerId;
                 ca.CN_Chef_Self_Confirm_Time__c = Datetime.now();
+                ca.CN_Upsert_From_Apex_DateTime__c = DateTime.now();
                 caList.add(ca);
             }
         }

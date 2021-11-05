@@ -1044,6 +1044,17 @@
         </filters>
         <label>My Active Campaigns</label>
     </listViews>
+    <listViews>
+        <fullName>Org_Campaign_Hierarchy</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.ACTIVE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>Org_Campaign_Hierarchy</label>
+    </listViews>
     <recordTypes>
         <fullName>CN_Campaign</fullName>
         <active>true</active>
@@ -1901,6 +1912,20 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>CN_Campaign_Check_Chef_Manage</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  $Profile.Name = &apos;CN Chef Manager&apos;,
+  OR(
+    RecordType.DeveloperName = &apos;CN_Campaign&apos;,
+    RecordType.DeveloperName = &apos;CN_Parent_Campaign&apos;
+  ),
+  NOT(CN_VIP__c)
+)</errorConditionFormula>
+        <errorMessage>You are only allow to create or edit the vip campaign</errorMessage>
+    </validationRules>
     <validationRules>
         <fullName>CN_Campaign_Check_Customer_Category</fullName>
         <active>true</active>

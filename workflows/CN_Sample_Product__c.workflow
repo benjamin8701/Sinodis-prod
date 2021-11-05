@@ -40,6 +40,16 @@
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Sample_Product_Populate_Real_Quantity</fullName>
+        <field>CN_Real_Quantity__c</field>
+        <formula>CN_Quantity_Needed__c</formula>
+        <name>CN_Sample_Product_Populate_Real_Quantity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
     <rules>
         <fullName>CN_SP_Populate_Current_Status_Date</fullName>
         <actions>
@@ -78,6 +88,22 @@
         </actions>
         <active>true</active>
         <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Sample_Product&apos;, ISCHANGED( CN_Product__c) || ISCHANGED( CN_Sample_Request__c) || ISNEW() )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_Sample_Product_Populate_Real_Quantity</fullName>
+        <actions>
+            <name>CN_Sample_Product_Populate_Real_Quantity</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Sample_Product&apos;,
+OR(
+  ISNEW(),
+  ISCHANGED( CN_Quantity_Needed__c )
+)
+)</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

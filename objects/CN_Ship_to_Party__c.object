@@ -800,8 +800,17 @@
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
+        <columns>CN_Sold_To_Party_Customer_Code__c</columns>
+        <columns>CN_Sold_To_Party_Customer__c</columns>
+        <columns>CN_UP_Code__c</columns>
+        <columns>CN_Customer_Name__c</columns>
+        <columns>CN_Province_CN__c</columns>
+        <columns>CN_City_CN__c</columns>
+        <columns>CN_Delivery_Address_CN__c</columns>
+        <columns>CN_Delivery_Plant__c</columns>
         <columns>CN_Account_Status__c</columns>
         <columns>CN_Sync_Status__c</columns>
+        <columns>CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

@@ -127,6 +127,11 @@
         <name>CN_Quantity_Needed__c</name>
     </fields>
     <fields>
+        <help><!-- If the Real Quantity equal to zero or blank ,it will be populated with Quantity Needed. --></help>
+        <label><!-- Real Quantity --></label>
+        <name>CN_Real_Quantity__c</name>
+    </fields>
+    <fields>
         <label><!-- SKU Chinese Description --></label>
         <name>CN_SKU_Chinese_Description__c</name>
     </fields>
@@ -166,6 +171,10 @@
     <fields>
         <label><!-- Sample Unit List Price --></label>
         <name>CN_Sample_Unit_List_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Unit --></label>
+        <name>CN_Sample_Unit__c</name>
     </fields>
     <fields>
         <label><!-- Status of Delivery --></label>
@@ -252,6 +261,10 @@
         <name>CN_Check_Sample_Quantity</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- Real Quantity must greater than 0 and less than Quantity Needed. --></errorMessage>
+        <name>CN_Check_Sample_Real_Quantity</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Wholepack Sample&apos;s deliver status is only updated by Sales Person --></errorMessage>
         <name>CN_Check_Wholepack_Deliver_Status_Edit</name>
     </validationRules>
@@ -262,6 +275,10 @@
     <validationRules>
         <errorMessage><!-- It&apos;s not allow to edit when ready for approved, approved or canceled. --></errorMessage>
         <name>CN_Prevent_Edit_After_Ready</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t edit sample deliver information before sample request is approved --></errorMessage>
+        <name>CN_Prevent_Edit_Before_Approved</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- You must enter the delivery status before you enter the current status. --></errorMessage>

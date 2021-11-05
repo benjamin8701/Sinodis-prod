@@ -40,6 +40,14 @@
         <name>CN_CS_Team_Email__c</name>
     </fields>
     <fields>
+        <label><!-- Condition Type --></label>
+        <name>CN_Condition_Type__c</name>
+        <picklistValues>
+            <masterLabel>5TMK2104 – TM sample</masterLabel>
+            <translation><!-- 5TMK2104 – TM sample --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Creator Name --></label>
         <name>CN_Creator_Name__c</name>
     </fields>
@@ -98,10 +106,19 @@
             <masterLabel>ZFD1 Sample for Customer</masterLabel>
             <translation><!-- ZFD1 Sample for Customer --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>ZFD3 - BPP sample</masterLabel>
+            <translation><!-- ZFD3 - BPP sample --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Please Confirm --></label>
         <name>CN_Please_Confirm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please fill in the remark , if you have special sample request requirement. --></help>
+        <label><!-- Remark --></label>
+        <name>CN_Remark__c</name>
     </fields>
     <fields>
         <label><!-- SP Records Count All Formula --></label>
@@ -120,8 +137,16 @@
         <name>CN_SP_Records_Count_Delivery_Status_Done__c</name>
     </fields>
     <fields>
+        <label><!-- Sales Office --></label>
+        <name>CN_Sales_Office__c</name>
+    </fields>
+    <fields>
         <label><!-- Sales Person --></label>
         <name>CN_Sales_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Team --></label>
+        <name>CN_Sales_Team__c</name>
     </fields>
     <fields>
         <label><!-- Sample Delivery Method --></label>
@@ -229,6 +254,10 @@
             <section>Customer Information</section>
         </sections>
         <sections>
+            <label><!-- Remark --></label>
+            <section>Remark</section>
+        </sections>
+        <sections>
             <label><!-- Sample Request Cost --></label>
             <section>Sample Request Cost</section>
         </sections>
@@ -257,6 +286,10 @@
     <validationRules>
         <errorMessage><!-- Delivery Address is mandatory if delivery method is express delivery. --></errorMessage>
         <name>CN_Check_Deliver_Address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allow to select &quot;include in the delivery tomorrow&quot; delivery method --></errorMessage>
+        <name>CN_Check_Field_Prospect_Opportunity</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Only the opportunity into stage Proposal/Demo/Sample could create Sample Request. --></errorMessage>

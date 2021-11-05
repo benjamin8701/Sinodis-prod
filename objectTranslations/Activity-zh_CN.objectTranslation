@@ -40,6 +40,11 @@
         <relationshipLabel><!-- Activities --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Chefs Assigned --></label>
+        <name>CN_Chefs_Assigned__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Count --></label>
         <name>CN_Count__c</name>
     </fields>

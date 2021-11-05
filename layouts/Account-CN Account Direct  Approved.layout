@@ -346,6 +346,7 @@
         <excludeButtons>Merge</excludeButtons>
         <excludeButtons>NewContact</excludeButtons>
         <fields>FULL_NAME</fields>
+        <fields>CN_Contact_Type__c</fields>
         <fields>CONTACT.TITLE</fields>
         <fields>CONTACT.EMAIL</fields>
         <fields>CONTACT.PHONE1</fields>

@@ -13,6 +13,7 @@ public without sharing class CN_Chef_Request_Event_Handler implements Triggers.H
     Id chefRequest1on1RTId = Schema.SObjectType.CN_Chef_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CHEF_REQUEST_1ON1_RT_API_NAME).getRecordTypeId();
     Id chefRequestChefDemoRTId = Schema.SObjectType.CN_Chef_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CHEF_REQUEST_CHEF_DEMO_RT_API_NAME).getRecordTypeId();
     Id chefRequestMKTDEVRTId = Schema.SObjectType.CN_Chef_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CHEF_REQUEST_MKT_DEV_RT_API_NAME).getRecordTypeId();
+    Id taskRTId = Schema.SObjectType.Task.getRecordTypeInfosByDeveloperName().get(Constants.CN_TASK_RT_API_NAME).getRecordTypeId();
 
     public void handle() {
         this.cnRTIdSet.add(this.chefRequest1on1RTId);
@@ -42,24 +43,21 @@ public without sharing class CN_Chef_Request_Event_Handler implements Triggers.H
 
         }
         if(createEventList.size() > 0) {
-            List<Event> eventList = makeCreateEvents(createEventList);
-            if(eventList.size() > 0) {
-                insert eventList;
-            }
+            createEventsAndTasks(createEventList);
         }
 
         if(deleteEventList.size() > 0) {
-            List<Event> eventList = getDeleteEvents(deleteEventList);
-            if(eventList.size() > 0) {
-                delete eventList;
-            }
+            deleteEventsAndTasks(deleteEventList);
         }
     }
 
-    public List<Event> makeCreateEvents(List<CN_Chef_Request__c> createEventList) {
-        List<Event> eventList = new List<Event>();
+    public void createEventsAndTasks(List<CN_Chef_Request__c> createEventList) {
         Id chefRequestMKTDEVRTId = Schema.SObjectType.Event.getRecordTypeInfosByDeveloperName().get(Constants.CN_EVENT_RT_API_NAME).getRecordTypeId();
+
+        List<Event> eventList = new List<Event>();
+        List<Task> taskList = new List<Task>();
         Set<Id> crIdSet = new Set<Id>();
+        
         if(createEventList.size() > 0) {
             for(CN_Chef_Request__c cr : createEventList) {
                 if(cr.RecordTypeId == chefRequest1on1RTId) {
@@ -81,7 +79,7 @@ public without sharing class CN_Chef_Request_Event_Handler implements Triggers.H
                     eventList.add(evt);
                 }
                 if(cnRTIdSet.contains(cr.RecordTypeId)) {
-                    crIdSet.add(cr.Id); 
+                    crIdSet.add(cr.Id);
                 }
             }
             if(crIdSet.size() > 0) {
@@ -121,47 +119,39 @@ public without sharing class CN_Chef_Request_Event_Handler implements Triggers.H
                         evt.StartDateTime = ca.CN_Chef_Work_Start_Date__c;
                         evt.EndDateTime = ca.CN_Chef_Work_End_Date__c;
                         evt.WhatId = ca.CN_Chef_Request__r.CN_Account__c == null? ca.CN_Chef_Request__r.CN_Campaign__c: ca.CN_Chef_Request__r.CN_Account__c;
+                        evt.CN_Chefs_Assigned__c = ca.Id;
                         eventList.add(evt);
 
-                        evt = new Event();
-                        evt.RecordTypeId = chefRequestMKTDEVRTId;
-                        evt.OwnerId = ca.CN_Chef__c;
-                        evt.CN_Chef_Request_Id__c = ca.CN_Chef_Request__c;
-                        evt.Subject = 'Demo Report Upload Reminder 1 : ' + ca.CN_Display_in_Calendar__c;
-                        evt.IsReminderSet = true;
-                        evt.Type = 'Demo';
-                        evt.IsAllDayEvent = true;
                         endDate = ca.CN_Chef_Request__r.CN_Demo_End_Date__c.addDays(6);
-                        evt.ReminderDateTime = Datetime.newInstance(endDate.year(), endDate.month(), endDate.day(), 8, 0, 0);
-                        evt.StartDateTime = ca.CN_Chef_Request__r.CN_Demo_End_Date__c.addDays(7);
-                        evt.EndDateTime = ca.CN_Chef_Request__r.CN_Demo_End_Date__c.addDays(7);
-                        evt.WhatId = ca.CN_Chef_Request__c;
-                        eventList.add(evt);
-
-                        evt = new Event();
-                        evt.RecordTypeId = chefRequestMKTDEVRTId;
-                        evt.OwnerId = ca.CN_Chef__c;
-                        evt.CN_Chef_Request_Id__c = ca.CN_Chef_Request__c;
-                        evt.Subject = 'Demo Report Upload Reminder 2 : ' + ca.CN_Display_in_Calendar__c;
-                        evt.IsReminderSet = true;
-                        evt.Type = 'Demo';
-                        evt.IsAllDayEvent = true;
-                        evt.Location = ca.CN_Chef_Request__r.CN_Event_Location__c;
-                        endDate = ca.CN_Chef_Request__r.CN_Demo_End_Date__c.addDays(13);
-                        evt.ReminderDateTime = Datetime.newInstance(endDate.year(), endDate.month(), endDate.day(), 8, 0, 0);
-                        evt.StartDateTime = ca.CN_Chef_Request__r.CN_Demo_End_Date__c.addDays(14);
-                        evt.EndDateTime = ca.CN_Chef_Request__r.CN_Demo_End_Date__c.addDays(14);
-                        evt.WhatId = ca.CN_Chef_Request__c;
-                        eventList.add(evt);
+                        Task taskObj7 = new Task(
+                            RecordTypeId = taskRTId,
+                            Subject = 'Demo Report Reminder',
+                            OwnerId = ca.CN_Chef__c,
+                            WhatId = ca.CN_Chef_Request__c,
+                            CN_Chefs_Assigned__c = ca.Id,
+                            Status = 'Open',
+                            Priority = 'Normal',
+                            ActivityDate = ca.CN_Chef_Request__r.CN_Demo_End_Date__c.addDays(7),
+                            IsReminderSet = true,
+                            ReminderDateTime  = Datetime.newInstance(endDate.year(), endDate.month(), endDate.day(), 8, 0, 0)
+                        );
+                        taskList.add(taskObj7);
                     }
                 }
             }
         }
-        return eventList;
+        if(taskList.size()>0){
+            insert taskList;
+        }
+        if(eventList.size()>0){
+            insert eventList;
+        }
     }
 
-    public List<Event> getDeleteEvents(List<CN_Chef_Request__c> deleteEventList) {
+    public void deleteEventsAndTasks(List<CN_Chef_Request__c> deleteEventList) {
         List<Event> eventList = new List<Event>();
+        List<Task> taskList = new List<Task>();
+
         if(deleteEventList.size() > 0) {
             Set<Id> crIdSet = new Set<Id>();
             for(CN_Chef_Request__c cr: deleteEventList) {
@@ -169,8 +159,14 @@ public without sharing class CN_Chef_Request_Event_Handler implements Triggers.H
             }
             if(crIdSet.size() > 0) {
                 eventList = [SELECT Id, CN_Chef_Request_Id__c FROM Event WHERE CN_Chef_Request_Id__c in: crIdSet];
+                taskList = [SELECT Id, CN_Chef_Request_Id__c FROM Task WHERE WhatId in: crIdSet];
             }
         }
-        return eventList;
+        if(taskList.size()>0){
+            delete taskList;
+        }
+        if(eventList.size()>0){
+            delete eventList;
+        }
     }
 }

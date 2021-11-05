@@ -320,6 +320,16 @@
             <field>CN_Using_The_Entire_Kitchen__c</field>
             <table>CN_Chef_Request__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Is_Auto_Approve__c</field>
+            <table>CN_Chef_Request__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Confirm_From_Apex_DateTime__c</field>
+            <table>CN_Chef_Request__c</table>
+        </columns>
         <masterLabel>Chef Requests</masterLabel>
     </sections>
     <sections>

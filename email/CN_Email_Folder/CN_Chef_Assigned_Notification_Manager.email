@@ -1,0 +1,32 @@
+有新的任务分配至 {!CN_Chefs_Assigned__c.CN_Chef_Name__c}
+
+     活动类型 :  {!CN_Chef_Request__c.CN_Event_Type__c}
+     活动主题 :  {!CN_Chef_Request__c.CN_Event_Theme__c}
+     活动地点 :  {!CN_Chef_Request__c.CN_Event_Location__c}
+     开始日期 :  {!CN_Chefs_Assigned__c.CN_Chef_Work_Start_Date__c}
+     结束日期 :  {!CN_Chefs_Assigned__c.CN_Chef_Work_End_Date__c}
+
+ 请点击以下链接查看详细信息
+ 
+         {!CN_Chef_Request__c.Link} 
+
+谢谢，
+Salesforce
+
+==========================For English Version Scroll Down======================
+
+New chef request has been assigned to {!CN_Chefs_Assigned__c.CN_Chef_Name__c}.
+   
+    Event Type:  {!CN_Chef_Request__c.CN_Event_Type__c}
+    Event Theme :  {!CN_Chef_Request__c.CN_Event_Theme__c}
+    Event Location:  {!CN_Chef_Request__c.CN_Event_Location__c}
+    Start Date :  {!CN_Chefs_Assigned__c.CN_Chef_Work_Start_Date__c}
+    End Date  :  {!CN_Chefs_Assigned__c.CN_Chef_Work_End_Date__c}
+                       
+Please click the following link  to view additional information. 
+
+     {!CN_Chef_Request__c.Link}
+
+
+Thank you,
+Salesforce

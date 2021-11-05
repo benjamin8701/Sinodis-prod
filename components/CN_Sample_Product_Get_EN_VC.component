@@ -9,6 +9,7 @@
             <td>Sample SKU Description(CN)</td>
             <td>Sample SKU Description(EN)</td>
             <td>Quantity</td>
+            <td style="{!if(isCCEOrCS='true','','display:none')}">Sample Unit</td>
             <td style="{!if(isCCEOrCS='true','','display:none')}">Package(Qty per Carton) </td>
             <td>Base Unit of Measure</td>
             <td style="{!if(isCCEOrCS='true','','display:none')}">Sample Unit List Price </td>
@@ -21,6 +22,7 @@
                 <td>{!sp.CN_SKU_Chinese_Description__c}</td>
                 <td>{!sp.CN_SKU_English_Description__c}</td>
                 <td>{!sp.CN_Quantity_Needed__c}</td>
+                <td style="{!if(isCCEOrCS='true','','display:none')}">{!sp.CN_Sample_Unit__c}</td>
                 <td style="{!if(isCCEOrCS='true','','display:none')}">{!sp.CN_Qty_per_Carton__c}</td>
                 <td>{!sp.CN_Unit__c}</td>
                 <td style="{!if(isCCEOrCS='true','','display:none')}">{!sp.CN_List_Price__c}</td>

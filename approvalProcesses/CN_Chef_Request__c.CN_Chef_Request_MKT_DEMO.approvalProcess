@@ -59,7 +59,7 @@
         </action>
     </initialSubmissionActions>
     <label>CN_Chef_Request_MKT_DEMO</label>
-    <processOrder>3</processOrder>
+    <processOrder>2</processOrder>
     <recallActions>
         <action>
             <name>CN_Chef_Request_Set_Status_New</name>

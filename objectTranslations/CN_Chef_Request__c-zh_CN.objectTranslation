@@ -247,6 +247,10 @@
         <name>CN_Competitor_Brands__c</name>
     </fields>
     <fields>
+        <label><!-- Confirm From Apex DateTime --></label>
+        <name>CN_Confirm_From_Apex_DateTime__c</name>
+    </fields>
+    <fields>
         <label>确认</label>
         <name>CN_Confirmed__c</name>
     </fields>
@@ -462,6 +466,10 @@
     <fields>
         <label>客座厨师</label>
         <name>CN_Guest_Chef__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Auto Approve --></label>
+        <name>CN_Is_Auto_Approve__c</name>
     </fields>
     <fields>
         <label><!-- Is Deletable --></label>
@@ -793,7 +801,7 @@
         <name>CN_Check_Cost_Limit_Length</name>
     </validationRules>
     <validationRules>
-        <errorMessage>开始日期不能早于结束日期</errorMessage>
+        <errorMessage>结束日期不能早于开始日期</errorMessage>
         <name>CN_Check_Date</name>
     </validationRules>
     <validationRules>

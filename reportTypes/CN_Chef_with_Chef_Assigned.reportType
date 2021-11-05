@@ -268,6 +268,21 @@
             <field>CN_Chef_Confirmed_Date__c</field>
             <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Confirmed__c</field>
+            <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Upsert_From_Apex_DateTime__c</field>
+            <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Chef_Manager_Email__c</field>
+            <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
+        </columns>
         <masterLabel>Chefs Assigneds</masterLabel>
     </sections>
 </ReportType>

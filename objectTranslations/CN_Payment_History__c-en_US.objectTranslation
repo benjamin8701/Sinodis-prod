@@ -106,6 +106,10 @@
         <name>CN_Net_Due_Date__c</name>
     </fields>
     <fields>
+        <label><!-- Remark --></label>
+        <name>CN_Remark__c</name>
+    </fields>
+    <fields>
         <label><!-- Sales Person --></label>
         <name>CN_Sales_Persion__c</name>
     </fields>
@@ -126,6 +130,10 @@
         <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Remark --></label>
+            <section>Remark</section>
         </sections>
     </layouts>
     <startsWith>Consonant</startsWith>

@@ -11,7 +11,8 @@ global without sharing class CN_Sample_Product_Get_LC_Ctrl {
                                                     CN_List_Price__c,
                                                     CN_Sample_Unit_List_Price__c,
                                                     CN_Quantity_Needed__c,
-                                                    CN_Sample_Cost__c
+                                                    CN_Sample_Cost__c,
+                                                    CN_Sample_Unit__c
                                              FROM CN_Sample_Product__c
                                              WHERE CN_Sample_Request__c = :sampleRequestId];
         return spList;

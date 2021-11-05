@@ -21,4 +21,14 @@
         <default>false</default>
         <label>Other</label>
     </standardValue>
+    <standardValue>
+        <fullName>Sample Feedback Reminder</fullName>
+        <default>false</default>
+        <label>Sample Feedback Reminder</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Demo Report Reminder</fullName>
+        <default>false</default>
+        <label>Demo Report Reminder</label>
+    </standardValue>
 </StandardValueSet>

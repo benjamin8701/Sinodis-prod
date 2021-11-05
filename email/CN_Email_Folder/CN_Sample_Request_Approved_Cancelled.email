@@ -1,5 +1,4 @@
-<messaging:emailTemplate subject="客户{!relatedTo.CN_Account_Name__r.CN_Customer_Code__c}-{!relatedTo.Name}的整装/分装样品申请已取消
-/Whole/Re Pack Sample Request has been cancelled for Customer{!relatedTo.CN_Account_Name__r.CN_Customer_Code__c}-{!relatedTo.Name}" recipientType="User" relatedToType="CN_Sample_Request__c">
+<messaging:emailTemplate subject="取消样品申请 {!relatedTo.Name} - {!relatedTo.CN_Account_Name_Formula__c} " recipientType="User" relatedToType="CN_Sample_Request__c">
   <messaging:htmlEmailBody >
   样品申请已经被取消:<br/>
   请点击以下链接<br/>
@@ -18,8 +17,8 @@
   <td>{!relatedTo.CN_Sample_Delivery_Method__c}</td>
   </tr>
   <tr>
-  <td>试样原因:</td>
-  <td>{!relatedTo.CN_Order_Reason__c}</td>
+  <td>申请人:</td>
+  <td>{!relatedTo.CN_Creator_Name__c}</td>
   </tr>
   <tr>
   <td>需样品日期:</td>
@@ -31,7 +30,7 @@
   谢谢,<br/>
   Salesforce<br/>
   ==========================For English Version Scroll Down======================<br/>
-  Please process the approved sample request:<br/>
+  Please process the cancelled sample request:<br/>
   Please click the following link<br/>
   <a href="{!RelatedTo.CN_Url__c}">Click here</a> to view additional information. 
   <table border="2" cellspacing="5">
@@ -48,8 +47,8 @@
   <td>{!relatedTo.CN_Sample_Delivery_Method__c}</td>
   </tr>
   <tr>
-  <td>Order Reason:</td>
-  <td>{!relatedTo.CN_Order_Reason__c}</td>
+  <td>Creator:</td>
+  <td>{!relatedTo.CN_Creator_Name__c}</td>
   </tr>
   <tr>
   <td>Sample Needed Date:</td>
