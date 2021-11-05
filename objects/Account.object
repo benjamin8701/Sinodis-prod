@@ -792,11 +792,6 @@ IF(
                     <label>10-YH Rejected by Customer</label>
                 </value>
                 <value>
-                    <fullName>YH</fullName>
-                    <default>false</default>
-                    <label>YH Rejected by Customer</label>
-                </value>
-                <value>
                     <fullName>S0</fullName>
                     <default>false</default>
                     <label>S0-Overdue Payment</label>
@@ -5765,10 +5760,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>YH</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>S8</fullName>
                 <default>false</default>
             </values>
@@ -7833,10 +7824,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -9907,10 +9894,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>YH</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>S8</fullName>
                 <default>false</default>
             </values>
@@ -11974,10 +11957,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>YH</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>S8</fullName>
                 <default>false</default>
             </values>
@@ -14030,10 +14009,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YH</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16104,10 +16079,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>YH</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>S8</fullName>
                 <default>false</default>
             </values>
@@ -18167,10 +18138,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>S7</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>YH</fullName>
                 <default>false</default>
             </values>
             <values>

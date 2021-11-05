@@ -91,10 +91,10 @@
         <members>CN_Campaign_Generate_Opp_LC_Ctrl</members>
         <members>CN_Campaign_Generate_Opp_LC_Ctrl_Test</members>
         <members>CN_Case_Populate_Status_Handler_Test</members>
-        <members>CN_Chef_Req_Assign_Approver_Handler_Test</members>
         <members>CN_Chef_Assigned_Reset_WorkDate_Handler</members>
-        <members>CN_Chef_Request_Auto_Confirm_Handler</members>
+        <members>CN_Chef_Req_Assign_Approver_Handler_Test</members>
         <members>CN_Chef_Request_Assign_Approver_Handler</members>
+        <members>CN_Chef_Request_Auto_Confirm_Handler</members>
         <members>CN_Chef_Request_Chef_Assign_Handler</members>
         <members>CN_Chef_Request_Chef_Assign_Handler_Test</members>
         <members>CN_Chef_Request_Event_Handler</members>
@@ -228,6 +228,7 @@
         <members>CN_Change_Request__c.CN_CR_Approve_Process_Auto</members>
         <members>CN_Chef_Request__c.CN_Chef_Request_1on1</members>
         <members>CN_Chef_Request__c.CN_Chef_Request_Chef_Self</members>
+        <members>CN_Chef_Request__c.CN_Chef_Request_Chef_Self_Auto</members>
         <members>CN_Chef_Request__c.CN_Chef_Request_MKT_DEMO</members>
         <members>CN_Chef_Request__c.CN_Chef_Request_MKT_DEV</members>
         <members>CN_Credit_Term_Application__c.CN_CTA_Approval_Process</members>
@@ -358,6 +359,7 @@
         <members>CN_Email_Folder/CN_CTA_Approved</members>
         <members>CN_Email_Folder/CN_CTA_Rejected</members>
         <members>CN_Email_Folder/CN_Chef_Assigned_Notification</members>
+        <members>CN_Email_Folder/CN_Chef_Assigned_Notification_Manager</members>
         <members>CN_Email_Folder/CN_Chef_Request_1ON1_Submit</members>
         <members>CN_Email_Folder/CN_Chef_Request_1on1_Approved</members>
         <members>CN_Email_Folder/CN_Chef_Request_1on1_Confirmed</members>
@@ -398,7 +400,6 @@
         <members>CN_Email_Folder/CN_Sample_Request_Approved_Process_CS</members>
         <members>CN_Email_Folder/CN_Sample_Request_Rejected</members>
         <members>CN_Email_Folder/CN_Sample_Request_Submit</members>
-        <members>CN_Email_Folder/CN_Chef_Assigned_Notification_Manager</members>
         <name>EmailTemplate</name>
     </types>
     <types>
@@ -621,6 +622,8 @@
         <name>RemoteSiteSetting</name>
     </types>
     <types>
+        <members>CN_CCE_Report</members>
+        <members>CN_CCE_Report/CN_Repack_Sample_Request</members>
         <members>CN_CampaignReport</members>
         <members>CN_CampaignReport/CN_Attendance_by_EventExecution_Type</members>
         <members>CN_CampaignReport/CN_Attendance_by_Execution_Type</members>
@@ -721,8 +724,6 @@
         <members>TM_Report/CN_Account_without_Document</members>
         <members>TM_Report/TM_Account_Report</members>
         <members>TM_Report/TM_Accounts_History_Report</members>
-        <members>CN_CCE_Report</members>
-        <members>CN_CCE_Report/CN_Repack_Sample_Request</members>
         <name>Report</name>
     </types>
     <types>

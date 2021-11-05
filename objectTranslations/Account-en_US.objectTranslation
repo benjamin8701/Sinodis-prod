@@ -341,6 +341,10 @@
             <masterLabel>YH Rejected by Customer</masterLabel>
             <translation><!-- YH Rejected by Customer --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>S8-Legal Case</masterLabel>
+            <translation><!-- S8-Legal Case --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Billing Contact Name(CN)-First Name --></label>
@@ -822,6 +826,10 @@
         <picklistValues>
             <masterLabel>S7-Inactive SF</masterLabel>
             <translation><!-- S7-Inactive SF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S8-Legal Case</masterLabel>
+            <translation><!-- S8-Legal Case --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -1414,6 +1422,10 @@
         <picklistValues>
             <masterLabel>S7-Inactive SF</masterLabel>
             <translation><!-- S7-Inactive SF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S8-Legal Case</masterLabel>
+            <translation><!-- S8-Legal Case --></translation>
         </picklistValues>
     </fields>
     <fields>
