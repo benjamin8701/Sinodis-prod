@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>false</active>
+    <active>true</active>
     <allowRecall>true</allowRecall>
     <allowedSubmitters>
         <type>owner</type>
@@ -58,20 +58,12 @@
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <formula>AND(
-BEGINS(RecordType.DeveloperName, &quot;CN&quot;), 
+RecordType.DeveloperName = &quot;CN_Whole_Pack&quot;, 
 ISPICKVAL( CN_Sample_Request_Status__c, &quot;Ready for Approval&quot;),
 NOT(ISBLANK(CN_Approver1_CCE__c  ) )
 )</formula>
     </entryCriteria>
     <finalApprovalActions>
-        <action>
-            <name>CN_Sample_Request_Approved_Process_CCE</name>
-            <type>Alert</type>
-        </action>
-        <action>
-            <name>CN_SR_Approved</name>
-            <type>Alert</type>
-        </action>
         <action>
             <name>CN_SR_Approved_Process_CS</name>
             <type>Alert</type>
@@ -103,8 +95,8 @@ NOT(ISBLANK(CN_Approver1_CCE__c  ) )
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>CN_SR_Approve_Process</label>
-    <processOrder>1</processOrder>
+    <label>CN_SR_Approve_Process_CS</label>
+    <processOrder>2</processOrder>
     <recallActions>
         <action>
             <name>CN_SR_Update_Status_Recalled</name>
