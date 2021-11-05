@@ -424,6 +424,21 @@
                     <default>false</default>
                     <label>Gerard合同</label>
                 </value>
+                <value>
+                    <fullName>商品销售协议</fullName>
+                    <default>false</default>
+                    <label>商品销售协议</label>
+                </value>
+                <value>
+                    <fullName>现结合同- 客户要求</fullName>
+                    <default>false</default>
+                    <label>现结合同- 客户要求</label>
+                </value>
+                <value>
+                    <fullName>机器赞助合同</fullName>
+                    <default>false</default>
+                    <label>机器赞助合同</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -704,7 +719,6 @@
                 <value>
                     <fullName>D020</fullName>
                     <default>false</default>
-                    <isActive>false</isActive>
                     <label>D020</label>
                 </value>
             </valueSetDefinition>
@@ -1307,11 +1321,23 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>商品销售协议</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>服务合同</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>机器赞助合同</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>标准版本</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>现结合同- 客户要求</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -1367,6 +1393,10 @@
             </values>
             <values>
                 <fullName>D015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D020</fullName>
                 <default>false</default>
             </values>
             <values>
