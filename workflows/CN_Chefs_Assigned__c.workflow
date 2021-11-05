@@ -11,6 +11,36 @@
         <senderType>CurrentUser</senderType>
         <template>CN_Email_Folder/CN_Chef_Assigned_Notification</template>
     </alerts>
+    <alerts>
+        <fullName>CN_Chef_Assigned_Notification_Manager</fullName>
+        <description>CN_Chef_Assigned_Notification_Manager</description>
+        <protected>false</protected>
+        <recipients>
+            <field>CN_Chef_Manager_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CN_Email_Folder/CN_Chef_Assigned_Notification_Manager</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>CN_Chef_Assigned_Empty_Manager_Email</fullName>
+        <field>CN_Chef_Manager_Email__c</field>
+        <name>CN_Chef_Assigned_Empty_Manager_Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Chef_Assigned_Populated_Manager_Email</fullName>
+        <field>CN_Chef_Manager_Email__c</field>
+        <formula>CN_Chef__r.Manager.Email</formula>
+        <name>CN_Chef_Assigned_Populated_Manager_Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
     <fieldUpdates>
         <fullName>CN_Chefs_Assigned_Set_Unique_Id</fullName>
         <field>CN_External_Id__c</field>
@@ -22,13 +52,51 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <rules>
+        <fullName>CN_Chef_Assigned_Empty_Manager_Email</fullName>
+        <actions>
+            <name>CN_Chef_Assigned_Empty_Manager_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>And( 
+  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
+  ISCHANGED(CN_Chef__c),
+  OR(
+    AND( CN_Chef__r.Manager.Profile.Name&lt;&gt;&apos;CN Chef&apos; , CN_Chef__r.Manager.Profile.Name&lt;&gt;&apos;CN Chef Manager&apos; ),
+    ISBLANK(CN_Chef__c)
+  )
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
         <fullName>CN_Chef_Assigned_Notification</fullName>
         <actions>
             <name>CN_Chef_Assigned_Notification</name>
             <type>Alert</type>
         </actions>
+        <actions>
+            <name>CN_Chef_Assigned_Notification_Manager</name>
+            <type>Alert</type>
+        </actions>
         <active>true</active>
         <formula>And ( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,     CN_Chef_Request__r.CN_Confirmed__c ,   ISCHANGED(  CN_Chef_Confirmed_Date__c )  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_Chef_Assigned_Populated_Manager_Email</fullName>
+        <actions>
+            <name>CN_Chef_Assigned_Populated_Manager_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>And( 
+  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
+  OR(
+    ISCHANGED(  CN_Chef__c ),
+    AND(ISNEW(), NOT(ISBLANK(CN_Chef__c)))
+  ),
+  OR( CN_Chef__r.Manager.Profile.Name=&apos;CN Chef&apos; , CN_Chef__r.Manager.Profile.Name=&apos;CN Chef Manager&apos; )
+)</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

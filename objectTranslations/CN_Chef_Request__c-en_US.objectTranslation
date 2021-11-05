@@ -251,6 +251,10 @@
         <name>CN_Competitor_Brands__c</name>
     </fields>
     <fields>
+        <label><!-- Confirm From Apex DateTime --></label>
+        <name>CN_Confirm_From_Apex_DateTime__c</name>
+    </fields>
+    <fields>
         <label><!-- Confirmed --></label>
         <name>CN_Confirmed__c</name>
     </fields>
@@ -466,6 +470,10 @@
     <fields>
         <label><!-- Guest Chef --></label>
         <name>CN_Guest_Chef__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Auto Approve --></label>
+        <name>CN_Is_Auto_Approve__c</name>
     </fields>
     <fields>
         <label><!-- Is Deletable --></label>
@@ -793,7 +801,7 @@
         <name>CN_Check_Cost_Limit_Length</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Start date should not earlier than end date --></errorMessage>
+        <errorMessage><!-- End date should not earlier than start date --></errorMessage>
         <name>CN_Check_Date</name>
     </validationRules>
     <validationRules>

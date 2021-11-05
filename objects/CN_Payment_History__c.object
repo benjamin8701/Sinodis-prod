@@ -352,6 +352,15 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>CN_Remark__c</fullName>
+        <externalId>false</externalId>
+        <label>Remark</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>CN_Sales_Persion__c</fullName>
         <externalId>false</externalId>
         <formula>CN_Customer_Name__r.CN_Sales_Person_Name__r.Name</formula>
@@ -409,12 +418,12 @@
         <columns>CN_Due_Date__c</columns>
         <columns>CN_Net_Due_Date__c</columns>
         <columns>CN_Arrears_After_Net_Due_Date__c</columns>
+        <columns>CN_Remark__c</columns>
         <columns>CN_Invoice_Number__c</columns>
         <columns>CN_Tracking_Number__c</columns>
         <columns>CN_Invoice_Date__c</columns>
         <columns>CN_Delivery_date__c</columns>
         <columns>CN_Finance_AR__c</columns>
-        <columns>CN_Sales_Persion__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -429,12 +438,12 @@
         <columns>CN_Due_Date__c</columns>
         <columns>CN_Net_Due_Date__c</columns>
         <columns>CN_Arrears_After_Net_Due_Date__c</columns>
+        <columns>CN_Remark__c</columns>
         <columns>CN_Invoice_Number__c</columns>
         <columns>CN_Tracking_Number__c</columns>
         <columns>CN_Invoice_Date__c</columns>
         <columns>CN_Delivery_date__c</columns>
         <columns>CN_Finance_AR__c</columns>
-        <columns>CN_Sales_Persion__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CN_NetDueDate_is_Null__c</field>

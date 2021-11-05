@@ -5,8 +5,16 @@
         <translation><!-- Call --></translation>
     </valueTranslation>
     <valueTranslation>
+        <masterLabel>Demo Report Reminder</masterLabel>
+        <translation><!-- Demo Report Reminder --></translation>
+    </valueTranslation>
+    <valueTranslation>
         <masterLabel>Other</masterLabel>
         <translation><!-- Other --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sample Feedback Reminder</masterLabel>
+        <translation><!-- Sample Feedback Reminder --></translation>
     </valueTranslation>
     <valueTranslation>
         <masterLabel>Send Letter</masterLabel>

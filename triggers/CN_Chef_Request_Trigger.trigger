@@ -29,6 +29,9 @@ trigger CN_Chef_Request_Trigger on CN_Chef_Request__c (before insert, before upd
             if(Constants.CN_CHEF_REQUEST_PEVENT_DELETE_HANDLER_TRIGGER_ON) {
                 triggersObj.bind(Triggers.Evt.BeforeDelete, new CN_Chef_Request_Prevent_Delete_Handler());
             }
+            if(Constants.CN_CHEF_REQUEST_AUTO_CONFIRM_HANDLER_TRIGGER_ON) {
+                triggersObj.bind(Triggers.Evt.AfterUpdate, new CN_Chef_Request_Auto_Confirm_Handler());
+            }
         }
         triggersObj.execute(); 
     }

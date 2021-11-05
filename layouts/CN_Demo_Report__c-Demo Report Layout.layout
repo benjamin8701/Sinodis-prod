@@ -74,7 +74,7 @@
                 <field>CN_Number_of_People__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>CN_Number_of_Recipes__c</field>
             </layoutItems>
         </layoutColumns>

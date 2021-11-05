@@ -23,6 +23,28 @@
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
+        <fullName>CN_Campaign_ChefManager_To_CD</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CN_Campaign_ChefManager_To_CD</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_Commercial_Director</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <role>CN_Chef_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CN_Campaign_ChefManager_To_SalesMDM</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CN_Campaign_ChefManager_To_SalesMDM</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_Sales_MDM</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <role>CN_Chef_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
         <fullName>CN_SHARE_ALL_MKT_CAMPAIGN_TO_CHEF</fullName>
         <accessLevel>Read</accessLevel>
         <label>CN_SHARE_ALL_MKT_CAMPAIGN_TO_CHEF</label>

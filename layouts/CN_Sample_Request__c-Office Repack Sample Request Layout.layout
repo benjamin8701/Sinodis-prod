@@ -47,6 +47,10 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>CN_Remark__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>CN_Delivery_Address__c</field>
             </layoutItems>
         </layoutColumns>
@@ -209,7 +213,7 @@
         <fields>CN_Product__c</fields>
         <fields>CN_SKU_Chinese_Description__c</fields>
         <fields>CN_Quantity_Needed__c</fields>
-        <fields>CN_Unit__c</fields>
+        <fields>CN_Sample_Unit__c</fields>
         <relatedList>CN_Sample_Product__c.CN_Sample_Request__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>

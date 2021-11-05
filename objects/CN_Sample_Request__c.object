@@ -258,6 +258,26 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Condition_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Condition Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>5TMK2104 – TM sample</fullName>
+                    <default>false</default>
+                    <label>5TMK2104 – TM sample</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>CN_Creator_Name__c</fullName>
         <externalId>false</externalId>
         <formula>CreatedBy.LastName &amp; &apos; &apos; &amp; CreatedBy.FirstName</formula>
@@ -272,7 +292,11 @@
     <fields>
         <fullName>CN_Customer_Code__c</fullName>
         <externalId>false</externalId>
-        <formula>CN_Account_Name__r.CN_Customer_Code__c</formula>
+        <formula>IF( 
+  AND( ISBLANK(CN_Account_Name__r.CN_Customer_Code__c), RecordType.DeveloperName = &apos;CN_Whole_Pack&apos;),
+  CASE(  CN_Account_Name__r.Owner.CN_Sales_Office__c ,&apos;K010&apos;,&apos;YP000081&apos;,&apos;K020&apos;,&apos;YP000080&apos;,&apos;K030&apos;,&apos;YP000082&apos;,&apos;K040&apos;,&apos;YP000054&apos;,&apos;K050&apos;,&apos;YP000081&apos;,&apos;&apos;),
+  CN_Account_Name__r.CN_Customer_Code__c 
+)</formula>
         <label>Customer Code</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -407,8 +431,19 @@
                 <sorted>false</sorted>
                 <value>
                     <fullName>ZFD1 Sample for Customer</fullName>
-                    <default>true</default>
+                    <default>false</default>
                     <label>ZFD1 Sample for Customer</label>
+                </value>
+                <value>
+                    <fullName>ZFD3 - BPP sample</fullName>
+                    <default>false</default>
+                    <label>ZFD3 - BPP sample</label>
+                </value>
+                <value>
+                    <fullName>ZFD3 -BPP sample</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>ZFD3 -BPP sample</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -429,6 +464,16 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Remark__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please fill in the remark , if you have special sample request requirement.</inlineHelpText>
+        <label>Remark</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>CN_SP_Records_Count_All_Formula__c</fullName>
@@ -483,11 +528,43 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <type>Summary</type>
     </fields>
     <fields>
+        <fullName>CN_Sales_Office__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+    CN_Account_Name__r.Owner.CN_Sales_Office__c,
+    &apos;K010&apos;,&apos;K010-ShangHai&apos;,
+    &apos;K020&apos;,&apos;K020-BeiJing&apos;,
+    &apos;K030&apos;,&apos;K030-ShenZhen&apos;,
+    &apos;K040&apos;,&apos;K040-GuangZhou&apos;,
+    &apos;K050&apos;,&apos;K050-ChengDu&apos;,
+    &apos;&apos;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Office</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Sales_Person__c</fullName>
         <externalId>false</externalId>
         <formula>CN_Account_Name__r.CN_Sales_Person_Name__r.Name</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Sales Person</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Sales_Team__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Account_Name__r.CN_Sales_Team_UI__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Team</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -710,6 +787,13 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <compactLayoutAssignment>CN_Sample_Request</compactLayoutAssignment>
         <label>Office Repack</label>
         <picklistValues>
+            <picklist>CN_Condition_Type__c</picklist>
+            <values>
+                <fullName>5TMK2104 %E2%80%93 TM sample</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Order_Reason__c</picklist>
             <values>
                 <fullName>Chef Service</fullName>
@@ -783,6 +867,13 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <compactLayoutAssignment>CN_Sample_Request</compactLayoutAssignment>
         <label>Whole Pack</label>
         <picklistValues>
+            <picklist>CN_Condition_Type__c</picklist>
+            <values>
+                <fullName>5TMK2104 %E2%80%93 TM sample</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Order_Reason__c</picklist>
             <values>
                 <fullName>Chef Service</fullName>
@@ -805,6 +896,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <values>
                 <fullName>ZFD1 Sample for Customer</fullName>
                 <default>true</default>
+            </values>
+            <values>
+                <fullName>ZFD3 - BPP sample</fullName>
+                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -878,6 +973,18 @@ ISPICKVAL(CN_Sample_Delivery_Method__c, &quot;Express Delivery&quot;),
         <errorMessage>Delivery Address is mandatory if delivery method is express delivery.</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>CN_Check_Field_Prospect_Opportunity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  ISBLANK(CN_Account_Name__r.CN_Customer_Code__c),
+  ISPICKVAL(CN_Sample_Delivery_Method__c, &apos;Include in the delivery tomorrow&apos;)
+)</errorConditionFormula>
+        <errorDisplayField>CN_Sample_Delivery_Method__c</errorDisplayField>
+        <errorMessage>It&apos;s not allow to select &quot;include in the delivery tomorrow&quot; delivery method</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>CN_Check_Opp_Stage_On_Create</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -892,7 +999,7 @@ ISNEW()
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Prospect_Opportunity</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),

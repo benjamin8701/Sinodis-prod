@@ -9,6 +9,10 @@
         <name>CN_Chef_Confirmed_Date__c</name>
     </fields>
     <fields>
+        <label><!-- Chef Manager Email --></label>
+        <name>CN_Chef_Manager_Email__c</name>
+    </fields>
+    <fields>
         <label>厨师姓名</label>
         <name>CN_Chef_Name__c</name>
     </fields>
@@ -60,6 +64,10 @@
         <relationshipLabel>分配厨师</relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Confirmed --></label>
+        <name>CN_Confirmed__c</name>
+    </fields>
+    <fields>
         <label>日历显示字段</label>
         <name>CN_Display_in_Calendar__c</name>
     </fields>
@@ -104,6 +112,10 @@
         <name>CN_Total_days_of_Demo_End_Date_Month__c</name>
     </fields>
     <fields>
+        <label><!-- Upsert From Apex DateTime --></label>
+        <name>CN_Upsert_From_Apex_DateTime__c</name>
+    </fields>
+    <fields>
         <label>时长</label>
         <name>Duration__c</name>
     </fields>
@@ -137,5 +149,9 @@
     <validationRules>
         <errorMessage>不可新建或编辑</errorMessage>
         <name>CN_Check_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>厨师工作的持续时间不能超过 14 天。</errorMessage>
+        <name>CN_Check_WorkDate</name>
     </validationRules>
 </CustomObjectTranslation>

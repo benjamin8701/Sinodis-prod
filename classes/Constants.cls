@@ -237,6 +237,7 @@ public without sharing class Constants {
 	public static Boolean CN_CHEF_REQUEST_EVENT_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_CHEF_REQUEST_CHEF_ASSIGN_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_CHEF_REQUEST_PEVENT_DELETE_HANDLER_TRIGGER_ON = true;
+	public static Boolean CN_CHEF_REQUEST_AUTO_CONFIRM_HANDLER_TRIGGER_ON = true;
 	public static final String CN_CHEF_REQUEST_1ON1_NEW_RT_API_NAME = 'CN_1on1_Service_Chef_Request_New';
 	public static final String CN_CHEF_REQUEST_1ON1_RT_API_NAME = 'CN_1on1_Service_Chef_Request';
 	public static final String CN_CHEF_REQUEST_CHEF_SELF_RT_API_NAME = 'CN_Chef_Self_Work_Request';
@@ -253,6 +254,7 @@ public without sharing class Constants {
 	public static Boolean CN_CHEFS_ASSIGNED_TRIGGER_ON = true;
 	public static Boolean CN_CHEFS_ASSIGNED_SHARING_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_CHEFS_ASSIGNED_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
+	public static Boolean CN_CHEFS_ASSIGNED_RESET_WORKDATE_HANDLER_TRIGGER_ON = true;
 	public static final String CN_CHEFS_ASSIGNED_RT_API_NAME = 'CN_Chef_Assigned';
 
 	public static final String CN_EVENT_RT_API_NAME = 'CN_Event';
@@ -327,6 +329,9 @@ public without sharing class Constants {
 	//Event
 	public static final String CN_VISIT_RT_API_NAME = 'CN_Visit';
 	public static Boolean CN_SR_GENERATE_EVENT_VISIT_HANDLER_TRIGGER_ON = true;
+
+	//Event
+	public static final String CN_TASK_RT_API_NAME = 'CN_Task';
 
 	//Promotion
 	public static final String CN_PROMOTION_STATUS_READY = 'Ready';
