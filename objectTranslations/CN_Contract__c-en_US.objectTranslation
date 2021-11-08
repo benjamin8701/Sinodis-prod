@@ -136,12 +136,24 @@
             <translation><!-- 单品合同 --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>商品销售协议</masterLabel>
+            <translation><!-- 商品销售协议 --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>服务合同</masterLabel>
             <translation><!-- 服务合同 --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>机器赞助合同</masterLabel>
+            <translation><!-- 机器赞助合同 --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>标准版本</masterLabel>
             <translation><!-- 标准版本 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>现结合同- 客户要求</masterLabel>
+            <translation><!-- 现结合同- 客户要求 --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>补充协议</masterLabel>
@@ -265,6 +277,10 @@
         <picklistValues>
             <masterLabel>D015</masterLabel>
             <translation><!-- D015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D020</masterLabel>
+            <translation><!-- D020 --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>D030</masterLabel>
