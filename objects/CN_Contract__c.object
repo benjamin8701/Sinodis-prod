@@ -1250,7 +1250,7 @@
         <columns>CN_Contract_Type__c</columns>
         <columns>CN_Sales_Channel__c</columns>
         <columns>CN_Sales_Office__c</columns>
-        <columns>CN_Sales_People__c</columns>
+        <columns>CN_Internal_Employee__c</columns>
         <columns>CN_Start_Date__c</columns>
         <columns>CN_End_Date__c</columns>
         <columns>CN_Contract_Status__c</columns>
