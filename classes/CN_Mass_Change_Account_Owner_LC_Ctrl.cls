@@ -162,10 +162,10 @@ public without sharing class CN_Mass_Change_Account_Owner_LC_Ctrl {
                     resultMaps.put('CN_Sync_Status__c', accRow.CN_Sync_Status__c);
                     if(changetype == 'Change Owner' && userMap.get(changeUserNumber) == null && UserNumber != null){
                         resultMaps.put('Owner', accRow.Owner.Name);
-                    	
+                        
                     }else if(changetype == 'Change Owner'&&userMap.get(changeUserNumber) != null && UserNumber != null){
                         resultMaps.put('Owner', accRow.Owner.Name);
-                    	resultMaps.put('changeuser',userMap.get(changeUserNumber).name);
+                        resultMaps.put('changeuser',userMap.get(changeUserNumber).name);
                     }else if(changetype == 'Change Finance AR' && financeMap.get(changeUserNumber) == null && UserNumber != null){
                         resultMaps.put('Owner', accRow.CN_Sinodis_Finance_AR__r.Name);
                         
@@ -173,7 +173,7 @@ public without sharing class CN_Mass_Change_Account_Owner_LC_Ctrl {
                         resultMaps.put('Owner', accRow.CN_Sinodis_Finance_AR__r.Name);
                         resultMaps.put('changeuser',financeMap.get(changeUserNumber).name);
                     }else if(changetype == 'Change Owner'&&userMap.get(changeUserNumber) != null && UserNumber == null){
-                    	resultMaps.put('changeuser',userMap.get(changeUserNumber).name);
+                        resultMaps.put('changeuser',userMap.get(changeUserNumber).name);
                     }else if(changetype == 'Change Finance AR' && financeMap.get(changeUserNumber) != null && UserNumber == null){
                         resultMaps.put('changeuser',financeMap.get(changeUserNumber).name);
                     }
@@ -197,7 +197,7 @@ public without sharing class CN_Mass_Change_Account_Owner_LC_Ctrl {
                         resultMaps.put('CN_Sinodis_Finance_AR__c', accRow.CN_Sinodis_Finance_AR__r.Name);
                         resultMaps.put('CN_Account_Status__c', accRow.CN_Account_Status__c);
                         resultMaps.put('CN_Sync_Status__c', accRow.CN_Sync_Status__c);
-                		resultMaps.put('Show', 'Result');
+                        resultMaps.put('Show', 'Result');
                         resultMaps.put('Comment', system.label.CN_Account_Mass_ErrMsg_Notice2);
                         resultMaps.put('Comment3', system.label.CN_Account_Mass_ErrMsg_Notice3);
                         accountWrapperListError.add(new AccountWrapper(resultMaps));
@@ -236,7 +236,7 @@ public without sharing class CN_Mass_Change_Account_Owner_LC_Ctrl {
                             crList.New_CN_Account_Owner__c = userMap.get(changeUserNumber).id;
                             crList.recordtypeid = RecordTypeMap.get('Change Account Owner').id;
                             crList.CN_Change_Request_Status__c = 'Approved' ;
-                            crList.CN_Sync_Status__c = 'No Need To Sync';
+                            //crList.CN_Sync_Status__c = 'No Need To Sync';
                             crList.CN_External_Id__c = accRow.Id;
                             changeRequestListNew.add(crList);
                             CN_Mass_Change_Log__c chLog = new CN_Mass_Change_Log__c();
@@ -252,7 +252,7 @@ public without sharing class CN_Mass_Change_Account_Owner_LC_Ctrl {
                             crList.New_CN_Account_Sinodis_Finance_AR__c = financeMap.get(changeUserNumber).id;
                             crList.recordtypeid = RecordTypeMap.get('Change Account Finance AR').id;
                             crList.CN_Change_Request_Status__c = 'Approved' ;
-                            crList.CN_Sync_Status__c = 'No Need To Sync';
+                            //crList.CN_Sync_Status__c = 'No Need To Sync';
                             crList.CN_External_Id__c = accRow.Id;
                             changeRequestListNew.add(crList);
                             CN_Mass_Change_Log__c chLog = new CN_Mass_Change_Log__c();
@@ -299,7 +299,7 @@ public without sharing class CN_Mass_Change_Account_Owner_LC_Ctrl {
                     }
                     //建change request
                     resultMaps = new Map<String, String>();
-                    resultMaps.put('ErrorComment', System.label.CN_Account_Mass_Notice_Success	);
+                    resultMaps.put('ErrorComment', System.label.CN_Account_Mass_Notice_Success  );
                     resultMaps.put('Comment', '');
                     resultMaps.put('Show', 'Error');
                     accountWrapperList.add(new AccountWrapper(resultMaps));
@@ -329,11 +329,11 @@ public without sharing class CN_Mass_Change_Account_Owner_LC_Ctrl {
         Map<String, List<Object>> returnMaps = new Map<String, List<Object>>();
         return returnMaps;
     }
-	public static Map<String, Map<String, String>> getTitle(List<String> objList) {
-		Map<String, List<String>> objMap = new Map<String, List<String>>();
-		for (String objName : objList) {
-	        objMap.put(objName, new List<String>());
-	    }
+    public static Map<String, Map<String, String>> getTitle(List<String> objList) {
+        Map<String, List<String>> objMap = new Map<String, List<String>>();
+        for (String objName : objList) {
+            objMap.put(objName, new List<String>());
+        }
         return getTitle(objMap);
     }
     @AuraEnabled
@@ -341,39 +341,39 @@ public without sharing class CN_Mass_Change_Account_Owner_LC_Ctrl {
         Map<String, Map<String, String>> returnMap = getTitle(titleMap);
         return returnMap;
     }
-	public static Map<String, Map<String, String>> getTitle(Map<String, List<String>> objMap) {
+    public static Map<String, Map<String, String>> getTitle(Map<String, List<String>> objMap) {
 
-		Map<String, Map<String, String>> titleMaps = new Map<String, Map<String, String>>();
-		Map<String, Schema.SObjectType> schemaMap = Schema.getGlobalDescribe();
-		List<String> objList = new List<String>();
-		if (objMap.size() > 0) {
-			for (String objName : objMap.keySet()) {
-				Map<String, String> fieldsReturnMap = new Map<String, String>();
-				Schema.SObjectType ObjectSchema = schemaMap.get(objName);
-				if (ObjectSchema != null) {
+        Map<String, Map<String, String>> titleMaps = new Map<String, Map<String, String>>();
+        Map<String, Schema.SObjectType> schemaMap = Schema.getGlobalDescribe();
+        List<String> objList = new List<String>();
+        if (objMap.size() > 0) {
+            for (String objName : objMap.keySet()) {
+                Map<String, String> fieldsReturnMap = new Map<String, String>();
+                Schema.SObjectType ObjectSchema = schemaMap.get(objName);
+                if (ObjectSchema != null) {
 
-					Map<String, Schema.SObjectField> fieldMap = ObjectSchema.getDescribe().fields.getMap();
+                    Map<String, Schema.SObjectField> fieldMap = ObjectSchema.getDescribe().fields.getMap();
 
-					List<String> fieldList = objMap.get(objName);
+                    List<String> fieldList = objMap.get(objName);
 
-					if (fieldList.size() > 0) {
-						for (String fieldName : fieldList) {
-							if (fieldMap.containsKey(fieldName)) {
-								String fName = fieldMap.get(fieldName).getDescribe().getLabel();
-								fieldsReturnMap.put(fieldName, fName);
-								titleMaps.put(objName, fieldsReturnMap);
-							}
-						}
-					} else {
-						for (String fieldName: fieldMap.keySet()) { 
-							String fName = fieldMap.get(fieldName).getDescribe().getLabel();
-	          				fieldsReturnMap.put(fieldName, fName);
-	          				titleMaps.put(objName, fieldsReturnMap);
-	          			}
-					}
-				}
-			}
-		}
+                    if (fieldList.size() > 0) {
+                        for (String fieldName : fieldList) {
+                            if (fieldMap.containsKey(fieldName)) {
+                                String fName = fieldMap.get(fieldName).getDescribe().getLabel();
+                                fieldsReturnMap.put(fieldName, fName);
+                                titleMaps.put(objName, fieldsReturnMap);
+                            }
+                        }
+                    } else {
+                        for (String fieldName: fieldMap.keySet()) { 
+                            String fName = fieldMap.get(fieldName).getDescribe().getLabel();
+                            fieldsReturnMap.put(fieldName, fName);
+                            titleMaps.put(objName, fieldsReturnMap);
+                        }
+                    }
+                }
+            }
+        }
         return titleMaps;
     }
     class AccountWrapper {
