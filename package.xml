@@ -91,6 +91,7 @@
         <members>CN_Campaign_Generate_Opp_LC_Ctrl</members>
         <members>CN_Campaign_Generate_Opp_LC_Ctrl_Test</members>
         <members>CN_Case_Populate_Status_Handler_Test</members>
+        <members>CN_Case_Share_Handler</members>
         <members>CN_Chef_Assigned_Reset_WorkDate_Handler</members>
         <members>CN_Chef_Req_Assign_Approver_Handler_Test</members>
         <members>CN_Chef_Request_Assign_Approver_Handler</members>

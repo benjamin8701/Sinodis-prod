@@ -58,7 +58,7 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>DUE_DATE</field>
+        <field>Account.CN_Customer_Code__c</field>
     </columns>
     <columns>
         <field>USERS.NAME</field>
@@ -70,20 +70,34 @@
         <field>ADDRESS1_STATE</field>
     </columns>
     <columns>
-        <field>TYPE</field>
-    </columns>
-    <columns>
-        <field>RATING</field>
-    </columns>
-    <columns>
         <field>LAST_UPDATE</field>
     </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
     <currency>CNY</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.CN_Sales_Office__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,K010,K020,K030,K040,K050</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.CN_Sales_Team_UI__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Account.CN_Customer_Journey__c</field>
-        <sortOrder>Asc</sortOrder>
+        <sortOrder>Desc</sortOrder>
     </groupingsDown>
     <name># of Account by Stage YTD</name>
     <params>

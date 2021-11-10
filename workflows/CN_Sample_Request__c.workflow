@@ -65,14 +65,24 @@
         <description>CN_Sample_Request_Approved_Process_CCE</description>
         <protected>false</protected>
         <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
             <field>CN_CCE_Team_Email__c</field>
             <type>email</type>
         </recipients>
-		<recipients>
-            <type>creator</type>
-        </recipients>
         <senderType>CurrentUser</senderType>
         <template>CN_Email_Folder/CN_Sample_Request_Approved_Process_CCE</template>
+    </alerts>
+    <alerts>
+        <fullName>CN_Sample_Request_Repack_DeliveryAll_Alert</fullName>
+        <description>CN_Sample_Request_Repack_DeliveryAll_Alert</description>
+        <protected>false</protected>
+		<recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CN_Email_Folder/CN_SR_Repack_DeliveryAll_Sales</template>
     </alerts>
     <fieldUpdates>
         <fullName>CN_SR_Empty_ConditionType</fullName>

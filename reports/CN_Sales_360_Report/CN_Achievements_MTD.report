@@ -9,13 +9,16 @@ CN_Sales_Performance__c.CN_Sale_Net_Value_SAP__c:SUM / CN_Sales_Performance__c.T
         <isActive>true</isActive>
         <isCrossBlock>false</isCrossBlock>
         <masterLabel>Percentage</masterLabel>
-        <scale>2</scale>
+        <scale>0</scale>
     </aggregates>
     <columns>
         <field>CUST_NAME</field>
     </columns>
     <columns>
         <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>CN_Sales_Performance__c.CN_Target_Sales_Office__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
@@ -34,12 +37,31 @@ CN_Sales_Performance__c.CN_Sale_Net_Value_SAP__c:SUM / CN_Sales_Performance__c.T
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>CN_Sales_Performance__c.CN_Target_Sales_Channel__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CN_Sales_Performance__c.CN_Target_Sales_Office__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value></value>
+        </criteriaItems>
         <language>en_US</language>
     </filter>
-    <format>Summary</format>
-    <groupingsDown>
+    <format>Matrix</format>
+    <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
         <field>CN_Sales_Performance__c.CN_Year_Month__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CN_Sales_Performance__c.CN_Target_Sales_Channel__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
@@ -55,8 +77,8 @@ CN_Sales_Performance__c.CN_Sale_Net_Value_SAP__c:SUM / CN_Sales_Performance__c.T
     <reportType>CustomEntity$CN_Sales_Performance__c</reportType>
     <scope>team</scope>
     <showDetails>false</showDetails>
-    <showGrandTotal>true</showGrandTotal>
-    <showSubTotals>false</showSubTotals>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CN_Sales_Performance__c.CN_Date__c</dateColumn>
         <interval>INTERVAL_THISMONTH</interval>

@@ -401,9 +401,7 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Number of Opportunities by Stage YTD</header>
                 <legendPosition>Right</legendPosition>
-                <maxValuesDisplayed>6</maxValuesDisplayed>
                 <report>CN_Sales_360_Report/CN_Opportunity_by_Stage_YTD</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>

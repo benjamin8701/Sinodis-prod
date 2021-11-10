@@ -394,6 +394,7 @@ public without sharing class Constants {
 	public static Boolean CN_CA_TRIGGER_ON = true;
 	public static Boolean CN_CA_CREATOR_TO_OWNER_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_CA_PREVENT_DELETE_TRIGGER_ON = true;
+	public static Boolean CN_CA_SHARE_HANDLER_TRIGGER_ON = true;
 
 	public static final String CN_CA_RT_API_NAME_COMPLAINT = 'CN_Complaint';
 	public static final String CN_CA_STATUS_NEW = 'New';
