@@ -871,6 +871,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.CN_Bank_Account_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.CN_Bank_Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
