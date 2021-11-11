@@ -41,6 +41,7 @@
         <members>CN_Brand_Send_To_SAP_LC_Ctrl</members>
         <members>CN_Brand_Send_To_SAP_LC_Ctrl_Test</members>
 		<members>CN_Case_Share_Handler</members>
+		<members>CN_Case_Share_Handler_Test</members>
         <members>CN_CDL_Populate_Uploaded_Handler</members>
         <members>CN_CDL_Populate_Uploaded_Handler_Test</members>
         <members>CN_CD_Populate_Uploaded_Handler</members>
