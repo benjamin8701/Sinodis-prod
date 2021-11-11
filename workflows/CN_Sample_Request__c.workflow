@@ -235,4 +235,23 @@
         <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,    NOT(ISNEW()),   ISCHANGED( CN_Sample_Request_Status__c ),    ISPICKVAL( CN_Sample_Request_Status__c  , &apos;Canceled&apos;)  )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
+    <rules>
+        <fullName>CN_Sample_Request_Repack_DeliveryAll_Alert</fullName>
+        <actions>
+            <name>CN_Sample_Request_Repack_DeliveryAll_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, 
+  NOT(ISNEW()),
+   RecordType.DeveloperName = &apos;CN_Office_Repack&apos;,
+  OR(
+    ISCHANGED(CN_SP_Records_Count_Delivery_Status_Done__c),
+    ISCHANGED(CN_SP_Records_Count_All__c)
+  ),
+  CN_SP_Records_Count_Delivery_Status_Done__c = CN_SP_Records_Count_All__c
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
 </Workflow>

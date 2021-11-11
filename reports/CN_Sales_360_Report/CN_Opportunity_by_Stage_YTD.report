@@ -26,19 +26,16 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>ROLLUP_DESCRIPTION</field>
-    </columns>
-    <columns>
         <field>FULL_NAME</field>
-    </columns>
-    <columns>
-        <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
-        <field>FISCAL_QUARTER</field>
+        <field>Account.CN_Customer_Code__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
         <field>AMOUNT</field>
@@ -65,10 +62,30 @@
         <field>TYPE</field>
     </columns>
     <currency>CNY</currency>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Qualification,Proposal/Demo/Sample,Quote/Negotiation,Closed Won</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.CN_Sales_Team_UI__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.CN_Sales_Office__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Opportunity by Stage YTD</name>
