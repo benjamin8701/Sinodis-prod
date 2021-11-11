@@ -133,6 +133,16 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
+            <actionName>Edit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>0</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Delete</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>1</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>CN_Sample_Request__c.CN_SR_Ready_for_Approval</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>2</sortOrder>
@@ -151,16 +161,6 @@
             <actionName>PrintableView</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>5</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Edit</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>0</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Delete</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>1</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <quickActionList>
@@ -218,11 +218,12 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>CN_Status_of_Delivery__c</fields>
         <fields>CN_Product__c</fields>
         <fields>CN_SKU_Chinese_Description__c</fields>
         <fields>CN_Quantity_Needed__c</fields>
         <fields>CN_Unit__c</fields>
+        <fields>CN_Remark__c</fields>
+        <fields>CN_Status_of_Delivery__c</fields>
         <relatedList>CN_Sample_Product__c.CN_Sample_Request__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>

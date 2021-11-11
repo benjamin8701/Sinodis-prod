@@ -46,7 +46,7 @@
     <currency>CNY</currency>
     <customDetailFormulas>
         <calculatedFormula>CASE(CN_Sample_Product__c.CN_Sales_Office__c, 
-&apos;K010&apos;, &apos;K010-Shaihai&apos;, 
+&apos;K010&apos;, &apos;K010-Shanghai&apos;, 
 &apos;K020&apos;, &apos;K020-Beijing&apos;, 
 &apos;K030&apos;, &apos;K030-Shenzhen&apos;, 
 &apos;K040&apos;, &apos;K040-Guangzhou&apos;, 
@@ -98,7 +98,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>false</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>CN_Sample_Request__c.CN_Approved_Date__c</dateColumn>
+        <dateColumn>CN_Sample_Request__c.CN_Sample_Needed_Date__c</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

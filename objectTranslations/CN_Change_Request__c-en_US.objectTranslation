@@ -77,6 +77,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Bank Account Name --></label>
+        <name>CN_Account_Bank_Account_Name__c</name>
+    </fields>
+    <fields>
         <label><!-- Bank Account --></label>
         <name>CN_Account_Bank_Account__c</name>
     </fields>
@@ -2442,6 +2446,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- New Bank Account Name --></label>
+        <name>New_CN_Account_Bank_Account_Name__c</name>
+    </fields>
+    <fields>
         <label><!-- New Bank Account --></label>
         <name>New_CN_Account_Bank_Account__c</name>
     </fields>
@@ -4103,6 +4111,7 @@ Reference Day --></errorMessage>
 Invoicing Name (Bill to party),
 Tax Registration No.,
 Bank Account,
+Bank Account Name,
 Invoicing Address and Phone. --></errorMessage>
         <name>CN_Check_Account_VAT_InvoiceType</name>
     </validationRules>

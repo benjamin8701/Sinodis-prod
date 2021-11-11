@@ -209,11 +209,12 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>CN_Status_of_Delivery__c</fields>
         <fields>CN_Product__c</fields>
         <fields>CN_SKU_Chinese_Description__c</fields>
         <fields>CN_Quantity_Needed__c</fields>
         <fields>CN_Sample_Unit__c</fields>
+        <fields>CN_Remark__c</fields>
+        <fields>CN_Status_of_Delivery__c</fields>
         <relatedList>CN_Sample_Product__c.CN_Sample_Request__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>

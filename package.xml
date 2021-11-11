@@ -40,6 +40,8 @@
         <members>CN_Brand_Prevent_Delete_Handler_Test</members>
         <members>CN_Brand_Send_To_SAP_LC_Ctrl</members>
         <members>CN_Brand_Send_To_SAP_LC_Ctrl_Test</members>
+		<members>CN_Case_Share_Handler</members>
+		<members>CN_Case_Share_Handler_Test</members>
         <members>CN_CDL_Populate_Uploaded_Handler</members>
         <members>CN_CDL_Populate_Uploaded_Handler_Test</members>
         <members>CN_CD_Populate_Uploaded_Handler</members>
@@ -91,6 +93,7 @@
         <members>CN_Campaign_Generate_Opp_LC_Ctrl</members>
         <members>CN_Campaign_Generate_Opp_LC_Ctrl_Test</members>
         <members>CN_Case_Populate_Status_Handler_Test</members>
+        <members>CN_Case_Share_Handler</members>
         <members>CN_Chef_Assigned_Reset_WorkDate_Handler</members>
         <members>CN_Chef_Req_Assign_Approver_Handler_Test</members>
         <members>CN_Chef_Request_Assign_Approver_Handler</members>
@@ -400,6 +403,7 @@
         <members>CN_Email_Folder/CN_Sample_Request_Approved_Process_CS</members>
         <members>CN_Email_Folder/CN_Sample_Request_Rejected</members>
         <members>CN_Email_Folder/CN_Sample_Request_Submit</members>
+		<members>CN_Email_Folder/CN_SR_Repack_DeliveryAll_Sales</members>
         <name>EmailTemplate</name>
     </types>
     <types>
@@ -532,6 +536,7 @@
         <members>CN_Marketing_View_Price_Book</members>
         <members>CN_Product_Edit_Description</members>
         <members>CN_Promotion_Manager</members>
+		<members>CN_Manage_Account_Team</members>
         <name>PermissionSet</name>
     </types>
     <types>

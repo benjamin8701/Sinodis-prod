@@ -73,6 +73,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label>银行账号名称</label>
+        <name>CN_Account_Bank_Account_Name__c</name>
+    </fields>
+    <fields>
         <label>银行账户</label>
         <name>CN_Account_Bank_Account__c</name>
     </fields>
@@ -2438,6 +2442,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label>新银行账号名称</label>
+        <name>New_CN_Account_Bank_Account_Name__c</name>
+    </fields>
+    <fields>
         <label>新银行账户</label>
         <name>New_CN_Account_Bank_Account__c</name>
     </fields>
@@ -4090,7 +4098,7 @@
         <name>CN_Check_Account_PaymentTerm</name>
     </validationRules>
     <validationRules>
-        <errorMessage>如果您需要开增值税发票或电子增值税发票，请确保输入以下信息：开票名称、税务登记号、银行账户、开票地址和电话（CN）。</errorMessage>
+        <errorMessage>如果您需要开增值税发票或电子增值税发票，请确保输入以下信息：开票名称、税务登记号、银行账户、银行账户名称、开票地址和电话（CN）。</errorMessage>
         <name>CN_Check_Account_VAT_InvoiceType</name>
     </validationRules>
     <validationRules>

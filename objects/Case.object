@@ -420,6 +420,16 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CN_If_Need_Share_To_Creator__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.UserRole.DeveloperName  = &apos;CN_CS&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>If Need Share To Creator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Is_My_Case__c</fullName>
         <externalId>false</externalId>
         <formula>OR(
@@ -863,12 +873,11 @@
         <columns>ACCOUNT.NAME</columns>
         <columns>CASES.REASON</columns>
         <columns>CN_Complaint_Date__c</columns>
-        <columns>CASES.PRIORITY</columns>
         <columns>CN_SKU_CODE__c</columns>
         <columns>CN_SKU_Quantity__c</columns>
         <columns>CASES.STATUS</columns>
         <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
+        <columns>OWNER_NAME</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CASES.STATUS</field>
@@ -910,7 +919,7 @@
         <filters>
             <field>CASES.STATUS</field>
             <operation>equals</operation>
-            <value>Assigned,Accepted,Resolved</value>
+            <value>New,Assigned,Accepted,Resolved</value>
         </filters>
         <label>My Open Complaints</label>
     </listViews>

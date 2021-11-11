@@ -314,6 +314,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Case_Share_Handler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Chef_Assigned_Reset_WorkDate_Handler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -4956,6 +4960,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Payment_History__c.CN_Account_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Payment_History__c.CN_Account_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CN_Payment_History__c.CN_Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4982,6 +4996,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Payment_History__c.CN_Finance_AR__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Payment_History__c.CN_If_Need_Populate_Account_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6545,6 +6564,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Sample_Product__c.CN_Remark__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>CN_Sample_Product__c.CN_SKU_Chinese_Description__c</field>
         <readable>true</readable>
@@ -7332,6 +7356,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.CN_If_Creator_Equals_Account_Sales__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_If_Need_Share_To_Creator__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10172,7 +10201,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
         <recordType>CN_Chef_Request__c.CN_Marketing_CCE_Chef_Demo_Request</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -10203,7 +10231,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
         <recordType>CN_Contract__c.CN_Contract</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -10259,13 +10286,11 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
         <recordType>CN_Promotion_Member__c.CN_Promotion_Member</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
         <recordType>CN_Promotion__c.CN_Promotion</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -10336,7 +10361,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
         <recordType>CN_Sample_Request__c.CN_Whole_Pack</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -10352,7 +10376,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
         <recordType>Campaign.CN_Campaign</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -10408,7 +10431,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
         <recordType>Quote.CN_Quote_New</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>

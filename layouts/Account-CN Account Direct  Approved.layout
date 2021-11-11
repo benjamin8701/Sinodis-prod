@@ -2,7 +2,8 @@
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <excludeButtons>ChangeOwnerOne</excludeButtons>
     <excludeButtons>ChangeRecordType</excludeButtons>
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
+    <excludeButtons>DataDotComClean</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>Edit</excludeButtons>
@@ -344,7 +345,6 @@
     <relatedLists>
         <excludeButtons>MassAddToCampaign</excludeButtons>
         <excludeButtons>Merge</excludeButtons>
-        <excludeButtons>NewContact</excludeButtons>
         <fields>FULL_NAME</fields>
         <fields>CN_Contact_Type__c</fields>
         <fields>CONTACT.TITLE</fields>
@@ -519,6 +519,13 @@
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <excludeButtons>AddAccountDefaultTeam</excludeButtons>
+        <excludeButtons>DisplayAccountTeamEffectiveAccess</excludeButtons>
+        <fields>MEMBER_NAME</fields>
+        <fields>TEAM_MEMBER_ROLE</fields>
+        <relatedList>RelatedAccountSalesTeam</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>

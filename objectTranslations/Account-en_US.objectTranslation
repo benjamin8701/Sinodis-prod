@@ -263,6 +263,10 @@
         <relationshipLabel><!-- Accounts (Finance MDM) --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Bank Account Name --></label>
+        <name>CN_Bank_Account_Name__c</name>
+    </fields>
+    <fields>
         <label><!-- Bank Account --></label>
         <name>CN_Bank_Account__c</name>
     </fields>
@@ -1154,6 +1158,10 @@
     <fields>
         <label><!-- Is Indirect Acount --></label>
         <name>CN_Is_Indirect_Acount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is My Account --></label>
+        <name>CN_Is_My_Account__c</name>
     </fields>
     <fields>
         <label><!-- Is Sales Owner --></label>
@@ -2751,6 +2759,11 @@
         <name>CN_Account_Prevent_Change_Owner</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- When Invoice is VAT or Electronic VAT, the Bank Account Name must be entered.
+Others the Bank Account Name can&apos;t be entered. --></errorMessage>
+        <name>CN_Check_Bank_Account_Name</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Please input Number of Stores for chain customer. --></errorMessage>
         <name>CN_Check_Chain</name>
     </validationRules>
@@ -2822,6 +2835,7 @@ Reference Day --></errorMessage>
 Invoicing Name (Bill to party),
 Tax Registration No.,
 Bank Account,
+Bank Account Name,
 Invoicing Address and Phone. --></errorMessage>
         <name>CN_Check_VAT_InvoiceType</name>
     </validationRules>

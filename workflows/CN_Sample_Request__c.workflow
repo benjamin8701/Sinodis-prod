@@ -65,14 +65,24 @@
         <description>CN_Sample_Request_Approved_Process_CCE</description>
         <protected>false</protected>
         <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
             <field>CN_CCE_Team_Email__c</field>
             <type>email</type>
         </recipients>
-		<recipients>
-            <type>creator</type>
-        </recipients>
         <senderType>CurrentUser</senderType>
         <template>CN_Email_Folder/CN_Sample_Request_Approved_Process_CCE</template>
+    </alerts>
+    <alerts>
+        <fullName>CN_Sample_Request_Repack_DeliveryAll_Alert</fullName>
+        <description>CN_Sample_Request_Repack_DeliveryAll_Alert</description>
+        <protected>false</protected>
+		<recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CN_Email_Folder/CN_SR_Repack_DeliveryAll_Sales</template>
     </alerts>
     <fieldUpdates>
         <fullName>CN_SR_Empty_ConditionType</fullName>
@@ -223,6 +233,25 @@
         </actions>
         <active>true</active>
         <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,    NOT(ISNEW()),   ISCHANGED( CN_Sample_Request_Status__c ),    ISPICKVAL( CN_Sample_Request_Status__c  , &apos;Canceled&apos;)  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_Sample_Request_Repack_DeliveryAll_Alert</fullName>
+        <actions>
+            <name>CN_Sample_Request_Repack_DeliveryAll_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, 
+  NOT(ISNEW()),
+   RecordType.DeveloperName = &apos;CN_Office_Repack&apos;,
+  OR(
+    ISCHANGED(CN_SP_Records_Count_Delivery_Status_Done__c),
+    ISCHANGED(CN_SP_Records_Count_All__c)
+  ),
+  CN_SP_Records_Count_Delivery_Status_Done__c = CN_SP_Records_Count_All__c
+)</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

@@ -342,6 +342,10 @@
                 <behavior>Readonly</behavior>
                 <field>CN_Account_Bank_Account__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Account_Bank_Account_Name__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -363,6 +367,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>New_CN_Account_Bank_Account__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>New_CN_Account_Bank_Account_Name__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

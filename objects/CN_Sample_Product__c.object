@@ -472,6 +472,15 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Remark__c</fullName>
+        <externalId>false</externalId>
+        <label>Remark</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>CN_SKU_Chinese_Description__c</fullName>
         <externalId>false</externalId>
         <formula>CN_Product__r.CN_SKU_Description_CN__c</formula>

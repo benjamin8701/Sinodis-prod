@@ -613,6 +613,10 @@
         <name>CN_If_Creator_Equals_Account_Sales__c</name>
     </fields>
     <fields>
+        <label><!-- If Need Share To Creator --></label>
+        <name>CN_If_Need_Share_To_Creator__c</name>
+    </fields>
+    <fields>
         <label><!-- Is My Case --></label>
         <name>CN_Is_My_Case__c</name>
     </fields>
