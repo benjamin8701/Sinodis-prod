@@ -60,6 +60,10 @@
                 <behavior>Edit</behavior>
                 <field>CN_Account_Layer__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Business_License__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -103,16 +107,8 @@
                 <field>CN_The_Number_Of_Seats__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CN_Business_License__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
                 <field>CN_Litigation_City__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Map_Link__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -137,10 +133,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>CN_Delivery_Plant__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
                 <field>CN_Invoicing_Address_EN__c</field>
             </layoutItems>
         </layoutColumns>
@@ -154,8 +146,16 @@
                 <field>CN_City_EN__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Required</behavior>
+                <field>CN_Delivery_Plant__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CN_Visit_Addr_CN__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Map_Link__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -180,7 +180,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>CN_Bank_Account__c</field>
+                <field>CN_Bank_Account_Name__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -195,6 +195,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CN_Invoicing_Address_and_Phone__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Bank_Account__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

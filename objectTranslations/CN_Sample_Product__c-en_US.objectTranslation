@@ -132,6 +132,10 @@
         <name>CN_Real_Quantity__c</name>
     </fields>
     <fields>
+        <label><!-- Remark --></label>
+        <name>CN_Remark__c</name>
+    </fields>
+    <fields>
         <label><!-- SKU Chinese Description --></label>
         <name>CN_SKU_Chinese_Description__c</name>
     </fields>

@@ -314,6 +314,14 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Case_Share_Handler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Case_Share_Handler_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Chef_Assigned_Reset_WorkDate_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -871,6 +879,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.CN_Bank_Account_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.CN_Bank_Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1237,6 +1250,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.CN_Is_Indirect_Acount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.CN_Is_My_Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1967,6 +1985,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CN_Change_Request__c.CN_Account_Account_Source__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Change_Request__c.CN_Account_Bank_Account_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3102,6 +3125,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CN_Change_Request__c.New_CN_Account_Account_Source__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Change_Request__c.New_CN_Account_Bank_Account_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4936,6 +4964,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Payment_History__c.CN_Account_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Payment_History__c.CN_Account_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CN_Payment_History__c.CN_Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4962,6 +5000,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Payment_History__c.CN_Finance_AR__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Payment_History__c.CN_If_Need_Populate_Account_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6495,6 +6538,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Sample_Product__c.CN_Remark__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>CN_Sample_Product__c.CN_SKU_Chinese_Description__c</field>
         <readable>true</readable>
@@ -7282,6 +7330,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.CN_If_Creator_Equals_Account_Sales__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_If_Need_Share_To_Creator__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -9371,6 +9424,9 @@
     <layoutAssignments>
         <layout>Opportunity-CN Opportunity Layout</layout>
         <recordType>Opportunity.CN_Opportunity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OpportunityLineItem-Opportunity Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pricebook2-CN Price Book Layout</layout>

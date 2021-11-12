@@ -25,6 +25,9 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
         <field>ACCOUNT</field>
     </columns>
     <columns>
@@ -34,22 +37,13 @@
         <field>CONTACT</field>
     </columns>
     <columns>
-        <field>LEAD</field>
+        <field>Activity.CN_Objective__c</field>
     </columns>
     <columns>
-        <field>SUBJECT</field>
-    </columns>
-    <columns>
-        <field>ASSIGNED</field>
-    </columns>
-    <columns>
-        <field>PRIORITY</field>
+        <field>Activity.CN_Meeting_MInutes__c</field>
     </columns>
     <columns>
         <field>STATUS</field>
-    </columns>
-    <columns>
-        <field>TASK</field>
     </columns>
     <currency>CNY</currency>
     <filter>
@@ -73,6 +67,11 @@
     <groupingsDown>
         <dateGranularity>Week</dateGranularity>
         <field>END_DATE_TIME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name># Visits by week MTD</name>

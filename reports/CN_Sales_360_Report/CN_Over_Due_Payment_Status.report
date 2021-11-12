@@ -42,22 +42,13 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.CN_Customer_Code__c</field>
+    </columns>
+    <columns>
         <field>ACCOUNT.NAME</field>
-    </columns>
-    <columns>
-        <field>ACCOUNT_ID</field>
-    </columns>
-    <columns>
-        <field>ADDRESS1_STATE</field>
-    </columns>
-    <columns>
-        <field>TYPE</field>
-    </columns>
-    <columns>
-        <field>RATING</field>
-    </columns>
-    <columns>
-        <field>LAST_UPDATE</field>
     </columns>
     <columns>
         <field>CUST_NAME</field>
@@ -91,6 +82,20 @@
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Account.CN_Sales_Office__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,K010,K020,K030,K040,K050</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CN_Payment_Report__c.CN_Customer_Channel__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value></value>
+        </criteriaItems>
         <language>en_US</language>
     </filter>
     <format>Summary</format>
@@ -101,7 +106,12 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>USERS.NAME</field>
+        <field>CN_Payment_Report__c.CN_Customer_Channel__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.CN_Sales_Office__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Over Due Payment Status</name>
@@ -114,6 +124,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
+    <sortColumn>USERS.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>DUE_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

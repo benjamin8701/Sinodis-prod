@@ -263,6 +263,10 @@
         <relationshipLabel><!-- Accounts (Finance MDM) --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Bank Account Name --></label>
+        <name>CN_Bank_Account_Name__c</name>
+    </fields>
+    <fields>
         <label><!-- Bank Account --></label>
         <name>CN_Bank_Account__c</name>
     </fields>
@@ -336,10 +340,6 @@
         <picklistValues>
             <masterLabel>S7-Inactive SF</masterLabel>
             <translation><!-- S7-Inactive SF --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>YH Rejected by Customer</masterLabel>
-            <translation><!-- YH Rejected by Customer --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>S8-Legal Case</masterLabel>
@@ -1154,6 +1154,10 @@
     <fields>
         <label><!-- Is Indirect Acount --></label>
         <name>CN_Is_Indirect_Acount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is My Account --></label>
+        <name>CN_Is_My_Account__c</name>
     </fields>
     <fields>
         <label><!-- Is Sales Owner --></label>
@@ -2822,6 +2826,7 @@ Reference Day --></errorMessage>
 Invoicing Name (Bill to party),
 Tax Registration No.,
 Bank Account,
+Bank Account Name,
 Invoicing Address and Phone. --></errorMessage>
         <name>CN_Check_VAT_InvoiceType</name>
     </validationRules>

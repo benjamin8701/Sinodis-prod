@@ -27,13 +27,7 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>CUST_ID</field>
-    </columns>
-    <columns>
-        <field>CUST_NAME</field>
-    </columns>
-    <columns>
-        <field>CN_Customer_Status_Trend__c.CN_Category__c</field>
+        <field>CUST_OWNER_NAME</field>
     </columns>
     <columns>
         <field>CN_Customer_Status_Trend__c.CN_License_Name_CN__c</field>
@@ -42,40 +36,10 @@
         <field>CN_Customer_Status_Trend__c.CN_License_Name_EN__c</field>
     </columns>
     <columns>
-        <field>CN_Customer_Status_Trend__c.CN_Sales_Person__c</field>
+        <field>CN_Customer_Status_Trend__c.CN_Category__c</field>
     </columns>
     <columns>
         <field>CN_Customer_Status_Trend__c.CN_Subcategory__c</field>
-    </columns>
-    <columns>
-        <field>CUST_CURRENCY_ISO_CODE</field>
-    </columns>
-    <columns>
-        <field>CUST_OWNER_NAME</field>
-    </columns>
-    <columns>
-        <field>CUST_OWNER_ALIAS</field>
-    </columns>
-    <columns>
-        <field>CUST_OWNER_ROLE</field>
-    </columns>
-    <columns>
-        <field>CUST_CREATED_NAME</field>
-    </columns>
-    <columns>
-        <field>CUST_CREATED_ALIAS</field>
-    </columns>
-    <columns>
-        <field>CUST_CREATED_DATE</field>
-    </columns>
-    <columns>
-        <field>CUST_LAST_UPDATE_NAME</field>
-    </columns>
-    <columns>
-        <field>CUST_LAST_UPDATE_ALIAS</field>
-    </columns>
-    <columns>
-        <field>CUST_LAST_UPDATE</field>
     </columns>
     <currency>CNY</currency>
     <format>Summary</format>

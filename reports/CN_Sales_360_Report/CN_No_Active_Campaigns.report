@@ -46,9 +46,6 @@
         <field>PHONE</field>
     </columns>
     <columns>
-        <field>EMAIL</field>
-    </columns>
-    <columns>
         <field>LC_OWNER</field>
     </columns>
     <columns>
@@ -56,15 +53,6 @@
     </columns>
     <columns>
         <field>STREET</field>
-    </columns>
-    <columns>
-        <field>STREET_LINE1</field>
-    </columns>
-    <columns>
-        <field>STREET_LINE2</field>
-    </columns>
-    <columns>
-        <field>STREET_LINE3</field>
     </columns>
     <columns>
         <field>CITY</field>
@@ -94,7 +82,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Planned</value>
+            <value>In Progress,Planned</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
@@ -115,7 +103,7 @@
     </params>
     <reportType>CampaignWithCampaignMembers</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
 </Report>

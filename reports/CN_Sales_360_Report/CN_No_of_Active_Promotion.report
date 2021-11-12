@@ -14,10 +14,25 @@
         <field>FK_NAME</field>
     </columns>
     <columns>
+        <field>FK_$CN_Promotion__c.CN_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>FK_$CN_Promotion__c.CN_End_Date__c</field>
+    </columns>
+    <columns>
         <field>CN_Promotion_Member__c.CN_Account_Name__c</field>
     </columns>
     <columns>
+        <field>FK_$CN_Promotion__c.CN_Publish_Date__c</field>
+    </columns>
+    <columns>
+        <field>FK_$CN_Promotion__c.CN_Status__c</field>
+    </columns>
+    <columns>
         <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$CN_Promotion__c.CN_Comments__c</field>
     </columns>
     <currency>CNY</currency>
     <filter>
@@ -27,6 +42,13 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Published</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CN_Promotion_Member__c.CN_Promotion_End_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>TODAY</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
@@ -48,6 +70,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>FK_$CN_Promotion__c.CN_Publish_Date__c</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

@@ -258,6 +258,18 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>CN_Account_Bank_Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Account Name</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Account_Bank_Account__c</fullName>
         <externalId>false</externalId>
         <label>Bank Account</label>
@@ -5686,6 +5698,18 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>New_CN_Account_Bank_Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>New Bank Account Name</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>New_CN_Account_Bank_Account__c</fullName>
@@ -40759,6 +40783,7 @@ IF($Profile.Name = &quot;CN Sales&quot;, TRUE, FALSE),
   OR(
     ISBLANK(New_CN_Account_Invoicing_Name__c),
     NOT(ISBLANK(New_CN_Account_Bank_Account__c)),
+    NOT(ISBLANK(New_CN_Account_Bank_Account_Name__c)),
     NOT(ISBLANK(New_CN_Account_Invoice_Address_and_Phone__c)),
     ISBLANK(New_CN_Account_Tax_Registration_No__c)
   )
@@ -40820,13 +40845,15 @@ ISPICKVAL(New_CN_Account_Reference_Day__c, &quot;Fapiao_Day&quot;)
     ISBLANK(New_CN_Account_Invoicing_Name__c),
     ISBLANK(New_CN_Account_Bank_Account__c),
     ISBLANK(New_CN_Account_Invoice_Address_and_Phone__c),
-    ISBLANK( New_CN_Account_Tax_Registration_No__c )
+    ISBLANK( New_CN_Account_Tax_Registration_No__c ),
+    ISBLANK(New_CN_Account_Bank_Account_Name__c)
   )
 )</errorConditionFormula>
         <errorMessage>Please fill in the following information, if you select VAT invoice or Electronic VAT invoice.
 Invoicing Name (Bill to party),
 Tax Registration No.,
 Bank Account,
+Bank Account Name,
 Invoicing Address and Phone.</errorMessage>
     </validationRules>
     <validationRules>

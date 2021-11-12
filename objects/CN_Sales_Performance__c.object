@@ -655,8 +655,16 @@ SAP传的是编号</description>
     <fields>
         <fullName>CN_Target_Sales_Office__c</fullName>
         <externalId>false</externalId>
-        <formula>if(RecordType.Name = &apos;CN_Sales_Target&apos;,CN_Target_Sales_Person__r.CN_Sales_Office__c, Owner:User.CN_Sales_Office__c )</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <formula>Case
+(
+   if(RecordType.Name = &apos;CN_Sales_Target&apos;,CN_Target_Sales_Person__r.CN_Sales_Office__c, Owner:User.CN_Sales_Office__c ),
+   &apos;K010&apos;,&apos;K010-Shanghai&apos;,
+   &apos;K020&apos;,&apos;K020-Beijing&apos;,
+   &apos;K030&apos;,&apos;K030-ShenZhen&apos;,
+   &apos;K040&apos;,&apos;K040-GuangZhou&apos;,
+   &apos;K050&apos;,&apos;K050-ChengDu&apos;,
+   &apos;&apos;
+)</formula>
         <label>Sales Office Name</label>
         <required>false</required>
         <trackTrending>false</trackTrending>

@@ -12,22 +12,11 @@
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
-        <fullName>CN_CASE_QA_QUEUE_SHARE_TO_SERVICE</fullName>
+        <fullName>CN_CASE_SHARE_TO_QA</fullName>
         <accessLevel>Read</accessLevel>
-        <label>CN_CASE_QA_QUEUE_SHARE_TO_SERVICE</label>
+        <label>CN_CASE_SHARE_TO_QA</label>
         <sharedTo>
-            <roleAndSubordinates>CN_Service</roleAndSubordinates>
-        </sharedTo>
-        <sharedFrom>
-            <queue>CN_QA_Queue</queue>
-        </sharedFrom>
-    </sharingOwnerRules>
-    <sharingOwnerRules>
-        <fullName>CN_CASE_SHARE_TO_SERVICE</fullName>
-        <accessLevel>Read</accessLevel>
-        <label>CN_CASE_SHARE_TO_SERVICE</label>
-        <sharedTo>
-            <roleAndSubordinates>CN_Service</roleAndSubordinates>
+            <roleAndSubordinates>CN_QA</roleAndSubordinates>
         </sharedTo>
         <sharedFrom>
             <roleAndSubordinates>CN_China</roleAndSubordinates>
