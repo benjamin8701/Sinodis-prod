@@ -354,6 +354,7 @@ public without sharing class Constants {
 	public static Boolean CN_QUOTE_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
 
 	public static final String CN_QUOTE_RT_API_NAME_NEW = 'CN_Quote';
+	public static String CN_SHARING_REASON_MANUAL = 'Manual';
 	public static final Integer CN_QUOTE_APPROVAL_LENGTH = 12;
 	public static final String CN_QUOTE_STATUS_NEW = 'New';
 	public static final String CN_QUOTE_STATUS_SUBMITTED = 'Submitted for Approval';

@@ -128,6 +128,10 @@
         <name>CN_Real_Quantity__c</name>
     </fields>
     <fields>
+        <label>备注</label>
+        <name>CN_Remark__c</name>
+    </fields>
+    <fields>
         <label>产品描述中文</label>
         <name>CN_SKU_Chinese_Description__c</name>
     </fields>

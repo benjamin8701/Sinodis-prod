@@ -342,10 +342,6 @@
             <translation><!-- S7-Inactive SF --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>YH Rejected by Customer</masterLabel>
-            <translation><!-- YH Rejected by Customer --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>S8-Legal Case</masterLabel>
             <translation><!-- S8-Legal Case --></translation>
         </picklistValues>
@@ -2757,11 +2753,6 @@
     <validationRules>
         <errorMessage><!-- Not Allowed to Transfer Sold To Party to others. --></errorMessage>
         <name>CN_Account_Prevent_Change_Owner</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- When Invoice is VAT or Electronic VAT, the Bank Account Name must be entered.
-Others the Bank Account Name can&apos;t be entered. --></errorMessage>
-        <name>CN_Check_Bank_Account_Name</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Please input Number of Stores for chain customer. --></errorMessage>
