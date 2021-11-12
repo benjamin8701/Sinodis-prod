@@ -11,6 +11,7 @@
             <td>Quantity</td>
             <td style="{!if(isCCEOrCS='true','','display:none')}">Sample Unit</td>
             <td style="{!if(isCCEOrCS='true','','display:none')}">Sample Unit List Price </td>
+            <td style="{!if(isCCEOrCS='false','','display:none')}">Base Unit of Measure</td>
             <td>Remark</td>
         </tr>
         <apex:repeat value="{!spList}" var="sp">
@@ -22,6 +23,7 @@
                 <td>{!sp.CN_Quantity_Needed__c}</td>
                 <td style="{!if(isCCEOrCS='true','','display:none')}">{!sp.CN_Sample_Unit__c}</td>
                 <td style="{!if(isCCEOrCS='true','','display:none')}">{!sp.CN_List_Price__c}</td>
+                <td style="{!if(isCCEOrCS='false','','display:none')}">{!sp.CN_Unit__c}</td>
                 <td>{!sp.CN_Remark__c}</td>
                 <apex:variable var="rowNum" value="{!rowNum + 1}" />
             </tr>
