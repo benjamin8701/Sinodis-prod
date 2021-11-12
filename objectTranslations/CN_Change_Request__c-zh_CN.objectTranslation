@@ -73,7 +73,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label>银行账号名称</label>
+        <label>银行账户名称</label>
         <name>CN_Account_Bank_Account_Name__c</name>
     </fields>
     <fields>
@@ -2442,7 +2442,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label>新银行账号名称</label>
+        <label>新银行账户名称</label>
         <name>New_CN_Account_Bank_Account_Name__c</name>
     </fields>
     <fields>

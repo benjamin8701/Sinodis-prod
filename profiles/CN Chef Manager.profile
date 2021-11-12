@@ -318,6 +318,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Case_Share_Handler_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Chef_Assigned_Reset_WorkDate_Handler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -8272,18 +8276,6 @@
         <editable>false</editable>
         <field>PricebookEntry.CN_Promo_Price_P4__c</field>
         <readable>false</readable>
-    </fieldPermissions>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>PricebookEntry.CN_Promo_Price_P3__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>PricebookEntry.CN_Promo_Price_P4__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
