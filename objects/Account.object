@@ -20503,14 +20503,14 @@ Reference Day</errorMessage>
   OR(
     ISBLANK(CN_Invoicing_Name_Bill_To_Party__c),
     ISBLANK(CN_Bank_Account__c),
+    ISBLANK(CN_Bank_Account_Name__c),
     ISBLANK(CN_Invoicing_Address_and_Phone__c),
     IF(
     	OR(ISPICKVAL(CN_Payment_Terms__c, &quot;CIA&quot;),ISPICKVAL(CN_Payment_Terms__c, &quot;D000&quot;)),
     	FALSE,
     	ISBLANK(TEXT(CN_Reference_Day__c))
     ),
-    ISBLANK(CN_Tax_Registration_No__c),
-    ISBLANK(CN_Bank_Account_Name__c)
+    ISBLANK(CN_Tax_Registration_No__c)
   )
 )</errorConditionFormula>
         <errorMessage>Please fill in the following information, if you select VAT invoice or Electronic VAT Invoice.
