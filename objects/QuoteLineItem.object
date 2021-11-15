@@ -396,7 +396,7 @@
              if ( ISPICKVAL(CN_Sync_Status__c , &apos;Failed&apos;), &apos;Sync Failed&apos;, &apos;In progress&apos; ) 
           ),
 
-       if ( ISPICKVAL(CN_Finance_Acceptance__c , &apos;Denied&apos;), &apos;Denied&apos;, &apos;In progress&apos; )
+       if ( ISPICKVAL(CN_Finance_Acceptance__c , &apos;Denied&apos;), &apos;Denied&apos;, &apos;Waitting Finance confirm&apos; )
      
     ),
    &apos;&apos;

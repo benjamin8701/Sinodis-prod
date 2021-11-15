@@ -1175,6 +1175,19 @@
         </sections>
     </reportTypes>
     <reportTypes>
+        <description><!-- CN Quote with Quote Line Item --></description>
+        <label><!-- CN Quote with Quote Line Item --></label>
+        <name>CN_Quote_with_Quote_Line_Item</name>
+        <sections>
+            <label><!-- Quote Line Items --></label>
+            <name>Quote Line Items</name>
+        </sections>
+        <sections>
+            <label><!-- Quotes --></label>
+            <name>Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
         <description><!-- CN User Report Type --></description>
         <label><!-- CN User Report Type --></label>
         <name>CN_User_Report_Type</name>

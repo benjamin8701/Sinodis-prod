@@ -554,6 +554,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_QuoteItem_Promotion_Link_Handler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_QuoteItem_Validation_Handler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
