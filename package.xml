@@ -155,6 +155,7 @@
         <members>CN_QuoteItem_Populate_Fields_Handler</members>
         <members>CN_QuoteItem_Populate_Handler_Test</members>
         <members>CN_QuoteItem_Prevent_Delete_Handler</members>
+        <members>CN_QuoteItem_Promotion_Link_Handler</members>
         <members>CN_QuoteItem_Validation_Handler</members>
         <members>CN_Quote_AcceptORDeny_All_Items_LC_Ctrl</members>
         <members>CN_Quote_Accept_All_Items_LC_Ctrl_Test</members>
@@ -784,6 +785,7 @@
         <members>CN_Price_Book_Entry</members>
         <members>CN_Promotion_with_Member_with_Quote_Line_Item</members>
         <members>CN_Promotion_with_Promotion_Line_Item</members>
+        <members>CN_Quote_with_Quote_Line_Item</members>
         <members>CN_User_Report_Type</members>
         <members>Chef_Requests_with_Demo_Reports_with_Demo_Report_to_Products</members>
         <name>ReportType</name>
