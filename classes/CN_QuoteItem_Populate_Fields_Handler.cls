@@ -28,19 +28,34 @@ public without sharing class CN_QuoteItem_Populate_Fields_Handler implements Tri
     
     public void updateQuoteItemPromoPrices( List<QuoteLineItem> quoteItemList ) {
         Set<Id> pbEntryIdSet = new Set<Id>();
+        Set<Id> productIdSet = new Set<Id>();
         for(QuoteLineItem quoteItem : quoteItemList){
             pbEntryIdSet.add(quoteItem.PricebookEntryId);
+            productIdSet.add(quoteItem.Product2Id);
         }
         
+        List<PricebookEntry> standardPbEntryList = [SELECT Id,
+                                                            UnitPrice,
+                                                            Product2Id,
+                                                            Pricebook2.IsStandard,
+                                                            Pricebook2Id,
+                                                            CN_Unit_of_Measure__c,
+                                                            CN_Pricing_Unit__c
+                                                    FROM PricebookEntry
+                                                    WHERE Pricebook2.IsStandard = true
+                                                        AND Product2Id IN: productIdSet];
+        Map<Id, PricebookEntry> productIdStandardPBMap = new Map<Id, PricebookEntry>();
+        for(PricebookEntry pbEntry : standardPbEntryList){
+            productIdStandardPBMap.put(pbEntry.Product2Id, pbEntry);
+        }
+
         List<PricebookEntry> pbEntryList = [SELECT Id,
                                                     Product2Id,
                                                     Pricebook2Id,
-                                                    CN_Promo_Price_P1__c,
-                                                    CN_Promo_Price_P2__c,
-                                                    CN_Promo_Price_P3__c,
-                                                    CN_Promo_Price_P4__c,
-                                                    CN_Minimum_Price__c
-                                            FROM PricebookEntry 
+                                                    CN_Discount_Price__c,
+                                                    CN_Max_Discount_Price__c,
+                                                    UnitPrice
+                                            FROM PricebookEntry
                                             WHERE Id IN :pbEntryIdSet];
         Map<Id,PricebookEntry> pbEntryIdPbEntryMap = new Map<Id,PricebookEntry>();
         for(PricebookEntry pbEntry : pbEntryList){
@@ -48,11 +63,22 @@ public without sharing class CN_QuoteItem_Populate_Fields_Handler implements Tri
         }
        
         for(QuoteLineItem quoteItem : quoteItemList){
-            quoteItem.CN_Promo_Price_P1__c = pbEntryIdPbEntryMap.get(quoteItem.PricebookEntryId).CN_Promo_Price_P1__c;
-            quoteItem.CN_Promo_Price_P2__c = pbEntryIdPbEntryMap.get(quoteItem.PricebookEntryId).CN_Promo_Price_P2__c;
-            quoteItem.CN_Promo_Price_P3__c = pbEntryIdPbEntryMap.get(quoteItem.PricebookEntryId).CN_Promo_Price_P3__c;
-            quoteItem.CN_Promo_Price_P4__c = pbEntryIdPbEntryMap.get(quoteItem.PricebookEntryId).CN_Promo_Price_P4__c;
-            quoteItem.CN_Minimum_Price__c = pbEntryIdPbEntryMap.get(quoteItem.PricebookEntryId).CN_Minimum_Price__c;
+
+            Decimal discountPrice = pbEntryIdPbEntryMap.get(quoteItem.PricebookEntryId).CN_Discount_Price__c;
+            if(discountPrice == null || discountPrice == 0) {
+                discountPrice = quoteItem.UnitPrice;
+            }
+            Decimal maxDiscountPrice = pbEntryIdPbEntryMap.get(quoteItem.PricebookEntryId).CN_Max_Discount_Price__c;
+            if(maxDiscountPrice == null || maxDiscountPrice == 0) {
+                maxDiscountPrice = quoteItem.UnitPrice;
+            }
+            quoteItem.CN_Pricing_Unit__c = productIdStandardPBMap.get(quoteItem.Product2Id).CN_Pricing_Unit__c;
+            quoteItem.CN_Unit_of_Measure__c = productIdStandardPBMap.get(quoteItem.Product2Id).CN_Unit_of_Measure__c;
+            quoteItem.CN_Channel_Price__c = pbEntryIdPbEntryMap.get(quoteItem.PricebookEntryId).UnitPrice;
+            quoteItem.CN_Discount_Price__c = discountPrice;
+            quoteItem.CN_Max_Discount_Price__c = maxDiscountPrice;
+            quoteItem.CN_List_Price__c = productIdStandardPBMap.get(quoteItem.Product2Id).UnitPrice;
+            quoteItem.Quantity = 1;
         }
     }
 }

@@ -40,8 +40,6 @@
         <members>CN_Brand_Prevent_Delete_Handler_Test</members>
         <members>CN_Brand_Send_To_SAP_LC_Ctrl</members>
         <members>CN_Brand_Send_To_SAP_LC_Ctrl_Test</members>
-		<members>CN_Case_Share_Handler</members>
-		<members>CN_Case_Share_Handler_Test</members>
         <members>CN_CDL_Populate_Uploaded_Handler</members>
         <members>CN_CDL_Populate_Uploaded_Handler_Test</members>
         <members>CN_CD_Populate_Uploaded_Handler</members>
@@ -94,6 +92,8 @@
         <members>CN_Campaign_Generate_Opp_LC_Ctrl_Test</members>
         <members>CN_Case_Populate_Status_Handler_Test</members>
         <members>CN_Case_Share_Handler</members>
+        <members>CN_Case_Share_Handler</members>
+        <members>CN_Case_Share_Handler_Test</members>
         <members>CN_Chef_Assigned_Reset_WorkDate_Handler</members>
         <members>CN_Chef_Req_Assign_Approver_Handler_Test</members>
         <members>CN_Chef_Request_Assign_Approver_Handler</members>
@@ -155,17 +155,26 @@
         <members>CN_QuoteItem_Populate_Fields_Handler</members>
         <members>CN_QuoteItem_Populate_Handler_Test</members>
         <members>CN_QuoteItem_Prevent_Delete_Handler</members>
+        <members>CN_QuoteItem_Validation_Handler</members>
         <members>CN_Quote_AcceptORDeny_All_Items_LC_Ctrl</members>
         <members>CN_Quote_Accept_All_Items_LC_Ctrl_Test</members>
         <members>CN_Quote_Apply_LC_Ctrl</members>
         <members>CN_Quote_Apply_LC_Ctrl</members>
+        <members>CN_Quote_Approval_Reminder_Handler</members>
+        <members>CN_Quote_Fin_AcceptOrDeny_All_LC_Ctrl</members>
+        <members>CN_Quote_Finance_Notice_LC_Ctrl</members>
+        <members>CN_Quote_Generate_Quote_Prom_Handler</members>
+        <members>CN_Quote_Notify_Finance_Template_Ctrl</members>
         <members>CN_Quote_Populate_Approver_Handler</members>
         <members>CN_Quote_Populate_Approver_Handler</members>
         <members>CN_Quote_Populate_Fields_Handler</members>
         <members>CN_Quote_Populate_Fields_Handler_Test</members>
         <members>CN_Quote_Prevent_Delete_Handler</members>
+        <members>CN_Quote_Ready_Validation_Handler</members>
         <members>CN_Quote_Send_To_SAP_LC_Ctrl</members>
         <members>CN_Quote_Send_To_SAP_LC_Ctrl_Test</members>
+        <members>CN_Quote_Sharing_Handler_Handler</members>
+        <members>CN_Quote_Split_LC_Ctrl</members>
         <members>CN_Redirect_Gaode_Map_Controller</members>
         <members>CN_SOItem_Populate_CampaignP_Batch_Test</members>
         <members>CN_SOItem_Populate_CampaignPro_Batch</members>
@@ -210,6 +219,7 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>CN_Quote_Notify_Finance_Template</members>
         <members>CN_Sample_Product_Get_CN_VC</members>
         <members>CN_Sample_Product_Get_EN_VC</members>
         <members>CN_Sample_Product_Get_LC</members>
@@ -237,11 +247,17 @@
         <members>CN_Credit_Term_Application__c.CN_CTA_Approval_Process</members>
         <members>CN_Sample_Request__c.CN_SR_Approve_Process</members>
         <members>Quote.CN_Quote_Approval</members>
+        <members>Quote.CN_Quote_Approval_V4</members>
+        <members>Quote.CN_Quote_Auto_Approval</members>
         <name>ApprovalProcess</name>
     </types>
     <types>
         <members>*</members>
         <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CompactLayout</name>
     </types>
     <types>
         <members>LOGO</members>
@@ -394,16 +410,18 @@
         <members>CN_Email_Folder/CN_Promotion_Member_Published</members>
         <members>CN_Email_Folder/CN_Promotion_Published</members>
         <members>CN_Email_Folder/CN_Quote_Approval</members>
+        <members>CN_Email_Folder/CN_Quote_Approval_Reminder</members>
         <members>CN_Email_Folder/CN_Quote_Approvaled</members>
         <members>CN_Email_Folder/CN_Quote_Follow_SalesRep</members>
+        <members>CN_Email_Folder/CN_Quote_Notify_Finance</members>
         <members>CN_Email_Folder/CN_Quote_Rejected</members>
+        <members>CN_Email_Folder/CN_SR_Repack_DeliveryAll_Sales</members>
         <members>CN_Email_Folder/CN_Sample_Request_Approved</members>
         <members>CN_Email_Folder/CN_Sample_Request_Approved_Cancelled</members>
         <members>CN_Email_Folder/CN_Sample_Request_Approved_Process_CCE</members>
         <members>CN_Email_Folder/CN_Sample_Request_Approved_Process_CS</members>
         <members>CN_Email_Folder/CN_Sample_Request_Rejected</members>
         <members>CN_Email_Folder/CN_Sample_Request_Submit</members>
-		<members>CN_Email_Folder/CN_SR_Repack_DeliveryAll_Sales</members>
         <name>EmailTemplate</name>
     </types>
     <types>
@@ -492,12 +510,15 @@
         <members>Global-Global Layout</members>
         <members>Lead-CN Lead Layout</members>
         <members>Opportunity-CN Opportunity Layout</members>
+        <members>OpportunityLineItem-Opportunity Product Layout</members>
         <members>Pricebook2-CN Price Book Layout</members>
         <members>PricebookEntry-CN Price Book Entry Layout</members>
         <members>Product2-CN Product Layout</members>
         <members>Product2-CN Product Layout</members>
         <members>Quote-CN Sinodis Quote Layout</members>
+        <members>Quote-CN Sinodis Quote Layout - Finance MDM</members>
         <members>QuoteLineItem-CN Sinodis Quote Line Item Layout</members>
+        <members>QuoteLineItem-CN Sinodis Quote Line Item Layout -  Finance MDM</members>
         <members>Task-CN Sinodis Task Layout</members>
         <members>User-User Layout</members>
         <name>Layout</name>
@@ -509,6 +530,10 @@
     <types>
         <members>*</members>
         <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ListView</name>
     </types>
     <types>
         <members>Account.CN_Lead_VS_Account</members>
@@ -528,6 +553,7 @@
     <types>
         <members>CN_CCE_Lead_Qualifier</members>
         <members>CN_Campaign_Manager</members>
+        <members>CN_Manage_Account_Team</members>
         <members>CN_Marketing_Chef_Request_User</members>
         <members>CN_Marketing_Edit_PromoAndMini_Price</members>
         <members>CN_Marketing_Lead_Manager</members>
@@ -536,7 +562,6 @@
         <members>CN_Marketing_View_Price_Book</members>
         <members>CN_Product_Edit_Description</members>
         <members>CN_Promotion_Manager</members>
-		<members>CN_Manage_Account_Team</members>
         <name>PermissionSet</name>
     </types>
     <types>
@@ -617,10 +642,17 @@
         <members>Lead.CN_New_Contact_Request</members>
         <members>Quote.CN_AcceptOrDeny_All_Quote_Items</members>
         <members>Quote.CN_Apply</members>
+        <members>Quote.CN_Fin_AcceptOrDeny_All_Items</members>
         <members>Quote.CN_Notify_Finance</members>
+        <members>Quote.CN_Quote_Notify_Finance</members>
         <members>Quote.CN_Quote_Ready_for_Approval</members>
+        <members>Quote.CN_Quote_Split_Items</members>
         <members>Quote.CN_Send_To_SAP</members>
         <name>QuickAction</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>RecordType</name>
     </types>
     <types>
         <members>Talend_Endpoint</members>
@@ -677,6 +709,10 @@
         <members>CN_Customer_360_Report/CN_Sales_Order_by_Deliver_Status</members>
         <members>CN_Customer_360_Report/CN_Sample_Items_By_Status_Indirect</members>
         <members>CN_Customer_360_Report/CN_Sample_Items_by_Status_Direct</members>
+        <members>CN_Finance_MDM_Report</members>
+        <members>CN_Finance_MDM_Report/CN_Price_Book_Report_All_Price_Book</members>
+        <members>CN_Finance_MDM_Report/CN_Price_Book_Report_List_Price</members>
+        <members>CN_Finance_MDM_Report/CN_Quote_Details</members>
         <members>CN_LeadReport</members>
         <members>CN_LeadReport/CN_Average_time_of_lead_conversion_days</members>
         <members>CN_LeadReport/CN_Converted_Prospect_Customers</members>
@@ -746,6 +782,7 @@
         <members>CN_Campaign_with_product_with_SOI</members>
         <members>CN_Chef_with_Chef_Assigned</members>
         <members>CN_Lead</members>
+        <members>CN_Price_Book_Entry</members>
         <members>CN_Promotion_with_Member_with_Quote_Line_Item</members>
         <members>CN_Promotion_with_Promotion_Line_Item</members>
         <members>CN_User_Report_Type</members>
@@ -958,6 +995,10 @@
         <members>en_US</members>
         <members>zh_CN</members>
         <name>Translations</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ValidationRule</name>
     </types>
     <types>
         <members>*</members>

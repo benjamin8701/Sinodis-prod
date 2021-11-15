@@ -17,4 +17,10 @@
             $A.enqueueAction(action);
         });
     },
+    format: function(label, args) {
+        for (var k in args) {
+            label = label.replace("{" + k + "}", args[k]);
+        }
+        return label;
+    }
 })

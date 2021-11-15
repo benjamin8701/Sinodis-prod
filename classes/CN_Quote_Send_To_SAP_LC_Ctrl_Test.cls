@@ -43,7 +43,7 @@ private class CN_Quote_Send_To_SAP_LC_Ctrl_Test {
         User cce = lastNameUserMap.get('CCE1_KA');
         User salesRep = lastNameUserMap.get('Sales1');
         Account acc_factory = [SELECT Id,Name FROM Account WHERE CN_License_Name_EN__c = 'TestAccount_Factory'][0];
-        Id cnQuoteRTId = Schema.SObjectType.Quote.getRecordTypeInfosByDeveloperName().get(Constants.CN_Quote_RT_API_NAME_NEW).getRecordTypeId();
+        Id cnQuoteRTId = Schema.SObjectType.Quote.getRecordTypeInfosByDeveloperName().get(Constants.CN_Quote_RT_API_NAME).getRecordTypeId();
         List<Product2> productList = [Select Id,name From Product2 LIMIT 1];
         PricebookEntry pbEntry = [Select Id,Product2Id From PricebookEntry Where Pricebook2Id =: Test.getStandardPricebookId() And Product2Id  =: productList[0].Id];
 
@@ -188,7 +188,7 @@ private class CN_Quote_Send_To_SAP_LC_Ctrl_Test {
         User cce = lastNameUserMap.get('CCE1_KA');
         User salesRep = lastNameUserMap.get('Sales1');
         Account acc_factory = [SELECT Id,Name FROM Account WHERE CN_License_Name_EN__c = 'TestAccount_Factory'][0];
-        Id cnQuoteRTId = Schema.SObjectType.Quote.getRecordTypeInfosByDeveloperName().get(Constants.CN_Quote_RT_API_NAME_NEW).getRecordTypeId();
+        Id cnQuoteRTId = Schema.SObjectType.Quote.getRecordTypeInfosByDeveloperName().get(Constants.CN_Quote_RT_API_NAME).getRecordTypeId();
         List<Product2> productList = [Select Id,name From Product2 LIMIT 1];
         PricebookEntry pbEntry = [Select Id,Product2Id From PricebookEntry Where Pricebook2Id =: Test.getStandardPricebookId() And Product2Id  =: productList[0].Id];
 
@@ -312,7 +312,7 @@ private class CN_Quote_Send_To_SAP_LC_Ctrl_Test {
         User cce = lastNameUserMap.get('CCE1_KA');
         User salesRep = lastNameUserMap.get('Sales1');
         Account acc_factory = [SELECT Id,Name FROM Account WHERE CN_License_Name_EN__c = 'TestAccount_Factory'][0];
-        Id cnQuoteRTId = Schema.SObjectType.Quote.getRecordTypeInfosByDeveloperName().get(Constants.CN_Quote_RT_API_NAME_NEW).getRecordTypeId();
+        Id cnQuoteRTId = Schema.SObjectType.Quote.getRecordTypeInfosByDeveloperName().get(Constants.CN_Quote_RT_API_NAME).getRecordTypeId();
         List<Product2> productList = [Select Id,name From Product2 LIMIT 1];
         PricebookEntry pbEntry = [Select Id,Product2Id From PricebookEntry Where Pricebook2Id =: Test.getStandardPricebookId() And Product2Id  =: productList[0].Id];
 
@@ -436,7 +436,7 @@ private class CN_Quote_Send_To_SAP_LC_Ctrl_Test {
         User cce = lastNameUserMap.get('CCE1_KA');
         User salesRep = lastNameUserMap.get('Sales1');
         Account acc_factory = [SELECT Id,Name FROM Account WHERE CN_License_Name_EN__c = 'TestAccount_Factory'][0];
-        Id cnQuoteRTId = Schema.SObjectType.Quote.getRecordTypeInfosByDeveloperName().get(Constants.CN_Quote_RT_API_NAME_NEW).getRecordTypeId();
+        Id cnQuoteRTId = Schema.SObjectType.Quote.getRecordTypeInfosByDeveloperName().get(Constants.CN_Quote_RT_API_NAME).getRecordTypeId();
         List<Product2> productList = [Select Id,name From Product2 LIMIT 1];
         PricebookEntry pbEntry = [Select Id,Product2Id From PricebookEntry Where Pricebook2Id =: Test.getStandardPricebookId() And Product2Id  =: productList[0].Id];
 
@@ -560,7 +560,7 @@ private class CN_Quote_Send_To_SAP_LC_Ctrl_Test {
         User cce = lastNameUserMap.get('CCE1_KA');
         User salesRep = lastNameUserMap.get('Sales1');
         Account acc_factory = [SELECT Id,Name FROM Account WHERE CN_License_Name_EN__c = 'TestAccount_Factory'][0];
-        Id cnQuoteRTId = Schema.SObjectType.Quote.getRecordTypeInfosByDeveloperName().get(Constants.CN_Quote_RT_API_NAME_NEW).getRecordTypeId();
+        Id cnQuoteRTId = Schema.SObjectType.Quote.getRecordTypeInfosByDeveloperName().get(Constants.CN_Quote_RT_API_NAME).getRecordTypeId();
         List<Product2> productList = [Select Id,name From Product2 LIMIT 1];
         PricebookEntry pbEntry = [Select Id,Product2Id From PricebookEntry Where Pricebook2Id =: Test.getStandardPricebookId() And Product2Id  =: productList[0].Id];
 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>PricebookEntry$CN_Price_Book_Entry_Code__c</field>
+    </columns>
+    <columns>
+        <field>PricebookEntry$CN_Product_Code__c</field>
+    </columns>
+    <columns>
+        <field>PricebookEntry$CN_Product_Name__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>PricebookEntry$CN_Pricing_Unit__c</field>
+    </columns>
+    <columns>
+        <field>PricebookEntry$CN_Unit_of_Measure__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>PricebookEntry$UnitPrice</field>
+    </columns>
+    <currency>CNY</currency>
+    <customDetailFormulas>
+        <calculatedFormula>Case(
+ PricebookEntry.CN_Price_Book_Code__c,
+ &apos;LP&apos;,&apos;0-List Price&apos;,
+ &apos;KA&apos;,&apos;1-KA&apos;,
+ &apos;DS&apos;,&apos;2-DS&apos;,
+ &apos;WS&apos;,&apos;3-WS&apos;,
+  &apos;&apos;
+)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Price Book</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>PricebookEntry$IsActive</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PricebookEntry$CN_Price_Book_Code__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LP</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Price Book Report - List Price</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CN_Price_Book_Entry__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>PricebookEntry$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
+        <fullName>CN_Quote_Approval_Reminder</fullName>
+        <description>CN Quote Approval Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <field>CN_Current_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CN_Email_Folder/CN_Quote_Approval_Reminder</template>
+    </alerts>
+    <alerts>
         <fullName>CN_Quote_Approved</fullName>
         <description>CN_Quote_Approved</description>
         <protected>false</protected>
@@ -30,6 +41,105 @@
         <senderType>CurrentUser</senderType>
         <template>CN_Email_Folder/CN_Quote_Rejected</template>
     </alerts>
+    <fieldUpdates>
+        <fullName>CN_Accumulated_Appover1</fullName>
+        <field>CN_Approved_Status__c</field>
+        <formula>CN_Approved_Status__c + 256</formula>
+        <name>CN_Accumulated_Appover1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Accumulated_Appover2</fullName>
+        <field>CN_Approved_Status__c</field>
+        <formula>CN_Approved_Status__c + 128</formula>
+        <name>CN_Accumulated_Appover2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Accumulated_Appover3</fullName>
+        <field>CN_Approved_Status__c</field>
+        <formula>CN_Approved_Status__c + 64</formula>
+        <name>CN_Accumulated_Appover3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Accumulated_Appover4</fullName>
+        <field>CN_Approved_Status__c</field>
+        <formula>CN_Approved_Status__c + 32</formula>
+        <name>CN_Accumulated_Appover4</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Accumulated_Appover5</fullName>
+        <field>CN_Approved_Status__c</field>
+        <formula>CN_Approved_Status__c + 16</formula>
+        <name>CN_Accumulated_Appover5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Accumulated_Appover6</fullName>
+        <field>CN_Approved_Status__c</field>
+        <formula>CN_Approved_Status__c + 8</formula>
+        <name>CN_Accumulated_Appover6</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Accumulated_Appover7</fullName>
+        <field>CN_Approved_Status__c</field>
+        <formula>CN_Approved_Status__c + 4</formula>
+        <name>CN_Accumulated_Appover7</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Accumulated_Appover8</fullName>
+        <field>CN_Approved_Status__c</field>
+        <formula>CN_Approved_Status__c + 2</formula>
+        <name>CN_Accumulated_Appover8</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Accumulated_Appover9</fullName>
+        <field>CN_Approved_Status__c</field>
+        <formula>CN_Approved_Status__c + 1</formula>
+        <name>CN_Accumulated_Appover9</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Accumulated_Appover_Clean</fullName>
+        <field>CN_Approved_Status__c</field>
+        <name>CN_Accumulated_Appover_Clean</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
     <fieldUpdates>
         <fullName>CN_Populate_Approve_Step1</fullName>
         <field>CN_Approve_Step__c</field>
@@ -160,6 +270,27 @@
         <reevaluateOnChange>true</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>CN_Quote_Change_RecordType</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>CN_Quote</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>CN_Quote_Change_RecordType</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Quote_Set_Ready_Date</fullName>
+        <field>CN_Ready_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>CN_Quote_Set_Ready_Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CN_Quote_Status_To_Approved</fullName>
         <field>Status</field>
         <literalValue>Approved</literalValue>
@@ -200,8 +331,151 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <rules>
-        <fullName>CN_Quote_SalesRep_Follow</fullName>
+        <fullName>CN_Quote_Approval_Reminder_Step1</fullName>
         <active>true</active>
+        <formula>AND( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, RecordType.DeveloperName = &quot;CN_Quote&quot;, ISPICKVAL(Status, &quot;Submitted for Approval&quot;), ISPICKVAL( CN_Approve_Step__c , &quot;Step1&quot;), NOT(ISBLANK(CN_Current_Approver__c )) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>CN_Quote_Approval_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Quote.CN_Approval_Reminder_Datetime__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CN_Quote_Approval_Reminder_Step2</fullName>
+        <active>true</active>
+        <formula>AND( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, RecordType.DeveloperName = &quot;CN_Quote&quot;, ISPICKVAL(Status, &quot;Submitted for Approval&quot;), ISPICKVAL( CN_Approve_Step__c , &quot;Step2&quot;), NOT(ISBLANK(CN_Current_Approver__c )) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>CN_Quote_Approval_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Quote.CN_Approval_Reminder_Datetime__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CN_Quote_Approval_Reminder_Step3</fullName>
+        <active>true</active>
+        <formula>AND( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, RecordType.DeveloperName = &quot;CN_Quote&quot;, ISPICKVAL(Status, &quot;Submitted for Approval&quot;), ISPICKVAL( CN_Approve_Step__c , &quot;Step3&quot;), NOT(ISBLANK(CN_Current_Approver__c )) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>CN_Quote_Approval_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Quote.CN_Approval_Reminder_Datetime__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CN_Quote_Approval_Reminder_Step4</fullName>
+        <active>true</active>
+        <formula>AND( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, RecordType.DeveloperName = &quot;CN_Quote&quot;, ISPICKVAL(Status, &quot;Submitted for Approval&quot;), ISPICKVAL( CN_Approve_Step__c , &quot;Step4&quot;), NOT(ISBLANK(CN_Current_Approver__c )) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>CN_Quote_Approval_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Quote.CN_Approval_Reminder_Datetime__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CN_Quote_Approval_Reminder_Step5</fullName>
+        <active>true</active>
+        <formula>AND( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, RecordType.DeveloperName = &quot;CN_Quote&quot;, ISPICKVAL(Status, &quot;Submitted for Approval&quot;), ISPICKVAL( CN_Approve_Step__c , &quot;Step5&quot;), NOT(ISBLANK(CN_Current_Approver__c )) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>CN_Quote_Approval_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Quote.CN_Approval_Reminder_Datetime__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CN_Quote_Approval_Reminder_Step6</fullName>
+        <active>true</active>
+        <formula>AND( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, RecordType.DeveloperName = &quot;CN_Quote&quot;, ISPICKVAL(Status, &quot;Submitted for Approval&quot;), ISPICKVAL( CN_Approve_Step__c , &quot;Step6&quot;), NOT(ISBLANK(CN_Current_Approver__c )) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>CN_Quote_Approval_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Quote.CN_Approval_Reminder_Datetime__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CN_Quote_Approval_Reminder_Step7</fullName>
+        <active>true</active>
+        <formula>AND( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, RecordType.DeveloperName = &quot;CN_Quote&quot;, ISPICKVAL(Status, &quot;Submitted for Approval&quot;), ISPICKVAL( CN_Approve_Step__c , &quot;Step7&quot;), NOT(ISBLANK(CN_Current_Approver__c )) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>CN_Quote_Approval_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Quote.CN_Approval_Reminder_Datetime__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CN_Quote_Approval_Reminder_Step8</fullName>
+        <active>true</active>
+        <formula>AND( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, RecordType.DeveloperName = &quot;CN_Quote&quot;, ISPICKVAL(Status, &quot;Submitted for Approval&quot;), ISPICKVAL( CN_Approve_Step__c , &quot;Step8&quot;), NOT(ISBLANK(CN_Current_Approver__c )) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>CN_Quote_Approval_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CN_Quote_Approval_Reminder_Step9</fullName>
+        <active>true</active>
+        <formula>AND( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, RecordType.DeveloperName = &quot;CN_Quote&quot;, ISPICKVAL(Status, &quot;Submitted for Approval&quot;), ISPICKVAL( CN_Approve_Step__c , &quot;Step9&quot;), NOT(ISBLANK(CN_Current_Approver__c )) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>CN_Quote_Approval_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CN_Quote_Change_RecordType</fullName>
+        <actions>
+            <name>CN_Quote_Change_RecordType</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Quote_New&apos; )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_Quote_SalesRep_Follow</fullName>
+        <active>false</active>
         <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,       RecordType.DeveloperName = &quot;CN_Quote&quot; )</formula>
         <triggerType>onCreateOnly</triggerType>
         <workflowTimeTriggers>
@@ -212,5 +486,15 @@
             <timeLength>5</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CN_Quote_Set_Ready_Date</fullName>
+        <actions>
+            <name>CN_Quote_Set_Ready_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, RecordType.DeveloperName = &quot;CN_Quote&quot;, ISCHANGED( Status ),  ISPICKVAL(Status, &apos;Ready for Approval&apos;) )</formula>
+        <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

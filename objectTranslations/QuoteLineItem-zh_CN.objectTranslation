@@ -3,9 +3,23 @@
     <fields>
         <caseValues>
             <plural>false</plural>
+            <value>Channel Price</value>
+        </caseValues>
+        <name>quotelineitem_listprice</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
             <value>行项目编号</value>
         </caseValues>
         <name>quotelineitem_name</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Sales Price</value>
+        </caseValues>
+        <name>quotelineitem_salesprice</name>
     </fields>
     <fields>
         <caseValues>
@@ -29,7 +43,63 @@
         <name>quotelineitem_totalpricewithtax</name>
     </fields>
     <fields>
-        <label>客户是否接受报价</label>
+        <label><!-- Approval Status Required --></label>
+        <name>CN_Approval_Status_Required__c</name>
+    </fields>
+    <fields>
+        <label>审批状态</label>
+        <name>CN_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reject</masterLabel>
+            <translation><!-- Reject --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approval Type --></label>
+        <name>CN_Approval_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approve Complete Target --></label>
+        <name>CN_Approve_Complete_Target__c</name>
+    </fields>
+    <fields>
+        <label>审批状态</label>
+        <name>CN_Approve_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approve Type Code --></label>
+        <name>CN_Approve_Type_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver Id List --></label>
+        <name>CN_Approver_Id_List__c</name>
+    </fields>
+    <fields>
+        <label>所需审批人</label>
+        <name>CN_Approver_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- ChannelPrice --></label>
+        <name>CN_Channel_Price__c</name>
+    </fields>
+    <fields>
+        <label>所需审批备注</label>
+        <name>CN_Commets_for_Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condition Table --></label>
+        <name>CN_Condition_Table_API__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condition Type --></label>
+        <name>CN_Condition_Type_API__c</name>
+    </fields>
+    <fields>
+        <label>客户接受报价</label>
         <name>CN_Customer_Acceptance__c</name>
         <picklistValues>
             <masterLabel>Accepted</masterLabel>
@@ -41,8 +111,16 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Customer Number --></label>
+        <name>CN_Customer_Number_API__c</name>
+    </fields>
+    <fields>
         <label>报价拒绝原因</label>
         <name>CN_Denied_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Price --></label>
+        <name>CN_Discount_Price__c</name>
     </fields>
     <fields>
         <label>折扣</label>
@@ -53,12 +131,68 @@
         <name>CN_External_Id__c</name>
     </fields>
     <fields>
+        <label>财务确认报价</label>
+        <name>CN_Finance_Acceptance__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>财务处理状态</label>
+        <name>CN_Finance_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN From Splited --></label>
+        <name>CN_From_Splited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Applied Promotion --></label>
+        <name>CN_Is_Applied_Promotion__c</name>
+    </fields>
+    <fields>
+        <label>已完成审批</label>
+        <name>CN_Is_Approval_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Line Item Synced --></label>
+        <name>CN_Is_Line_Item_Synced__c</name>
+    </fields>
+    <fields>
+        <label>需审批</label>
+        <name>CN_Is_Need_My_Approval__c</name>
+    </fields>
+    <fields>
         <label><!-- Is Quote Approved --></label>
         <name>CN_Is_Quote_Approved__c</name>
     </fields>
     <fields>
+        <label><!-- Latest Ready DateTime --></label>
+        <name>CN_Latest_Ready_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Reject/Approve DateTime --></label>
+        <name>CN_Latest_Reject_Approve_DateTime__c</name>
+    </fields>
+    <fields>
         <label>行项目编号</label>
         <name>CN_Line_Item_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Price --></label>
+        <name>CN_List_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material Number API --></label>
+        <name>CN_Material_Number_API__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Discount Price --></label>
+        <name>CN_Max_Discount_Price__c</name>
     </fields>
     <fields>
         <label><!-- Minimum Price --></label>
@@ -67,6 +201,10 @@
     <fields>
         <label>原产国</label>
         <name>CN_Origin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Unit --></label>
+        <name>CN_Pricing_Unit__c</name>
     </fields>
     <fields>
         <label>产品编码</label>
@@ -89,9 +227,17 @@
         <name>CN_Promo_Price_P4__c</name>
     </fields>
     <fields>
+        <label><!-- Promotion Id --></label>
+        <name>CN_Promotion_Id__c</name>
+    </fields>
+    <fields>
         <label><!-- Promotion Member --></label>
         <name>CN_Promotion_Member__c</name>
         <relationshipLabel><!-- Quote Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Promotion Price --></label>
+        <name>CN_Promotion_Price__c</name>
     </fields>
     <fields>
         <label>箱规</label>
@@ -106,6 +252,14 @@
         <name>CN_Quote_Sync_Status__c</name>
     </fields>
     <fields>
+        <label><!-- Rate --></label>
+        <name>CN_Rate_API__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Unit --></label>
+        <name>CN_Rate_Unit_API__c</name>
+    </fields>
+    <fields>
         <label>产品描述中文</label>
         <name>CN_SKU_Description_CN__c</name>
     </fields>
@@ -114,16 +268,36 @@
         <name>CN_SKU_Description_EN__c</name>
     </fields>
     <fields>
-        <label>销售价含税</label>
+        <label><!-- Sales Price(VAT) --></label>
         <name>CN_Sales_Price_with_Tax__c</name>
     </fields>
     <fields>
-        <label>出货单位</label>
+        <label><!-- Sales Unit --></label>
         <name>CN_Selling_Unit__c</name>
     </fields>
     <fields>
         <label>保质期</label>
         <name>CN_Shelf_Life__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Error Message --></label>
+        <name>CN_Sync_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Status --></label>
+        <name>CN_Sync_Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sync Time --></label>
+        <name>CN_Sync_Time__c</name>
     </fields>
     <fields>
         <label>税金</label>
@@ -133,8 +307,24 @@
         <label><!-- Tax --></label>
         <name>CN_Tax__c</name>
     </fields>
+    <fields>
+        <label><!-- UoM --></label>
+        <name>CN_Unit_of_Measure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valid From --></label>
+        <name>CN_Valid_From_API__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valid To --></label>
+        <name>CN_Valid_To_API__c</name>
+    </fields>
     <layouts>
         <layout>CN Sinodis Quote Line Item Layout</layout>
+        <sections>
+            <label><!-- Addition Info --></label>
+            <section>Addition Info</section>
+        </sections>
         <sections>
             <label><!-- Addtional Information --></label>
             <section>Addtional Information</section>
@@ -147,9 +337,96 @@
             <label><!-- Product Information --></label>
             <section>Product Information</section>
         </sections>
+        <sections>
+            <label><!-- Sales Price --></label>
+            <section>Sales Price</section>
+        </sections>
+        <sections>
+            <label><!-- Sync Status --></label>
+            <section>Sync Status</section>
+        </sections>
     </layouts>
+    <layouts>
+        <layout>CN Sinodis Quote Line Item Layout -  Finance MDM</layout>
+        <sections>
+            <label><!-- Addition Info --></label>
+            <section>Addition Info</section>
+        </sections>
+        <sections>
+            <label><!-- Addtional Information --></label>
+            <section>Addtional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Price Information --></label>
+            <section>Price Information</section>
+        </sections>
+        <sections>
+            <label><!-- Product Information --></label>
+            <section>Product Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Price --></label>
+            <section>Sales Price</section>
+        </sections>
+        <sections>
+            <label><!-- Sync Status --></label>
+            <section>Sync Status</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage>报价行项目同步后不可编辑客户是否接受报价与财务是否接受报价。</errorMessage>
+        <name>CN_Prevent_Edit_After_Synced</name>
+    </validationRules>
     <validationRules>
         <errorMessage>报价已经审批通过，请勿更新或新增报价行项目。</errorMessage>
         <name>CN_Prevent_Edit_Approved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>在客户是否接受报价填写之前不可填写财务是否接受报价。</errorMessage>
+        <name>CN_Prevent_Edit_Finance_Accept</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>预审阶段不可编辑或新建报价行项目。</errorMessage>
+        <name>CN_Prevent_Edit_Ready</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>你只能标记需要您审批的报价行项目的审批状态。</errorMessage>
+        <name>CN_QLI_Check_Reject_Only_My_Approve</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>销售价格必须大于等于促销价格。</errorMessage>
+        <name>CN_QLI_Check_Sales_Price</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>通知财务后不可再变更客户是否接受报价。</errorMessage>
+        <name>CN_QLI_Prevent_Edit_After_Notify_Fin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>审批状态仅能在审批进行中修改。</errorMessage>
+        <name>CN_QLI_Prevent_Edit_Apporval_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不可编辑审批完成后的报价条目。</errorMessage>
+        <name>CN_QLI_Prevent_Edit_Approve_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>只有在报价审批通过后才能编辑客户是否接受报价。</errorMessage>
+        <name>CN_QLI_Prevent_Edit_Customer_Accpt</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>在报价进行审批中或者审批通过后不可编辑报价行项目。</errorMessage>
+        <name>CN_QLI_Prevent_Edit_Except_Acceptance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不可接受客户已拒绝的报价。</errorMessage>
+        <name>CN_QLI_Prevent_Edit_Fin_Acceptance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>报价处于审批拒绝状态不可编辑报价项目审批状态。</errorMessage>
+        <name>CN_QLI_Prevent_Edit_Reject</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>报价已经开始审批或者审批后不许变更促销活动。</errorMessage>
+        <name>CN_Quote_Prevent_Edit_Promotion_Member</name>
     </validationRules>
 </CustomObjectTranslation>

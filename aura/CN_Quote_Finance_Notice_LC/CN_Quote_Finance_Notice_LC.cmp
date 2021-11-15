@@ -1,0 +1,21 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickActionWithoutHeader" controller="CN_Quote_Finance_Notice_LC_Ctrl">
+    <aura:attribute name="recordId" type="String"/>
+    
+  	<aura:attribute name="confirmMsg" type="String" default="{!$Label.c.CN_Quote_Notify_Fin_Msg}"/>
+    <aura:attribute name="sendEmailMsg" type="String" default="{!$Label.c.CN_Quote_Notify_Email_Msg}"/>
+    
+    <div class="modal-header slds-modal__header">
+        <h2 class="slds-text-heading--medium">Notify Finance</h2>
+    </div>
+    <div class="slds-modal__content slds-p-around--medium">
+        
+        <div class="slds-grid slds-wrap">
+            {!v.confirmMsg}
+        </div>                  
+    </div>
+    <div class="slds-modal__footer">
+        <lightning:button class="slds-button slds-button--neutral" onclick="{!c.closeModal}">Cancel</lightning:button>
+        <lightning:button class="slds-button slds-button--brand" onclick="{!c.notifyFin}">Confirm</lightning:button>
+    </div>
+    
+</aura:component>

@@ -573,6 +573,34 @@
         <name>CN_QuoteItem_Quote_Has_Approved_Or_Synced</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_QuoteLineItem_Approved_Item_Changed_Status_ErrMsg_Quote_Reject --></label>
+        <name>CN_QuoteLineItem_Approved_Item_Changed_Status_ErrMsg_Quote_Reject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_QuoteLineItem_Field_Changed_ErrMsg_Approval_Completed --></label>
+        <name>CN_QuoteLineItem_Field_Changed_ErrMsg_Approval_Completed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Approved --></label>
+        <name>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Approved</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_New --></label>
+        <name>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_New</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Ready --></label>
+        <name>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Ready</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Reject --></label>
+        <name>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Reject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_SUBMITTED --></label>
+        <name>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_SUBMITTED</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_Quote_AOrDItems_CFRM_Msg --></label>
         <name>CN_Quote_AOrDItems_CFRM_Msg</name>
     </customLabels>
@@ -583,6 +611,30 @@
     <customLabels>
         <label><!-- CN_Quote_Apply_CFRM_Msg --></label>
         <name>CN_Quote_Apply_CFRM_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Apply_Success_Msg --></label>
+        <name>CN_Quote_Apply_Success_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Approve_Type_0 --></label>
+        <name>CN_Quote_Approve_Type_0</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Approve_Type_1 --></label>
+        <name>CN_Quote_Approve_Type_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Approve_Type_2 --></label>
+        <name>CN_Quote_Approve_Type_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Approve_Type_3 --></label>
+        <name>CN_Quote_Approve_Type_3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Approve_Type_4 --></label>
+        <name>CN_Quote_Approve_Type_4</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_Quote_CFAA_Msg --></label>
@@ -601,6 +653,42 @@
         <name>CN_Quote_Deal_Success_Msg</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_Quote_ErrMsg_Check_Promotion_Duration --></label>
+        <name>CN_Quote_ErrMsg_Check_Promotion_Duration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_ErrMsg_Check_Ready_Date --></label>
+        <name>CN_Quote_ErrMsg_Check_Ready_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Finance_Process_Status_Done --></label>
+        <name>CN_Quote_Finance_Process_Status_Done</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Finance_Process_Status_Failed --></label>
+        <name>CN_Quote_Finance_Process_Status_Failed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Finance_Process_Status_Finance_Accept --></label>
+        <name>CN_Quote_Finance_Process_Status_Finance_Accept</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Finance_Process_Status_PendingOpenAccount --></label>
+        <name>CN_Quote_Finance_Process_Status_PendingOpenAccount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Finance_Process_Status_Processing --></label>
+        <name>CN_Quote_Finance_Process_Status_Processing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Finance_Process_Status_Synced --></label>
+        <name>CN_Quote_Finance_Process_Status_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Finance_Process_Status_WaitingNotufy --></label>
+        <name>CN_Quote_Finance_Process_Status_WaitingNotufy</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_Quote_Had_ApprovedOrSubmit --></label>
         <name>CN_Quote_Had_ApprovedOrSubmit</name>
     </customLabels>
@@ -617,12 +705,28 @@
         <name>CN_Quote_Has_Approved_Or_Synced</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_Quote_Link_Promotion_ErrMsg_NoItem --></label>
+        <name>CN_Quote_Link_Promotion_ErrMsg_NoItem</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Link_Promotion_ErrMsg_NotEngaged --></label>
+        <name>CN_Quote_Link_Promotion_ErrMsg_NotEngaged</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Link_Promotion_ErrMsg_SalesPriceGreater --></label>
+        <name>CN_Quote_Link_Promotion_ErrMsg_SalesPriceGreater</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_Quote_Name --></label>
         <name>CN_Quote_Name</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_Quote_No_Permission --></label>
         <name>CN_Quote_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_No_items_Msg --></label>
+        <name>CN_Quote_No_items_Msg</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_Quote_Not_Found --></label>
@@ -637,6 +741,14 @@
         <name>CN_Quote_Not_Have_Items</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_Quote_Notify_Email_Msg --></label>
+        <name>CN_Quote_Notify_Email_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Notify_Fin_Msg --></label>
+        <name>CN_Quote_Notify_Fin_Msg</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_Quote_Retrieve_Title --></label>
         <name>CN_Quote_Retrieve_Title</name>
     </customLabels>
@@ -647,6 +759,22 @@
     <customLabels>
         <label><!-- CN_Quote_Send_To_SAP --></label>
         <name>CN_Quote_Send_To_SAP</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Send_To_SAP_ErrMsg_Failed --></label>
+        <name>CN_Quote_Send_To_SAP_ErrMsg_Failed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Send_To_SAP_ErrMsg_Failed_Retry --></label>
+        <name>CN_Quote_Send_To_SAP_ErrMsg_Failed_Retry</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Send_To_SAP_ErrMsg_NoItem --></label>
+        <name>CN_Quote_Send_To_SAP_ErrMsg_NoItem</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Split_msg --></label>
+        <name>CN_Quote_Split_msg</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_Quote_Warning_Msg_Too_Frequency --></label>
@@ -996,6 +1124,19 @@
         <sections>
             <label><!-- Leads --></label>
             <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Price Book Entry --></description>
+        <label><!-- CN Price Book Entry --></label>
+        <name>CN_Price_Book_Entry</name>
+        <sections>
+            <columns>
+                <label><!-- SKU Description CN --></label>
+                <name>SKU Description CN</name>
+            </columns>
+            <label><!-- Price Book Entries --></label>
+            <name>Price Book Entries</name>
         </sections>
     </reportTypes>
     <reportTypes>

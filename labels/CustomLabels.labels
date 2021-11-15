@@ -995,6 +995,55 @@
         <value>You can‘t delete the quote line item whose quote is approved or submited for approve or syncing.</value>
     </labels>
     <labels>
+        <fullName>CN_QuoteLineItem_Approved_Item_Changed_Status_ErrMsg_Quote_Reject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_QuoteLineItem_Approved_Item_Changed_Status_ErrMsg_Quote_Reject</shortDescription>
+        <value>It&apos;s not allowed to change Approval Status for Approved Quote Line Item of Rejected Quote.</value>
+    </labels>
+    <labels>
+        <fullName>CN_QuoteLineItem_Field_Changed_ErrMsg_Approval_Completed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_QuoteLineItem_Field_Changed_ErrMsg_Approval_Completed</shortDescription>
+        <value>It&apos;s not allowed to change Price Information for Approved Quote Line Item.</value>
+    </labels>
+    <labels>
+        <fullName>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Approved</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Approved</shortDescription>
+        <value>It&apos;s not allowed to change any pricing Information for Approved Quote.</value>
+    </labels>
+    <labels>
+        <fullName>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_New</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_New</shortDescription>
+        <value>It&apos;s not allowed to change Approval Information for New Quote.</value>
+    </labels>
+    <labels>
+        <fullName>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Ready</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Ready</shortDescription>
+        <value>It&apos;s not allowed to change Any Information when Ready for Approval.</value>
+    </labels>
+    <labels>
+        <fullName>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Reject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Reject</shortDescription>
+        <value>It&apos;s not allowed to change Promotion and Approval Information for Reject Quote.</value>
+    </labels>
+    <labels>
+        <fullName>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_SUBMITTED</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_SUBMITTED</shortDescription>
+        <value>It&apos;s not allowed to change Any Information for Submitted Quote.</value>
+    </labels>
+    <labels>
         <fullName>CN_Quote_AOrDItems_CFRM_Msg</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -1014,6 +1063,48 @@
         <protected>false</protected>
         <shortDescription>CN_Quote_Apply_CFRM_Msg</shortDescription>
         <value>Apply Promotion to the Quote?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Apply_Success_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Apply_Success_Msg</shortDescription>
+        <value>Promotion Applied Success. Applied Count: {0}</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Approve_Type_0</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Approve_Type_0</shortDescription>
+        <value>Sales Price&gt;=Promo Price</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Approve_Type_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Approve_Type_1</shortDescription>
+        <value>Sales Price&gt;=Channel Price</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Approve_Type_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Approve_Type_2</shortDescription>
+        <value>Discount&lt;=Sales Price&lt;Channel Price</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Approve_Type_3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Approve_Type_3</shortDescription>
+        <value>Max Discount=&lt;Sales Price&lt;Discount</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Approve_Type_4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Approve_Type_4</shortDescription>
+        <value>Sales Price&lt;Max Discount</value>
     </labels>
     <labels>
         <fullName>CN_Quote_CFAA_Msg</fullName>
@@ -1044,6 +1135,69 @@
         <value>All Quote Line Items have been dealt with.</value>
     </labels>
     <labels>
+        <fullName>CN_Quote_ErrMsg_Check_Promotion_Duration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_ErrMsg_Check_Promotion_Duration</shortDescription>
+        <value>The Promotion [{0}] is not in activate duration.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_ErrMsg_Check_Ready_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_ErrMsg_Check_Ready_Date</shortDescription>
+        <value>It&apos;s need to ready for approval again, please submit after ready immediately.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Finance_Process_Status_Done</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Finance_Process_Status_Done</shortDescription>
+        <value>Done - Processed:</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Finance_Process_Status_Failed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Finance_Process_Status_Failed</shortDescription>
+        <value>, Failed:</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Finance_Process_Status_Finance_Accept</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Finance_Process_Status_Finance_Accept</shortDescription>
+        <value>, Finance Accept:</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Finance_Process_Status_PendingOpenAccount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Finance_Process_Status_PendingOpenAccount</shortDescription>
+        <value>Pending Open Account</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Finance_Process_Status_Processing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Finance_Process_Status_Processing</shortDescription>
+        <value>Processing - Customer Accept:</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Finance_Process_Status_Synced</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Finance_Process_Status_Synced</shortDescription>
+        <value>, Synced:</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Finance_Process_Status_WaitingNotufy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Finance_Process_Status_WaitingNotufy</shortDescription>
+        <value>Waiting Notifice Finance</value>
+    </labels>
+    <labels>
         <fullName>CN_Quote_Had_ApprovedOrSubmit</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -1072,6 +1226,27 @@
         <value>You can‘t delete the quote while it is approved or submited for approve or syncing.</value>
     </labels>
     <labels>
+        <fullName>CN_Quote_Link_Promotion_ErrMsg_NoItem</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Link_Promotion_ErrMsg_NoItem</shortDescription>
+        <value>No Promotion Price found for SKU [{0}].</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Link_Promotion_ErrMsg_NotEngaged</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Link_Promotion_ErrMsg_NotEngaged</shortDescription>
+        <value>This Promotion is not available.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Link_Promotion_ErrMsg_SalesPriceGreater</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Link_Promotion_ErrMsg_SalesPriceGreater</shortDescription>
+        <value>Only If Sales Price greater than Promotion Price, the Promotion could be applied.</value>
+    </labels>
+    <labels>
         <fullName>CN_Quote_Name</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -1084,6 +1259,13 @@
         <protected>false</protected>
         <shortDescription>CN_Quote_No_Permission</shortDescription>
         <value>You don&apos;t have permission to this quote.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_No_items_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_No_items_Msg</shortDescription>
+        <value>No items need split</value>
     </labels>
     <labels>
         <fullName>CN_Quote_Not_Found</fullName>
@@ -1107,6 +1289,20 @@
         <value>This Quote doesn&apos;t have Quote Line Item.</value>
     </labels>
     <labels>
+        <fullName>CN_Quote_Notify_Email_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Notify_Email_Msg</shortDescription>
+        <value>Send Notify Email Successfully</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Notify_Fin_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Notify_Fin_Msg</shortDescription>
+        <value>Please confirm to notify Finance</value>
+    </labels>
+    <labels>
         <fullName>CN_Quote_Retrieve_Title</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -1118,7 +1314,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>CN_Quote_Send_Success_Msg</shortDescription>
-        <value>This {0} has been sent to SAP successfully.</value>
+        <value>This {0} has been sent to SAP successfully. Sent Count: {1}</value>
     </labels>
     <labels>
         <fullName>CN_Quote_Send_To_SAP</fullName>
@@ -1126,6 +1322,34 @@
         <protected>false</protected>
         <shortDescription>CN_Quote_Send_To_SAP</shortDescription>
         <value>Are you sure to send this {0} to SAP?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Send_To_SAP_ErrMsg_Failed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Send_To_SAP_ErrMsg_Failed</shortDescription>
+        <value>Quote Line Item Sync Failed. Sent Count: {0}, Failed Count: {1}, Failed Product Code: {2}</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Send_To_SAP_ErrMsg_Failed_Retry</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Send_To_SAP_ErrMsg_Failed_Retry</shortDescription>
+        <value>Please retry.If error still exists, contact your system administrator.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Send_To_SAP_ErrMsg_NoItem</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Send_To_SAP_ErrMsg_NoItem</shortDescription>
+        <value>No Quote Line Items need to send.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Split_msg</fullName>
+        <language>zh_CN</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Split_msg</shortDescription>
+        <value>Please confirm to split items</value>
     </labels>
     <labels>
         <fullName>CN_Quote_Warning_Msg_Too_Frequency</fullName>

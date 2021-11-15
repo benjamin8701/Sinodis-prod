@@ -569,8 +569,36 @@
         <name>CN_QuoteItem_Not_Need_Deal</name>
     </customLabels>
     <customLabels>
-        <label>报价已经提交审批、已经审批通过或正在同步，您不能删除此报价行项目。</label>
+        <label>报价已经预审、提交审批、已经审批通过或正在同步，您不能删除此报价行项目。</label>
         <name>CN_QuoteItem_Quote_Has_Approved_Or_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label>被拒绝的报价不可更改已审批通过的报价行项目的审批状态。</label>
+        <name>CN_QuoteLineItem_Approved_Item_Changed_Status_ErrMsg_Quote_Reject</name>
+    </customLabels>
+    <customLabels>
+        <label>已审批完成的报价行条目不可编辑价格相关信息。</label>
+        <name>CN_QuoteLineItem_Field_Changed_ErrMsg_Approval_Completed</name>
+    </customLabels>
+    <customLabels>
+        <label>已审批完成的报价不可编辑报价行条目的价格相关信息。</label>
+        <name>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Approved</name>
+    </customLabels>
+    <customLabels>
+        <label>处于New阶段的报价不可编辑报价行条目的审批相关信息。</label>
+        <name>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_New</name>
+    </customLabels>
+    <customLabels>
+        <label>已提交预审的报价不可编辑报价行条目的任何信息。</label>
+        <name>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Ready</name>
+    </customLabels>
+    <customLabels>
+        <label>被拒绝的报价不可编辑报价行条目的促销与审批相关信息。</label>
+        <name>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_Reject</name>
+    </customLabels>
+    <customLabels>
+        <label>正在审批中的报价不可编辑报价行条目的任何信息。</label>
+        <name>CN_QuoteLineItem_Field_Changed_ErrMsg_Quote_SUBMITTED</name>
     </customLabels>
     <customLabels>
         <label>接受/拒绝所有报价行项目？</label>
@@ -583,6 +611,30 @@
     <customLabels>
         <label>为此报价应用促销价？</label>
         <name>CN_Quote_Apply_CFRM_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>应用促销成功，应用数量：{0}</label>
+        <name>CN_Quote_Apply_Success_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Approve_Type_0 --></label>
+        <name>CN_Quote_Approve_Type_0</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Approve_Type_1 --></label>
+        <name>CN_Quote_Approve_Type_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Approve_Type_2 --></label>
+        <name>CN_Quote_Approve_Type_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Approve_Type_3 --></label>
+        <name>CN_Quote_Approve_Type_3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Quote_Approve_Type_4 --></label>
+        <name>CN_Quote_Approve_Type_4</name>
     </customLabels>
     <customLabels>
         <label>接受所有报价行项目报价？</label>
@@ -601,6 +653,42 @@
         <name>CN_Quote_Deal_Success_Msg</name>
     </customLabels>
     <customLabels>
+        <label>报价[{0}]的生效时间与到期日期不在促销活动的有效时间范围内。</label>
+        <name>CN_Quote_ErrMsg_Check_Promotion_Duration</name>
+    </customLabels>
+    <customLabels>
+        <label>请重新预审，预审与提交报价时间间隔过长。</label>
+        <name>CN_Quote_ErrMsg_Check_Ready_Date</name>
+    </customLabels>
+    <customLabels>
+        <label>完成 - 已处理:</label>
+        <name>CN_Quote_Finance_Process_Status_Done</name>
+    </customLabels>
+    <customLabels>
+        <label>，同步失败:</label>
+        <name>CN_Quote_Finance_Process_Status_Failed</name>
+    </customLabels>
+    <customLabels>
+        <label>，财务接受:</label>
+        <name>CN_Quote_Finance_Process_Status_Finance_Accept</name>
+    </customLabels>
+    <customLabels>
+        <label>等待开户</label>
+        <name>CN_Quote_Finance_Process_Status_PendingOpenAccount</name>
+    </customLabels>
+    <customLabels>
+        <label>待处理 - 客户接受:</label>
+        <name>CN_Quote_Finance_Process_Status_Processing</name>
+    </customLabels>
+    <customLabels>
+        <label>，已同步:</label>
+        <name>CN_Quote_Finance_Process_Status_Synced</name>
+    </customLabels>
+    <customLabels>
+        <label>等待通知财务</label>
+        <name>CN_Quote_Finance_Process_Status_WaitingNotufy</name>
+    </customLabels>
+    <customLabels>
         <label>您不能为已经提交审批或已经审批通过的报价应用促销价。</label>
         <name>CN_Quote_Had_ApprovedOrSubmit</name>
     </customLabels>
@@ -617,12 +705,28 @@
         <name>CN_Quote_Has_Approved_Or_Synced</name>
     </customLabels>
     <customLabels>
+        <label>未找到SKU [{0}] 的Promotion Price。</label>
+        <name>CN_Quote_Link_Promotion_ErrMsg_NoItem</name>
+    </customLabels>
+    <customLabels>
+        <label>该客户未参加此促销活动。</label>
+        <name>CN_Quote_Link_Promotion_ErrMsg_NotEngaged</name>
+    </customLabels>
+    <customLabels>
+        <label>只有当Sales Price比Promotion Price价格更高的情况下才可以应用Promotion Price。</label>
+        <name>CN_Quote_Link_Promotion_ErrMsg_SalesPriceGreater</name>
+    </customLabels>
+    <customLabels>
         <label>报价</label>
         <name>CN_Quote_Name</name>
     </customLabels>
     <customLabels>
         <label>您没有访问这个报价的权限。</label>
         <name>CN_Quote_No_Permission</name>
+    </customLabels>
+    <customLabels>
+        <label>没有可拆单的报价</label>
+        <name>CN_Quote_No_items_Msg</name>
     </customLabels>
     <customLabels>
         <label>没有找到{0}。</label>
@@ -637,16 +741,40 @@
         <name>CN_Quote_Not_Have_Items</name>
     </customLabels>
     <customLabels>
+        <label>成功发送提醒邮件</label>
+        <name>CN_Quote_Notify_Email_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>请确认通知财务人员</label>
+        <name>CN_Quote_Notify_Fin_Msg</name>
+    </customLabels>
+    <customLabels>
         <label>发送{0}</label>
         <name>CN_Quote_Retrieve_Title</name>
     </customLabels>
     <customLabels>
-        <label>{0}已经被成功发送到SAP。</label>
+        <label>{0}已经被成功发送到SAP。发送数量: {1}</label>
         <name>CN_Quote_Send_Success_Msg</name>
     </customLabels>
     <customLabels>
         <label>您确定发送这个{0}到SAP吗？</label>
         <name>CN_Quote_Send_To_SAP</name>
+    </customLabels>
+    <customLabels>
+        <label>报价行条目发送失败。发送数量：{0}，失败数量：{1}，失败产品编号：{2}</label>
+        <name>CN_Quote_Send_To_SAP_ErrMsg_Failed</name>
+    </customLabels>
+    <customLabels>
+        <label>请重试，如果错误仍然存在，请联系系统管理员寻求协助。</label>
+        <name>CN_Quote_Send_To_SAP_ErrMsg_Failed_Retry</name>
+    </customLabels>
+    <customLabels>
+        <label>没有可发送的报价行条目。</label>
+        <name>CN_Quote_Send_To_SAP_ErrMsg_NoItem</name>
+    </customLabels>
+    <customLabels>
+        <label>请确认拆单</label>
+        <name>CN_Quote_Split_msg</name>
     </customLabels>
     <customLabels>
         <label>您的操作太频繁了，请稍等一下。</label>
@@ -997,6 +1125,19 @@
         <sections>
             <label><!-- Leads --></label>
             <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Price Book Entry --></description>
+        <label><!-- CN Price Book Entry --></label>
+        <name>CN_Price_Book_Entry</name>
+        <sections>
+            <columns>
+                <label><!-- SKU Description CN --></label>
+                <name>SKU Description CN</name>
+            </columns>
+            <label><!-- Price Book Entries --></label>
+            <name>Price Book Entries</name>
         </sections>
     </reportTypes>
     <reportTypes>

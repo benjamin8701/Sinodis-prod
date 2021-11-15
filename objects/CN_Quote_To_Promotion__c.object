@@ -154,6 +154,16 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
+        <fullName>CN_Is_Promotion_Published__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Promotion_Member__r.CN_IsPublished__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Promotion Published</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Is_Quote_Approved__c</fullName>
         <externalId>false</externalId>
         <formula>ISPICKVAL( CN_Quote__r.Status , &quot;Approved&quot;)</formula>
@@ -164,10 +174,30 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CN_Promotion_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Promotion_Member__r.CN_Promotion_End_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Promotion End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>CN_Promotion_Member__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
         <label>Promotion Member</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>CN_Promotion_Member__c.CN_IsPublished__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
         <referenceTo>CN_Promotion_Member__c</referenceTo>
         <relationshipLabel>Quote To Promotions</relationshipLabel>
         <relationshipName>Quote_To_Promotions</relationshipName>
@@ -175,6 +205,41 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Promotion_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Promotion_Member__r.CN_Promotion__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Promotion Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Promotion_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Promotion_Member__r.CN_Promotion__r.CN_Start_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Promotion Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CN_Promotion_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( CN_Promotion_Member__r.CN_Promotion__r.CN_Status__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Promotion Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Quote_Status__c</fullName>
@@ -230,6 +295,29 @@
     </recordTypes>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>CN_QTP_ChecK_Related_Account</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+ CN_Quote__r.Opportunity.Account.Id !=  CN_Promotion_Member__r.CN_Account__r.Id 
+)</errorConditionFormula>
+        <errorDisplayField>CN_Promotion_Member__c</errorDisplayField>
+        <errorMessage>The Promotion selected should be same as Quote&apos;s Account.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_QTP_Check_Promotion_Duration</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+ISNEW(),
+NOT( CN_Promotion_Member__r.CN_Promotion_Start_Date__c &lt;= CN_Quote__r.CN_Effective_Date__c &amp;&amp;  CN_Quote__r.ExpirationDate  &lt;=  CN_Promotion_Member__r.CN_Promotion_End_Date__c )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Promotion_Member__c</errorDisplayField>
+        <errorMessage>The Promotion is not in activate duration.</errorMessage>
+    </validationRules>
     <validationRules>
         <fullName>CN_QTP_Prevent_Edit</fullName>
         <active>true</active>

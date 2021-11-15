@@ -86,21 +86,211 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Quote_Line_Item_Record_Page</content>
         <formFactor>Large</formFactor>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Quote_Line_Item_Record_Page</content>
         <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>CN_Quote_Line_Item_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>CN_Quote_Line_Item_Compact_Layout</fullName>
+        <fields>Product2Id</fields>
+        <fields>UnitPrice</fields>
+        <fields>CN_Sales_Price_with_Tax__c</fields>
+        <fields>CN_Tax__c</fields>
+        <fields>CN_Valid_From_API__c</fields>
+        <fields>CN_Valid_To_API__c</fields>
+        <fields>CN_Quote_Sync_Status__c</fields>
+        <label>Quote Line Item Compact Layout</label>
+    </compactLayouts>
     <enableFeeds>false</enableFeeds>
     <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>CN_Approval_Status_Required__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval Status Required</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Approval_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Reject</fullName>
+                    <default>false</default>
+                    <label>Reject</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Approval_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+ CN_Is_Applied_Promotion__c ,
+  $Label.CN_Quote_Approve_Type_0,
+ IF(
+    UnitPrice &gt;=  CN_Channel_Price__c,
+    $Label.CN_Quote_Approve_Type_1,
+    IF(
+       CN_Discount_Price__c &lt;= UnitPrice &amp;&amp; UnitPrice &lt; CN_Channel_Price__c,
+       $Label.CN_Quote_Approve_Type_2,
+       IF(
+           CN_Max_Discount_Price__c &lt;= UnitPrice &amp;&amp; UnitPrice &lt; CN_Discount_Price__c,
+           $Label.CN_Quote_Approve_Type_3,
+           IF(
+              UnitPrice &lt; CN_Max_Discount_Price__c,
+              $Label.CN_Quote_Approve_Type_4,
+              &quot;&quot;
+           )
+       )
+    )
+ )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Approval Type</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Approve_Complete_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Approve Complete Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Approve_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quote.CN_Approved_Status__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Approve Status</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Approve_Type_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+ CN_Is_Applied_Promotion__c ,
+  0,
+ IF(
+    UnitPrice &gt;=  CN_Channel_Price__c,
+    1,
+    IF(
+       CN_Discount_Price__c &lt;= UnitPrice &amp;&amp; UnitPrice &lt; CN_Channel_Price__c,
+       2,
+       IF(
+           CN_Max_Discount_Price__c &lt;= UnitPrice &amp;&amp; UnitPrice &lt; CN_Discount_Price__c,
+           3,
+           IF(
+              UnitPrice &lt; CN_Max_Discount_Price__c,
+              4,
+              99
+           )
+       )
+    )
+ )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Approve Type Code</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Approver_Id_List__c</fullName>
+        <externalId>false</externalId>
+        <label>Approver Id List</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Approver_Required__c</fullName>
+        <externalId>false</externalId>
+        <label>Approver Required</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Channel_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>ChannelPrice</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CN_Commets_for_Approver__c</fullName>
+        <externalId>false</externalId>
+        <label>Commets for Approver</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Condition_Table_API__c</fullName>
+        <defaultValue>&quot;A005&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Condition Table</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Condition_Type_API__c</fullName>
+        <defaultValue>&quot;RB00&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Condition Type</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <fields>
         <fullName>CN_Customer_Acceptance__c</fullName>
         <externalId>false</externalId>
@@ -125,6 +315,16 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>CN_Customer_Number_API__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quote.Opportunity.Account.CN_Customer_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Number</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Denied_Reason__c</fullName>
         <externalId>false</externalId>
         <label>Denied Reason</label>
@@ -132,6 +332,15 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Discount_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount Price</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>CN_Discount__c</fullName>
@@ -155,6 +364,87 @@
         <unique>true</unique>
     </fields>
     <fields>
+        <fullName>CN_Finance_Acceptance__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Acceptance</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accepted</fullName>
+                    <default>false</default>
+                    <label>Accepted</label>
+                </value>
+                <value>
+                    <fullName>Denied</fullName>
+                    <default>false</default>
+                    <label>Denied</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Finance_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(  Quote.CN_Is_Finance_Notified__c &amp;&amp; ISPICKVAL(CN_Customer_Acceptance__c,&apos;Accepted&apos;) , 
+
+   If (  ISPICKVAL(CN_Finance_Acceptance__c , &apos;Accepted&apos; )  , 
+       if ( ISPICKVAL(CN_Sync_Status__c , &apos;Success&apos;), &apos;Completed&apos;,
+             if ( ISPICKVAL(CN_Sync_Status__c , &apos;Failed&apos;), &apos;Sync Failed&apos;, &apos;In progress&apos; ) 
+          ),
+
+       if ( ISPICKVAL(CN_Finance_Acceptance__c , &apos;Denied&apos;), &apos;Denied&apos;, &apos;In progress&apos; )
+     
+    ),
+   &apos;&apos;
+)</formula>
+        <label>Finance Status</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_From_Splited__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CN From Splited</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Applied_Promotion__c</fullName>
+        <externalId>false</externalId>
+        <formula>NOT(ISBLANK(CN_Promotion_Member__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Applied Promotion</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Approval_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Approval Completed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Line_Item_Synced__c</fullName>
+        <externalId>false</externalId>
+        <formula>ISPICKVAL( CN_Sync_Status__c , &quot;Success&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Line Item Synced</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Need_My_Approval__c</fullName>
+        <externalId>false</externalId>
+        <formula>CONTAINS( CN_Approver_Id_List__c ,  $User.Id )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Need My Approval</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Is_Quote_Approved__c</fullName>
         <externalId>false</externalId>
         <formula>ISPICKVAL(Quote.Status, &quot;Approved&quot;)</formula>
@@ -163,11 +453,53 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CN_Latest_Ready_DateTime__c</fullName>
+        <externalId>false</externalId>
+        <label>Latest Ready DateTime</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CN_Latest_Reject_Approve_DateTime__c</fullName>
+        <externalId>false</externalId>
+        <label>Latest Reject/Approve DateTime</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>CN_Line_Item_Number__c</fullName>
         <displayFormat>QI-{0000000000}</displayFormat>
         <externalId>true</externalId>
         <label>Line Item Number</label>
         <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>CN_List_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>List Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CN_Material_Number_API__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Product_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Material Number API</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Max_Discount_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Max Discount Price</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>CN_Minimum_Price__c</fullName>
@@ -185,6 +517,16 @@
         <label>Origin</label>
         <required>false</required>
         <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Pricing_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Pricing Unit</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -233,6 +575,16 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>CN_Promotion_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Promotion_Member__r.CN_Promotion__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Promotion Id</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Promotion_Member__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -242,6 +594,15 @@
         <relationshipName>Quote_Line_Items</relationshipName>
         <required>false</required>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Promotion_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Promotion Price</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>CN_Qty_per_Carton__c</fullName>
@@ -273,6 +634,27 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Rate_API__c</fullName>
+        <externalId>false</externalId>
+        <formula>UnitPrice /  CN_List_Price__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>CN_Rate_Unit_API__c</fullName>
+        <defaultValue>&quot;%&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Rate Unit</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_SKU_Description_CN__c</fullName>
         <externalId>false</externalId>
         <formula>Product2.CN_SKU_Description_CN__c</formula>
@@ -293,19 +675,19 @@
     <fields>
         <fullName>CN_Sales_Price_with_Tax__c</fullName>
         <externalId>false</externalId>
-        <formula>UnitPrice * ( 1 +   VALUE(LEFT(CN_Tax__c,LEN(CN_Tax__c)-1))/100)</formula>
+        <formula>UnitPrice * ( 1 + VALUE(LEFT(CN_Tax__c,LEN(CN_Tax__c)-1))/100)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Sales Price with Tax</label>
+        <label>Sales Price(VAT)</label>
         <precision>18</precision>
         <required>false</required>
-        <scale>3</scale>
+        <scale>2</scale>
         <type>Currency</type>
     </fields>
     <fields>
         <fullName>CN_Selling_Unit__c</fullName>
         <externalId>false</externalId>
-        <formula>Product2.CN_Selling_Unit__c</formula>
-        <label>Selling Unit</label>
+        <formula>Text(CN_Pricing_Unit__c) &amp;&apos;-&apos; &amp; CN_Unit_of_Measure__c &amp; &apos;   Tax:&apos; &amp;  CN_Tax__c</formula>
+        <label>Sales Unit</label>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
@@ -322,6 +704,44 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Sync_Error_Message__c</fullName>
+        <externalId>false</externalId>
+        <label>Sync Error Message</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CN_Sync_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Sync Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Success</fullName>
+                    <default>false</default>
+                    <label>Success</label>
+                </value>
+                <value>
+                    <fullName>Failed</fullName>
+                    <default>false</default>
+                    <label>Failed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Sync_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Sync Time</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>CN_Tax_Formula__c</fullName>
         <externalId>false</externalId>
         <formula>IF(
@@ -329,7 +749,7 @@
   CASE( Product2.CN_Tax_Code__c , &apos;0&apos;, &apos;0&apos;, &apos;1&apos;, &apos;17&apos;,&apos;0&apos;),
   IF(
     Quote.Opportunity.Account.CN_Tax_Classification__c == &apos;1&apos;,
-    CASE( Product2.CN_Tax_Code__c, &apos;0&apos;, &apos;0&apos;, &apos;1&apos;, &apos;13&apos;,&apos;2&apos;,&apos;13&apos;,&apos;5&apos;,&apos;9&apos;,&apos;0&apos;),
+    CASE( Product2.CN_Tax_Code__c, &apos;0&apos;, &apos;0&apos;, &apos;1&apos;, &apos;13&apos;,&apos;2&apos;,&apos;13&apos;,&apos;5&apos;,&apos;9&apos;,&apos;13&apos;),
     &apos;0&apos;
   )
 ) &amp; &apos;%&apos;</formula>
@@ -348,6 +768,35 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Unit_of_Measure__c</fullName>
+        <externalId>false</externalId>
+        <label>UoM</label>
+        <length>5</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Valid_From_API__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(YEAR(Quote.CN_Effective_Date__c)) +   LPAD(TEXT(MONTH(Quote.CN_Effective_Date__c)), 2, &quot;0&quot;) +  LPAD(TEXT(DAY(Quote.CN_Effective_Date__c)), 2, &quot;0&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Valid From</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Valid_To_API__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(YEAR(Quote.ExpirationDate)) + LPAD(TEXT(MONTH(Quote.ExpirationDate)), 2, &quot;0&quot;) + LPAD(TEXT(DAY(Quote.ExpirationDate)), 2, &quot;0&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Valid To</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
     </fields>
     <fields>
@@ -358,6 +807,15 @@
     </fields>
     <fields>
         <fullName>Product2Id</fullName>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Product2.IsActive</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -393,8 +851,19 @@
     </fields>
     <sharingModel>ControlledByParent</sharingModel>
     <validationRules>
-        <fullName>CN_Prevent_Edit_Approved</fullName>
+        <fullName>CN_Prevent_Edit_After_Synced</fullName>
         <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+ CN_Is_Line_Item_Synced__c ,
+ISCHANGED(CN_Customer_Acceptance__c ) ||  ISCHANGED(  CN_Finance_Acceptance__c )
+)</errorConditionFormula>
+        <errorMessage>It&apos;s not allowed to change Customer Acceptance or Finance Acceptance after synced to SAP.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Prevent_Edit_Approved</fullName>
+        <active>false</active>
         <description>CN_Prevent_Edit_AfterQuoteApproved</description>
         <errorConditionFormula>AND(
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
@@ -407,8 +876,160 @@
     ),
     ISNEW()
   ),
-  ISPICKVAL( Quote.Status , &quot;Approved&quot;)
+  ISPICKVAL( Quote.Status , &quot;Approved&quot;),
+  NOT(CN_From_Splited__c),
+  NOT(ISCHANGED(CN_Sync_Status__c)),
+  NOT(ISCHANGED(CN_Sync_Time__c)),
+  NOT(ISCHANGED(CN_Sync_Error_Message__c))
 )</errorConditionFormula>
         <errorMessage>Pls don&apos;t update or create the quote line item when the quote has been approved.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Prevent_Edit_Finance_Accept</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+ISBLANK(TEXT(CN_Customer_Acceptance__c )),
+  ISCHANGED( CN_Finance_Acceptance__c ) 
+)</errorConditionFormula>
+        <errorDisplayField>CN_Finance_Acceptance__c</errorDisplayField>
+        <errorMessage>It&apos;s not allowed to change Finance Acceptance until Customer Acceptance had been filled.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Prevent_Edit_Ready</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+ CN_Quote_Status__c = &apos;Ready for Approval&apos; ,
+NOT(ISCHANGED(CN_Latest_Ready_DateTime__c))
+)</errorConditionFormula>
+        <errorMessage>Please don&apos;t update or create the quote line item when the quote is ready for approval.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_QLI_Check_Reject_Only_My_Approve</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+ CN_Quote_Status__c = &apos;Submitted for Approval&apos;,
+ ISCHANGED( CN_Approval_Status__c ),
+ NOT(CN_Is_Need_My_Approval__c)
+)</errorConditionFormula>
+        <errorDisplayField>CN_Approval_Status__c</errorDisplayField>
+        <errorMessage>You can only mark approval status for the Quote Line Item that required you to approve.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_QLI_Check_Sales_Price</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+    $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+    NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+    if( CN_Is_Applied_Promotion__c, UnitPrice &lt;  CN_Promotion_Price__c , false )     
+
+)</errorConditionFormula>
+        <errorMessage>Sales Price must greater or equal than Promotion Price.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_QLI_Prevent_Edit_After_Notify_Fin</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+NOT(IF($Profile.Name = &quot;CN Finance MDM&quot;, TRUE, FALSE)),
+  Quote.CN_Is_Finance_Notified__c ,
+ ISCHANGED( CN_Customer_Acceptance__c )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Customer_Acceptance__c</errorDisplayField>
+        <errorMessage>It&apos;s not allowed to change Customer Acceptance after notified Finance MDM.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_QLI_Prevent_Edit_Apporval_Status</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+ OR(
+    CN_Quote_Status__c = &apos;Submitted for Approval&apos;,
+    AND( PRIORVALUE(CN_Quote_Status__c ) = &apos;Submitted for Approval&apos;, CN_Quote_Status__c = &apos;Rejected&apos; )
+ ),
+ NOT(ISCHANGED( CN_Approval_Status__c ))
+)</errorConditionFormula>
+        <errorMessage>It&apos;s only allowed to change approval status in approval processing.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_QLI_Prevent_Edit_Approve_Complete</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+NOT(ISNEW()),
+
+CN_Is_Approval_Completed__c,
+NOT(ISCHANGED(CN_Customer_Acceptance__c ) || ISCHANGED(CN_Finance_Acceptance__c)),
+NOT(ISCHANGED(CN_Is_Approval_Completed__c))
+)</errorConditionFormula>
+        <errorMessage>It&apos;s not allowed to edit Quote Line Item after approve complete.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_QLI_Prevent_Edit_Customer_Accpt</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+ CN_Quote_Status__c != &apos;Approved&apos;,
+ ISCHANGED( CN_Customer_Acceptance__c )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Customer_Acceptance__c</errorDisplayField>
+        <errorMessage>Customer Acceptance could only be edit after Quote approved.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_QLI_Prevent_Edit_Except_Acceptance</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+NOT(ISNEW()),
+ NOT(CN_Quote_Status__c != &apos;New&apos; || CN_Quote_Status__c != &apos;Rejected&apos;),
+ NOT(ISCHANGED( CN_Approval_Status__c ) || ISCHANGED(CN_Customer_Acceptance__c ) || ISCHANGED(CN_Finance_Acceptance__c ))
+)</errorConditionFormula>
+        <errorMessage>It&apos;s not allowed to edit Quote Line Item when Quote is approving or approved.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_QLI_Prevent_Edit_Fin_Acceptance</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+ISCHANGED( CN_Finance_Acceptance__c ),
+ ISPICKVAL( CN_Customer_Acceptance__c , &quot;Denied&quot;),
+  ISPICKVAL( CN_Finance_Acceptance__c , &quot;Accepted&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>CN_Finance_Acceptance__c</errorDisplayField>
+        <errorMessage>It&apos;s not allowed to accept Quote Line Item which denied by customer.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_QLI_Prevent_Edit_Reject</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+ CN_Quote_Status__c = &quot;Rejected&quot;,
+ ISCHANGED( CN_Approval_Status__c )
+)</errorConditionFormula>
+        <errorMessage>It&apos;s not allow to change approve status when Quote is rejected.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Quote_Prevent_Edit_Promotion_Member</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+ CN_Quote_Status__c != &apos;New&apos;,
+ ISCHANGED( CN_Promotion_Member__c ) || ISCHANGED( CN_Promotion_Price__c )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Promotion_Member__c</errorDisplayField>
+        <errorMessage>It&apos;s not allowed to apply or un-apply Promtion when Quote in approval process or approved.</errorMessage>
     </validationRules>
 </CustomObject>

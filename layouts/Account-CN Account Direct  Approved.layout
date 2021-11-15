@@ -470,9 +470,10 @@
     <relatedLists>
         <excludeButtons>MassChangeOwner</excludeButtons>
         <fields>NAME</fields>
+        <fields>CN_Start_Date__c</fields>
+        <fields>CN_End_Date__c</fields>
         <fields>CN_Contract_Type__c</fields>
         <fields>CN_Contract_Status__c</fields>
-        <fields>CN_Guarantor__c</fields>
         <fields>CN_Payment_Term__c</fields>
         <fields>CN_Rebate_Type__c</fields>
         <relatedList>CN_Contract__c.CN_Direct_Account_Name__c</relatedList>

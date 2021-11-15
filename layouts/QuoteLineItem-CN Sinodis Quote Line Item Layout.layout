@@ -11,25 +11,64 @@
                 <field>CN_Line_Item_Number__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Description</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
                 <field>QuoteId</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>Product2Id</field>
+                <behavior>Edit</behavior>
+                <field>Description</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Subtotal</field>
+                <field>CN_Is_Approval_Completed__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Product2Id</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Quantity</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>Sales Price</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>UnitPrice</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Unit_of_Measure__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Rate_API__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Sales_Price_with_Tax__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Pricing_Unit__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Tax__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
         <customLabel>true</customLabel>
@@ -39,33 +78,29 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>ListPrice</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>UnitPrice</field>
+                <field>CN_List_Price__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Discount__c</field>
+                <field>CN_Discount_Price__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Promotion_Price__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>Quantity</field>
+                <behavior>Readonly</behavior>
+                <field>CN_Channel_Price__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Tax_Formula__c</field>
+                <field>CN_Max_Discount_Price__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Sales_Price_with_Tax__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>TotalPrice</field>
+                <behavior>Edit</behavior>
+                <field>CN_Promotion_Member__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -84,14 +119,6 @@
                 <behavior>Readonly</behavior>
                 <field>CN_SKU_Description_CN__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_SKU_Description_EN__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Selling_Unit__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -100,11 +127,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Shelf_Life__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Qty_per_Carton__c</field>
+                <field>CN_SKU_Description_EN__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -119,11 +142,63 @@
                 <behavior>Edit</behavior>
                 <field>CN_Customer_Acceptance__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Finance_Acceptance__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Is_Need_My_Approval__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>CN_Approval_Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>CN_Denied_Reason__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsLeftToRight</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>false</detailHeading>
+        <editHeading>false</editHeading>
+        <label>Addition Info</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Approver_Required__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Commets_for_Approver__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>OneColumn</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>Sync Status</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Sync_Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Sync_Error_Message__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Sync_Time__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -159,10 +234,22 @@
     </layoutSections>
     <multilineLayoutFields>CN_Line_Item_Number__c</multilineLayoutFields>
     <multilineLayoutFields>Product2Id</multilineLayoutFields>
-    <multilineLayoutFields>ListPrice</multilineLayoutFields>
-    <multilineLayoutFields>UnitPrice</multilineLayoutFields>
     <multilineLayoutFields>Quantity</multilineLayoutFields>
+    <multilineLayoutFields>UnitPrice</multilineLayoutFields>
+    <multilineLayoutFields>CN_Unit_of_Measure__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Approver_Required__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Approval_Status__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_List_Price__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Channel_Price__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Discount_Price__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Max_Discount_Price__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Promotion_Price__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Promotion_Member__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Commets_for_Approver__c</multilineLayoutFields>
     <multilineLayoutFields>CN_Customer_Acceptance__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Denied_Reason__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Finance_Acceptance__c</multilineLayoutFields>
+    <multilineLayoutFields>Description</multilineLayoutFields>
     <multilineLayoutFields>QuoteId</multilineLayoutFields>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>

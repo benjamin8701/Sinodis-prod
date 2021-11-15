@@ -140,7 +140,8 @@ public without sharing class CN_Quote_Apply_LC_Ctrl {
             if(productIdPromoPriceCurrencyMap.get(productId)<productIdUnitPriceCurrencyMap.get(productId)){
                 quoteItem.id = productIdquoItemIdMap.get(productId);
                 quoteItem.CN_Promotion_Member__c = promoIdPromoMemberIdMap.get(productIdPromitionId.get(productId));
-                quoteItem.UnitPrice = productIdPromoPriceCurrencyMap.get(productId);
+                // quoteItem.UnitPrice = productIdPromoPriceCurrencyMap.get(productId);
+                // quoteItem.CN_Promotion_Price__c = productIdPromoPriceCurrencyMap.get(productId);
                 quoteItemToUpdateList.add(quoteItem);
             }
         }
@@ -155,6 +156,7 @@ public without sharing class CN_Quote_Apply_LC_Ctrl {
         }
         return new Map<String, Object>{
             'isApplySuccess' => isApplySuccess,
+            'appliedCnt' => quoteItemToUpdateList.size(),
             'errorMessage' => errorMessage
         };
     }
