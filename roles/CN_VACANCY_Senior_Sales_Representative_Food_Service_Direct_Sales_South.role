@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Role xmlns="http://soap.sforce.com/2006/04/metadata">
-    <caseAccessLevel>None</caseAccessLevel>
-    <contactAccessLevel>Edit</contactAccessLevel>
-    <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>VACANCY_Senior Sales Representative-Food Service Direct Sales-South</name>
-    <opportunityAccessLevel>Edit</opportunityAccessLevel>
-    <parentRole>CN_1612_Assistant_Sales_Manager_Food_Service_Direct_Sales_South</parentRole>
-</Role>

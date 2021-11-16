@@ -4,7 +4,7 @@
     <encodingKey>UTF-8</encodingKey>
     <name>CN_Quote_Approvaled</name>
     <style>none</style>
-    <subject>Your Quotation for Customer{!Quote.CN_Customer_Name__c} has been approved. /您的客户{!Quote.CN_Customer_Name__c}的报价单申请已被批准</subject>
+    <subject>报价单已批准 - {!Quote.CN_Customer_Code__c}  {!Quote.CN_Customer_Name__c}</subject>
     <type>text</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

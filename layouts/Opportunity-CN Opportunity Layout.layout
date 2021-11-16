@@ -217,10 +217,11 @@
         <fields>QUOTE.NAME</fields>
         <fields>CN_Effective_Date__c</fields>
         <fields>QUOTE.EXPIRATIONDATE</fields>
-        <fields>QUOTE.TOTALPRICE</fields>
         <fields>QUOTE.STATUS</fields>
-        <fields>CreatedBy</fields>
+        <fields>CN_Finance_Process_Status__c</fields>
         <relatedList>RelatedQuoteList</relatedList>
+        <sortField>QUOTE.QUOTENUMBER</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <excludeButtons>MassChangeOwner</excludeButtons>

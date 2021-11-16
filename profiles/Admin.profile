@@ -422,6 +422,14 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Customer_Status_Trend_Batch</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Customer_Status_Trend_SCH</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Demo_Report_Copy_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>

@@ -120,6 +120,8 @@
         <members>CN_Contact_Write_To_Lead_Handler_Test</members>
         <members>CN_Contract_Populate_Fields_Handler</members>
         <members>CN_Contract_Populate_Fields_Handler_Test</members>
+        <members>CN_Customer_Status_Trend_Batch</members>
+        <members>CN_Customer_Status_Trend_SCH</members>
         <members>CN_Demo_Report_Copy_Handler</members>
         <members>CN_Demo_Report_Copy_Handler_Test</members>
         <members>CN_Demo_Report_Prevent_Delete_Handler</members>
@@ -789,113 +791,6 @@
         <members>CN_User_Report_Type</members>
         <members>Chef_Requests_with_Demo_Reports_with_Demo_Report_to_Products</members>
         <name>ReportType</name>
-    </types>
-    <types>
-        <members>CN_0018_Sales_Manager_Food_Service_Wholesale_East</members>
-        <members>CN_0096_Local_Key_Account_Manager_Food_Service_Wholesale</members>
-        <members>CN_0178_Assistant_Sales_Manager_Food_Service_Wholesale_North</members>
-        <members>CN_0296_Assistant_Sales_Manager_Food_Service_Key_Account_North</members>
-        <members>CN_0316_Sales_Manager_Food_Service_Wholesale_North</members>
-        <members>CN_0336_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_0337_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_0367_Channel_Supervisor_Food_Service_Direct_Sales_North1</members>
-        <members>CN_0370_Senior_Sales_Manager_Food_Service_Wholesale_South</members>
-        <members>CN_0389_Local_Key_Account_Manager_Food_Service_Wholesale_South</members>
-        <members>CN_0413_Assistant_Sales_Manager_Food_Service_Wholesale_South</members>
-        <members>CN_0604_Senior_Sales_Manager_Food_Service_Key_Account</members>
-        <members>CN_0626_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_0819_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_0838_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_0962_Sales_Manager_Food_Service_E_commerce_Wholesale</members>
-        <members>CN_1050_Sales_Manager_Food_Service_Wholesale_Zhejiang_Province</members>
-        <members>CN_1073_Senior_Sales_Representative_Food_Service_Wholesale_East</members>
-        <members>CN_1078_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_1139_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_1167_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_1211_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_1225_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_1239_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_1245_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_1424_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_1487_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <members>CN_1503_Channel_Supervisor_Food_Service_Direct_Sales_North</members>
-        <members>CN_1516_Assistant_Sales_Manager_Food_Service_Direct_Sales_East</members>
-        <members>CN_1554_Channel_Supervisor_Food_Service_Direct_Sales_East</members>
-        <members>CN_1558_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_1586_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_1602_Sales_Manager_Food_Service_Direct_Sales_North</members>
-        <members>CN_1612_Assistant_Sales_Manager_Food_Service_Direct_Sales_South</members>
-        <members>CN_1616_Senior_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_1637_Senior_Sales_Representative_Food_Service_Wholesale_East</members>
-        <members>CN_1653_Senior_Sales_Representative_Food_Service_Key_Account_South</members>
-        <members>CN_1675_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_1685_Senior_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <members>CN_1692_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_1695_Senior_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <members>CN_1705_Sales_Representative_Food_Service_Key_Account_East</members>
-        <members>CN_1761_Senior_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <members>CN_1872_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_1896_Sales_Manager_Food_Service_Direct_Sales_East</members>
-        <members>CN_1901_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <members>CN_1917_Senior_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_1930_Senior_Sales_Representative_Food_Service_Direct_Sales_North</members>
-        <members>CN_1955_Assistant_Sales_Manager_Food_Service_Key_Account_East</members>
-        <members>CN_1958_Senior_Sales_Representative_Food_Service_Direct_Sales_North</members>
-        <members>CN_1968_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_1969_Sales_development_Supervisor</members>
-        <members>CN_1972_Senior_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_1973_Senior_Sales_Representative_Food_Service_Wholesale_EAST</members>
-        <members>CN_1979_Senior_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_1990_Sales_Representative_Food_Service_Key_Account_East</members>
-        <members>CN_1994_Senior_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_1996_Sales_Representative_Food_Service_Direct_Sales_North</members>
-        <members>CN_2002_Senior_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_2019_Regional_Sales_Manager_West</members>
-        <members>CN_2022_Senior_Sales_Representative_Food_Service_Key_Account_East</members>
-        <members>CN_2023_Sales_Manager_Food_Service_Direct_Sales_South</members>
-        <members>CN_2026_Senior_Sales_Representative_Food_Service_Key_Account_East</members>
-        <members>CN_2027_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_2035_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <members>CN_2036_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_2047_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_2057_Operation_Specialist_Food_Service_E_Commerce_Wholesale</members>
-        <members>CN_2066_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_2084_Assistant_Sales_Manager_Food_Service_Key_Account_North</members>
-        <members>CN_2085_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_2097_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <members>CN_2103_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_2104_Senior_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_2139_Sales_Manager_Food_Service_Key_Account_East</members>
-        <members>CN_2162_Sales_Manager_Food_Service_Key_Account_South</members>
-        <members>CN_2171_National_Wholesale_Director</members>
-        <members>CN_2174_Sales_Representative_Food_Service_Direct_Sales_North</members>
-        <members>CN_CCE</members>
-        <members>CN_CCE_Assistant</members>
-        <members>CN_CCE_Assistant_DS</members>
-        <members>CN_CCE_Assistant_KA</members>
-        <members>CN_CCE_Assistant_WS</members>
-        <members>CN_CCE_Director</members>
-        <members>CN_CEO</members>
-        <members>CN_CS</members>
-        <members>CN_Chef</members>
-        <members>CN_Chef_Manager</members>
-        <members>CN_China</members>
-        <members>CN_Commercial_Director</members>
-        <members>CN_Finance_AR</members>
-        <members>CN_Finance_Director</members>
-        <members>CN_Finance_MDM</members>
-        <members>CN_MKT_Member</members>
-        <members>CN_Marketing</members>
-        <members>CN_Marketing_Director</members>
-        <members>CN_QA</members>
-        <members>CN_Sales_MDM</members>
-        <members>CN_Service</members>
-        <members>CN_VACANCY_Channel_Supervisor_Food_Service_Direct_Sales_East</members>
-        <members>CN_VACANCY_Channel_Supervisor_Food_Service_Direct_Sales_South</members>
-        <members>CN_VACANCY_National_Direct_Sales_Director</members>
-        <members>CN_VACANCY_Sales_Manager_Food_Service_Direct_Sales_West</members>
-        <members>CN_VACANCY_Senior_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <name>Role</name>
     </types>
     <types>
         <members>Account</members>
