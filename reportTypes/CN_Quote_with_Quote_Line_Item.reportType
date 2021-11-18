@@ -988,6 +988,36 @@
             <field>CN_Finance_Status__c</field>
             <table>Quote.QuoteLineItems</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Origin_PDF__c</field>
+            <table>Quote.QuoteLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_QTY_PER_CTN_PDF__c</field>
+            <table>Quote.QuoteLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Selling_Unit_PDF__c</field>
+            <table>Quote.QuoteLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Price_PDF__c</field>
+            <table>Quote.QuoteLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Price_Before_Tax_PDF__c</field>
+            <table>Quote.QuoteLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Tax_PDF__c</field>
+            <table>Quote.QuoteLineItems</table>
+        </columns>
         <masterLabel>Quote Line Items</masterLabel>
     </sections>
 </ReportType>

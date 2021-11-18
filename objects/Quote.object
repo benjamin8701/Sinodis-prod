@@ -920,11 +920,36 @@
         <columns>CN_Effective_Date__c</columns>
         <columns>QUOTE.EXPIRATIONDATE</columns>
         <columns>QUOTE.STATUS</columns>
-        <columns>CN_Is_Finance_Notified__c</columns>
-        <columns>CN_Sync_Status__c</columns>
         <columns>CN_Finance_Process_Status__c</columns>
         <filterScope>Everything</filterScope>
         <label>All Quotes</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Quotes_Completed</fullName>
+        <columns>QUOTE.QUOTENUMBER</columns>
+        <columns>QUOTE.NAME</columns>
+        <columns>CN_Quote_Number__c</columns>
+        <columns>CN_Sales_Person_Name__c</columns>
+        <columns>CN_Customer_Code__c</columns>
+        <columns>CN_Customer_Name__c</columns>
+        <columns>CN_Effective_Date__c</columns>
+        <columns>QUOTE.EXPIRATIONDATE</columns>
+        <columns>CN_Sync_Time__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Is_Finance_Notified__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Finance_Process_Done__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Quotes -  Completed</label>
+        <sharedTo>
+            <role>CN_Finance_MDM</role>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>CN_All_Quotes_NeedtoSync</fullName>
@@ -937,8 +962,7 @@
         <columns>CN_Effective_Date__c</columns>
         <columns>QUOTE.EXPIRATIONDATE</columns>
         <columns>QUOTE.STATUS</columns>
-        <columns>CN_Is_Finance_Notified__c</columns>
-        <columns>CN_Sync_Status__c</columns>
+        <columns>CN_Finance_Process_Status__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CN_Is_Finance_Notified__c</field>
@@ -984,8 +1008,7 @@
         <columns>CN_Effective_Date__c</columns>
         <columns>QUOTE.EXPIRATIONDATE</columns>
         <columns>QUOTE.STATUS</columns>
-        <columns>CN_Is_Finance_Notified__c</columns>
-        <columns>CN_Sync_Status__c</columns>
+        <columns>CN_Finance_Process_Status__c</columns>
         <filterScope>Mine</filterScope>
         <label>My Quotes</label>
     </listViews>

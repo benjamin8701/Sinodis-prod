@@ -8,7 +8,7 @@
  * Create Date    : 2021-08-12
  * Modify History : 
  **************************************************************************************************/
-trigger QTP_Trigger on CN_Quote_To_Promotion__c (before insert ,before delete) {
+trigger QTP_Trigger on CN_Quote_To_Promotion__c (before insert , before update, before delete) {
     if(Untils.isTriggerEnabled() && Constants.QTP_TRIGGER_ON) {
         Triggers triggersObj = new Triggers();
         if(Context.ApplyTo(Constants.CN_Code) && Constants.CN_QTP_TRIGGER_ON) {

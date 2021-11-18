@@ -511,6 +511,15 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>CN_Origin_PDF__c</fullName>
+        <externalId>false</externalId>
+        <label>Orign/原产国</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Origin__c</fullName>
         <externalId>false</externalId>
         <formula>TEXT(Product2.CN_Origin__c)</formula>
@@ -518,6 +527,26 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Price_Before_Tax_PDF__c</fullName>
+        <externalId>false</externalId>
+        <formula>UnitPrice</formula>
+        <label>With Out Tax/税前价</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CN_Price_PDF__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Sales_Price_with_Tax__c</formula>
+        <label>Pirce/销售价</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>CN_Pricing_Unit__c</fullName>
@@ -605,6 +634,15 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>CN_QTY_PER_CTN_PDF__c</fullName>
+        <externalId>false</externalId>
+        <label>QTY PER CTN/箱规</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Qty_per_Carton__c</fullName>
         <externalId>false</externalId>
         <formula>Product2.CN_Qty_per_Carton__c</formula>
@@ -636,7 +674,7 @@
     <fields>
         <fullName>CN_Rate_API__c</fullName>
         <externalId>false</externalId>
-        <formula>UnitPrice /  CN_List_Price__c</formula>
+        <formula>( UnitPrice /  CN_List_Price__c ) - 1</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Rate</label>
         <precision>18</precision>
@@ -658,7 +696,7 @@
         <fullName>CN_SKU_Description_CN__c</fullName>
         <externalId>false</externalId>
         <formula>Product2.CN_SKU_Description_CN__c</formula>
-        <label>SKU Description(CN)</label>
+        <label>Product Description(CN)</label>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
@@ -667,7 +705,7 @@
         <fullName>CN_SKU_Description_EN__c</fullName>
         <externalId>false</externalId>
         <formula>Product2.CN_SKU_Description_EN__c</formula>
-        <label>SKU Description(EN)</label>
+        <label>Product Description(EN)</label>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
@@ -684,6 +722,15 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>CN_Selling_Unit_PDF__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text( CN_Pricing_Unit__c) &amp;&apos;-&apos;&amp; CN_Unit_of_Measure__c</formula>
+        <label>UoM/单位</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Selling_Unit__c</fullName>
         <externalId>false</externalId>
         <formula>Text(CN_Pricing_Unit__c) &amp;&apos;-&apos; &amp; CN_Unit_of_Measure__c &amp; &apos;   Tax:&apos; &amp;  CN_Tax__c</formula>
@@ -696,7 +743,7 @@
         <fullName>CN_Shelf_Life__c</fullName>
         <externalId>false</externalId>
         <formula>Product2.CN_Shelf_Life__c</formula>
-        <label>Shelf Life</label>
+        <label>Shelf Life/保质期</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -754,6 +801,15 @@
   )
 ) &amp; &apos;%&apos;</formula>
         <label>Tax Formula</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Tax_PDF__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Tax__c  &amp; &apos;VAT&apos;</formula>
+        <label>Tax/税率</label>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>

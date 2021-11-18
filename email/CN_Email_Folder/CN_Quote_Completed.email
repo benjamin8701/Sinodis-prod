@@ -1,4 +1,4 @@
-您的报价单申请已被拒绝
+您的报价单财务已处理完成：
 
 客户代码 : {!Quote.CN_Customer_Code__c} 
 客户名称 : {!Quote.CN_Customer_Name__c} 
@@ -6,19 +6,20 @@
 生效日期 : {!Quote.CN_Effective_Date__c} 
 到期日期 : {!Quote.ExpirationDate} 
 
-请点击以下链接 
+
+请点击以下链接
 
 {!Quote.Link} 
 
-查看额外信息 
+查看额外信息
 
 
-谢谢!
+谢谢！
 
 
 ------------------------English Version Scroll Down------------------------ 
 
-Your Quotation for Customer{!Quote.CN_Customer_Name__c} has been rejected. 
+Your Quotation for Customer{!Quote.CN_Customer_Name__c} has been completed. 
 
 Customer Code : {!Quote.CN_Customer_Code__c} 
 Customer : {!Quote.CN_Customer_Name__c} 
@@ -26,12 +27,11 @@ Quote ID : {!Quote.CN_Quote_Number__c}
 Effective Date : {!Quote.CN_Effective_Date__c} 
 Expired Date : {!Quote.ExpirationDate} 
 
-Please click the following link 
+Please click the following link
 
 {!Quote.Link} 
 
 to view additional information. 
 
 
-Thank you, 
-Salesforce
+Thank you！

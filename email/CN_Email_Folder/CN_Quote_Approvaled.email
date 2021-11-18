@@ -4,7 +4,7 @@
 客户名称 : {!Quote.CN_Customer_Name__c} 
 报价单号 : {!Quote.CN_Quote_Number__c} 
 生效日期 : {!Quote.CN_Effective_Date__c} 
-失效日期 : {!Quote.ExpirationDate} 
+到期日期 : {!Quote.ExpirationDate} 
 
 请点击以下链接
 

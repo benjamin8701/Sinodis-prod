@@ -20,6 +20,26 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>CN_QuoteItem_Populate_Origin</fullName>
+        <field>CN_Origin_PDF__c</field>
+        <formula>Text(Product2.CN_Origin__c)</formula>
+        <name>CN_QuoteItem_Populate_Origin</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_QuoteItem_Populate_QTYPerCTN</fullName>
+        <field>CN_QTY_PER_CTN_PDF__c</field>
+        <formula>Product2.CN_Qty_per_Carton__c</formula>
+        <name>CN_QuoteItem_Populate_QTYPerCTN</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CN_QuoteItem_Populate_Tax</fullName>
         <field>CN_Tax__c</field>
         <formula>CN_Tax_Formula__c</formula>
@@ -38,6 +58,26 @@
         <active>true</active>
         <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    ISCHANGED( CN_Customer_Acceptance__c ),   ISPICKVAL(CN_Customer_Acceptance__c , &quot;Accepted&quot;) )</formula>
         <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_QuoteItem_Populate_Origin</fullName>
+        <actions>
+            <name>CN_QuoteItem_Populate_Origin</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c  )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_QuoteItem_Populate_QTYPerCTN</fullName>
+        <actions>
+            <name>CN_QuoteItem_Populate_QTYPerCTN</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c )</formula>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
         <fullName>CN_QuoteItem_Populate_Tax</fullName>

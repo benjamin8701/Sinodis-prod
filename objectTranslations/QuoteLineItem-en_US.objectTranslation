@@ -165,8 +165,20 @@
         <name>CN_Minimum_Price__c</name>
     </fields>
     <fields>
+        <label><!-- Orign/原产国 --></label>
+        <name>CN_Origin_PDF__c</name>
+    </fields>
+    <fields>
         <label><!-- Origin --></label>
         <name>CN_Origin__c</name>
+    </fields>
+    <fields>
+        <label><!-- With Out Tax/税前价 --></label>
+        <name>CN_Price_Before_Tax_PDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pirce/销售价 --></label>
+        <name>CN_Price_PDF__c</name>
     </fields>
     <fields>
         <label><!-- Pricing Unit --></label>
@@ -206,6 +218,10 @@
         <name>CN_Promotion_Price__c</name>
     </fields>
     <fields>
+        <label><!-- QTY PER CTN/箱规 --></label>
+        <name>CN_QTY_PER_CTN_PDF__c</name>
+    </fields>
+    <fields>
         <label><!-- Qty per Carton --></label>
         <name>CN_Qty_per_Carton__c</name>
     </fields>
@@ -226,11 +242,11 @@
         <name>CN_Rate_Unit_API__c</name>
     </fields>
     <fields>
-        <label><!-- SKU Description(CN) --></label>
+        <label><!-- Product Description(CN) --></label>
         <name>CN_SKU_Description_CN__c</name>
     </fields>
     <fields>
-        <label><!-- SKU Description(EN) --></label>
+        <label><!-- Product Description(EN) --></label>
         <name>CN_SKU_Description_EN__c</name>
     </fields>
     <fields>
@@ -238,11 +254,15 @@
         <name>CN_Sales_Price_with_Tax__c</name>
     </fields>
     <fields>
+        <label><!-- UoM/单位 --></label>
+        <name>CN_Selling_Unit_PDF__c</name>
+    </fields>
+    <fields>
         <label><!-- Sales Unit --></label>
         <name>CN_Selling_Unit__c</name>
     </fields>
     <fields>
-        <label><!-- Shelf Life --></label>
+        <label><!-- Shelf Life/保质期 --></label>
         <name>CN_Shelf_Life__c</name>
     </fields>
     <fields>
@@ -268,6 +288,10 @@
     <fields>
         <label><!-- Tax Formula --></label>
         <name>CN_Tax_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax/税率 --></label>
+        <name>CN_Tax_PDF__c</name>
     </fields>
     <fields>
         <label><!-- Tax --></label>

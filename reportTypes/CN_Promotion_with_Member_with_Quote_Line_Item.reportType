@@ -670,6 +670,36 @@
             <field>CN_Finance_Status__c</field>
             <table>CN_Promotion__c.Promotion_Members2__r.Quote_Line_Items__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Origin_PDF__c</field>
+            <table>CN_Promotion__c.Promotion_Members2__r.Quote_Line_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_QTY_PER_CTN_PDF__c</field>
+            <table>CN_Promotion__c.Promotion_Members2__r.Quote_Line_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Selling_Unit_PDF__c</field>
+            <table>CN_Promotion__c.Promotion_Members2__r.Quote_Line_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Price_PDF__c</field>
+            <table>CN_Promotion__c.Promotion_Members2__r.Quote_Line_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Price_Before_Tax_PDF__c</field>
+            <table>CN_Promotion__c.Promotion_Members2__r.Quote_Line_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Tax_PDF__c</field>
+            <table>CN_Promotion__c.Promotion_Members2__r.Quote_Line_Items__r</table>
+        </columns>
         <masterLabel>Quote Line Items</masterLabel>
     </sections>
 </ReportType>

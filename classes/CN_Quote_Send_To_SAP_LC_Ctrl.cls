@@ -277,17 +277,32 @@ public without sharing class CN_Quote_Send_To_SAP_LC_Ctrl {
             pbEntryIdSet.add(quoteItem.PricebookEntryId);
             productIdSet.add(quoteItem.Product2Id);
         }
-        
-        List<PricebookEntry> standardPbEntryList = [SELECT Id,
-                                                            UnitPrice,
-                                                            Product2Id,
-                                                            Pricebook2.IsStandard,
-                                                            Pricebook2Id,
-                                                            CN_Unit_of_Measure__c,
-                                                            CN_Pricing_Unit__c
-                                                    FROM PricebookEntry
-                                                    WHERE Pricebook2.IsStandard = true
-                                                        AND Product2Id IN: productIdSet];
+
+        List<PricebookEntry> standardPbEntryList = new List<PricebookEntry>();
+        if(Test.isRunningTest()) {
+            standardPbEntryList = [SELECT Id,
+                                            UnitPrice,
+                                            Product2Id,
+                                            Pricebook2.IsStandard,
+                                            Pricebook2Id,
+                                            CN_Unit_of_Measure__c,
+                                            CN_Pricing_Unit__c
+                                    FROM PricebookEntry
+                                    WHERE Pricebook2Id =: Test.getStandardPricebookId()
+                                        AND Product2Id IN: productIdSet];
+        } else {
+            standardPbEntryList = [SELECT Id,
+                                            UnitPrice,
+                                            Product2Id,
+                                            Pricebook2.IsStandard,
+                                            Pricebook2Id,
+                                            CN_Unit_of_Measure__c,
+                                            CN_Pricing_Unit__c
+                                    FROM PricebookEntry
+                                    WHERE Pricebook2.IsStandard = true
+                                        AND Product2Id IN: productIdSet];
+        }
+
         Map<Id, PricebookEntry> productIdStandardPBMap = new Map<Id, PricebookEntry>();
         for(PricebookEntry pbEntry : standardPbEntryList){
             productIdStandardPBMap.put(pbEntry.Product2Id, pbEntry);

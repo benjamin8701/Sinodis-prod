@@ -13,7 +13,7 @@ global class CN_Customer_Status_Trend_Batch implements Database.Batchable<SObjec
     global String queryString = '';
 
     public CN_Customer_Status_Trend_Batch() {
-        this.queryString = 'SELECT Id, Name, CN_Customer_Status__c, CN_Category__c, CN_Subcategory__c, CN_Sales_Person_Name__c, CN_License_Name_EN__c, Owner.Name, OwnerId FROM Account';
+        this.queryString = 'SELECT Id, Name, CN_Customer_Status__c, CN_Category__c, CN_Subcategory__c, CN_Sales_Person_Name__c, CN_License_Name_EN__c, Owner.Name, OwnerId FROM Account WHERE RecordType.DeveloperName = \'CN_Approved_Direct\'';
     }
 
     public CN_Customer_Status_Trend_Batch(String queryString) {

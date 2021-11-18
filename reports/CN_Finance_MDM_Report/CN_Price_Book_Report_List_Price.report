@@ -50,6 +50,13 @@
             <operator>equals</operator>
             <value>LP</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>PricebookEntry$CN_Product_Code__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value></value>
+        </criteriaItems>
         <language>en_US</language>
     </filter>
     <format>Tabular</format>

@@ -22,6 +22,16 @@
         <template>CN_Email_Folder/CN_Quote_Approvaled</template>
     </alerts>
     <alerts>
+        <fullName>CN_Quote_Fin_Accept_Notice_Sales</fullName>
+        <description>CN_Quote_Fin_Accept_Notice_Sales</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CN_Email_Folder/CN_Quote_Completed</template>
+    </alerts>
+    <alerts>
         <fullName>CN_Quote_Follow_SalesRep</fullName>
         <description>CN_Quote_Follow_SalesRep</description>
         <protected>false</protected>
@@ -472,6 +482,19 @@
         <active>true</active>
         <formula>AND( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Quote_New&apos; )</formula>
         <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_Quote_Fin_Accept_Notice_Sales</fullName>
+        <actions>
+            <name>CN_Quote_Fin_Accept_Notice_Sales</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Quote&apos;,
+ ISPICKVAL( Status , &quot;Approved&quot;) ,
+  CN_Is_Finance_Process_Done__c 
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>CN_Quote_SalesRep_Follow</fullName>

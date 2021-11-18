@@ -8287,7 +8287,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>QuoteLineItem.CN_Origin_PDF__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>QuoteLineItem.CN_Origin__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>QuoteLineItem.CN_Price_Before_Tax_PDF__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>QuoteLineItem.CN_Price_PDF__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -8337,6 +8352,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>QuoteLineItem.CN_QTY_PER_CTN_PDF__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>QuoteLineItem.CN_Qty_per_Carton__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8377,6 +8397,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>QuoteLineItem.CN_Selling_Unit_PDF__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>QuoteLineItem.CN_Selling_Unit__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8403,6 +8428,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>QuoteLineItem.CN_Tax_Formula__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>QuoteLineItem.CN_Tax_PDF__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

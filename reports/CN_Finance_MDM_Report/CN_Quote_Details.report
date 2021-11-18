@@ -37,7 +37,11 @@
         <field>Quote.QuoteLineItems$CN_Tax__c</field>
     </columns>
     <columns>
-        <field>Quote.QuoteLineItems$CN_Selling_Unit__c</field>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Quote.QuoteLineItems$CN_Pricing_Unit__c</field>
+    </columns>
+    <columns>
+        <field>Quote.QuoteLineItems$CN_Unit_of_Measure__c</field>
     </columns>
     <columns>
         <field>Quote.QuoteLineItems$CN_List_Price__c</field>
@@ -57,6 +61,27 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Quote$CN_Customer_Code__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Quote.QuoteLineItems$CN_Product_Code__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Quote.QuoteLineItems$UnitPrice</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>CNY 0</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
