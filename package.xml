@@ -122,6 +122,7 @@
         <members>CN_Contract_Populate_Fields_Handler_Test</members>
         <members>CN_Customer_Status_Trend_Batch</members>
         <members>CN_Customer_Status_Trend_SCH</members>
+        <members>CN_Customer_Status_Trend_Test</members>
         <members>CN_Demo_Report_Copy_Handler</members>
         <members>CN_Demo_Report_Copy_Handler_Test</members>
         <members>CN_Demo_Report_Prevent_Delete_Handler</members>
@@ -159,15 +160,19 @@
         <members>CN_QuoteItem_Prevent_Delete_Handler</members>
         <members>CN_QuoteItem_Promotion_Link_Handler</members>
         <members>CN_QuoteItem_Validation_Handler</members>
+        <members>CN_QuoteLineItem_Trigger_Test</members>
+        <members>CN_QuoteLineItem_Trigger_Test</members>
         <members>CN_Quote_AcceptORDeny_All_Items_LC_Ctrl</members>
         <members>CN_Quote_Accept_All_Items_LC_Ctrl_Test</members>
         <members>CN_Quote_Apply_LC_Ctrl</members>
         <members>CN_Quote_Apply_LC_Ctrl</members>
         <members>CN_Quote_Approval_Reminder_Handler</members>
         <members>CN_Quote_Fin_AcceptOrDeny_All_LC_Ctrl</members>
+        <members>CN_Quote_Fin_Accept_Test</members>
         <members>CN_Quote_Finance_Notice_LC_Ctrl</members>
         <members>CN_Quote_Generate_Quote_Prom_Handler</members>
         <members>CN_Quote_Notify_Finance_Template_Ctrl</members>
+        <members>CN_Quote_Notify_Finance_Test</members>
         <members>CN_Quote_Populate_Approver_Handler</members>
         <members>CN_Quote_Populate_Approver_Handler</members>
         <members>CN_Quote_Populate_Fields_Handler</members>
@@ -415,6 +420,7 @@
         <members>CN_Email_Folder/CN_Quote_Approval</members>
         <members>CN_Email_Folder/CN_Quote_Approval_Reminder</members>
         <members>CN_Email_Folder/CN_Quote_Approvaled</members>
+        <members>CN_Email_Folder/CN_Quote_Completed</members>
         <members>CN_Email_Folder/CN_Quote_Follow_SalesRep</members>
         <members>CN_Email_Folder/CN_Quote_Notify_Finance</members>
         <members>CN_Email_Folder/CN_Quote_Rejected</members>
