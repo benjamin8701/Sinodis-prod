@@ -265,7 +265,7 @@
     <fields>
         <fullName>CN_Commets_for_Approver__c</fullName>
         <externalId>false</externalId>
-        <label>Commets for Approver</label>
+        <label>Comments for Approver</label>
         <length>255</length>
         <required>false</required>
         <type>Text</type>

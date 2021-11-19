@@ -53,7 +53,7 @@
         <name>CN_Channel_Price__c</name>
     </fields>
     <fields>
-        <label><!-- Commets for Approver --></label>
+        <label><!-- Comments for Approver --></label>
         <name>CN_Commets_for_Approver__c</name>
     </fields>
     <fields>
