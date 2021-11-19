@@ -323,7 +323,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CN_Chef_Assigned_Reset_WorkDate_Handler</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CN_Chef_Req_Assign_Approver_Handler_Test</apexClass>
@@ -335,7 +335,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CN_Chef_Request_Auto_Confirm_Handler</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CN_Chef_Request_Chef_Assign_Handler</apexClass>
@@ -687,7 +687,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CN_SP_Populate_Product_Handler</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CN_SP_Populate_Product_Handler_Test</apexClass>

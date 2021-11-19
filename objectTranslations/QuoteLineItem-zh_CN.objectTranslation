@@ -284,11 +284,11 @@
         <name>CN_SKU_Description_CN__c</name>
     </fields>
     <fields>
-        <label><!-- Product Description(EN) --></label>
+        <label>产品描述英文</label>
         <name>CN_SKU_Description_EN__c</name>
     </fields>
     <fields>
-        <label><!-- Sales Price(VAT) --></label>
+        <label>销售价含税</label>
         <name>CN_Sales_Price_with_Tax__c</name>
     </fields>
     <fields>
@@ -296,11 +296,11 @@
         <name>CN_Selling_Unit_PDF__c</name>
     </fields>
     <fields>
-        <label><!-- Sales Unit --></label>
+        <label>出货单位</label>
         <name>CN_Selling_Unit__c</name>
     </fields>
     <fields>
-        <label><!-- Shelf Life/保质期 --></label>
+        <label>保质期</label>
         <name>CN_Shelf_Life__c</name>
     </fields>
     <fields>

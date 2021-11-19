@@ -94,12 +94,12 @@
             <section>Follow-up Visit</section>
         </sections>
         <sections>
-            <label>其他信息</label>
-            <section>Other Information</section>
+            <label><!-- Infomation --></label>
+            <section>Infomation</section>
         </sections>
         <sections>
-            <label>相关信息</label>
-            <section>Related To</section>
+            <label>其他信息</label>
+            <section>Other Information</section>
         </sections>
     </layouts>
     <recordTypes>

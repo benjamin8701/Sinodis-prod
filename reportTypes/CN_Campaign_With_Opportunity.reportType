@@ -785,11 +785,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>PushCount</field>
-            <table>Campaign.Opportunities__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>TotalOpportunityQuantity</field>
             <table>Campaign.Opportunities__r</table>
         </columns>
