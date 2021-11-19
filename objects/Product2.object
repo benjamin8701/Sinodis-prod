@@ -270,6 +270,16 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Sales_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Unit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Sample_Type__c</fullName>
         <externalId>false</externalId>
         <label>Sample Type</label>
@@ -302,6 +312,16 @@
         <fullName>CN_Selling_Unit__c</fullName>
         <externalId>false</externalId>
         <label>Selling Unit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Selling_Unit_of_Measure__c</fullName>
+        <externalId>false</externalId>
+        <label>Selling Unit of Measure</label>
         <length>255</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -441,13 +461,12 @@
         <columns>CN_SKU_Description_CN__c</columns>
         <columns>CN_SKU_Description_EN__c</columns>
         <columns>CN_Brand__c</columns>
-        <columns>CN_Selling_Unit__c</columns>
         <columns>CN_Base_Unit_of_Measure__c</columns>
         <columns>CN_Shelf_Life__c</columns>
         <columns>CN_Standard_Sample_Unit__c</columns>
         <columns>CN_Sample_Unit_List_Price__c</columns>
         <columns>CN_Sample_Type__c</columns>
-        <columns>PRODUCT2.CREATED_DATE</columns>
+        <columns>PRODUCT2.LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>PRODUCT2.ACTIVE</field>
@@ -467,12 +486,12 @@
         <columns>CN_SKU_Description_CN__c</columns>
         <columns>CN_SKU_Description_EN__c</columns>
         <columns>CN_Brand__c</columns>
-        <columns>CN_Selling_Unit__c</columns>
         <columns>CN_Base_Unit_of_Measure__c</columns>
         <columns>CN_Shelf_Life__c</columns>
         <columns>CN_Standard_Sample_Unit__c</columns>
         <columns>CN_Sample_Unit_List_Price__c</columns>
         <columns>CN_Sample_Type__c</columns>
+        <columns>PRODUCT2.LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>PRODUCT2.ACTIVE</field>
@@ -487,12 +506,12 @@
         <columns>CN_SKU_Description_CN__c</columns>
         <columns>CN_SKU_Description_EN__c</columns>
         <columns>CN_Brand__c</columns>
-        <columns>CN_Selling_Unit__c</columns>
         <columns>CN_Base_Unit_of_Measure__c</columns>
         <columns>CN_Shelf_Life__c</columns>
         <columns>CN_Standard_Sample_Unit__c</columns>
         <columns>CN_Sample_Unit_List_Price__c</columns>
         <columns>CN_Sample_Type__c</columns>
+        <columns>PRODUCT2.LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>PRODUCT2.ACTIVE</field>

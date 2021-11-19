@@ -16,6 +16,7 @@
 	<aura:attribute name="recordId" type="String"/>
     <aura:attribute name="showLoading" type="Boolean" default="false" />
     <aura:attribute name="modalContentMessage" type="String" default="..."/>
+    <aura:attribute name="modalContentMessageRetry" type="String"/>
     <aura:attribute name="isBtnDisabled" type="Boolean" default="false"/>
     <aura:attribute name="buttonName" type="String" default="Cancel"/>
     <aura:attribute name="quo" type="Quote"/>
@@ -38,6 +39,9 @@
         	<div class="slds-grid slds-gutters slds-wrap slds-m-bottom_medium">
                  <div class="slds-col slds-size_1-of-1">
                     {!v.modalContentMessage}
+                 </div>
+                 <div class="slds-col slds-size_1-of-1">
+                    {!v.modalContentMessageRetry}
                  </div>
             </div>
         </div>

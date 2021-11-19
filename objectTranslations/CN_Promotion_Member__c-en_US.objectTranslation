@@ -51,6 +51,10 @@
         <name>CN_Promotion_End_Date__c</name>
     </fields>
     <fields>
+        <label><!-- Promotion Member Name --></label>
+        <name>CN_Promotion_Member_Name__c</name>
+    </fields>
+    <fields>
         <label><!-- Promotion Start Date --></label>
         <name>CN_Promotion_Start_Date__c</name>
     </fields>

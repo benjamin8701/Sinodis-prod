@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CN_Quote_Approval_Reminder</name>
+    <style>none</style>
+    <subject>报价待审批提醒 - {!Quote.CN_Quote_Email_Subject__c} / Quote pending your approval</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

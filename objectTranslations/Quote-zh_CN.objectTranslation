@@ -22,11 +22,15 @@
         <name>quote_number</name>
     </fields>
     <fields>
-        <label><!-- Accepted Item Num --></label>
+        <label>客户接受数量</label>
         <name>CN_Accepted_Item_Num__c</name>
     </fields>
     <fields>
-        <label><!-- Approve Step --></label>
+        <label><!-- CN Approval Reminder Datetime --></label>
+        <name>CN_Approval_Reminder_Datetime__c</name>
+    </fields>
+    <fields>
+        <label>审批步骤</label>
         <name>CN_Approve_Step__c</name>
         <picklistValues>
             <masterLabel>Step1</masterLabel>
@@ -78,6 +82,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label>已审批状态（后台计算逻辑用）</label>
+        <name>CN_Approved_Status__c</name>
+    </fields>
+    <fields>
         <label><!-- Approver 10 --></label>
         <name>CN_Approver_10__c</name>
         <relationshipLabel><!-- Quotes (Approver 10) --></relationshipLabel>
@@ -93,57 +101,57 @@
         <relationshipLabel><!-- Quotes (Approver 12) --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Approver 1 --></label>
+        <label><!-- Sales Manager --></label>
         <name>CN_Approver_1__c</name>
-        <relationshipLabel><!-- Quotes (Approver 1) --></relationshipLabel>
+        <relationshipLabel><!-- Quotes (Sales Manager) --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Approver 2 --></label>
+        <label><!-- Regional Manager --></label>
         <name>CN_Approver_2__c</name>
-        <relationshipLabel><!-- Quotes (Approver 2) --></relationshipLabel>
+        <relationshipLabel><!-- Quotes (Regional Manager) --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Approver 3 --></label>
+        <label><!-- Channel Leader --></label>
         <name>CN_Approver_3__c</name>
-        <relationshipLabel><!-- Quotes (Approver 3) --></relationshipLabel>
+        <relationshipLabel><!-- Quotes (Channel Leader) --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Approver 4 --></label>
+        <label><!-- Commercial Director --></label>
         <name>CN_Approver_4__c</name>
-        <relationshipLabel><!-- Quotes (Approver 4) --></relationshipLabel>
+        <relationshipLabel><!-- Quotes (Commercial Director) --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Approver 5 --></label>
+        <label><!-- KA CCE Assistant --></label>
         <name>CN_Approver_5__c</name>
-        <relationshipLabel><!-- Quotes (Approver 5) --></relationshipLabel>
+        <relationshipLabel><!-- Quotes (KA CCE Assistant) --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Approver 6 --></label>
+        <label><!-- DS CCE Assistant --></label>
         <name>CN_Approver_6__c</name>
-        <relationshipLabel><!-- Quotes (Approver 6) --></relationshipLabel>
+        <relationshipLabel><!-- Quotes (DS CCE Assistant) --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Approver 7 --></label>
+        <label><!-- WS CCE Assistant --></label>
         <name>CN_Approver_7__c</name>
-        <relationshipLabel><!-- Quotes (Approver 7) --></relationshipLabel>
+        <relationshipLabel><!-- Quotes (WS CCE Assistant) --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Approver 8 --></label>
+        <label><!-- CCE Director --></label>
         <name>CN_Approver_8__c</name>
-        <relationshipLabel><!-- Quotes (Approver 8) --></relationshipLabel>
+        <relationshipLabel><!-- Quotes (CCE Director) --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Approver 9 --></label>
+        <label><!-- GM --></label>
         <name>CN_Approver_9__c</name>
-        <relationshipLabel><!-- Quotes (Approver 9) --></relationshipLabel>
+        <relationshipLabel><!-- Quotes (GM) --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Current Approver --></label>
+        <label>当前审批人</label>
         <name>CN_Current_Approver__c</name>
         <relationshipLabel><!-- Quotes (Current Approver) --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Customer Code --></label>
+        <label>客户编号</label>
         <name>CN_Customer_Code__c</name>
     </fields>
     <fields>
@@ -151,7 +159,7 @@
         <name>CN_Customer_Journey__c</name>
     </fields>
     <fields>
-        <label><!-- Customer Name --></label>
+        <label>客户名称</label>
         <name>CN_Customer_Name__c</name>
     </fields>
     <fields>
@@ -159,12 +167,44 @@
         <name>CN_Effective_Date__c</name>
     </fields>
     <fields>
-        <label>是否接受全部报价行项目</label>
+        <label>生效期间</label>
+        <name>CN_Effective_Duration__c</name>
+    </fields>
+    <fields>
+        <label>财务接受数量</label>
+        <name>CN_Finance_Acceptance_Item_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Deined Item Count --></label>
+        <name>CN_Finance_Deined_Item_Count__c</name>
+    </fields>
+    <fields>
+        <label>通知财务日期</label>
+        <name>CN_Finance_Notify_DateTime__c</name>
+    </fields>
+    <fields>
+        <label>财务处理状态</label>
+        <name>CN_Finance_Process_Status__c</name>
+    </fields>
+    <fields>
+        <label>已接受全部报价</label>
         <name>CN_Is_All_Accepted__c</name>
     </fields>
     <fields>
-        <label>是否接受/拒绝全部报价行项目</label>
+        <label>是否(接受/拒绝)全部报价</label>
         <name>CN_Is_All_Signed__c</name>
+    </fields>
+    <fields>
+        <label>是否自动审批</label>
+        <name>CN_Is_Auto_Approved__c</name>
+    </fields>
+    <fields>
+        <label>已通知财务</label>
+        <name>CN_Is_Finance_Notified__c</name>
+    </fields>
+    <fields>
+        <label>是否财务处理完成？</label>
+        <name>CN_Is_Finance_Process_Done__c</name>
     </fields>
     <fields>
         <label><!-- Item Num --></label>
@@ -175,8 +215,16 @@
         <name>CN_Item_Sign_Num__c</name>
     </fields>
     <fields>
+        <label>最后审批人</label>
+        <name>CN_Latest_Approver__c</name>
+    </fields>
+    <fields>
         <label><!-- Please Confirm --></label>
         <name>CN_Please_Confirm__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN_Quote_Email_Subject --></label>
+        <name>CN_Quote_Email_Subject__c</name>
     </fields>
     <fields>
         <label><!-- Is Cross Channel --></label>
@@ -191,13 +239,30 @@
         <name>CN_Quote_Number__c</name>
     </fields>
     <fields>
-        <label><!-- Sales Person Name --></label>
+        <label>预审日期</label>
+        <name>CN_Ready_Date__c</name>
+    </fields>
+    <fields>
+        <label>销售人员</label>
         <name>CN_Sales_Person_Name__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>销售人员</label>
+        <name>CN_Sales_Person__c</name>
+    </fields>
+    <fields>
+        <label>来自报价</label>
+        <name>CN_Source_Quote__c</name>
         <relationshipLabel><!-- Quotes --></relationshipLabel>
     </fields>
     <fields>
         <label>同步错误消息</label>
         <name>CN_Sync_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label>同步失败数量</label>
+        <name>CN_Sync_Failed_Item_Count__c</name>
     </fields>
     <fields>
         <label>同步状态</label>
@@ -220,6 +285,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label>同步成功数量</label>
+        <name>CN_Sync_Success_Item_Count__c</name>
+    </fields>
+    <fields>
         <label>同步时间</label>
         <name>CN_Sync_Time__c</name>
     </fields>
@@ -228,51 +297,86 @@
         <name>CN_Synchronized__c</name>
     </fields>
     <layouts>
-        <layout>CN Sinodis Quote Layout</layout>
+        <layout>CN Sinodis Quote Layout - Finance MDM</layout>
         <sections>
-            <label>SAP创建信息</label>
+            <label><!-- SAP Creation Information --></label>
             <section>SAP Creation Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sync Error Message --></label>
+            <section>Sync Error Message</section>
         </sections>
     </layouts>
     <quickActions>
-        <label><!-- Accept/Deny All Quote Items --></label>
+        <aspect>Master</aspect>
+        <label>接受/拒绝全部报价</label>
         <name>CN_AcceptOrDeny_All_Quote_Items</name>
     </quickActions>
     <quickActions>
-        <label><!-- Apply --></label>
+        <aspect>Master</aspect>
+        <label>获取促销</label>
         <name>CN_Apply</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>确认/拒绝全部报价</label>
+        <name>CN_Fin_AcceptOrDeny_All_Items</name>
     </quickActions>
     <quickActions>
         <label><!-- Email --></label>
         <name>CN_Notify_Finance</name>
     </quickActions>
     <quickActions>
-        <label><!-- Ready for Approval/Back to New --></label>
+        <aspect>Master</aspect>
+        <label>通知财务</label>
+        <name>CN_Quote_Notify_Finance</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>预审/撤销</label>
         <name>CN_Quote_Ready_for_Approval</name>
     </quickActions>
     <quickActions>
-        <label><!-- Send To SAP --></label>
+        <aspect>Master</aspect>
+        <label>拆单</label>
+        <name>CN_Quote_Split_Items</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>发送SAP</label>
         <name>CN_Send_To_SAP</name>
     </quickActions>
     <recordTypes>
         <label><!-- CN Quote --></label>
         <name>CN_Quote</name>
     </recordTypes>
+    <recordTypes>
+        <label><!-- CN Quote New --></label>
+        <name>CN_Quote_New</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>不允许更新已经预审通过的报价。</errorMessage>
+        <name>CN_Prevent_Edit_Ready</name>
+    </validationRules>
     <validationRules>
         <errorMessage>失效日期应晚于生效日期。</errorMessage>
         <name>CN_Quote_Check_EffectiveExpirationDate</name>
     </validationRules>
     <validationRules>
-        <errorMessage>生效日期应不早于今天。</errorMessage>
+        <errorMessage>生效日期不应早于今天。</errorMessage>
         <name>CN_Quote_Check_Effective_Date</name>
     </validationRules>
     <validationRules>
-        <errorMessage>您不能为处于Qualification阶段的业务机会创建报价。</errorMessage>
+        <errorMessage>您不能为不处于Quote/Negotiation阶段的业务机会创建报价。</errorMessage>
         <name>CN_Quote_Check_Opp_Stage</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- 第一个审批人不能为空 --></errorMessage>
         <name>CN_Quote_Check_Prices</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>提交审批前请添加报价行条目。</errorMessage>
+        <name>CN_Quote_Check_Ready_LineItem_Num</name>
     </validationRules>
     <validationRules>
         <errorMessage>不允许更新已经审批通过的报价。</errorMessage>

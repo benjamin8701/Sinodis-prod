@@ -82,6 +82,11 @@ private class CN_Chef_Req_Assign_Approver_Handler_Test {
                 CN_Confirmed__c = true
             );
             update crUpdate;
+
+            CN_Chefs_Assigned__c ca_update = new CN_Chefs_Assigned__c();
+            ca_update.Id =  ca.Id;
+            ca_update.CN_Chef_Work_Start_Date__c = ca.CN_Chef_Work_Start_Date__c.addDays(1);
+            update ca_update;
             
             try {
                 delete ca;

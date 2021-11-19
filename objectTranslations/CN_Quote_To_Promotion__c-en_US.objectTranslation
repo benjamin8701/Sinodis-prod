@@ -9,13 +9,33 @@
         <value>Quote To Promotions</value>
     </caseValues>
     <fields>
+        <label><!-- Is Promotion Published --></label>
+        <name>CN_Is_Promotion_Published__c</name>
+    </fields>
+    <fields>
         <label><!-- Is Quote Approved --></label>
         <name>CN_Is_Quote_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion End Date --></label>
+        <name>CN_Promotion_End_Date__c</name>
     </fields>
     <fields>
         <label><!-- Promotion Member --></label>
         <name>CN_Promotion_Member__c</name>
         <relationshipLabel><!-- Quote To Promotions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Promotion Name --></label>
+        <name>CN_Promotion_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion Start Date --></label>
+        <name>CN_Promotion_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion Status --></label>
+        <name>CN_Promotion_Status__c</name>
     </fields>
     <fields>
         <label><!-- Quote Status --></label>
@@ -42,6 +62,14 @@
         <name>CN_Quote_To_Promotion</name>
     </recordTypes>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Promotion selected should be same as Quote&apos;s Account. --></errorMessage>
+        <name>CN_QTP_ChecK_Related_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Promotion is not in activate duration. --></errorMessage>
+        <name>CN_QTP_Check_Promotion_Duration</name>
+    </validationRules>
     <validationRules>
         <errorMessage><!-- You are not allow to edit the quote to promotion. --></errorMessage>
         <name>CN_QTP_Prevent_Edit</name>

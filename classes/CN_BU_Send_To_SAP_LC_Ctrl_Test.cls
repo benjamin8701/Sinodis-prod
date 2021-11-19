@@ -52,6 +52,8 @@ private class CN_BU_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.Sandbox_User_Name__c = 'Name';
         talendSetting.Send_to_Account_Endpoint__c = 'http://127.0.0.1/ACC/500';
         talendSetting.User_Name__c = 'Name';
+        talendSetting.Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
+        talendSetting.Sandbox_Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
         insert talendSetting;
 
         User salesMDM = [SELECT Id FROM User WHERE lastName = 'salesMDM'][0];
@@ -120,6 +122,8 @@ private class CN_BU_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.Sandbox_User_Name__c = 'Name';
         talendSetting.Send_to_Account_Endpoint__c = 'http://127.0.0.1/ACC/200';
         talendSetting.User_Name__c = 'Name';
+        talendSetting.Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
+        talendSetting.Sandbox_Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
         insert talendSetting;
 
         User salesMDM = [SELECT Id FROM User WHERE lastName = 'salesMDM'][0];
@@ -193,6 +197,8 @@ private class CN_BU_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.Sandbox_User_Name__c = 'Name';
         talendSetting.Send_to_Account_Endpoint__c = 'http://127.0.0.1/ACC/200';
         talendSetting.User_Name__c = 'Name';
+        talendSetting.Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
+        talendSetting.Sandbox_Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
         insert talendSetting;
 
         User salesMDM = [SELECT Id FROM User WHERE lastName = 'salesMDM'][0];
@@ -261,6 +267,8 @@ private class CN_BU_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.Sandbox_User_Name__c = 'Name';
         talendSetting.Send_to_Account_Endpoint__c = 'http://127.0.0.1/ACC/200';
         talendSetting.User_Name__c = 'Name';
+        talendSetting.Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
+        talendSetting.Sandbox_Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
         insert talendSetting;
 
         User salesMDM = [SELECT Id FROM User WHERE lastName = 'salesMDM'][0];
@@ -329,6 +337,8 @@ private class CN_BU_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.Sandbox_User_Name__c = 'Name';
         talendSetting.Send_to_Account_Endpoint__c = 'http://127.0.0.1/ACC/500';
         talendSetting.User_Name__c = 'Name';
+        talendSetting.Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
+        talendSetting.Sandbox_Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
         insert talendSetting;
 
         User salesMDM = [SELECT Id FROM User WHERE lastName = 'salesMDM'][0];
@@ -397,6 +407,8 @@ private class CN_BU_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.Sandbox_User_Name__c = 'Name';
         talendSetting.Send_to_Account_Endpoint__c = 'http://127.0.0.1/ACC/500';
         talendSetting.User_Name__c = 'Name';
+        talendSetting.Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
+        talendSetting.Sandbox_Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
         insert talendSetting;
 
         User salesMDM = [SELECT Id FROM User WHERE lastName = 'salesMDM'][0];
@@ -465,6 +477,8 @@ private class CN_BU_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.Sandbox_User_Name__c = 'Name';
         talendSetting.Send_to_Account_Endpoint__c = 'http://127.0.0.1/ACC/500';
         talendSetting.User_Name__c = 'Name';
+        talendSetting.Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
+        talendSetting.Sandbox_Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
         insert talendSetting;
 
         User salesMDM = [SELECT Id FROM User WHERE lastName = 'salesMDM'][0];

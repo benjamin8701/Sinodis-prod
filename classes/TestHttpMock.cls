@@ -63,6 +63,14 @@ global class TestHttpMock implements HttpCalloutMock {
                 res.setBody('{"CN_Up_Code__c" : "00001","CN_Sync_Time__c" : "2021-04-20T00:00:00.000Z","CN_Sync_Error_Message__c" : ""}');
                 res.setStatusCode(404);
             }
+        } else if(url.contains('Quote')){
+            if(url.contains('200')) {
+                String parameters = url.split('\\?')[1];
+                String SKUCode = parameters.split('&')[0].split('=')[1];
+                String flag = parameters.split('&')[1].split('=')[1];
+                res.setBody('{"results":[{"CN_Material_Number_API__c":"' + SKUCode + '","CN_Sync_Status__c":"' + flag + '","CN_Sync_Time__c":"2021-10-28T09:24:12.000Z","CN_Sync_Error_Message__c":""}]}');
+                res.setStatusCode(200);
+            }
         }else{
             if(url.contains('200')) {
                 res.setBody('');

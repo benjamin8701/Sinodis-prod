@@ -47,6 +47,10 @@
         <name>CN_Promotion_End_Date__c</name>
     </fields>
     <fields>
+        <label>促销活动名称</label>
+        <name>CN_Promotion_Member_Name__c</name>
+    </fields>
+    <fields>
         <label>促销活动开始日期</label>
         <name>CN_Promotion_Start_Date__c</name>
     </fields>

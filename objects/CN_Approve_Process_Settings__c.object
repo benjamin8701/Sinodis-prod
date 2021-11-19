@@ -33,6 +33,16 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_CCE_Director_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>CCE Director UserId</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_CEO_UserId__c</fullName>
         <externalId>false</externalId>
         <label>CEO User ID</label>

@@ -179,6 +179,7 @@ public class TestDataFactory {
         objectList.add(makeUser('CCE1_KA', 'CN CCE', 'CN_CCE', '', 'Test0014', '', ''));
         objectList.add(makeUser('CCE2_DS', 'CN CCE', 'CN_CCE', '', 'Test0015', '', ''));
         objectList.add(makeUser('CCE3_WS', 'CN CCE', 'CN_CCE', '', 'Test0016', '', ''));
+        objectList.add(makeUser('CCE_Director', 'CN CCE', 'CN_CCE_Director', '', 'CCEDirect', '', ''));
         objectList.add(makeUser('ChefManager', 'CN Chef Manager', 'CN_Chef_Manager', '', 'Test0017', '', ''));
         objectList.add(makeUser('Chef', 'CN Chef', 'CN_Chef', '', 'Test0018', '', ''));
         objectList.add(makeUser('QA', 'CN QA', 'CN_QA', '', 'Test0019', '', ''));
@@ -288,12 +289,16 @@ public class TestDataFactory {
 
         for(Product2 product : productList){
             PricebookEntry pbEntry = new PricebookEntry(
-                UnitPrice  = 1,
+                UnitPrice  = 30,
                 CN_Minimum_Price__c  = 2,
                 CN_Promo_Price_P1__c = 5,
                 CN_Promo_Price_P2__c = 10,
                 CN_Promo_Price_P3__c = 20,
                 CN_Promo_Price_P4__c = 30,
+                CN_Pricing_Unit__c = 1,
+                CN_Discount_Price__c = 20,
+                CN_Max_Discount_Price__c = 10,
+                CN_Unit_of_Measure__c = 'EA',
                 IsActive = true,
                 Pricebook2Id  = Test.getStandardPricebookId(),
                 Product2Id  = product.Id
@@ -305,12 +310,16 @@ public class TestDataFactory {
         for(Pricebook2 pb : pricebookList){
             for(Product2 product : productList){
                 PricebookEntry pbEntry = new PricebookEntry(
-                    UnitPrice  = 1,
+                    UnitPrice  = 30,
                     CN_Minimum_Price__c  = 2,
                     CN_Promo_Price_P1__c = 5,
                     CN_Promo_Price_P2__c = 10,
                     CN_Promo_Price_P3__c = 20,
                     CN_Promo_Price_P4__c = 30,
+                    CN_Discount_Price__c = 20,
+                    CN_Max_Discount_Price__c = 10,
+                    CN_Pricing_Unit__c = 1,
+                    CN_Unit_of_Measure__c = 'EA',
                     IsActive = true,
                     Pricebook2Id  = pb.Id,
                     Product2Id  = product.Id
@@ -397,7 +406,8 @@ public class TestDataFactory {
             CN_CCE2_DS__c = lastNameUserIdMap.get('CCE2_DS'),
             CN_CCE3_WS__c = lastNameUserIdMap.get('CCE3_WS'),
             CN_MKT_Group_Email__c = 'MKTGroup@testSavencia.com',
-            CN_CS_Group_Email__c = 'CSGroup@testSavencia.com'
+            CN_CS_Group_Email__c = 'CSGroup@testSavencia.com',
+            CN_CCE_Director_UserId__c = lastNameUserIdMap.get('CCE_Director')
         );
         insert approveSetting;
 
@@ -596,12 +606,14 @@ public class TestDataFactory {
 
             List<Account> accList_update3 = new List<Account>();
             for(Account acc : accList){
+                Id approvedDirectRTId = Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get(Constants.CN_Account_RT_API_NAME_APPROVE_DIRECT).getRecordTypeId();
                 Account acc_update3 = new Account();
                 acc_update3.Id = acc.Id;
                 acc_update3.CN_Customer_Code__c = acc.Name;
                 acc_update3.CN_Account_Status__c = 'Approved';
                 acc_update3.CN_Sync_Status__c = 'Success';
                 acc_update3.CN_Approve_Step__c = '';
+                acc_update3.RecordTypeId = approvedDirectRTId;
                 accList_update3.add(acc_update3);
             }
             update accList_update3;

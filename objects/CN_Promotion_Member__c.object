@@ -264,6 +264,18 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>CN_Promotion_Member_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Account_Name__c &amp; &apos; &apos; &amp;  CN_Account__r.CN_Customer_Code__c &amp; &apos; &apos; &amp;  CN_Promotion__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Promotion Member Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Promotion_Start_Date__c</fullName>
         <externalId>false</externalId>
         <formula>CN_Promotion__r.CN_Start_Date__c</formula>
@@ -317,7 +329,15 @@
         <active>true</active>
         <label>Promotion Member</label>
     </recordTypes>
-    <searchLayouts/>
+    <searchLayouts>
+        <customTabListAdditionalFields>CN_Promotion_Member_Name__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CN_Promotion_Member_Name__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>CN_Promotion_Member_Name__c</searchFilterFields>
+        <searchResultsAdditionalFields>CN_Promotion_Member_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Promotion__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_IsPublished__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Account_Name__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>Private</sharingModel>
     <validationRules>
         <fullName>CN_Check_Create_Promotion_Member</fullName>

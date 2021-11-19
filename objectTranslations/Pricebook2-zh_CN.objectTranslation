@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
-        <label>渠道</label>
+        <label>类型</label>
         <name>CN_Channel__c</name>
         <picklistValues>
             <masterLabel>DS</masterLabel>
@@ -10,6 +10,10 @@
         <picklistValues>
             <masterLabel>KA</masterLabel>
             <translation><!-- KA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Price</masterLabel>
+            <translation><!-- List Price --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>WS</masterLabel>
@@ -24,11 +28,23 @@
         <label>失效日期</label>
         <name>CN_Expiration_Date__c</name>
     </fields>
+    <fields>
+        <label>价格手册编号</label>
+        <name>CN_Price_Book_Code__c</name>
+    </fields>
     <layouts>
         <layout>CN Price Book Layout</layout>
         <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- System Info --></label>
+            <section>System Info</section>
         </sections>
     </layouts>
     <recordTypes>

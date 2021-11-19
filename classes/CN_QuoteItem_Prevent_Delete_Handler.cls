@@ -21,6 +21,7 @@ public without sharing class CN_QuoteItem_Prevent_Delete_Handler implements Trig
             if(
                 Constants.CN_QUOTE_STATUS_APPROVED.equals(quoteItem.CN_Quote_Status__c) ||
                 Constants.CN_QUOTE_STATUS_SUBMITTED.equals(quoteItem.CN_Quote_Status__c) ||
+                Constants.CN_QUOTE_STATUS_READY.equals(quoteItem.CN_Quote_Status__c) ||
                 String.isNotBlank(quoteItem.CN_Quote_Sync_Status__c)
             ){
                 quoteItem.addError(system.Label.CN_QuoteItem_Quote_Has_Approved_Or_Synced);

@@ -21,6 +21,10 @@
         <name>CN_CCE3_WS__c</name>
     </fields>
     <fields>
+        <label><!-- CCE Director UserId --></label>
+        <name>CN_CCE_Director_UserId__c</name>
+    </fields>
+    <fields>
         <label><!-- CEO User ID --></label>
         <name>CN_CEO_UserId__c</name>
     </fields>

@@ -29,7 +29,7 @@ private class CN_Quote_Populate_Fields_Handler_Test {
 
         User salesRep = new User(Id = lastNameUserIdMap.get('Sales1'));
         Account acc_factory = [SELECT Id,Name FROM Account WHERE CN_License_Name_EN__c = 'TestAccount_Factory'][0];
-        Id cnQuoteRTId = Schema.SObjectType.Quote.getRecordTypeInfosByDeveloperName().get(Constants.CN_Quote_RT_API_NAME_NEW).getRecordTypeId();
+        Id cnQuoteRTId = Schema.SObjectType.Quote.getRecordTypeInfosByDeveloperName().get(Constants.CN_Quote_RT_API_NAME).getRecordTypeId();
         
         Opportunity opp = new Opportunity();
 

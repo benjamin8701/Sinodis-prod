@@ -40,8 +40,6 @@
         <members>CN_Brand_Prevent_Delete_Handler_Test</members>
         <members>CN_Brand_Send_To_SAP_LC_Ctrl</members>
         <members>CN_Brand_Send_To_SAP_LC_Ctrl_Test</members>
-		<members>CN_Case_Share_Handler</members>
-		<members>CN_Case_Share_Handler_Test</members>
         <members>CN_CDL_Populate_Uploaded_Handler</members>
         <members>CN_CDL_Populate_Uploaded_Handler_Test</members>
         <members>CN_CD_Populate_Uploaded_Handler</members>
@@ -94,6 +92,8 @@
         <members>CN_Campaign_Generate_Opp_LC_Ctrl_Test</members>
         <members>CN_Case_Populate_Status_Handler_Test</members>
         <members>CN_Case_Share_Handler</members>
+        <members>CN_Case_Share_Handler</members>
+        <members>CN_Case_Share_Handler_Test</members>
         <members>CN_Chef_Assigned_Reset_WorkDate_Handler</members>
         <members>CN_Chef_Req_Assign_Approver_Handler_Test</members>
         <members>CN_Chef_Request_Assign_Approver_Handler</members>
@@ -120,6 +120,9 @@
         <members>CN_Contact_Write_To_Lead_Handler_Test</members>
         <members>CN_Contract_Populate_Fields_Handler</members>
         <members>CN_Contract_Populate_Fields_Handler_Test</members>
+        <members>CN_Customer_Status_Trend_Batch</members>
+        <members>CN_Customer_Status_Trend_SCH</members>
+        <members>CN_Customer_Status_Trend_Test</members>
         <members>CN_Demo_Report_Copy_Handler</members>
         <members>CN_Demo_Report_Copy_Handler_Test</members>
         <members>CN_Demo_Report_Prevent_Delete_Handler</members>
@@ -155,17 +158,31 @@
         <members>CN_QuoteItem_Populate_Fields_Handler</members>
         <members>CN_QuoteItem_Populate_Handler_Test</members>
         <members>CN_QuoteItem_Prevent_Delete_Handler</members>
+        <members>CN_QuoteItem_Promotion_Link_Handler</members>
+        <members>CN_QuoteItem_Validation_Handler</members>
+        <members>CN_QuoteLineItem_Trigger_Test</members>
+        <members>CN_QuoteLineItem_Trigger_Test</members>
         <members>CN_Quote_AcceptORDeny_All_Items_LC_Ctrl</members>
         <members>CN_Quote_Accept_All_Items_LC_Ctrl_Test</members>
         <members>CN_Quote_Apply_LC_Ctrl</members>
         <members>CN_Quote_Apply_LC_Ctrl</members>
+        <members>CN_Quote_Approval_Reminder_Handler</members>
+        <members>CN_Quote_Fin_AcceptOrDeny_All_LC_Ctrl</members>
+        <members>CN_Quote_Fin_Accept_Test</members>
+        <members>CN_Quote_Finance_Notice_LC_Ctrl</members>
+        <members>CN_Quote_Generate_Quote_Prom_Handler</members>
+        <members>CN_Quote_Notify_Finance_Template_Ctrl</members>
+        <members>CN_Quote_Notify_Finance_Test</members>
         <members>CN_Quote_Populate_Approver_Handler</members>
         <members>CN_Quote_Populate_Approver_Handler</members>
         <members>CN_Quote_Populate_Fields_Handler</members>
         <members>CN_Quote_Populate_Fields_Handler_Test</members>
         <members>CN_Quote_Prevent_Delete_Handler</members>
+        <members>CN_Quote_Ready_Validation_Handler</members>
         <members>CN_Quote_Send_To_SAP_LC_Ctrl</members>
         <members>CN_Quote_Send_To_SAP_LC_Ctrl_Test</members>
+        <members>CN_Quote_Sharing_Handler_Handler</members>
+        <members>CN_Quote_Split_LC_Ctrl</members>
         <members>CN_Redirect_Gaode_Map_Controller</members>
         <members>CN_SOItem_Populate_CampaignP_Batch_Test</members>
         <members>CN_SOItem_Populate_CampaignPro_Batch</members>
@@ -210,6 +227,7 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>CN_Quote_Notify_Finance_Template</members>
         <members>CN_Sample_Product_Get_CN_VC</members>
         <members>CN_Sample_Product_Get_EN_VC</members>
         <members>CN_Sample_Product_Get_LC</members>
@@ -237,11 +255,17 @@
         <members>CN_Credit_Term_Application__c.CN_CTA_Approval_Process</members>
         <members>CN_Sample_Request__c.CN_SR_Approve_Process</members>
         <members>Quote.CN_Quote_Approval</members>
+        <members>Quote.CN_Quote_Approval_V4</members>
+        <members>Quote.CN_Quote_Auto_Approval</members>
         <name>ApprovalProcess</name>
     </types>
     <types>
         <members>*</members>
         <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CompactLayout</name>
     </types>
     <types>
         <members>LOGO</members>
@@ -394,16 +418,19 @@
         <members>CN_Email_Folder/CN_Promotion_Member_Published</members>
         <members>CN_Email_Folder/CN_Promotion_Published</members>
         <members>CN_Email_Folder/CN_Quote_Approval</members>
+        <members>CN_Email_Folder/CN_Quote_Approval_Reminder</members>
         <members>CN_Email_Folder/CN_Quote_Approvaled</members>
+        <members>CN_Email_Folder/CN_Quote_Completed</members>
         <members>CN_Email_Folder/CN_Quote_Follow_SalesRep</members>
+        <members>CN_Email_Folder/CN_Quote_Notify_Finance</members>
         <members>CN_Email_Folder/CN_Quote_Rejected</members>
+        <members>CN_Email_Folder/CN_SR_Repack_DeliveryAll_Sales</members>
         <members>CN_Email_Folder/CN_Sample_Request_Approved</members>
         <members>CN_Email_Folder/CN_Sample_Request_Approved_Cancelled</members>
         <members>CN_Email_Folder/CN_Sample_Request_Approved_Process_CCE</members>
         <members>CN_Email_Folder/CN_Sample_Request_Approved_Process_CS</members>
         <members>CN_Email_Folder/CN_Sample_Request_Rejected</members>
         <members>CN_Email_Folder/CN_Sample_Request_Submit</members>
-		<members>CN_Email_Folder/CN_SR_Repack_DeliveryAll_Sales</members>
         <name>EmailTemplate</name>
     </types>
     <types>
@@ -492,12 +519,14 @@
         <members>Global-Global Layout</members>
         <members>Lead-CN Lead Layout</members>
         <members>Opportunity-CN Opportunity Layout</members>
+        <members>OpportunityLineItem-Opportunity Product Layout</members>
         <members>Pricebook2-CN Price Book Layout</members>
         <members>PricebookEntry-CN Price Book Entry Layout</members>
         <members>Product2-CN Product Layout</members>
-        <members>Product2-CN Product Layout</members>
         <members>Quote-CN Sinodis Quote Layout</members>
+        <members>Quote-CN Sinodis Quote Layout - Finance MDM</members>
         <members>QuoteLineItem-CN Sinodis Quote Line Item Layout</members>
+        <members>QuoteLineItem-CN Sinodis Quote Line Item Layout -  Finance MDM</members>
         <members>Task-CN Sinodis Task Layout</members>
         <members>User-User Layout</members>
         <name>Layout</name>
@@ -509,6 +538,10 @@
     <types>
         <members>*</members>
         <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ListView</name>
     </types>
     <types>
         <members>Account.CN_Lead_VS_Account</members>
@@ -528,6 +561,7 @@
     <types>
         <members>CN_CCE_Lead_Qualifier</members>
         <members>CN_Campaign_Manager</members>
+        <members>CN_Manage_Account_Team</members>
         <members>CN_Marketing_Chef_Request_User</members>
         <members>CN_Marketing_Edit_PromoAndMini_Price</members>
         <members>CN_Marketing_Lead_Manager</members>
@@ -536,7 +570,6 @@
         <members>CN_Marketing_View_Price_Book</members>
         <members>CN_Product_Edit_Description</members>
         <members>CN_Promotion_Manager</members>
-		<members>CN_Manage_Account_Team</members>
         <name>PermissionSet</name>
     </types>
     <types>
@@ -617,10 +650,17 @@
         <members>Lead.CN_New_Contact_Request</members>
         <members>Quote.CN_AcceptOrDeny_All_Quote_Items</members>
         <members>Quote.CN_Apply</members>
+        <members>Quote.CN_Fin_AcceptOrDeny_All_Items</members>
         <members>Quote.CN_Notify_Finance</members>
+        <members>Quote.CN_Quote_Notify_Finance</members>
         <members>Quote.CN_Quote_Ready_for_Approval</members>
+        <members>Quote.CN_Quote_Split_Items</members>
         <members>Quote.CN_Send_To_SAP</members>
         <name>QuickAction</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>RecordType</name>
     </types>
     <types>
         <members>Talend_Endpoint</members>
@@ -677,6 +717,10 @@
         <members>CN_Customer_360_Report/CN_Sales_Order_by_Deliver_Status</members>
         <members>CN_Customer_360_Report/CN_Sample_Items_By_Status_Indirect</members>
         <members>CN_Customer_360_Report/CN_Sample_Items_by_Status_Direct</members>
+        <members>CN_Finance_MDM_Report</members>
+        <members>CN_Finance_MDM_Report/CN_Price_Book_Report_All_Price_Book</members>
+        <members>CN_Finance_MDM_Report/CN_Price_Book_Report_List_Price</members>
+        <members>CN_Finance_MDM_Report/CN_Quote_Details</members>
         <members>CN_LeadReport</members>
         <members>CN_LeadReport/CN_Average_time_of_lead_conversion_days</members>
         <members>CN_LeadReport/CN_Converted_Prospect_Customers</members>
@@ -746,118 +790,13 @@
         <members>CN_Campaign_with_product_with_SOI</members>
         <members>CN_Chef_with_Chef_Assigned</members>
         <members>CN_Lead</members>
+        <members>CN_Price_Book_Entry</members>
         <members>CN_Promotion_with_Member_with_Quote_Line_Item</members>
         <members>CN_Promotion_with_Promotion_Line_Item</members>
+        <members>CN_Quote_with_Quote_Line_Item</members>
         <members>CN_User_Report_Type</members>
         <members>Chef_Requests_with_Demo_Reports_with_Demo_Report_to_Products</members>
         <name>ReportType</name>
-    </types>
-    <types>
-        <members>CN_0018_Sales_Manager_Food_Service_Wholesale_East</members>
-        <members>CN_0096_Local_Key_Account_Manager_Food_Service_Wholesale</members>
-        <members>CN_0178_Assistant_Sales_Manager_Food_Service_Wholesale_North</members>
-        <members>CN_0296_Assistant_Sales_Manager_Food_Service_Key_Account_North</members>
-        <members>CN_0316_Sales_Manager_Food_Service_Wholesale_North</members>
-        <members>CN_0336_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_0337_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_0367_Channel_Supervisor_Food_Service_Direct_Sales_North1</members>
-        <members>CN_0370_Senior_Sales_Manager_Food_Service_Wholesale_South</members>
-        <members>CN_0389_Local_Key_Account_Manager_Food_Service_Wholesale_South</members>
-        <members>CN_0413_Assistant_Sales_Manager_Food_Service_Wholesale_South</members>
-        <members>CN_0604_Senior_Sales_Manager_Food_Service_Key_Account</members>
-        <members>CN_0626_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_0819_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_0838_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_0962_Sales_Manager_Food_Service_E_commerce_Wholesale</members>
-        <members>CN_1050_Sales_Manager_Food_Service_Wholesale_Zhejiang_Province</members>
-        <members>CN_1073_Senior_Sales_Representative_Food_Service_Wholesale_East</members>
-        <members>CN_1078_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_1139_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_1167_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_1211_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_1225_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_1239_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_1245_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_1424_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_1487_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <members>CN_1503_Channel_Supervisor_Food_Service_Direct_Sales_North</members>
-        <members>CN_1516_Assistant_Sales_Manager_Food_Service_Direct_Sales_East</members>
-        <members>CN_1554_Channel_Supervisor_Food_Service_Direct_Sales_East</members>
-        <members>CN_1558_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_1586_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_1602_Sales_Manager_Food_Service_Direct_Sales_North</members>
-        <members>CN_1612_Assistant_Sales_Manager_Food_Service_Direct_Sales_South</members>
-        <members>CN_1616_Senior_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_1637_Senior_Sales_Representative_Food_Service_Wholesale_East</members>
-        <members>CN_1653_Senior_Sales_Representative_Food_Service_Key_Account_South</members>
-        <members>CN_1675_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_1685_Senior_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <members>CN_1692_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_1695_Senior_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <members>CN_1705_Sales_Representative_Food_Service_Key_Account_East</members>
-        <members>CN_1761_Senior_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <members>CN_1872_Sales_Supervisor_Food_Service_Wholesale</members>
-        <members>CN_1896_Sales_Manager_Food_Service_Direct_Sales_East</members>
-        <members>CN_1901_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <members>CN_1917_Senior_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_1930_Senior_Sales_Representative_Food_Service_Direct_Sales_North</members>
-        <members>CN_1955_Assistant_Sales_Manager_Food_Service_Key_Account_East</members>
-        <members>CN_1958_Senior_Sales_Representative_Food_Service_Direct_Sales_North</members>
-        <members>CN_1968_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_1969_Sales_development_Supervisor</members>
-        <members>CN_1972_Senior_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_1973_Senior_Sales_Representative_Food_Service_Wholesale_EAST</members>
-        <members>CN_1979_Senior_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_1990_Sales_Representative_Food_Service_Key_Account_East</members>
-        <members>CN_1994_Senior_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_1996_Sales_Representative_Food_Service_Direct_Sales_North</members>
-        <members>CN_2002_Senior_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_2019_Regional_Sales_Manager_West</members>
-        <members>CN_2022_Senior_Sales_Representative_Food_Service_Key_Account_East</members>
-        <members>CN_2023_Sales_Manager_Food_Service_Direct_Sales_South</members>
-        <members>CN_2026_Senior_Sales_Representative_Food_Service_Key_Account_East</members>
-        <members>CN_2027_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_2035_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <members>CN_2036_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_2047_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_2057_Operation_Specialist_Food_Service_E_Commerce_Wholesale</members>
-        <members>CN_2066_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_2084_Assistant_Sales_Manager_Food_Service_Key_Account_North</members>
-        <members>CN_2085_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_2097_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <members>CN_2103_Sales_Representative_Food_Service_Wholesale</members>
-        <members>CN_2104_Senior_Sales_Representative_Food_Service_Direct_Sales_East</members>
-        <members>CN_2139_Sales_Manager_Food_Service_Key_Account_East</members>
-        <members>CN_2162_Sales_Manager_Food_Service_Key_Account_South</members>
-        <members>CN_2171_National_Wholesale_Director</members>
-        <members>CN_2174_Sales_Representative_Food_Service_Direct_Sales_North</members>
-        <members>CN_CCE</members>
-        <members>CN_CCE_Assistant</members>
-        <members>CN_CCE_Assistant_DS</members>
-        <members>CN_CCE_Assistant_KA</members>
-        <members>CN_CCE_Assistant_WS</members>
-        <members>CN_CCE_Director</members>
-        <members>CN_CEO</members>
-        <members>CN_CS</members>
-        <members>CN_Chef</members>
-        <members>CN_Chef_Manager</members>
-        <members>CN_China</members>
-        <members>CN_Commercial_Director</members>
-        <members>CN_Finance_AR</members>
-        <members>CN_Finance_Director</members>
-        <members>CN_Finance_MDM</members>
-        <members>CN_MKT_Member</members>
-        <members>CN_Marketing</members>
-        <members>CN_Marketing_Director</members>
-        <members>CN_QA</members>
-        <members>CN_Sales_MDM</members>
-        <members>CN_Service</members>
-        <members>CN_VACANCY_Channel_Supervisor_Food_Service_Direct_Sales_East</members>
-        <members>CN_VACANCY_Channel_Supervisor_Food_Service_Direct_Sales_South</members>
-        <members>CN_VACANCY_National_Direct_Sales_Director</members>
-        <members>CN_VACANCY_Sales_Manager_Food_Service_Direct_Sales_West</members>
-        <members>CN_VACANCY_Senior_Sales_Representative_Food_Service_Direct_Sales_South</members>
-        <name>Role</name>
     </types>
     <types>
         <members>Account</members>
@@ -958,6 +897,10 @@
         <members>en_US</members>
         <members>zh_CN</members>
         <name>Translations</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ValidationRule</name>
     </types>
     <types>
         <members>*</members>
