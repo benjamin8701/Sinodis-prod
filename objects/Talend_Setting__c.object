@@ -29,6 +29,14 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Quote_Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <label>Quote Endpoint</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
         <fullName>Sales_Order_Update_Endpoint__c</fullName>
         <externalId>false</externalId>
         <label>Sales Order Update Endpoint</label>
@@ -69,6 +77,14 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sandbox_Quote_Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <label>Sandbox Quote Endpoint</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
     </fields>
     <fields>
         <fullName>Sandbox_Send_To_Account_Endpoint__c</fullName>

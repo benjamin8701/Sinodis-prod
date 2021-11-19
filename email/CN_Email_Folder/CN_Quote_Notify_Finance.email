@@ -1,0 +1,7 @@
+<messaging:emailTemplate subject="报价待处理通知 [{!relatedTo.CN_Quote_Number__c}]: {!relatedTo.CN_Customer_Code__c} - {!relatedTo.CN_Customer_Name__c }  " recipientType="User" relatedToType="Quote">
+<messaging:htmlEmailBody >
+
+<c:CN_Quote_Notify_Finance_Template QuoteId="{!relatedTo.Id}"></c:CN_Quote_Notify_Finance_Template>
+
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

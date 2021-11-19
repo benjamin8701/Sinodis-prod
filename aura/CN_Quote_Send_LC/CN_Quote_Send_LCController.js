@@ -4,10 +4,6 @@
         component.set("v.moduleName", $A.get("{!$Label.c.CN_Quote_Name}"));
         component.set("v.title", helper.format($A.get("{!$Label.c.CN_Quote_Retrieve_Title}") , [component.get("v.moduleName")]));
         
-        let getCFRMMsg = $A.get("{!$Label.c.CN_CustomerHierarchy_Confirm_Msg}");
-        component.set("v.confirmMsg", getCFRMMsg);
-        console.log("v.confirmMsg: " + getCFRMMsg);
-        
         let getQuoteInfoAndCheckEditPermisisonAction = component.get("c.getQuoteInfoAndCheckEditPermisison");
         getQuoteInfoAndCheckEditPermisisonAction.setParams({
             "recordId" : component.get("v.recordId")
@@ -51,11 +47,11 @@
         });
         let myAcitonPromise = helper.callServerAction(component, myAction);
         myAcitonPromise.then(function(_returnValue) {
-
             // Display the total in a "toast" status message
             var resultsToast = $A.get("e.force:showToast");
+            console.log(_returnValue);
             if(_returnValue["isSendSuccess"]) {
-                let getSendSuccessMsg = helper.format($A.get("{!$Label.c.CN_Quote_Send_Success_Msg}") , [component.get("v.moduleName")]);
+                let getSendSuccessMsg = helper.format($A.get("{!$Label.c.CN_Quote_Send_Success_Msg}") , [component.get("v.moduleName"), _returnValue["qliNeedToSendCnt"]]);
                 resultsToast.setParams({
                     "type": "success",
                     "title": "Success",
@@ -64,15 +60,14 @@
                 resultsToast.fire();
                 dismissActionPanel.fire();
             } else {
-                var resultsToast = $A.get("e.force:showToast");
-                resultsToast.setParams({
-                    "type": "error",
-                    "title": "Failed",
-                    "message": _returnValue["errorMessage"]
-                });
-                resultsToast.fire();
-                component.set("v.modalContentMessage",  _returnValue["errorMessage"]);
-                component.set("v.isBtnDisabled", true);
+                    resultsToast.setParams({
+                        "type": "error",
+                        "title": "Failed",
+                        "message": $A.get("{!$Label.c.CN_Quote_Send_To_SAP_ErrMsg_Failed_Retry}")
+                    });
+                    resultsToast.fire();
+                    component.set("v.modalContentMessage",  _returnValue["errorMessage"]);
+                    component.set("v.modalContentMessageRetry",  $A.get("{!$Label.c.CN_Quote_Send_To_SAP_ErrMsg_Failed_Retry}"));
             }
         }).catch(function(_error) {
                 let errorMsg = "";

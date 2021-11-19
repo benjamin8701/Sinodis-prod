@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Role xmlns="http://soap.sforce.com/2006/04/metadata">
-    <caseAccessLevel>None</caseAccessLevel>
-    <contactAccessLevel>Edit</contactAccessLevel>
-    <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>1239_Sales Representative-Food Service Wholesale</name>
-    <opportunityAccessLevel>Edit</opportunityAccessLevel>
-    <parentRole>CN_1558_Sales_Supervisor_Food_Service_Wholesale</parentRole>
-</Role>

@@ -5,26 +5,46 @@
         <value>报价应用促销活动</value>
     </caseValues>
     <fields>
-        <label><!-- Is Quote Approved --></label>
+        <label>促销活动是否公布</label>
+        <name>CN_Is_Promotion_Published__c</name>
+    </fields>
+    <fields>
+        <label>报价是否已批准</label>
         <name>CN_Is_Quote_Approved__c</name>
     </fields>
     <fields>
-        <label><!-- Promotion Member --></label>
+        <label>促销结束日期</label>
+        <name>CN_Promotion_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>促销活动成员</label>
         <name>CN_Promotion_Member__c</name>
         <relationshipLabel><!-- Quote To Promotions --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Quote Status --></label>
+        <label>促销活动名称</label>
+        <name>CN_Promotion_Name__c</name>
+    </fields>
+    <fields>
+        <label>促销开始日期</label>
+        <name>CN_Promotion_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>促销状态</label>
+        <name>CN_Promotion_Status__c</name>
+    </fields>
+    <fields>
+        <label>报价状态</label>
         <name>CN_Quote_Status__c</name>
     </fields>
     <fields>
-        <label><!-- Quote Sync Status --></label>
+        <label>报价同步状态</label>
         <name>CN_Quote_Sync_Status__c</name>
     </fields>
     <fields>
-        <label><!-- Quote --></label>
+        <label>报价</label>
         <name>CN_Quote__c</name>
-        <relationshipLabel><!-- Quote To Promotions --></relationshipLabel>
+        <relationshipLabel>相关促销信息</relationshipLabel>
     </fields>
     <layouts>
         <layout>CN Quote To Promotion Layout</layout>
@@ -39,7 +59,15 @@
         <name>CN_Quote_To_Promotion</name>
     </recordTypes>
     <validationRules>
-        <errorMessage><!-- You are not allow to edit the quote to promotion. --></errorMessage>
+        <errorMessage>此报价的目标客户未参加此促销活动。</errorMessage>
+        <name>CN_QTP_ChecK_Related_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>报价的生效日期与到期日期不在此促销活动的有效时间范围内。</errorMessage>
+        <name>CN_QTP_Check_Promotion_Duration</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不可变更促销活动。</errorMessage>
         <name>CN_QTP_Prevent_Edit</name>
     </validationRules>
 </CustomObjectTranslation>

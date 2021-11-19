@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <excludeButtons>CreateOrder</excludeButtons>
     <excludeButtons>CreatePdf</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -13,19 +14,23 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
+                <field>CN_Customer_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
                 <field>OpportunityId</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>AccountId</field>
+                <behavior>Required</behavior>
+                <field>CN_Effective_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Is_All_Accepted__c</field>
+                <field>CN_Is_Finance_Notified__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CN_Is_All_Signed__c</field>
+                <field>GrandTotal</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -34,8 +39,12 @@
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>CN_Effective_Date__c</field>
+                <behavior>Readonly</behavior>
+                <field>AccountId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Sales_Person__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -43,30 +52,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>GrandTotal</field>
-            </layoutItems>
-        </layoutColumns>
-        <style>TwoColumnsTopToBottom</style>
-    </layoutSections>
-    <layoutSections>
-        <customLabel>true</customLabel>
-        <detailHeading>true</detailHeading>
-        <editHeading>true</editHeading>
-        <label>SAP Creation Information</label>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Sync_Status__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Sync_Error_Message__c</field>
-            </layoutItems>
-        </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Sync_Time__c</field>
+                <field>CN_Finance_Notify_DateTime__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -175,26 +161,33 @@
     <relatedLists>
         <fields>QUOTE_LI.PRODUCT2</fields>
         <fields>CN_SKU_Description_CN__c</fields>
-        <fields>CN_Selling_Unit__c</fields>
-        <fields>QUOTE_LI.LIST_PRICE</fields>
         <fields>QUOTE_LI.UNIT_PRICE</fields>
-        <fields>CN_Promo_Price_P1__c</fields>
-        <fields>CN_Minimum_Price__c</fields>
-        <fields>CN_Discount__c</fields>
+        <fields>CN_Selling_Unit__c</fields>
+        <fields>CN_Channel_Price__c</fields>
+        <fields>CN_Promotion_Price__c</fields>
+        <fields>CN_Approval_Status__c</fields>
+        <fields>CN_Is_Need_My_Approval__c</fields>
         <fields>CN_Customer_Acceptance__c</fields>
+        <fields>CN_Finance_Status__c</fields>
         <relatedList>RelatedQuoteLineItemList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>QUOTE_DOC.NAME</fields>
-        <fields>QUOTE_DOC.DISCOUNT</fields>
-        <fields>QUOTE_DOC.GRANDTOTAL</fields>
         <fields>CreatedBy</fields>
         <relatedList>RelatedQuoteDocumentList</relatedList>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
         <fields>NAME</fields>
+        <fields>CN_Promotion_Name__c</fields>
         <fields>CN_Promotion_Member__c</fields>
+        <fields>CN_Promotion_Start_Date__c</fields>
+        <fields>CN_Promotion_End_Date__c</fields>
+        <fields>CN_Promotion_Status__c</fields>
+        <fields>CN_Is_Promotion_Published__c</fields>
         <relatedList>CN_Quote_To_Promotion__c.CN_Quote__c</relatedList>
+        <sortField>CN_Promotion_Start_Date__c</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>CreatedDate</fields>

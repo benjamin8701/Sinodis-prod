@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>true</active>
+    <active>false</active>
     <allowRecall>true</allowRecall>
     <allowedSubmitters>
         <type>owner</type>
@@ -11,7 +11,7 @@
         <field>TotalPrice</field>
     </approvalPageFields>
     <approvalStep>
-        <allowDelegate>false</allowDelegate>
+        <allowDelegate>true</allowDelegate>
         <approvalActions>
             <action>
                 <name>CN_Populate_Approve_Step2</name>
@@ -25,13 +25,6 @@
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <entryCriteria>
-            <criteriaItems>
-                <field>Quote.CN_Approver_1__c</field>
-                <operation>notEqual</operation>
-            </criteriaItems>
-        </entryCriteria>
-        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
         <label>Step 1</label>
         <name>CN_Step_1</name>
     </approvalStep>
@@ -50,13 +43,6 @@
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <entryCriteria>
-            <criteriaItems>
-                <field>Quote.CN_Approver_2__c</field>
-                <operation>notEqual</operation>
-            </criteriaItems>
-        </entryCriteria>
-        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
         <label>Step 2</label>
         <name>CN_Step_2</name>
         <rejectBehavior>

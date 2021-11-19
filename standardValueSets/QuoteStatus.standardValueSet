@@ -31,10 +31,4 @@
         <label>Approved</label>
         <allowEmail>true</allowEmail>
     </standardValue>
-    <standardValue>
-        <fullName>Synced</fullName>
-        <default>false</default>
-        <label>Synced</label>
-        <allowEmail>true</allowEmail>
-    </standardValue>
 </StandardValueSet>

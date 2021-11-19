@@ -4,7 +4,7 @@
     <encodingKey>UTF-8</encodingKey>
     <name>CN_Quote_Approval</name>
     <style>none</style>
-    <subject>{!Quote.CN_Sales_Person_Name__c} Quotation for Customer{!Quote.CN_Customer_Name__c} is pending your approval / {!Quote.CN_Sales_Person_Name__c}的客户{!Quote.CN_Customer_Name__c}的报价单申请等待您的批准</subject>
+    <subject>报价待审批提醒 - {!Quote.CN_Quote_Email_Subject__c} / Quote pending your approval</subject>
     <type>text</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

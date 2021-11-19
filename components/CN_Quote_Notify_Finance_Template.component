@@ -1,0 +1,68 @@
+<apex:component controller="CN_Quote_Notify_Finance_Template_Ctrl" access="global">
+    
+    <apex:attribute name="QuoteId" assignTo="{!QId}"  type="Id" description="Quote Id" />
+    <p>报价信息：</p>
+    <table border="2" cellspacing="4">
+        <tr>
+            <th>SKU Code</th>
+            <th>SKU Name</th>
+            <th>Sales Price</th>
+            <th>List Price</th>
+            <th>UoM</th>
+            <th>Tax</th>
+            <th>Rate</th>
+        </tr>
+        <apex:repeat value="{!Items}" var="item">
+            <tr>
+                <td><apex:outputField value="{!item.CN_Product_Code__c}" /></td>
+                <td><apex:outputField value="{!item.CN_SKU_Description_CN__c}" /></td>
+                <td><apex:outputField value="{!item.UnitPrice}" /></td>
+                <td><apex:outputField value="{!item.CN_List_Price__c}" /></td>
+                <td><apex:outputField value="{!item.CN_Selling_Unit__c}" /></td>
+                <td><apex:outputField value="{!item.CN_Tax__c}" /></td>
+                <td><apex:outputField value="{!item.CN_Rate_API__c}" /></td>
+            </tr>
+        </apex:repeat>
+    </table>
+    <br/>
+    <br/>
+    请<a href="{!QuoteURL}">点击此处</a>查看额外信息。<br/>
+    <br/>
+    <br/>
+    <br/>
+    谢谢!<br/>
+    <br/>
+    <br/>
+    ------------------------English Version Scroll Down------------------------
+    <p >Quote Information：</p>
+    <table border="2" cellspacing="4">
+        <tr>
+            <th>SKU Code</th>
+            <th>SKU Name</th>
+            <th>Sales Price</th>
+            <th>List Price</th>
+            <th>UoM</th>
+            <th>Tax</th>
+            <th>Rate</th>
+        </tr>
+        <apex:repeat value="{!Items}" var="item">
+            <tr>
+                <td><apex:outputField value="{!item.CN_Product_Code__c}" /></td>
+                <td><apex:outputField value="{!item.CN_SKU_Description_EN__c}" /></td>
+                <td><apex:outputField value="{!item.UnitPrice}" /></td>
+                <td><apex:outputField value="{!item.CN_List_Price__c}" /></td>
+                <td><apex:outputField value="{!item.CN_Selling_Unit__c}" /></td>
+                <td><apex:outputField value="{!item.CN_Tax__c}" /></td>
+                <td><apex:outputField value="{!item.CN_Rate_API__c}" /></td>
+            </tr>
+        </apex:repeat>
+    </table>
+    <br/>
+    <br/>
+    Please <a href="{!QuoteURL}">Click here</a> to view additional information.<br/>
+    <br/>
+    <br/>
+    <br/>
+    Thank you! <br/>
+    
+</apex:component>

@@ -114,16 +114,22 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Price_Book_Record_Page</content>
         <formFactor>Large</formFactor>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Price_Book_Record_Page</content>
         <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -132,7 +138,7 @@
     <fields>
         <fullName>CN_Channel__c</fullName>
         <externalId>false</externalId>
-        <label>Channel</label>
+        <label>Type</label>
         <required>true</required>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
@@ -140,6 +146,11 @@
             <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
+                <value>
+                    <fullName>List Price</fullName>
+                    <default>false</default>
+                    <label>List Price</label>
+                </value>
                 <value>
                     <fullName>KA</fullName>
                     <default>false</default>
@@ -175,6 +186,17 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>CN_Price_Book_Code__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Price Book Code</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -194,6 +216,7 @@
         <fullName>All_Price_Books</fullName>
         <columns>PRICEBOOK2.NAME</columns>
         <columns>CN_Channel__c</columns>
+        <columns>CN_Price_Book_Code__c</columns>
         <columns>PRICEBOOK2.IS_ACTIVE</columns>
         <columns>PRICEBOOK2.DESCRIPTION</columns>
         <columns>CN_Effective_Date__c</columns>
@@ -213,6 +236,10 @@
             </values>
             <values>
                 <fullName>KA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>List Price</fullName>
                 <default>false</default>
             </values>
             <values>

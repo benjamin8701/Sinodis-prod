@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
+        <label>折扣价</label>
+        <name>CN_Discount_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Need To Sync --></label>
+        <name>CN_Is_Need_To_Sync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last List Price Change Time --></label>
+        <name>CN_Last_List_Price_Change_Time__c</name>
+    </fields>
+    <fields>
+        <label>最大折扣</label>
+        <name>CN_Max_Discount_Price__c</name>
+    </fields>
+    <fields>
         <label>最低价</label>
         <name>CN_Minimum_Price__c</name>
+    </fields>
+    <fields>
+        <label>价格手册编号</label>
+        <name>CN_Price_Book_Code__c</name>
+    </fields>
+    <fields>
+        <help>格式：价格手册编号 + 产品编号</help>
+        <label>价格条目编号</label>
+        <name>CN_Price_Book_Entry_Code__c</name>
+    </fields>
+    <fields>
+        <label>计价单元</label>
+        <name>CN_Pricing_Unit__c</name>
+    </fields>
+    <fields>
+        <label>产品编号</label>
+        <name>CN_Product_Code__c</name>
+    </fields>
+    <fields>
+        <label>产品名称</label>
+        <name>CN_Product_Name__c</name>
     </fields>
     <fields>
         <label>P1促销指导价</label>
@@ -20,6 +57,73 @@
         <label>P4促销指导价</label>
         <name>CN_Promo_Price_P4__c</name>
     </fields>
+    <fields>
+        <label><!-- Sync Error Message --></label>
+        <name>CN_Sync_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Status --></label>
+        <name>CN_Sync_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proccessing</masterLabel>
+            <translation><!-- Proccessing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sync Time --></label>
+        <name>CN_Sync_Time__c</name>
+    </fields>
+    <fields>
+        <label>计价单位</label>
+        <name>CN_Unit_of_Measure__c</name>
+        <picklistValues>
+            <masterLabel>CAR</masterLabel>
+            <translation><!-- CAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EA</masterLabel>
+            <translation><!-- EA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KG</masterLabel>
+            <translation><!-- KG --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>CN Price Book Entry Layout</layout>
+        <sections>
+            <label>折扣信息</label>
+            <section>Discount Info</section>
+        </sections>
+        <sections>
+            <label>其他信息</label>
+            <section>Other Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Price book entry code is incorrect! --></errorMessage>
+        <name>CN_CHECK_PRICE_BOOK_ENTRY_CODE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input Discount Price and Max Discount Price. --></errorMessage>
+        <name>CN_PBE_Channel_Check_Discount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请为Standard Price Book填写计价单元与计价单位。</errorMessage>
+        <name>CN_PBE_Standard_Check_UoM</name>
+    </validationRules>
     <validationRules>
         <errorMessage>不允许更改价目表价格</errorMessage>
         <name>CN_Prevent_Edit_List_Price</name>

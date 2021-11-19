@@ -15,20 +15,21 @@ public without sharing class CN_QTP_Prevent_Change_Approved_Handler implements T
 	public void handle() {
         this.CN_RTIds.add(Schema.SObjectType.CN_Quote_To_Promotion__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_QTP_RT_API_NAME_NEW).getRecordTypeId());
         
-        if(Trigger.isBefore && Trigger.isInsert) {
-            handleBeforeInsert();
+        if(Trigger.isBefore && Trigger.isUpdate) {
+            handleBeforeUpdate();
         }
         if(Trigger.isBefore && Trigger.isDelete) {
             handleBeforeDelete();
         }
     }
     
-    public void handleBeforeInsert() {
+    public void handleBeforeUpdate() {
         for(CN_Quote_To_Promotion__c qtp : (List<CN_Quote_To_Promotion__c>)Trigger.New) {          
             if(CN_RTIds.contains(qtp.RecordTypeId) && 
                 (
                     Constants.CN_QUOTE_STATUS_APPROVED.equals(qtp.CN_Quote_Status__c) ||
                     Constants.CN_QUOTE_STATUS_SUBMITTED.equals(qtp.CN_Quote_Status__c) ||
+                    Constants.CN_QUOTE_STATUS_READY.equals(qtp.CN_Quote_Status__c) ||
                     String.isNotBlank(qtp.CN_Quote_Sync_Status__c)
                 )
             ){
@@ -43,6 +44,7 @@ public without sharing class CN_QTP_Prevent_Change_Approved_Handler implements T
                 (
                     Constants.CN_QUOTE_STATUS_APPROVED.equals(qtp.CN_Quote_Status__c) ||
                     Constants.CN_QUOTE_STATUS_SUBMITTED.equals(qtp.CN_Quote_Status__c) ||
+                    Constants.CN_QUOTE_STATUS_READY.equals(qtp.CN_Quote_Status__c) ||
                     String.isNotBlank(qtp.CN_Quote_Sync_Status__c)
                 )
             ){

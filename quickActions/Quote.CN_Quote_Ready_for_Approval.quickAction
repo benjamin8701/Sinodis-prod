@@ -2,7 +2,7 @@
 <QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldOverrides>
         <field>Status</field>
-        <formula>CASE( TEXT(  Quote.Status  ) , &quot;New&quot;, &quot;Ready for Approval&quot;, &quot;Ready for Approval&quot;, &quot;New&quot;, &quot;New&quot;)</formula>
+        <formula>CASE( TEXT(  Quote.Status  ) , &quot;New&quot;, &quot;Ready for Approval&quot;, &quot;Rejected&quot;, &quot;Ready for Approval&quot;, &quot;Ready for Approval&quot;, &quot;New&quot;, &quot;New&quot;)</formula>
     </fieldOverrides>
     <label>Ready for Approval/Back to New</label>
     <optionsCreateFeedItem>false</optionsCreateFeedItem>

@@ -47,7 +47,7 @@
             // Display the total in a "toast" status message
             var resultsToast = $A.get("e.force:showToast");
             if(_returnValue["isApplySuccess"]) {
-                let getSendSuccessMsg = $A.get("{!$Label.c.CN_Account_Send_Success_Msg}");
+                let getSendSuccessMsg = helper.format($A.get("{!$Label.c.CN_Quote_Apply_Success_Msg}") , [_returnValue["appliedCnt"]]);
                 resultsToast.setParams({
                     "type": "success",
                     "title": "Success",

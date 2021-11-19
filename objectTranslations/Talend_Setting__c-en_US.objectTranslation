@@ -21,6 +21,10 @@
         <name>Password__c</name>
     </fields>
     <fields>
+        <label><!-- Quote Endpoint --></label>
+        <name>Quote_Endpoint__c</name>
+    </fields>
+    <fields>
         <label><!-- Sales Order Update Endpoint --></label>
         <name>Sales_Order_Update_Endpoint__c</name>
     </fields>
@@ -39,6 +43,10 @@
     <fields>
         <label><!-- Sandbox Password --></label>
         <name>Sandbox_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox Quote Endpoint --></label>
+        <name>Sandbox_Quote_Endpoint__c</name>
     </fields>
     <fields>
         <label><!-- Sandbox Send to Account Endpoint --></label>

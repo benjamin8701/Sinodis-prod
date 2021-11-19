@@ -352,12 +352,21 @@ public without sharing class Constants {
 	public static Boolean CN_QUOTE_POPULATE_FIELDS_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_QUOTE_POPULATE_APPROVER_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_QUOTE_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
+	public static Boolean CN_QUOTE_APPROVAL_REMINDER_HANDLER_TRIGGER_ON = true;
+	public static Boolean CN_QUOTE_GENERATE_QUOTE_PROMOTION_HANDLER_TRIGGER_ON = true;
+	public static Boolean CN_QUOTE_READY_VALIDATION_HANDLER_TRIGGER_ON = true;
+	public static Boolean CN_QUOTE_PROMOTION_LINK_HANDLER_TRIGGER_ON = true;
+	public static Boolean CN_QUOTE_SHARING_HANDLER_TRIGGER_ON = true;
 
-	public static final String CN_QUOTE_RT_API_NAME_NEW = 'CN_Quote';
+	public static Integer CN_QUOTE_APPROVAL_REMINDER_HOURS = 8;
 	public static String CN_SHARING_REASON_MANUAL = 'Manual';
+
+	public static final String CN_QUOTE_RT_API_NAME_NEW = 'CN_Quote_New';
+	public static final String CN_QUOTE_RT_API_NAME = 'CN_Quote';
 	public static final Integer CN_QUOTE_APPROVAL_LENGTH = 12;
 	public static final String CN_QUOTE_STATUS_NEW = 'New';
 	public static final String CN_QUOTE_STATUS_SUBMITTED = 'Submitted for Approval';
+	public static final String CN_QUOTE_STATUS_READY = 'Ready for Approval';
 	public static final String CN_QUOTE_STATUS_APPROVED = 'Approved';
 	public static final String CN_QUOTE_STATUS_REJECTED = 'Rejected';
 	public static final String CN_QUOTE_STATUS_ACCEPTED = 'Accepted';
@@ -371,10 +380,12 @@ public without sharing class Constants {
 	public static Boolean CN_QI_TRIGGER_ON = true;
 	public static Boolean CN_QUOTEITEM_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_QUOTEITEM_POPULATE_FIELDS_HANDLER_TRIGGER_ON = true;
-
+	public static Boolean CN_QUOTEITEM_VALIDATION_HANDLER_TRIGGER_ON = true;
+	
 	public static final String CN_QUOTEITEM_ACCEPTANCE_ACCEPTED = 'Accepted';
 	public static final String CN_QUOTEITEM_ACCEPTANCE_DENIED = 'Denied';
-	
+	public static final String CN_QUOTEITEM_APPROVAL_STATUS_REJECT = 'Reject';
+	public static final String CN_QUOTEITEM_APPROVAL_STATUS_APPROVED = 'Approved';
 
 	//PriceBook
 	public static Boolean PB_TRIGGER_ON = true;
