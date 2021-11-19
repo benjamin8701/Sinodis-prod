@@ -345,6 +345,7 @@
     <relatedLists>
         <excludeButtons>MassAddToCampaign</excludeButtons>
         <excludeButtons>Merge</excludeButtons>
+        <excludeButtons>NewContact</excludeButtons>
         <fields>FULL_NAME</fields>
         <fields>CN_Contact_Type__c</fields>
         <fields>CONTACT.TITLE</fields>
