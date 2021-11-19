@@ -1018,6 +1018,11 @@
             <field>CN_Tax_PDF__c</field>
             <table>Quote.QuoteLineItems</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Product_Description_PDF__c</field>
+            <table>Quote.QuoteLineItems</table>
+        </columns>
         <masterLabel>Quote Line Items</masterLabel>
     </sections>
 </ReportType>

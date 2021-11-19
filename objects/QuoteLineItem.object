@@ -541,12 +541,11 @@
     <fields>
         <fullName>CN_Price_PDF__c</fullName>
         <externalId>false</externalId>
-        <formula>CN_Sales_Price_with_Tax__c</formula>
+        <formula>&quot;CNY &quot; + TEXT(ROUND(CN_Sales_Price_with_Tax__c,2)) +  BR()  +  CN_Tax__c + &quot;VAT&quot;</formula>
         <label>Pirce/销售价</label>
-        <precision>18</precision>
         <required>false</required>
-        <scale>2</scale>
-        <type>Currency</type>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Pricing_Unit__c</fullName>
@@ -563,6 +562,16 @@
         <externalId>false</externalId>
         <formula>Product2.CN_SKU_Code__c</formula>
         <label>Product Code</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Product_Description_PDF__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_SKU_Description_CN__c + BR()  +  CN_SKU_Description_EN__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Description/产品描述</label>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>

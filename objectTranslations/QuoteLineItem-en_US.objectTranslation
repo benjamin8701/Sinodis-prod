@@ -189,6 +189,10 @@
         <name>CN_Product_Code__c</name>
     </fields>
     <fields>
+        <label><!-- Product Description/产品描述 --></label>
+        <name>CN_Product_Description_PDF__c</name>
+    </fields>
+    <fields>
         <label><!-- Promo Price P1 --></label>
         <name>CN_Promo_Price_P1__c</name>
     </fields>

@@ -700,6 +700,11 @@
             <field>CN_Tax_PDF__c</field>
             <table>CN_Promotion__c.Promotion_Members2__r.Quote_Line_Items__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Product_Description_PDF__c</field>
+            <table>CN_Promotion__c.Promotion_Members2__r.Quote_Line_Items__r</table>
+        </columns>
         <masterLabel>Quote Line Items</masterLabel>
     </sections>
 </ReportType>
