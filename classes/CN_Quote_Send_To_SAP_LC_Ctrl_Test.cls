@@ -32,7 +32,7 @@ private class CN_Quote_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.Sandbox_User_Name__c = 'Name';
         talendSetting.Send_to_Account_Endpoint__c = 'http://127.0.0.1/ACC/400';
         talendSetting.User_Name__c = 'Name';
-        talendSetting.Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
+        talendSetting.Quote_Endpoint__c = 'http://127.0.0.1/Quote/200?ProductCode=' + productList[0].CN_SKU_Code__c + '&IsSuccess=S';
         talendSetting.Sandbox_Quote_Endpoint__c = 'http://127.0.0.1/Quote/200?ProductCode=' + productList[0].CN_SKU_Code__c + '&IsSuccess=S';
         insert talendSetting;
 
@@ -189,7 +189,7 @@ private class CN_Quote_Send_To_SAP_LC_Ctrl_Test {
         talendSetting.Sandbox_User_Name__c = 'Name';
         talendSetting.Send_to_Account_Endpoint__c = 'http://127.0.0.1/ACC/400';
         talendSetting.User_Name__c = 'Name';
-        talendSetting.Quote_Endpoint__c = 'http://127.0.0.1/Quote/200';
+        talendSetting.Quote_Endpoint__c = 'http://127.0.0.1/Quote/200?ProductCode=' + productList[0].CN_SKU_Code__c + '&IsSuccess=E';
         talendSetting.Sandbox_Quote_Endpoint__c = 'http://127.0.0.1/Quote/200?ProductCode=' + productList[0].CN_SKU_Code__c + '&IsSuccess=E';
         insert talendSetting;
 
