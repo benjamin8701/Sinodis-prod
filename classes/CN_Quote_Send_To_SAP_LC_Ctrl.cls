@@ -89,9 +89,9 @@ public without sharing class CN_Quote_Send_To_SAP_LC_Ctrl {
         }
 
         Quote quoToSend = quoList[0];
-        if(Constants.CN_QUOTE_SYNC_STATUS_SUCCESS.equals(quoToSend.CN_Sync_Status__c) ) {
+        /*if(Constants.CN_QUOTE_SYNC_STATUS_SUCCESS.equals(quoToSend.CN_Sync_Status__c) ) {
             throw new AuraHandledException(String.format(System.Label.CN_Quote_Had_Synced, new List<String>{moduleName}));
-        }
+        }*/
         if(checkTimeInterval(quoToSend)) {
             throw new AuraHandledException(System.Label.CN_Quote_Warning_Msg_Too_Frequency);      //label
         }
