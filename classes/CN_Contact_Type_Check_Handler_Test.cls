@@ -73,6 +73,33 @@ private class CN_Contact_Type_Check_Handler_Test {
             acc.CN_Business_Unit_UI__c = businessUnit.Id;
             acc.CN_Sales_Team_UI__c = salesTeam.Id;
             insert acc;
+            
+            //Create Contact diretly ----by shuqi start
+            account acc1 = new account();
+            acc1.RecordTypeId = newDirectRTId;
+            acc1.Name = 'Testacc1ount';
+            acc1.CN_License_Name_EN__c = 'Testacc1ount';
+            acc1.CN_Store_Name_EN__c = 'Testacc1ount';
+            acc1.CN_Store_Name_CN__c = 'Testacc1ount';
+            acc1.CN_Sales_District__c = '001';
+            //acc1.CN_Customer_Group__c = '01';
+            acc1.CN_Litigation_City__c = 'Dalian大连';
+            acc1.CN_Category__c = 'BAPA';
+            acc1.CN_Subcategory__c = 'access Bakery';
+            acc1.CN_Province_CN__c = province.Id;
+            acc1.CN_City_CN__c = city.Id;
+            acc1.CN_Post_Code__c = '100000';
+            acc1.CN_Delivery_Plant__c = 'P011';
+            acc1.CN_Payment_Terms__c = 'D000';
+            acc1.CN_Invoicing_Name_Bill_To_Party__c = 'D000';
+            acc1.CN_Tax_Registration_No__c = '10000000';
+            acc1.CN_Invoice_Type__c = 'General Invoice';
+            acc1.CN_Invoicing_Address_EN__c = 'ABCDEF';
+            acc1.CN_Reference_Day__c = 'Delivery_Day';
+            acc1.CN_Business_Unit_UI__c = businessUnit.Id;
+            acc1.CN_Sales_Team_UI__c = salesTeam.Id;
+            insert acc1;
+            //Create Contact diretly ----by shuqi end
 
             CN_Document__c doc_b = new CN_Document__c();
             doc_b.CN_Account__c = acc.Id;
@@ -91,7 +118,7 @@ private class CN_Contact_Type_Check_Handler_Test {
 
             Contact con = new Contact();
             con.AccountId = acc.Id;
-            con.CN_Contact_Type__c = '';
+            con.CN_Contact_Type__c = '02';
             con.Title = 'CEO';
             con.CN_Department_Of_Contact_Person__c = '0001';
             con.CN_Contact_Name_EN__c = 'Test Contact';
@@ -105,6 +132,49 @@ private class CN_Contact_Type_Check_Handler_Test {
                 CN_Contact_Type__c = '01;02'
             );
             update con_update;
+            //Create Contact diretly ----by shuqi start
+            Contact con_update1 = new Contact(
+                Id = con.Id,
+                AccountId = acc1.id
+            );
+            update con_update1;
+            
+            Contact con1 = new Contact();
+            con1.AccountId = acc.Id;
+            con1.CN_Contact_Type__c = '02';
+            con1.Title = 'CEO';
+            con1.CN_Department_Of_Contact_Person__c = '0001';
+            con1.CN_Contact_Name_EN__c = 'Test Contact Type';
+            con1.LastName = 'Contact';
+            con1.MobilePhone = '12341234121';
+            con1.CN_Bill_To_Address__c = 'ABCDE';
+            insert con1;
+            
+            Contact con_update2 = new Contact(
+                Id = con1.Id,
+                CN_Contact_Type__c = '02;04'
+            );
+            update con_update2;
+            
+            Contact con2 = new Contact();
+            con2.AccountId = acc1.Id;
+            con2.CN_Contact_Type__c = '04';
+            con2.Title = 'CEO';
+            con2.CN_Department_Of_Contact_Person__c = '0001';
+            con2.CN_Contact_Name_EN__c = 'Test Contact del';
+            con2.LastName = 'Contact';
+            con2.MobilePhone = '12344321121';
+            con2.CN_Bill_To_Address__c = 'ABCDE';
+            insert con2;
+            
+            Contact con_update3 = new Contact(
+                Id = con2.Id,
+                CN_Contact_Type__c = '02'
+            );
+            update con_update3;
+            
+            delete con2;
+            //Create Contact diretly ----by shuqi end
 
             Test.stopTest();
         }

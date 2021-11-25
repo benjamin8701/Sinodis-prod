@@ -53,6 +53,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label>备注</label>
+        <name>CN_Comment__c</name>
+    </fields>
+    <fields>
         <label>有条件返利备注1</label>
         <name>CN_Conditional_Rebate_Note1__c</name>
     </fields>
