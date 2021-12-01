@@ -1107,7 +1107,7 @@ IF(DATEVALUE(CN_Approved_Date__c) = Datevalue(now()-1),
     )
   ) 
 )</errorConditionFormula>
-        <errorMessage>You are not allowed to create or eidt the status of sample products when all sample products&apos;s status are not null.</errorMessage>
+        <errorMessage>You are not allowed to create or edit the status of sample products when all sample products&apos;s status are not null.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_SR_Prevent_Edit_For_Ready</fullName>

@@ -95,7 +95,7 @@
                 <field>CN_Sales_Org__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Edit</behavior>
                 <field>CN_Account_Layer__c</field>
             </layoutItems>
         </layoutColumns>
@@ -216,7 +216,7 @@
                 <field>CN_Delivery_Plant__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Edit</behavior>
                 <field>CN_Visit_Addr_CN__c</field>
             </layoutItems>
         </layoutColumns>

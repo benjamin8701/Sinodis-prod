@@ -29,6 +29,7 @@
         <members>CN_Account_Prevent_Delete_Handler</members>
         <members>CN_Account_Prevent_Delete_Handler_Test</members>
         <members>CN_Account_Prevent_Delete_Handler_Test</members>
+        <members>CN_Account_Prevent_Edit_Approved_Handler</members>
         <members>CN_Account_Send_To_SAP_LC_Ctrl</members>
         <members>CN_Account_TM_REPORT_Handler</members>
         <members>CN_Account_TM_REPORT_Handler_Test</members>

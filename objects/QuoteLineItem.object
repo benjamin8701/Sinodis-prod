@@ -1095,6 +1095,6 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
  ISCHANGED( CN_Promotion_Member__c ) || ISCHANGED( CN_Promotion_Price__c )
 )</errorConditionFormula>
         <errorDisplayField>CN_Promotion_Member__c</errorDisplayField>
-        <errorMessage>It&apos;s not allowed to apply or un-apply Promtion when Quote in approval process or approved.</errorMessage>
+        <errorMessage>It&apos;s not allowed to apply or un-apply Promotion when Quote in approval process or approved.</errorMessage>
     </validationRules>
 </CustomObject>

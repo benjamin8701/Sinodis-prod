@@ -20324,7 +20324,7 @@ ISCHANGED(  OwnerId )
     ISBLANK(CN_Tax_Registration_No__c)
   )
 )</errorConditionFormula>
-        <errorMessage>Please just fill in the following information, if you select Genernal invoice or Electronic General invoice.
+        <errorMessage>Please just fill in the following information, if you select General invoice or Electronic General invoice.
 Invoicing Name (Bill to party),
 Tax Registration No.</errorMessage>
     </validationRules>
@@ -20537,7 +20537,7 @@ NOT(ISBLANK( CN_Converted_From__c ))
     </validationRules>
     <validationRules>
         <fullName>CN_Prevent_Edit_Approved</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),

@@ -182,6 +182,6 @@ ISPICKVAL(Opportunity.StageName, &quot;Closed Lost&quot;),
 ISPICKVAL(Opportunity.StageName, &quot;Closed Cancelled&quot;)
 )
 )</errorConditionFormula>
-        <errorMessage>It&apos;s not alllow to create or edit Interested SKUs if opportunity had closed.</errorMessage>
+        <errorMessage>It&apos;s not allow to create or edit Interested SKUs if opportunity had closed.</errorMessage>
     </validationRules>
 </CustomObject>
