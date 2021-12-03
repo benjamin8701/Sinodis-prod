@@ -278,6 +278,17 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Sales_Team_For_Report__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Team For Report</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Sales_Team__c</fullName>
         <externalId>false</externalId>
         <label>Sales Team</label>

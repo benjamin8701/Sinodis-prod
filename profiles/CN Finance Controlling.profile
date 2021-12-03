@@ -94,6 +94,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Account_Prevent_Edit_Approved_Handler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Account_Send_To_SAP_LC_Ctrl</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -1905,6 +1909,16 @@
         <editable>false</editable>
         <field>Account.Website</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Account_Prevent_Edit_Field__mdt.Allow_Edit_Profile__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Account_Prevent_Edit_Field__mdt.Field_Name__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -4084,6 +4098,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Contract__c.CN_Certificate_Type_of_Guarantor__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Contract__c.CN_Comment__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -9474,6 +9493,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>User.CN_Sales_Office__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>User.CN_Sales_Team_For_Report__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

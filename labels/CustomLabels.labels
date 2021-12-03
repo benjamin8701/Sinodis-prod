@@ -246,6 +246,13 @@
         <value>Account not synced yet.</value>
     </labels>
     <labels>
+        <fullName>CN_Account_Prevent_Edit_Approved_MSG</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Account_Prevent_Edit_Approved_MSG</shortDescription>
+        <value>Pls don&apos;t update when the account has been approved.</value>
+    </labels>
+    <labels>
         <fullName>CN_Account_Request_Validation_Fail</fullName>
         <language>en_US</language>
         <protected>false</protected>

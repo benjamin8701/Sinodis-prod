@@ -411,6 +411,11 @@
             <field>CN_Is_Finance__c</field>
             <table>User</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Sales_Team_For_Report__c</field>
+            <table>User</table>
+        </columns>
         <masterLabel>Users</masterLabel>
     </sections>
 </ReportType>

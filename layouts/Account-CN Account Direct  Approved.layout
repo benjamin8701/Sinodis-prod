@@ -95,7 +95,7 @@
                 <field>CN_Sales_Org__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Edit</behavior>
                 <field>CN_Account_Layer__c</field>
             </layoutItems>
         </layoutColumns>
@@ -216,7 +216,7 @@
                 <field>CN_Delivery_Plant__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Edit</behavior>
                 <field>CN_Visit_Addr_CN__c</field>
             </layoutItems>
         </layoutColumns>
@@ -277,29 +277,29 @@
             <sortOrder>1</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Account.CN_Account_Request_New_Contact</actionName>
+            <actionName>Account.CN_Account_Request_New_Ship_To_Party</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>2</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Account.CN_Account_Request_New_Ship_To_Party</actionName>
+            <actionName>Account.CN_Account_Send</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>3</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Account.CN_Account_Send</actionName>
+            <actionName>CN_New_Visit</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>4</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>CN_New_Visit</actionName>
+            <actionName>CN_New_Event</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>5</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>CN_New_Task</actionName>
             <actionType>QuickAction</actionType>
-            <sortOrder>7</sortOrder>
+            <sortOrder>6</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedContent>

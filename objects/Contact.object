@@ -333,7 +333,7 @@
     <fields>
         <fullName>AccountId</fullName>
         <lookupFilter>
-            <active>true</active>
+            <active>false</active>
             <booleanFilter>(1 AND 2 AND 4) OR (3 AND 5 AND 6) OR 7 OR 8</booleanFilter>
             <errorMessage>You can only select Account whose Status is New.</errorMessage>
             <filterItems>
@@ -1416,6 +1416,19 @@ INCLUDES(CN_Contact_Type__c , &quot;04&quot;)
         <errorMessage>Please fill in the bill to address for the billing contact.</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>CN_Check_Contact_Type</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+RecordType.DeveloperName = &apos;CN_Contact&apos;,
+INCLUDES(CN_Contact_Type__c, &quot;01&quot;) ,
+NOT(AND( ISPICKVAL(Account.CN_Account_Status__c ,&quot;New&quot;) , ISBLANK(CN_Change_Request__c))),
+NOT(AND( ISPICKVAL(Account.CN_Account_Status__c ,&quot;Approved&quot;) , NOT(ISBLANK(CN_Change_Request__c))))
+)</errorConditionFormula>
+        <errorMessage>When you create Contact Type is 01-Billing. You can only select Account whose Status is New.</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>CN_Check_Moblie_NumberFormat</fullName>
         <active>true</active>
         <description>CN: Phone Number must be Eleven digits starting with 1</description>
@@ -1451,7 +1464,7 @@ RecordType.DeveloperName = &apos;CN_Contact&apos;,
 NOT(ISNEW()),
 ISCHANGED(CN_Converted_From__c)
 )</errorConditionFormula>
-        <errorMessage>It&apos;s not allowed to convert to exsiting records.</errorMessage>
+        <errorMessage>It&apos;s not allowed to convert to existing records.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Prevent_CreateOrEdit</fullName>
@@ -1460,6 +1473,7 @@ ISCHANGED(CN_Converted_From__c)
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   RecordType.DeveloperName = &apos;CN_Contact&apos;,
+  INCLUDES(CN_Contact_Type__c, &quot;01&quot;) ,
   NOT(ISPICKVAL(Account.CN_Account_Status__c ,&quot;New&quot;)),
   NOT(AND( ISNEW() ,  NOT(ISBLANK(CN_Change_Request__c)))),
   NOT(ISCHANGED(CN_Change_Request__c)),

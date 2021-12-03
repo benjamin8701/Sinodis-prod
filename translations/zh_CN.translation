@@ -5,6 +5,10 @@
         <name>CN_Savencia_Sinodis</name>
     </customApplications>
     <customLabels>
+        <label>请不要在客户审批通过之后更新客户信息。</label>
+        <name>CN_Account_Prevent_Edit_Approved_MSG</name>
+    </customLabels>
+    <customLabels>
         <label>接口不存在因为接口路径不正确。</label>
         <name>CN_Account_API_Path_Error</name>
     </customLabels>

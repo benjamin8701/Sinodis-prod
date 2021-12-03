@@ -4758,7 +4758,7 @@ ISNEW(),
  OR(ISPICKVAL(CN_Campaign__r.Status,&quot;Completed&quot;),ISPICKVAL(CN_Campaign__r.Status,&quot;Aborted&quot;) )
 )</errorConditionFormula>
         <errorDisplayField>CN_Campaign__c</errorDisplayField>
-        <errorMessage>Only the Campign not cloesd yet, could create Chef Request</errorMessage>
+        <errorMessage>Only the Campaign not closed yet, could create Chef Request</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Chef_Assigned_Count</fullName>
@@ -4820,7 +4820,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
  ISCHANGED( CN_Confirmed__c )
 )</errorConditionFormula>
         <errorDisplayField>CN_Confirmed__c</errorDisplayField>
-        <errorMessage>Only Chef Manager could change the comfirm status and the chef request must be approved.</errorMessage>
+        <errorMessage>Only Chef Manager could change the confirm status and the chef request must be approved.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Cost_Limit_Length</fullName>

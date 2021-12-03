@@ -44,6 +44,13 @@ public without sharing class CN_CONTACT_POPULATE_FIELD_HANDLER implements Trigge
                 }
             }
         }
+        //Create Contact diretly ----by shuqi start
+        List<Account> accpurlist = Database.query('select id,CN_Account_Status__c from Account where id in '+'( \''+ String.join(new List<Id>(accHadPurchasingMap.keySet()), '\', \'')+'\')'+' and CN_Account_Status__c =\'New\' ');
+        Map<id,Account>  accpurMap = new Map<id,Account>();
+        for(Account accp : accpurlist){
+            accpurMap.put(accp.id , accp);
+        }
+        //Create Contact diretly ----by shuqi end
         if(accIdSet.size() > 0) {
             List<Account> accList = new List<Account>();
             for(Id accId : accIdSet) {
@@ -52,7 +59,10 @@ public without sharing class CN_CONTACT_POPULATE_FIELD_HANDLER implements Trigge
                     hasBilling = accHadBillingMap.get(accId);
                 }
                 Boolean hasPurchasing = false;
-                if(accHadPurchasingMap.containsKey(accId)) {
+                //Create Contact diretly ----by shuqi start
+                //if(accHadPurchasingMap.containsKey(accId)){
+                if(accHadPurchasingMap.containsKey(accId) && accpurMap.containsKey(accId)) {
+                //Create Contact diretly ----by shuqi end
                     hasPurchasing = accHadPurchasingMap.get(accId);
                 }
                 if(hasBilling || hasPurchasing) {
@@ -82,7 +92,13 @@ public without sharing class CN_CONTACT_POPULATE_FIELD_HANDLER implements Trigge
         for(Contact con : (List<Contact>)Trigger.new) {
             Contact oldContact = (Contact)Trigger.oldMap.get(con.Id);
             if(con.RecordTypeId == contactRTId) {
-                if(oldContact.CN_Contact_Type__c != con.CN_Contact_Type__c || oldContact.AccountId != con.AccountId) {
+                //Create Contact diretly ----by shuqi start
+                //if(oldContact.CN_Contact_Type__c != con.CN_Contact_Type__c || oldContact.AccountId != con.AccountId) {
+                system.debug('oldContact.AccountId:         '+oldContact.AccountId);
+                system.debug('con.AccountId:          '+con.AccountId);
+                system.debug('oldContact.CN_Contact_Type__c:         '+oldContact.CN_Contact_Type__c);
+                if(oldContact.AccountId != con.AccountId || (oldContact.CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME)&& !con.CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME))) {
+                //Create Contact diretly ----by shuqi end
                     conList.add(con);
                 }
             }
@@ -146,6 +162,7 @@ public without sharing class CN_CONTACT_POPULATE_FIELD_HANDLER implements Trigge
         Set<Id> accIdForUpdateSet = new Set<Id>();
         Map<Id, Boolean> accHadBillingMap = new Map<Id, Boolean>();
         Map<Id, Boolean> accHadPurchasingMap = new Map<Id, Boolean>();
+        system.debug('acc'+ conListAccRelated);
         for(Contact con : conListAccRelated) {
             accIdForUpdateSet.add(con.AccountId);
             if(con.CN_Contact_Type__c?.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME)) {
@@ -155,11 +172,24 @@ public without sharing class CN_CONTACT_POPULATE_FIELD_HANDLER implements Trigge
                 accHadPurchasingMap.put(con.AccountId, true);
             }
         }
+        //Create Contact diretly ----by shuqi start
+        List<Account> accpurlist = Database.query('select id,CN_Account_Status__c from Account where id in '+'( \''+ String.join(new List<Id>(accHadPurchasingMap.keySet()), '\', \'')+'\')'+' and CN_Account_Status__c =\'New\' ');
+        Map<id,Account>  accpurMap = new Map<id,Account>();
+        for(Account accp : accpurlist){
+            accpurMap.put(accp.id , accp);
+        }
+        //Create Contact diretly ----by shuqi end
         if(accIdForUpdateSet.size() > 0) {
             List<Account> accListForUpdate = new List<Account>();
             for(Id accId : accIdForUpdateSet) {
                 Boolean hasBillingCon = accHadBillingMap.get(accId);
-                Boolean hasPurchasingCon = accHadPurchasingMap.get(accId);
+                //Create Contact diretly ----by shuqi start
+                //Boolean hasPurchasingCon = accHadPurchasingMap.get(accId);
+                Boolean hasPurchasingCon = false;
+                if(accHadPurchasingMap.get(accId) && accpurMap.containsKey(accId)) {            
+                    hasPurchasingCon = accHadPurchasingMap.get(accId);
+                }
+                //Create Contact diretly ----by shuqi end
                 if(hasBillingCon == true && hasPurchasingCon == true) {
                     Account acc = new Account();
                     acc.Id = accId;

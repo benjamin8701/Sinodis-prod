@@ -40788,7 +40788,7 @@ IF($Profile.Name = &quot;CN Sales&quot;, TRUE, FALSE),
     ISBLANK(New_CN_Account_Tax_Registration_No__c)
   )
 )</errorConditionFormula>
-        <errorMessage>Please just fill in the following information, if you select Genernal invoice or Electronic General invoice.
+        <errorMessage>Please just fill in the following information, if you select General invoice or Electronic General invoice.
 Invoicing Name (Bill to party),
 Tax Registration No.</errorMessage>
     </validationRules>

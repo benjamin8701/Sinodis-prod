@@ -163,6 +163,10 @@
                 <behavior>Edit</behavior>
                 <field>CN_Validity_of_Guarantor_s_Certificate__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Comment__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>

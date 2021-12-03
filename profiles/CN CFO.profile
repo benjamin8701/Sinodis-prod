@@ -94,6 +94,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Account_Prevent_Edit_Approved_Handler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Account_Send_To_SAP_LC_Ctrl</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -1905,6 +1909,16 @@
         <editable>false</editable>
         <field>Account.Website</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Account_Prevent_Edit_Field__mdt.Allow_Edit_Profile__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Account_Prevent_Edit_Field__mdt.Field_Name__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -3933,6 +3947,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Chefs_Assigned__c.CN_Chef_Working_Days_Except_Off__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Chefs_Assigned__c.CN_Chef_Working_Days__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4084,6 +4103,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Contract__c.CN_Certificate_Type_of_Guarantor__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Contract__c.CN_Comment__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

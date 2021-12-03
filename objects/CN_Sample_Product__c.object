@@ -915,7 +915,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
  NOT(ISPICKVAL(CN_Customer_Feedback__c , &quot;&quot;))
 )</errorConditionFormula>
         <errorDisplayField>CN_Customer_Feedback__c</errorDisplayField>
-        <errorMessage>Fill in customer feedback after sample deliveried.</errorMessage>
+        <errorMessage>Fill in customer feedback after sample delivered.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Feedback_Message</fullName>
