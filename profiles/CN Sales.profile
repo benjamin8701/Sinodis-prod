@@ -9552,6 +9552,9 @@
         <layout>CN_Business_Unit__c-Business Unit Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>CN_Account_Prevent_Edit_Field__mdt-CN Account Prevent Edit Field Layout</layout>
+        </layoutAssignments>
+    <layoutAssignments>
         <layout>CN_Business_Unit__c-Business Unit Layout</layout>
         <recordType>CN_Business_Unit__c.CN_Business_Unit</recordType>
     </layoutAssignments>
@@ -10715,12 +10718,13 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>true</default>
+        <default>false</default>
         <recordType>Event.CN_Event</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Event.CN_Visit</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>

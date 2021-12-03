@@ -9515,6 +9515,9 @@
         <recordType>Account.CN_Approved_Direct</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>CN_Account_Prevent_Edit_Field__mdt-CN Account Prevent Edit Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Account-CN Account Direct Read only</layout>
         <recordType>Account.CN_Edit_Direct</recordType>
     </layoutAssignments>
