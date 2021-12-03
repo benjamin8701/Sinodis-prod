@@ -262,11 +262,6 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>CN_New_Event</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>6</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>Delete</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>0</sortOrder>
@@ -344,7 +339,6 @@
     <relatedLists>
         <excludeButtons>MassAddToCampaign</excludeButtons>
         <excludeButtons>Merge</excludeButtons>
-        <excludeButtons>NewContact</excludeButtons>
         <fields>FULL_NAME</fields>
         <fields>CN_Contact_Type__c</fields>
         <fields>CONTACT.TITLE</fields>
