@@ -454,6 +454,7 @@
         <members>Account-CN Account Prospect New</members>
         <members>Account-CN Account Prospect Read only</members>
         <members>CN_Approval_Aging_Setting__mdt-Approval Aging Setting Layout</members>
+		<members>CN_Account_Prevent_Edit_Field__mdt-CN Account Prevent Edit Field Layout</members>
         <members>CN_Brand__c-Brand Layout</members>
         <members>CN_Business_Unit__c-Business Unit Layout</members>
         <members>CN_Campaign_Product__c-Campaign Product Layout</members>
