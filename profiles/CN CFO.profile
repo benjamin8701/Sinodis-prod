@@ -3933,6 +3933,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Chefs_Assigned__c.CN_Chef_Working_Days_Except_Off__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Chefs_Assigned__c.CN_Chef_Working_Days__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4084,6 +4089,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Contract__c.CN_Certificate_Type_of_Guarantor__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Contract__c.CN_Comment__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
