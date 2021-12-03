@@ -9521,6 +9521,9 @@
         <recordType>Account.CN_New_Indirect</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>CN_Account_Prevent_Edit_Field__mdt-CN Account Prevent Edit Field Layout</layout>
+        </layoutAssignments>
+    <layoutAssignments>
         <layout>Account-CN Account Prospect Edit</layout>
         <recordType>Account.CN_Edit_Prospect</recordType>
     </layoutAssignments>
