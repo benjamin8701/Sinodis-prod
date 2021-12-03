@@ -14,6 +14,8 @@ public without sharing class Constants {
     //CR05 - Tm report by Shuqi - start
     public static Boolean CN_ACCOUNT_TM_REPORT_HANDLER_TRIGGER_ON = true;
     //CR05 - Tm report by Shuqi - end   
+	public static Boolean CN_ACCOUNT_PREVENT_EDIT_APPROVED_HANDLER_TRIGGER_ON = true;
+	
     
     public static final String CN_Account_RT_API_NAME_NEW_DIRECT = 'CN_New_Direct';
     public static final String CN_Account_RT_API_NAME_EDIT_DIRECT = 'CN_Edit_Direct';
@@ -428,6 +430,7 @@ public without sharing class Constants {
 	public static final String CN_PROFILE_NAME_MKTRM = 'CN MKT Reassign Manager';
 	public static final String CN_PROFILE_NAME_SALESLEADER = 'CN Sales Lead';
 	public static final String CN_PROFILE_NAME_ADMIN = 'System Administrator';
+	public static final String CN_PROFILE_NAME_INTEGRATION = 'System Integration';
 
 	//Permission Set / Custom Permission
 	public static final String CN_CUSTOMPERMISSION_MRM = 'CN_Marketing_Reassign_Manager';

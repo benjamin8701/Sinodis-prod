@@ -820,7 +820,7 @@ ISPICKVAL( StageName , &quot;Proposal/Demo/Sample&quot;),
 OR( Amount &lt;= 0 ||  ISBLANK(Amount),  ISBLANK(CloseDate) )
 )</errorConditionFormula>
         <errorDisplayField>StageName</errorDisplayField>
-        <errorMessage>It&apos;s required to input expected amount or select interested SKUs, and chooes expected close date.</errorMessage>
+        <errorMessage>It&apos;s required to input expected amount or select interested SKUs, and choose expected close date.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Opportunity_Check_Actual_Close_Date</fullName>

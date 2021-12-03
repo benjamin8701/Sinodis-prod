@@ -42,6 +42,11 @@ trigger Account_Trigger on Account (before insert, after insert, after update, b
                 triggersObj.bind(Triggers.Evt.BeforeUpdate, new CN_Account_TM_REPORT_Handler());
             }
             //CR05 – Tm report by Shuqi - end
+            //20211130 – CR By  Dezheng - start
+            if(Constants.CN_ACCOUNT_PREVENT_EDIT_APPROVED_HANDLER_TRIGGER_ON) {
+                triggersObj.bind(Triggers.Evt.BeforeUpdate, new CN_Account_Prevent_Edit_Approved_Handler());
+            }
+            //20211130 – CR By  Dezheng - end
         }
         triggersObj.execute(); 
     }
