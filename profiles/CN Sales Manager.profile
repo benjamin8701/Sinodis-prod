@@ -9549,6 +9549,9 @@
         <recordType>CN_Brand__c.CN_Brand</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>CN_Account_Prevent_Edit_Field__mdt-CN Account Prevent Edit F
+        </layoutAssignments>
+    <layoutAssignments>
         <layout>CN_Business_Unit__c-Business Unit Layout</layout>
     </layoutAssignments>
     <layoutAssignments>

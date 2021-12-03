@@ -9511,6 +9511,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
+        <layout>CN_Account_Prevent_Edit_Field__mdt-CN Account Prevent Edit Field Layout</layout>
+        </fieldPermissions>
+    <layoutAssignments>
         <layout>Account-CN Account Direct  Approved</layout>
         <recordType>Account.CN_Approved_Direct</recordType>
     </layoutAssignments>

@@ -9552,6 +9552,9 @@
         <layout>CN_Business_Unit__c-Business Unit Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>CN_Account_Prevent_Edit_Field__mdt-CN Account Prevent Edit Field Layout</layout>
+        </layoutAssignments>
+    <layoutAssignments>
         <layout>CN_Business_Unit__c-Business Unit Layout</layout>
         <recordType>CN_Business_Unit__c.CN_Business_Unit</recordType>
     </layoutAssignments>
