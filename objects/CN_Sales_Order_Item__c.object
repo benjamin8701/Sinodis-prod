@@ -695,6 +695,19 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>CN_Unit_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Total_Amount_With_Tax__c /  CN_Order_Quantity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>CN_Up_Code__c</fullName>
         <caseSensitive>true</caseSensitive>
         <externalId>true</externalId>

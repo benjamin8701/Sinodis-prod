@@ -2,8 +2,13 @@
 
 客户名称:{!Case.CN_Customer_Name__c}
 客户代码:{!Case.CN_Customer_Code__c}
+产品:{!Case.Product}
+产品编号:{!Case.CN_SKU_CODE__c}
+问题产品数量:{!Case.CN_SKU_Quantity__c}
+SAP产品批次号:{!Case.CN_SAP_Batch_Number__c}
 销售办公室:{!Case.CN_Sales_Office__c}
 投诉原因:{!Case.Reason}
+描述:{!Case.Description}
 
 请点击以下链接
 
@@ -18,8 +23,13 @@ The complaint {!Case.CaseNumber} has been submitted:
 
 Customer Name: {!Case.CN_Customer_Name__c}
 Customer Code: {!Case.CN_Customer_Code__c}
+Product:{!Case.Product}
+SKU CODE:{!Case.CN_SKU_CODE__c}
+SKU Quantity:{!Case.CN_SKU_Quantity__c}
+SAP Batch Number:{!Case.CN_SAP_Batch_Number__c}
 Sales Office: {!Case.CN_Sales_Office__c}
 Complaint Reason: {!Case.Reason}
+Description:{!Case.Description}
 
 Please click the following link
 

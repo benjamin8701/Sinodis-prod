@@ -120,6 +120,10 @@
                 <behavior>Edit</behavior>
                 <field>CN_Sales_Person_Name__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Sales_Team__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -240,9 +244,9 @@
         <fields>CN_SKU_Description_CN__c</fields>
         <fields>CN_SKU_Description_EN__c</fields>
         <fields>CN_Order_Quantity__c</fields>
-        <fields>CN_DN_Number__c</fields>
         <fields>CN_Net_Value__c</fields>
         <fields>CN_Total_Amount_With_Tax__c</fields>
+        <fields>CN_Unit_Price__c</fields>
         <fields>CN_Confirmed_Value__c</fields>
         <fields>CN_Overall_Status__c</fields>
         <relatedList>CN_Sales_Order_Item__c.CN_Order_Number__c</relatedList>

@@ -88,6 +88,10 @@
                 <behavior>Edit</behavior>
                 <field>CN_Tax_Amount__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Unit_Price__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -4151,6 +4151,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Sales_Order_Item__c.CN_Unit_Price__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Sales_Order_Item__c.CN_Up_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4317,6 +4322,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Sales_Order__c.CN_Sales_Person_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Sales_Order__c.CN_Sales_Team__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4911,6 +4921,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Sample_Request__c.CN_Record_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Sample_Request__c.CN_Remark__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -5493,6 +5508,11 @@
         <editable>false</editable>
         <field>Case.CN_Accepted_Date__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_Account_Sales_Team__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
