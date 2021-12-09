@@ -300,6 +300,10 @@
         <name>CN_Total_Amount_With_Tax__c</name>
     </fields>
     <fields>
+        <label>单价（含税）</label>
+        <name>CN_Unit_Price__c</name>
+    </fields>
+    <fields>
         <label>交货单编号</label>
         <name>CN_Up_Code__c</name>
     </fields>
