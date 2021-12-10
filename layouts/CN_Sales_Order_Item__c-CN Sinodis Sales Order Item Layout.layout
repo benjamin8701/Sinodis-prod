@@ -53,10 +53,6 @@
                 <behavior>Edit</behavior>
                 <field>CN_Sales_Unit__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CN_Discount_Rate__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>

@@ -151,11 +151,15 @@
     <compactLayouts>
         <fullName>CN_Main_Information</fullName>
         <fields>CN_Sold_To_Account_Name__c</fields>
-        <fields>CN_Payment_Terms__c</fields>
+        <fields>Name</fields>
+        <fields>CN_Up_Code__c</fields>
+        <fields>CN_Delivery_Account_Name__c</fields>
+        <fields>CN_Order_Net_Value__c</fields>
+        <fields>CN_Tax_Amount__c</fields>
+        <fields>CN_Total_Amount_With_Tax__c</fields>
+        <fields>CN_Total_Confirmed_Value__c</fields>
         <fields>CN_Overall_Status__c</fields>
         <fields>CN_SAP_Create_Date__c</fields>
-        <fields>CN_Order_Net_Value__c</fields>
-        <fields>CN_Total_Amount_With_Tax__c</fields>
         <label>Main Information</label>
     </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -1403,6 +1407,7 @@
         </picklistValues>
     </recordTypes>
     <searchLayouts>
+        <searchResultsAdditionalFields>CN_Sold_To_Account_Name__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CN_Up_Code__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CN_Delivery_Account_Name__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CN_Order_Net_Value__c</searchResultsAdditionalFields>
