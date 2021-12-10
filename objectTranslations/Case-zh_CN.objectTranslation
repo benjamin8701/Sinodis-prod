@@ -565,6 +565,10 @@
         <name>publisher_view_details</name>
     </fields>
     <fields>
+        <label>销售团队</label>
+        <name>CN_Account_Sales_Team__c</name>
+    </fields>
+    <fields>
         <label>投诉接受日期</label>
         <name>CN_Accepted_Date__c</name>
     </fields>
@@ -705,7 +709,7 @@
         <name>CN_Sales_Office__c</name>
     </fields>
     <fields>
-        <label><!-- Sales Person --></label>
+        <label>销售人</label>
         <name>CN_Sales_Person__c</name>
     </fields>
     <fields>

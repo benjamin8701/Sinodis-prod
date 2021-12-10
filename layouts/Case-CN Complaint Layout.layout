@@ -89,6 +89,10 @@
                 <behavior>Readonly</behavior>
                 <field>CN_Sales_Person__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Account_Sales_Team__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>

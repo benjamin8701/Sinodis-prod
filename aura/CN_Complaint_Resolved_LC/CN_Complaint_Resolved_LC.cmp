@@ -25,6 +25,7 @@
     <aura:attribute name="fieldMap_Comment" type="Map"/>
     <aura:attribute name="defaultReason" type="String" default=""/>
     <aura:attribute name="defaultComment" type="String" default=""/>
+    <aura:attribute name="defaultDescription" type="String" default=""/>
     <aura:attribute name="resolveComments_Null" type="String" default="{!$Label.c.CN_Complaint_ResolveComments_Null}"/>
     <aura:attribute name="resolveReason_Null" type="String" default="{!$Label.c.CN_Complaint_ResolveReason_Null}"/>
     
@@ -50,7 +51,7 @@
                 	<option text="{!i.value}" value="{!i.key}" selected="{!i.key}" />
             	</aura:iteration>
         	</lightning:select>
-        	<lightning:input name="Resolve Description" type="String" label="Resolve Description" value="{!v.resolveDescription}" />
+        	<lightning:input name="Resolve Description" type="String" label="Resolve Description" value="{!v.defaultDescription}" />
         </div>
     </body>
     <footer>
