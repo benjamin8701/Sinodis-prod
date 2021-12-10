@@ -145,6 +145,10 @@
         <name>CN_Account_Not_Synced</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_Account_Prevent_Edit_Approved_MSG --></label>
+        <name>CN_Account_Prevent_Edit_Approved_MSG</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_Account_Request_Validation_Fail --></label>
         <name>CN_Account_Request_Validation_Fail</name>
     </customLabels>

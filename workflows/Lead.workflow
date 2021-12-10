@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldUpdates>
+        <fullName>CN_Home_Baker_Closed</fullName>
+        <field>Status</field>
+        <literalValue>Closed - Dead</literalValue>
+        <name>Home Baker Closed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CN_Lead_Change_Status_Assigned</fullName>
         <field>Status</field>
         <literalValue>Assigned</literalValue>
@@ -78,6 +88,20 @@
         </actions>
         <active>true</active>
         <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Lead&apos;,  OR(    $Profile.Name = &quot;CN Sales&quot;,    $Profile.Name = &quot;CN Sales Manager&quot;,    $Profile.Name = &quot;CN Sales Lead&quot;  ) )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Home Baker Closed</fullName>
+        <actions>
+            <name>CN_Home_Baker_Closed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.CN_Customer_Category__c</field>
+            <operation>equals</operation>
+            <value>Home Baker</value>
+        </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
     </rules>
 </Workflow>

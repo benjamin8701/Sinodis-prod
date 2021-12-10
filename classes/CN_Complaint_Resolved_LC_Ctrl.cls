@@ -23,11 +23,13 @@ public with sharing class CN_Complaint_Resolved_LC_Ctrl {
         if(!hasCreatePermission) {
             throw new AuraHandledException(System.Label.CN_Complaint_No_Permission);
         }
+        //Resolve Description ----by Shuqi
         List<Case> compList = [SELECT Id,
                                         CreatedById,
                                         Status,
                                         CN_Resolved_Button__c,
-                                        CN_Resolve_Reason__c
+                                        CN_Resolve_Reason__c,
+                               			CN_Resolve_Description__c
                                     FROM Case
                                     WHERE Id =: recordId];
         if(compList.isEmpty()) {
@@ -75,6 +77,8 @@ public with sharing class CN_Complaint_Resolved_LC_Ctrl {
         Map<String, String> options_Comment = new Map<String, String>();
         String defaultReason = '';
         String defaultComment = '';
+        //Resolve Description ----by Shuqi
+        String defaultDescription = '';
 
         Schema.DescribeFieldResult fieldResult_Reason = Case.CN_Resolve_Reason__c.getDescribe();
         Schema.DescribeFieldResult fieldResult_Comment = Case.CN_Resolve_Comments__c.getDescribe();
@@ -88,17 +92,21 @@ public with sharing class CN_Complaint_Resolved_LC_Ctrl {
             options_Comment.put(p.getValue(), p.getLabel());
         }
 
-        Case complaint = [Select Id,CN_Resolve_Reason__c,CN_Resolve_Comments__c From Case Where Id =: recordId][0];
+        Case complaint = [Select Id,CN_Resolve_Reason__c,CN_Resolve_Comments__c,CN_Resolve_Description__c From Case Where Id =: recordId][0];
         if(complaint!=null){
             defaultReason = complaint.CN_Resolve_Reason__c;
             defaultComment = complaint.CN_Resolve_Comments__c;
+            //Resolve Description ----by Shuqi
+            defaultDescription = complaint.CN_Resolve_Description__c;
         }
         
         return new Map<String, Object>{
             'options_Reason' => options_Reason,
             'options_Comment' => options_Comment,
             'defaultReason' => defaultReason,
-            'defaultComment' => defaultComment
+            'defaultComment' => defaultComment,
+            //Resolve Description ----by Shuqi
+            'defaultDescription' =>defaultDescription
         };
     }
     

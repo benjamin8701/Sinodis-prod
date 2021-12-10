@@ -23,6 +23,11 @@
             component.set("v.fieldMap_Comment", fieldMap_Comment);
             let defaultComment = _returnValue["defaultComment"];
             component.set("v.defaultComment", defaultComment);
+            //Resolve Description ----by Shuqi Start
+            let defaultDescription = _returnValue["defaultDescription"];
+            component.set("v.defaultDescription", defaultDescription);
+            //Resolve Description ----by Shuqi End
+            
         }).catch(function(_error) {
             let errorMsg = "";
             console.error(_error);
@@ -41,6 +46,7 @@
     confirmAction : function(component, event, helper) {
         let defaultReason = component.get("v.defaultReason");
         let defaultComment = component.get("v.defaultComment");
+        let defaultDescription = component.get("v.defaultDescription");
         if(defaultReason == null || defaultReason == undefined || defaultReason == {} || defaultReason == ""){
             component.set("v.errorMessage", component.get("v.resolveReason_Null"));
         }else if(defaultComment == null || defaultComment == undefined || defaultComment == {} || defaultComment == ""){
@@ -52,7 +58,8 @@
 			updateStatusToResolvedAction.setParams({
 				"recordId" : component.get("v.recordId"),
 				"resolveReason" : component.get("v.defaultReason"),
-				"resolveDescription" : component.get("v.resolveDescription"),
+                //Resolve Description ----by Shuqi
+				"resolveDescription" : component.get("v.defaultDescription"),
 				"resolveComments" : component.get("v.defaultComment")
 			});
 			let updateStatusToResolvedActionPromise = helper.callServerAction(component, updateStatusToResolvedAction);

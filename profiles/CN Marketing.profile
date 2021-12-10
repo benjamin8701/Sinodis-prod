@@ -6052,6 +6052,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Sales_Order_Item__c.CN_Unit_Price__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Sales_Order_Item__c.CN_Up_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6218,6 +6223,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Sales_Order__c.CN_Sales_Person_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Sales_Order__c.CN_Sales_Team__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6812,6 +6822,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Sample_Request__c.CN_Record_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Sample_Request__c.CN_Remark__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -7393,6 +7408,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.CN_Accepted_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_Account_Sales_Team__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -9515,9 +9535,6 @@
         <recordType>Account.CN_Approved_Direct</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CN_Account_Prevent_Edit_Field__mdt-CN Account Prevent Edit Field Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Account-CN Account Direct Read only</layout>
         <recordType>Account.CN_Edit_Direct</recordType>
     </layoutAssignments>
@@ -9540,6 +9557,9 @@
     <layoutAssignments>
         <layout>Account-CN Account Prospect Read only</layout>
         <recordType>Account.CN_New_Prospect</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CN_Account_Prevent_Edit_Field__mdt-CN Account Prevent Edit Field Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CN_Approval_Aging_Setting__mdt-Approval Aging Setting Layout</layout>

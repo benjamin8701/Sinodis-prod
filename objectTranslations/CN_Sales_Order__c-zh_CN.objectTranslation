@@ -422,6 +422,10 @@
         <relationshipLabel>销售订单</relationshipLabel>
     </fields>
     <fields>
+        <label>销售团队</label>
+        <name>CN_Sales_Team__c</name>
+    </fields>
+    <fields>
         <label>售达方地址</label>
         <name>CN_Sold_To_Account_Name__c</name>
         <relationshipLabel>销售订单</relationshipLabel>
