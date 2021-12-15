@@ -526,11 +526,25 @@
         <value>Must assign the complaint to a queue.</value>
     </labels>
     <labels>
+        <fullName>CN_Complaint_Can_Not_Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Can_Not_Cancel</shortDescription>
+        <value>You can&apos;t cancel the complaint ,please Check the status of the record.</value>
+    </labels>
+    <labels>
         <fullName>CN_Complaint_Can_Not_Closed</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>CN_Complaint_Can_Not_Closed</shortDescription>
         <value>You can&apos;t closed the complaint ,please Check the status of the record.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Can_Not_Recall</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Can_Not_Recall</shortDescription>
+        <value>You can&apos;t recall the complaint ,please Check the status of the record.</value>
     </labels>
     <labels>
         <fullName>CN_Complaint_Can_Not_Rejected</fullName>
@@ -545,6 +559,20 @@
         <protected>false</protected>
         <shortDescription>CN_Complaint_Can_Not_Resolved</shortDescription>
         <value>You can&apos;t resolved the complaint ,please Check the status of the record.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Cancel_ConfirmMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Cancel_ConfirmMsg</shortDescription>
+        <value>Complaint Cancel</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Cancel_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Cancel_Message</shortDescription>
+        <value>Please confirm this cancel action!</value>
     </labels>
     <labels>
         <fullName>CN_Complaint_Cannot_Be_Delete</fullName>
@@ -568,6 +596,20 @@
         <value>You can&apos;t set the Resolve Reason as &quot;Customer Service&quot;.</value>
     </labels>
     <labels>
+        <fullName>CN_Complaint_Closed_ConfirmMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Closed_ConfirmMsg</shortDescription>
+        <value>Complaint Closed</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Closed_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Closed_Message</shortDescription>
+        <value>Please confirm this close action!</value>
+    </labels>
+    <labels>
         <fullName>CN_Complaint_Mannual_Assign_Check</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -587,6 +629,20 @@
         <protected>false</protected>
         <shortDescription>CN_Complaint_Not_Found</shortDescription>
         <value>No Complaint Found.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Recall_ConfirmMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Recall_ConfirmMsg</shortDescription>
+        <value>Complaint Recall</value>
+    </labels>
+    <labels>
+        <fullName>CN_Complaint_Recall_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Complaint_Recall_Message</shortDescription>
+        <value>Please confirm this recall action!</value>
     </labels>
     <labels>
         <fullName>CN_Complaint_RejectReason_Null</fullName>
