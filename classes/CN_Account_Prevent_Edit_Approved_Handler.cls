@@ -46,13 +46,19 @@ public without sharing class CN_Account_Prevent_Edit_Approved_Handler implements
         allFields.add('description');
         
         
+        
+        
         for(CN_Account_Prevent_Edit_Field__mdt accFieldsMDT : accFieldsMDTList){
+            //这里不填的话一定是空吗
+            
+            
             if(accFieldsMDT.Allow_Edit_Profile__c==null){
                 allowedEditFields.add(accFieldsMDT.Field_Name__c.toLowerCase()); //如果有profile的不加到任何条件都通过的里面，需要进一步判断profile是否符合
             }else{
                 fieldNameProfileNameMap.put(accFieldsMDT.Field_Name__c.toLowerCase(), accFieldsMDT.Allow_Edit_Profile__c);
             }
         }
+        //有没有要加进去的标准字段
        
 		system.debug('allowedEditFields:	'+ allowedEditFields);
         for(Account acc: (List<Account>)Trigger.new) {

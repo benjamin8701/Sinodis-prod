@@ -105,9 +105,11 @@
         <members>CN_Chef_Request_Prevent_Delete_Handler</members>
         <members>CN_Chef_Request_Set_Acc_Handler</members>
         <members>CN_Chefs_Assigned_Prevent_Delete_Handler</members>
+        <members>CN_Complaint_Canceled_LC_Ctrl</members>
         <members>CN_Complaint_Closed_LC_Ctrl</members>
         <members>CN_Complaint_Populate_Status_Handler</members>
         <members>CN_Complaint_Prevent_Delete_Handler</members>
+        <members>CN_Complaint_Recall_LC_Ctrl</members>
         <members>CN_Complaint_Rejected_LC_Ctrl</members>
         <members>CN_Complaint_Resolved_LC_Ctrl</members>
         <members>CN_Contact_Change_Request_LC_Ctrl</members>
@@ -230,6 +232,7 @@
     <types>
         <members>CN_Quote_Notify_Finance_Template</members>
         <members>CN_Sample_Product_Get_CN_VC</members>
+        <members>CN_Sample_Product_Get_CN_VC_CCE</members>
         <members>CN_Sample_Product_Get_EN_VC</members>
         <members>CN_Sample_Product_Get_LC</members>
         <name>ApexComponent</name>
@@ -644,7 +647,9 @@
         <members>CN_Sample_Request__c.Test</members>
         <members>CN_Ship_to_Party__c.CN_ShipTo_Request_Update</members>
         <members>Campaign.CN_Generate_Opportunity</members>
+        <members>Case.CN_Complaint_Cancel</members>
         <members>Case.CN_Complaint_Closed</members>
+        <members>Case.CN_Complaint_Recall</members>
         <members>Case.CN_Complaint_Rejected</members>
         <members>Case.CN_Complaint_Resolved</members>
         <members>Case.CN_Submit_Complaint</members>
@@ -747,6 +752,7 @@
         <members>CN_Promotion_Custome_Data_Filter</members>
         <members>CN_Promotion_Custome_Data_Filter/CN_Customer_data_filter</members>
         <members>CN_SalesMDMReport</members>
+        <members>CN_SalesMDMReport/CN_Account_Team_Member_Report_5xe</members>
         <members>CN_SalesMDMReport/CN_All_Sales_Users_Personnel_Number_Rx9</members>
         <members>CN_Sales_360_Report</members>
         <members>CN_Sales_360_Report/CN_Achievements_MTD</members>

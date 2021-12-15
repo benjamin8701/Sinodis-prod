@@ -305,8 +305,16 @@
         <name>CN_Complaint_Assign_Queue_Check</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_Complaint_Can_Not_Cancel --></label>
+        <name>CN_Complaint_Can_Not_Cancel</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_Complaint_Can_Not_Closed --></label>
         <name>CN_Complaint_Can_Not_Closed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_Can_Not_Recall --></label>
+        <name>CN_Complaint_Can_Not_Recall</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_Complaint_Can_Not_Rejected --></label>
@@ -315,6 +323,14 @@
     <customLabels>
         <label><!-- CN_Complaint_Can_Not_Resolved --></label>
         <name>CN_Complaint_Can_Not_Resolved</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_Cancel_ConfirmMsg --></label>
+        <name>CN_Complaint_Cancel_ConfirmMsg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_Cancel_Message --></label>
+        <name>CN_Complaint_Cancel_Message</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_Complaint_Cannot_Be_Delete --></label>
@@ -329,6 +345,14 @@
         <name>CN_Complaint_Check_Reason_QA_Msg</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_Complaint_Closed_ConfirmMsg --></label>
+        <name>CN_Complaint_Closed_ConfirmMsg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_Closed_Message --></label>
+        <name>CN_Complaint_Closed_Message</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_Complaint_Mannual_Assign_Check --></label>
         <name>CN_Complaint_Mannual_Assign_Check</name>
     </customLabels>
@@ -339,6 +363,14 @@
     <customLabels>
         <label><!-- CN_Complaint_Not_Found --></label>
         <name>CN_Complaint_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_Recall_ConfirmMsg --></label>
+        <name>CN_Complaint_Recall_ConfirmMsg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Complaint_Recall_Message --></label>
+        <name>CN_Complaint_Recall_Message</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_Complaint_RejectReason_Null --></label>

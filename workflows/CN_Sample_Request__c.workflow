@@ -50,15 +50,22 @@
         <description>CN_Sample_Request_Approved_Cancelled</description>
         <protected>false</protected>
         <recipients>
-            <field>CN_CCE_Team_Email__c</field>
-            <type>email</type>
-        </recipients>
-        <recipients>
             <field>CN_CS_Team_Email__c</field>
             <type>email</type>
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>CN_Email_Folder/CN_Sample_Request_Approved_Cancelled</template>
+    </alerts>
+    <alerts>
+        <fullName>CN_Sample_Request_Approved_Cancelled_CCE</fullName>
+        <description>CN_Sample_Request_Approved_Cancelled_CCE</description>
+        <protected>false</protected>
+        <recipients>
+            <field>CN_CCE_Team_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CN_Email_Folder/CN_Sample_Request_Approved_Cancelled_CCE</template>
     </alerts>
     <alerts>
         <fullName>CN_Sample_Request_Approved_Process_CCE</fullName>
@@ -78,7 +85,7 @@
         <fullName>CN_Sample_Request_Repack_DeliveryAll_Alert</fullName>
         <description>CN_Sample_Request_Repack_DeliveryAll_Alert</description>
         <protected>false</protected>
-		<recipients>
+        <recipients>
             <type>owner</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -232,7 +239,19 @@
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,    NOT(ISNEW()),   ISCHANGED( CN_Sample_Request_Status__c ),    ISPICKVAL( CN_Sample_Request_Status__c  , &apos;Canceled&apos;)  )</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,   
+RecordType.DeveloperName = &quot;CN_Whole_Pack&quot;, NOT(ISNEW()),   ISCHANGED( CN_Sample_Request_Status__c ),    ISPICKVAL( CN_Sample_Request_Status__c  , &apos;Canceled&apos;)  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_Sample_Request_Approved_Cancelled_CCE</fullName>
+        <actions>
+            <name>CN_Sample_Request_Approved_Cancelled_CCE</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, 
+RecordType.DeveloperName = &quot;CN_Office_Repack&quot;,   NOT(ISNEW()),   ISCHANGED( CN_Sample_Request_Status__c ),    ISPICKVAL( CN_Sample_Request_Status__c  , &apos;Canceled&apos;)  )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
