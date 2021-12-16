@@ -9,7 +9,7 @@
     confirmAction : function(component, event, helper) {
         var dismissActionPanel = $A.get("e.force:closeQuickAction");
         
-        let updateStatusToClosedAction = component.get("c.recallComplaint"); 
+        let updateStatusToClosedAction = component.get("c.cancelComplaint"); 
         updateStatusToClosedAction.setParams({
             "recordId" : component.get("v.recordId")
         });
