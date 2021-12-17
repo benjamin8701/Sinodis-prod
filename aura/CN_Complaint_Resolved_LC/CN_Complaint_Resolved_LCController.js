@@ -76,13 +76,8 @@
 						"message": "The record has been resolved successfully."
 					});
 					toastEvent.fire();
-					var urlEvent = $A.get("e.force:navigateToURL");
-					urlEvent.setParams({
-						"url": "/500/o"
-					});
-					urlEvent.fire(); 
 				}
-
+                dismissActionPanel.fire();
 			}).catch(function(_error) {
 				let errorMsg = "";
 				console.error(_error);
@@ -101,7 +96,8 @@
 				});
 				toastEvent.fire();
 			}).finally(function() {
-				component.set("v.showLoading", false);            
+				component.set("v.showLoading", false);
+            	$A.get('e.force:refreshView').fire();
 			});
         }
     }

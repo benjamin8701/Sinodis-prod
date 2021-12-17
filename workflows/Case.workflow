@@ -34,6 +34,15 @@
         <template>CN_Email_Folder/CN_Complaint_Assign_Notification</template>
     </alerts>
     <alerts>
+        <fullName>CN_Complaint_Resolve_Notification_CS</fullName>
+        <ccEmails>cs-complaint@sinodis.com.cn.inactive</ccEmails>
+        <ccEmails>dezheng_test_01@outlook.com</ccEmails>
+        <description>CN_Complaint_Resolve_Notification_CS</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>CN_Email_Folder/CN_Complaint_Resolved_Notification_CS</template>
+    </alerts>
+    <alerts>
         <fullName>CN_Compliant_Rejected_Notification</fullName>
         <description>CN_Compliant_Rejected_Notification</description>
         <protected>false</protected>
@@ -230,6 +239,22 @@
         </actions>
         <active>true</active>
         <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    RecordType.DeveloperName = &apos;CN_Complaint&apos;,    ISPICKVAL( Status , &apos;Rejected&apos;),   ISCHANGED( Status )  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_Complaint_Resolve_Notification_CS</fullName>
+        <actions>
+            <name>CN_Complaint_Resolve_Notification_CS</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(   
+  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    
+  RecordType.DeveloperName = &apos;CN_Complaint&apos;,   
+  ISCHANGED( Status ),
+  ISPICKVAL(Status , &apos;Resolved&apos;),
+  ISPICKVAL(CN_Resolve_Reason__c , &apos;Supply Chain&apos;)
+)</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

@@ -417,6 +417,7 @@ public without sharing class Constants {
 	public static final String CN_CA_STATUS_ASSIGNED = 'Assigned';
     public static final String CN_CA_STATUS_ACCEPTED = 'Accepted';
 	public static final String CN_CA_STATUS_CLOSED = 'Closed';
+	public static final String CN_CA_STATUS_CANCELED = 'Canceled';
 
 	//Profile
 	public static final String CN_PROFILE_NAME_CS = 'CN C/S';

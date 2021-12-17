@@ -39,6 +39,53 @@
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
+                            <value>Case.CN_Complaint_Cancel</value>
+                            <visibilityRule>
+                                <booleanFilter>(1 OR 3) AND (2 OR 4)</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.CN_Created_by_Me__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.Status}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>New</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!$User.Profile.Name}</leftValue>
+                                    <operator>CONTAINS</operator>
+                                    <rightValue>System Administrator</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.Status}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Rejected</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Case.CN_Complaint_Recall</value>
+                            <visibilityRule>
+                                <booleanFilter>(1 OR 3) AND 2</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.CN_Created_by_Me__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!Record.Status}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Assigned</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!$User.Profile.Name}</leftValue>
+                                    <operator>CONTAINS</operator>
+                                    <rightValue>System Administrator</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
                             <value>MassAccept</value>
                         </valueListItems>
                         <valueListItems>
@@ -70,6 +117,9 @@
                                     <rightValue>Resolved</rightValue>
                                 </criteria>
                             </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Case.generateReport</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>

@@ -581,12 +581,20 @@
         <name>CN_Brand__c</name>
     </fields>
     <fields>
+        <label><!-- Cancel Button --></label>
+        <name>CN_Cancel_Button__c</name>
+    </fields>
+    <fields>
         <label><!-- Closed Button --></label>
         <name>CN_Closed_Button__c</name>
     </fields>
     <fields>
         <label>投诉时间</label>
         <name>CN_Complaint_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created by Me --></label>
+        <name>CN_Created_by_Me__c</name>
     </fields>
     <fields>
         <label>客户代码</label>
@@ -631,6 +639,14 @@
     <fields>
         <label>QA投诉编号</label>
         <name>CN_QA_Compliant_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recall Button --></label>
+        <name>CN_Recall_Button__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recall Date --></label>
+        <name>CN_Recall_Date__c</name>
     </fields>
     <fields>
         <label><!-- Reject Datetime --></label>
@@ -701,6 +717,14 @@
         <name>CN_SKU_CODE__c</name>
     </fields>
     <fields>
+        <label><!-- SKU Name EN --></label>
+        <name>CN_SKU_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU Name --></label>
+        <name>CN_SKU_Name__c</name>
+    </fields>
+    <fields>
         <label>问题产品数量</label>
         <name>CN_SKU_Quantity__c</name>
     </fields>
@@ -737,8 +761,18 @@
     </layouts>
     <quickActions>
         <aspect>Master</aspect>
+        <label>取消</label>
+        <name>CN_Complaint_Cancel</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
         <label>关闭</label>
         <name>CN_Complaint_Closed</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>撤回</label>
+        <name>CN_Complaint_Recall</name>
     </quickActions>
     <quickActions>
         <aspect>Master</aspect>
@@ -806,6 +840,10 @@
     <validationRules>
         <errorMessage>当投诉的状态为&quot;Assigned&quot;的时候，您无法编辑该投诉。</errorMessage>
         <name>CN_Coplaint_Prevent_Edit_Assigned</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>当投诉的状态为&quot;Canceled&quot;的时候，您无法编辑该投诉。</errorMessage>
+        <name>CN_Coplaint_Prevent_Edit_Canceled</name>
     </validationRules>
     <validationRules>
         <errorMessage>当投诉的状态为&quot;Closed&quot;的时候，您无法编辑该投诉。</errorMessage>

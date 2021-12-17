@@ -305,8 +305,16 @@
         <name>CN_Complaint_Assign_Queue_Check</name>
     </customLabels>
     <customLabels>
+        <label>您无法取消此投诉，请检查此纪录的状态。</label>
+        <name>CN_Complaint_Can_Not_Cancel</name>
+    </customLabels>
+    <customLabels>
         <label>您无法关闭此投诉，请检查此纪录的状态。</label>
         <name>CN_Complaint_Can_Not_Closed</name>
+    </customLabels>
+    <customLabels>
+        <label>您无法撤回此投诉，请检查此纪录的状态。</label>
+        <name>CN_Complaint_Can_Not_Recall</name>
     </customLabels>
     <customLabels>
         <label>您无法拒绝此投诉，请检查此纪录的状态。</label>
@@ -315,6 +323,14 @@
     <customLabels>
         <label>您无法标记此投诉为解决状态，请检查此纪录的状态。</label>
         <name>CN_Complaint_Can_Not_Resolved</name>
+    </customLabels>
+    <customLabels>
+        <label>取消投诉</label>
+        <name>CN_Complaint_Cancel_ConfirmMsg</name>
+    </customLabels>
+    <customLabels>
+        <label>确认取消投诉？</label>
+        <name>CN_Complaint_Cancel_Message</name>
     </customLabels>
     <customLabels>
         <label>不允许删除投诉。</label>
@@ -329,6 +345,14 @@
         <name>CN_Complaint_Check_Reason_QA_Msg</name>
     </customLabels>
     <customLabels>
+        <label>关闭投诉</label>
+        <name>CN_Complaint_Closed_ConfirmMsg</name>
+    </customLabels>
+    <customLabels>
+        <label>确认关闭投诉？</label>
+        <name>CN_Complaint_Closed_Message</name>
+    </customLabels>
+    <customLabels>
         <label>你现在无法分配此投诉给一个单独用户，请尝试分配给一个队列或检查当前投诉的状态。</label>
         <name>CN_Complaint_Mannual_Assign_Check</name>
     </customLabels>
@@ -339,6 +363,14 @@
     <customLabels>
         <label>没有找到投诉。</label>
         <name>CN_Complaint_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label>撤销投诉</label>
+        <name>CN_Complaint_Recall_ConfirmMsg</name>
+    </customLabels>
+    <customLabels>
+        <label>确认撤销投诉？</label>
+        <name>CN_Complaint_Recall_Message</name>
     </customLabels>
     <customLabels>
         <label>在您将此投诉标记为&quot;Rejected&quot;之前，必须输入拒绝原因。</label>
