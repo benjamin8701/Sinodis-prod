@@ -1,4 +1,4 @@
-<aura:component implements="force:hasRecordId,force:lightningQuickActionWithoutHeader" controller="CN_Complaint_Closed_LC_Ctrl" access="global" >
+<aura:component implements="force:hasRecordId,force:lightningQuickActionWithoutHeader" controller="CN_Complaint_Canceled_LC_Ctrl" access="global" >
 	<aura:html tag="style">
         .cuf-content {
         	padding: 0 0rem !important;
@@ -15,9 +15,8 @@
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 	<aura:attribute name="recordId" type="String"/>
     <aura:attribute name="showLoading" type="Boolean" default="false" />
-    <!--<aura:attribute name="modalContentMessage" type="String" default="Complaint has been closed!"/>-->
-    <aura:attribute name="modalContentMessage" type="String" default="{!$Label.c.CN_Complaint_Closed_Message}"/>
-    <aura:attribute name="confirmMsg" type="String" default="{!$Label.c.CN_Complaint_Closed_ConfirmMsg}"/>
+    <aura:attribute name="modalContentMessage" type="String" default="{!$Label.c.CN_Complaint_Cancel_Message}"/>
+    <aura:attribute name="confirmMsg" type="String" default="{!$Label.c.CN_Complaint_Cancel_ConfirmMsg}"/>
     
     <header>
         <div class="modal-header slds-modal__header slds_size_1-of-1">           

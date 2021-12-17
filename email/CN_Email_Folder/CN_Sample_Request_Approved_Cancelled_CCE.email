@@ -1,0 +1,63 @@
+<messaging:emailTemplate subject="取消样品申请 {!relatedTo.Name} - {!relatedTo.CN_Account_Name_Formula__c} " recipientType="User" relatedToType="CN_Sample_Request__c">
+  <messaging:htmlEmailBody >
+  样品申请已经被取消:<br/>
+  请点击以下链接<br/>
+  <a href="{!RelatedTo.CN_Url__c}">Click here</a> <td>查看额外信息</td>
+  <table border="2" cellspacing="5">
+  <tr>
+  <td>客户名称:</td>
+  <td>{!relatedTo.CN_Account_Name__r.Name}</td>
+  </tr>
+  <tr>
+  <td>客户代码:</td>
+  <td>{!relatedTo.CN_Account_Name__r.CN_Customer_Code__c}</td>
+  </tr>
+  <tr>
+  <td>送样方式:</td>
+  <td>{!relatedTo.CN_Sample_Delivery_Method__c}</td>
+  </tr>
+  <tr>
+  <td>申请人:</td>
+  <td>{!relatedTo.CN_Creator_Name__c}</td>
+  </tr>
+  <tr>
+  <td>需样品日期:</td>
+  <td>{!relatedTo.CN_Sample_Needed_Date__c}</td>
+  </tr>
+  </table> 
+  样品申请SKUs:<br/>
+  <c:CN_Sample_Product_Get_CN_VC_CCE SRId="{!relatedTo.Id}"/><br/><br/>
+  谢谢,<br/>
+  Salesforce<br/>
+  ==========================For English Version Scroll Down======================<br/>
+  Please process the cancelled sample request:<br/>
+  Please click the following link<br/>
+  <a href="{!RelatedTo.CN_Url__c}">Click here</a> to view additional information. 
+  <table border="2" cellspacing="5">
+  <tr>
+  <td>Customer Name:</td>
+  <td>{!relatedTo.CN_Account_Name__r.Name}</td>
+  </tr>
+  <tr>
+  <td>Customer Code:</td>
+  <td>{!relatedTo.CN_Account_Name__r.CN_Customer_Code__c}</td>
+  </tr>
+  <tr>
+  <td>Sample Delivery Method:</td>
+  <td>{!relatedTo.CN_Sample_Delivery_Method__c}</td>
+  </tr>
+  <tr>
+  <td>Creator:</td>
+  <td>{!relatedTo.CN_Creator_Name__c}</td>
+  </tr>
+  <tr>
+  <td>Sample Needed Date:</td>
+  <td>{!relatedTo.CN_Sample_Needed_Date__c}</td>
+  </tr>
+  </table> 
+  Sample Request SKUs:<br/>
+  <c:CN_Sample_Product_Get_EN_VC_CCE SRId="{!relatedTo.Id}"/><br/><br/>
+  Thank you,<br/>
+  Salesforce
+  </messaging:htmlEmailBody>
+</messaging:emailTemplate>

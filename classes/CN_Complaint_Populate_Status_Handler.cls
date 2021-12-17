@@ -37,6 +37,7 @@ public without sharing class CN_Complaint_Populate_Status_Handler implements Tri
     public void populateStatus(List<Case> complaintList,Set<Id> ownerIdSet){      
         Set<Id> ownerIdSet_Group = new Set<Id>();
         List<Group> goupIdList = [SELECT Id FROM Group WHERE Id IN :ownerIdSet];
+        system.debug('goupIdList:       ' + goupIdList);
         if(goupIdList.size()>0){
             for(Group g : goupIdList){
                 ownerIdSet_Group.add(g.Id);
@@ -44,12 +45,13 @@ public without sharing class CN_Complaint_Populate_Status_Handler implements Tri
         }else{
             ownerIdSet_Group.add(null);
         }
-        
+
         for(Case comp : complaintList){
             if(!ownerIdSet_Group.contains(comp.OwnerId)
                     && ownerIdSet_Group.contains(((Case)Trigger.OldMap.get(comp.Id)).OwnerId)
                     && !Constants.CN_CA_STATUS_REJECTED.equals(comp.Status)
-                    && !Constants.CN_CA_STATUS_RESOLVED.equals(comp.Status)){
+                    && !Constants.CN_CA_STATUS_RESOLVED.equals(comp.Status)
+                    && !Constants.CN_CA_STATUS_NEW.equals(comp.Status)){
                 comp.Status = Constants.CN_CA_STATUS_ACCEPTED;
             }else if(!ownerIdSet_Group.contains(comp.OwnerId)
                     && !ownerIdSet_Group.contains(((Case)Trigger.OldMap.get(comp.Id)).OwnerId)

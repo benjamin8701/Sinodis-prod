@@ -110,4 +110,15 @@
             <roleAndSubordinates>CN_China</roleAndSubordinates>
         </sharedFrom>
     </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CN_WSOpportunity_To_WholeSales_Development_Supervisor</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>WSOpportunity _To_WholeSales_Development_Supervisor</label>
+        <sharedTo>
+            <role>CN_1969_Sales_development_Supervisor</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_2171_National_Wholesale_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
 </SharingRules>

@@ -45,6 +45,10 @@
         <name>CN_Accepted_Date__c</name>
     </fields>
     <fields>
+        <label><!-- Sales Team --></label>
+        <name>CN_Account_Sales_Team__c</name>
+    </fields>
+    <fields>
         <label><!-- Base Unit of Measure --></label>
         <name>CN_Base_Unit_of_Measure__c</name>
     </fields>
@@ -53,12 +57,20 @@
         <name>CN_Brand__c</name>
     </fields>
     <fields>
+        <label><!-- Cancel Button --></label>
+        <name>CN_Cancel_Button__c</name>
+    </fields>
+    <fields>
         <label><!-- Closed Button --></label>
         <name>CN_Closed_Button__c</name>
     </fields>
     <fields>
         <label><!-- Complaint Date --></label>
         <name>CN_Complaint_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created by Me --></label>
+        <name>CN_Created_by_Me__c</name>
     </fields>
     <fields>
         <label><!-- Customer Code --></label>
@@ -103,6 +115,14 @@
     <fields>
         <label><!-- QA Complaint Number --></label>
         <name>CN_QA_Compliant_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recall Button --></label>
+        <name>CN_Recall_Button__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recall Date --></label>
+        <name>CN_Recall_Date__c</name>
     </fields>
     <fields>
         <label><!-- Reject Datetime --></label>
@@ -173,6 +193,14 @@
         <name>CN_SKU_CODE__c</name>
     </fields>
     <fields>
+        <label><!-- SKU Name EN --></label>
+        <name>CN_SKU_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU Name --></label>
+        <name>CN_SKU_Name__c</name>
+    </fields>
+    <fields>
         <label><!-- SKU Quantity --></label>
         <name>CN_SKU_Quantity__c</name>
     </fields>
@@ -208,8 +236,16 @@
         </sections>
     </layouts>
     <quickActions>
+        <label><!-- Cancel --></label>
+        <name>CN_Complaint_Cancel</name>
+    </quickActions>
+    <quickActions>
         <label><!-- Close --></label>
         <name>CN_Complaint_Closed</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Recall --></label>
+        <name>CN_Complaint_Recall</name>
     </quickActions>
     <quickActions>
         <label><!-- Reject --></label>
@@ -275,6 +311,10 @@
     <validationRules>
         <errorMessage><!-- You can&apos;t edit the complaint while status is &quot;Assigned&quot;. --></errorMessage>
         <name>CN_Coplaint_Prevent_Edit_Assigned</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t edit the complaint while status is &quot;Canceled&quot;. --></errorMessage>
+        <name>CN_Coplaint_Prevent_Edit_Canceled</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- You can&apos;t edit the complaint while status is &quot;Closed&quot;. --></errorMessage>

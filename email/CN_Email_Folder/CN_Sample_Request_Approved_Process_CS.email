@@ -42,7 +42,7 @@
   </tr>
   </table> 
   样品申请SKUs:&nbsp;{!relatedTo.CN_SP_Records_Count_All_Formula__c}<br/>
-  <c:CN_Sample_Product_Get_CN_VC SRId="{!relatedTo.Id}" isCCEOrCS="false"/><br/><br/>
+  <c:CN_Sample_Product_Get_CN_VC SRId="{!relatedTo.Id}" /><br/><br/>
   谢谢,<br/>
   Salesforce<br/>
   ==========================For English Version Scroll Down======================<br/>
@@ -88,7 +88,7 @@
   </tr>
   </table> 
   Sample Request SKUs:&nbsp;{!relatedTo.CN_SP_Records_Count_All_Formula__c}<br/>
-  <c:CN_Sample_Product_Get_EN_VC SRId="{!relatedTo.Id}" isCCEOrCS="false"/><br/><br/>
+  <c:CN_Sample_Product_Get_EN_VC SRId="{!relatedTo.Id}" /><br/><br/>
   Thank you,<br/>
   Salesforce
   </messaging:htmlEmailBody>
