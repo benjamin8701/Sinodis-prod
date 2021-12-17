@@ -35,7 +35,7 @@ private class CN_Case_Share_Handler_Test {
 
         List<Case> complaintList = new List<Case>();
         System.runAs(CS) {
-            for(integer n=0;n<2;n++){
+            for(integer n=0;n<4;n++){
                 Case complaint = new Case();
                 complaint.RecordTypeId = complaintRTId;
                 complaint.Subject = '';
@@ -50,6 +50,8 @@ private class CN_Case_Share_Handler_Test {
             }
 			complaintList[0].Reason = 'Quality';
             complaintList[1].Reason = 'Quality';
+            complaintList[2].Reason = 'Quality';
+            complaintList[3].Reason = 'Quality';
             
             insert complaintList;
         }
@@ -59,9 +61,9 @@ private class CN_Case_Share_Handler_Test {
         }catch(Exception e){}
 
         List<Case> complaintList_Update1 = new List<Case>();
-        for(Case c : complaintList){
+        for(integer n=0;n<3;n++){
             Case complaint_Update = new Case();
-            complaint_Update.Id = c.Id;
+            complaint_Update.Id = complaintList[n].Id;
             complaint_Update.Status = 'Assigned';
             complaint_Update.CN_Submit_Datetime__c = System.now();
             complaintList_Update1.add(complaint_Update);
@@ -69,6 +71,62 @@ private class CN_Case_Share_Handler_Test {
         update complaintList_Update1;
         
         Test.startTest();
+
+        //CN_Complaint_Canceled_LC_Ctrl_Test
+        try{
+            System.runAs(CS) {
+                CN_Complaint_Canceled_LC_Ctrl.cancelComplaint(complaintList[3].id);
+            }
+        }catch(Exception e){}
+        try{
+            System.runAs(CS) {
+                CN_Complaint_Canceled_LC_Ctrl.cancelComplaint('');
+            }
+        }catch(Exception e){}
+        try{
+            System.runAs(CS) {
+                CN_Complaint_Canceled_LC_Ctrl.cancelComplaint('123123123');
+            }
+        }catch(Exception e){}
+        try{
+            System.runAs(FinanceAR) {
+                CN_Complaint_Canceled_LC_Ctrl.cancelComplaint('');
+            }
+        }catch(Exception e){}
+        try{
+            System.runAs(CS) {
+                CN_Complaint_Canceled_LC_Ctrl.cancelComplaint(complaintList[1].id);
+            }
+        }catch(Exception e){}
+
+        //CN_Complaint_Recall_LC_Ctrl_Test
+        try{
+            System.runAs(CS) {
+                CN_Complaint_Recall_LC_Ctrl.recallComplaint(complaintList[2].id);
+            }
+        }catch(Exception e){}
+        try{
+            System.runAs(CS) {
+                CN_Complaint_Recall_LC_Ctrl.recallComplaint('');
+            }
+        }catch(Exception e){}
+        try{
+            System.runAs(CS) {
+                CN_Complaint_Recall_LC_Ctrl.recallComplaint('123123123');
+            }
+        }catch(Exception e){}
+        try{
+            System.runAs(FinanceAR) {
+                CN_Complaint_Recall_LC_Ctrl.recallComplaint('');
+            }
+        }catch(Exception e){}
+        try{
+            System.runAs(CS) {
+                CN_Complaint_Recall_LC_Ctrl.recallComplaint(complaintList[3].id);
+            }
+        }catch(Exception e){}
+
+        //CN_Complaint_Rejected_LC_Ctrl_Test
         try{
             CN_Complaint_Rejected_LC_Ctrl.updateStatusToRejected(complaintList[0].id, 'rejectReason');
         }catch(Exception e){}
@@ -83,6 +141,9 @@ private class CN_Case_Share_Handler_Test {
                 CN_Complaint_Rejected_LC_Ctrl.updateStatusToRejected('', 'rejectReason');
             }
         }catch(Exception e){}
+        try{
+            CN_Complaint_Rejected_LC_Ctrl.updateStatusToRejected(complaintList[3].id, 'rejectReason');
+        }catch(Exception e){}
 
         List<Case> complaintList_Update2 = new List<Case>();
         Case complaint_Update2_2 = new Case(
@@ -93,15 +154,18 @@ private class CN_Case_Share_Handler_Test {
         update complaintList_Update2;
         
         CN_Complaint_Resolved_LC_Ctrl.getInitInfo(complaintList[1].id);
+
         try{
             CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved(complaintList[1].id, 'resolveDescription', null, 'Return');
         }catch(Exception e){}
-
         try{
             CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved('', 'resolveDescription', 'Supply Chain', 'Return');
         }catch(Exception e){}
         try{
             CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved('516549649864', 'resolveDescription', 'Supply Chain', 'Return');
+        }catch(Exception e){}
+        try{
+            CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved(complaintList[3].id, 'resolveDescription', null, 'Return');
         }catch(Exception e){}
 
         CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved(complaintList[1].id, 'resolveDescription', 'Supply Chain', 'Return');

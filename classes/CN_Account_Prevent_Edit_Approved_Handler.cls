@@ -45,9 +45,6 @@ public without sharing class CN_Account_Prevent_Edit_Approved_Handler implements
         allFields.add('recordtypeid');
         allFields.add('description');
         
-        
-        
-        
         for(CN_Account_Prevent_Edit_Field__mdt accFieldsMDT : accFieldsMDTList){
             //这里不填的话一定是空吗
             

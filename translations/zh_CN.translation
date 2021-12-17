@@ -998,6 +998,47 @@
         </sections>
     </reportTypes>
     <reportTypes>
+        <description><!-- CN Account Team Member --></description>
+        <label><!-- CN Account Team Member --></label>
+        <name>CN_Account_Team_Member</name>
+        <sections>
+            <columns>
+                <label><!-- ID --></label>
+                <name>ID</name>
+            </columns>
+            <columns>
+                <label><!-- LKA - Sales EID --></label>
+                <name>LKA - Sales EID</name>
+            </columns>
+            <columns>
+                <label><!-- LKA - Sales Name --></label>
+                <name>LKA - Sales Name</name>
+            </columns>
+            <label><!-- Account Team --></label>
+            <name>Account Team</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Account  Name --></label>
+                <name>Account  Name</name>
+            </columns>
+            <columns>
+                <label><!-- Account Code --></label>
+                <name>Account Code</name>
+            </columns>
+            <columns>
+                <label><!-- Sales EID --></label>
+                <name>Sales EID</name>
+            </columns>
+            <columns>
+                <label><!-- Sales Name --></label>
+                <name>Sales Name</name>
+            </columns>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
         <description><!-- CN Account With Cases --></description>
         <label><!-- CN Account With Cases --></label>
         <name>CN_Account_With_Cases</name>

@@ -35,8 +35,7 @@
     </alerts>
     <alerts>
         <fullName>CN_Complaint_Resolve_Notification_CS</fullName>
-        <ccEmails>cs-complaint@sinodis.com.cn.inactive</ccEmails>
-        <ccEmails>dezheng_test_01@outlook.com</ccEmails>
+        <ccEmails>cs-complaint@sinodis.com.cn</ccEmails>
         <description>CN_Complaint_Resolve_Notification_CS</description>
         <protected>false</protected>
         <senderType>CurrentUser</senderType>
@@ -248,13 +247,7 @@
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND(   
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,    
-  RecordType.DeveloperName = &apos;CN_Complaint&apos;,   
-  ISCHANGED( Status ),
-  ISPICKVAL(Status , &apos;Resolved&apos;),
-  ISPICKVAL(CN_Resolve_Reason__c , &apos;Supply Chain&apos;)
-)</formula>
+        <formula>AND(      $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,       RecordType.DeveloperName = &apos;CN_Complaint&apos;,      ISCHANGED( Status ),   ISPICKVAL(Status , &apos;Resolved&apos;),   ISPICKVAL(CN_Resolve_Reason__c , &apos;Supply Chain&apos;) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
