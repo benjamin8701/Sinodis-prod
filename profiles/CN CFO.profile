@@ -530,6 +530,22 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_PresetPrice_Effect_Batch</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_PresetPrice_Effect_Batch_SCH</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_PresetPrice_Effect_Batch_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_PresetPrice_Product_Validation</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_PromotionLI_Prevent_Delete_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -710,6 +726,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_SR_DeliveryStatus_LC_Ctrl_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_SR_Generate_Event_Visit</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -760,6 +780,10 @@
     <classAccesses>
         <apexClass>CN_Sales_Order_Send_LC_Ctrl_Test</apexClass>
         <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_SampleRequest_DeliveryStatus_LC_Ctrl</apexClass>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CN_Sample_Product_Get_LC_Ctrl</apexClass>
@@ -5625,6 +5649,66 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Preset_PriceBook_Entry__c.CN_Channel__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Preset_PriceBook_Entry__c.CN_Discount_Price__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Preset_PriceBook_Entry__c.CN_Effective_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Preset_PriceBook_Entry__c.CN_Expiration_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Preset_PriceBook_Entry__c.CN_Is_Effected__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Preset_PriceBook_Entry__c.CN_Is_Need_Effected__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Preset_PriceBook_Entry__c.CN_Max_Discount_Price__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Preset_PriceBook_Entry__c.CN_Product_Code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Preset_PriceBook_Entry__c.CN_Product_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Preset_PriceBook_Entry__c.CN_Product__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Preset_PriceBook_Entry__c.CN_Standard_List_Price__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Preset_PriceBook_Entry__c.CN_UnitPrice__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CN_Promotion_Line_Item__c.CN_External_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6802,6 +6886,11 @@
         <editable>false</editable>
         <field>CN_Sample_Request__c.CN_Is_Draft__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Sample_Request__c.CN_Is_Send_Delivery_Email__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -9809,6 +9898,13 @@
         <layout>CN_Payment_Term_Check__mdt-Payment Term Check Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>CN_Preset_PriceBook_Entry__c-CN Preset PriceBook Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CN_Preset_PriceBook_Entry__c-CN Preset PriceBook Entry Layout</layout>
+        <recordType>CN_Preset_PriceBook_Entry__c.CN_Preset_PriceBook_Entry</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>CN_Promotion_Line_Item__c-Promotion Line Item Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -10505,6 +10601,11 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
+        <recordType>CN_Preset_PriceBook_Entry__c.CN_Preset_PriceBook_Entry</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
         <recordType>CN_Promotion_Line_Item__c.CN_Promotion_Line_Item</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -10726,6 +10827,10 @@
     <tabVisibilities>
         <tab>CN_Payment_Report__c</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>CN_Preset_PriceBook_Entry__c</tab>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>CN_Promotion_Member__c</tab>

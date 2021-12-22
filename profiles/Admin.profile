@@ -9896,6 +9896,13 @@
         <layout>CN_Payment_Term_Check__mdt-Payment Term Check Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>CN_Preset_PriceBook_Entry__c-CN Preset PriceBook Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CN_Preset_PriceBook_Entry__c-CN Preset PriceBook Entry Layout</layout>
+        <recordType>CN_Preset_PriceBook_Entry__c.CN_Preset_PriceBook_Entry</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>CN_Promotion_Line_Item__c-Promotion Line Item Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
