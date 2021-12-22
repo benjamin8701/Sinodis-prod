@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Preset PriceBook Entry</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Preset PriceBook Entrys</value>
+    </caseValues>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>CN_Channel__c</name>
+        <picklistValues>
+            <masterLabel>DS</masterLabel>
+            <translation><!-- DS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KA</masterLabel>
+            <translation><!-- KA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LP</masterLabel>
+            <translation><!-- LP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WS</masterLabel>
+            <translation><!-- WS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Discount Price --></label>
+        <name>CN_Discount_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>CN_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>CN_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Effected --></label>
+        <name>CN_Is_Effected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Need Effected --></label>
+        <name>CN_Is_Need_Effected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Discount Price --></label>
+        <name>CN_Max_Discount_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>CN_Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>CN_Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>CN_Product__c</name>
+        <relationshipLabel><!-- Preset PriceBook Entrys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- List Price --></label>
+        <name>CN_Standard_List_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel Price --></label>
+        <name>CN_UnitPrice__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Preset PriceBook Entry Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Preset Information --></label>
+            <section>Preset Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CN Preset PriceBook Entry --></label>
+        <name>CN_Preset_PriceBook_Entry</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please input Channel Price, Discount Price and Max Discount Price. --></errorMessage>
+        <name>CN_PPBE_Channel_Check_Field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please don&apos;t input the List Price for Channel Preset Price Book Entry --></errorMessage>
+        <name>CN_PPBE_Channel_Prevent_ListPrice</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Effective Date must be later than today --></errorMessage>
+        <name>CN_PPBE_Check_Effective_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expiration Date should be later than Effective Date. --></errorMessage>
+        <name>CN_PPBE_Check_ExpirationDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to edit the Preset Price Book Entry which has been effected. --></errorMessage>
+        <name>CN_PPBE_Prevent_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please don&apos;t input the Channel ,Discount Price and Max Discount Price for Preset Price Book Entry which channel is &apos;LP&apos; --></errorMessage>
+        <name>CN_PPBE_Standard_Check_Field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input the list Price for Preset Price Book Entry which channel is &apos;LP&apos; --></errorMessage>
+        <name>CN_PPBE_Standard_Check_ListPrice</name>
+    </validationRules>
+</CustomObjectTranslation>

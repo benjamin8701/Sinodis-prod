@@ -553,6 +553,10 @@
         <name>CN_PleaseConfirm_Value_ReadyForPublish</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_PresetPrice_Product_Validation_MSG --></label>
+        <name>CN_PresetPrice_Product_Validation_MSG</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_PromotionMember_No_Permission --></label>
         <name>CN_PromotionMember_No_Permission</name>
     </customLabels>
@@ -865,6 +869,14 @@
         <name>CN_Sales_Team_Retrieve_Title</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_SampleRequest_Send_Confirm_Msg --></label>
+        <name>CN_SampleRequest_Send_Confirm_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_SampleRequest_Send_Title --></label>
+        <name>CN_SampleRequest_Send_Title</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_ShipTo_Account_Approved_Or_Has_Synced --></label>
         <name>CN_ShipTo_Account_Approved_Or_Has_Synced</name>
     </customLabels>
@@ -1158,6 +1170,27 @@
         </sections>
     </reportTypes>
     <reportTypes>
+        <description><!-- Campaigns and Related object --></description>
+        <label><!-- Campaigns and Related object --></label>
+        <name>CN_Campaigns_and_Related_object</name>
+        <sections>
+            <label><!-- Campaigns --></label>
+            <name>Campaigns</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Products --></label>
+            <name>Sample Products</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Requests --></label>
+            <name>Sample Requests</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
         <description><!-- CN Chef with Chef Assigned --></description>
         <label><!-- CN Chef with Chef Assigned --></label>
         <name>CN_Chef_with_Chef_Assigned</name>
@@ -1261,6 +1294,23 @@
         <sections>
             <label><!-- Quotes --></label>
             <name>Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Sample request with sample product --></description>
+        <label><!-- CN Sample request with sample product --></label>
+        <name>CN_Sample_request_with_product_and_feedback</name>
+        <sections>
+            <columns>
+                <label><!-- Product: Product Code --></label>
+                <name>Product: Product Code</name>
+            </columns>
+            <label><!-- Sample Products --></label>
+            <name>Sample Products</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Requests --></label>
+            <name>Sample Requests</name>
         </sections>
     </reportTypes>
     <reportTypes>
