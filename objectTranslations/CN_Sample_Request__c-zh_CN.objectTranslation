@@ -278,7 +278,8 @@
         <name>CN_SR_Ready_for_Approval</name>
     </quickActions>
     <quickActions>
-        <label><!-- Send Delivery Status --></label>
+        <aspect>Master</aspect>
+        <label>发送交付状态</label>
         <name>CN_Send_Delivery_Email_c</name>
     </quickActions>
     <quickActions>

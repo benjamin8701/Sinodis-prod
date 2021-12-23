@@ -454,7 +454,7 @@
         <errorConditionFormula>AND(
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  RecordType.DeveloperName = &apos;CN_Price_Book&apos;,
+  RecordType.DeveloperName = &apos;CN_Preset_PriceBook_Entry&apos;,
   CN_Effective_Date__c &gt; CN_Expiration_Date__c
 )</errorConditionFormula>
         <errorDisplayField>CN_Expiration_Date__c</errorDisplayField>
