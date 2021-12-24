@@ -214,6 +214,16 @@ public without sharing class Constants {
     public static final String CN_BRAND_SYNC_STATUS_FAIL = 'Fail';
     public static final String CN_BRAND_SYNC_STATUS_SUCCESS = 'Success';
 
+	//Preset PriceBook Entry
+    public static Boolean PPBE_TRIGGER_ON = true;
+    public static Boolean CN_PPBE_TRIGGER_ON = true;
+    public static Boolean CN_PRESETPRICE_PRODUCT_VALIDATION_HANDLER_TRIGGER_ON = true;
+
+	public static final String CN_PRESETPRICE_CHANNEL_LP = 'LP';
+	public static final String CN_PRESETPRICE_CHANNEL_WS = 'WS';
+	public static final String CN_PRESETPRICE_CHANNEL_DS = 'DS';
+	public static final String CN_PRESETPRICE_CHANNEL_KA = 'kA';
+
 	// Added By Jessica Wang 2021-07-21 Release2 Start
 	//Lead
 	public static Boolean LEAD_TRIGGER_ON = true;

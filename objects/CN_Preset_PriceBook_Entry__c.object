@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>CN_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Channel</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>WS</fullName>
+                    <default>false</default>
+                    <label>WS</label>
+                </value>
+                <value>
+                    <fullName>DS</fullName>
+                    <default>false</default>
+                    <label>DS</label>
+                </value>
+                <value>
+                    <fullName>KA</fullName>
+                    <default>false</default>
+                    <label>KA</label>
+                </value>
+                <value>
+                    <fullName>LP</fullName>
+                    <default>false</default>
+                    <label>LP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Discount_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CN_Effective_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Effective Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CN_Expiration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Effected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Effected</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Need_Effected__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Effective_Date__c  =   TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Need Effected</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Max_Discount_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Max Discount Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CN_Product_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Product__r.CN_SKU_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Product_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Product__r.CN_SKU_Description_CN__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Preset PriceBook Entrys</relationshipLabel>
+        <relationshipName>Preset_PriceBook_Entrys</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Standard_List_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>List Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CN_UnitPrice__c</fullName>
+        <externalId>false</externalId>
+        <label>Channel Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Preset PriceBook Entry</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Channel__c</columns>
+        <columns>CN_Effective_Date__c</columns>
+        <columns>CN_Expiration_Date__c</columns>
+        <columns>CN_Product__c</columns>
+        <columns>CN_UnitPrice__c</columns>
+        <columns>CN_Discount_Price__c</columns>
+        <columns>CN_Max_Discount_Price__c</columns>
+        <columns>CN_Standard_List_Price__c</columns>
+        <columns>CN_Is_Effected__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_PresetPrice_Effeted</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Channel__c</columns>
+        <columns>CN_Effective_Date__c</columns>
+        <columns>CN_Expiration_Date__c</columns>
+        <columns>CN_Product__c</columns>
+        <columns>CN_UnitPrice__c</columns>
+        <columns>CN_Discount_Price__c</columns>
+        <columns>CN_Max_Discount_Price__c</columns>
+        <columns>CN_Standard_List_Price__c</columns>
+        <columns>CN_Is_Effected__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CN_Is_Effected__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Effected Preset PriceBook Entry</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_PresetPrice_Not_Effected</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Channel__c</columns>
+        <columns>CN_Effective_Date__c</columns>
+        <columns>CN_Expiration_Date__c</columns>
+        <columns>CN_Product__c</columns>
+        <columns>CN_UnitPrice__c</columns>
+        <columns>CN_Discount_Price__c</columns>
+        <columns>CN_Max_Discount_Price__c</columns>
+        <columns>CN_Standard_List_Price__c</columns>
+        <columns>CN_Is_Effected__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CN_Is_Effected__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Not Effected Preset PriceBook Entry</label>
+    </listViews>
+    <nameField>
+        <displayFormat>PPBE-{0000000000}</displayFormat>
+        <label>Preset PriceBook Entry Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Preset PriceBook Entrys</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>CN_Preset_PriceBook_Entry</fullName>
+        <active>true</active>
+        <label>CN Preset PriceBook Entry</label>
+        <picklistValues>
+            <picklist>CN_Channel__c</picklist>
+            <values>
+                <fullName>DS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields>CN_Channel__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Effective_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Expiration_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Product__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Standard_List_Price__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_UnitPrice__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Discount_Price__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Max_Discount_Price__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CN_Is_Effected__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>CN_PPBE_Channel_Check_Field</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  NOT(ISPICKVAL(CN_Channel__c,&apos;LP&apos;)),
+  OR(
+    CN_Discount_Price__c = 0,
+    ISBLANK(CN_Discount_Price__c ),
+    CN_Max_Discount_Price__c = 0,
+    ISBLANK(CN_Max_Discount_Price__c),
+    CN_UnitPrice__c = 0,
+    ISBLANK(CN_UnitPrice__c)
+  )
+)</errorConditionFormula>
+        <errorMessage>Please input Channel Price, Discount Price and Max Discount Price.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_PPBE_Channel_Prevent_ListPrice</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  NOT(ISPICKVAL(CN_Channel__c,&apos;LP&apos;)),
+  NOT(ISBLANK( CN_Standard_List_Price__c ))
+)</errorConditionFormula>
+        <errorDisplayField>CN_Standard_List_Price__c</errorDisplayField>
+        <errorMessage>Please don&apos;t input the List Price for Channel Preset Price Book Entry</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_PPBE_Check_Effective_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(ISCHANGED(CN_Effective_Date__c ),ISNEW()),
+  CN_Effective_Date__c &lt;= TODAY()
+)</errorConditionFormula>
+        <errorDisplayField>CN_Effective_Date__c</errorDisplayField>
+        <errorMessage>Effective Date must be later than today</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_PPBE_Check_ExpirationDate</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  RecordType.DeveloperName = &apos;CN_Preset_PriceBook_Entry&apos;,
+  CN_Effective_Date__c &gt; CN_Expiration_Date__c
+)</errorConditionFormula>
+        <errorDisplayField>CN_Expiration_Date__c</errorDisplayField>
+        <errorMessage>Expiration Date should be later than Effective Date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_PPBE_Prevent_Edit</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  OR(CN_Is_Effected__c = TRUE, CN_Effective_Date__c &lt;= Today()),
+  OR(
+    ISCHANGED(CN_Channel__c),
+    ISCHANGED(CN_UnitPrice__c),
+    ISCHANGED(CN_Discount_Price__c),
+    ISCHANGED(CN_Effective_Date__c),
+    ISCHANGED(CN_Expiration_Date__c),
+    ISCHANGED(CN_Standard_List_Price__c),
+    ISCHANGED(CN_Max_Discount_Price__c),
+    ISCHANGED(CN_Product__c)
+  )
+)</errorConditionFormula>
+        <errorMessage>You are not allowed to edit the Preset Price Book Entry which has been effected.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_PPBE_Standard_Check_Field</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  ISPICKVAL(CN_Channel__c,&apos;LP&apos;),
+  OR(
+    NOT(ISBLANK(CN_Discount_Price__c )),
+    NOT(ISBLANK(CN_Max_Discount_Price__c)),
+    NOT(ISBLANK(CN_UnitPrice__c))
+  )
+)</errorConditionFormula>
+        <errorMessage>Please don&apos;t input the Channel ,Discount Price and Max Discount Price for Preset Price Book Entry which channel is &apos;LP&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_PPBE_Standard_Check_ListPrice</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  ISPICKVAL(CN_Channel__c,&apos;LP&apos;),
+  ISBLANK( CN_Standard_List_Price__c )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Standard_List_Price__c</errorDisplayField>
+        <errorMessage>Please input the list Price for Preset Price Book Entry which channel is &apos;LP&apos;</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

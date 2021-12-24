@@ -1,0 +1,32 @@
+<apex:component controller="CN_Sample_Product_Get_LC_Ctrl" access="global">
+    <apex:attribute name="SRId" type="Id" description="Id of the Sample Request" assignTo="{!sampleRequestId}" />
+    <apex:attribute name="isCCEOrCS" type="String" description="If profile is cce the value is true" />
+    <apex:variable value="{!1}" var="rowNum" />
+    <table border="2" cellspacing="5">
+        <tr>
+            <td>序号</td>
+            <td>样品SKU代码</td>
+            <td>中文描述</td>
+            <td>英文描述</td>
+            <td>领取数量</td>
+            <td>分装样品单位</td>
+            <td>单价</td>
+            <td>交付状态</td>
+            <td>备注</td>
+        </tr>
+        <apex:repeat value="{!spList}" var="sp">
+            <tr>
+                <td>{!FLOOR(rowNum)}</td>
+                <td>{!sp.CN_Sample_SKU_Code__c}</td>
+                <td>{!sp.CN_SKU_Chinese_Description__c}</td>
+                <td>{!sp.CN_SKU_English_Description__c}</td>
+                <td>{!sp.CN_Quantity_Needed__c}</td>
+                <td>{!sp.CN_Sample_Unit__c}</td>
+                <td>{!sp.CN_List_Price__c}</td>
+                <td>{!sp.CN_Status_of_Delivery__c}</td>
+                <td>{!sp.CN_Remark__c}</td>
+                <apex:variable var="rowNum" value="{!rowNum + 1}" />
+            </tr>
+        </apex:repeat>
+    </table>
+</apex:component>

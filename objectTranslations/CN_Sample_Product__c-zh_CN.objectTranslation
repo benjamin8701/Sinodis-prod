@@ -187,6 +187,10 @@
             <masterLabel>Out of Stock</masterLabel>
             <translation><!-- Out of Stock --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label>单位</label>

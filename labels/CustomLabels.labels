@@ -960,6 +960,13 @@
         <value>Ready for Publish, and please confirm you&apos;ve already added promotion members.</value>
     </labels>
     <labels>
+        <fullName>CN_PresetPrice_Product_Validation_MSG</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_PresetPrice_Product_Validation_MSG</shortDescription>
+        <value>You are not allowed to add the product to the preset pricebook entry that has not been added to standard pricebook.</value>
+    </labels>
+    <labels>
         <fullName>CN_PromotionMember_No_Permission</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -1504,6 +1511,20 @@
         <protected>false</protected>
         <shortDescription>CN_Sales_Team_Retrieve_Title</shortDescription>
         <value>Retrieve Sales Team Status</value>
+    </labels>
+    <labels>
+        <fullName>CN_SampleRequest_Send_Confirm_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_SampleRequest_Send_Confirm_Msg</shortDescription>
+        <value>Confirm to send status of delivery email?</value>
+    </labels>
+    <labels>
+        <fullName>CN_SampleRequest_Send_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_SampleRequest_Send_Title</shortDescription>
+        <value>Send Status of Delivery</value>
     </labels>
     <labels>
         <fullName>CN_ShipTo_Account_Approved_Or_Has_Synced</fullName>

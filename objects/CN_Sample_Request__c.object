@@ -339,6 +339,15 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CN_Is_Send_Delivery_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Send Delivery Email</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Item_ID__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -625,7 +634,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <fields>
         <fullName>CN_Sample_Feedback_Overdue__c</fullName>
         <externalId>false</externalId>
-        <formula>HYPERLINK(&quot;/lightning/r/Report/00O5h000003bZtCEAU/view?queryScope=userFolders&quot;,&quot;Click Here&quot;)</formula>
+        <formula>HYPERLINK(&quot;/lightning/r/Report/00O1e000000JkW6EAK/view?queryScope=userFolders&quot;,&quot;Click Here&quot;)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Sample Feedback Overdue</label>
         <required>false</required>
@@ -1062,7 +1071,8 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
 	)),
         NOT(ISCHANGED(CN_SP_Records_Count_All__c)),
         NOT(ISCHANGED(CN_SP_Records_Count_Delivery_Status_All__c)),
-        NOT(ISCHANGED(CN_SP_Records_Count_Delivery_Status_Done__c)),
+NOT(ISCHANGED(CN_SP_Records_Count_Delivery_Status_Done__c)),
+      NOT(ISCHANGED(CN_Is_Send_Delivery_Email__c)),
         NOT(ISCHANGED(CN_Sample_Request_Cost__c))
 )</errorConditionFormula>
         <errorMessage>It&apos;s not allowed to edit.</errorMessage>

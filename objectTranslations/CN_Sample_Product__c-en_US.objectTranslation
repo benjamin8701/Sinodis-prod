@@ -191,6 +191,10 @@
             <masterLabel>Out of Stock</masterLabel>
             <translation><!-- Out of Stock --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Unit --></label>
@@ -241,7 +245,7 @@
         <name>CN_Check_Deliver_Status_After_Done</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Fill in customer feedback after sample deliveried. --></errorMessage>
+        <errorMessage><!-- Fill in customer feedback after sample delivered. --></errorMessage>
         <name>CN_Check_FeedBack</name>
     </validationRules>
     <validationRules>

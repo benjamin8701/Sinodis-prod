@@ -628,6 +628,11 @@
                     <default>false</default>
                     <label>Out of Stock</label>
                 </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -874,6 +879,10 @@
             </values>
             <values>
                 <fullName>Out of Stock</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
