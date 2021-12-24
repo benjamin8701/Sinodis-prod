@@ -66,6 +66,7 @@
     <tabs>CN_Payment_History__c</tabs>
     <tabs>CN_Payment_Report__c</tabs>
     <tabs>CN_Mass_Change_Account_Owner_Tab</tabs>
+    <tabs>CN_Preset_PriceBook_Entry__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Savencia_Sanodis_UtilityBar</utilityBar>
 </CustomApplication>

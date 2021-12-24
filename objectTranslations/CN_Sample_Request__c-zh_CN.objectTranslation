@@ -66,6 +66,10 @@
         <name>CN_Is_Draft__c</name>
     </fields>
     <fields>
+        <label><!-- Is Send Delivery Email --></label>
+        <name>CN_Is_Send_Delivery_Email__c</name>
+    </fields>
+    <fields>
         <label>产品编号</label>
         <name>CN_Item_ID__c</name>
         <relationshipLabel>样品</relationshipLabel>
@@ -110,6 +114,10 @@
     <fields>
         <label>请确认：</label>
         <name>CN_Please_Confirm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type --></label>
+        <name>CN_Record_Type__c</name>
     </fields>
     <fields>
         <help>如有特殊的样品申请需求，可填写备注信息！</help>
@@ -268,6 +276,11 @@
         <aspect>Master</aspect>
         <label>预审/撤回</label>
         <name>CN_SR_Ready_for_Approval</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>发送交付状态</label>
+        <name>CN_Send_Delivery_Email_c</name>
     </quickActions>
     <quickActions>
         <label><!-- Update Sample Request --></label>

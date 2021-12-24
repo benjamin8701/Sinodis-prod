@@ -15,14 +15,24 @@
         <description>CN_SR_Approved_Process_CS</description>
         <protected>false</protected>
         <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
             <field>CN_CS_Team_Email__c</field>
             <type>email</type>
         </recipients>
-		<recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CN_Email_Folder/CN_Sample_Request_Approved_Process_CS</template>
+    </alerts>
+    <alerts>
+        <fullName>CN_SR_Delivery_Status</fullName>
+        <description>CN_SR_Delivery_Status</description>
+        <protected>false</protected>
+        <recipients>
             <type>creator</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>CN_Email_Folder/CN_Sample_Request_Approved_Process_CS</template>
+        <template>CN_Email_Folder/CN_SR_Delivery_Status</template>
     </alerts>
     <alerts>
         <fullName>CN_SR_Rejected</fullName>
@@ -91,6 +101,16 @@
         <senderType>CurrentUser</senderType>
         <template>CN_Email_Folder/CN_SR_Repack_DeliveryAll_Sales</template>
     </alerts>
+    <fieldUpdates>
+        <fullName>CN_Is_Send_Delivery_Email_False</fullName>
+        <field>CN_Is_Send_Delivery_Email__c</field>
+        <literalValue>0</literalValue>
+        <name>CN_Is_Send_Delivery_Email_False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
     <fieldUpdates>
         <fullName>CN_SR_Empty_ConditionType</fullName>
         <field>CN_Condition_Type__c</field>
@@ -181,6 +201,16 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <rules>
+        <fullName>CN Send Delivery Status</fullName>
+        <actions>
+            <name>CN_SR_Delivery_Status</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED(CN_Is_Send_Delivery_Email__c  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
         <fullName>CN_SR_Populate_Approver1_CCE1</fullName>
         <active>false</active>
         <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c, NOT(ISBLANK(CN_Account_Name__c)),  ISCHANGED(CN_Account_Name__c),  CN_Account_Name__r.CN_Sales_Team_UI__r.Name == &apos;KA&apos;)</formula>
@@ -198,15 +228,7 @@
         </actions>
         <active>true</active>
         <description>If the Account has the customer Code , populate the Order type for wholesales with ZFD1</description>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
-  RecordType.DeveloperName = &quot;CN_Whole_Pack&quot;,
-  OR(
-     ISCHANGED(CN_Opportunity_Name__c),
-     ISNEW()
-  ),
-  NOT(ISBLANK(CN_Opportunity_Name__r.Account.CN_Customer_Code__c))
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,   RecordType.DeveloperName = &quot;CN_Whole_Pack&quot;,   OR(      ISCHANGED(CN_Opportunity_Name__c),      ISNEW()   ),   NOT(ISBLANK(CN_Opportunity_Name__r.Account.CN_Customer_Code__c)) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -221,15 +243,7 @@
         </actions>
         <active>true</active>
         <description>If the Account has not the customer Code , populate the Order type for wholesales with ZFD3</description>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
-  RecordType.DeveloperName = &quot;CN_Whole_Pack&quot;,
-  OR(
-     ISCHANGED(CN_Opportunity_Name__c),
-     ISNEW()
-  ),
-  ISBLANK(CN_Opportunity_Name__r.Account.CN_Customer_Code__c)
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,   RecordType.DeveloperName = &quot;CN_Whole_Pack&quot;,   OR(      ISCHANGED(CN_Opportunity_Name__c),      ISNEW()   ),   ISBLANK(CN_Opportunity_Name__r.Account.CN_Customer_Code__c) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

@@ -149,6 +149,10 @@
         <members>CN_OrderTreeUpsert_WS</members>
         <members>CN_OrderTreeUpsert_WS_Test</members>
         <members>CN_OrderTreeUpsert_WS_Test</members>
+        <members>CN_PresetPrice_Effect_Batch</members>
+        <members>CN_PresetPrice_Effect_Batch_SCH</members>
+        <members>CN_PresetPrice_Effect_Batch_Test</members>
+        <members>CN_PresetPrice_Product_Validation</members>
         <members>CN_PromotionLI_Prevent_Delete_Handler</members>
         <members>CN_PromotionM_Prevent_Delete_Handler</members>
         <members>CN_PromotionM_Set_Account_Handler</members>
@@ -197,6 +201,7 @@
         <members>CN_SP_Populate_Product_Handler</members>
         <members>CN_SP_Populate_Product_Handler_Test</members>
         <members>CN_SP_Prevent_Delete_Handler</members>
+        <members>CN_SR_DeliveryStatus_LC_Ctrl_Test</members>
         <members>CN_SR_Generate_Event_Visit</members>
         <members>CN_SR_Populate_Fields_Handler</members>
         <members>CN_SR_Populate_Fields_Handler_Test</members>
@@ -210,6 +215,7 @@
         <members>CN_SalesTeam_Prevent_Delete_Handler_Test</members>
         <members>CN_Sales_Order_Send_LC_Ctrl</members>
         <members>CN_Sales_Order_Send_LC_Ctrl_Test</members>
+        <members>CN_SampleRequest_DeliveryStatus_LC_Ctrl</members>
         <members>CN_Sample_Product_Get_LC_Ctrl</members>
         <members>CN_Sample_Product_Get_LC_Ctrl_Test</members>
         <members>CN_ShipTo_Prevent_Delete_Handler</members>
@@ -232,8 +238,9 @@
     <types>
         <members>CN_Quote_Notify_Finance_Template</members>
         <members>CN_Sample_Product_Get_CN_VC</members>
-        <members>CN_Sample_Product_Get_CN_VC_CCE</members>
+        <members>CN_Sample_Product_Get_CN_VC_Delivery_CCE</members>
         <members>CN_Sample_Product_Get_EN_VC</members>
+        <members>CN_Sample_Product_Get_EN_VC_Delivery_CCE</members>
         <members>CN_Sample_Product_Get_LC</members>
         <name>ApexComponent</name>
     </types>
@@ -432,6 +439,7 @@
         <members>CN_Email_Folder/CN_Quote_Follow_SalesRep</members>
         <members>CN_Email_Folder/CN_Quote_Notify_Finance</members>
         <members>CN_Email_Folder/CN_Quote_Rejected</members>
+        <members>CN_Email_Folder/CN_SR_Delivery_Status</members>
         <members>CN_Email_Folder/CN_SR_Repack_DeliveryAll_Sales</members>
         <members>CN_Email_Folder/CN_Sample_Request_Approved</members>
         <members>CN_Email_Folder/CN_Sample_Request_Approved_Cancelled</members>
@@ -499,6 +507,7 @@
         <members>CN_Payment_History__c-Payment History Layout</members>
         <members>CN_Payment_Report__c-Payment Report Layout</members>
         <members>CN_Payment_Term_Check__mdt-Payment Term Check Layout</members>
+        <members>CN_Preset_PriceBook_Entry__c-CN Preset PriceBook Entry Layout</members>
         <members>CN_Promotion_Line_Item__c-Promotion Line Item Layout</members>
         <members>CN_Promotion_Member__c-CN Sinodis Promotion Member Layout</members>
         <members>CN_Promotion__c-CN Sinodis Promotion Layout</members>
@@ -571,6 +580,7 @@
         <members>CN_CCE_Lead_Qualifier</members>
         <members>CN_Campaign_Manager</members>
         <members>CN_Manage_Account_Team</members>
+        <members>CN_Manage_Preset_PriceBook_Entry</members>
         <members>CN_Marketing_Chef_Request_User</members>
         <members>CN_Marketing_Edit_PromoAndMini_Price</members>
         <members>CN_Marketing_Lead_Manager</members>
@@ -648,6 +658,7 @@
         <members>CN_Sample_Product__c.CN_Update_Deliver_Status</members>
         <members>CN_Sample_Request__c.CN_Cancel_Sample_Request</members>
         <members>CN_Sample_Request__c.CN_SR_Ready_for_Approval</members>
+        <members>CN_Sample_Request__c.CN_Send_Delivery_Email_c</members>
         <members>CN_Sample_Request__c.Test</members>
         <members>CN_Ship_to_Party__c.CN_ShipTo_Request_Update</members>
         <members>Campaign.CN_Generate_Opportunity</members>
@@ -679,6 +690,7 @@
     </types>
     <types>
         <members>CN_CCE_Report</members>
+        <members>CN_CCE_Report/CN_New_Product_Launch_Tracking</members>
         <members>CN_CCE_Report/CN_Repack_Sample_Request</members>
         <members>CN_CampaignReport</members>
         <members>CN_CampaignReport/CN_Attendance_by_EventExecution_Type</members>
@@ -781,6 +793,7 @@
         <members>CN_SampleReport/CN_Sample_Feedback_Overdue</members>
         <members>CN_SampleReport/CN_Sample_Request_Item_by_Month_YTD</members>
         <members>CN_SampleReport/CN_Sample_Request_Item_by_Status_YTD</members>
+        <members>CN_SampleReport/CN_Sample_Request_Tracking_Report</members>
         <members>TM_Report</members>
         <members>TM_Report/CN_Account_without_Document</members>
         <members>TM_Report/TM_Account_Report</members>
@@ -801,12 +814,14 @@
         <members>CN_Campaign_With_Opportunity</members>
         <members>CN_Campaign_with_Product_with_SP</members>
         <members>CN_Campaign_with_product_with_SOI</members>
+        <members>CN_Campaigns_and_Related_object</members>
         <members>CN_Chef_with_Chef_Assigned</members>
         <members>CN_Lead</members>
         <members>CN_Price_Book_Entry</members>
         <members>CN_Promotion_with_Member_with_Quote_Line_Item</members>
         <members>CN_Promotion_with_Promotion_Line_Item</members>
         <members>CN_Quote_with_Quote_Line_Item</members>
+        <members>CN_Sample_request_with_product_and_feedback</members>
         <members>CN_User_Report_Type</members>
         <members>Chef_Requests_with_Demo_Reports_with_Demo_Report_to_Products</members>
         <name>ReportType</name>

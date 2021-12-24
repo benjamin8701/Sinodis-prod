@@ -272,6 +272,7 @@ public class TestDataFactory {
             pricebook.Name = name;
             pricebook.Description = description;
             pricebook.CN_Channel__c = channel;
+            pricebook.CN_Price_Book_Code__c = channel;
             pricebook.IsActive = true;
             pricebook.RecordTypeId = visitRTId;
         }
@@ -284,8 +285,8 @@ public class TestDataFactory {
         List<PricebookEntry> pbEntryList = new List<PricebookEntry>();
         List<PricebookEntry> pbEntryList_Standard = new List<PricebookEntry>();
 
-        List<Pricebook2> pricebookList = [Select Id,IsStandard,CN_Channel__c From Pricebook2];
-        List<Product2> productList = [Select Id,name From Product2];
+        List<Pricebook2> pricebookList = [Select Id,IsStandard,CN_Channel__c,CN_Price_Book_Code__c From Pricebook2];
+        List<Product2> productList = [Select Id,name,CN_SKU_Code__c From Product2];
 
         for(Product2 product : productList){
             PricebookEntry pbEntry = new PricebookEntry(
@@ -322,7 +323,9 @@ public class TestDataFactory {
                     CN_Unit_of_Measure__c = 'EA',
                     IsActive = true,
                     Pricebook2Id  = pb.Id,
-                    Product2Id  = product.Id
+                    Product2Id  = product.Id,
+                    CN_Price_Book_Entry_Code__c = pb.CN_Price_Book_Code__c+product.CN_SKU_Code__c
+                    
                 );
                 pbEntryList.add(pbEntry);
             }
