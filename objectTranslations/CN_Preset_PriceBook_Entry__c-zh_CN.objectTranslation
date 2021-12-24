@@ -37,7 +37,7 @@
         <name>CN_Expiration_Date__c</name>
     </fields>
     <fields>
-        <label><!-- Is Effected --></label>
+        <label>已生效</label>
         <name>CN_Is_Effected__c</name>
     </fields>
     <fields>
