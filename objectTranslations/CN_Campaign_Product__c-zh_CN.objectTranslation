@@ -34,4 +34,8 @@
         <errorMessage>产品已失效</errorMessage>
         <name>CN_Check_Product_Active</name>
     </validationRules>
+    <webLinks>
+        <label>导入</label>
+        <name>Import</name>
+    </webLinks>
 </CustomObjectTranslation>
