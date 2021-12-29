@@ -330,6 +330,7 @@
         <fields>CN_Total_Amount_With_Tax__c</fields>
         <fields>CN_Credit_Status__c</fields>
         <fields>CN_Overall_Status__c</fields>
+        <fields>CN_SAP_Create_Date__c</fields>
         <relatedList>CN_Sales_Order__c.CN_Sold_To_Account_Name__c</relatedList>
         <sortField>NAME</sortField>
         <sortOrder>Desc</sortOrder>
