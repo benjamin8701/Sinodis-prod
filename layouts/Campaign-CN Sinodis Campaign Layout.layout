@@ -242,6 +242,7 @@
         <relatedList>Opportunity.CN_Campaign__c</relatedList>
     </relatedLists>
     <relatedLists>
+        <customButtons>Import</customButtons>
         <fields>NAME</fields>
         <fields>CN_Product__c</fields>
         <fields>CN_SKU_Name__c</fields>
