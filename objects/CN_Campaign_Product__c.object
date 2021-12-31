@@ -230,4 +230,17 @@ NOT( CN_Product__r.IsActive )
         <errorMessage>Product is inactive</errorMessage>
     </validationRules>
     <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Import</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Import</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>https://savenciasinodis.lightning.force.com/dataImporter/dataImporter.app?objectSelection=CN_Campaign_Product__c</url>
+    </webLinks>
 </CustomObject>
