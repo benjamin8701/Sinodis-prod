@@ -362,6 +362,26 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Chef_UT_Report_Batch</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Chef_UT_Report_SCH</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Chefs_Assigned_Chef_UT_Item_Biz</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Chefs_Assigned_Chef_UT_Item_Handler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Chefs_Assigned_Chef_UT_OFF_Handler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Chefs_Assigned_Prevent_Delete_Handler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -544,6 +564,14 @@
     <classAccesses>
         <apexClass>CN_PresetPrice_Product_Validation</apexClass>
         <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Product_Description_Check_Handler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CN_Product_Description_Check_HandlerTest</apexClass>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>CN_PromotionLI_Prevent_Delete_Handler</apexClass>
@@ -1966,6 +1994,16 @@
         <editable>false</editable>
         <field>CN_Approval_Aging_Setting__mdt.CN_Approval_Aging_Setting_Step__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Brand_Owner_Control__c.CN_Brand_Owner__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Brand_Owner_Control__c.CN_Brands__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -3754,6 +3792,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Chef_Request__c.CN_End_Date_AM_PM__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CN_Chef_Request__c.CN_End_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3879,6 +3922,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Chef_Request__c.CN_Start_Date_AM_PM__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CN_Chef_Request__c.CN_Start_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3905,6 +3953,81 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Chef_Request__c.CN_Using_The_Entire_Kitchen__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Chef_UT_Item__c.CN_Chef_UT_OFF__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Chef_UT_Item__c.CN_Chefs_Assigned__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Chef_UT_Item__c.CN_Event_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Chef_UT_Item__c.CN_External_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Chef_UT_Item__c.CN_Is_Confirmed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Chef_UT_Item__c.CN_Work_Days__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Chef_UT_Item__c.CN_Year_Month__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Chef_UT_OFF__c.CN_Chef__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Chef_UT_OFF__c.CN_External_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Chef_UT_OFF__c.CN_Month__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Chef_UT_OFF__c.CN_Not_Include_in_UT_Report__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Chef_UT_OFF__c.CN_Total_OFF_Days__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Chef_UT_OFF__c.CN_Total_Working_Days__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Chef_UT_OFF__c.CN_YearMonth__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Chef_UT_OFF__c.CN_Year__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3959,12 +4082,27 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Chefs_Assigned__c.CN_Chef_UT_OFF__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CN_Chefs_Assigned__c.CN_Chef_UT__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>CN_Chefs_Assigned__c.CN_Chef_Work_End_Date_AM_PM__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>CN_Chefs_Assigned__c.CN_Chef_Work_End_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Chefs_Assigned__c.CN_Chef_Work_Start_Date_AM_PM__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3975,11 +4113,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Chefs_Assigned__c.CN_Chef_Work_Start_and_End_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>CN_Chefs_Assigned__c.CN_Chef_Working_Days_Except_Off__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4024,6 +4157,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Chefs_Assigned__c.CN_End_Date_Year_Month__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Chefs_Assigned__c.CN_End_Date_to_Month_Start_Days__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Chefs_Assigned__c.CN_Event_Location__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4045,6 +4188,31 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Chefs_Assigned__c.CN_Is_My_Assignment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Chefs_Assigned__c.CN_Is_OFF__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Chefs_Assigned__c.CN_Is_Work_Date_within_Same_Month__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Chefs_Assigned__c.CN_Self_Work_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Chefs_Assigned__c.CN_Start_Date_Year_Month__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Chefs_Assigned__c.CN_Start_Date_to_Month_End_Days__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -5705,6 +5873,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CN_Preset_PriceBook_Entry__c.CN_UnitPrice__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Product_Document__c.CN_Document_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Product_Document__c.Product__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -9691,7 +9869,13 @@
         <recordType>Account.CN_New_Prospect</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>CN_Account_Prevent_Edit_Field__mdt-CN Account Prevent Edit Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>CN_Approval_Aging_Setting__mdt-Approval Aging Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CN_Brand_Owner_Control__c-CN_Brand_Owner_Control_Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CN_Brand__c-Brand Layout</layout>
@@ -9788,6 +9972,20 @@
         <layout>CN_Chef_Request__c-Chef Request Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>CN_Chef_UT_Item__c-Chef UT Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CN_Chef_UT_Item__c-Chef UT Item Layout</layout>
+        <recordType>CN_Chef_UT_Item__c.CN_Chef_UT_Item</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CN_Chef_UT_OFF__c-Chef UT OFF Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CN_Chef_UT_OFF__c-Chef UT OFF Layout</layout>
+        <recordType>CN_Chef_UT_OFF__c.CN_Chef_UT_OFF</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>CN_Chef_UT__c-CN Chef UT Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -9797,6 +9995,10 @@
     <layoutAssignments>
         <layout>CN_Chefs_Assigned__c-CN Chefs Assigned Layout</layout>
         <recordType>CN_Chefs_Assigned__c.CN_Chef_Assigned</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CN_Chefs_Assigned__c-CN Chefs Assigned Self Work Layout</layout>
+        <recordType>CN_Chefs_Assigned__c.CN_Chef_Assigned_Self_Work</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CN_Chefs_Assigned__c-Chefs Assigned Layout</layout>
@@ -9903,6 +10105,9 @@
     <layoutAssignments>
         <layout>CN_Preset_PriceBook_Entry__c-CN Preset PriceBook Entry Layout</layout>
         <recordType>CN_Preset_PriceBook_Entry__c.CN_Preset_PriceBook_Entry</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CN_Product_Document__c-Product Document Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CN_Promotion_Line_Item__c-Promotion Line Item Layout</layout>
@@ -10270,6 +10475,15 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>CN_Product_Document__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>false</allowEdit>
@@ -10530,6 +10744,16 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>CN_Chef_UT_Item__c.CN_Chef_UT_Item</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>CN_Chef_UT_OFF__c.CN_Chef_UT_OFF</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <default>false</default>
         <recordType>CN_Chef_UT__c.CN_Chef_UT</recordType>
         <visible>false</visible>
@@ -10538,6 +10762,11 @@
         <default>true</default>
         <recordType>CN_Chefs_Assigned__c.CN_Chef_Assigned</recordType>
         <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CN_Chefs_Assigned__c.CN_Chef_Assigned_Self_Work</recordType>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>true</default>
@@ -10764,6 +10993,10 @@
         <recordType>Task.CN_Task</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>CN_Brand_Owner_Control__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>CN_Brand__c</tab>
         <visibility>DefaultOff</visibility>

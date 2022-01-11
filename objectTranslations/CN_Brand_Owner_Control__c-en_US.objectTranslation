@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Brand Owner Control</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Brand Owner Control</value>
+    </caseValues>
+    <fields>
+        <label><!-- Brand Owner --></label>
+        <name>CN_Brand_Owner__c</name>
+        <relationshipLabel><!-- Brand Owner Control --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Brands --></label>
+        <name>CN_Brands__c</name>
+        <picklistValues>
+            <masterLabel>AA</masterLabel>
+            <translation><!-- AA --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>CN_Brand_Owner_Control_Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -104,6 +104,11 @@
         <members>CN_Chef_Request_Event_Handler</members>
         <members>CN_Chef_Request_Prevent_Delete_Handler</members>
         <members>CN_Chef_Request_Set_Acc_Handler</members>
+        <members>CN_Chef_UT_Report_Batch</members>
+        <members>CN_Chef_UT_Report_SCH</members>
+        <members>CN_Chefs_Assigned_Chef_UT_Item_Biz</members>
+        <members>CN_Chefs_Assigned_Chef_UT_Item_Handler</members>
+        <members>CN_Chefs_Assigned_Chef_UT_OFF_Handler</members>
         <members>CN_Chefs_Assigned_Prevent_Delete_Handler</members>
         <members>CN_Complaint_Canceled_LC_Ctrl</members>
         <members>CN_Complaint_Closed_LC_Ctrl</members>
@@ -153,6 +158,8 @@
         <members>CN_PresetPrice_Effect_Batch_SCH</members>
         <members>CN_PresetPrice_Effect_Batch_Test</members>
         <members>CN_PresetPrice_Product_Validation</members>
+        <members>CN_Product_Description_Check_Handler</members>
+        <members>CN_Product_Description_Check_HandlerTest</members>
         <members>CN_PromotionLI_Prevent_Delete_Handler</members>
         <members>CN_PromotionM_Prevent_Delete_Handler</members>
         <members>CN_PromotionM_Set_Account_Handler</members>
@@ -468,8 +475,9 @@
         <members>Account-CN Account Prospect Edit</members>
         <members>Account-CN Account Prospect New</members>
         <members>Account-CN Account Prospect Read only</members>
+        <members>CN_Account_Prevent_Edit_Field__mdt-CN Account Prevent Edit Field Layout</members>
         <members>CN_Approval_Aging_Setting__mdt-Approval Aging Setting Layout</members>
-		<members>CN_Account_Prevent_Edit_Field__mdt-CN Account Prevent Edit Field Layout</members>
+        <members>CN_Brand_Owner_Control__c-CN_Brand_Owner_Control_Layout</members>
         <members>CN_Brand__c-Brand Layout</members>
         <members>CN_Business_Unit__c-Business Unit Layout</members>
         <members>CN_Campaign_Product__c-Campaign Product Layout</members>
@@ -487,9 +495,13 @@
         <members>CN_Chef_Request__c-CN MKT_CCE Demo Request</members>
         <members>CN_Chef_Request__c-CN Marketing development Request</members>
         <members>CN_Chef_Request__c-CN Self-Chef Demo Request</members>
+        <members>CN_Chef_Request__c-CN Self-Chef Demo Request</members>
         <members>CN_Chef_Request__c-Chef Request Layout</members>
+        <members>CN_Chef_UT_Item__c-Chef UT Item Layout</members>
+        <members>CN_Chef_UT_OFF__c-Chef UT OFF Layout</members>
         <members>CN_Chef_UT__c-CN Chef UT Layout</members>
         <members>CN_Chefs_Assigned__c-CN Chefs Assigned Layout</members>
+        <members>CN_Chefs_Assigned__c-CN Chefs Assigned Self Work Layout</members>
         <members>CN_Chefs_Assigned__c-Chefs Assigned Layout</members>
         <members>CN_City__c-City Layout</members>
         <members>CN_Comment__c-CN Comment Layout</members>
@@ -508,6 +520,7 @@
         <members>CN_Payment_Report__c-Payment Report Layout</members>
         <members>CN_Payment_Term_Check__mdt-Payment Term Check Layout</members>
         <members>CN_Preset_PriceBook_Entry__c-CN Preset PriceBook Entry Layout</members>
+        <members>CN_Product_Document__c-Product Document Layout</members>
         <members>CN_Promotion_Line_Item__c-Promotion Line Item Layout</members>
         <members>CN_Promotion_Member__c-CN Sinodis Promotion Member Layout</members>
         <members>CN_Promotion__c-CN Sinodis Promotion Layout</members>
@@ -540,6 +553,7 @@
         <members>OpportunityLineItem-Opportunity Product Layout</members>
         <members>Pricebook2-CN Price Book Layout</members>
         <members>PricebookEntry-CN Price Book Entry Layout</members>
+        <members>Product2-CN Product Layout</members>
         <members>Product2-CN Product Layout</members>
         <members>Quote-CN Sinodis Quote Layout</members>
         <members>Quote-CN Sinodis Quote Layout - Finance MDM</members>
@@ -706,7 +720,7 @@
         <members>CN_ChefReport</members>
         <members>CN_ChefReport/CN_Chef_Average_Time_Spent_by_Event_Type</members>
         <members>CN_ChefReport/CN_Chef_Request_by_Event_type_by_Month</members>
-        <members>CN_ChefReport/CN_Chef_UT</members>
+        <members>CN_ChefReport/CN_Chef_UT_Report</members>
         <members>CN_ChefReport/CN_Chef_requests_by_Event_Type_by_Chef</members>
         <members>CN_ChefReport/CN_Demo_Report</members>
         <members>CN_ComplaintReport</members>
@@ -815,6 +829,7 @@
         <members>CN_Campaign_with_Product_with_SP</members>
         <members>CN_Campaign_with_product_with_SOI</members>
         <members>CN_Campaigns_and_Related_object</members>
+        <members>CN_Chef_UT_OFF_with_CN_Chef_UT_Items</members>
         <members>CN_Chef_with_Chef_Assigned</members>
         <members>CN_Lead</members>
         <members>CN_Price_Book_Entry</members>
@@ -830,6 +845,8 @@
         <members>Account</members>
         <members>CN_Change_Request__c</members>
         <members>CN_Chef_Request__c</members>
+        <members>CN_Chef_UT_Item__c</members>
+        <members>CN_Chef_UT_OFF__c</members>
         <members>CN_Chef_UT__c</members>
         <members>CN_Customer_Status_Trend__c</members>
         <members>CN_Promotion_Member__c</members>

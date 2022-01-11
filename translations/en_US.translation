@@ -557,6 +557,10 @@
         <name>CN_PresetPrice_Product_Validation_MSG</name>
     </customLabels>
     <customLabels>
+        <label><!-- CN_Product_Desc_Change --></label>
+        <name>CN_Product_Desc_Change</name>
+    </customLabels>
+    <customLabels>
         <label><!-- CN_PromotionMember_No_Permission --></label>
         <name>CN_PromotionMember_No_Permission</name>
     </customLabels>
@@ -1188,6 +1192,23 @@
         <sections>
             <label><!-- Sample Requests --></label>
             <name>Sample Requests</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Chef UT OFF with CN Chef UT Items --></description>
+        <label><!-- CN Chef UT OFF with CN Chef UT Items --></label>
+        <name>CN_Chef_UT_OFF_with_CN_Chef_UT_Items</name>
+        <sections>
+            <columns>
+                <label><!-- Event Type --></label>
+                <name>Event Type</name>
+            </columns>
+            <label><!-- Chef UT Items --></label>
+            <name>Chef UT Items</name>
+        </sections>
+        <sections>
+            <label><!-- Chef UT OFF --></label>
+            <name>Chef UT OFF</name>
         </sections>
     </reportTypes>
     <reportTypes>

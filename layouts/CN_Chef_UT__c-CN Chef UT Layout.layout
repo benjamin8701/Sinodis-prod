@@ -69,10 +69,10 @@
         <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <fields>CN_Chef__c</fields>
-        <fields>CN_Chef_Role__c</fields>
-        <fields>CN_Chef_Work_Start_Date__c</fields>
-        <fields>CN_Chef_Work_End_Date__c</fields>
-        <relatedList>CN_Chefs_Assigned__c.CN_Chef_UT__c</relatedList>
+        <fields>CN_Total_OFF_Days__c</fields>
+        <fields>CN_YearMonth__c</fields>
+        <fields>CN_Not_Include_in_UT_Report__c</fields>
+        <relatedList>CN_Chef_UT_OFF__c.CN_Chef_UT__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

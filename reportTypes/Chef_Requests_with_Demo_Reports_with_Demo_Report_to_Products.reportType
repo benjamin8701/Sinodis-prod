@@ -330,6 +330,16 @@
             <field>CN_Confirm_From_Apex_DateTime__c</field>
             <table>CN_Chef_Request__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Start_Date_AM_PM__c</field>
+            <table>CN_Chef_Request__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_End_Date_AM_PM__c</field>
+            <table>CN_Chef_Request__c</table>
+        </columns>
         <masterLabel>Chef Requests</masterLabel>
     </sections>
     <sections>

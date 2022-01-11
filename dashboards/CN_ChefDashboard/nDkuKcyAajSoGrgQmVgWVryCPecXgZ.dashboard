@@ -61,11 +61,39 @@
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
+            <values>Paperwork</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Self Practice &amp; Training</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Market Visit</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Meeting</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Company Events</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Others</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
             <values>Product Testing</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
             <values>Recipes R&amp;D</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Shooting</values>
         </dashboardFilterOptions>
         <name>Event Type</name>
     </dashboardFilters>
@@ -82,10 +110,10 @@
                 </chartSummary>
                 <componentType>BarGrouped</componentType>
                 <dashboardFilterColumns>
-                    <column>CN_Chef_UT__c$CN_Year__c</column>
+                    <column>CN_Chef_UT_OFF__c$CN_Year__c</column>
                 </dashboardFilterColumns>
                 <dashboardFilterColumns>
-                    <column>CN_Chef_UT__c.Chefs_Assigneds__r$CN_Chef_Request__c.CN_Event_Type__c</column>
+                    <column>CN_Chef_UT_OFF__c.Chef_UT_Items__r$CN_Chefs_Assigned__c.CN_Chef_Request__c.CN_Event_Type__c</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
@@ -93,28 +121,28 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>CN_Chef_UT__c$CN_Year_Month__c</groupingColumn>
-                <groupingColumn>CN_Chef_UT__c.Chefs_Assigneds__r$CN_Chef_Name__c</groupingColumn>
+                <groupingColumn>CN_Chef_UT_OFF__c$CN_Chef_UT__c.CN_Year_Month__c</groupingColumn>
+                <groupingColumn>CN_Chef_UT_OFF__c$CN_Chef__c</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
-                        <sortOrder>a</sortOrder>
+                        <sortOrder>d</sortOrder>
                     </groupingSorts>
                     <groupingSorts>
                         <groupingLevel>g2</groupingLevel>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Chef UT % By Chef and Event Type</header>
+                <header>Chef UT Report</header>
                 <legendPosition>Right</legendPosition>
-                <report>CN_ChefReport/CN_Chef_UT</report>
+                <report>CN_ChefReport/CN_Chef_UT_Report</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
-            <rowSpan>14</rowSpan>
+            <rowSpan>17</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>12</numberOfColumns>
         <rowHeight>36</rowHeight>

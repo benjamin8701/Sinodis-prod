@@ -42,13 +42,42 @@
         <name>CN_Chef_Self_Confirm_Time__c</name>
     </fields>
     <fields>
+        <label><!-- Chef UT OFF --></label>
+        <name>CN_Chef_UT_OFF__c</name>
+        <relationshipLabel><!-- Chefs Assigneds --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Chef UT --></label>
         <name>CN_Chef_UT__c</name>
         <relationshipLabel><!-- Chefs Assigneds --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Chef Work End Date AM/PM --></label>
+        <name>CN_Chef_Work_End_Date_AM_PM__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Chef Work End Date --></label>
         <name>CN_Chef_Work_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chef Work Start Date AM/PM --></label>
+        <name>CN_Chef_Work_Start_Date_AM_PM__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Chef Work Start Date --></label>
@@ -92,6 +121,14 @@
         <name>CN_End_Date_Month_First_Day__c</name>
     </fields>
     <fields>
+        <label><!-- End Date Year Month --></label>
+        <name>CN_End_Date_Year_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date to Month Start Days --></label>
+        <name>CN_End_Date_to_Month_Start_Days__c</name>
+    </fields>
+    <fields>
         <label><!-- Event Location --></label>
         <name>CN_Event_Location__c</name>
     </fields>
@@ -110,6 +147,26 @@
     <fields>
         <label><!-- Is My Assignment --></label>
         <name>CN_Is_My_Assignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is OFF --></label>
+        <name>CN_Is_OFF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Work Date within Same Month --></label>
+        <name>CN_Is_Work_Date_within_Same_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Self Work Type --></label>
+        <name>CN_Self_Work_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date Year Month --></label>
+        <name>CN_Start_Date_Year_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date to Month End Days --></label>
+        <name>CN_Start_Date_to_Month_End_Days__c</name>
     </fields>
     <fields>
         <label><!-- Total days of Demo End Date Month --></label>
@@ -131,6 +188,13 @@
         </sections>
     </layouts>
     <layouts>
+        <layout>CN Chefs Assigned Self Work Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
         <layout>Chefs Assigned Layout</layout>
         <sections>
             <label><!-- Custom Links --></label>
@@ -141,7 +205,15 @@
         <label><!-- CN Chef Assigned --></label>
         <name>CN_Chef_Assigned</name>
     </recordTypes>
+    <recordTypes>
+        <label><!-- CN Chef Assigned Self Work --></label>
+        <name>CN_Chef_Assigned_Self_Work</name>
+    </recordTypes>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Chef work end date must greater than Chef work start date. --></errorMessage>
+        <name>CN_Check_AM_PM</name>
+    </validationRules>
     <validationRules>
         <errorMessage><!-- It&apos;s not allowed to edit when chef request is confirmed. --></errorMessage>
         <name>CN_Check_Confirm_Editing</name>

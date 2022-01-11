@@ -730,6 +730,31 @@ TEXT(CN_Event_Location__c)</formula>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_End_Date_AM_PM__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date AM/PM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AM</fullName>
+                    <default>false</default>
+                    <label>AM</label>
+                </value>
+                <value>
+                    <fullName>PM</fullName>
+                    <default>false</default>
+                    <label>PM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>CN_End_Date__c</fullName>
         <externalId>false</externalId>
         <label>End Date</label>
@@ -1197,6 +1222,31 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Start_Date_AM_PM__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date AM/PM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AM</fullName>
+                    <default>false</default>
+                    <label>AM</label>
+                </value>
+                <value>
+                    <fullName>PM</fullName>
+                    <default>false</default>
+                    <label>PM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>CN_Start_Date__c</fullName>
@@ -2214,6 +2264,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <value>tbc</value>
         </filters>
         <label>Brand-tbc-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Manager_Queue_CN_Chef_Request</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Chef Manager Queue</label>
+        <queue>CN_Chef_Manager_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>CN_Location_Confirmed_3nd_Party_Chef_Req</fullName>
@@ -3270,6 +3329,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_End_Date_AM_PM__c</picklist>
+            <values>
+                <fullName>AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Event_Location_End_Date_AM_PM__c</picklist>
             <values>
                 <fullName>AM</fullName>
@@ -3341,6 +3411,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>PASTRY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Start_Date_AM_PM__c</picklist>
+            <values>
+                <fullName>AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3588,6 +3669,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_End_Date_AM_PM__c</picklist>
+            <values>
+                <fullName>AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Event_Location_End_Date_AM_PM__c</picklist>
             <values>
                 <fullName>AM</fullName>
@@ -3655,6 +3747,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>PASTRY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Start_Date_AM_PM__c</picklist>
+            <values>
+                <fullName>AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3902,6 +4005,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_End_Date_AM_PM__c</picklist>
+            <values>
+                <fullName>AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Event_Location_End_Date_AM_PM__c</picklist>
             <values>
                 <fullName>AM</fullName>
@@ -3997,6 +4111,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>PASTRY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Start_Date_AM_PM__c</picklist>
+            <values>
+                <fullName>AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4240,6 +4365,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_End_Date_AM_PM__c</picklist>
+            <values>
+                <fullName>AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Event_Location_End_Date_AM_PM__c</picklist>
             <values>
                 <fullName>AM</fullName>
@@ -4327,6 +4463,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>PASTRY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Start_Date_AM_PM__c</picklist>
+            <values>
+                <fullName>AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4574,6 +4721,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_End_Date_AM_PM__c</picklist>
+            <values>
+                <fullName>AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Event_Location_End_Date_AM_PM__c</picklist>
             <values>
                 <fullName>AM</fullName>
@@ -4653,6 +4811,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Start_Date_AM_PM__c</picklist>
+            <values>
+                <fullName>AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>CN_Status__c</picklist>
             <values>
                 <fullName>Approved</fullName>
@@ -4689,11 +4858,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <errorConditionFormula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
- ISCHANGED(CN_Status__c) ,
- ISPICKVAL(CN_Status__c, &quot;Ready for Approval&quot;),
+ISCHANGED(CN_Status__c) ,
+ISPICKVAL(CN_Status__c, &quot;Ready for Approval&quot;),
 OR(
- RecordType.DeveloperName = &quot;CN_1on1_Service_Chef_Request&quot;,
- RecordType.DeveloperName = &quot;CN_Marketing_Development_Request&quot;
+RecordType.DeveloperName = &quot;CN_1on1_Service_Chef_Request&quot;,
+RecordType.DeveloperName = &quot;CN_Marketing_Development_Request&quot;
 ),
 IF(YEAR(CN_Demo_Start_Date__c) = YEAR(TODAY()),
 IF(CN_Today_Period__c = &quot;Early&quot;, MONTH(CN_Demo_Start_Date__c ) &lt; (MONTH(TODAY()) + 1), MONTH(CN_Demo_Start_Date__c ) &lt; (MONTH(TODAY()) + 2)),
@@ -4849,6 +5018,17 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
         <errorMessage>End date should not earlier than start date</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>CN_Check_Date_AM_PM</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+IF( CN_Start_Date__c =   CN_End_Date__c ,IF(ISPICKVAL( CN_Start_Date_AM_PM__c , &quot;PM&quot; ) &amp;&amp; ISPICKVAL( CN_End_Date_AM_PM__c ,&quot;AM&quot;), TRUE, FALSE), FALSE)
+)</errorConditionFormula>
+        <errorDisplayField>CN_Start_Date_AM_PM__c</errorDisplayField>
+        <errorMessage>Start Date must greater than or equal to today</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>CN_Check_Demo_Date</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -4908,6 +5088,17 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
     CN_Event_Location_Start_Date_Formula__c &gt; CN_Event_Location_End_Date_Formula__c	
 )</errorConditionFormula>
         <errorDisplayField>CN_Event_Location_Start_Date__c</errorDisplayField>
+        <errorMessage>Event Location Start date must greater than Event Location End Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Check_Event_Location_Date_AM_PM</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+IF( CN_Event_Location_Start_Date__c =  CN_Event_Location_End_Date__c , IF(ISPICKVAL( CN_Event_Location_Start_Date_AM_PM__c, &quot;PM&quot; )&amp;&amp; ISPICKVAL( CN_Event_Location_End_Date_AM_PM__c , &quot;AM&quot;), TRUE, FALSE),FALSE)
+)</errorConditionFormula>
+        <errorDisplayField>CN_Event_Location_Start_Date_AM_PM__c</errorDisplayField>
         <errorMessage>Event Location Start date must greater than Event Location End Date</errorMessage>
     </validationRules>
     <validationRules>
