@@ -105,6 +105,7 @@
         <members>CN_Chef_Request_Prevent_Delete_Handler</members>
         <members>CN_Chef_Request_Set_Acc_Handler</members>
         <members>CN_Chef_UT_Report_Batch</members>
+        <members>CN_Chef_UT_Report_Batch_Test</members>
         <members>CN_Chef_UT_Report_SCH</members>
         <members>CN_Chefs_Assigned_Chef_UT_Item_Biz</members>
         <members>CN_Chefs_Assigned_Chef_UT_Item_Handler</members>

@@ -105,6 +105,12 @@
             <field>CN_Chef_UT__c.CN_Year_Month__c</field>
             <table>CN_Chef_UT_OFF__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Profile Name</displayNameOverride>
+            <field>CN_Chef__c.Profile.Name</field>
+            <table>CN_Chef_UT_OFF__c</table>
+        </columns>
         <masterLabel>Chef UT OFF</masterLabel>
     </sections>
     <sections>
@@ -121,6 +127,12 @@
         <columns>
             <checkedByDefault>true</checkedByDefault>
             <field>Name</field>
+            <table>CN_Chef_UT_OFF__c.Chef_UT_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Profile Name</displayNameOverride>
+            <field>CN_Chefs_Assigned__c.CN_Chef__c.Profile.Name</field>
             <table>CN_Chef_UT_OFF__c.Chef_UT_Items__r</table>
         </columns>
         <columns>

@@ -38,11 +38,18 @@
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>CN_Chef_UT_OFF__c$CN_Year__c</column>
+            <column>CN_Chef_UT_OFF__c$CN_YearMonth__c</column>
             <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>2022</value>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>2022,2021</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CN_Chef_UT_OFF__c$CN_Chef__c.Profile.Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>CN Chef Manager</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>

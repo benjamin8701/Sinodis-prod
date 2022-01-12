@@ -366,6 +366,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CN_Chef_UT_Report_Batch_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CN_Chef_UT_Report_SCH</apexClass>
         <enabled>false</enabled>
     </classAccesses>

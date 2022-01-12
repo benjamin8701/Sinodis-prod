@@ -1204,10 +1204,18 @@
                 <label><!-- Event Type --></label>
                 <name>Event Type</name>
             </columns>
+            <columns>
+                <label><!-- Profile Name --></label>
+                <name>Profile Name</name>
+            </columns>
             <label><!-- Chef UT Items --></label>
             <name>Chef UT Items</name>
         </sections>
         <sections>
+            <columns>
+                <label><!-- Profile Name --></label>
+                <name>Profile Name</name>
+            </columns>
             <label><!-- Chef UT OFF --></label>
             <name>Chef UT OFF</name>
         </sections>

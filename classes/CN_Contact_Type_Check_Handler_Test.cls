@@ -154,7 +154,12 @@ private class CN_Contact_Type_Check_Handler_Test {
                 Id = con1.Id,
                 CN_Contact_Type__c = '02;04'
             );
-            update con_update2;
+            
+            try{
+                update con_update2;
+            } catch (Exception e) {
+
+            }
             
             Contact con2 = new Contact();
             con2.AccountId = acc1.Id;
