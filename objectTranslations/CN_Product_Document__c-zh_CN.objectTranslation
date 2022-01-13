@@ -2,7 +2,7 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value><!-- Product Document --></value>
+        <value>产品附件</value>
     </caseValues>
     <fields>
         <label>文件分类</label>
@@ -28,5 +28,5 @@
             <section>Custom Links</section>
         </sections>
     </layouts>
-    <nameFieldLabel><!-- Product Document Name --></nameFieldLabel>
+    <nameFieldLabel>产品附件编号</nameFieldLabel>
 </CustomObjectTranslation>
