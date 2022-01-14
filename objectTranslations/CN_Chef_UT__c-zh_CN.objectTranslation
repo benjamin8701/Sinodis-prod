@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Chef UT --></value>
+    </caseValues>
+    <fields>
+        <label>描述</label>
+        <name>CN_Description__c</name>
+    </fields>
+    <fields>
+        <label>月</label>
+        <name>CN_Month__c</name>
+    </fields>
+    <fields>
+        <label>月工作日数</label>
+        <name>CN_Working_Days__c</name>
+    </fields>
+    <fields>
+        <label>年月</label>
+        <name>CN_Year_Month__c</name>
+    </fields>
+    <fields>
+        <label>年</label>
+        <name>CN_Year__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Chef UT Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Record Number --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- CN Chef UT --></label>
+        <name>CN_Chef_UT</name>
+    </recordTypes>
+</CustomObjectTranslation>

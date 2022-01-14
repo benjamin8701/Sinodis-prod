@@ -312,6 +312,18 @@
         <name>CN_Display_in_Calendar__c</name>
     </fields>
     <fields>
+        <label>结束日期上午/下午</label>
+        <name>CN_End_Date_AM_PM__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label>结束日期</label>
         <name>CN_End_Date__c</name>
     </fields>
@@ -538,6 +550,18 @@
     <fields>
         <label>销售渠道</label>
         <name>CN_Sales_Channel__c</name>
+    </fields>
+    <fields>
+        <label>开始日期上午/下午</label>
+        <name>CN_Start_Date_AM_PM__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label>开始日期</label>
@@ -805,6 +829,10 @@
         <name>CN_Check_Date</name>
     </validationRules>
     <validationRules>
+        <errorMessage>开始日期必须晚于或等于今天</errorMessage>
+        <name>CN_Check_Date_AM_PM</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>结束日期必须晚于开始日期</errorMessage>
         <name>CN_Check_Demo_Date</name>
     </validationRules>
@@ -823,6 +851,10 @@
     <validationRules>
         <errorMessage>活动地点占用结束日期必须晚于活动地点占用开始日期</errorMessage>
         <name>CN_Check_Event_Location_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>活动地点占用结束日期必须晚于活动地点占用开始日期</errorMessage>
+        <name>CN_Check_Event_Location_Date_AM_PM</name>
     </validationRules>
     <validationRules>
         <errorMessage>请在确认厨师活动前填写活动地点日期</errorMessage>

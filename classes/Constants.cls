@@ -267,8 +267,11 @@ public without sharing class Constants {
 	public static Boolean CN_CHEFS_ASSIGNED_SHARING_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_CHEFS_ASSIGNED_PREVENT_DELETE_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_CHEFS_ASSIGNED_RESET_WORKDATE_HANDLER_TRIGGER_ON = true;
+	public static Boolean CN_CHEFS_ASSIGNED_CHEF_UT_OFF_HANDLER_TRIGGER_ON = true;
+	public static Boolean CN_CHEFS_ASSIGNED_CHEF_UT_ITEM_HANDLER_TRIGGER_ON = true;
 	public static final String CN_CHEFS_ASSIGNED_RT_API_NAME = 'CN_Chef_Assigned';
-
+	public static final String CN_CHEFS_ASSIGNED_SELF_WORK_RT_API_NAME = 'CN_Chef_Assigned_Self_Work';
+	
 	public static final String CN_EVENT_RT_API_NAME = 'CN_Event';
 
 	public static Boolean DEMO_USED_PRODUCT_TRIGGER_ON = true;
@@ -487,6 +490,8 @@ public without sharing class Constants {
 
 	// Added By Dezheng Du 2021-08-03 Release2 End
 
-	
+	//Product2 Trigger switch    
+	public static Boolean CN_PRODUCT_TRIGGER_ON = true;
+    public static Boolean CN_BRAND_OWNER_CHECK_HANDLER_TRIGGER_ON = true;
 	
 }

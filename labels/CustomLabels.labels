@@ -967,6 +967,13 @@
         <value>You are not allowed to add the product to the preset pricebook entry that has not been added to standard pricebook.</value>
     </labels>
     <labels>
+        <fullName>CN_Product_Desc_Change</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Product_Desc_Change</shortDescription>
+        <value>You are not Brand Owner, can&apos;t change SKU Description!</value>
+    </labels>
+    <labels>
         <fullName>CN_PromotionMember_No_Permission</fullName>
         <language>en_US</language>
         <protected>false</protected>

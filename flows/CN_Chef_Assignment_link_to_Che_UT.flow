@@ -251,7 +251,7 @@
             <targetReference>Check_Chef_Assigned_Record</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>Input_ChefAssignedRecord</name>
         <dataType>SObject</dataType>

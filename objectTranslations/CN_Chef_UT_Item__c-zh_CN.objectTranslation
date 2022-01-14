@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Chef UT Item --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Chef UT OFF --></label>
+        <name>CN_Chef_UT_OFF__c</name>
+        <relationshipLabel><!-- Chef UT Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>厨师分配</label>
+        <name>CN_Chefs_Assigned__c</name>
+        <relationshipLabel><!-- Chef UT Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>活动类型</label>
+        <name>CN_Event_Type__c</name>
+    </fields>
+    <fields>
+        <label>外键</label>
+        <name>CN_External_ID__c</name>
+    </fields>
+    <fields>
+        <label>是否已确认？</label>
+        <name>CN_Is_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label>厨师分配工作天数</label>
+        <name>CN_Work_Days__c</name>
+    </fields>
+    <fields>
+        <label>年月</label>
+        <name>CN_Year_Month__c</name>
+    </fields>
+    <nameFieldLabel><!-- Chef UT Item No. --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- CN Chef UT Item --></label>
+        <name>CN_Chef_UT_Item</name>
+    </recordTypes>
+</CustomObjectTranslation>

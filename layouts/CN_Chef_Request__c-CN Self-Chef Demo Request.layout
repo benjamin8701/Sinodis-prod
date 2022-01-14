@@ -29,6 +29,10 @@
                 <field>CN_Start_Date__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Required</behavior>
+                <field>CN_End_Date__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CN_Owner_Name__c</field>
             </layoutItems>
@@ -44,7 +48,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>CN_End_Date__c</field>
+                <field>CN_Start_Date_AM_PM__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>CN_End_Date_AM_PM__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -131,16 +139,6 @@
             <sortOrder>1</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Submit</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>2</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>CN_Chef_Request__c.CN_Confirm_Self_Work</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>3</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>FeedItem.ContentPost</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>4</sortOrder>
@@ -156,9 +154,19 @@
             <sortOrder>6</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+            <actionName>Submit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>2</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>Clone</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>7</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>CN_Chef_Request__c.CN_Confirm_Self_Work</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>3</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedLists>

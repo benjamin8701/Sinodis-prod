@@ -38,13 +38,42 @@
         <name>CN_Chef_Self_Confirm_Time__c</name>
     </fields>
     <fields>
+        <label><!-- Chef UT OFF --></label>
+        <name>CN_Chef_UT_OFF__c</name>
+        <relationshipLabel><!-- Chefs Assigneds --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Chef UT --></label>
         <name>CN_Chef_UT__c</name>
         <relationshipLabel><!-- Chefs Assigneds --></relationshipLabel>
     </fields>
     <fields>
+        <label>厨师工作结束日期上午/下午</label>
+        <name>CN_Chef_Work_End_Date_AM_PM__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label>厨师工作结束日期</label>
         <name>CN_Chef_Work_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>厨师工作开始日期上午/下午</label>
+        <name>CN_Chef_Work_Start_Date_AM_PM__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label>厨师工作开始日期</label>
@@ -88,6 +117,14 @@
         <name>CN_End_Date_Month_First_Day__c</name>
     </fields>
     <fields>
+        <label><!-- End Date Year Month --></label>
+        <name>CN_End_Date_Year_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date to Month Start Days --></label>
+        <name>CN_End_Date_to_Month_Start_Days__c</name>
+    </fields>
+    <fields>
         <label>展示厨房</label>
         <name>CN_Event_Location__c</name>
     </fields>
@@ -106,6 +143,26 @@
     <fields>
         <label>是否分配给我</label>
         <name>CN_Is_My_Assignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is OFF --></label>
+        <name>CN_Is_OFF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Work Date within Same Month --></label>
+        <name>CN_Is_Work_Date_within_Same_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Self Work Type --></label>
+        <name>CN_Self_Work_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date Year Month --></label>
+        <name>CN_Start_Date_Year_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date to Month End Days --></label>
+        <name>CN_Start_Date_to_Month_End_Days__c</name>
     </fields>
     <fields>
         <label>月份总天数</label>
@@ -127,6 +184,13 @@
         </sections>
     </layouts>
     <layouts>
+        <layout>CN Chefs Assigned Self Work Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
         <layout>Chefs Assigned Layout</layout>
         <sections>
             <label><!-- Custom Links --></label>
@@ -138,6 +202,14 @@
         <label><!-- CN Chef Assigned --></label>
         <name>CN_Chef_Assigned</name>
     </recordTypes>
+    <recordTypes>
+        <label><!-- CN Chef Assigned Self Work --></label>
+        <name>CN_Chef_Assigned_Self_Work</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>厨师工作结束时间必须晚于厨师工作开始时间</errorMessage>
+        <name>CN_Check_AM_PM</name>
+    </validationRules>
     <validationRules>
         <errorMessage>厨师申请确认后不可编辑</errorMessage>
         <name>CN_Check_Confirm_Editing</name>

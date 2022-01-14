@@ -241,6 +241,19 @@
         <type>DateTime</type>
     </fields>
     <fields>
+        <fullName>CN_Chef_UT_OFF__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Chef UT OFF</label>
+        <referenceTo>CN_Chef_UT_OFF__c</referenceTo>
+        <relationshipLabel>Chefs Assigneds</relationshipLabel>
+        <relationshipName>Chefs_Assigneds</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>CN_Chef_UT__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -254,6 +267,31 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>CN_Chef_Work_End_Date_AM_PM__c</fullName>
+        <externalId>false</externalId>
+        <label>Chef Work End Date AM/PM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AM</fullName>
+                    <default>false</default>
+                    <label>AM</label>
+                </value>
+                <value>
+                    <fullName>PM</fullName>
+                    <default>false</default>
+                    <label>PM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>CN_Chef_Work_End_Date__c</fullName>
         <externalId>false</externalId>
         <label>Chef Work End Date</label>
@@ -261,6 +299,31 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CN_Chef_Work_Start_Date_AM_PM__c</fullName>
+        <externalId>false</externalId>
+        <label>Chef Work Start Date AM/PM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AM</fullName>
+                    <default>false</default>
+                    <label>AM</label>
+                </value>
+                <value>
+                    <fullName>PM</fullName>
+                    <default>false</default>
+                    <label>PM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>CN_Chef_Work_Start_Date__c</fullName>
@@ -274,7 +337,7 @@
     <fields>
         <fullName>CN_Chef_Work_Start_and_End_Date__c</fullName>
         <externalId>false</externalId>
-        <formula>Text(CN_Chef_Work_Start_Date__c)&amp; &apos; ~ &apos; &amp; Text( CN_Chef_Work_End_Date__c )</formula>
+        <formula>Text(CN_Chef_Work_Start_Date__c) &amp; IF(ISPICKVAL(CN_Chef_Work_Start_Date_AM_PM__c , &quot;&quot;), &quot;&quot;, &quot; &quot;) &amp; TEXT( CN_Chef_Work_Start_Date_AM_PM__c ) &amp; &apos; ~ &apos; &amp; Text( CN_Chef_Work_End_Date__c ) &amp; IF(ISPICKVAL( CN_Chef_Work_End_Date_AM_PM__c , &quot;&quot;), &quot;&quot;, &quot; &quot;) &amp; TEXT( CN_Chef_Work_End_Date_AM_PM__c )</formula>
         <label>Chef Work Start and End Date</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -285,7 +348,7 @@
     <fields>
         <fullName>CN_Chef_Working_Days__c</fullName>
         <externalId>false</externalId>
-        <formula>CN_Chef_Work_End_Date__c -  CN_Chef_Work_Start_Date__c + 1</formula>
+        <formula>CN_Chef_Work_End_Date__c -  CN_Chef_Work_Start_Date__c + 1 - IF( ISPICKVAL( CN_Chef_Work_Start_Date_AM_PM__c , &quot;PM&quot;), 0.5, 0 ) - IF( ISPICKVAL( CN_Chef_Work_End_Date_AM_PM__c , &quot;AM&quot;), 0.5, 0 )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Chef Working Days</label>
         <precision>18</precision>
@@ -399,6 +462,32 @@ DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) + 1, 
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>CN_End_Date_Year_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(YEAR(CN_Chef_Work_End_Date__c)) &amp; LPAD(TEXT(MONTH(CN_Chef_Work_End_Date__c)), 2, &quot;0&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>End Date Year Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_End_Date_to_Month_Start_Days__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Chef_Work_End_Date__c - DATE( YEAR(CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ), 1 ) + 1 - IF(ISPICKVAL(CN_Chef_Work_End_Date_AM_PM__c, &quot;AM&quot;), 0.5, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>End Date to Month Start Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Event_Location__c</fullName>
         <externalId>false</externalId>
         <formula>TEXT(CN_Chef_Request__r.CN_Event_Location__c)</formula>
@@ -450,6 +539,64 @@ DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) + 1, 
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_OFF__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CN_Event_Type__c = &quot;OFF&quot;, TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is OFF</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Work_Date_within_Same_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Start_Date_Year_Month__c =  CN_End_Date_Year_Month__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Work Date within Same Month</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Self_Work_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Self Work Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Start_Date_Year_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(YEAR(CN_Chef_Work_Start_Date__c)) &amp; RIGHT(&apos;0&apos; &amp; TEXT(MONTH(CN_Chef_Work_Start_Date__c)), 2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Start Date Year Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Start_Date_to_Month_End_Days__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(MONTH ( CN_Chef_Work_Start_Date__c ) = 12, DATE( YEAR(CN_Chef_Work_Start_Date__c ) + 1, 1, 1), DATE( YEAR(CN_Chef_Work_Start_Date__c ), MONTH ( CN_Chef_Work_Start_Date__c ) + 1, 1 ))
+ - CN_Chef_Work_Start_Date__c - IF(ISPICKVAL(CN_Chef_Work_Start_Date_AM_PM__c, &quot;PM&quot;), 0.5, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Start Date to Month End Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Total_days_of_Demo_End_Date_Month__c</fullName>
@@ -637,6 +784,27 @@ DAY(DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) +
             <value>0</value>
         </filters>
         <label>Chef-Unconfirmed-David Yan-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Elise_Zhong_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Elise Zhong</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Elise Zhong-Chef Req</label>
     </listViews>
     <listViews>
         <fullName>CN_Chef_Unconfirmed_Felicia_Huang_Chef_Req</fullName>
@@ -849,6 +1017,27 @@ DAY(DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) +
         <label>Chef-Unconfirmed-Louis Li-Chef Req</label>
     </listViews>
     <listViews>
+        <fullName>CN_Chef_Unconfirmed_Luca_Chen_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Luca Chen</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Luca Chen-Chef Req</label>
+    </listViews>
+    <listViews>
         <fullName>CN_Chef_Unconfirmed_Nicolas_Serrano_Chef_Req</fullName>
         <columns>NAME</columns>
         <columns>CN_Chef__c</columns>
@@ -889,6 +1078,27 @@ DAY(DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) +
             <value>0</value>
         </filters>
         <label>Chef-Unconfirmed-Ruby Zhang-Chef Req</label>
+    </listViews>
+    <listViews>
+        <fullName>CN_Chef_Unconfirmed_Sunny_Sun_Chef_Req</fullName>
+        <columns>NAME</columns>
+        <columns>CN_Chef__c</columns>
+        <columns>CN_Chef_Request__c</columns>
+        <columns>CN_Display_in_Calendar__c</columns>
+        <columns>CN_Chef_Work_Start_Date__c</columns>
+        <columns>CN_Chef_Work_End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Chef__c</field>
+            <operation>equals</operation>
+            <value>Sunny Sun</value>
+        </filters>
+        <filters>
+            <field>CN_Is_Chef_Request_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Chef-Unconfirmed-Sunny Sun-Chef Req</label>
     </listViews>
     <listViews>
         <fullName>CN_Chef_Unconfirmed_Wendy_Yu_Chef_Req</fullName>
@@ -955,6 +1165,66 @@ DAY(DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) +
                 <default>false</default>
             </values>
         </picklistValues>
+        <picklistValues>
+            <picklist>CN_Chef_Work_End_Date_AM_PM__c</picklist>
+            <values>
+                <fullName>AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Chef_Work_Start_Date_AM_PM__c</picklist>
+            <values>
+                <fullName>AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>CN_Chef_Assigned_Self_Work</fullName>
+        <active>true</active>
+        <label>CN Chef Assigned Self Work</label>
+        <picklistValues>
+            <picklist>CN_Chef_Role__c</picklist>
+            <values>
+                <fullName>Leading Chef</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supporting Chef</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Chef_Work_End_Date_AM_PM__c</picklist>
+            <values>
+                <fullName>AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Chef_Work_Start_Date_AM_PM__c</picklist>
+            <values>
+                <fullName>AM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
     </recordTypes>
     <searchLayouts>
         <searchResultsAdditionalFields>CN_Chef_Request__c</searchResultsAdditionalFields>
@@ -966,6 +1236,17 @@ DAY(DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) +
         <searchResultsAdditionalFields>CN_Event_Location__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>CN_Check_AM_PM</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+ IF(CN_Chef_Work_Start_Date__c =  CN_Chef_Work_End_Date__c, IF( ISPICKVAL(CN_Chef_Work_Start_Date_AM_PM__c, &quot;PM&quot;) &amp;&amp; ISPICKVAL( CN_Chef_Work_End_Date_AM_PM__c , &quot;AM&quot;), TRUE, FALSE), FALSE )
+)</errorConditionFormula>
+        <errorDisplayField>CN_Chef_Work_Start_Date_AM_PM__c</errorDisplayField>
+        <errorMessage>Chef work end date must greater than Chef work start date.</errorMessage>
+    </validationRules>
     <validationRules>
         <fullName>CN_Check_Confirm_Editing</fullName>
         <active>true</active>
