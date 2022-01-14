@@ -160,6 +160,13 @@
         <relatedList>CN_Sample_Product__c.CN_Product__c</relatedList>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <fields>NAME</fields>
+        <fields>CN_Document_Type__c</fields>
+        <fields>LAST_UPDATE</fields>
+        <relatedList>CN_Product_Document__c.Product__c</relatedList>
+    </relatedLists>
+    <relatedLists>
         <relatedList>RelatedFileList</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>

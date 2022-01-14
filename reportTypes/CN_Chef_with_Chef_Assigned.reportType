@@ -283,6 +283,56 @@
             <field>CN_Chef_Manager_Email__c</field>
             <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Chef_Work_Start_Date_AM_PM__c</field>
+            <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Chef_Work_End_Date_AM_PM__c</field>
+            <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Is_OFF__c</field>
+            <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Chef_UT_OFF__c</field>
+            <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Self_Work_Type__c</field>
+            <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Start_Date_Year_Month__c</field>
+            <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_End_Date_Year_Month__c</field>
+            <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Start_Date_to_Month_End_Days__c</field>
+            <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_End_Date_to_Month_Start_Days__c</field>
+            <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Is_Work_Date_within_Same_Month__c</field>
+            <table>CN_Chef_UT__c.Chefs_Assigneds__r</table>
+        </columns>
         <masterLabel>Chefs Assigneds</masterLabel>
     </sections>
 </ReportType>

@@ -316,6 +316,18 @@
         <name>CN_Display_in_Calendar__c</name>
     </fields>
     <fields>
+        <label><!-- End Date AM/PM --></label>
+        <name>CN_End_Date_AM_PM__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- End Date --></label>
         <name>CN_End_Date__c</name>
     </fields>
@@ -542,6 +554,18 @@
     <fields>
         <label><!-- Sales Channel --></label>
         <name>CN_Sales_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date AM/PM --></label>
+        <name>CN_Start_Date_AM_PM__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Start Date --></label>
@@ -777,7 +801,7 @@
         <name>CN_Check_Campaign_Demo_Date</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Only the Campign not cloesd yet, could create Chef Request --></errorMessage>
+        <errorMessage><!-- Only the Campaign not closed yet, could create Chef Request --></errorMessage>
         <name>CN_Check_Campaign_Status</name>
     </validationRules>
     <validationRules>
@@ -793,7 +817,7 @@
         <name>CN_Check_Competitor_Brands_Length</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Only Chef Manager could change the comfirm status and the chef request must be approved. --></errorMessage>
+        <errorMessage><!-- Only Chef Manager could change the confirm status and the chef request must be approved. --></errorMessage>
         <name>CN_Check_Confirmed</name>
     </validationRules>
     <validationRules>
@@ -803,6 +827,10 @@
     <validationRules>
         <errorMessage><!-- End date should not earlier than start date --></errorMessage>
         <name>CN_Check_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start Date must greater than or equal to today --></errorMessage>
+        <name>CN_Check_Date_AM_PM</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Demo End Date must greater than Demo Start Date. --></errorMessage>
@@ -823,6 +851,10 @@
     <validationRules>
         <errorMessage><!-- Event Location Start date must greater than Event Location End Date --></errorMessage>
         <name>CN_Check_Event_Location_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Event Location Start date must greater than Event Location End Date --></errorMessage>
+        <name>CN_Check_Event_Location_Date_AM_PM</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Please input Event Location Date before confirm. --></errorMessage>

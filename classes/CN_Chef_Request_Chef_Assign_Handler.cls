@@ -37,7 +37,8 @@ public without sharing class CN_Chef_Request_Chef_Assign_Handler implements Trig
         }
 
         if(confirmCRList.size() > 0) {
-            List<CN_Chefs_Assigned__c> caList = generateChefAssignList(confirmCRList);
+            Id caSelfWorkRTId = Schema.SObjectType.CN_Chefs_Assigned__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CHEFS_ASSIGNED_SELF_WORK_RT_API_NAME).getRecordTypeId();
+            List<CN_Chefs_Assigned__c> caList = generateChefAssignList(confirmCRList, caSelfWorkRTId);
             if(caList.size() > 0) {
                 upsert caList CN_External_Id__c;
 
@@ -57,7 +58,9 @@ public without sharing class CN_Chef_Request_Chef_Assign_Handler implements Trig
                                                             CN_Chef_Name__c,
                                                             CN_Display_in_Calendar__c,
                                                             CN_Chef_Work_Start_Date__c,
-                                                            CN_Chef_Work_End_Date__c
+                                                            CN_Chef_Work_End_Date__c,
+                                                            CN_Chef_Work_Start_Date_AM_PM__c,
+                                                            CN_Chef_Work_End_Date_AM_PM__c
                                                         FROM CN_Chefs_Assigned__c 
                                                         WHERE CN_Chef_Request__c in: confirmCRList
                                                         LIMIT 50000];
@@ -74,8 +77,16 @@ public without sharing class CN_Chef_Request_Chef_Assign_Handler implements Trig
                     evt.IsAllDayEvent = true;
                     Date endDate = ca.CN_Chef_Work_End_Date__c.addDays(-1);
                     evt.ReminderDateTime = Datetime.newInstance(endDate.year(), endDate.month(), endDate.day(), 8, 0, 0);
-                    evt.StartDateTime = ca.CN_Chef_Work_Start_Date__c;
-                    evt.EndDateTime = ca.CN_Chef_Work_End_Date__c;
+                    if('PM'.equals(ca.CN_Chef_Work_Start_Date_AM_PM__c)) {
+                        evt.StartDateTime = Datetime.newInstance(ca.CN_Chef_Work_Start_Date__c, Time.newInstance(12, 0, 0, 0));
+                    } else {
+                        evt.StartDateTime = ca.CN_Chef_Work_Start_Date__c;
+                    }
+                    if('AM'.equals(ca.CN_Chef_Work_End_Date_AM_PM__c)) {
+                        evt.EndDateTime = Datetime.newInstance(ca.CN_Chef_Work_End_Date__c, Time.newInstance(12, 0, 0, 0));
+                    } else {
+                        evt.EndDateTime = ca.CN_Chef_Work_End_Date__c;
+                    }
                     evt.WhatId = ca.CN_Chef_Request__c;
                     eventList.add(evt);
                 }
@@ -102,21 +113,27 @@ public without sharing class CN_Chef_Request_Chef_Assign_Handler implements Trig
         }
     }
 
-    public List<CN_Chefs_Assigned__c> generateChefAssignList(List<CN_Chef_Request__c> confirmCRList) {
+    public List<CN_Chefs_Assigned__c> generateChefAssignList(List<CN_Chef_Request__c> confirmCRList, String caRTId) {
         
         List<CN_Chefs_Assigned__c> caList = new List<CN_Chefs_Assigned__c>();
 
         if(confirmCRList.size() > 0) {
             for(CN_Chef_Request__c cr: confirmCRList) {
                 CN_Chefs_Assigned__c ca = new CN_Chefs_Assigned__c();
+                ca.RecordTypeId = caRTId;
                 ca.CN_Chef_Request__c = cr.Id;
                 ca.CN_Chef__c = cr.OwnerId;
                 ca.CN_Chef_Role__c = 'Leading Chef';
                 ca.CN_Chef_Work_Start_Date__c = cr.CN_Start_Date__c;
+                ca.CN_Chef_Work_Start_Date_AM_PM__c = cr.CN_Start_Date_AM_PM__c;
                 ca.CN_Chef_Work_End_Date__c = cr.CN_End_Date__c;
+                ca.CN_Chef_Work_End_Date_AM_PM__c = cr.CN_End_Date_AM_PM__c;
                 ca.CN_External_Id__c = cr.Id + '-' + cr.OwnerId;
                 ca.CN_Chef_Self_Confirm_Time__c = Datetime.now();
                 ca.CN_Upsert_From_Apex_DateTime__c = DateTime.now();
+                ca.CN_Self_Work_Type__c = cr.CN_Event_Type__c;
+                System.debug('cr.CN_Event_Type__c');
+                System.debug(cr.CN_Event_Type__c);
                 caList.add(ca);
             }
         }

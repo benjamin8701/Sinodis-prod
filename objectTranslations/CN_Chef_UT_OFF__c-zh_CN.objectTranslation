@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Chef UT OFF --></value>
+    </caseValues>
+    <fields>
+        <label>厨师UT</label>
+        <name>CN_Chef_UT__c</name>
+        <relationshipLabel><!-- Chef UT OFF --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>厨师</label>
+        <name>CN_Chef__c</name>
+        <relationshipLabel><!-- Chef UT OFF --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>外键</label>
+        <name>CN_External_Id__c</name>
+    </fields>
+    <fields>
+        <label>休假所在月份</label>
+        <name>CN_Month__c</name>
+    </fields>
+    <fields>
+        <label>不统计进入UT报表？</label>
+        <name>CN_Not_Include_in_UT_Report__c</name>
+    </fields>
+    <fields>
+        <label>总休假天数</label>
+        <name>CN_Total_OFF_Days__c</name>
+    </fields>
+    <fields>
+        <label>月工作日数</label>
+        <name>CN_Total_Working_Days__c</name>
+    </fields>
+    <fields>
+        <label>休假所在年月</label>
+        <name>CN_YearMonth__c</name>
+    </fields>
+    <fields>
+        <label>休假所在年份</label>
+        <name>CN_Year__c</name>
+    </fields>
+    <layouts>
+        <layout>Chef UT OFF Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Chef UT OFF No --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- CN Chef UT OFF --></label>
+        <name>CN_Chef_UT_OFF</name>
+    </recordTypes>
+</CustomObjectTranslation>
