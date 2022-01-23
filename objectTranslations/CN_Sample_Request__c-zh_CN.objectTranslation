@@ -39,6 +39,10 @@
         <label>入账类目</label>
         <name>CN_Condition_Type__c</name>
         <picklistValues>
+            <masterLabel>5CCE2204 – CCE Sample</masterLabel>
+            <translation><!-- 5CCE2204 – CCE Sample --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>5TMK2104 – TM sample</masterLabel>
             <translation><!-- 5TMK2104 – TM sample --></translation>
         </picklistValues>
