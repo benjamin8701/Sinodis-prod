@@ -11,4 +11,15 @@
             <roleAndSubordinates>CN_Commercial_Director</roleAndSubordinates>
         </sharedFrom>
     </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CN_SHARE_ALL_SALES_SR_TO_SALESMDM</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CN_SHARE_ALL_SALES_SR_TO_SALESMDM</label>
+        <sharedTo>
+            <role>CN_Sales_MDM</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_Commercial_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
 </SharingRules>
