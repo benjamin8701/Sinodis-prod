@@ -592,6 +592,8 @@
         <name>PathAssistant</name>
     </types>
     <types>
+        <members>CN_Marketing_Sample_Product_Maintainer</members>
+		<members>CN_Account_Team_Member_Manager</members>
         <members>CN_CCE_Lead_Qualifier</members>
         <members>CN_Campaign_Manager</members>
         <members>CN_Manage_Account_Team</members>
