@@ -31,6 +31,10 @@
             <translation><!-- ANTICHICOLLI --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Adamance</masterLabel>
+            <translation><!-- Adamance --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>BARNIER OLIVES</masterLabel>
             <translation><!-- BARNIER OLIVES --></translation>
         </picklistValues>

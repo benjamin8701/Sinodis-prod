@@ -245,6 +245,11 @@
                     <label>5J</label>
                 </value>
                 <value>
+                    <fullName>Adamance</fullName>
+                    <default>false</default>
+                    <label>Adamance</label>
+                </value>
+                <value>
                     <fullName>ANTICHICOLLI</fullName>
                     <default>false</default>
                     <label>ANTICHICOLLI</label>
@@ -1060,6 +1065,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Adamance</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BARNIER OLIVES</fullName>
                 <default>false</default>
             </values>
@@ -1483,6 +1492,10 @@
             </values>
             <values>
                 <fullName>ANTICHICOLLI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adamance</fullName>
                 <default>false</default>
             </values>
             <values>
