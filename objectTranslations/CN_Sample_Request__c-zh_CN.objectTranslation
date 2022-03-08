@@ -5,6 +5,10 @@
         <value>样品申请</value>
     </caseValues>
     <fields>
+        <label><!-- Account Id --></label>
+        <name>CN_Account_Id__c</name>
+    </fields>
+    <fields>
         <label><!-- Account Name Formula --></label>
         <name>CN_Account_Name_Formula__c</name>
     </fields>
@@ -145,8 +149,16 @@
         <name>CN_SP_Records_Count_Delivery_Status_Done__c</name>
     </fields>
     <fields>
+        <label><!-- Sale Team of Sales Person --></label>
+        <name>CN_Sale_Team_of_Sales_Person__c</name>
+    </fields>
+    <fields>
         <label><!-- Sales Office --></label>
         <name>CN_Sales_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person Id --></label>
+        <name>CN_Sales_Person_Id__c</name>
     </fields>
     <fields>
         <label>销售人员</label>

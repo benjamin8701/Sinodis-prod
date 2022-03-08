@@ -5,6 +5,26 @@
         <value>销售订单</value>
     </caseValues>
     <fields>
+        <label><!-- Account Id --></label>
+        <name>CN_Account_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>CN_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Owner Name --></label>
+        <name>CN_Customer_Owner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Owner --></label>
+        <name>CN_Customer_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Team Name of Sales Person --></label>
+        <name>CN_Sale_Team_Name_of_Sales_Person__c</name>
+    </fields>
+    <fields>
         <label>AR联系人</label>
         <name>CN_AR_Person__c</name>
         <relationshipLabel>销售订单</relationshipLabel>
@@ -506,12 +526,4 @@
         </sections>
     </layouts>
     <nameFieldLabel>销售订单名称</nameFieldLabel>
-    <quickActions>
-        <label><!-- Retrieve Status --></label>
-        <name>CN_Retrieve_Status</name>
-    </quickActions>
-    <recordTypes>
-        <label><!-- CN Sales Order --></label>
-        <name>CN_Sales_Order</name>
-    </recordTypes>
 </CustomObjectTranslation>

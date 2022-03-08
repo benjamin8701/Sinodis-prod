@@ -9,6 +9,30 @@
         <value>Sample Products</value>
     </caseValues>
     <fields>
+        <label><!-- Account Id --></label>
+        <name>CN_Account_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count --></label>
+        <name>CN_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Sattus For Report --></label>
+        <name>CN_Current_Sattus_For_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>CN_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Brand --></label>
+        <name>CN_Product_Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person Id --></label>
+        <name>CN_Sales_Person_Id__c</name>
+    </fields>
+    <fields>
         <label><!-- Campaign Product --></label>
         <name>CN_Campaign_Product__c</name>
         <relationshipLabel><!-- Sample Products --></relationshipLabel>
@@ -240,60 +264,4 @@
         <name>CN_Sample_Product</name>
     </recordTypes>
     <startsWith>Consonant</startsWith>
-    <validationRules>
-        <errorMessage><!-- It&apos;s not allowed to change deliver status after all sample product deliver status had been selected. --></errorMessage>
-        <name>CN_Check_Deliver_Status_After_Done</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Fill in customer feedback after sample delivered. --></errorMessage>
-        <name>CN_Check_FeedBack</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Please select Customer Feedback --></errorMessage>
-        <name>CN_Check_Feedback_Message</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Product is inactive --></errorMessage>
-        <name>CN_Check_Product_Active</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- This Product not support office pack --></errorMessage>
-        <name>CN_Check_Product_Type</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Repack Sample&apos;s deliver status is only updated by CCE --></errorMessage>
-        <name>CN_Check_Repack_Deliver_Status_Edit</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Quantity Need must greater than 0. --></errorMessage>
-        <name>CN_Check_Sample_Quantity</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Real Quantity must greater than 0 and less than Quantity Needed. --></errorMessage>
-        <name>CN_Check_Sample_Real_Quantity</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Wholepack Sample&apos;s deliver status is only updated by Sales Person --></errorMessage>
-        <name>CN_Check_Wholepack_Deliver_Status_Edit</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- It&apos;s not allowed to create new sample product after sample request ready approve or approved. --></errorMessage>
-        <name>CN_Prevent_Create</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- It&apos;s not allow to edit when ready for approved, approved or canceled. --></errorMessage>
-        <name>CN_Prevent_Edit_After_Ready</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- You can&apos;t edit sample deliver information before sample request is approved --></errorMessage>
-        <name>CN_Prevent_Edit_Before_Approved</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- You must enter the delivery status before you enter the current status. --></errorMessage>
-        <name>CN_SP_Check_Current_Status_Delivery</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- You are not allowed to edit the current status. --></errorMessage>
-        <name>CN_SP_Check_Current_Status_Sales</name>
-    </validationRules>
 </CustomObjectTranslation>
