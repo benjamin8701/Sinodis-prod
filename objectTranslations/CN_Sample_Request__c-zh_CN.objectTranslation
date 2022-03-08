@@ -5,6 +5,18 @@
         <value>样品申请</value>
     </caseValues>
     <fields>
+        <label><!-- Account Id --></label>
+        <name>CN_Account_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Team of Sales Person --></label>
+        <name>CN_Sale_Team_of_Sales_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person Id --></label>
+        <name>CN_Sales_Person_Id__c</name>
+    </fields>
+    <fields>
         <label><!-- Account Name Formula --></label>
         <name>CN_Account_Name_Formula__c</name>
     </fields>
@@ -271,75 +283,4 @@
         </sections>
     </layouts>
     <nameFieldLabel>样品申请名称</nameFieldLabel>
-    <quickActions>
-        <aspect>Master</aspect>
-        <label>取消样品申请</label>
-        <name>CN_Cancel_Sample_Request</name>
-    </quickActions>
-    <quickActions>
-        <aspect>Master</aspect>
-        <label>预审/撤回</label>
-        <name>CN_SR_Ready_for_Approval</name>
-    </quickActions>
-    <quickActions>
-        <aspect>Master</aspect>
-        <label>发送交付状态</label>
-        <name>CN_Send_Delivery_Email_c</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Update Sample Request --></label>
-        <name>Test</name>
-    </quickActions>
-    <recordTypes>
-        <label><!-- Office Repack --></label>
-        <name>CN_Office_Repack</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- Whole Pack --></label>
-        <name>CN_Whole_Pack</name>
-    </recordTypes>
-    <validationRules>
-        <errorMessage>如果送样方式为快递，需填写送样地址</errorMessage>
-        <name>CN_Check_Deliver_Address</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>非正式客户不允许选随货送的送样方式</errorMessage>
-        <name>CN_Check_Field_Prospect_Opportunity</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>只有处在Proposal/Demo/Sample阶段的业务机会可以创建样品申请</errorMessage>
-        <name>CN_Check_Opp_Stage_On_Create</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>不允许为潜在客户的销售机会创建整装样品申请</errorMessage>
-        <name>CN_Check_Prospect_Opportunity</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>需样品日期不能为过去日期</errorMessage>
-        <name>CN_Check_Sample_Need_Date</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>您不能取消未审批通过的样品申请。</errorMessage>
-        <name>CN_Prevent_Canceled</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>您不能编辑此样品申请。</errorMessage>
-        <name>CN_Prevent_Edit_After_Approved_Canceled</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>在准备好提交审批之前请选择至少一个样品。</errorMessage>
-        <name>CN_SR_Check_Ready_SKU</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>您现在不能取消此样品申请。</errorMessage>
-        <name>CN_SR_Prevent_Cancel</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>所有样品状态标记完成后，不允许新建样品或编辑样品状态。</errorMessage>
-        <name>CN_SR_Prevent_Change_Products_Status</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>预审状态不可编辑。</errorMessage>
-        <name>CN_SR_Prevent_Edit_For_Ready</name>
-    </validationRules>
 </CustomObjectTranslation>
