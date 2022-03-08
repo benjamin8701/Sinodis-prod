@@ -9,6 +9,18 @@
         <value>Sample Requests</value>
     </caseValues>
     <fields>
+        <label><!-- Account Id --></label>
+        <name>CN_Account_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Team of Sales Person --></label>
+        <name>CN_Sale_Team_of_Sales_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person Id --></label>
+        <name>CN_Sales_Person_Id__c</name>
+    </fields>
+    <fields>
         <label><!-- Account Name Formula --></label>
         <name>CN_Account_Name_Formula__c</name>
     </fields>

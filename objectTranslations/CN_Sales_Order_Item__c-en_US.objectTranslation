@@ -9,6 +9,19 @@
         <value>Sales Order Item</value>
     </caseValues>
     <fields>
+        <label><!-- Count --></label>
+        <name>CN_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Brand --></label>
+        <name>CN_Product_Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Flavor --></label>
+        <name>CN_Product_Flavor__c</name>
+    </fields>
+
+    <fields>
         <label><!-- Campaign Product --></label>
         <name>CN_Campaign_Product__c</name>
         <relationshipLabel><!-- Sales Order Item --></relationshipLabel>

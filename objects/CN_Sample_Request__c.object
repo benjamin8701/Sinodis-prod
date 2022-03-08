@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>CN_Account_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Account_Name__r.Id</formula>
+        <label>Account Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
@@ -183,6 +194,17 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Sale_Team_of_Sales_Person__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Account_Name__r.Owner.CN_Sales_Team__c</formula>
+        <label>Sale Team of Sales Person</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Account_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -288,6 +310,17 @@
         <formula>CreatedBy.LastName &amp; &apos; &apos; &amp; CreatedBy.FirstName</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Creator Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Sales_Person_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Account_Name__r.Owner.Id</formula>
+        <label>Sales Person Id</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>

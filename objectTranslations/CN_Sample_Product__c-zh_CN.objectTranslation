@@ -5,6 +5,30 @@
         <value>样品</value>
     </caseValues>
     <fields>
+        <label><!-- Account Id --></label>
+        <name>CN_Account_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count --></label>
+        <name>CN_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Sattus For Report --></label>
+        <name>CN_Current_Sattus_For_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>CN_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Brand --></label>
+        <name>CN_Product_Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person Id --></label>
+        <name>CN_Sales_Person_Id__c</name>
+    </fields>
+    <fields>
         <label><!-- Campaign Product --></label>
         <name>CN_Campaign_Product__c</name>
         <relationshipLabel><!-- Sample Products --></relationshipLabel>
@@ -224,74 +248,4 @@
         </sections>
     </layouts>
     <nameFieldLabel>样品名称</nameFieldLabel>
-    <quickActions>
-        <aspect>Master</aspect>
-        <label>更新客户反馈</label>
-        <name>CN_Update_Customer_Feedback</name>
-    </quickActions>
-    <quickActions>
-        <aspect>Master</aspect>
-        <label>更新交付状态</label>
-        <name>CN_Update_Deliver_Status</name>
-    </quickActions>
-    <recordTypes>
-        <label><!-- CN Sample Product --></label>
-        <name>CN_Sample_Product</name>
-    </recordTypes>
-    <validationRules>
-        <errorMessage>样品全部送达后不可更改送达状态</errorMessage>
-        <name>CN_Check_Deliver_Status_After_Done</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>请在样品送达之后填写客户反馈</errorMessage>
-        <name>CN_Check_FeedBack</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>填写反馈情况说明之前请选择客户反馈</errorMessage>
-        <name>CN_Check_Feedback_Message</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>产品已失效</errorMessage>
-        <name>CN_Check_Product_Active</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>此产品不支持分装</errorMessage>
-        <name>CN_Check_Product_Type</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>分装样品的送达信息仅供CCE填写</errorMessage>
-        <name>CN_Check_Repack_Deliver_Status_Edit</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>需要样品数量必须大于0</errorMessage>
-        <name>CN_Check_Sample_Quantity</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>实发样品数量必须大于0且小于等于需要样品数量</errorMessage>
-        <name>CN_Check_Sample_Real_Quantity</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>正装样品的送达信息仅供销售人员填写</errorMessage>
-        <name>CN_Check_Wholepack_Deliver_Status_Edit</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>预审，审批及取消状态不可添加新样品</errorMessage>
-        <name>CN_Prevent_Create</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>预审，审批及取消状态不可编辑</errorMessage>
-        <name>CN_Prevent_Edit_After_Ready</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>样品申请批准前，交付信息不可更改</errorMessage>
-        <name>CN_Prevent_Edit_Before_Approved</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>输入客户目前状况前必须输入处理情况</errorMessage>
-        <name>CN_SP_Check_Current_Status_Delivery</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>您没有权限编辑目前客户情况</errorMessage>
-        <name>CN_SP_Check_Current_Status_Sales</name>
-    </validationRules>
 </CustomObjectTranslation>

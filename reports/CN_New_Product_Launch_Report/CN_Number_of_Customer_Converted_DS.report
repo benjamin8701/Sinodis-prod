@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>CN_Sales_Order_Item__c.CN_Count__c:SUM - (RowCount - CN_Sales_Order__c.CN_Account_Id__c:UNIQUE)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>#Customer With Sales Order</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>CN_Sales_Order__c$Name</field>
+    </columns>
+    <columns>
+        <field>CN_Sales_Order__c.Sales_Order_Item__r$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CN_Sales_Order__c.Sales_Order_Item__r$CN_Count__c</field>
+    </columns>
+    <columns>
+        <field>CN_Sales_Order__c.Sales_Order_Item__r$CN_Product_Code__c</field>
+    </columns>
+    <columns>
+        <field>CN_Sales_Order__c.Sales_Order_Item__r$CN_Product_Flavor__c</field>
+    </columns>
+    <currency>CNY</currency>
+    <description>Count of the Customer who have purchased the Product and Sale Person Sales team is DS</description>
+    <filter>
+        <criteriaItems>
+            <column>CN_Sales_Order__c.Sales_Order_Item__r$CN_Product_Brand__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Adamance</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CN_Sales_Order__c$CN_Sale_Team_Name_of_Sales_Person__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>DS</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CN_Sales_Order__c$CN_Account_Id__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name># of Customer Converted -- DS</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CN_Sales_Order_With_Item__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CN_Sales_Order__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
