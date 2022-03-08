@@ -311,4 +311,48 @@
         <name>CN_Whole_Pack</name>
     </recordTypes>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Delivery Address is mandatory if delivery method is express delivery. --></errorMessage>
+        <name>CN_Check_Deliver_Address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allow to select &quot;include in the delivery tomorrow&quot; delivery method --></errorMessage>
+        <name>CN_Check_Field_Prospect_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the opportunity into stage Proposal/Demo/Sample could create Sample Request. --></errorMessage>
+        <name>CN_Check_Opp_Stage_On_Create</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- sales CANNOT create wholepack sample request for prospect&apos;s opportunity --></errorMessage>
+        <name>CN_Check_Prospect_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sample Needed Date should not less than today --></errorMessage>
+        <name>CN_Check_Sample_Need_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allowed cancel sample request which not approved yet. --></errorMessage>
+        <name>CN_Prevent_Canceled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It&apos;s not allowed to edit. --></errorMessage>
+        <name>CN_Prevent_Edit_After_Approved_Canceled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select at least one SKU before submit for approval. --></errorMessage>
+        <name>CN_SR_Check_Ready_SKU</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You&apos;re not allowed to cancel it now. --></errorMessage>
+        <name>CN_SR_Prevent_Cancel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to create or edit the status of sample products when all sample products&apos;s status are not null. --></errorMessage>
+        <name>CN_SR_Prevent_Change_Products_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to edit when sample request is marked as ready for approval. --></errorMessage>
+        <name>CN_SR_Prevent_Edit_For_Ready</name>
+    </validationRules>
 </CustomObjectTranslation>
