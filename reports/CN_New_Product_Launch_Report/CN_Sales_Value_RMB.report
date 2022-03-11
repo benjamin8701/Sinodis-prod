@@ -38,6 +38,20 @@
             <operator>equals</operator>
             <value>Adamance</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>CN_Sales_Order__c.Sales_Order_Item__r$CN_Net_Value__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>CNY 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CN_Sales_Order__c.Sales_Order_Item__r$CN_Net_Value__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
         <language>en_US</language>
     </filter>
     <format>Summary</format>

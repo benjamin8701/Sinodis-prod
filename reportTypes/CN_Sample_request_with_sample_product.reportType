@@ -255,6 +255,16 @@
             <field>CN_Account_Id__c</field>
             <table>CN_Sample_Request__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Opportunity_Name__c.CN_Campaign__c.Id</field>
+            <table>CN_Sample_Request__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CN_Account_Name__c.Id</field>
+            <table>CN_Sample_Request__c</table>
+        </columns>
         <masterLabel>Sample Requests</masterLabel>
     </sections>
     <sections>
@@ -510,7 +520,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>CN_Current_Sattus_For_Report__c</field>
+            <field>CN_Current_Status_For_Report__c</field>
             <table>CN_Sample_Request__c.Sample_Products__r</table>
         </columns>
         <masterLabel>Sample Products</masterLabel>

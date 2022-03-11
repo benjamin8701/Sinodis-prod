@@ -174,17 +174,6 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
-        <fullName>CN_Account_Id__c</fullName>
-        <externalId>false</externalId>
-        <formula>CN_Sold_To_Account_Name__r.Id</formula>
-        <label>Account Id</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>CN_AR_Person__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -196,6 +185,17 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Account_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(CN_Sold_To_Account_Name__r.Id)</formula>
+        <label>Account Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Billing_Block__c</fullName>
@@ -308,6 +308,39 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Customer_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Sold_To_Account_Name__r.CN_Customer_Code__c</formula>
+        <label>Customer Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Customer_Owner_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Sold_To_Account_Name__r.Owner.LastName + CN_Sold_To_Account_Name__r.Owner.FirstName</formula>
+        <label>Customer Owner Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Customer_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Sold_To_Account_Name__r.OwnerId</formula>
+        <label>Customer Owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Delivery_Account_Name__c</fullName>
@@ -569,17 +602,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>CN_Customer_Code__c</fullName>
-        <externalId>false</externalId>
-        <formula>CN_Sold_To_Account_Name__r.CN_Customer_Code__c</formula>
-        <label>Customer Code</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>CN_Is_Within_6_Months__c</fullName>
         <externalId>false</externalId>
         <formula>CN_SAP_Create_Date__c &gt;=  ADDMONTHS(ToDay(),-6)</formula>
@@ -618,17 +640,6 @@
         <externalId>true</externalId>
         <label>Order Reference No</label>
         <length>10</length>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CN_Customer_Owner_Name__c</fullName>
-        <externalId>false</externalId>
-        <formula>CN_Sold_To_Account_Name__r.Owner.LastName + CN_Sold_To_Account_Name__r.Owner.FirstName</formula>
-        <label>Customer Owner Name</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -698,17 +709,6 @@
         <externalId>false</externalId>
         <label>PO Number</label>
         <length>35</length>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CN_Customer_Owner__c</fullName>
-        <externalId>false</externalId>
-        <formula>CN_Sold_To_Account_Name__r.OwnerId</formula>
-        <label>Customer Owner</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -883,17 +883,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>CN_Sale_Team_Name_of_Sales_Person__c</fullName>
-        <externalId>false</externalId>
-        <formula>CASE(CN_Sold_To_Account_Name__r.Owner.CN_Sales_Team__c,&apos;900012&apos;,&apos;DS&apos;,&apos;900013&apos;,&apos;KA&apos;,&apos;900014&apos;,&apos;WS&apos;,&apos;&apos;)</formula>
-        <label>Sale Team Name of Sales Person</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>CN_SAP_Create_Date__c</fullName>
         <externalId>false</externalId>
         <label>SAP Creation Date</label>
@@ -901,6 +890,17 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CN_Sale_Team_Name_of_Sales_Person__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(CN_Sold_To_Account_Name__r.Owner.CN_Sales_Team__c,&apos;900012&apos;,&apos;1-DS&apos;,&apos;900013&apos;,&apos;3-KA&apos;,&apos;900014&apos;,&apos;2-WS&apos;,&apos;&apos;)</formula>
+        <label>Sale Team Name of Sales Person</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Sales_Order_Type__c</fullName>

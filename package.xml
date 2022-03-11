@@ -369,6 +369,9 @@
         <members>CN_CustomerVisitDashboard/nGYoUymLbtFGNMNoQtaMNoyVBNHuHe1</members>
         <members>CN_LeadDashborad</members>
         <members>CN_LeadDashborad/iyDVGkUjkIewXfVofmvbRDUNQjSyLQ</members>
+        <members>CN_New_Product_Dashboard</members>
+        <members>CN_New_Product_Dashboard/ReDeptPQifZKlzCbmETpbcGSYJUOud</members>
+        <members>CN_New_Product_Dashboard/ToCSqSSYeDzLjpMcvMuypIzkXfobCY1</members>
         <members>CN_OpportunityDashboard</members>
         <members>CN_OpportunityDashboard/BxWLndQeROPrpAGpQyLKGtNmUvzWbs</members>
         <members>CN_PromotionDashboard</members>
@@ -377,9 +380,6 @@
         <members>CN_Sales_360_Dashboard/nGYoUymLbtFGNMNoQtaMNoyVBNHuHe</members>
         <members>CN_SampleDashboard</members>
         <members>CN_SampleDashboard/nwILZOMUGdfiazwtWERzLJJkIGSFPA</members>
-        <members>CN_New_Product_Dashboard</members>
-        <members>CN_New_Product_Dashboard/ReDeptPQifZKlzCbmETpbcGSYJUOud</members>
-        <members>CN_New_Product_Dashboard/ToCSqSSYeDzLjpMcvMuypIzkXfobCY</members>
         <name>Dashboard</name>
     </types>
     <types>
@@ -595,8 +595,7 @@
         <name>PathAssistant</name>
     </types>
     <types>
-        <members>CN_Marketing_Sample_Product_Maintainer</members>
-		<members>CN_Account_Team_Member_Manager</members>
+        <members>CN_Account_Team_Member_Manager</members>
         <members>CN_CCE_Lead_Qualifier</members>
         <members>CN_Campaign_Manager</members>
         <members>CN_Manage_Account_Team</members>
@@ -606,6 +605,7 @@
         <members>CN_Marketing_Lead_Manager</members>
         <members>CN_Marketing_Reassign_Manager</members>
         <members>CN_Marketing_Sample_Manager</members>
+        <members>CN_Marketing_Sample_Product_Maintainer</members>
         <members>CN_Marketing_View_Price_Book</members>
         <members>CN_Product_Edit_Description</members>
         <members>CN_Promotion_Manager</members>
@@ -769,6 +769,29 @@
         <members>CN_LeadReport/CN_Converted_Prospect_Customers</members>
         <members>CN_LeadReport/CN_Lead_Conversion</members>
         <members>CN_LeadReport/CN_Leads_by_Source_Category</members>
+        <members>CN_New_Product_Launch_Report</members>
+        <members>CN_New_Product_Launch_Report/CN_Number_of_Customer_Converted</members>
+        <members>CN_New_Product_Launch_Report/CN_Number_of_Customer_Converted_DS</members>
+        <members>CN_New_Product_Launch_Report/CN_Number_of_Customer_Converted_KA</members>
+        <members>CN_New_Product_Launch_Report/CN_Number_of_Customer_Converted_WS</members>
+        <members>CN_New_Product_Launch_Report/CN_Sales_Value_RMB</members>
+        <members>CN_New_Product_Launch_Report/CN_Sales_Value_RMB_by_Flavor</members>
+        <members>CN_New_Product_Launch_Report/CN_Sales_Volume</members>
+        <members>CN_New_Product_Launch_Report/CN_Sales_Volume_by_Flavor</members>
+        <members>CN_New_Product_Launch_Report/CN_Sampling_Customer</members>
+        <members>CN_New_Product_Launch_Report/CN_Sampling_Customer_DS</members>
+        <members>CN_New_Product_Launch_Report/CN_Sampling_Customer_KA</members>
+        <members>CN_New_Product_Launch_Report/CN_Sampling_Customer_WS</members>
+        <members>CN_New_Product_Launch_Report/CN_Sampling_Customer_by_flavor</members>
+        <members>CN_New_Product_Launch_Report/CN_Sampling_Feedback_Progress_DS</members>
+        <members>CN_New_Product_Launch_Report/CN_Sampling_Feedback_Progress_KA</members>
+        <members>CN_New_Product_Launch_Report/CN_Sampling_Feedback_Progress_WS</members>
+        <members>CN_New_Product_Launch_Report/CN_Sampling_Product_DS</members>
+        <members>CN_New_Product_Launch_Report/CN_Sampling_Product_DS_Percentage</members>
+        <members>CN_New_Product_Launch_Report/CN_Sampling_Product_KA</members>
+        <members>CN_New_Product_Launch_Report/CN_Sampling_Product_KA_Percentage</members>
+        <members>CN_New_Product_Launch_Report/CN_Sampling_Product_WS</members>
+        <members>CN_New_Product_Launch_Report/CN_Sampling_Product_WS_Percentage</members>
         <members>CN_OpportunityReport</members>
         <members>CN_OpportunityReport/CN_Expected_Amount_By_Opp_Stage</members>
         <members>CN_OpportunityReport/CN_Opportunity_By_lost_Reason</members>
@@ -818,29 +841,6 @@
         <members>TM_Report/CN_Account_without_Document</members>
         <members>TM_Report/TM_Account_Report</members>
         <members>TM_Report/TM_Accounts_History_Report</members>
-        <members>CN_New_Product_Launch_Report</members>
-        <members>CN_New_Product_Launch_Report/CN_Number_of_Customer_Converted</members>
-        <members>CN_New_Product_Launch_Report/CN_Number_of_Customer_Converted_DS</members>
-        <members>CN_New_Product_Launch_Report/CN_Number_of_Customer_Converted_KA</members>
-        <members>CN_New_Product_Launch_Report/CN_Number_of_Customer_Converted_WS</members>
-        <members>CN_New_Product_Launch_Report/CN_Sales_Value_RMB</members>
-        <members>CN_New_Product_Launch_Report/CN_Sales_Value_RMB_by_Flavor</members>
-        <members>CN_New_Product_Launch_Report/CN_Sales_Volume</members>
-        <members>CN_New_Product_Launch_Report/CN_Sales_Volume_by_Flavor</members>
-        <members>CN_New_Product_Launch_Report/CN_Sampling_Customer</members>
-        <members>CN_New_Product_Launch_Report/CN_Sampling_Customer_DS</members>
-        <members>CN_New_Product_Launch_Report/CN_Sampling_Customer_KA</members>
-        <members>CN_New_Product_Launch_Report/CN_Sampling_Customer_WS</members>
-        <members>CN_New_Product_Launch_Report/CN_Sampling_Customer_by_flavor</members>
-        <members>CN_New_Product_Launch_Report/CN_Sampling_Feedback_Progess_DS</members>
-        <members>CN_New_Product_Launch_Report/CN_Sampling_Feedback_Progess_KA</members>
-        <members>CN_New_Product_Launch_Report/CN_Sampling_Feedback_Progess_WS</members>
-        <members>CN_New_Product_Launch_Report/CN_Sampling_Product_DS</members>
-        <members>CN_New_Product_Launch_Report/CN_Sampling_Product_DS_Percentage</members>
-        <members>CN_New_Product_Launch_Report/CN_Sampling_Product_KA</members>
-        <members>CN_New_Product_Launch_Report/CN_Sampling_Product_KA_Percentage</members>
-        <members>CN_New_Product_Launch_Report/CN_Sampling_Product_WS</members>
-        <members>CN_New_Product_Launch_Report/CN_Sampling_Product_WS_Percentage</members>
         <name>Report</name>
     </types>
     <types>
@@ -865,11 +865,11 @@
         <members>CN_Promotion_with_Member_with_Quote_Line_Item</members>
         <members>CN_Promotion_with_Promotion_Line_Item</members>
         <members>CN_Quote_with_Quote_Line_Item</members>
+        <members>CN_Sales_Order_With_Item</members>
         <members>CN_Sample_request_with_product_and_feedback</members>
+        <members>CN_Sample_request_with_sample_product</members>
         <members>CN_User_Report_Type</members>
         <members>Chef_Requests_with_Demo_Reports_with_Demo_Report_to_Products</members>
-        <members>CN_Sales_Order_With_Item</members>
-        <members>CN_Sample_request_with_sample_product</members>
         <name>ReportType</name>
     </types>
     <types>

@@ -17,10 +17,6 @@
         <name>CN_Count__c</name>
     </fields>
     <fields>
-        <label><!-- Current Sattus For Report --></label>
-        <name>CN_Current_Sattus_For_Report__c</name>
-    </fields>
-    <fields>
         <label><!-- Customer Code --></label>
         <name>CN_Customer_Code__c</name>
     </fields>
@@ -40,6 +36,10 @@
     <fields>
         <label><!-- Current Status Date --></label>
         <name>CN_Current_Status_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Status For Report --></label>
+        <name>CN_Current_Status_For_Report__c</name>
     </fields>
     <fields>
         <label><!-- Current Status --></label>

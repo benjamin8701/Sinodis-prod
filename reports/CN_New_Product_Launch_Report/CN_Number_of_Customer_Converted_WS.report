@@ -40,7 +40,21 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>WS</value>
+            <value>2-WS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CN_Sales_Order__c.Sales_Order_Item__r$CN_Net_Value__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>CNY 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CN_Sales_Order__c.Sales_Order_Item__r$CN_Net_Value__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
@@ -50,7 +64,7 @@
         <field>CN_Sales_Order__c$CN_Account_Id__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name># of Customer Converted -- WS</name>
+    <name>Customer Converted - WS</name>
     <params>
         <name>co</name>
         <value>1</value>

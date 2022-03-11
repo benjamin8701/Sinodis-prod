@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fields>
-        <fullName>CN_Count__c</fullName>
-        <externalId>false</externalId>
-        <formula>1</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Count</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
     <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
@@ -192,6 +178,20 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>CN_Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Currency__c</fullName>
         <externalId>false</externalId>
         <label>Currency</label>
@@ -291,17 +291,6 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CN_Product_Brand__c</fullName>
-        <externalId>false</externalId>
-        <formula>TEXT(CN_Material_Number__r.CN_Brand__c)</formula>
-        <label>Product Brand</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -649,6 +638,17 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>CN_Product_Brand__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(CN_Material_Number__r.CN_Brand__c)</formula>
+        <label>Product Brand</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Product_Code__c</fullName>
         <externalId>false</externalId>
         <formula>CN_Material_Number__r.CN_SKU_Code__c</formula>
@@ -664,7 +664,7 @@
         <fullName>CN_Product_Flavor__c</fullName>
         <externalId>false</externalId>
         <formula>CN_Material_Number__r.CN_SKU_Description_EN__c</formula>
-        <label>Product Flavor</label>
+        <label>SKU English Description</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>

@@ -401,7 +401,7 @@
         <numberOfColumns>12</numberOfColumns>
         <rowHeight>36</rowHeight>
     </dashboardGridLayout>
-    <dashboardType>MyTeamUser</dashboardType>
+    <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
     <runningUser>system.support@savencia.com</runningUser>
     <textColor>#000000</textColor>

@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fields>
-        <fullName>CN_Account_Id__c</fullName>
-        <externalId>false</externalId>
-        <formula>CN_Sample_Request__r.CN_Account_Name__r.Id</formula>
-        <label>Account Id</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
     <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
@@ -165,6 +154,17 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
+        <fullName>CN_Account_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(CN_Sample_Request__r.CN_Account_Name__r.Id)</formula>
+        <label>Account Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Campaign_Product__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -178,6 +178,20 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>CN_Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Current_Status_Date__c</fullName>
         <externalId>false</externalId>
         <label>Current Status Date</label>
@@ -185,6 +199,21 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CN_Current_Status_For_Report__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+    ISBLANK(TEXT(CN_Current_Status__c)), 
+    IF( CN_Is_Overdue__c, &apos;6-overdue&apos;, &apos;5-no Feedback(&lt;14D)&apos;),
+    CASE(TEXT(CN_Current_Status__c),&apos;Ordered&apos;,&apos;1-ordered&apos;,&apos;Win&apos;,&apos;2-win&apos;,&apos;Under Negotiation&apos;,&apos;3-Under Negotiation&apos;,&apos;Failed&apos;,&apos;4-Failed&apos;,&apos;&apos;)
+)</formula>
+        <label>Current Status For Report</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Current_Status__c</fullName>
@@ -220,6 +249,17 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_Customer_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Sample_Request__r.CN_Account_Name__r.CN_Customer_Code__c</formula>
+        <label>Customer Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Customer_Feedback__c</fullName>
@@ -261,20 +301,6 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CN_Count__c</fullName>
-        <externalId>false</externalId>
-        <formula>1</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Count</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -439,6 +465,17 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>CN_Product_Brand__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(CN_Product__r.CN_Brand__c)</formula>
+        <label>Product Brand</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Product__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -481,54 +518,6 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CN_Current_Sattus_For_Report__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF( 
-    ISBLANK(TEXT(CN_Current_Status__c)), 
-    IF( CN_Is_Overdue__c, &apos;Overdue&apos;, &apos;No Feedback(&lt;14D)&apos;),
-    TEXT(CN_Current_Status__c) 
-)</formula>
-        <label>Current Sattus For Report</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CN_Customer_Code__c</fullName>
-        <externalId>false</externalId>
-        <formula>CN_Sample_Request__r.CN_Account_Name__r.CN_Customer_Code__c</formula>
-        <label>Customer Code</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CN_Product_Brand__c</fullName>
-        <externalId>false</externalId>
-        <formula>TEXT(CN_Product__r.CN_Brand__c)</formula>
-        <label>Product Brand</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CN_Sales_Person_Id__c</fullName>
-        <externalId>false</externalId>
-        <formula>CN_Sample_Request__r.CN_Account_Name__r.Owner.Id</formula>
-        <label>Sales Person Id</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -581,6 +570,17 @@
         <formula>TEXT(CN_Sample_Request__r.CN_Account_Name__r.CN_Sales_Office__c)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Sales Office</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Sales_Person_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Sample_Request__r.CN_Account_Name__r.Owner.Id</formula>
+        <label>Sales Person Id</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
