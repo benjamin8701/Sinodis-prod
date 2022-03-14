@@ -1327,6 +1327,19 @@
         </sections>
     </reportTypes>
     <reportTypes>
+        <description><!-- Sales Order With Item --></description>
+        <label><!-- Sales Order With Item --></label>
+        <name>CN_Sales_Order_With_Item</name>
+        <sections>
+            <label><!-- Sales Order --></label>
+            <name>Sales Order</name>
+        </sections>
+        <sections>
+            <label><!-- Sales Order Item --></label>
+            <name>Sales Order Item</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
         <description><!-- CN Sample request with sample product --></description>
         <label><!-- CN Sample request with sample product --></label>
         <name>CN_Sample_request_with_product_and_feedback</name>
@@ -1335,6 +1348,19 @@
                 <label><!-- Product: Product Code --></label>
                 <name>Product: Product Code</name>
             </columns>
+            <label><!-- Sample Products --></label>
+            <name>Sample Products</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Requests --></label>
+            <name>Sample Requests</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- CN Sample request with sample products --></description>
+        <label><!-- CN Sample request with sample products --></label>
+        <name>CN_Sample_request_with_sample_product</name>
+        <sections>
             <label><!-- Sample Products --></label>
             <name>Sample Products</name>
         </sections>

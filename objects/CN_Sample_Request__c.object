@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fields>
-        <fullName>CN_Account_Id__c</fullName>
-        <externalId>false</externalId>
-        <formula>CN_Account_Name__r.Id</formula>
-        <label>Account Id</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
     <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
@@ -182,11 +171,10 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>CN_Account_Name_Formula__c</fullName>
+        <fullName>CN_Account_Id__c</fullName>
         <externalId>false</externalId>
-        <formula>CN_Account_Name__r.Name</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Account Name Formula</label>
+        <formula>CASESAFEID(CN_Account_Name__r.Id)</formula>
+        <label>Account Id</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -194,10 +182,11 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>CN_Sale_Team_of_Sales_Person__c</fullName>
+        <fullName>CN_Account_Name_Formula__c</fullName>
         <externalId>false</externalId>
-        <formula>CN_Account_Name__r.Owner.CN_Sales_Team__c</formula>
-        <label>Sale Team of Sales Person</label>
+        <formula>CN_Account_Name__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name Formula</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -310,17 +299,6 @@
         <formula>CreatedBy.LastName &amp; &apos; &apos; &amp; CreatedBy.FirstName</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Creator Name</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CN_Sales_Person_Id__c</fullName>
-        <externalId>false</externalId>
-        <formula>CN_Account_Name__r.Owner.Id</formula>
-        <label>Sales Person Id</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -586,6 +564,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <type>Summary</type>
     </fields>
     <fields>
+        <fullName>CN_Sale_Team_of_Sales_Person__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Account_Name__r.Owner.CN_Sales_Team__c</formula>
+        <label>Sale Team of Sales Person</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Sales_Office__c</fullName>
         <externalId>false</externalId>
         <formula>CASE(
@@ -599,6 +588,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
 )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Sales Office</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Sales_Person_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Account_Name__r.Owner.Id</formula>
+        <label>Sales Person Id</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>

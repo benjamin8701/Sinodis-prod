@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <aggregates>
-        <calculatedFormula>CDF1:SUM / CN_Sample_Product__c.CN_Quantity_Needed__c:SUM</calculatedFormula>
-        <datatype>percent</datatype>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
         <developerName>FORMULA1</developerName>
         <isActive>true</isActive>
         <isCrossBlock>false</isCrossBlock>
-        <masterLabel>Sample Product% DS</masterLabel>
+        <masterLabel>Sample Product#</masterLabel>
         <scale>0</scale>
     </aggregates>
     <columns>
@@ -31,28 +31,10 @@
         <field>CN_Sample_Request__c$CN_Sale_Team_of_Sales_Person__c</field>
     </columns>
     <columns>
-        <field>CN_Sample_Request__c.Sample_Products__r$CN_Current_Status__c</field>
-    </columns>
-    <columns>
         <field>CN_Sample_Request__c.Sample_Products__r$CN_Customer_Feedback__c</field>
     </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>CDF1</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>CN_Sample_Request__c.Sample_Products__r$CN_Quantity_Needed__c</field>
-    </columns>
     <currency>CNY</currency>
-    <customDetailFormulas>
-        <calculatedFormula>IF(CN_Sample_Request__c.CN_Sale_Team_of_Sales_Person__c = &apos;900012&apos;,CN_Sample_Product__c.CN_Quantity_Needed__c,0)</calculatedFormula>
-        <dataType>Double</dataType>
-        <developerName>CDF1</developerName>
-        <label>DS Quantity Needed</label>
-        <scale>0</scale>
-    </customDetailFormulas>
-    <description>Quantity of Sample Product of DS / Quantity of Sample Product of Three Channel</description>
+    <description>Feedback Status of Sample Product which Sales Channel is DS</description>
     <filter>
         <criteriaItems>
             <column>CN_Sample_Request__c.Sample_Products__r$CN_Product_Brand__c</column>
@@ -60,6 +42,13 @@
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Adamance</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CN_Sample_Request__c$CN_Sale_Team_of_Sales_Person__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>900012</value>
         </criteriaItems>
         <criteriaItems>
             <column>CN_Sample_Request__c$CN_Sample_Request_Status__c</column>
@@ -80,10 +69,15 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
+        <field>CN_Sample_Request__c.Sample_Products__r$CN_Current_Status_For_Report__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
         <field>CN_Sample_Request__c.Sample_Products__r$Name</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Sampling Product% -- DS</name>
+    <name>Sampling Feedback Progress - DS</name>
     <params>
         <name>co</name>
         <value>1</value>

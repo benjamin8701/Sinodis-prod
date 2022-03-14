@@ -5,5 +5,10 @@
         <sharedTo>system.support@savencia.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>CN_Commercial_Director</sharedTo>
+        <sharedToType>RoleAndSubordinates</sharedToType>
+    </folderShares>
     <name>New Product Dashboard</name>
 </DashboardFolder>
