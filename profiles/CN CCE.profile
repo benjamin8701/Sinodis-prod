@@ -53,11 +53,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>CN_Sample_Product__c.CN_Current_Sattus_For_Report__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>CN_Sample_Product__c.CN_Customer_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6918,6 +6913,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>CN_Sample_Product__c.CN_Current_Status_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CN_Sample_Product__c.CN_Current_Status_For_Report__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
