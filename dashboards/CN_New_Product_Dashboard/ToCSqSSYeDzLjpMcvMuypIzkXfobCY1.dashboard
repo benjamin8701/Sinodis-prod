@@ -20,12 +20,12 @@
                 <componentType>Gauge</componentType>
                 <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
-                <gaugeMax>595.0</gaugeMax>
+                <gaugeMax>749.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
                 <groupingSortProperties/>
                 <header>Sampling Customer</header>
                 <indicatorBreakpoint1>200.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>400.0</indicatorBreakpoint2>
+                <indicatorBreakpoint2>500.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
@@ -50,12 +50,12 @@
                 <componentType>Gauge</componentType>
                 <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
-                <gaugeMax>466.0</gaugeMax>
+                <gaugeMax>594.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
                 <groupingSortProperties/>
                 <header>Sampling Customer - DS</header>
                 <indicatorBreakpoint1>150.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>300.0</indicatorBreakpoint2>
+                <indicatorBreakpoint2>400.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
@@ -80,12 +80,12 @@
                 <componentType>Gauge</componentType>
                 <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
-                <gaugeMax>95.0</gaugeMax>
+                <gaugeMax>114.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
                 <groupingSortProperties/>
                 <header>Sampling Customer - WS</header>
                 <indicatorBreakpoint1>30.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>60.0</indicatorBreakpoint2>
+                <indicatorBreakpoint2>80.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
@@ -110,12 +110,12 @@
                 <componentType>Gauge</componentType>
                 <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
-                <gaugeMax>34.0</gaugeMax>
+                <gaugeMax>41.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
                 <groupingSortProperties/>
                 <header>Sampling Customer - KA</header>
-                <indicatorBreakpoint1>10.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>20.0</indicatorBreakpoint2>
+                <indicatorBreakpoint1>14.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>28.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
@@ -134,13 +134,13 @@
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartSummary>
-                    <column>FORMULA1</column>
+                    <column>RowCount</column>
                 </chartSummary>
                 <componentType>Metric</componentType>
-                <decimalPrecision>-1</decimalPrecision>
+                <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <groupingSortProperties/>
-                <header>Sampling Product - DS</header>
+                <header>Sampling Product# -- DS</header>
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#C23934</indicatorHighColor>
@@ -185,11 +185,12 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
                 <chartSummary>
+                    <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>FORMULA2</column>
+                    <column>CN_Sample_Request__c.Sample_Products__r$CN_Count__c</column>
                 </chartSummary>
                 <componentType>Bar</componentType>
-                <decimalPrecision>-1</decimalPrecision>
+                <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -199,7 +200,7 @@
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
-                        <sortColumn>FORMULA2</sortColumn>
+                        <sortColumn>s!CN_Sample_Product__c.CN_Count__c</sortColumn>
                         <sortOrder>d</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
@@ -221,13 +222,13 @@
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartSummary>
-                    <column>FORMULA1</column>
+                    <column>RowCount</column>
                 </chartSummary>
                 <componentType>Metric</componentType>
-                <decimalPrecision>-1</decimalPrecision>
+                <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <groupingSortProperties/>
-                <header>Sampling Product - WS</header>
+                <header>Sampling Product# -- WS</header>
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#C23934</indicatorHighColor>
@@ -271,13 +272,13 @@
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartSummary>
-                    <column>FORMULA1</column>
+                    <column>RowCount</column>
                 </chartSummary>
                 <componentType>Metric</componentType>
-                <decimalPrecision>-1</decimalPrecision>
+                <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <groupingSortProperties/>
-                <header>Sampling Product - KA</header>
+                <header>Sampling Product# -- KA</header>
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#C23934</indicatorHighColor>
@@ -426,7 +427,7 @@
         <numberOfColumns>12</numberOfColumns>
         <rowHeight>36</rowHeight>
     </dashboardGridLayout>
-    <dashboardType>LoggedInUser</dashboardType>
+    <dashboardType>SpecifiedUser</dashboardType>
     <description>new product</description>
     <isGridLayout>true</isGridLayout>
     <runningUser>system.support@savencia.com</runningUser>
