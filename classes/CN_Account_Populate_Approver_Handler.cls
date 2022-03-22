@@ -107,6 +107,7 @@ public without sharing class CN_Account_Populate_Approver_Handler implements Tri
                         CMId = CDId;
                     }
                 }
+                // remove WholeSales Development Supervisor from Approval Process ---- by dezheng 20220317
                 if(acc.CN_Sales_Person_SalesTeam_Code__c == Constants.CN_ACCOUNT_SALESTEAM_CODE_WS && RMID <> settings.CN_WholeSales_Development_Supervisor__c){
                     acc.CN_Approver_2__c = settings.CN_WholeSales_Development_Supervisor__c;
                 }
