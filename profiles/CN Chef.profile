@@ -8376,6 +8376,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Event.CN_Is_Overdue__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Event.CN_Meeting_MInutes__c</field>
         <readable>true</readable>
@@ -8393,6 +8398,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Event.CN_Plan_to_Visit_Who__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.CN_Prevent_Delete__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

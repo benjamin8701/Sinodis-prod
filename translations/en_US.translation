@@ -928,6 +928,10 @@
         <flows/>
         <fullName>CN_SP_Populate_Owner</fullName>
     </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>CN_Event_Prevent_delete_Flow</fullName>
+    </flowDefinitions>
     <quickActions>
         <label><!-- New Event --></label>
         <name>CN_New_Event</name>

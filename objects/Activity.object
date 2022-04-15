@@ -114,6 +114,21 @@
     </actionOverrides>
     <enableFeeds>false</enableFeeds>
     <fields>
+        <fullName>CN_Is_Overdue__c</fullName>
+        <externalId>false</externalId>
+        <formula>((ActivityDate + DurationInMinutes/60/24)+ MOD((8- WEEKDAY(ActivityDate + DurationInMinutes / 60 / 24)),7)+7) &lt;= TODAY()</formula>
+        <label>Lock</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Prevent_Delete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>When the user try to delete the overdue visit, flow to update this field  then trigger the validation Rule to prevent delete</description>
+        <externalId>false</externalId>
+        <label>Prevent Delete</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_By_when__c</fullName>
         <externalId>false</externalId>
         <label>By when</label>
