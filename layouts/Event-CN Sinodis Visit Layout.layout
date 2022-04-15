@@ -15,6 +15,10 @@
                 <field>StartDateTime</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Is_Overdue__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>IsAllDayEvent</field>
             </layoutItems>

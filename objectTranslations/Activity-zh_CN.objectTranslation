@@ -15,6 +15,14 @@
         <name>start_date_activity</name>
     </fields>
     <fields>
+        <label>记录已锁定</label>
+        <name>CN_Is_Overdue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prevent Delete --></label>
+        <name>CN_Prevent_Delete__c</name>
+    </fields>
+    <fields>
         <label>计划下次拜访</label>
         <name>CN_By_when__c</name>
         <picklistValues>
