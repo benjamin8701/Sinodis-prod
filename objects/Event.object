@@ -664,6 +664,41 @@
     <searchLayouts/>
     <sharingModel>Private</sharingModel>
     <validationRules>
+        <fullName>CN_Event_Prevent_Delete_Overdue_Visit</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  RecordType.DeveloperName == &apos;CN_Visit&apos;,
+  CN_Is_Overdue__c,
+  CN_Prevent_Delete__c 
+)</errorConditionFormula>
+        <errorMessage>You are not allowed to delete the visit which was locked.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Event_Prevent_Edit_EndDate_Visit</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  RecordType.DeveloperName == &apos;CN_Visit&apos;,
+  ISCHANGED( CN_End_Date__c ),
+  CN_Is_Overdue__c
+)</errorConditionFormula>
+        <errorMessage>The visit was locked, you are not allowed to edit the End Date Time to two weeks earlier.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Event_Prevent_Edit_Overdue_Visit</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  RecordType.DeveloperName == &apos;CN_Visit&apos;,
+  PRIORVALUE(CN_Is_Overdue__c)
+)</errorConditionFormula>
+        <errorMessage>You are not allowed to edit or create the visit which was locked.</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>CN_Event_Check_Status</fullName>
         <active>true</active>
         <errorConditionFormula>AND(

@@ -17,6 +17,14 @@
         <startsWith>Consonant</startsWith>
     </fields>
     <fields>
+        <label><!-- Lock --></label>
+        <name>CN_Is_Overdue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prevent Delete --></label>
+        <name>CN_Prevent_Delete__c</name>
+    </fields>
+    <fields>
         <label><!-- By when --></label>
         <name>CN_By_when__c</name>
         <picklistValues>

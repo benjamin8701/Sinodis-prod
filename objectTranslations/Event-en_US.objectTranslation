@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Lock --></label>
+        <name>CN_Is_Overdue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prevent Delete --></label>
+        <name>CN_Prevent_Delete__c</name>
+    </fields>
+    <layouts>
+        <layout>CN Sinodis Visit Layout</layout>
+        <sections>
+            <label><!-- Calendar Details --></label>
+            <section>Calendar Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Follow-up Visit --></label>
+            <section>Follow-up Visit</section>
+        </sections>
+        <sections>
+            <label><!-- Infomation --></label>
+            <section>Infomation</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to delete the visit which was locked. --></errorMessage>
+        <name>CN_Event_Prevent_Delete_Overdue_Visit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The visit was locked, you are not allowed to edit the End Date Time to two weeks earlier. --></errorMessage>
+        <name>CN_Event_Prevent_Edit_EndDate_Visit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to edit or create the visit which was locked. --></errorMessage>
+        <name>CN_Event_Prevent_Edit_Overdue_Visit</name>
+    </validationRules>
+</CustomObjectTranslation>

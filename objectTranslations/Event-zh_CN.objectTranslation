@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
+        <label><!-- Lock --></label>
+        <name>CN_Is_Overdue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prevent Delete --></label>
+        <name>CN_Prevent_Delete__c</name>
+    </fields>
+    <fields>
         <label><!-- By when --></label>
         <name>CN_By_when__c</name>
     </fields>
@@ -125,5 +133,17 @@
     <validationRules>
         <errorMessage>您不允许修改计划下次拜访字段。</errorMessage>
         <name>CN_Event_Prevent_Edit_ByWhen</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不允许删除已经锁定的拜访。</errorMessage>
+        <name>CN_Event_Prevent_Delete_Overdue_Visit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>记录已锁定，两周之前的记录不可更改。</errorMessage>
+        <name>CN_Event_Prevent_Edit_EndDate_Visit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不允许编辑或创建已经锁定的拜访。</errorMessage>
+        <name>CN_Event_Prevent_Edit_Overdue_Visit</name>
     </validationRules>
 </CustomObjectTranslation>
