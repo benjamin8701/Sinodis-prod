@@ -2408,9 +2408,44 @@
                     <label>Wholesaler</label>
                 </value>
                 <value>
-                    <fullName>Secondary Wholesaler</fullName>
+                    <fullName>BAPA - LKA</fullName>
                     <default>false</default>
-                    <label>Secondary Wholesaler</label>
+                    <label>BAPA - LKA</label>
+                </value>
+                <value>
+                    <fullName>BAPA - SMALL</fullName>
+                    <default>false</default>
+                    <label>BAPA - SMALL</label>
+                </value>
+                <value>
+                    <fullName>Wholesaler-Golden</fullName>
+                    <default>false</default>
+                    <label>Wholesaler-Golden</label>
+                </value>
+                <value>
+                    <fullName>Wholesaler-Silver</fullName>
+                    <default>false</default>
+                    <label>Wholesaler-Silver</label>
+                </value>
+                <value>
+                    <fullName>Wholesaler-Bronze</fullName>
+                    <default>false</default>
+                    <label>Wholesaler-Bronze</label>
+                </value>
+                <value>
+                    <fullName>Wholesaler-EC</fullName>
+                    <default>false</default>
+                    <label>Wholesaler-EC</label>
+                </value>
+                <value>
+                    <fullName>Wholesaler-Normal</fullName>
+                    <default>false</default>
+                    <label>Wholesaler-Normal</label>
+                </value>
+                <value>
+                    <fullName>Wholesaler-Second</fullName>
+                    <default>false</default>
+                    <label>Wholesaler-Second</label>
                 </value>
                 <value>
                     <fullName>BAPA</fullName>
@@ -2491,6 +2526,12 @@
                     <label>Retailor</label>
                 </value>
                 <value>
+                    <fullName>Secondary Wholesaler</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Secondary Wholesaler</label>
+                </value>
+                <value>
                     <fullName>Theme Park</fullName>
                     <default>false</default>
                     <isActive>false</isActive>
@@ -2556,6 +2597,14 @@
             <valueSettings>
                 <controllingFieldValue>BAPA</controllingFieldValue>
                 <valueName>Premium Ice cream</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BAPA</controllingFieldValue>
+                <valueName>BAPA - LKA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BAPA</controllingFieldValue>
+                <valueName>BAPA - SMALL</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Restaurant</controllingFieldValue>
@@ -2694,16 +2743,36 @@
                 <valueName>Wholesaler</valueName>
             </valueSettings>
             <valueSettings>
-                <controllingFieldValue>Retailor</controllingFieldValue>
-                <valueName>Secondary Wholesaler</valueName>
-            </valueSettings>
-            <valueSettings>
                 <controllingFieldValue>Wholesaler</controllingFieldValue>
                 <valueName>Convenience Store</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Wholesaler</controllingFieldValue>
                 <valueName>Supermarket</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Wholesaler</controllingFieldValue>
+                <valueName>Wholesaler-Golden</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Wholesaler</controllingFieldValue>
+                <valueName>Wholesaler-Silver</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Wholesaler</controllingFieldValue>
+                <valueName>Wholesaler-Bronze</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Wholesaler</controllingFieldValue>
+                <valueName>Wholesaler-EC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Wholesaler</controllingFieldValue>
+                <valueName>Wholesaler-Normal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Wholesaler</controllingFieldValue>
+                <valueName>Wholesaler-Second</valueName>
             </valueSettings>
         </valueSet>
     </fields>
@@ -7526,11 +7595,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                     <label>QSR - Chinese</label>
                 </value>
                 <value>
-                    <fullName>Secondary Wholesaler</fullName>
-                    <default>false</default>
-                    <label>Secondary Wholesaler</label>
-                </value>
-                <value>
                     <fullName>Convenience Store</fullName>
                     <default>false</default>
                     <label>Convenience Store</label>
@@ -7544,6 +7608,46 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                     <fullName>Wholesaler</fullName>
                     <default>false</default>
                     <label>Wholesaler</label>
+                </value>
+                <value>
+                    <fullName>BAPA - LKA</fullName>
+                    <default>false</default>
+                    <label>BAPA - LKA</label>
+                </value>
+                <value>
+                    <fullName>BAPA - SMALL</fullName>
+                    <default>false</default>
+                    <label>BAPA - SMALL</label>
+                </value>
+                <value>
+                    <fullName>Wholesaler-Golden</fullName>
+                    <default>false</default>
+                    <label>Wholesaler-Golden</label>
+                </value>
+                <value>
+                    <fullName>Wholesaler-Silver</fullName>
+                    <default>false</default>
+                    <label>Wholesaler-Silver</label>
+                </value>
+                <value>
+                    <fullName>Wholesaler-Bronze</fullName>
+                    <default>false</default>
+                    <label>Wholesaler-Bronze</label>
+                </value>
+                <value>
+                    <fullName>Wholesaler-EC</fullName>
+                    <default>false</default>
+                    <label>Wholesaler-EC</label>
+                </value>
+                <value>
+                    <fullName>Wholesaler-Normal</fullName>
+                    <default>false</default>
+                    <label>Wholesaler-Normal</label>
+                </value>
+                <value>
+                    <fullName>Wholesaler-Second</fullName>
+                    <default>false</default>
+                    <label>Wholesaler-Second</label>
                 </value>
                 <value>
                     <fullName>BAPA</fullName>
@@ -7612,6 +7716,12 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                     <label>Retailor</label>
                 </value>
                 <value>
+                    <fullName>Secondary Wholesaler</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Secondary Wholesaler</label>
+                </value>
+                <value>
                     <fullName>Theme Park</fullName>
                     <default>false</default>
                     <isActive>false</isActive>
@@ -7653,6 +7763,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <valueSettings>
                 <controllingFieldValue>BAPA</controllingFieldValue>
                 <valueName>Premium Ice cream</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BAPA</controllingFieldValue>
+                <valueName>BAPA - LKA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BAPA</controllingFieldValue>
+                <valueName>BAPA - SMALL</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Restaurant</controllingFieldValue>
@@ -7760,11 +7878,31 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Wholesaler</controllingFieldValue>
-                <valueName>Secondary Wholesaler</valueName>
+                <valueName>Wholesaler</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Wholesaler</controllingFieldValue>
-                <valueName>Wholesaler</valueName>
+                <valueName>Wholesaler-Golden</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Wholesaler</controllingFieldValue>
+                <valueName>Wholesaler-Silver</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Wholesaler</controllingFieldValue>
+                <valueName>Wholesaler-Bronze</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Wholesaler</controllingFieldValue>
+                <valueName>Wholesaler-EC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Wholesaler</controllingFieldValue>
+                <valueName>Wholesaler-Normal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Wholesaler</controllingFieldValue>
+                <valueName>Wholesaler-Second</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Retailor</controllingFieldValue>
@@ -9352,6 +9490,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -9480,15 +9626,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10870,6 +11036,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -10998,15 +11172,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12030,6 +12224,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -12158,15 +12360,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13548,6 +13770,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -13676,15 +13906,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -14708,6 +14958,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -14836,15 +15094,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16226,6 +16504,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -16354,15 +16640,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -17386,6 +17692,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -17514,15 +17828,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18904,6 +19238,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -19032,15 +19374,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -20064,6 +20426,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -20192,15 +20562,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -21582,6 +21972,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -21710,15 +22108,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -22741,6 +23159,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -22869,15 +23295,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -24271,6 +24717,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -24399,15 +24853,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -25430,6 +25904,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -25558,15 +26040,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -26960,6 +27462,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -27088,15 +27598,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -28120,6 +28650,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -28248,15 +28786,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -29638,6 +30196,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -29766,15 +30332,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -30798,6 +31384,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -30926,15 +31520,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -32316,6 +32930,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -32444,15 +33066,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -33476,6 +34118,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -33604,15 +34254,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -34994,6 +35664,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -35122,15 +35800,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -36154,6 +36852,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -36282,15 +36988,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -37672,6 +38398,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -37800,15 +38534,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -38832,6 +39586,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -38960,15 +39722,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -40350,6 +41132,14 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>BAPA - LKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BAPA - SMALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA OEM</fullName>
                 <default>false</default>
             </values>
@@ -40478,15 +41268,35 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Secondary Wholesaler</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Supermarket</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Wholesaler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Golden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Second</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesaler-Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -40685,6 +41495,25 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <searchResultsAdditionalFields>OWNER.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>CN_Account_Check_Subcategory</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  RecordType.DeveloperName = &quot;CN_Update_Account_Request&quot;,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  NOT($Permission.CN_Account_Level),
+  OR(ISCHANGED( New_CN_Account_Subcategory__c ),ISNEW()),
+  OR(
+    ISPICKVAL(New_CN_Account_Subcategory__c , &apos;Wholesaler-Golden&apos;),
+    ISPICKVAL(New_CN_Account_Subcategory__c , &apos;Wholesaler-Silver&apos;),
+    ISPICKVAL(New_CN_Account_Subcategory__c , &apos;Wholesaler-Bronze&apos;),
+    ISPICKVAL(New_CN_Account_Subcategory__c , &apos;Wholesaler-Normal&apos;)
+  ) 
+)</errorConditionFormula>
+        <errorDisplayField>New_CN_Account_Subcategory__c</errorDisplayField>
+        <errorMessage>You are not allowed to select this subcategory value</errorMessage>
+    </validationRules>
     <validationRules>
         <fullName>CN_CR_Check_BU_Vaild</fullName>
         <active>true</active>
