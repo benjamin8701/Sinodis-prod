@@ -2288,6 +2288,14 @@
             <translation><!-- Airline --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>BAPA - LKA</masterLabel>
+            <translation><!-- BAPA - LKA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAPA - SMALL</masterLabel>
+            <translation><!-- BAPA - SMALL --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>BAPA OEM</masterLabel>
             <translation><!-- BAPA OEM --></translation>
         </picklistValues>
@@ -2416,16 +2424,36 @@
             <translation><!-- School --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Secondary Wholesaler</masterLabel>
-            <translation><!-- Secondary Wholesaler --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Supermarket</masterLabel>
             <translation><!-- Supermarket --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Wholesaler</masterLabel>
             <translation><!-- Wholesaler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Bronze</masterLabel>
+            <translation><!-- Wholesaler-Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-EC</masterLabel>
+            <translation><!-- Wholesaler-EC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Golden</masterLabel>
+            <translation><!-- Wholesaler-Golden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Normal</masterLabel>
+            <translation><!-- Wholesaler-Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Second</masterLabel>
+            <translation><!-- Wholesaler-Second --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Silver</masterLabel>
+            <translation><!-- Wholesaler-Silver --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -2738,6 +2766,10 @@
     <validationRules>
         <errorMessage>您选择的销售团队无效。</errorMessage>
         <name>CN_Account_Check_ST_Vaild</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不被允许选取这个子类别。</errorMessage>
+        <name>CN_Account_Check_Subcategory</name>
     </validationRules>
     <validationRules>
         <errorMessage>不允许更改送达方。</errorMessage>
