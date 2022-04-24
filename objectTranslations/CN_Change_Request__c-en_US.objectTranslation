@@ -995,6 +995,14 @@
             <translation><!-- Airline --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>BAPA - LKA</masterLabel>
+            <translation><!-- BAPA - LKA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAPA - SMALL</masterLabel>
+            <translation><!-- BAPA - SMALL --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>BAPA OEM</masterLabel>
             <translation><!-- BAPA OEM --></translation>
         </picklistValues>
@@ -1123,16 +1131,36 @@
             <translation><!-- School --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Secondary Wholesaler</masterLabel>
-            <translation><!-- Secondary Wholesaler --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Supermarket</masterLabel>
             <translation><!-- Supermarket --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Wholesaler</masterLabel>
             <translation><!-- Wholesaler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Bronze</masterLabel>
+            <translation><!-- Wholesaler-Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-EC</masterLabel>
+            <translation><!-- Wholesaler-EC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Golden</masterLabel>
+            <translation><!-- Wholesaler-Golden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Normal</masterLabel>
+            <translation><!-- Wholesaler-Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Second</masterLabel>
+            <translation><!-- Wholesaler-Second --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Silver</masterLabel>
+            <translation><!-- Wholesaler-Silver --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -3339,6 +3367,14 @@
             <translation><!-- Airline --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>BAPA - LKA</masterLabel>
+            <translation><!-- BAPA - LKA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAPA - SMALL</masterLabel>
+            <translation><!-- BAPA - SMALL --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>BAPA OEM</masterLabel>
             <translation><!-- BAPA OEM --></translation>
         </picklistValues>
@@ -3467,16 +3503,36 @@
             <translation><!-- School --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Secondary Wholesaler</masterLabel>
-            <translation><!-- Secondary Wholesaler --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Supermarket</masterLabel>
             <translation><!-- Supermarket --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Wholesaler</masterLabel>
             <translation><!-- Wholesaler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Bronze</masterLabel>
+            <translation><!-- Wholesaler-Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-EC</masterLabel>
+            <translation><!-- Wholesaler-EC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Golden</masterLabel>
+            <translation><!-- Wholesaler-Golden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Normal</masterLabel>
+            <translation><!-- Wholesaler-Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Second</masterLabel>
+            <translation><!-- Wholesaler-Second --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler-Silver</masterLabel>
+            <translation><!-- Wholesaler-Silver --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -4063,6 +4119,10 @@
         <name>CN_Update_Ship_To_Request</name>
     </recordTypes>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to select this subcategory value --></errorMessage>
+        <name>CN_Account_Check_Subcategory</name>
+    </validationRules>
     <validationRules>
         <errorMessage><!-- The Business Unit that be choice is not valid. --></errorMessage>
         <name>CN_CR_Check_BU_Vaild</name>

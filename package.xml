@@ -595,6 +595,7 @@
         <name>PathAssistant</name>
     </types>
     <types>
+        <members>CN_Account_Level_Manager</members>
         <members>CN_Account_Team_Member_Manager</members>
         <members>CN_CCE_Lead_Qualifier</members>
         <members>CN_Campaign_Manager</members>
@@ -609,6 +610,7 @@
         <members>CN_Marketing_View_Price_Book</members>
         <members>CN_Product_Edit_Description</members>
         <members>CN_Promotion_Manager</members>
+        <members>CN_SalesMDM_Account_Approval</members>
         <name>PermissionSet</name>
     </types>
     <types>
