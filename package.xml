@@ -618,6 +618,10 @@
         <name>PermissionSetGroup</name>
     </types>
     <types>
+        <members>CN_CCE_Sales_MDM</members>
+        <name>Group</name>
+    </types>
+    <types>
         <members>Admin</members>
         <members>CN C%2FS</members>
         <members>CN CCE</members>
@@ -635,6 +639,7 @@
         <members>CN Sales MDM</members>
         <members>CN Sales Manager</members>
         <members>System Integration</members>
+		<members>CN CCE Sales MDM</members>
         <name>Profile</name>
     </types>
     <types>
