@@ -1135,7 +1135,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
         <errorConditionFormula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-  $Profile.Name = &quot;CN Sales MDM&quot;,
+  OR($Profile.Name = &quot;CN Sales MDM&quot;,$Profile.Name = &quot;CN CCE Sales MDM&quot;),
  ISCHANGED(OwnerId),
   Owner:User.Profile.Name != &quot;CN Sales&quot;,
   Owner:User.Profile.Name != &quot;CN Sales Manager&quot;,
@@ -1150,7 +1150,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
         <errorConditionFormula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
- $Profile.Name = &quot;CN Sales MDM&quot;,
+ OR($Profile.Name = &quot;CN Sales MDM&quot;,$Profile.Name = &quot;CN CCE Sales MDM&quot;),
  ISCHANGED(Status ),
  NOT(ISPICKVAL( Status , &quot;MKT Qualified&quot;)) 
 )</errorConditionFormula>
