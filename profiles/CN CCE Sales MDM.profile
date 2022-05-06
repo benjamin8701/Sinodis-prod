@@ -916,6 +916,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Sample_Request__c.CN_Account_Route_to_Mar
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.CN_Account_Layer_for_Report__c</field>
         <readable>true</readable>
     </fieldPermissions>

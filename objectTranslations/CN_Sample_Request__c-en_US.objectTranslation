@@ -30,6 +30,10 @@
         <relationshipLabel><!-- Sample Requests (Account Name) --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Account Route to Market --></label>
+        <name>CN_Account_Route_to_Market__c</name>
+    </fields>
+    <fields>
         <label><!-- Approved Date --></label>
         <name>CN_Approved_Date__c</name>
     </fields>

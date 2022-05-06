@@ -2782,6 +2782,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Sample_Request__c.CN_Account_Route_to_Market__c</field>
+        readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Change_Request__c.CN_Is_Auto_Approved__c</field>
         <readable>false</readable>
     </fieldPermissions>
