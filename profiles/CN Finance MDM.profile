@@ -2687,6 +2687,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Sample_Request__c.CN_Account_Route_to_Market__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Change_Request__c.CN_Contact_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>

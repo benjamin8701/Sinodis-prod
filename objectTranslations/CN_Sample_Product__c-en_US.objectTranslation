@@ -264,4 +264,8 @@
         <name>CN_Sample_Product</name>
     </recordTypes>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Wholepack Sample&apos;s deliver status is only updated by Sales Person or CCE --></errorMessage>
+        <name>CN_Check_Wholepack_Deliver_Status_Edit</name>
+    </validationRules>
 </CustomObjectTranslation>

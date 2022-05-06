@@ -248,4 +248,8 @@
         </sections>
     </layouts>
     <nameFieldLabel>样品名称</nameFieldLabel>
+    <validationRules>
+        <errorMessage>正装样品的送达信息仅供销售人员或CCE填写</errorMessage>
+        <name>CN_Check_Wholepack_Deliver_Status_Edit</name>
+    </validationRules>
 </CustomObjectTranslation>
