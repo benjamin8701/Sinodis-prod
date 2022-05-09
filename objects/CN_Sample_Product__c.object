@@ -1087,7 +1087,8 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
  NOT(OR(
    $Profile.Name = &quot;CN Sales&quot;,
    $Profile.Name = &quot;CN Sales Lead&quot;,
-   $Profile.Name = &quot;CN Sales Manager&quot;
+   $Profile.Name = &quot;CN Sales Manager&quot;,
+   CONTAINS($Profile.Name, &quot;CCE&quot;)
  )),
  NOT(CN_Is_Repack_Sample__c ),
  ISCHANGED(CN_Status_of_Delivery__c  ) ||  ISCHANGED( CN_Delivery_Comments__c ) 
