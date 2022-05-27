@@ -1653,6 +1653,19 @@ IF(
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Customer_ID__c</fullName>
+        <description>18 digits</description>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>18 digits</inlineHelpText>
+        <label>Customer ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Customer_Journey__c</fullName>
         <externalId>false</externalId>
         <label>Customer Journey</label>
@@ -5334,6 +5347,46 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Visit_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Visit Frequency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A-twice per week</fullName>
+                    <default>false</default>
+                    <label>A-一周两次</label>
+                </value>
+                <value>
+                    <fullName>B-once per week</fullName>
+                    <default>false</default>
+                    <label>B-一周一次</label>
+                </value>
+                <value>
+                    <fullName>C-once every two weeks</fullName>
+                    <default>false</default>
+                    <label>C-两周一次</label>
+                </value>
+                <value>
+                    <fullName>D-once per month</fullName>
+                    <default>false</default>
+                    <label>D-一月一次</label>
+                </value>
+                <value>
+                    <fullName>E-once every two months</fullName>
+                    <default>false</default>
+                    <label>E-两月一次</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>CurrencyIsoCode</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -7474,6 +7527,29 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Visit_Frequency__c</picklist>
+            <values>
+                <fullName>A-twice per week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B-once per week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C-once every two weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D-once per month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-once every two months</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Industry</picklist>
             <values>
                 <fullName>Agriculture</fullName>
@@ -9565,6 +9641,29 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Success</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Visit_Frequency__c</picklist>
+            <values>
+                <fullName>A-twice per week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B-once per week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C-once every two weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D-once per month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-once every two months</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11664,6 +11763,29 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Visit_Frequency__c</picklist>
+            <values>
+                <fullName>A-twice per week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B-once per week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C-once every two weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D-once per month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-once every two months</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Industry</picklist>
             <values>
                 <fullName>Agriculture</fullName>
@@ -13755,6 +13877,29 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Visit_Frequency__c</picklist>
+            <values>
+                <fullName>A-twice per week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B-once per week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C-once every two weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D-once per month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-once every two months</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Industry</picklist>
             <values>
                 <fullName>Agriculture</fullName>
@@ -15834,6 +15979,29 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Success</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Visit_Frequency__c</picklist>
+            <values>
+                <fullName>A-twice per week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B-once per week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C-once every two weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D-once per month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-once every two months</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -17933,6 +18101,29 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_Visit_Frequency__c</picklist>
+            <values>
+                <fullName>A-twice per week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B-once per week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C-once every two weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D-once per month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-once every two months</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Industry</picklist>
             <values>
                 <fullName>Agriculture</fullName>
@@ -20019,6 +20210,29 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Success</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Visit_Frequency__c</picklist>
+            <values>
+                <fullName>A-twice per week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B-once per week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C-once every two weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D-once per month</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-once every two months</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

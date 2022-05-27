@@ -713,6 +713,11 @@
         <name>CN_Customer_Group__c</name>
     </fields>
     <fields>
+        <help><!-- 18 digits --></help>
+        <label><!-- Customer ID --></label>
+        <name>CN_Customer_ID__c</name>
+    </fields>
+    <fields>
         <label><!-- Customer Journey --></label>
         <name>CN_Customer_Journey__c</name>
         <picklistValues>
@@ -2569,6 +2574,30 @@
         <help><!-- Please fill with city and street --></help>
         <label><!-- Visit Address(CN) --></label>
         <name>CN_Visit_Addr_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Frequency --></label>
+        <name>CN_Visit_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>A-一周两次</masterLabel>
+            <translation>A-Twice a Week</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-一周一次</masterLabel>
+            <translation>B-Once a Week</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-两周一次</masterLabel>
+            <translation>C-Biweekly</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D-一月一次</masterLabel>
+            <translation>D-Once a Month</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-两月一次</masterLabel>
+            <translation>E-Bimonthly</translation>
+        </picklistValues>
     </fields>
     <layouts>
         <layout>CN Account Direct  Approved</layout>

@@ -14,7 +14,7 @@
     <fieldUpdates>
         <fullName>CN_Document_Populate_FinMDM</fullName>
         <field>CN_Finance_MDM_Email__c</field>
-        <formula>CN_Account__r.CN_Approver_5__r.Email</formula>
+        <formula>CN_Account__r.CN_Approver_6__r.Email</formula>
         <name>CN_Document_Populate_FinMDM</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
