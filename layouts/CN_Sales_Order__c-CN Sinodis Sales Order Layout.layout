@@ -242,9 +242,9 @@
         <fields>NAME</fields>
         <fields>CN_Product_Code__c</fields>
         <fields>CN_SKU_Description_CN__c</fields>
+        <fields>CN_Unit_Price__c</fields>
         <fields>CN_SKU_Description_EN__c</fields>
         <fields>CN_Order_Quantity__c</fields>
-        <fields>CN_Unit_Price__c</fields>
         <fields>CN_Net_Value__c</fields>
         <fields>CN_Total_Amount_With_Tax__c</fields>
         <fields>CN_Overall_Status__c</fields>
