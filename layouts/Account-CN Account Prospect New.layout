@@ -47,6 +47,10 @@
                 <behavior>Edit</behavior>
                 <field>CN_Number_Of_Stores__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>CN_Visit_Frequency__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
