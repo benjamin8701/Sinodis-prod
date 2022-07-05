@@ -158,6 +158,10 @@
         <name>CN_Effective_Duration__c</name>
     </fields>
     <fields>
+        <label><!-- Expiration Date --></label>
+        <name>CN_FinalPDF_Expiration_Date__c</name>
+    </fields>
+    <fields>
         <label><!-- Finance Acceptance Item Count --></label>
         <name>CN_Finance_Acceptance_Item_Count__c</name>
     </fields>
@@ -206,6 +210,10 @@
         <name>CN_Latest_Approver__c</name>
     </fields>
     <fields>
+        <label><!-- Expiration date (shown in the quotation) --></label>
+        <name>CN_PDF_Expiration_Date__c</name>
+    </fields>
+    <fields>
         <label><!-- Please Confirm --></label>
         <name>CN_Please_Confirm__c</name>
     </fields>
@@ -233,6 +241,10 @@
         <label><!-- Sales Person Name --></label>
         <name>CN_Sales_Person_Name__c</name>
         <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Person SalesTeam Name --></label>
+        <name>CN_Sales_Person_SalesTeam_Name__c</name>
     </fields>
     <fields>
         <label><!-- Sales Person --></label>
@@ -335,7 +347,7 @@
         <name>CN_Quote_New</name>
     </recordTypes>
     <validationRules>
-        <errorMessage><!-- It&apos;s not allowed to edit Quote when it&apos;s Ready for Appproval. --></errorMessage>
+        <errorMessage><!-- It&apos;s not allowed to edit Quote when it&apos;s Ready for Approval. --></errorMessage>
         <name>CN_Prevent_Edit_Ready</name>
     </validationRules>
     <validationRules>
@@ -349,6 +361,10 @@
     <validationRules>
         <errorMessage><!-- You can&apos;t create new quote for the opportunity whose stage is not Quote/Negotiation. --></errorMessage>
         <name>CN_Quote_Check_Opp_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expiration date (shown in the quotation) should be later than Effective Date and earlier than Expiration Date. --></errorMessage>
+        <name>CN_Quote_Check_PDFExpirationDate</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- 第一个审批人不能为空 --></errorMessage>

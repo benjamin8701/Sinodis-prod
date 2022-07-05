@@ -414,15 +414,12 @@
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   NOT(ISPICKVAL(CN_Channel__c,&apos;LP&apos;)),
   OR(
-    CN_Discount_Price__c = 0,
-    ISBLANK(CN_Discount_Price__c ),
-    CN_Max_Discount_Price__c = 0,
-    ISBLANK(CN_Max_Discount_Price__c),
     CN_UnitPrice__c = 0,
     ISBLANK(CN_UnitPrice__c)
   )
 )</errorConditionFormula>
-        <errorMessage>Please input Channel Price, Discount Price and Max Discount Price.</errorMessage>
+        <errorDisplayField>CN_UnitPrice__c</errorDisplayField>
+        <errorMessage>Please input Channel Price.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_PPBE_Channel_Prevent_ListPrice</fullName>
