@@ -20,7 +20,7 @@ public class CN_Quote_Split_LC_Ctrl {
                                      Product2Id,CN_Promo_Price_P1__c,CN_Promo_Price_P2__c,CN_Promo_Price_P3__c,
                                      CN_Promo_Price_P4__c,CN_Promotion_Member__c,CN_Promotion_Price__c,
                                      Quantity,QuoteId,CN_Rate_Unit_API__c,UnitPrice,Subtotal,CN_Tax__c,TotalPrice,
-                                     PricebookEntryId                                     
+                                     PricebookEntryId,cn_qty_per_ctn_pdf__c,cn_origin_pdf__c                                     
                                      From QuoteLineItem 
                                      Where QuoteId = :QuoteId
                                      And CN_Is_Approval_Completed__c = true];

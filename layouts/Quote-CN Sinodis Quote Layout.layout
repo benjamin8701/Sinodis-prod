@@ -51,6 +51,10 @@
                 <field>ExpirationDate</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_PDF_Expiration_Date__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CN_Finance_Notify_DateTime__c</field>
             </layoutItems>

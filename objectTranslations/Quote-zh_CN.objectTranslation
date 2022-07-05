@@ -171,6 +171,10 @@
         <name>CN_Effective_Duration__c</name>
     </fields>
     <fields>
+        <label>失效日期</label>
+        <name>CN_FinalPDF_Expiration_Date__c</name>
+    </fields>
+    <fields>
         <label>财务接受数量</label>
         <name>CN_Finance_Acceptance_Item_Count__c</name>
     </fields>
@@ -219,6 +223,10 @@
         <name>CN_Latest_Approver__c</name>
     </fields>
     <fields>
+        <label>到期日期(报价单显示)</label>
+        <name>CN_PDF_Expiration_Date__c</name>
+    </fields>
+    <fields>
         <label><!-- Please Confirm --></label>
         <name>CN_Please_Confirm__c</name>
     </fields>
@@ -246,6 +254,10 @@
         <label>销售人员</label>
         <name>CN_Sales_Person_Name__c</name>
         <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Person SalesTeam Name --></label>
+        <name>CN_Sales_Person_SalesTeam_Name__c</name>
     </fields>
     <fields>
         <label>销售人员</label>
@@ -369,6 +381,10 @@
     <validationRules>
         <errorMessage>您不能为不处于Quote/Negotiation阶段的业务机会创建报价。</errorMessage>
         <name>CN_Quote_Check_Opp_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>到期日期(报价单显示)应晚于生效日期且早于失效日期。</errorMessage>
+        <name>CN_Quote_Check_PDFExpirationDate</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- 第一个审批人不能为空 --></errorMessage>

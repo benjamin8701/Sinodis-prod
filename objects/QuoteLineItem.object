@@ -160,19 +160,7 @@
  IF(
     UnitPrice &gt;=  CN_Channel_Price__c,
     $Label.CN_Quote_Approve_Type_1,
-    IF(
-       CN_Discount_Price__c &lt;= UnitPrice &amp;&amp; UnitPrice &lt; CN_Channel_Price__c,
-       $Label.CN_Quote_Approve_Type_2,
-       IF(
-           CN_Max_Discount_Price__c &lt;= UnitPrice &amp;&amp; UnitPrice &lt; CN_Discount_Price__c,
-           $Label.CN_Quote_Approve_Type_3,
-           IF(
-              UnitPrice &lt; CN_Max_Discount_Price__c,
-              $Label.CN_Quote_Approve_Type_4,
-              &quot;&quot;
-           )
-       )
-    )
+    $Label.CN_Quote_Approve_Type_3
  )
 )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -209,23 +197,7 @@
         <formula>IF(
  CN_Is_Applied_Promotion__c ,
   0,
- IF(
-    UnitPrice &gt;=  CN_Channel_Price__c,
-    1,
-    IF(
-       CN_Discount_Price__c &lt;= UnitPrice &amp;&amp; UnitPrice &lt; CN_Channel_Price__c,
-       2,
-       IF(
-           CN_Max_Discount_Price__c &lt;= UnitPrice &amp;&amp; UnitPrice &lt; CN_Discount_Price__c,
-           3,
-           IF(
-              UnitPrice &lt; CN_Max_Discount_Price__c,
-              4,
-              99
-           )
-       )
-    )
- )
+ IF(UnitPrice &gt;=  CN_Channel_Price__c,1,3)
 )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Approve Type Code</label>
