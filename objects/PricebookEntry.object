@@ -384,7 +384,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
     </validationRules>
     <validationRules>
         <fullName>CN_PBE_Channel_Check_Discount</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),

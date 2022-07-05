@@ -9205,6 +9205,11 @@ Qiuchen调整过，不是单纯的clone。能看到更多的字段，只有Objec
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Quote.CN_FinalPDF_Expiration_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Quote.CN_Finance_Acceptance_Item_Count__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -9265,6 +9270,11 @@ Qiuchen调整过，不是单纯的clone。能看到更多的字段，只有Objec
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Quote.CN_PDF_Expiration_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Quote.CN_Please_Confirm__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -9296,6 +9306,11 @@ Qiuchen调整过，不是单纯的clone。能看到更多的字段，只有Objec
     <fieldPermissions>
         <editable>true</editable>
         <field>Quote.CN_Sales_Person_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Quote.CN_Sales_Person_SalesTeam_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

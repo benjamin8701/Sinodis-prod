@@ -253,7 +253,11 @@ public without sharing class CN_Chefs_Assigned_Chef_UT_OFF_Handler implements Tr
                 CN_Chef_UT__c chefUT = new CN_Chef_UT__c();
                 chefUT.RecordTypeId = chefUTRTID;
                 chefUT.CN_Year__c = year;
-                chefUT.CN_Month__c = month.replace('0', '');
+                if('10'.equals(month)){
+					chefUT.CN_Month__c = month;
+				}else{
+					chefUT.CN_Month__c = month.replace('0', '');
+				}
                 chefUT.CN_Description__c = '';
                 chefUT.CN_Working_Days__c = 0;
                 chefUTInsertList.add(chefUT);
