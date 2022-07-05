@@ -799,7 +799,6 @@ SAP传的是编号</description>
         <columns>CN_Target_Month__c</columns>
         <columns>CN_Target_Sales_Person__c</columns>
         <columns>Target_Amount__c</columns>
-        <columns>OBJECT_ID</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>RECORDTYPE</field>
