@@ -38,10 +38,6 @@
         <label>Sales Price</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>UnitPrice</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CN_Unit_of_Measure__c</field>
             </layoutItems>
@@ -52,8 +48,8 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Sales_Price_with_Tax__c</field>
+                <behavior>Required</behavior>
+                <field>UnitPrice</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -127,12 +123,8 @@
         <label>Price Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_List_Price__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Discount_Price__c</field>
+                <behavior>Edit</behavior>
+                <field>CN_List_Price_VAT__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -141,12 +133,8 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Channel_Price__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Max_Discount_Price__c</field>
+                <behavior>Edit</behavior>
+                <field>CN_Channel_Price_VAT__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -228,14 +216,22 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+    <multilineLayoutFields>CN_Line_Item_Number__c</multilineLayoutFields>
     <multilineLayoutFields>Product2Id</multilineLayoutFields>
     <multilineLayoutFields>Quantity</multilineLayoutFields>
-    <multilineLayoutFields>UnitPrice</multilineLayoutFields>
     <multilineLayoutFields>CN_Pricing_Unit__c</multilineLayoutFields>
     <multilineLayoutFields>CN_Unit_of_Measure__c</multilineLayoutFields>
+    <multilineLayoutFields>UnitPrice</multilineLayoutFields>
     <multilineLayoutFields>CN_Tax__c</multilineLayoutFields>
-    <multilineLayoutFields>CN_List_Price__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Channel_Price_VAT__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_List_Price_VAT__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Approver_Required__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Approval_Status__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Commets_for_Approver__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Customer_Acceptance__c</multilineLayoutFields>
+    <multilineLayoutFields>CN_Denied_Reason__c</multilineLayoutFields>
     <multilineLayoutFields>CN_Finance_Acceptance__c</multilineLayoutFields>
+    <multilineLayoutFields>Description</multilineLayoutFields>
     <multilineLayoutFields>QuoteId</multilineLayoutFields>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>

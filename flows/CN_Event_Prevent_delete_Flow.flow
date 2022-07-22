@@ -47,12 +47,12 @@
             <field>RecordTypeId</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>0121e0000007StPAAU</stringValue>
+                <stringValue>0125h000000MQnuAAG</stringValue>
             </value>
         </filters>
         <object>Event</object>
         <recordTriggerType>Delete</recordTriggerType>
         <triggerType>RecordBeforeDelete</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
 </Flow>

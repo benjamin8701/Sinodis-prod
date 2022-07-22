@@ -83,6 +83,10 @@
         <name>CN_Approver_Required__c</name>
     </fields>
     <fields>
+        <label><!-- Channel Price(VAT) --></label>
+        <name>CN_Channel_Price_VAT__c</name>
+    </fields>
+    <fields>
         <label><!-- ChannelPrice --></label>
         <name>CN_Channel_Price__c</name>
     </fields>
@@ -151,6 +155,10 @@
         <name>CN_From_Splited__c</name>
     </fields>
     <fields>
+        <label><!-- IF Flow update Sales Price --></label>
+        <name>CN_IF_Flow_update_Sales_Price__c</name>
+    </fields>
+    <fields>
         <label><!-- Is Applied Promotion --></label>
         <name>CN_Is_Applied_Promotion__c</name>
     </fields>
@@ -181,6 +189,10 @@
     <fields>
         <label>行项目编号</label>
         <name>CN_Line_Item_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Price(VAT) --></label>
+        <name>CN_List_Price_VAT__c</name>
     </fields>
     <fields>
         <label><!-- List Price --></label>
@@ -452,6 +464,10 @@
     <validationRules>
         <errorMessage>报价处于审批拒绝状态不可编辑报价项目审批状态。</errorMessage>
         <name>CN_QLI_Prevent_Edit_Reject</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不允许在增加产品的时候修改销售价格。</errorMessage>
+        <name>CN_Quote_Item_Check_Sales_Price</name>
     </validationRules>
     <validationRules>
         <errorMessage>报价已经开始审批或者审批后不许变更促销活动。</errorMessage>

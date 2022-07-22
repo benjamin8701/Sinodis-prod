@@ -229,6 +229,17 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Qty_per_Carton_PDF__c</fullName>
+        <description>Mass upload this field and display at Quote PDF</description>
+        <externalId>false</externalId>
+        <label>Qty per Carton PDF</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Qty_per_Carton__c</fullName>
         <externalId>false</externalId>
         <label>Qty per Carton</label>
