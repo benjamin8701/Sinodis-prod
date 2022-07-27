@@ -8945,6 +8945,11 @@ Qiuchen调整过，不是单纯的clone。能看到更多的字段，只有Objec
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Product2.CN_Qty_per_Carton_PDF__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Product2.CN_Qty_per_Carton__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -9485,6 +9490,11 @@ Qiuchen调整过，不是单纯的clone。能看到更多的字段，只有Objec
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>QuoteLineItem.CN_Channel_Price_VAT__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>QuoteLineItem.CN_Channel_Price__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -9549,6 +9559,11 @@ Qiuchen调整过，不是单纯的clone。能看到更多的字段，只有Objec
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>QuoteLineItem.CN_IF_Flow_update_Sales_Price__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>QuoteLineItem.CN_Is_Applied_Promotion__c</field>
         <readable>true</readable>
@@ -9586,6 +9601,11 @@ Qiuchen调整过，不是单纯的clone。能看到更多的字段，只有Objec
     <fieldPermissions>
         <editable>false</editable>
         <field>QuoteLineItem.CN_Line_Item_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>QuoteLineItem.CN_List_Price_VAT__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
