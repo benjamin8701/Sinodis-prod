@@ -109,7 +109,6 @@
         <fullName>CN_Quote_Line_Item_Compact_Layout</fullName>
         <fields>Product2Id</fields>
         <fields>UnitPrice</fields>
-        <fields>CN_Sales_Price_with_Tax__c</fields>
         <fields>CN_Tax__c</fields>
         <fields>CN_Valid_From_API__c</fields>
         <fields>CN_Valid_To_API__c</fields>
@@ -224,6 +223,15 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Channel_Price_VAT__c</fullName>
+        <externalId>false</externalId>
+        <label>Channel Price(VAT)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>CN_Channel_Price__c</fullName>
@@ -386,6 +394,14 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CN_IF_Flow_update_Sales_Price__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>To enable Flow(CN_Quote_Item_Populate_Price) to update sales price when create quote line item.</description>
+        <externalId>false</externalId>
+        <label>IF Flow update Sales Price</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Is_Applied_Promotion__c</fullName>
         <externalId>false</externalId>
         <formula>NOT(ISBLANK(CN_Promotion_Member__c ))</formula>
@@ -446,6 +462,15 @@
         <type>AutoNumber</type>
     </fields>
     <fields>
+        <fullName>CN_List_Price_VAT__c</fullName>
+        <externalId>false</externalId>
+        <label>List Price(VAT)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>CN_List_Price__c</fullName>
         <externalId>false</externalId>
         <label>List Price</label>
@@ -503,7 +528,7 @@
     <fields>
         <fullName>CN_Price_Before_Tax_PDF__c</fullName>
         <externalId>false</externalId>
-        <formula>UnitPrice</formula>
+        <formula>UnitPrice / ( 1 + VALUE(LEFT(CN_Tax__c,LEN(CN_Tax__c)-1))/100)</formula>
         <label>With Out Tax/税前价</label>
         <precision>18</precision>
         <required>false</required>
@@ -513,7 +538,7 @@
     <fields>
         <fullName>CN_Price_PDF__c</fullName>
         <externalId>false</externalId>
-        <formula>&quot;CNY &quot; + TEXT(ROUND(CN_Sales_Price_with_Tax__c,2)) +  BR()  +  CN_Tax__c + &quot;VAT&quot;</formula>
+        <formula>&quot;CNY &quot; + TEXT(ROUND( UnitPrice ,2))</formula>
         <label>Pirce/销售价</label>
         <required>false</required>
         <type>Text</type>
@@ -626,7 +651,7 @@
     <fields>
         <fullName>CN_Qty_per_Carton__c</fullName>
         <externalId>false</externalId>
-        <formula>Product2.CN_Qty_per_Carton__c</formula>
+        <formula>Product2.CN_Qty_per_Carton_PDF__c</formula>
         <label>Qty per Carton</label>
         <required>false</required>
         <type>Text</type>
@@ -655,7 +680,7 @@
     <fields>
         <fullName>CN_Rate_API__c</fullName>
         <externalId>false</externalId>
-        <formula>( UnitPrice /  CN_List_Price__c ) - 1</formula>
+        <formula>( UnitPrice /  ROUND((CN_List_Price__c*( 1 + VALUE(LEFT(CN_Tax__c,LEN(CN_Tax__c)-1))/100)) ,2)) - 1</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Rate</label>
         <precision>18</precision>
@@ -693,10 +718,11 @@
     </fields>
     <fields>
         <fullName>CN_Sales_Price_with_Tax__c</fullName>
+        <description>Quote.UnitPrice has changed from price without tax to price with tax, so this field was discarded.</description>
         <externalId>false</externalId>
         <formula>UnitPrice * ( 1 + VALUE(LEFT(CN_Tax__c,LEN(CN_Tax__c)-1))/100)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Sales Price(VAT)</label>
+        <label>Sales Price(VAT)_Old</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
@@ -1056,6 +1082,18 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
  ISCHANGED( CN_Approval_Status__c )
 )</errorConditionFormula>
         <errorMessage>It&apos;s not allow to change approve status when Quote is rejected.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Quote_Item_Check_Sales_Price</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  UnitPrice &lt;&gt; CN_Channel_Price__c,
+  ISNEW(),
+  NOT(CN_IF_Flow_update_Sales_Price__c)
+)</errorConditionFormula>
+        <errorMessage>It&apos;s not allow to change sales price when add product to quote.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Quote_Prevent_Edit_Promotion_Member</fullName>

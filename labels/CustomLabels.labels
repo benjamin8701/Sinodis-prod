@@ -1174,7 +1174,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>CN_Quote_Approve_Type_3</shortDescription>
-        <value>Max Discount=&lt;Sales Price&lt;Discount</value>
+        <value>Sales Price&lt;Channel Price</value>
     </labels>
     <labels>
         <fullName>CN_Quote_Approve_Type_4</fullName>
