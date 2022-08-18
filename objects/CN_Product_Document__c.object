@@ -180,6 +180,11 @@
                     <default>false</default>
                     <label>Product Formula</label>
                 </value>
+                <value>
+                    <fullName>1 Page- Unique Selling Point</fullName>
+                    <default>false</default>
+                    <label>1 Page- Unique Selling Point</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
