@@ -1454,4 +1454,17 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
 )</errorConditionFormula>
         <errorMessage>You are not allowed to edit when quote is marked as Approved.</errorMessage>
     </validationRules>
+    <validationRules>
+        <fullName>CN_Quote_Prevent_Notify_Finance</fullName>
+        <active>true</active>
+        <description>Don&apos;t allow press &quot;Notify Finance&quot; before all quote line Item customer acceptance is not blank</description>
+        <errorConditionFormula>AND(
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  RecordType.DeveloperName = &apos;CN_Quote&apos;,
+  AND(ISCHANGED(CN_Finance_Notify_DateTime__c),NOT(ISBLANK(CN_Finance_Notify_DateTime__c ))),
+  NOT(CN_Is_All_Signed__c)
+)</errorConditionFormula>
+        <errorMessage>You are not allowed to notify finance before all Quote Line Items customer acceptance is inputted</errorMessage>
+    </validationRules>
 </CustomObject>

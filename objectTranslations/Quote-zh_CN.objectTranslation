@@ -398,4 +398,8 @@
         <errorMessage>不允许更新已经审批通过的报价。</errorMessage>
         <name>CN_Quote_Prevent_Edit_Approved</name>
     </validationRules>
+    <validationRules>
+        <errorMessage>不允许在客户接受报价前通知财务。</errorMessage>
+        <name>CN_Quote_Prevent_Notify_Finance</name>
+    </validationRules>
 </CustomObjectTranslation>
