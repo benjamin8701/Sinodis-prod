@@ -378,4 +378,8 @@
         <errorMessage><!-- You are not allowed to edit when quote is marked as Approved. --></errorMessage>
         <name>CN_Quote_Prevent_Edit_Approved</name>
     </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to notify finance before all Quote Line Items customer acceptance is inputted --></errorMessage>
+        <name>CN_Quote_Prevent_Notify_Finance</name>
+    </validationRules>
 </CustomObjectTranslation>
