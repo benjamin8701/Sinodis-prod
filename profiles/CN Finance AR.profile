@@ -9177,6 +9177,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Quote.CN_Comment_PDF__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Quote.CN_Current_Approver__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -9203,6 +9208,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Quote.CN_Effective_Duration__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Quote.CN_FinalPDF_Comment__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

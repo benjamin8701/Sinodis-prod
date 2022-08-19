@@ -9180,6 +9180,11 @@ Qiuchen调整过，不是单纯的clone。能看到更多的字段，只有Objec
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Quote.CN_Comment_PDF__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Quote.CN_Current_Approver__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -9206,6 +9211,11 @@ Qiuchen调整过，不是单纯的clone。能看到更多的字段，只有Objec
     <fieldPermissions>
         <editable>false</editable>
         <field>Quote.CN_Effective_Duration__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Quote.CN_FinalPDF_Comment__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

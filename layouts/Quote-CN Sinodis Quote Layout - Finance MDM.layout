@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>CreateOrder</excludeButtons>
     <excludeButtons>CreatePdf</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -28,6 +27,10 @@
                 <behavior>Readonly</behavior>
                 <field>CN_Is_Finance_Notified__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CN_Finance_Notify_DateTime__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -51,8 +54,8 @@
                 <field>CN_PDF_Expiration_Date__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>CN_Finance_Notify_DateTime__c</field>
+                <behavior>Edit</behavior>
+                <field>CN_Comment_PDF__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -168,7 +171,7 @@
         <excludeButtons>SortQuoteLines</excludeButtons>
         <fields>QUOTE_LI.PRODUCT2</fields>
         <fields>CN_SKU_Description_CN__c</fields>
-        <fields>CN_List_Price__c</fields>
+        <fields>CN_List_Price_VAT__c</fields>
         <fields>QUOTE_LI.UNIT_PRICE</fields>
         <fields>CN_Selling_Unit__c</fields>
         <fields>CN_Rate_API__c</fields>
@@ -207,7 +210,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h1e000000pOYx</masterLabel>
+        <masterLabel>00h5h0000091vcD</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
