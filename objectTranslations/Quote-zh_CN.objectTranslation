@@ -146,6 +146,10 @@
         <relationshipLabel><!-- Quotes (GM) --></relationshipLabel>
     </fields>
     <fields>
+        <label>备注(报价单显示)</label>
+        <name>CN_Comment_PDF__c</name>
+    </fields>
+    <fields>
         <label>当前审批人</label>
         <name>CN_Current_Approver__c</name>
         <relationshipLabel><!-- Quotes (Current Approver) --></relationshipLabel>
@@ -169,6 +173,10 @@
     <fields>
         <label>生效期间</label>
         <name>CN_Effective_Duration__c</name>
+    </fields>
+    <fields>
+        <label>备注</label>
+        <name>CN_FinalPDF_Comment__c</name>
     </fields>
     <fields>
         <label>失效日期</label>

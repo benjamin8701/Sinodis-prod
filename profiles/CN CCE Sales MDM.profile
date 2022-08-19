@@ -9176,6 +9176,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Quote.CN_Comment_PDF__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Quote.CN_Current_Approver__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -9206,6 +9211,9 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Quote.CN_FinalPDF_Comment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
         <field>Quote.CN_Finance_Acceptance_Item_Count__c</field>
         <readable>true</readable>
     </fieldPermissions>
