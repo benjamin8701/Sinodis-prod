@@ -133,6 +133,10 @@
         <relationshipLabel><!-- Quotes (GM) --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Comment (shown in the quotation) --></label>
+        <name>CN_Comment_PDF__c</name>
+    </fields>
+    <fields>
         <label><!-- Current Approver --></label>
         <name>CN_Current_Approver__c</name>
         <relationshipLabel><!-- Quotes (Current Approver) --></relationshipLabel>
@@ -156,6 +160,10 @@
     <fields>
         <label><!-- Effective Duration --></label>
         <name>CN_Effective_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>CN_FinalPDF_Comment__c</name>
     </fields>
     <fields>
         <label><!-- Expiration Date --></label>

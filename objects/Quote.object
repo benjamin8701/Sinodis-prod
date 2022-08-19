@@ -426,6 +426,16 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>CN_Comment_PDF__c</fullName>
+        <externalId>false</externalId>
+        <label>Comment (shown in the quotation)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Current_Approver__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -479,6 +489,15 @@
         <formula>TEXT(CN_Effective_Date__c) + &quot; ~ &quot; +  TEXT(ExpirationDate)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Effective Duration</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_FinalPDF_Comment__c</fullName>
+        <externalId>false</externalId>
+        <formula>CN_Comment_PDF__c</formula>
+        <label>Comment</label>
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
@@ -1449,7 +1468,8 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
     ISCHANGED(Name),
     ISCHANGED(CN_Effective_Date__c),
     ISCHANGED(ExpirationDate),
-    ISCHANGED(CN_PDF_Expiration_Date__c)
+    ISCHANGED(CN_PDF_Expiration_Date__c),
+    ISCHANGED(CN_Comment_PDF__c)
   )
 )</errorConditionFormula>
         <errorMessage>You are not allowed to edit when quote is marked as Approved.</errorMessage>
