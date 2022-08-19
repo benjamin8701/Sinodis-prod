@@ -17,14 +17,6 @@
         <startsWith>Consonant</startsWith>
     </fields>
     <fields>
-        <label><!-- Lock --></label>
-        <name>CN_Is_Overdue__c</name>
-    </fields>
-    <fields>
-        <label><!-- Prevent Delete --></label>
-        <name>CN_Prevent_Delete__c</name>
-    </fields>
-    <fields>
         <label><!-- By when --></label>
         <name>CN_By_when__c</name>
         <picklistValues>
@@ -83,6 +75,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Lock --></label>
+        <name>CN_Is_Overdue__c</name>
+    </fields>
+    <fields>
         <label><!-- Meeting MInutes --></label>
         <name>CN_Meeting_MInutes__c</name>
     </fields>
@@ -134,6 +130,10 @@
         <label><!-- Plan to Visit Who --></label>
         <name>CN_Plan_to_Visit_Who__c</name>
         <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Prevent Delete --></label>
+        <name>CN_Prevent_Delete__c</name>
     </fields>
     <fields>
         <label><!-- Sample Request --></label>

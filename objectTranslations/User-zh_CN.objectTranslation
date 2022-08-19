@@ -25,6 +25,10 @@
         <name>CN_Sales_Office__c</name>
     </fields>
     <fields>
+        <label><!-- Sales Team For Report --></label>
+        <name>CN_Sales_Team_For_Report__c</name>
+    </fields>
+    <fields>
         <label><!-- Sales Team --></label>
         <name>CN_Sales_Team__c</name>
     </fields>

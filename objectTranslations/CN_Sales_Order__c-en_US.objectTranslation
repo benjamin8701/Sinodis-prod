@@ -9,30 +9,13 @@
         <value>Sales Order</value>
     </caseValues>
     <fields>
-        <label><!-- Account Id --></label>
-        <name>CN_Account_Id__c</name>
-    </fields>
-    <fields>
-        <label><!-- Customer Code --></label>
-        <name>CN_Customer_Code__c</name>
-    </fields>
-    <fields>
-        <label><!-- Customer Owner Name --></label>
-        <name>CN_Customer_Owner_Name__c</name>
-    </fields>
-    <fields>
-        <label><!-- Customer Owner --></label>
-        <name>CN_Customer_Owner__c</name>
-    </fields>
-    <fields>
-        <label><!-- Sale Team Name of Sales Person --></label>
-        <name>CN_Sale_Team_Name_of_Sales_Person__c</name>
-    </fields>
-
-    <fields>
         <label><!-- Finance AR --></label>
         <name>CN_AR_Person__c</name>
         <relationshipLabel><!-- Sales Order (Finance AR) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Id --></label>
+        <name>CN_Account_Id__c</name>
     </fields>
     <fields>
         <label><!-- Billing block --></label>
@@ -101,6 +84,18 @@
             <masterLabel>CNY</masterLabel>
             <translation><!-- CNY --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>CN_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Owner Name --></label>
+        <name>CN_Customer_Owner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Owner --></label>
+        <name>CN_Customer_Owner__c</name>
     </fields>
     <fields>
         <label><!-- Ship-to party --></label>
@@ -429,6 +424,10 @@
         <name>CN_SAP_Create_Date__c</name>
     </fields>
     <fields>
+        <label><!-- Sale Team Name of Sales Person --></label>
+        <name>CN_Sale_Team_Name_of_Sales_Person__c</name>
+    </fields>
+    <fields>
         <label><!-- Sales Order Type --></label>
         <name>CN_Sales_Order_Type__c</name>
         <relationshipLabel><!-- Sales Order --></relationshipLabel>
@@ -445,6 +444,10 @@
         <label><!-- Sales Person --></label>
         <name>CN_Sales_Person_Name__c</name>
         <relationshipLabel><!-- Sales Order (Sales Person) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Team --></label>
+        <name>CN_Sales_Team__c</name>
     </fields>
     <fields>
         <label><!-- Sold-To Party --></label>

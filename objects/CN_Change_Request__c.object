@@ -16023,6 +16023,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>D007</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>D010</fullName>
                 <default>false</default>
             </values>
@@ -16055,6 +16059,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>M031</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>M110</fullName>
                 <default>false</default>
             </values>
@@ -16072,6 +16080,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>M145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M23</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -35183,6 +35195,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>D007</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>D010</fullName>
                 <default>false</default>
             </values>
@@ -35215,6 +35231,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>M031</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>M110</fullName>
                 <default>false</default>
             </values>
@@ -35232,6 +35252,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>M145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M23</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -41503,12 +41527,17 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
   RecordType.DeveloperName = &quot;CN_Update_Account_Request&quot;,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   NOT($Permission.CN_Account_Level),
+  NOT( TEXT(New_CN_Account_Subcategory__c)=TEXT(CN_Account_Subcategory__c)),
   OR(ISCHANGED( New_CN_Account_Subcategory__c ),ISNEW()),
   OR(
     ISPICKVAL(New_CN_Account_Subcategory__c , &apos;Wholesaler-Golden&apos;),
     ISPICKVAL(New_CN_Account_Subcategory__c , &apos;Wholesaler-Silver&apos;),
     ISPICKVAL(New_CN_Account_Subcategory__c , &apos;Wholesaler-Bronze&apos;),
-    ISPICKVAL(New_CN_Account_Subcategory__c , &apos;Wholesaler-Normal&apos;)
+    ISPICKVAL(New_CN_Account_Subcategory__c , &apos;Wholesaler-Normal&apos;),
+    ISPICKVAL(PRIORVALUE(New_CN_Account_Subcategory__c ), &apos;Wholesaler-Golden&apos;),
+    ISPICKVAL(PRIORVALUE(New_CN_Account_Subcategory__c ), &apos;Wholesaler-Silver&apos;),
+    ISPICKVAL(PRIORVALUE(New_CN_Account_Subcategory__c ), &apos;Wholesaler-Bronze&apos;),
+    ISPICKVAL(PRIORVALUE(New_CN_Account_Subcategory__c ), &apos;Wholesaler-Normal&apos;)
   ) 
 )</errorConditionFormula>
         <errorDisplayField>New_CN_Account_Subcategory__c</errorDisplayField>

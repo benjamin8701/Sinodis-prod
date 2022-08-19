@@ -50,7 +50,7 @@
     </fields>
     <startsWith>Vowel</startsWith>
     <validationRules>
-        <errorMessage><!-- It&apos;s not alllow to create or edit Interested SKUs if opportunity had closed. --></errorMessage>
+        <errorMessage><!-- It&apos;s not allow to create or edit Interested SKUs if opportunity had closed. --></errorMessage>
         <name>CN_Prevent_Create_Edit</name>
     </validationRules>
 </CustomObjectTranslation>

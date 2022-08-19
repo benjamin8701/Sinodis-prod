@@ -318,6 +318,10 @@
         <name>CN_Check_BillToAddress</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- When you create Contact Type is 01-Billing. You can only select Account whose Status is New. --></errorMessage>
+        <name>CN_Check_Contact_Type</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</errorMessage>
         <name>CN_Check_Moblie_NumberFormat</name>
     </validationRules>

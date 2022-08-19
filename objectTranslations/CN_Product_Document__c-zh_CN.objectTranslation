@@ -8,6 +8,10 @@
         <label>文件分类</label>
         <name>CN_Document_Type__c</name>
         <picklistValues>
+            <masterLabel>1 Page- Unique Selling Point</masterLabel>
+            <translation><!-- 1 Page- Unique Selling Point --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Certification</masterLabel>
             <translation>证书</translation>
         </picklistValues>

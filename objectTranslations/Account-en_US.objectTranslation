@@ -2832,7 +2832,7 @@
         <name>CN_Check_CreditTermApplication</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Please just fill in the following information, if you select Genernal invoice or Electronic General invoice.
+        <errorMessage><!-- Please just fill in the following information, if you select General invoice or Electronic General invoice.
 Invoicing Name (Bill to party),
 Tax Registration No. --></errorMessage>
         <name>CN_Check_General_InvoiceType</name>

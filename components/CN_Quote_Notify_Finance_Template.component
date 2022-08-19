@@ -7,7 +7,7 @@
             <th>SKU Code</th>
             <th>SKU Name</th>
             <th>Sales Price</th>
-            <th>List Price</th>
+            <th>List Price(VAT)</th>
             <th>UoM</th>
             <th>Tax</th>
             <th>Rate</th>
@@ -17,7 +17,7 @@
                 <td><apex:outputField value="{!item.CN_Product_Code__c}" /></td>
                 <td><apex:outputField value="{!item.CN_SKU_Description_CN__c}" /></td>
                 <td><apex:outputField value="{!item.UnitPrice}" /></td>
-                <td><apex:outputField value="{!item.CN_List_Price__c}" /></td>
+                <td><apex:outputField value="{!item.CN_List_Price_VAT__c}" /></td>
                 <td><apex:outputField value="{!item.CN_Selling_Unit__c}" /></td>
                 <td><apex:outputField value="{!item.CN_Tax__c}" /></td>
                 <td><apex:outputField value="{!item.CN_Rate_API__c}" /></td>
@@ -40,7 +40,7 @@
             <th>SKU Code</th>
             <th>SKU Name</th>
             <th>Sales Price</th>
-            <th>List Price</th>
+            <th>List Price(VAT)</th>
             <th>UoM</th>
             <th>Tax</th>
             <th>Rate</th>
@@ -50,7 +50,7 @@
                 <td><apex:outputField value="{!item.CN_Product_Code__c}" /></td>
                 <td><apex:outputField value="{!item.CN_SKU_Description_EN__c}" /></td>
                 <td><apex:outputField value="{!item.UnitPrice}" /></td>
-                <td><apex:outputField value="{!item.CN_List_Price__c}" /></td>
+                <td><apex:outputField value="{!item.CN_List_Price_VAT__c}" /></td>
                 <td><apex:outputField value="{!item.CN_Selling_Unit__c}" /></td>
                 <td><apex:outputField value="{!item.CN_Tax__c}" /></td>
                 <td><apex:outputField value="{!item.CN_Rate_API__c}" /></td>
