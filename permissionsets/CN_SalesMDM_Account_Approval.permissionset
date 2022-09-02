@@ -363,12 +363,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Account.CN_Customer_Grading__c</field>
+        <field>Account.CN_Customer_Group__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Account.CN_Customer_Group__c</field>
+        <field>Account.CN_Customer_ID__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -848,17 +848,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Account.CN_Sales_Person_SalesOffice_Name__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Account.CN_Sales_Person_SalesTeam_Code__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.CN_Sales_Person_SalesTeam_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -978,11 +968,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Account.CN_Test_If_have_all_Certificate__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Account.CN_The_Number_Of_Seats__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1039,6 +1024,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.CN_Visit_Addr_CN__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.CN_Visit_Frequency__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -6188,6 +6178,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>CN_Sample_Request__c.CN_Account_Route_to_Market__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>CN_Sample_Request__c.CN_Approved_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8023,6 +8018,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Product2.CN_Qty_per_Carton_PDF__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Product2.CN_Qty_per_Carton__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8253,6 +8253,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Quote.CN_Comment_PDF__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Quote.CN_Current_Approver__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8279,6 +8284,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Quote.CN_Effective_Duration__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Quote.CN_FinalPDF_Comment__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Quote.CN_FinalPDF_Expiration_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -8343,6 +8358,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Quote.CN_PDF_Expiration_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Quote.CN_Please_Confirm__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8374,6 +8394,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Quote.CN_Sales_Person_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Quote.CN_Sales_Person_SalesTeam_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -8548,6 +8573,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>QuoteLineItem.CN_Channel_Price_VAT__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>QuoteLineItem.CN_Channel_Price__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8613,6 +8643,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>QuoteLineItem.CN_IF_Flow_update_Sales_Price__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>QuoteLineItem.CN_Is_Applied_Promotion__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8649,6 +8684,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>QuoteLineItem.CN_Line_Item_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>QuoteLineItem.CN_List_Price_VAT__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

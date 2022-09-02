@@ -9,6 +9,10 @@
         <translation><!-- Assigned --></translation>
     </valueTranslation>
     <valueTranslation>
+        <masterLabel>Canceled</masterLabel>
+        <translation><!-- Canceled --></translation>
+    </valueTranslation>
+    <valueTranslation>
         <masterLabel>Closed</masterLabel>
         <translation><!-- Closed --></translation>
     </valueTranslation>

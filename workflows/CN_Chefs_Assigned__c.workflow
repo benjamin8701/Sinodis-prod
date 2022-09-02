@@ -58,14 +58,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>And( 
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
-  ISCHANGED(CN_Chef__c),
-  OR(
-    AND( CN_Chef__r.Manager.Profile.Name&lt;&gt;&apos;CN Chef&apos; , CN_Chef__r.Manager.Profile.Name&lt;&gt;&apos;CN Chef Manager&apos; ),
-    ISBLANK(CN_Chef__c)
-  )
-)</formula>
+        <formula>And(    $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,   ISCHANGED(CN_Chef__c),   OR(     AND( CN_Chef__r.Manager.Profile.Name&lt;&gt;&apos;CN Chef&apos; , CN_Chef__r.Manager.Profile.Name&lt;&gt;&apos;CN Chef Manager&apos; ),     ISBLANK(CN_Chef__c)   ) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -89,14 +82,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>And( 
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
-  OR(
-    ISCHANGED(  CN_Chef__c ),
-    AND(ISNEW(), NOT(ISBLANK(CN_Chef__c)))
-  ),
-  OR( CN_Chef__r.Manager.Profile.Name=&apos;CN Chef&apos; , CN_Chef__r.Manager.Profile.Name=&apos;CN Chef Manager&apos; )
-)</formula>
+        <formula>And(    $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,   OR(     ISCHANGED(  CN_Chef__c ),     AND(ISNEW(), NOT(ISBLANK(CN_Chef__c)))   ),   OR( CN_Chef__r.Manager.Profile.Name=&apos;CN Chef&apos; , CN_Chef__r.Manager.Profile.Name=&apos;CN Chef Manager&apos; ) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

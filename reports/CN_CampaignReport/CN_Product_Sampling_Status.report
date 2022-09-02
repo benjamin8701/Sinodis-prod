@@ -34,6 +34,27 @@
     <columns>
         <field>Campaign.Campaign_Products__r.Sample_Products__r$Name</field>
     </columns>
+    <columns>
+        <field>Campaign$CN_Customer_Category__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Products__r.Sample_Products__r$CN_Customer_Sales_Team__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Products__r.Sample_Products__r$CN_Customer_Code__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Products__r.Sample_Products__r$CN_Customer_Name__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Products__r.Sample_Products__r$CN_Customer_Feedback__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Products__r.Sample_Products__r$CN_Sample_SKU_Code__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Products__r.Sample_Products__r$CN_Sales_Office__c</field>
+    </columns>
     <currency>CNY</currency>
     <filter>
         <criteriaItems>
@@ -42,6 +63,13 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Done</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign$Id</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>7015h0000000kF6</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>

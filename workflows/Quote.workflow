@@ -490,10 +490,7 @@
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Quote&apos;,
- ISPICKVAL( Status , &quot;Approved&quot;) ,
-  CN_Is_Finance_Process_Done__c 
-)</formula>
+        <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Quote&apos;,  ISPICKVAL( Status , &quot;Approved&quot;) ,   CN_Is_Finance_Process_Done__c  )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>

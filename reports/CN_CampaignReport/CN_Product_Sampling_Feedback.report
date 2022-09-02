@@ -34,6 +34,21 @@
     <columns>
         <field>Campaign.Campaign_Products__r.Sample_Products__r$Name</field>
     </columns>
+    <columns>
+        <field>Campaign.Campaign_Products__r.Sample_Products__r$CN_Sample_SKU_Code__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Products__r.Sample_Products__r$CN_Sample_Needed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Products__r.Sample_Products__r$CN_Sales_Office__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Products__r.Sample_Products__r$CN_Customer_Name__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Products__r.Sample_Products__r$CN_Sample_Request_Type_Formula__c</field>
+    </columns>
     <currency>CNY</currency>
     <filter>
         <criteriaItems>

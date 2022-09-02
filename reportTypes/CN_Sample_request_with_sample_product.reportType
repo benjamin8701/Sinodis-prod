@@ -260,11 +260,6 @@
             <field>CN_Opportunity_Name__c.CN_Campaign__c.Id</field>
             <table>CN_Sample_Request__c</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CN_Account_Name__c.Id</field>
-            <table>CN_Sample_Request__c</table>
-        </columns>
         <masterLabel>Sample Requests</masterLabel>
     </sections>
     <sections>

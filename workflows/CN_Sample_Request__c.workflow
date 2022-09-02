@@ -123,7 +123,7 @@
     <fieldUpdates>
         <fullName>CN_SR_Populate_ConditionType</fullName>
         <field>CN_Condition_Type__c</field>
-        <literalValue>5TMK2104 – TM sample</literalValue>
+        <literalValue>5CCE2204 – CCE Sample</literalValue>
         <name>CN_SR_Populate_ConditionType</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
@@ -253,8 +253,7 @@
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,   
-RecordType.DeveloperName = &quot;CN_Whole_Pack&quot;, NOT(ISNEW()),   ISCHANGED( CN_Sample_Request_Status__c ),    ISPICKVAL( CN_Sample_Request_Status__c  , &apos;Canceled&apos;)  )</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,    RecordType.DeveloperName = &quot;CN_Whole_Pack&quot;, NOT(ISNEW()),   ISCHANGED( CN_Sample_Request_Status__c ),    ISPICKVAL( CN_Sample_Request_Status__c  , &apos;Canceled&apos;)  )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -264,8 +263,7 @@ RecordType.DeveloperName = &quot;CN_Whole_Pack&quot;, NOT(ISNEW()),   ISCHANGED(
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, 
-RecordType.DeveloperName = &quot;CN_Office_Repack&quot;,   NOT(ISNEW()),   ISCHANGED( CN_Sample_Request_Status__c ),    ISPICKVAL( CN_Sample_Request_Status__c  , &apos;Canceled&apos;)  )</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,  RecordType.DeveloperName = &quot;CN_Office_Repack&quot;,   NOT(ISNEW()),   ISCHANGED( CN_Sample_Request_Status__c ),    ISPICKVAL( CN_Sample_Request_Status__c  , &apos;Canceled&apos;)  )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -275,16 +273,7 @@ RecordType.DeveloperName = &quot;CN_Office_Repack&quot;,   NOT(ISNEW()),   ISCHA
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c, 
-  NOT(ISNEW()),
-   RecordType.DeveloperName = &apos;CN_Office_Repack&apos;,
-  OR(
-    ISCHANGED(CN_SP_Records_Count_Delivery_Status_Done__c),
-    ISCHANGED(CN_SP_Records_Count_All__c)
-  ),
-  CN_SP_Records_Count_Delivery_Status_Done__c = CN_SP_Records_Count_All__c
-)</formula>
+        <formula>AND(   $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,    NOT(ISNEW()),    RecordType.DeveloperName = &apos;CN_Office_Repack&apos;,   OR(     ISCHANGED(CN_SP_Records_Count_Delivery_Status_Done__c),     ISCHANGED(CN_SP_Records_Count_All__c)   ),   CN_SP_Records_Count_Delivery_Status_Done__c = CN_SP_Records_Count_All__c )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

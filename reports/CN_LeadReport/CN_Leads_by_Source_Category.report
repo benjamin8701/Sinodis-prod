@@ -12,13 +12,68 @@
     <columns>
         <field>Lead$ConvertedAccount.CN_Sales_Team_Name__c</field>
     </columns>
+    <columns>
+        <field>Lead$City</field>
+    </columns>
+    <columns>
+        <field>Lead$CN_Campaign__c</field>
+    </columns>
+    <columns>
+        <field>Lead$CN_Converted_Contact_Id_From_CR__c</field>
+    </columns>
+    <columns>
+        <field>Lead$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Lead$ConvertedAccount</field>
+    </columns>
+    <columns>
+        <field>Lead$ConvertedOpportunity</field>
+    </columns>
+    <columns>
+        <field>Lead$Description</field>
+    </columns>
+    <columns>
+        <field>Lead$Owner</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lead$ConvertedAccount.CN_Upload_Hygiene_Certificate_No__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lead$ConvertedAccount.CN_Upload_Contract__c</field>
+    </columns>
+    <columns>
+        <field>Lead$ConvertedAccount.CN_Province_EN_UI__c</field>
+    </columns>
+    <columns>
+        <field>Lead$ConvertedAccount.Id</field>
+    </columns>
+    <columns>
+        <field>Lead$ConvertedDate</field>
+    </columns>
+    <columns>
+        <field>Lead$CN_Converted_From_Lead_Id__c</field>
+    </columns>
+    <columns>
+        <field>Lead$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>Lead$LeadSource</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lead$IsUnreadByOwner</field>
+    </columns>
+    <columns>
+        <field>Lead$ConvertedAccount.CN_Account_Status__c</field>
+    </columns>
+    <columns>
+        <field>Lead$ConvertedAccount.CN_License_Name_EN__c</field>
+    </columns>
     <currency>CNY</currency>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Lead$LeadSource</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Lead$CN_Customer_Category__c</field>

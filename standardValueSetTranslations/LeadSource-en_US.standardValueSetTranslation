@@ -41,6 +41,10 @@
         <translation><!-- Others --></translation>
     </valueTranslation>
     <valueTranslation>
+        <masterLabel>Road Show</masterLabel>
+        <translation><!-- Road Show --></translation>
+    </valueTranslation>
+    <valueTranslation>
         <masterLabel>Social Media</masterLabel>
         <translation><!-- Social Media --></translation>
     </valueTranslation>
