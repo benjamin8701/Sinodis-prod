@@ -6445,7 +6445,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <label>New Account Owner</label>
         <lookupFilter>
             <active>true</active>
-            <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+            <booleanFilter>1 OR 2 OR 3 OR 4 OR 5</booleanFilter>
             <filterItems>
                 <field>User.CN_Is_My_Team_Member__c</field>
                 <operation>equals</operation>
@@ -6465,6 +6465,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <field>$Profile.Name</field>
                 <operation>equals</operation>
                 <value>CN CFO, CN Finance AR, CN Finance MDM, CN Sales MDM</value>
+            </filterItems>
+            <filterItems>
+                <field>$UserRole.Name</field>
+                <operation>contains</operation>
+                <value>Sales Development Supervisor</value>
             </filterItems>
             <isOptional>false</isOptional>
         </lookupFilter>
@@ -41521,7 +41526,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <sharingModel>Private</sharingModel>
     <validationRules>
         <fullName>CN_Account_Check_Subcategory</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   RecordType.DeveloperName = &quot;CN_Update_Account_Request&quot;,
