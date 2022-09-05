@@ -177,7 +177,7 @@
         <name>CN_Minimum_Price__c</name>
     </fields>
     <fields>
-        <label><!-- Orign/原产国 --></label>
+        <label><!-- Origin/原产国 --></label>
         <name>CN_Origin_PDF__c</name>
     </fields>
     <fields>

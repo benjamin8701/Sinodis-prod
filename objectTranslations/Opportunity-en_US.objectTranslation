@@ -129,7 +129,7 @@
         <name>CN_Check_Loss_Reason</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- It&apos;s required to input expected amount or select interested SKUs, and chooes expected close date. --></errorMessage>
+        <errorMessage><!-- It&apos;s required to input expected amount or select interested SKUs, and choose expected close date. --></errorMessage>
         <name>CN_Check_Proposal_Stage</name>
     </validationRules>
     <validationRules>

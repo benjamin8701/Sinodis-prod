@@ -15,14 +15,6 @@
         <name>start_date_activity</name>
     </fields>
     <fields>
-        <label>记录已锁定</label>
-        <name>CN_Is_Overdue__c</name>
-    </fields>
-    <fields>
-        <label><!-- Prevent Delete --></label>
-        <name>CN_Prevent_Delete__c</name>
-    </fields>
-    <fields>
         <label>计划下次拜访</label>
         <name>CN_By_when__c</name>
         <picklistValues>
@@ -81,6 +73,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label>记录已锁定</label>
+        <name>CN_Is_Overdue__c</name>
+    </fields>
+    <fields>
         <label>要点记录</label>
         <name>CN_Meeting_MInutes__c</name>
     </fields>
@@ -132,6 +128,10 @@
         <label>计划下次拜访联系人</label>
         <name>CN_Plan_to_Visit_Who__c</name>
         <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Prevent Delete --></label>
+        <name>CN_Prevent_Delete__c</name>
     </fields>
     <fields>
         <label>样品申请</label>

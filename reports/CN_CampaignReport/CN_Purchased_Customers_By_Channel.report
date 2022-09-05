@@ -55,6 +55,20 @@
     <columns>
         <field>Campaign$CN_Campaign_Id__c</field>
     </columns>
+    <columns>
+        <field>Campaign.Campaign_Products__r.Sales_Order_Item__r$CN_Order_Number__c.CN_Sold_To_Account_Name__c.CN_Customer_Code__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Products__r.Sales_Order_Item__r$CN_Product_Code__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Campaign.Campaign_Products__r.Sales_Order_Item__r$CN_Net_Value__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Campaign.Campaign_Products__r.Sales_Order_Item__r$CN_Net_Weight__c</field>
+    </columns>
     <currency>CNY</currency>
     <format>Summary</format>
     <groupingsDown>

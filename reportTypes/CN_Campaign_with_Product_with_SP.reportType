@@ -877,17 +877,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>CN_Sample_Unit__c</field>
+            <table>Campaign.Campaign_Products__r.Sample_Products__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>CN_Customer_Code__c</field>
             <table>Campaign.Campaign_Products__r.Sample_Products__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CN_Current_Status_For_Report__c</field>
-            <table>Campaign.Campaign_Products__r.Sample_Products__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CN_Sample_Unit__c</field>
             <table>Campaign.Campaign_Products__r.Sample_Products__r</table>
         </columns>
         <masterLabel>Sample Products</masterLabel>

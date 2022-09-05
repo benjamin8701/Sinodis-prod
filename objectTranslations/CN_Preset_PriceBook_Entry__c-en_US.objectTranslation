@@ -90,7 +90,7 @@
     </recordTypes>
     <startsWith>Consonant</startsWith>
     <validationRules>
-        <errorMessage><!-- Please input Channel Price, Discount Price and Max Discount Price. --></errorMessage>
+        <errorMessage><!-- Please input Channel Price. --></errorMessage>
         <name>CN_PPBE_Channel_Check_Field</name>
     </validationRules>
     <validationRules>

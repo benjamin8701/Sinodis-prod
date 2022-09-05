@@ -9,19 +9,6 @@
         <value>Sales Order Item</value>
     </caseValues>
     <fields>
-        <label><!-- Count --></label>
-        <name>CN_Count__c</name>
-    </fields>
-    <fields>
-        <label><!-- Product Brand --></label>
-        <name>CN_Product_Brand__c</name>
-    </fields>
-    <fields>
-        <label><!-- Product Flavor --></label>
-        <name>CN_Product_Flavor__c</name>
-    </fields>
-
-    <fields>
         <label><!-- Campaign Product --></label>
         <name>CN_Campaign_Product__c</name>
         <relationshipLabel><!-- Sales Order Item --></relationshipLabel>
@@ -29,6 +16,10 @@
     <fields>
         <label><!-- Confirmed Value --></label>
         <name>CN_Confirmed_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count --></label>
+        <name>CN_Count__c</name>
     </fields>
     <fields>
         <label><!-- Currency --></label>
@@ -293,8 +284,16 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Product Brand --></label>
+        <name>CN_Product_Brand__c</name>
+    </fields>
+    <fields>
         <label><!-- Product Code --></label>
         <name>CN_Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU English Description --></label>
+        <name>CN_Product_Flavor__c</name>
     </fields>
     <fields>
         <label><!-- SKU Description CN --></label>
@@ -315,6 +314,10 @@
     <fields>
         <label><!-- Total Amount With Tax --></label>
         <name>CN_Total_Amount_With_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Price --></label>
+        <name>CN_Unit_Price__c</name>
     </fields>
     <fields>
         <label><!-- Item Number --></label>

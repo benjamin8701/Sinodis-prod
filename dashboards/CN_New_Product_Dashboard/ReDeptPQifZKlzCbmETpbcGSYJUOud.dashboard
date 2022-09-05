@@ -20,17 +20,17 @@
                 <componentType>Gauge</componentType>
                 <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
-                <gaugeMax>698.0</gaugeMax>
+                <gaugeMax>1000.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
                 <groupingSortProperties/>
-                <header>Customer Converted</header>
-                <indicatorBreakpoint1>200.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>400.0</indicatorBreakpoint2>
+                <header>Distribution</header>
+                <indicatorBreakpoint1>300.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>700.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <report>CN_New_Product_Launch_Report/CN_Number_of_Customer_Converted</report>
-                <showPercentage>true</showPercentage>
+                <showPercentage>false</showPercentage>
                 <showRange>false</showRange>
                 <showTotal>true</showTotal>
                 <showValues>false</showValues>
@@ -88,17 +88,17 @@
                 <componentType>Gauge</componentType>
                 <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
-                <gaugeMax>538.0</gaugeMax>
+                <gaugeMax>726.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
                 <groupingSortProperties/>
-                <header>Customer Converted - DS</header>
-                <indicatorBreakpoint1>150.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>400.0</indicatorBreakpoint2>
+                <header>Distribution - DS</header>
+                <indicatorBreakpoint1>200.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>500.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <report>CN_New_Product_Launch_Report/CN_Number_of_Customer_Converted_DS</report>
-                <showPercentage>true</showPercentage>
+                <showPercentage>false</showPercentage>
                 <showRange>false</showRange>
                 <showTotal>true</showTotal>
                 <showValues>false</showValues>
@@ -154,17 +154,17 @@
                 <componentType>Gauge</componentType>
                 <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
-                <gaugeMax>103.0</gaugeMax>
+                <gaugeMax>174.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
                 <groupingSortProperties/>
-                <header>Customer Converted - WS</header>
-                <indicatorBreakpoint1>40.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>80.0</indicatorBreakpoint2>
+                <header>Distribution - WS</header>
+                <indicatorBreakpoint1>60.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>120.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <report>CN_New_Product_Launch_Report/CN_Number_of_Customer_Converted_WS</report>
-                <showPercentage>true</showPercentage>
+                <showPercentage>false</showPercentage>
                 <showRange>false</showRange>
                 <showTotal>true</showTotal>
                 <showValues>false</showValues>
@@ -258,17 +258,17 @@
                 <componentType>Gauge</componentType>
                 <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
-                <gaugeMax>57.0</gaugeMax>
+                <gaugeMax>100.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
                 <groupingSortProperties/>
-                <header>Customer Converted - KA</header>
-                <indicatorBreakpoint1>20.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>41.0</indicatorBreakpoint2>
+                <header>Distribution - KA</header>
+                <indicatorBreakpoint1>30.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>70.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <report>CN_New_Product_Launch_Report/CN_Number_of_Customer_Converted_KA</report>
-                <showPercentage>true</showPercentage>
+                <showPercentage>false</showPercentage>
                 <showRange>false</showRange>
                 <showTotal>true</showTotal>
                 <showValues>false</showValues>
@@ -282,7 +282,7 @@
     <dashboardType>LoggedInUser</dashboardType>
     <description>new product</description>
     <isGridLayout>true</isGridLayout>
-    <runningUser>system.support@savencia.com</runningUser>
+    <runningUser>sonia.wang@sinodis.com.cn</runningUser>
     <textColor>#000000</textColor>
     <title>Adamance Order Dashboard</title>
     <titleColor>#000000</titleColor>

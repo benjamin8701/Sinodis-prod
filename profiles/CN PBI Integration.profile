@@ -875,9 +875,8 @@
     </classAccesses>
     <custom>true</custom>
     <description>在测试环境需要创建一个账号链接PBI,那就是模拟CCE的表权限
-Create one salesforce account in test environment to link PBI. Object permission same with CCE.
-Enable API and API Only
-Qiuchen调整过，不是单纯的clone。能看到更多的字段，只有Object的read权限</description>
+Create one salesforce account in test environment to link PBI. Object permission same with CCE. 
+Enable API and API Only</description>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
@@ -11623,6 +11622,10 @@ Qiuchen调整过，不是单纯的clone。能看到更多的字段，只有Objec
     <userPermissions>
         <enabled>true</enabled>
         <name>OverrideForecasts</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>PasswordNeverExpires</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
