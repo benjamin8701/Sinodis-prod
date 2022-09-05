@@ -20710,7 +20710,7 @@ IF(CN_Is_In_Approving__c , ISCHANGED(  CN_Account_Status__c  ) , FALSE)
     </validationRules>
     <validationRules>
         <fullName>CN_Account_Check_Subcategory</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
