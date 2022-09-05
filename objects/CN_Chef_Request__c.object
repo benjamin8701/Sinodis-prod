@@ -2271,15 +2271,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <label>Brand-tbc-Chef Req</label>
     </listViews>
     <listViews>
-        <fullName>CN_Chef_Manager_Queue_CN_Chef_Request</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Chef Manager Queue</label>
-        <queue>CN_Chef_Manager_Queue</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>CN_Location_Confirmed_3nd_Party_Chef_Req</fullName>
         <columns>NAME</columns>
         <columns>CN_Confirmed__c</columns>

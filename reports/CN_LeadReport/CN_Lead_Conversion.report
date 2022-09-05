@@ -21,6 +21,9 @@
     <columns>
         <field>Lead$ConvertedAccount.CN_Customer_Journey__c</field>
     </columns>
+    <columns>
+        <field>Lead$ConvertedAccount.CN_Sales_Team__c</field>
+    </columns>
     <currency>CNY</currency>
     <customDetailFormulas>
         <calculatedFormula>IF(Text(Lead.ConvertedAccount.CN_Customer_Journey__c)=&quot;&quot;,&quot;Un-Converted&quot;,Text(Lead.ConvertedAccount.CN_Customer_Journey__c))</calculatedFormula>

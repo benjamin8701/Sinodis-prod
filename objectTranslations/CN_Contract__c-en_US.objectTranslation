@@ -57,6 +57,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Comment --></label>
+        <name>CN_Comment__c</name>
+    </fields>
+    <fields>
         <label><!-- Conditional Rebate Note1 --></label>
         <name>CN_Conditional_Rebate_Note1__c</name>
     </fields>

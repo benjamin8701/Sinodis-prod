@@ -12,7 +12,7 @@
             <operation>equals</operation>
             <value>CN Chef UT</value>
         </criteriaItems>
-        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
         <fullName>CN_SHARE_ALL_CHEF_UT_TO_CHEF_MANAGER</fullName>

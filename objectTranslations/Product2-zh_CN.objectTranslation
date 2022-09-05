@@ -38,6 +38,10 @@
         <name>CN_Product_Name_EN__c</name>
     </fields>
     <fields>
+        <label><!-- Qty per Carton PDF --></label>
+        <name>CN_Qty_per_Carton_PDF__c</name>
+    </fields>
+    <fields>
         <label>箱规</label>
         <name>CN_Qty_per_Carton__c</name>
     </fields>

@@ -97,13 +97,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND(
-$Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Sample_Product&apos;,
-OR(
-  ISNEW(),
-  ISCHANGED( CN_Quantity_Needed__c )
-)
-)</formula>
+        <formula>AND( $Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Sample_Product&apos;, OR(   ISNEW(),   ISCHANGED( CN_Quantity_Needed__c ) ) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

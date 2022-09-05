@@ -81,7 +81,7 @@ public without sharing class CN_Account_Prevent_Edit_Approved_Handler implements
                     system.debug('field:    ' + field);
                     isChanged = false;
                 	break;
-                }else if(fieldNameProfileNameMap.get(field)!=null && (fieldNameProfileNameMap.get(field).contains(myProflieName) || myProflieName.equals(Constants.CN_PROFILE_NAME_INTEGRATION))){
+                }else if((fieldNameProfileNameMap.get(field)!=null && fieldNameProfileNameMap.get(field).contains(myProflieName)) || myProflieName.equals(Constants.CN_PROFILE_NAME_INTEGRATION)){
                     system.debug('field(myProflieName):    ' + field);
                     isChanged = false;
                 	break;

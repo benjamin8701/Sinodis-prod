@@ -31,13 +31,7 @@
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <formula>AND( 
-  $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,
-  OR(
-    ISNEW(),
-    CN_If_Need_Populate_Account_Name__c
-  )
-)</formula>
+        <formula>AND(    $Setup.Trigger_Switcher_Setting__c.EnableFlow__c,   OR(     ISNEW(),     CN_If_Need_Populate_Account_Name__c   ) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

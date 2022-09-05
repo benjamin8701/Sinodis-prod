@@ -5,18 +5,6 @@
         <value>销售订单明细</value>
     </caseValues>
     <fields>
-        <label><!-- Count --></label>
-        <name>CN_Count__c</name>
-    </fields>
-    <fields>
-        <label><!-- Product Brand --></label>
-        <name>CN_Product_Brand__c</name>
-    </fields>
-    <fields>
-        <label><!-- Product Flavor --></label>
-        <name>CN_Product_Flavor__c</name>
-    </fields>
-    <fields>
         <label><!-- Campaign Product --></label>
         <name>CN_Campaign_Product__c</name>
         <relationshipLabel><!-- Sales Order Item --></relationshipLabel>
@@ -24,6 +12,10 @@
     <fields>
         <label>确认金额</label>
         <name>CN_Confirmed_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count --></label>
+        <name>CN_Count__c</name>
     </fields>
     <fields>
         <label>货币</label>
@@ -288,8 +280,16 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Product Brand --></label>
+        <name>CN_Product_Brand__c</name>
+    </fields>
+    <fields>
         <label>产品编号</label>
         <name>CN_Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU English Description --></label>
+        <name>CN_Product_Flavor__c</name>
     </fields>
     <fields>
         <label>物料描述中文</label>
@@ -351,4 +351,8 @@
         </sections>
     </layouts>
     <nameFieldLabel>销售订单明细名称</nameFieldLabel>
+    <recordTypes>
+        <label><!-- CN Sales Order Item --></label>
+        <name>CN_Sales_Order_Item</name>
+    </recordTypes>
 </CustomObjectTranslation>

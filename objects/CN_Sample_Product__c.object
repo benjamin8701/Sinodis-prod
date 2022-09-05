@@ -1094,7 +1094,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
  ISCHANGED(CN_Status_of_Delivery__c  ) ||  ISCHANGED( CN_Delivery_Comments__c ) 
 )</errorConditionFormula>
         <errorDisplayField>CN_Status_of_Delivery__c</errorDisplayField>
-        <errorMessage>Wholepack Sample&apos;s deliver status is only updated by Sales Person</errorMessage>
+        <errorMessage>Wholepack Sample&apos;s deliver status is only updated by Sales Person or CCE</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Prevent_Create</fullName>

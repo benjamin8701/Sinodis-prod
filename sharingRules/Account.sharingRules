@@ -128,4 +128,20 @@
             <roleAndSubordinates>CN_2171_National_Wholesale_Director</roleAndSubordinates>
         </sharedFrom>
     </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>WSAccount_To_WholeSales_Development_Supervisor_2282</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>WSAccount_To_WholeSales_Development_Supervisor_2282</label>
+        <sharedTo>
+            <role>CN_2282_Sales_Development_Supervisor</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_2171_National_Wholesale_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
 </SharingRules>

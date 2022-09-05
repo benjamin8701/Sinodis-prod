@@ -66,4 +66,9 @@
         <default>false</default>
         <label>Livestreaming</label>
     </standardValue>
+    <standardValue>
+        <fullName>Road Show</fullName>
+        <default>false</default>
+        <label>Road Show</label>
+    </standardValue>
 </StandardValueSet>

@@ -10,22 +10,16 @@
         <field>Campaign$EndDate</field>
     </columns>
     <columns>
-        <field>Campaign$Type</field>
-    </columns>
-    <columns>
         <field>Campaign$Status</field>
     </columns>
     <columns>
-        <field>Campaign$CN_Channel__c</field>
-    </columns>
-    <columns>
-        <field>Campaign$CN_Product_Category__c</field>
-    </columns>
-    <columns>
-        <field>Campaign$CN_Product_Type__c</field>
-    </columns>
-    <columns>
         <field>Campaign$CN_Brand__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Opportunities__r.Sample_RequestS_FeedbackS__r$CN_Sales_Team__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Opportunities__r.Sample_RequestS_FeedbackS__r$CN_Customer_Code__c</field>
     </columns>
     <columns>
         <field>Campaign.Opportunities__r$Name</field>
@@ -47,9 +41,6 @@
         <field>Campaign.Opportunities__r$Amount</field>
     </columns>
     <columns>
-        <field>Campaign.Opportunities__r.Sample_RequestS_FeedbackS__r$Name</field>
-    </columns>
-    <columns>
         <field>Campaign.Opportunities__r.Sample_RequestS_FeedbackS__r$CN_Record_Type__c</field>
     </columns>
     <columns>
@@ -60,6 +51,9 @@
     </columns>
     <columns>
         <field>Campaign.Opportunities__r.Sample_RequestS_FeedbackS__r.Sample_Products__r$Name</field>
+    </columns>
+    <columns>
+        <field>Campaign.Opportunities__r.Sample_RequestS_FeedbackS__r$Name</field>
     </columns>
     <columns>
         <field>Campaign.Opportunities__r.Sample_RequestS_FeedbackS__r.Sample_Products__r$CN_Product__c</field>
@@ -90,14 +84,27 @@
     <columns>
         <field>Campaign.Opportunities__r.Sample_RequestS_FeedbackS__r.Sample_Products__r$CN_Feedback_Description__c</field>
     </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Campaign.Opportunities__r.Sample_RequestS_FeedbackS__r.Sample_Products__r$CN_Sample_Cost__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Opportunities__r.Sample_RequestS_FeedbackS__r.Sample_Products__r$CN_Current_Status_For_Report__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Opportunities__r$CN_Loss_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Opportunities__r$CN_Loss_Description__c</field>
+    </columns>
     <currency>CNY</currency>
     <filter>
         <criteriaItems>
             <column>Campaign.Opportunities__r$CN_Campaign__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
+            <operator>equals</operator>
+            <value>雷米君度派样活动</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
@@ -118,6 +125,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Campaign$CreatedDate</dateColumn>
-        <interval>INTERVAL_CURRENT</interval>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

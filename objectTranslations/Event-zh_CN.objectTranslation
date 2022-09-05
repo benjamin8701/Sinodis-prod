@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
-        <label><!-- Lock --></label>
-        <name>CN_Is_Overdue__c</name>
-    </fields>
-    <fields>
-        <label><!-- Prevent Delete --></label>
-        <name>CN_Prevent_Delete__c</name>
-    </fields>
-    <fields>
         <label><!-- By when --></label>
         <name>CN_By_when__c</name>
     </fields>
@@ -43,6 +35,10 @@
         <name>CN_Follow_up_Priority__c</name>
     </fields>
     <fields>
+        <label><!-- Lock --></label>
+        <name>CN_Is_Overdue__c</name>
+    </fields>
+    <fields>
         <label><!-- Meeting MInutes --></label>
         <name>CN_Meeting_MInutes__c</name>
     </fields>
@@ -58,6 +54,10 @@
         <label><!-- Plan to Visit Who --></label>
         <name>CN_Plan_to_Visit_Who__c</name>
         <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Prevent Delete --></label>
+        <name>CN_Prevent_Delete__c</name>
     </fields>
     <fields>
         <label><!-- Sample Request --></label>
@@ -127,16 +127,24 @@
         <name>CN_Event_Check_Status_Cancelled</name>
     </validationRules>
     <validationRules>
+        <errorMessage>您不允许在创建拜访的时候选择Completed</errorMessage>
+        <name>CN_Event_Check_Status_CreateVisit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不允许在开始日期之前选择Completed</errorMessage>
+        <name>CN_Event_Check_Status_StartDate</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>您不允许新建拜访或事件。</errorMessage>
         <name>CN_Event_Prevent_Creation</name>
     </validationRules>
     <validationRules>
-        <errorMessage>您不允许修改计划下次拜访字段。</errorMessage>
-        <name>CN_Event_Prevent_Edit_ByWhen</name>
-    </validationRules>
-    <validationRules>
         <errorMessage>您不允许删除已经锁定的拜访。</errorMessage>
         <name>CN_Event_Prevent_Delete_Overdue_Visit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不允许修改计划下次拜访字段。</errorMessage>
+        <name>CN_Event_Prevent_Edit_ByWhen</name>
     </validationRules>
     <validationRules>
         <errorMessage>记录已锁定，两周之前的记录不可更改。</errorMessage>
