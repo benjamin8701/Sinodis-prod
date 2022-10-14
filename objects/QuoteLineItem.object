@@ -157,7 +157,7 @@
  CN_Is_Applied_Promotion__c ,
   $Label.CN_Quote_Approve_Type_0,
  IF(
-    UnitPrice &gt;=  CN_Channel_Price__c,
+    UnitPrice &gt;=  CN_Channel_Price_VAT__c ,
     $Label.CN_Quote_Approve_Type_1,
     $Label.CN_Quote_Approve_Type_3
  )
