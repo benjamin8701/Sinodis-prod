@@ -33,7 +33,7 @@
     <fieldUpdates>
         <fullName>CN_SampleProduct_Set_ExternalID</fullName>
         <field>CN_External_ID__c</field>
-        <formula>CN_Sample_Request__r.Id &amp;&apos;-&apos;&amp; CN_Product__r.Id</formula>
+        <formula>CASESAFEID(CN_Sample_Request__r.Id) &amp;&apos;-&apos;&amp; CASESAFEID(CN_Product__r.Id)</formula>
         <name>CN_SampleProduct_Set_ExternalID</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>

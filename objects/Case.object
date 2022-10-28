@@ -753,6 +753,42 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>CN_DN__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery No.</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_SKU_Description_CN__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product.CN_SKU_Description_CN__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SKU Description CN</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_SKU_Description_EN__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product.CN_SKU_Description_EN__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SKU Description EN</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Comments</fullName>
         <trackTrending>false</trackTrending>
     </fields>
