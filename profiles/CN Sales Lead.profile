@@ -876,6 +876,21 @@
     <custom>true</custom>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case.CN_DN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_SKU_Description_CN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_SKU_Description_EN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.AccountNumber</field>
         <readable>true</readable>
     </fieldPermissions>

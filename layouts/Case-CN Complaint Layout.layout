@@ -124,6 +124,10 @@
                 <behavior>Required</behavior>
                 <field>CN_SAP_Batch_Number__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>CN_DN__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
