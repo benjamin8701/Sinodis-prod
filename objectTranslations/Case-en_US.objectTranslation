@@ -41,6 +41,18 @@
         <startsWith>Consonant</startsWith>
     </fields>
     <fields>
+        <label><!-- Delivery No. --></label>
+        <name>CN_DN__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU Description CN --></label>
+        <name>CN_SKU_Description_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU Description EN --></label>
+        <name>CN_SKU_Description_EN__c</name>
+    </fields>
+    <fields>
         <label><!-- Accepted Date --></label>
         <name>CN_Accepted_Date__c</name>
     </fields>

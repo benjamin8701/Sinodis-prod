@@ -605,6 +605,18 @@
         <name>CN_Customer_Name__c</name>
     </fields>
     <fields>
+        <label>DN发货单号</label>
+        <name>CN_DN__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU Description CN --></label>
+        <name>CN_SKU_Description_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU Description EN --></label>
+        <name>CN_SKU_Description_EN__c</name>
+    </fields>
+    <fields>
         <label><!-- Duration --></label>
         <name>CN_Duration__c</name>
     </fields>
