@@ -68,7 +68,7 @@ global class CN_PresetPrice_Effect_Batch implements Database.Batchable<SObject>,
                     pbe_update.CN_Discount_Price__c = ppbe.CN_Discount_Price__c;
                     pbe_update.UnitPrice = ppbe.CN_UnitPrice__c;
                 }else{
-                    pbe_update.UnitPrice = ppbe.CN_Standard_List_Price__c; //
+                    pbe_update.UnitPrice = ppbe.CN_Standard_List_Price__c;
                 }
                 priceBookEntryList_update.add(pbe_update);
             }else{

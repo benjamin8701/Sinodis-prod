@@ -1161,21 +1161,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.CN_DN__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.CN_SKU_Description_CN__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.CN_SKU_Description_EN__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Account.CN_Contact_Mobile_Phone__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -7855,6 +7840,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.CN_DN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Case.CN_Duration__c</field>
         <readable>true</readable>
@@ -7952,6 +7942,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.CN_SKU_CODE__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_SKU_Description_CN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_SKU_Description_EN__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11995,6 +11995,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ManageNetworks</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageOrchInstsAndWorkItems</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

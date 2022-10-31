@@ -875,21 +875,6 @@
     </classAccesses>
     <custom>true</custom>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.CN_DN__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.CN_SKU_Description_CN__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.CN_SKU_Description_EN__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>true</readable>
@@ -7855,6 +7840,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.CN_DN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Case.CN_Duration__c</field>
         <readable>true</readable>
@@ -7953,6 +7943,16 @@
         <editable>false</editable>
         <field>Case.CN_SKU_CODE__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_SKU_Description_CN__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.CN_SKU_Description_EN__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>

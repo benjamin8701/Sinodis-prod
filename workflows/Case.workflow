@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
-        <fullName>CN_Compliant_Resolved_Notification_QA</fullName>
-        <ccEmails>cs.return@savencia.onmicrosoft.com</ccEmails>
-        <description>CN_Compliant_Resolved_Notification_QA</description>
-        <protected>false</protected>
-        <senderType>CurrentUser</senderType>
-        <template>CN_Lightning_Email_Folder/CN_Complaint_Resolved_Notification_QA_1665748879823</template>
-    </alerts>
-    <rules>
-        <fullName>CN_Complaint_Resolve_Notification_QA</fullName>
-        <actions>
-            <name>CN_Compliant_Resolved_Notification_QA</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <formula>AND(      $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,       RecordType.DeveloperName = &apos;CN_Complaint&apos;,      ISCHANGED( Status ),   ISPICKVAL(Status , &apos;Resolved&apos;),   ISPICKVAL(CN_Resolve_Comments__c, &apos;Return&apos;) )</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <alerts>
         <fullName>CN_Complaint_Assign_Notification</fullName>
         <description>CN_Complaint_Assign_Notification</description>
         <protected>false</protected>
@@ -81,6 +63,14 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>CN_Email_Folder/CN_Complaint_Resolved_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>CN_Compliant_Resolved_Notification_QA</fullName>
+        <ccEmails>cs.return@savencia.onmicrosoft.com</ccEmails>
+        <description>CN_Compliant_Resolved_Notification_QA</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>CN_Lightning_Email_Folder/CN_Complaint_Resolved_Notification_QA_1665748879823</template>
     </alerts>
     <fieldUpdates>
         <fullName>CN_Complaint_Assign_To_CS</fullName>
@@ -266,6 +256,16 @@
         </actions>
         <active>true</active>
         <formula>AND(      $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,       RecordType.DeveloperName = &apos;CN_Complaint&apos;,      ISCHANGED( Status ),   ISPICKVAL(Status , &apos;Resolved&apos;),   ISPICKVAL(CN_Resolve_Reason__c , &apos;Supply Chain&apos;) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CN_Complaint_Resolve_Notification_QA</fullName>
+        <actions>
+            <name>CN_Compliant_Resolved_Notification_QA</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(      $Setup.Trigger_Switcher_Setting__c.EnableFlow__c ,       RecordType.DeveloperName = &apos;CN_Complaint&apos;,      ISCHANGED( Status ),   ISPICKVAL(Status , &apos;Resolved&apos;),   ISPICKVAL(CN_Resolve_Comments__c, &apos;Return&apos;) )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
