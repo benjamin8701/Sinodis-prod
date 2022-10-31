@@ -469,6 +469,10 @@
         <name>Flow</name>
     </types>
     <types>
+        <members>CN_CCE_Sales_MDM</members>
+        <name>Group</name>
+    </types>
+    <types>
         <members>Account-CN Account Direct  Approved</members>
         <members>Account-CN Account Direct Edit</members>
         <members>Account-CN Account Direct New</members>
@@ -618,13 +622,10 @@
         <name>PermissionSetGroup</name>
     </types>
     <types>
-        <members>CN_CCE_Sales_MDM</members>
-        <name>Group</name>
-    </types>
-    <types>
         <members>Admin</members>
         <members>CN C%2FS</members>
         <members>CN CCE</members>
+        <members>CN CCE Sales MDM</members>
         <members>CN CEO</members>
         <members>CN CFO</members>
         <members>CN Chef</members>
@@ -639,8 +640,9 @@
         <members>CN Sales Lead</members>
         <members>CN Sales MDM</members>
         <members>CN Sales Manager</members>
+        <members>CN Test PBI</members>
+        <members>CN Visit Team</members>
         <members>System Integration</members>
-		<members>CN CCE Sales MDM</members>
         <name>Profile</name>
     </types>
     <types>

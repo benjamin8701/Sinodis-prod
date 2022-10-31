@@ -388,6 +388,18 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_DN__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery Note</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Duration__c</fullName>
         <externalId>false</externalId>
         <formula>IF(  ISBLANK( CN_Resolved_Date__c ), 0, CN_Resolved_Date__c - CN_Accepted_Date__c )</formula>
@@ -678,6 +690,30 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_SKU_Description_CN__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product.CN_SKU_Description_CN__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SKU Description CN</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_SKU_Description_EN__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product.CN_SKU_Description_EN__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SKU Description EN</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_SKU_Name_EN__c</fullName>
         <externalId>false</externalId>
         <formula>Product.CN_Product_Name_EN__c</formula>
@@ -751,42 +787,6 @@
     <fields>
         <fullName>ClosedDate</fullName>
         <trackTrending>false</trackTrending>
-    </fields>
-    <fields>
-        <fullName>CN_DN__c</fullName>
-        <externalId>false</externalId>
-        <label>Delivery No.</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CN_SKU_Description_CN__c</fullName>
-        <externalId>false</externalId>
-        <formula>Product.CN_SKU_Description_CN__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>SKU Description CN</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>CN_SKU_Description_EN__c</fullName>
-        <externalId>false</externalId>
-        <formula>Product.CN_SKU_Description_EN__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>SKU Description EN</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Comments</fullName>
@@ -992,7 +992,7 @@
         <columns>CN_SKU_CODE__c</columns>
         <columns>CN_SKU_Quantity__c</columns>
         <columns>CASES.STATUS</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>CASES.CREATED_DATE</columns>
         <columns>OWNER_NAME</columns>
         <filterScope>Everything</filterScope>
         <filters>
