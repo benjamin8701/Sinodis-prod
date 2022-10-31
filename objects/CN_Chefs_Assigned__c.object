@@ -786,27 +786,6 @@ DAY(DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) +
         <label>Chef-Unconfirmed-David Yan-Chef Req</label>
     </listViews>
     <listViews>
-        <fullName>CN_Chef_Unconfirmed_Elise_Zhong_Chef_Req</fullName>
-        <columns>NAME</columns>
-        <columns>CN_Chef__c</columns>
-        <columns>CN_Chef_Request__c</columns>
-        <columns>CN_Display_in_Calendar__c</columns>
-        <columns>CN_Chef_Work_Start_Date__c</columns>
-        <columns>CN_Chef_Work_End_Date__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CN_Chef__c</field>
-            <operation>equals</operation>
-            <value>Elise Zhong</value>
-        </filters>
-        <filters>
-            <field>CN_Is_Chef_Request_Confirmed__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>Chef-Unconfirmed-Elise Zhong-Chef Req</label>
-    </listViews>
-    <listViews>
         <fullName>CN_Chef_Unconfirmed_Felicia_Huang_Chef_Req</fullName>
         <columns>NAME</columns>
         <columns>CN_Chef__c</columns>
@@ -1017,27 +996,6 @@ DAY(DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) +
         <label>Chef-Unconfirmed-Louis Li-Chef Req</label>
     </listViews>
     <listViews>
-        <fullName>CN_Chef_Unconfirmed_Luca_Chen_Chef_Req</fullName>
-        <columns>NAME</columns>
-        <columns>CN_Chef__c</columns>
-        <columns>CN_Chef_Request__c</columns>
-        <columns>CN_Display_in_Calendar__c</columns>
-        <columns>CN_Chef_Work_Start_Date__c</columns>
-        <columns>CN_Chef_Work_End_Date__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CN_Chef__c</field>
-            <operation>equals</operation>
-            <value>Luca Chen</value>
-        </filters>
-        <filters>
-            <field>CN_Is_Chef_Request_Confirmed__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>Chef-Unconfirmed-Luca Chen-Chef Req</label>
-    </listViews>
-    <listViews>
         <fullName>CN_Chef_Unconfirmed_Nicolas_Serrano_Chef_Req</fullName>
         <columns>NAME</columns>
         <columns>CN_Chef__c</columns>
@@ -1078,27 +1036,6 @@ DAY(DATE( YEAR( CN_Chef_Work_End_Date__c ), MONTH ( CN_Chef_Work_End_Date__c ) +
             <value>0</value>
         </filters>
         <label>Chef-Unconfirmed-Ruby Zhang-Chef Req</label>
-    </listViews>
-    <listViews>
-        <fullName>CN_Chef_Unconfirmed_Sunny_Sun_Chef_Req</fullName>
-        <columns>NAME</columns>
-        <columns>CN_Chef__c</columns>
-        <columns>CN_Chef_Request__c</columns>
-        <columns>CN_Display_in_Calendar__c</columns>
-        <columns>CN_Chef_Work_Start_Date__c</columns>
-        <columns>CN_Chef_Work_End_Date__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CN_Chef__c</field>
-            <operation>equals</operation>
-            <value>Sunny Sun</value>
-        </filters>
-        <filters>
-            <field>CN_Is_Chef_Request_Confirmed__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>Chef-Unconfirmed-Sunny Sun-Chef Req</label>
     </listViews>
     <listViews>
         <fullName>CN_Chef_Unconfirmed_Wendy_Yu_Chef_Req</fullName>

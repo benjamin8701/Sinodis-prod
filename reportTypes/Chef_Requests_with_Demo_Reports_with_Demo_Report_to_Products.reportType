@@ -5,7 +5,7 @@
     <deployed>true</deployed>
     <description>Chef Requests with Demo Reports with Demo Report to Products</description>
     <join>
-        <outerJoin>false</outerJoin>
+        <outerJoin>true</outerJoin>
         <relationship>Demo_Reports__r</relationship>
     </join>
     <label>Chef Requests with Demo Reports with Demo Report to Products</label>
@@ -328,16 +328,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CN_Confirm_From_Apex_DateTime__c</field>
-            <table>CN_Chef_Request__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CN_Start_Date_AM_PM__c</field>
-            <table>CN_Chef_Request__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CN_End_Date_AM_PM__c</field>
             <table>CN_Chef_Request__c</table>
         </columns>
         <masterLabel>Chef Requests</masterLabel>
