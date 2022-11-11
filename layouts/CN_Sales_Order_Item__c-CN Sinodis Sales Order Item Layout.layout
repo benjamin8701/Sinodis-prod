@@ -172,6 +172,10 @@
         <fields>CN_Item_Note__c</fields>
         <relatedList>CN_Sales_Order_Item_Note__c.CN_Order_Item_Number__c</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>CN_Schedule_Line__c.CN_Order_Item_Number__c</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>

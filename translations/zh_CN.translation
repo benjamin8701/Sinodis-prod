@@ -1275,6 +1275,23 @@
         </sections>
     </reportTypes>
     <reportTypes>
+        <description><!-- Opportunity with sample request with sp --></description>
+        <label><!-- Opportunity with sample request with sp --></label>
+        <name>CN_Opportunity_with_sample_request_with_sp</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Products --></label>
+            <name>Sample Products</name>
+        </sections>
+        <sections>
+            <label><!-- Sample Requests --></label>
+            <name>Sample Requests</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
         <description><!-- CN Price Book Entry --></description>
         <label><!-- CN Price Book Entry --></label>
         <name>CN_Price_Book_Entry</name>
