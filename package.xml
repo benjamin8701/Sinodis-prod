@@ -720,8 +720,10 @@
     </types>
     <types>
         <members>CN_CCE_Report</members>
+        <members>CN_CCE_Report/CN_CampaignSample_Request1</members>
         <members>CN_CCE_Report/CN_New_Product_Launch_Tracking</members>
         <members>CN_CCE_Report/CN_Repack_Sample_Request</members>
+        <members>CN_CCE_Report/CN_nonCampaign_sample_request</members>
         <members>CN_CampaignReport</members>
         <members>CN_CampaignReport/CN_Attendance_by_EventExecution_Type</members>
         <members>CN_CampaignReport/CN_Attendance_by_Execution_Type</members>
@@ -871,6 +873,7 @@
         <members>CN_Chef_UT_OFF_with_CN_Chef_UT_Items</members>
         <members>CN_Chef_with_Chef_Assigned</members>
         <members>CN_Lead</members>
+        <members>CN_Opportunity_with_sample_request_with_sp</members>
         <members>CN_Price_Book_Entry</members>
         <members>CN_Promotion_with_Member_with_Quote_Line_Item</members>
         <members>CN_Promotion_with_Promotion_Line_Item</members>
