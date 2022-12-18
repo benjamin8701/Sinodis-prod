@@ -902,6 +902,10 @@
     </customTabs>
     <flowDefinitions>
         <flows/>
+        <fullName>CN_Account_Populate_End_Customer_Code</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
         <fullName>CN_CST</fullName>
     </flowDefinitions>
     <flowDefinitions>

@@ -66,9 +66,10 @@
         <connector>
             <targetReference>CN_Update_Quote_Item_IF_Flow_Update</targetReference>
         </connector>
+        <filterFormula>{!$Setup.Trigger_Switcher_Setting__c.EnableFlow__c} = True</filterFormula>
         <object>QuoteLineItem</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
 </Flow>

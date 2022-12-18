@@ -176,6 +176,16 @@
         <unique>true</unique>
     </fields>
     <fields>
+        <fullName>CN_City_EN_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>City EN Code</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_City_EN__c</fullName>
         <externalId>false</externalId>
         <label>City(EN)</label>
