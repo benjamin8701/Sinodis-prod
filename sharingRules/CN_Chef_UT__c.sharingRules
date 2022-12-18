@@ -15,6 +15,20 @@
         <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
+        <fullName>CN_CHEF_UT_SHARE_TO_PBI</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CN_CHEF_UT_SHARE_TO_PBI</label>
+        <sharedTo>
+            <group>CN_PBI</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>CN Chef UT</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
         <fullName>CN_SHARE_ALL_CHEF_UT_TO_CHEF_MANAGER</fullName>
         <accessLevel>Edit</accessLevel>
         <label>CN_SHARE_ALL_CHEF_UT_TO_CHEF_MANAGER</label>

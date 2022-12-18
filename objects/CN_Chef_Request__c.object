@@ -1032,6 +1032,16 @@ DATETIMEVALUE(TEXT(CN_Event_Location_End_Date__c) + &quot; 20:00:00&quot;)
                     <default>false</default>
                     <label>Shooting</label>
                 </value>
+                <value>
+                    <fullName>Marketing Development</fullName>
+                    <default>false</default>
+                    <label>Marketing Development</label>
+                </value>
+                <value>
+                    <fullName>Road Show</fullName>
+                    <default>false</default>
+                    <label>Road Show</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -4083,6 +4093,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Marketing Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Meeting</fullName>
                 <default>false</default>
             </values>
@@ -4096,6 +4110,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Paperwork</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Road Show</fullName>
                 <default>false</default>
             </values>
             <values>
