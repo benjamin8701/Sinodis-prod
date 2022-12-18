@@ -431,6 +431,10 @@
             <translation><!-- Market Visit --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Marketing Development</masterLabel>
+            <translation><!-- Marketing Development --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Meeting</masterLabel>
             <translation><!-- Meeting --></translation>
         </picklistValues>
@@ -457,6 +461,10 @@
         <picklistValues>
             <masterLabel>Recipes R&amp;D</masterLabel>
             <translation><!-- Recipes R&amp;D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Road Show</masterLabel>
+            <translation><!-- Road Show --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>SINODIS Event</masterLabel>

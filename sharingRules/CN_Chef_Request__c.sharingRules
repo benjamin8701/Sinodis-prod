@@ -12,6 +12,17 @@
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
+        <fullName>CN_CHEF_REQUEST_SHARE_TO_PBI</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CN_CHEF_REQUEST_SHARE_TO_PBI</label>
+        <sharedTo>
+            <group>CN_PBI</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CN_China</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
         <fullName>CN_CHEF_REQUEST_SHARE_TO_SALES_MDM</fullName>
         <accessLevel>Read</accessLevel>
         <label>CN_CHEF_REQUEST_SHARE_TO_SALES_MDM</label>

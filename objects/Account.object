@@ -242,6 +242,17 @@
         <fields>CN_Customer_Status__c</fields>
         <label>Account Compact Layout</label>
     </compactLayouts>
+    <compactLayouts>
+        <fullName>Indirect_Account_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>CN_End_Customer_Code_Text__c</fields>
+        <fields>CN_Sales_Team_UI__c</fields>
+        <fields>CN_Sales_Person_Name__c</fields>
+        <fields>CN_Sinodis_Finance_AR__c</fields>
+        <fields>CN_Account_Status_For_Display__c</fields>
+        <fields>CN_Customer_Status__c</fields>
+        <label>Indirect Account Compact Layout</label>
+    </compactLayouts>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
@@ -2085,6 +2096,37 @@ IF(
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>CN_End_Customer_Code_Number__c</fullName>
+        <displayFormat>{000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>End Customer Code Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>CN_End_Customer_Code_Text__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>End Customer Code for searching function</description>
+        <externalId>true</externalId>
+        <label>Indirect Customer Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>CN_End_Customer_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;IN&quot; &amp; CN_City_CN__r.CN_City_EN_Code__c &amp;  CN_End_Customer_Code_Number__c</formula>
+        <label>End Customer Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Finance_AR__c</fullName>
@@ -9879,7 +9921,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <recordTypes>
         <fullName>CN_Edit_Indirect</fullName>
         <active>true</active>
-        <compactLayoutAssignment>Account_Compact_Layout</compactLayoutAssignment>
+        <compactLayoutAssignment>Indirect_Account_Compact_Layout</compactLayoutAssignment>
         <label>Edit Indirect</label>
         <picklistValues>
             <picklist>AccountSource</picklist>
@@ -16217,7 +16259,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     <recordTypes>
         <fullName>CN_New_Indirect</fullName>
         <active>true</active>
-        <compactLayoutAssignment>Account_Compact_Layout</compactLayoutAssignment>
+        <compactLayoutAssignment>Indirect_Account_Compact_Layout</compactLayoutAssignment>
         <label>Indirect Accont</label>
         <picklistValues>
             <picklist>AccountSource</picklist>

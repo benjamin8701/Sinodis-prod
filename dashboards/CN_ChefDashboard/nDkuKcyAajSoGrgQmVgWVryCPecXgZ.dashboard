@@ -95,6 +95,14 @@
             <operator>equals</operator>
             <values>Shooting</values>
         </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Road Show</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Marketing Development</values>
+        </dashboardFilterOptions>
         <name>Event Type</name>
     </dashboardFilters>
     <dashboardGridLayout>

@@ -720,7 +720,7 @@
     </types>
     <types>
         <members>CN_CCE_Report</members>
-        <members>CN_CCE_Report/CN_CampaignSample_Request1</members>
+        <members>CN_CCE_Report/CN_CampaignSample_Request</members>
         <members>CN_CCE_Report/CN_New_Product_Launch_Tracking</members>
         <members>CN_CCE_Report/CN_Repack_Sample_Request</members>
         <members>CN_CCE_Report/CN_nonCampaign_sample_request</members>
@@ -1014,5 +1014,5 @@
         <members>RecordPage</members>
         <name>Settings</name>
     </types>
-    <version>51.0</version>
+    <version>55.0</version>
 </Package>

@@ -13,6 +13,10 @@
         <name>CN_City_Code__c</name>
     </fields>
     <fields>
+        <label><!-- City EN Code --></label>
+        <name>CN_City_EN_Code__c</name>
+    </fields>
+    <fields>
         <label><!-- City(EN) --></label>
         <name>CN_City_EN__c</name>
     </fields>

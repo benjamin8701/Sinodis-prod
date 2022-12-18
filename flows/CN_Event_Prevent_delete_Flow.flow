@@ -42,17 +42,10 @@
         <connector>
             <targetReference>CN_Event_Update_Prevent_Delete_Field</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>RecordTypeId</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>0125h000000MQnuAAG</stringValue>
-            </value>
-        </filters>
+        <filterFormula>AND( {!$Setup.Trigger_Switcher_Setting__c.EnableFlow__c} = True, {!$Record.RecordType.DeveloperName}=&apos;CN_Visit&apos; )</filterFormula>
         <object>Event</object>
         <recordTriggerType>Delete</recordTriggerType>
         <triggerType>RecordBeforeDelete</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
 </Flow>
