@@ -383,6 +383,11 @@
                     <label>IRCA</label>
                 </value>
                 <value>
+                    <fullName>Joyhana</fullName>
+                    <default>false</default>
+                    <label>Joyhana</label>
+                </value>
+                <value>
                     <fullName>LE RUSTIQUE</fullName>
                     <default>false</default>
                     <label>LE RUSTIQUE</label>
@@ -3219,6 +3224,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Joyhana</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>LE RUSTIQUE</fullName>
                 <default>false</default>
             </values>
@@ -3563,6 +3572,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Joyhana</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>LE RUSTIQUE</fullName>
                 <default>false</default>
             </values>
@@ -3900,6 +3913,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>IRCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joyhana</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4275,6 +4292,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Joyhana</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>LE RUSTIQUE</fullName>
                 <default>false</default>
             </values>
@@ -4632,6 +4653,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>IRCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joyhana</fullName>
                 <default>false</default>
             </values>
             <values>
