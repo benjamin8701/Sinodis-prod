@@ -360,6 +360,11 @@
                     <label>IRCA</label>
                 </value>
                 <value>
+                    <fullName>Joyhana</fullName>
+                    <default>false</default>
+                    <label>Joyhana</label>
+                </value>
+                <value>
                     <fullName>LE RUSTIQUE</fullName>
                     <default>false</default>
                     <label>LE RUSTIQUE</label>
@@ -1153,6 +1158,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Joyhana</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>LE RUSTIQUE</fullName>
                 <default>false</default>
             </values>
@@ -1580,6 +1589,10 @@
             </values>
             <values>
                 <fullName>IRCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Joyhana</fullName>
                 <default>false</default>
             </values>
             <values>

@@ -131,6 +131,10 @@
             <translation><!-- IRCA --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Joyhana</masterLabel>
+            <translation><!-- Joyhana --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>LE RUSTIQUE</masterLabel>
             <translation><!-- LE RUSTIQUE --></translation>
         </picklistValues>
