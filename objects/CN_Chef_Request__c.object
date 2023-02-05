@@ -983,11 +983,6 @@ DATETIMEVALUE(TEXT(CN_Event_Location_End_Date__c) + &quot; 20:00:00&quot;)
                     <label>SINODIS Event</label>
                 </value>
                 <value>
-                    <fullName>Full Solution Approach</fullName>
-                    <default>false</default>
-                    <label>Full Solution Approach</label>
-                </value>
-                <value>
                     <fullName>OFF</fullName>
                     <default>false</default>
                     <label>OFF</label>
@@ -4474,15 +4469,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Event_Type__c</picklist>
             <values>
-                <fullName>Full Solution Approach</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Live Streaming</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Public Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Road Show</fullName>
                 <default>false</default>
             </values>
             <values>
