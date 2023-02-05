@@ -423,10 +423,6 @@
             <translation><!-- Company Events --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Full Solution Approach</masterLabel>
-            <translation><!-- Full Solution Approach --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Live Streaming</masterLabel>
             <translation><!-- Live Streaming --></translation>
         </picklistValues>
@@ -485,6 +481,10 @@
         <picklistValues>
             <masterLabel>Short Video</masterLabel>
             <translation><!-- Short Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taskforce</masterLabel>
+            <translation><!-- Taskforce --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>VIP Class</masterLabel>
