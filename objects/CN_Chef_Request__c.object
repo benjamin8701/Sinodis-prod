@@ -1042,6 +1042,17 @@ DATETIMEVALUE(TEXT(CN_Event_Location_End_Date__c) + &quot; 20:00:00&quot;)
                     <default>false</default>
                     <label>Road Show</label>
                 </value>
+                <value>
+                    <fullName>Taskforce</fullName>
+                    <default>false</default>
+                    <label>Taskforce</label>
+                </value>
+                <value>
+                    <fullName>Full Solution Approach</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Full Solution Approach</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -4486,6 +4497,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Short Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taskforce</fullName>
                 <default>false</default>
             </values>
             <values>
