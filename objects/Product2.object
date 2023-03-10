@@ -304,7 +304,7 @@
                 <value>
                     <fullName>Repack</fullName>
                     <default>false</default>
-                    <label>Repack</label>
+                    <label>Test Sample</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -435,7 +435,7 @@
         <externalId>false</externalId>
         <formula>ISPICKVAL(CN_Sample_Type__c  , &quot;Repack&quot;)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Is Repack Sample</label>
+        <label>Is Test Sample</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -539,7 +539,7 @@
             <operation>equals</operation>
             <value>Product2.CN_Product</value>
         </filters>
-        <label>All Repack Products</label>
+        <label>All Test Sample Products</label>
     </listViews>
     <profileSearchLayouts>
         <fields>PRODUCT2.NAME</fields>

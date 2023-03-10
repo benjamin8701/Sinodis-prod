@@ -87,7 +87,7 @@
         <field>CUST_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Repack Sample Request</name>
+    <name>Test Sample Request</name>
     <params>
         <name>co</name>
         <value>0</value>
