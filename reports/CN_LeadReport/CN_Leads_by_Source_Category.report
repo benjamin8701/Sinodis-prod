@@ -60,9 +60,6 @@
         <field>Lead$LastModifiedBy</field>
     </columns>
     <columns>
-        <field>Lead$LeadSource</field>
-    </columns>
-    <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Lead$IsUnreadByOwner</field>
     </columns>
@@ -72,8 +69,16 @@
     <columns>
         <field>Lead$ConvertedAccount.CN_License_Name_EN__c</field>
     </columns>
+    <columns>
+        <field>Lead$CreatedDate</field>
+    </columns>
     <currency>CNY</currency>
     <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lead$LeadSource</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Lead$CN_Customer_Category__c</field>
