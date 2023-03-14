@@ -51,6 +51,10 @@
             <translation><!-- 5CCE2204 – CCE Sample --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>5CCE2304 – CCE Sample</masterLabel>
+            <translation><!-- 5CCE2304 – CCE Sample --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>5TMK2104 – TM sample</masterLabel>
             <translation><!-- 5TMK2104 – TM sample --></translation>
         </picklistValues>
@@ -307,7 +311,7 @@
         <name>Test</name>
     </quickActions>
     <recordTypes>
-        <label><!-- Office Repack --></label>
+        <label><!-- Office Test Sample --></label>
         <name>CN_Office_Repack</name>
     </recordTypes>
     <recordTypes>
