@@ -409,7 +409,7 @@
         <externalId>false</externalId>
         <formula>CN_Sample_Request__r.RecordType.DeveloperName = &quot;CN_Office_Repack&quot;</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Is Repack Sample</label>
+        <label>Is Test Sample</label>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -769,9 +769,9 @@
         <filters>
             <field>CN_Sample_Request_Type_Formula__c</field>
             <operation>equals</operation>
-            <value>Office Repack</value>
+            <value>Office Test Sample</value>
         </filters>
-        <label>My Sample Feedbacks - Repack</label>
+        <label>My Sample Feedbacks - Test Sample</label>
         <sharedTo>
             <roleAndSubordinates>CN_Commercial_Director</roleAndSubordinates>
         </sharedTo>
@@ -893,7 +893,7 @@
             <operation>equals</operation>
             <value>CN_Sample_Product__c.CN_Sample_Product</value>
         </filters>
-        <label>Repack Sample Products (CCE View)</label>
+        <label>Test Sample Products (CCE View)</label>
         <sharedTo>
             <roleAndSubordinates>CN_Marketing</roleAndSubordinates>
         </sharedTo>
@@ -1050,7 +1050,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
  ISCHANGED(CN_Status_of_Delivery__c  ) ||  ISCHANGED( CN_Delivery_Comments__c ) 
 )</errorConditionFormula>
         <errorDisplayField>CN_Status_of_Delivery__c</errorDisplayField>
-        <errorMessage>Repack Sample&apos;s deliver status is only updated by CCE</errorMessage>
+        <errorMessage>Test Sample&apos;s deliver status is only updated by CCE</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Sample_Quantity</fullName>
