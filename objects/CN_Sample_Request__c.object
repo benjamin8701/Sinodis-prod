@@ -816,7 +816,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <operation>equals</operation>
             <value>CN_Sample_Request__c.CN_Office_Repack</value>
         </filters>
-        <label>All Office Repack Sample Requests</label>
+        <label>All Office Test Sample Requests</label>
         <sharedTo>
             <roleAndSubordinates>CN_China</roleAndSubordinates>
         </sharedTo>
@@ -854,7 +854,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>CN_Office_Repack</fullName>
         <active>true</active>
         <compactLayoutAssignment>CN_Sample_Request</compactLayoutAssignment>
-        <label>Office Repack</label>
+        <label>Office Test Sample</label>
         <picklistValues>
             <picklist>CN_Condition_Type__c</picklist>
             <values>
