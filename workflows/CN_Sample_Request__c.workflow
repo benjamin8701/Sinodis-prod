@@ -123,7 +123,7 @@
     <fieldUpdates>
         <fullName>CN_SR_Populate_ConditionType</fullName>
         <field>CN_Condition_Type__c</field>
-        <literalValue>5CCE2204 – CCE Sample</literalValue>
+        <literalValue>5CCE2304 – CCE Sample</literalValue>
         <name>CN_SR_Populate_ConditionType</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>

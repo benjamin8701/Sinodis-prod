@@ -106,7 +106,7 @@
         <name>CN_Is_Overdue__c</name>
     </fields>
     <fields>
-        <label><!-- Is Repack Sample --></label>
+        <label><!-- Is Test Sample --></label>
         <name>CN_Is_Repack_Sample__c</name>
     </fields>
     <fields>
@@ -239,8 +239,8 @@
             <section>Feedback Description</section>
         </sections>
         <sections>
-            <label>样品交付情况（整装样品销售填写，分装样品CCE填写）</label>
-            <section>Sample Deliver(Sales to input for wholepack, CCE to input for repack)</section>
+            <label><!-- Sample Deliver(Sales to input for wholepack, CCE to input for Test Sample) --></label>
+            <section>Sample Deliver(Sales to input for wholepack, CCE to input for Test Sample)</section>
         </sections>
         <sections>
             <label>样品反馈（销售填写）</label>

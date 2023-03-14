@@ -65,8 +65,8 @@
         <label>产品类型</label>
         <name>CN_Sample_Type__c</name>
         <picklistValues>
-            <masterLabel>Repack</masterLabel>
-            <translation><!-- Repack --></translation>
+            <masterLabel>Test Sample</masterLabel>
+            <translation><!-- Test Sample --></translation>
         </picklistValues>
     </fields>
     <fields>

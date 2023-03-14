@@ -110,7 +110,7 @@
         <name>CN_Is_Overdue__c</name>
     </fields>
     <fields>
-        <label><!-- Is Repack Sample --></label>
+        <label><!-- Is Test Sample --></label>
         <name>CN_Is_Repack_Sample__c</name>
     </fields>
     <fields>
@@ -243,8 +243,8 @@
             <section>Feedback Description</section>
         </sections>
         <sections>
-            <label><!-- Sample Deliver(Sales to input for wholepack, CCE to input for repack) --></label>
-            <section>Sample Deliver(Sales to input for wholepack, CCE to input for repack)</section>
+            <label><!-- Sample Deliver(Sales to input for wholepack, CCE to input for Test Sample) --></label>
+            <section>Sample Deliver(Sales to input for wholepack, CCE to input for Test Sample)</section>
         </sections>
         <sections>
             <label><!-- Sample Feedback(For Sales Input) --></label>
@@ -285,7 +285,7 @@
         <name>CN_Check_Product_Type</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Repack Sample&apos;s deliver status is only updated by CCE --></errorMessage>
+        <errorMessage><!-- Test Sample&apos;s deliver status is only updated by CCE --></errorMessage>
         <name>CN_Check_Repack_Deliver_Status_Edit</name>
     </validationRules>
     <validationRules>

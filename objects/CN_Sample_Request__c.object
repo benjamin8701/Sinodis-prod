@@ -301,6 +301,11 @@
                     <default>false</default>
                     <label>5CCE2204 – CCE Sample</label>
                 </value>
+                <value>
+                    <fullName>5CCE2304 – CCE Sample</fullName>
+                    <default>false</default>
+                    <label>5CCE2304 – CCE Sample</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -862,6 +867,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>5CCE2304 %E2%80%93 CCE Sample</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>5TMK2104 %E2%80%93 TM sample</fullName>
                 <default>false</default>
             </values>
@@ -943,6 +952,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <picklist>CN_Condition_Type__c</picklist>
             <values>
                 <fullName>5CCE2204 %E2%80%93 CCE Sample</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5CCE2304 %E2%80%93 CCE Sample</fullName>
                 <default>false</default>
             </values>
             <values>
