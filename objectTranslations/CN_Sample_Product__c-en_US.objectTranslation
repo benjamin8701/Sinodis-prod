@@ -297,6 +297,14 @@
         <name>CN_Check_Sample_Real_Quantity</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- Test sample&apos;s Quantity Needed must be an integer --></errorMessage>
+        <name>CN_Check_Test_Sample_Quantity_Decimals</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Test sample&apos;s Real Quantity must be an integer --></errorMessage>
+        <name>CN_Check_Test_Sample_R_Quantity_Decimals</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Wholepack Sample&apos;s deliver status is only updated by Sales Person or CCE --></errorMessage>
         <name>CN_Check_Wholepack_Deliver_Status_Edit</name>
     </validationRules>
@@ -319,5 +327,13 @@
     <validationRules>
         <errorMessage><!-- You are not allowed to edit the current status. --></errorMessage>
         <name>CN_SP_Check_Current_Status_Sales</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quantity needed allows a maximum of two decimals --></errorMessage>
+        <name>CN_SP_Check_Quantity_Needed_Decimals</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Real Quantity allows a maximum of two decimals --></errorMessage>
+        <name>CN_SP_Check_Real_Quantity_Decimals</name>
     </validationRules>
 </CustomObjectTranslation>

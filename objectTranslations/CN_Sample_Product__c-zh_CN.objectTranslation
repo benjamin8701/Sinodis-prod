@@ -295,6 +295,14 @@
         <name>CN_Check_Sample_Real_Quantity</name>
     </validationRules>
     <validationRules>
+        <errorMessage>分装样品的需要样品数量必须为整数</errorMessage>
+        <name>CN_Check_Test_Sample_Quantity_Decimals</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>分装样品的实发样品数量必须为整数</errorMessage>
+        <name>CN_Check_Test_Sample_R_Quantity_Decimals</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>正装样品的送达信息仅供销售人员或CCE填写</errorMessage>
         <name>CN_Check_Wholepack_Deliver_Status_Edit</name>
     </validationRules>
@@ -317,5 +325,13 @@
     <validationRules>
         <errorMessage>您没有权限编辑目前客户情况</errorMessage>
         <name>CN_SP_Check_Current_Status_Sales</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>需要样品数量最多保留两位小数</errorMessage>
+        <name>CN_SP_Check_Quantity_Needed_Decimals</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>实发样品数量最多保留两位小数</errorMessage>
+        <name>CN_SP_Check_Real_Quantity_Decimals</name>
     </validationRules>
 </CustomObjectTranslation>

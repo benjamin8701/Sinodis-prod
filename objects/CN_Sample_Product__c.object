@@ -514,7 +514,7 @@
         <label>Quantity Needed</label>
         <precision>18</precision>
         <required>false</required>
-        <scale>0</scale>
+        <scale>2</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -527,7 +527,7 @@
         <label>Real Quantity</label>
         <precision>18</precision>
         <required>false</required>
-        <scale>0</scale>
+        <scale>2</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -1079,6 +1079,31 @@ OR(
         <errorMessage>Real Quantity must greater than 0 and less than Quantity Needed.</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>CN_Check_Test_Sample_Quantity_Decimals</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+CN_Is_Repack_Sample__c,
+MOD(CN_Quantity_Needed__c,1)&gt;0
+)</errorConditionFormula>
+        <errorDisplayField>CN_Quantity_Needed__c</errorDisplayField>
+        <errorMessage>Test sample&apos;s Quantity Needed must be an integer</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Check_Test_Sample_R_Quantity_Decimals</fullName>
+        <active>true</active>
+        <description>Check Test Sample Real Quantity Decimals</description>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+CN_Is_Repack_Sample__c,
+MOD( CN_Real_Quantity__c ,1)&gt;0
+)</errorConditionFormula>
+        <errorDisplayField>CN_Real_Quantity__c</errorDisplayField>
+        <errorMessage>Test sample&apos;s Real Quantity must be an integer</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>CN_Check_Wholepack_Deliver_Status_Edit</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -1168,6 +1193,28 @@ ISNEW(),
 )</errorConditionFormula>
         <errorDisplayField>CN_Current_Status__c</errorDisplayField>
         <errorMessage>You are not allowed to edit the current status.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_SP_Check_Quantity_Needed_Decimals</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+MOD(CN_Quantity_Needed__c,0.01)&gt;0
+)</errorConditionFormula>
+        <errorDisplayField>CN_Quantity_Needed__c</errorDisplayField>
+        <errorMessage>Quantity needed allows a maximum of two decimals</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_SP_Check_Real_Quantity_Decimals</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+MOD( CN_Real_Quantity__c ,0.01)&gt;0
+)</errorConditionFormula>
+        <errorDisplayField>CN_Real_Quantity__c</errorDisplayField>
+        <errorMessage>Real Quantity allows a maximum of two decimals</errorMessage>
     </validationRules>
     <visibility>Public</visibility>
 </CustomObject>
