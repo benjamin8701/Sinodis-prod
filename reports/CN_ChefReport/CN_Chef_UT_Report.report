@@ -42,7 +42,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
-            <value>2022,2021</value>
+            <value>2022,2023</value>
         </criteriaItems>
         <criteriaItems>
             <column>CN_Chef_UT_OFF__c$CN_Chef__c.Profile.Name</column>
@@ -78,7 +78,7 @@
     <scope>organization</scope>
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
-    <showSubTotals>true</showSubTotals>
+    <showSubTotals>false</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CN_Chef_UT_OFF__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

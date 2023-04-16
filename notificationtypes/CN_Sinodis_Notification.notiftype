@@ -4,4 +4,5 @@
     <desktop>true</desktop>
     <masterLabel>CN_Sinodis_Notification</masterLabel>
     <mobile>true</mobile>
+    <slack>false</slack>
 </CustomNotificationType>

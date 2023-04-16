@@ -57,10 +57,6 @@
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>Full Solution Approach</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
             <values>Paperwork</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
@@ -102,6 +98,10 @@
         <dashboardFilterOptions>
             <operator>equals</operator>
             <values>Marketing Development</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Taskforce</values>
         </dashboardFilterOptions>
         <name>Event Type</name>
     </dashboardFilters>

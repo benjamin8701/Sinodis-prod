@@ -4,6 +4,8 @@
     <name>Chef Manager Queue</name>
     <queueMembers>
         <users>
+            <user>pierre.gilson@sinodis.com.cn</user>
+            <user>claire.guan@sinodis.com.cn</user>
             <user>simon.jiang@sinodis.com.cn</user>
             <user>alan.xiong@sinodis.com.cn</user>
         </users>

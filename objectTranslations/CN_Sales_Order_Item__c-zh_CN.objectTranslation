@@ -346,7 +346,7 @@
             <section>Product Information</section>
         </sections>
         <sections>
-            <label>系统信息</label>
+            <label><!-- System Information --></label>
             <section>System Information</section>
         </sections>
     </layouts>

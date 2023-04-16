@@ -1033,7 +1033,7 @@
             <operation>equals</operation>
             <value>1</value>
         </filters>
-        <label>All Active Campaigns</label>
+        <label>全部已启用市场活动</label>
     </listViews>
     <listViews>
         <fullName>MyActiveCampaigns</fullName>

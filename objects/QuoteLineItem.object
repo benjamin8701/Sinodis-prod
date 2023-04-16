@@ -124,6 +124,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -132,6 +133,7 @@
         <externalId>false</externalId>
         <label>Approval Status</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
             <restricted>true</restricted>
@@ -165,6 +167,7 @@
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Approval Type</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -175,6 +178,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -187,6 +191,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -203,6 +208,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -212,6 +218,7 @@
         <label>Approver Id List</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -221,6 +228,7 @@
         <label>Approver Required</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -231,6 +239,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -240,6 +249,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -248,6 +258,7 @@
         <label>Comments for Approver</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -258,6 +269,7 @@
         <label>Condition Table</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -268,6 +280,7 @@
         <label>Condition Type</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -276,6 +289,7 @@
         <externalId>false</externalId>
         <label>Customer Acceptance</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
             <restricted>true</restricted>
@@ -301,6 +315,7 @@
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Customer Number</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -310,6 +325,7 @@
         <label>Denied Reason</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -320,6 +336,7 @@
         <precision>17</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -331,6 +348,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Percent</type>
     </fields>
     <fields>
@@ -340,6 +358,7 @@
         <label>External Id</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>true</unique>
     </fields>
@@ -348,6 +367,7 @@
         <externalId>false</externalId>
         <label>Finance Acceptance</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
             <restricted>true</restricted>
@@ -383,6 +403,7 @@
 )</formula>
         <label>Finance Status</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -391,6 +412,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>CN From Splited</label>
+        <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
@@ -399,6 +421,7 @@
         <description>To enable Flow(CN_Quote_Item_Populate_Price) to update sales price when create quote line item.</description>
         <externalId>false</externalId>
         <label>IF Flow update Sales Price</label>
+        <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
@@ -407,6 +430,7 @@
         <formula>NOT(ISBLANK(CN_Promotion_Member__c ))</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Is Applied Promotion</label>
+        <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
@@ -414,6 +438,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Is Approval Completed</label>
+        <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
@@ -422,6 +447,7 @@
         <formula>ISPICKVAL( CN_Sync_Status__c , &quot;Success&quot;)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Is Line Item Synced</label>
+        <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
@@ -430,6 +456,7 @@
         <formula>CONTAINS( CN_Approver_Id_List__c ,  $User.Id )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Is Need My Approval</label>
+        <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
@@ -438,6 +465,7 @@
         <formula>ISPICKVAL(Quote.Status, &quot;Approved&quot;)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Is Quote Approved</label>
+        <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
@@ -445,6 +473,7 @@
         <externalId>false</externalId>
         <label>Latest Ready DateTime</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>DateTime</type>
     </fields>
     <fields>
@@ -452,6 +481,7 @@
         <externalId>false</externalId>
         <label>Latest Reject/Approve DateTime</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>DateTime</type>
     </fields>
     <fields>
@@ -459,6 +489,7 @@
         <displayFormat>QI-{0000000000}</displayFormat>
         <externalId>true</externalId>
         <label>Line Item Number</label>
+        <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </fields>
     <fields>
@@ -468,6 +499,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -477,6 +509,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -486,6 +519,7 @@
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Material Number API</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -496,6 +530,7 @@
         <precision>17</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -505,6 +540,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -513,6 +549,7 @@
         <label>Origin/原产国</label>
         <length>20</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -522,6 +559,7 @@
         <formula>TEXT(Product2.CN_Origin__c)</formula>
         <label>Origin</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -533,6 +571,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -541,6 +580,7 @@
         <formula>&quot;CNY &quot; + TEXT(ROUND( UnitPrice ,2))</formula>
         <label>Pirce/销售价</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -551,6 +591,7 @@
         <precision>5</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -560,6 +601,7 @@
         <formula>Product2.CN_SKU_Code__c</formula>
         <label>Product Code</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -591,6 +633,7 @@ IF(
 )</formula>
         <label>Product Description/产品描述</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -601,6 +644,7 @@ IF(
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -610,6 +654,7 @@ IF(
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -619,6 +664,7 @@ IF(
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -628,6 +674,7 @@ IF(
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -637,6 +684,7 @@ IF(
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Promotion Id</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -649,6 +697,7 @@ IF(
         <relationshipLabel>Quote Line Items</relationshipLabel>
         <relationshipName>Quote_Line_Items</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -658,6 +707,7 @@ IF(
         <precision>17</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -666,6 +716,7 @@ IF(
         <label>QTY PER CTN/箱规</label>
         <length>50</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -675,6 +726,7 @@ IF(
         <formula>Product2.CN_Qty_per_Carton_PDF__c</formula>
         <label>Qty per Carton</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -685,6 +737,7 @@ IF(
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Quote Status</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -695,6 +748,7 @@ IF(
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Quote Sync Status</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -707,6 +761,7 @@ IF(
         <precision>18</precision>
         <required>false</required>
         <scale>3</scale>
+        <trackHistory>false</trackHistory>
         <type>Percent</type>
     </fields>
     <fields>
@@ -716,6 +771,7 @@ IF(
         <label>Rate Unit</label>
         <length>255</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -725,6 +781,7 @@ IF(
         <formula>Product2.CN_SKU_Description_CN__c</formula>
         <label>Product Description(CN)</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -734,6 +791,7 @@ IF(
         <formula>Product2.CN_SKU_Description_EN__c</formula>
         <label>Product Description(EN)</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -747,6 +805,7 @@ IF(
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -755,6 +814,7 @@ IF(
         <formula>Text( CN_Pricing_Unit__c) &amp;&apos;-&apos;&amp; CN_Unit_of_Measure__c</formula>
         <label>UoM/单位</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -764,6 +824,7 @@ IF(
         <formula>Text(CN_Pricing_Unit__c) &amp;&apos;-&apos; &amp; CN_Unit_of_Measure__c &amp; &apos;   Tax:&apos; &amp;  CN_Tax__c</formula>
         <label>Sales Unit</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -775,6 +836,7 @@ IF(
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -783,6 +845,7 @@ IF(
         <externalId>false</externalId>
         <label>Sync Error Message</label>
         <length>131072</length>
+        <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
     </fields>
@@ -791,6 +854,7 @@ IF(
         <externalId>false</externalId>
         <label>Sync Status</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
             <restricted>true</restricted>
@@ -814,6 +878,7 @@ IF(
         <externalId>false</externalId>
         <label>Sync Time</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>DateTime</type>
     </fields>
     <fields>
@@ -830,6 +895,7 @@ IF(
 ) &amp; &apos;%&apos;</formula>
         <label>Tax Formula</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -839,6 +905,7 @@ IF(
         <formula>CN_Tax__c  &amp; &apos;VAT&apos;</formula>
         <label>Tax/税率</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -848,6 +915,7 @@ IF(
         <label>Tax</label>
         <length>10</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -857,6 +925,7 @@ IF(
         <label>UoM</label>
         <length>5</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -867,6 +936,7 @@ IF(
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Valid From</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -877,17 +947,25 @@ IF(
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Valid To</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
         <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Discount</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LineNumber</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>ListPrice</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Product2Id</fullName>
@@ -900,13 +978,16 @@ IF(
             </filterItems>
             <isOptional>false</isOptional>
         </lookupFilter>
+        <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>ProductCode</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Quantity</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>QuoteId</fullName>
@@ -919,19 +1000,24 @@ IF(
             </filterItems>
             <isOptional>false</isOptional>
         </lookupFilter>
+        <trackHistory>false</trackHistory>
         <type>MasterDetail</type>
     </fields>
     <fields>
         <fullName>ServiceDate</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Subtotal</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>TotalPrice</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>UnitPrice</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <sharingModel>ControlledByParent</sharingModel>
     <validationRules>

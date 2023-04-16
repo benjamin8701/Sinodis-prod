@@ -53,10 +53,6 @@
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>Full Solution Approach</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
             <values>OFF</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
@@ -102,6 +98,10 @@
         <dashboardFilterOptions>
             <operator>equals</operator>
             <values>Marketing Development</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Taskforce</values>
         </dashboardFilterOptions>
         <name>Event Type</name>
     </dashboardFilters>
@@ -372,7 +372,7 @@
     </dashboardGridLayout>
     <dashboardType>MyTeamUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>system.deployment@savencia.com</runningUser>
+    <runningUser>system.support@savencia.com</runningUser>
     <textColor>#000000</textColor>
     <title>Chef Dashboard</title>
     <titleColor>#000000</titleColor>
