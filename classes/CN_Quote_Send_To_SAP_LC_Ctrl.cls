@@ -10,6 +10,7 @@
  **************************************************************************************************/
 public without sharing class CN_Quote_Send_To_SAP_LC_Ctrl {
     public static String moduleName = System.Label.CN_Quote_Name;
+
     @AuraEnabled
     public static Map<String, Object> getQuoteInfoAndCheckEditPermisison(String recordId){
         
@@ -60,6 +61,162 @@ public without sharing class CN_Quote_Send_To_SAP_LC_Ctrl {
         };
     }
 
+    // modify by qiuchen 20230413 ---- start
+    @AuraEnabled
+    public static Map<String, Object> getQuoteInfoAndCheck(String recordId){
+        
+        if(String.isBlank(recordId)) {
+            throw new AuraHandledException(String.format(System.Label.CN_Quote_Not_Found, new List<String>{moduleName}));
+        }
+        
+        Boolean hasCreatePermission = false;
+        String errorMsg = '';
+        String modalContentMessageEffectiveChanged = '';
+        Quote quo = new Quote();
+        Quote quoUpdate = new Quote();
+        hasCreatePermission = true;
+        // if(!hasCreatePermission) {
+        //     throw new AuraHandledException(String.format(System.Label.CN_Quote_No_Permission, new List<String>{moduleName}));
+        // }
+
+        List<Quote> quoList = [Select Id,
+                            CN_Effective_Date__c,
+                            ExpirationDate,
+                            CN_Sync_Status__c,
+                            status 
+                            From Quote 
+                            Where Id =: recordId ];
+        
+        if(quoList.isEmpty()) {
+            throw new AuraHandledException(System.Label.CN_Quote_Not_Found);
+        }
+
+        quo = quoList[0];
+        quoUpdate.Id = quo.Id;
+        if(Constants.CN_QUOTE_STATUS_NEW.equals(quo.Status) || Constants.CN_QUOTE_STATUS_SUBMITTED.equals(quo.Status) || Constants.CN_QUOTE_STATUS_READY.equals(quo.Status)){
+            errorMsg = System.Label.CN_Quote_Had_Not_Approved_Notice;
+            return new Map<String, Object>{
+                'modalContentMessageEffectiveChanged' => modalContentMessageEffectiveChanged,
+                'hasCreatePermission' => hasCreatePermission,
+                'errorMsg' => errorMsg
+            };
+        }else{
+            String oldEffectiveDateString = String.valueOf(quo.CN_Effective_Date__c);
+            String newEffectiveDateString = String.valueOf(Date.today());
+            try{
+                if(quo.CN_Effective_Date__c < Date.today() && Date.today() <= quo.ExpirationDate){
+                    quoUpdate.CN_Effective_Date__c = Date.today();
+                    quoUpdate.CN_Update_From_Apex_DateTime__c = system.now();
+                    modalContentMessageEffectiveChanged = String.format(System.label.CN_Quote_Effective_Date_Changed_Reminder, New List<String>{oldEffectiveDateString,newEffectiveDateString});
+                    update quoUpdate;
+                }else if(quo.ExpirationDate < Date.today() ){
+                    errorMsg = System.Label.CN_Quote_Send_To_SAP_ErrMsg_Expired;
+                    if(!constants.CN_QUOTE_SYNC_STATUS_SUCCESS.equals(quo.CN_Sync_Status__c)){
+                        quoUpdate.status = constants.CN_QUOTE_STATUS_REJECTED;
+                        quoUpdate.CN_Update_From_Apex_DateTime__c = system.now();
+                        update quoUpdate;
+                    }
+                    return new Map<String, Object>{
+                        'modalContentMessageEffectiveChanged' => modalContentMessageEffectiveChanged,
+                        'hasCreatePermission' => hasCreatePermission,
+                        'errorMsg' => errorMsg
+                    };
+                }
+            } catch (Exception e) {
+                String errorMessage = e.getMessage();
+                if(errorMessage.contains('FIELD_CUSTOM_VALIDATION_EXCEPTION,')){
+                    errorMessage = errorMessage.substringAfter('FIELD_CUSTOM_VALIDATION_EXCEPTION,');
+                }
+                throw new AuraHandledException(errorMessage);
+            }
+        }
+        
+
+        List<QuoteLineItem> qliList = [SELECT Id,
+                                    LineNumber,
+                                    CN_Condition_Type_API__c,
+                                    CN_Condition_Table_API__c,
+                                    CN_Rate_API__c,
+                                    CN_Rate_Unit_API__c,
+                                    CN_Customer_Number_API__c,
+                                    CN_Material_Number_API__c,
+                                    CN_Valid_From_API__c,
+                                    CN_Valid_To_API__c,
+                                    PricebookEntryId,
+                                    Product2Id,
+                                    CN_Channel_Price__c,
+                                    CN_Max_Discount_Price__c,
+                                    CN_List_Price__c
+                                FROM QuoteLineItem 
+                                WHERE QuoteId =: recordId 
+                                    AND CN_Customer_Acceptance__c = 'Accepted'  //modify by qiuchen 20230413
+                                    AND CN_Customer_Number_API__c != null
+                                    AND CN_Sync_Status__c != 'Success'
+                                    AND Quote.Status = 'Approved'];
+        if(qliList.isEmpty()) {
+            throw new AuraHandledException(System.Label.CN_Quote_Send_To_SAP_ErrMsg_NoItem);
+        }
+        List<QuoteLineItem> qliListForUpdate = updateQuoteItemPromoPrices(qliList);
+        system.debug(qliListForUpdate);
+        Constants.CN_QUOTEITEM_VALIDATION_HANDLER_TRIGGER_ON = false;
+        update qliListForUpdate;
+        Constants.CN_QUOTEITEM_VALIDATION_HANDLER_TRIGGER_ON = true;
+        return new Map<String, Object>{
+            'modalContentMessageEffectiveChanged' => modalContentMessageEffectiveChanged,
+            'hasCreatePermission' => hasCreatePermission,
+            'errorMsg' => errorMsg
+        };
+    }
+
+    @AuraEnabled
+    public static Map<String, Object> upateQuoteIsNotifyFinance(String recordId){
+        system.debug('upateQuoteIsNotifyFinance start!');
+        if(String.isBlank(recordId)) {
+            throw new AuraHandledException(String.format(System.Label.CN_Quote_Not_Found, new List<String>{moduleName}));
+        }
+        
+        Boolean hasCreatePermission = false;
+        String errorMsg = '';
+        Quote quo = new Quote();
+        Quote quoUpdate = new Quote();
+        hasCreatePermission = true;
+        // if(!hasCreatePermission) {
+        //     throw new AuraHandledException(String.format(System.Label.CN_Quote_No_Permission, new List<String>{moduleName}));
+        // }
+
+        List<Quote> quoList = [Select Id,
+                            CN_Effective_Date__c,
+                            ExpirationDate,
+                            CN_Sync_Status__c,
+                            status 
+                            From Quote 
+                            Where Id =: recordId ];
+        
+        if(quoList.isEmpty()) {
+            throw new AuraHandledException(System.Label.CN_Quote_Not_Found);
+        }
+
+        quo = quoList[0];
+        try{
+            quoUpdate.Id = quo.Id;
+            quoUpdate.CN_Finance_Notify_DateTime__c = system.now();
+            quoUpdate.CN_Update_From_Apex_DateTime__c = system.now();
+            update quoUpdate;
+        } catch (Exception e) {
+            String errorMessage = e.getMessage();
+            if(errorMessage.contains('FIELD_CUSTOM_VALIDATION_EXCEPTION,')){
+                errorMessage = errorMessage.substringAfter('FIELD_CUSTOM_VALIDATION_EXCEPTION,');
+            }
+            throw new AuraHandledException(errorMessage);
+        }
+        Constants.CN_QUOTEITEM_VALIDATION_HANDLER_TRIGGER_ON = true;
+        return new Map<String, Object>{
+            'hasCreatePermission' => hasCreatePermission,
+            'errorMsg' => errorMsg
+        };
+    }
+    // modify by qiuchen 20230413 ---- end
+
     @auraEnabled
     public static Map<String, Object> sendQuote(String recordId) {
         
@@ -81,23 +238,17 @@ public without sharing class CN_Quote_Send_To_SAP_LC_Ctrl {
                                         Name,
                                         Status,
                                         CN_Sync_Status__c,
-                                        CN_Sync_Time__c        //SQL
+                                        CN_Sync_Time__c 
                                     FROM Quote
                                     WHERE Id =: recordId AND Status =: Constants.CN_QUOTE_STATUS_APPROVED];
         if(quoList.isEmpty()) {
             throw new AuraHandledException(String.format(System.Label.CN_Quote_Not_Found, new List<String>{moduleName}));
         }
-
         Quote quoToSend = quoList[0];
-        /*if(Constants.CN_QUOTE_SYNC_STATUS_SUCCESS.equals(quoToSend.CN_Sync_Status__c) ) {
-            throw new AuraHandledException(String.format(System.Label.CN_Quote_Had_Synced, new List<String>{moduleName}));
-        }*/
         if(checkTimeInterval(quoToSend)) {
             throw new AuraHandledException(System.Label.CN_Quote_Warning_Msg_Too_Frequency);      //label
         }
-        
         Map<String, Object> resultMap = doCallout(quoToSend.Id);
-        
         return resultMap;
     }
 
@@ -343,6 +494,9 @@ public without sharing class CN_Quote_Send_To_SAP_LC_Ctrl {
             qliForUpdate.CN_Discount_Price__c = discountPrice;
             qliForUpdate.CN_Max_Discount_Price__c = maxDiscountPrice;
             qliForUpdate.CN_List_Price__c = productIdStandardPBMap.get(quoteItem.Product2Id).UnitPrice;
+            // modify by qiuchen 20230413 ---- start
+            qliForUpdate.CN_Finance_Acceptance__c = constants.CN_QUOTEITEM_ACCEPTANCE_ACCEPTED;
+            // modify by qiuchen 20230413 ---- end
             qliListForUpdate.add(qliForUpdate);
         }
         return qliListForUpdate;

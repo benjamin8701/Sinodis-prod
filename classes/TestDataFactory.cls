@@ -9,8 +9,8 @@ public class TestDataFactory {
         
         List<sObject> objectList = new List<sObject>();
         objectList.add(makeProvince('010-Beijing', '010'));
-        objectList.add(makeCity('010-Beijing', '010', 'K010', '010'));
-        objectList.add(makeCity('020-Beijing', '020', 'K020', '010'));
+        objectList.add(makeCity('010-Beijing', '010', 'K010', '010', 'BJ'));
+        objectList.add(makeCity('020-Beijing', '020', 'K020', '010', 'BJ'));
         objectList.add(makeInternalImployee('TestUser1', 'Test0001', 'TestUser1@example.com', 'Sales'));
         objectList.add(makeInternalImployee('TestUser2', 'Test0002', 'TestUser2@example.com', 'AR'));
         objectList.add(makeInternalImployee('TestUser6', 'Test0021', 'TestUser6@example.com', 'AR'));
@@ -99,9 +99,10 @@ public class TestDataFactory {
         return province;
     }
 
-    private static CN_City__c makeCity(String cityName, String cityCode, String salesOffice, String provinceCode) {
+    private static CN_City__c makeCity(String cityName, String cityCode, String salesOffice, String provinceCode, String cityENCode) {
         CN_City__c city = new CN_City__c();
         city.CN_City_Code__c = cityCode;
+        city.CN_City_EN_Code__c = cityENCode;
         city.Name = cityName;
         city.CN_City_CN__c = cityName;
         city.CN_City_EN__c = cityName;

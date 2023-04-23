@@ -111,7 +111,7 @@ private class CN_Quote_Send_To_SAP_LC_Ctrl_Test {
 
             q = new Quote(
                 Name = 'Quote Name',
-                CN_Effective_Date__c = Date.Today()+1,
+                CN_Effective_Date__c = Date.Today() - 12,
                 ExpirationDate = Date.Today() + 7,
                 OpportunityId = opp.Id,
                 Pricebook2Id  = Test.getStandardPricebookId()
@@ -137,11 +137,15 @@ private class CN_Quote_Send_To_SAP_LC_Ctrl_Test {
         q.Status = 'Approved';
         update q;
 
-        quoteItem.CN_Customer_Acceptance__c = 'Accepted';
-        quoteItem.CN_Finance_Acceptance__c = 'Accepted';
-        update quoteItem;
+        QuoteLineItem newQuoteItem = new QuoteLineItem();
+        newQuoteItem.Id = quoteItem.Id;
+        newQuoteItem.CN_Customer_Acceptance__c = 'Accepted';
+        newQuoteItem.CN_Finance_Acceptance__c = 'Accepted';
+        update newQuoteItem;
 
         CN_Quote_Send_To_SAP_LC_Ctrl.getQuoteInfoAndCheckEditPermisison(q.Id);
+        CN_Quote_Send_To_SAP_LC_Ctrl.getQuoteInfoAndCheck(q.Id);
+        CN_Quote_Send_To_SAP_LC_Ctrl.upateQuoteIsNotifyFinance(q.Id);
         Test.startTest();
         Test.setMock(HTTPCalloutMock.class, new TestHttpMock());
         
@@ -294,9 +298,11 @@ private class CN_Quote_Send_To_SAP_LC_Ctrl_Test {
         q.Status = 'Approved';
         update q;
 
-        quoteItem.CN_Customer_Acceptance__c = 'Accepted';
-        quoteItem.CN_Finance_Acceptance__c = 'Accepted';
-        update quoteItem;
+        QuoteLineItem newQuoteItem = new QuoteLineItem();
+        newQuoteItem.Id = quoteItem.Id;
+        newQuoteItem.CN_Customer_Acceptance__c = 'Accepted';
+        newQuoteItem.CN_Finance_Acceptance__c = 'Accepted';
+        update newQuoteItem;
 
         CN_Quote_Send_To_SAP_LC_Ctrl.getQuoteInfoAndCheckEditPermisison(q.Id);
         Test.startTest();

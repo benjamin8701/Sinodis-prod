@@ -316,6 +316,10 @@
         <label><!-- Synchronized --></label>
         <name>CN_Synchronized__c</name>
     </fields>
+    <fields>
+        <label><!-- Update From Apex DateTime --></label>
+        <name>CN_Update_From_Apex_DateTime__c</name>
+    </fields>
     <layouts>
         <layout>CN Sinodis Quote Layout - Finance MDM</layout>
         <sections>

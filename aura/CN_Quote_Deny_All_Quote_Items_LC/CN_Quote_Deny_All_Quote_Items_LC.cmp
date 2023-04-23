@@ -1,0 +1,18 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" access="global">
+	<aura:attribute name="recordId" type="String"/>
+	<aura:attribute name="isAcceptAllButton" type="Boolean" default="false"/>
+	<aura:html tag="style">
+		.cuf-content {
+			padding: 0 0rem !important;
+		}
+		.slds-p-around--medium {
+			padding: 0rem !important;
+		}
+		.slds-modal__content{
+			overflow-y:hidden !important;
+			height:unset !important;
+			max-height:unset !important;
+		}
+	</aura:html>
+	<c:cNAcceptAllQuoteItemsLWC recordId="{!v.recordId}"  onclose_action="{!c.handleClose}" isAcceptAllButton="{!v.isAcceptAllButton}" aura:id="myLWC"/>
+</aura:component>

@@ -7,6 +7,7 @@
  * Author         : Du Dezheng
  * Create Date    : 2021-08-04
  * Modify History : 
+ * 1.2023-04-10 Qiu chen ExpirationDate auto set as effective Date + 30 Days change to + 3 months
  **************************************************************************************************/
 public without sharing class CN_Quote_Populate_Fields_Handler implements Triggers.Handler{
     Set<Id> CN_RTIds = new Set<Id>();
@@ -134,7 +135,7 @@ public without sharing class CN_Quote_Populate_Fields_Handler implements Trigger
         if(quoList.size() > 0) {
             for(Quote quo: quoList) {
                 if(quo.CN_Effective_Date__c != null) {
-                    quo.ExpirationDate = quo.CN_Effective_Date__c.addDays(30);
+                    quo.ExpirationDate = quo.CN_Effective_Date__c.addMonths(3); //2023-04-10 Qiu chen
                 }
             }
         }

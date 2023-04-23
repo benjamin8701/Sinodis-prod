@@ -649,6 +649,10 @@
         <name>CN_Quote_AOrDItems_CFRM_Msg</name>
     </customLabels>
     <customLabels>
+        <label>接受所有报价行项目？</label>
+        <name>CN_Quote_AcceptItems_CFRM_Msg</name>
+    </customLabels>
+    <customLabels>
         <label>确认为此报价应用促销价？</label>
         <name>CN_Quote_Apply</name>
     </customLabels>
@@ -689,12 +693,24 @@
         <name>CN_Quote_CFDA_Msg</name>
     </customLabels>
     <customLabels>
+        <label>将到期日期设置为2499/12/31?</label>
+        <name>CN_Quote_CFSE_Msg</name>
+    </customLabels>
+    <customLabels>
         <label>确认发送？</label>
         <name>CN_Quote_Confirm_Msg</name>
     </customLabels>
     <customLabels>
         <label>所有报价行项目处理完成</label>
         <name>CN_Quote_Deal_Success_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>拒绝所有报价行项目？</label>
+        <name>CN_Quote_DenyItems_CFRM_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>生效日期由{0}自动更改为{1}</label>
+        <name>CN_Quote_Effective_Date_Changed_Reminder</name>
     </customLabels>
     <customLabels>
         <label>报价[{0}]的生效时间与到期日期不在促销活动的有效时间范围内。</label>
@@ -741,6 +757,10 @@
         <name>CN_Quote_Had_Not_Approved</name>
     </customLabels>
     <customLabels>
+        <label>报价单仍未通过审批， 因此您不能通知财务和同步报价。</label>
+        <name>CN_Quote_Had_Not_Approved_Notice</name>
+    </customLabels>
+    <customLabels>
         <label>{0}已经同步完成。</label>
         <name>CN_Quote_Had_Synced</name>
     </customLabels>
@@ -785,6 +805,14 @@
         <name>CN_Quote_Not_Have_Items</name>
     </customLabels>
     <customLabels>
+        <label>您确定通知财务并发送这个{0}到SAP吗？</label>
+        <name>CN_Quote_Notice_Fin_And_Send_To_SAP</name>
+    </customLabels>
+    <customLabels>
+        <label>通知财务并发送{0}</label>
+        <name>CN_Quote_Notice_Finance_Title</name>
+    </customLabels>
+    <customLabels>
         <label>成功发送提醒邮件</label>
         <name>CN_Quote_Notify_Email_Msg</name>
     </customLabels>
@@ -797,12 +825,21 @@
         <name>CN_Quote_Retrieve_Title</name>
     </customLabels>
     <customLabels>
+        <label>{0}已经被成功发送到SAP。发送数量: {1}
+成功发送提醒邮件</label>
+        <name>CN_Quote_Send_And_Notify_Success_Msg</name>
+    </customLabels>
+    <customLabels>
         <label>{0}已经被成功发送到SAP。发送数量: {1}</label>
         <name>CN_Quote_Send_Success_Msg</name>
     </customLabels>
     <customLabels>
         <label>您确定发送这个{0}到SAP吗？</label>
         <name>CN_Quote_Send_To_SAP</name>
+    </customLabels>
+    <customLabels>
+        <label>不允许发送过期报价</label>
+        <name>CN_Quote_Send_To_SAP_ErrMsg_Expired</name>
     </customLabels>
     <customLabels>
         <label>报价行条目发送失败。发送数量：{0}，失败数量：{1}，失败产品编号：{2}</label>
@@ -815,6 +852,18 @@
     <customLabels>
         <label>没有可发送的报价行条目。</label>
         <name>CN_Quote_Send_To_SAP_ErrMsg_NoItem</name>
+    </customLabels>
+    <customLabels>
+        <label>设置报价到期日期？</label>
+        <name>CN_Quote_Set_CFRM_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>到期日期已经设置成功</label>
+        <name>CN_Quote_Set_ExpirDate_Success_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>您不能为已经提交审批或已经审批通过的报价更改失效日期。</label>
+        <name>CN_Quote_Set_Had_ApprovedOrSubmit</name>
     </customLabels>
     <customLabels>
         <label>请确认拆单</label>
