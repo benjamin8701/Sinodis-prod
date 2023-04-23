@@ -1,0 +1,21 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-quick-action-panel header={hearderMessage}>
+        <!-- 显示加载 -->
+        <template if:true={isLoading}>
+            <div class="loading_wheel">
+                <lightning-spinner variant="brand" size="small" alternative-text="Loading"></lightning-spinner>
+            </div>
+        </template>
+        <div class="slds-modal__content slds-p-vertical_medium slds-p-horizontal_small">
+            <div class="slds-grid slds-wrap">
+                {modalContentMessage}
+                <br>
+            </div>                  
+        </div>
+        <div class="slds-modal__footer slds-col modal-footer">
+            <lightning-button variant="brand" label="Cancel" onclick={handleCloseModal}></lightning-button>
+            <lightning-button variant="brand" style="margin-left: 0.5rem;" label="Confirm" onclick={confirmAll} disabled={isBtnDisabled}></lightning-button>
+        </div>
+    </lightning-quick-action-panel>
+</template>

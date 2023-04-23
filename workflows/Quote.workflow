@@ -489,7 +489,7 @@
             <name>CN_Quote_Fin_Accept_Notice_Sales</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <formula>AND($Setup.Trigger_Switcher_Setting__c.EnableFlow__c , RecordType.DeveloperName = &apos;CN_Quote&apos;,  ISPICKVAL( Status , &quot;Approved&quot;) ,   CN_Is_Finance_Process_Done__c  )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>

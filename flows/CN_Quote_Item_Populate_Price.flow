@@ -2,6 +2,7 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>55.0</apiVersion>
     <description>Populate QuoteItem.UnitPrice with unit price with tax</description>
+    <environments>Default</environments>
     <formulas>
         <name>formulafortax</name>
         <dataType>Number</dataType>
@@ -66,7 +67,7 @@
         <connector>
             <targetReference>CN_Update_Quote_Item_IF_Flow_Update</targetReference>
         </connector>
-        <filterFormula>{!$Setup.Trigger_Switcher_Setting__c.EnableFlow__c} = True</filterFormula>
+        <filterFormula>{!$Setup.Trigger_Switcher_Setting__c.EnableFlow__c} = True &amp;&amp; ISBLANK({!$Record.Quote.CN_Source_Quote__c})</filterFormula>
         <object>QuoteLineItem</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

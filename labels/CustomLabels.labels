@@ -1128,6 +1128,13 @@
         <value>Accept/Deny all Quote Line Items?</value>
     </labels>
     <labels>
+        <fullName>CN_Quote_AcceptItems_CFRM_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_AcceptItems_CFRM_Msg</shortDescription>
+        <value>Accept all Quote Line Items?</value>
+    </labels>
+    <labels>
         <fullName>CN_Quote_Apply</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -1198,6 +1205,13 @@
         <value>Are you sure to deny all Quote Line Items?</value>
     </labels>
     <labels>
+        <fullName>CN_Quote_CFSE_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_CFSE_Msg</shortDescription>
+        <value>Are you sure to set Expiration Date to 2499/12/31?</value>
+    </labels>
+    <labels>
         <fullName>CN_Quote_Confirm_Msg</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -1210,6 +1224,20 @@
         <protected>false</protected>
         <shortDescription>CN_Quote_Deal_Success_Msg</shortDescription>
         <value>All Quote Line Items have been dealt with.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_DenyItems_CFRM_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_DenyItems_CFRM_Msg</shortDescription>
+        <value>Deny all Quote Line Items?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Effective_Date_Changed_Reminder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Effective_Date_Changed_Reminder</shortDescription>
+        <value>Effectived date is auto changed from {0} to {1}</value>
     </labels>
     <labels>
         <fullName>CN_Quote_ErrMsg_Check_Promotion_Duration</fullName>
@@ -1289,6 +1317,13 @@
         <value>You can‘t accept/deny all quote line items whose quote is not approved.</value>
     </labels>
     <labels>
+        <fullName>CN_Quote_Had_Not_Approved_Notice</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Had_Not_Approved_Notice</shortDescription>
+        <value>You can‘t notice finance and sync all quote line items whose quote is not approved.</value>
+    </labels>
+    <labels>
         <fullName>CN_Quote_Had_Synced</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -1366,6 +1401,20 @@
         <value>This Quote doesn&apos;t have Quote Line Item.</value>
     </labels>
     <labels>
+        <fullName>CN_Quote_Notice_Fin_And_Send_To_SAP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Notice_Fin_And_Send_To_SAP</shortDescription>
+        <value>Are you sure to notify finance and send this {0} to SAP?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Notice_Finance_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Notice_Finance_Title</shortDescription>
+        <value>Notify finance and send {0} to SAP</value>
+    </labels>
+    <labels>
         <fullName>CN_Quote_Notify_Email_Msg</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -1387,6 +1436,14 @@
         <value>Send {0} to SAP</value>
     </labels>
     <labels>
+        <fullName>CN_Quote_Send_And_Notify_Success_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Send_And_Notify_Success_Msg</shortDescription>
+        <value>This {0} has been sent to SAP successfully. Sent Count: {1}
+Send Notify Email Successfully</value>
+    </labels>
+    <labels>
         <fullName>CN_Quote_Send_Success_Msg</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -1399,6 +1456,13 @@
         <protected>false</protected>
         <shortDescription>CN_Quote_Send_To_SAP</shortDescription>
         <value>Are you sure to send this {0} to SAP?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Send_To_SAP_ErrMsg_Expired</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Send_To_SAP_ErrMsg_Expired</shortDescription>
+        <value>Don not allowed to send expired quote.</value>
     </labels>
     <labels>
         <fullName>CN_Quote_Send_To_SAP_ErrMsg_Failed</fullName>
@@ -1420,6 +1484,27 @@
         <protected>false</protected>
         <shortDescription>CN_Quote_Send_To_SAP_ErrMsg_NoItem</shortDescription>
         <value>No Quote Line Items need to send.</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Set_CFRM_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Set_CFRM_Msg</shortDescription>
+        <value>Set Quote Expiration Date?</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Set_ExpirDate_Success_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Set_ExpirDate_Success_Msg</shortDescription>
+        <value>Expiration Date has been set successfully</value>
+    </labels>
+    <labels>
+        <fullName>CN_Quote_Set_Had_ApprovedOrSubmit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Quote_Set_Had_ApprovedOrSubmit</shortDescription>
+        <value>You cannot set expiration date of the quote that is approved or submitted for approval.</value>
     </labels>
     <labels>
         <fullName>CN_Quote_Split_msg</fullName>
