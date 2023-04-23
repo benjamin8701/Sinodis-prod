@@ -33,4 +33,29 @@ public without sharing class CN_Quote_Finance_Notice_LC_Ctrl {
             throw new AuraHandledException(e.getMessage());
         }
     }
+    // modify by qiuchen 20230413 ---- start
+    @AuraEnabled
+    public static void sendSyncAndNotifyEmail(String QuoteId){
+        system.debug('QuoteId==>'+QuoteId);
+        try {
+            CN_Approve_Process_Settings__c settings = CN_Approve_Process_Settings__c.getInstance();            
+            String recipientId = settings.CN_Finance_MDM_UserId__c;
+            Quote qu = [Select Id,CN_Finance_Notify_DateTime__c,Opportunity.Account.CN_Customer_Code__c,Opportunity.Account.CN_Sales_Team_UI__r.Name,Opportunity.Account.Name From Quote Where Id = :QuoteId];
+            system.debug('quote==>'+qu);
+            EmailTemplate template = [Select Id, DeveloperName from EmailTemplate Where DeveloperName = 'CN_Quote_Sync_and_Notify_Finance' limit 1];
+            
+            Messaging.SingleEmailMessage email = Messaging.renderStoredEmailTemplate(template.Id,recipientId,QuoteId);
+            String CNsubject = '报价同步完成 for - '+ qu.Opportunity.Account.CN_Customer_Code__c +' – '+ qu.Opportunity.Account.CN_Sales_Team_UI__r.Name +' - '+ qu.Opportunity.Account.Name;
+            String ENsubject = 'SKU Quote Price has been synced to SAP for customer - '+ qu.Opportunity.Account.CN_Customer_Code__c +' – '+ qu.Opportunity.Account.CN_Sales_Team_UI__r.Name +' - '+ qu.Opportunity.Account.Name;
+            system.debug('CNsubject==>'+CNsubject);
+            email.setSubject(CNsubject+'/'+ENsubject);
+            email.setSaveAsActivity(false);
+            Messaging.sendEmail(new Messaging.SingleEmailMessage[] {email});
+            // qu.CN_Finance_Notify_DateTime__c = system.now();
+            update qu;
+        } catch (Exception e) {
+            throw new AuraHandledException(e.getMessage());
+        }
+    }
+    // modify by qiuchen 20230413 ---- end
 }

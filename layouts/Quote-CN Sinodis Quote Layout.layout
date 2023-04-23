@@ -110,39 +110,44 @@
             <sortOrder>1</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Quote.CN_Quote_Ready_for_Approval</actionName>
+            <actionName>Quote.CN_Set_Expiration_Date</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>2</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+            <actionName>Quote.CN_Quote_Ready_for_Approval</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>3</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>Submit</actionName>
             <actionType>StandardButton</actionType>
-            <sortOrder>3</sortOrder>
+            <sortOrder>4</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>Quote.CN_Apply</actionName>
             <actionType>QuickAction</actionType>
-            <sortOrder>4</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Quote.CN_AcceptOrDeny_All_Quote_Items</actionName>
-            <actionType>QuickAction</actionType>
             <sortOrder>5</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>CreatePdf</actionName>
-            <actionType>StandardButton</actionType>
+            <actionName>Quote.CN_Quote_Accept_All_Quote_Items</actionName>
+            <actionType>QuickAction</actionType>
             <sortOrder>6</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Quote.CN_Send_To_SAP</actionName>
+            <actionName>Quote.CN_Quote_Deny_All_Quote_Items</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>7</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Quote.CN_Quote_Notify_Finance</actionName>
-            <actionType>QuickAction</actionType>
+            <actionName>CreatePdf</actionName>
+            <actionType>StandardButton</actionType>
             <sortOrder>8</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Quote.CN_Quote_Price_Sync</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>9</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <quickActionList>

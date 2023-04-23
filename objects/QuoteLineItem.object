@@ -1197,6 +1197,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   UnitPrice &lt;&gt; CN_Channel_Price__c,
+  ISBLANK(Quote.CN_Source_Quote__c ),
   ISNEW(),
   NOT(CN_IF_Flow_update_Sales_Price__c)
 )</errorConditionFormula>

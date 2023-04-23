@@ -925,6 +925,15 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CN_Update_From_Apex_DateTime__c</fullName>
+        <externalId>false</externalId>
+        <label>Update From Apex DateTime</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>ContactId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -1563,6 +1572,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   RecordType.DeveloperName = &apos;CN_Quote&apos;,
+  NOT(ISCHANGED(CN_Update_From_Apex_DateTime__c)),
   OR(
     ISPICKVAL(Status, &quot;Approved&quot;),
     ISPICKVAL(PRIORVALUE(Status), &quot;Approved&quot;)
