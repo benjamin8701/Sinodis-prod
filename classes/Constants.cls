@@ -222,7 +222,7 @@ public without sharing class Constants {
 	public static final String CN_PRESETPRICE_CHANNEL_LP = 'LP';
 	public static final String CN_PRESETPRICE_CHANNEL_WS = 'WS';
 	public static final String CN_PRESETPRICE_CHANNEL_DS = 'DS';
-	public static final String CN_PRESETPRICE_CHANNEL_KA = 'kA';
+	public static final String CN_PRESETPRICE_CHANNEL_KA = 'KA';
 
 	// Added By Jessica Wang 2021-07-21 Release2 Start
 	//Lead

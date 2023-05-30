@@ -1,3 +1,13 @@
+/**************************************************************************************************
+ * Name           : TestDataFactory
+ * Object         : 
+ * Requirement    : 
+ * Target         : 
+ * Refer classes  :
+ * Author         : Qiu Chen
+ * Create Date    : 2021-6-7
+ * Modify History : 1. 20230508 modify by dezheng.du, enforce preset price function to support preset price for new lanuach product
+ **************************************************************************************************/
 public class TestDataFactory {
     
     public static List<Profile> profileList = null;
@@ -35,12 +45,12 @@ public class TestDataFactory {
 
         objectList.add(makeProduct('TestProduct00001', 'P00001'));
         objectList.add(makeProduct('TestProduct00002', 'P00002'));
+        objectList.add(makeProduct('TestProduct00003', 'P00003'));  //this for CN_PresetPrice_Effect_Batch_Test
 
         ObjectList.Add(makePriceBook('Pricebook WS', 'test pricebook description', 'WS',false));
         ObjectList.Add(makePriceBook('Pricebook DS', 'test pricebook description', 'DS',false));
         ObjectList.Add(makePriceBook('Pricebook KA', 'test pricebook description', 'KA',false));
         
-
         insert objectList;
 
         makePriceBookEntry();
@@ -310,7 +320,12 @@ public class TestDataFactory {
         insert pbEntryList_Standard;
 
         for(Pricebook2 pb : pricebookList){
+            Integer n = 0;
             for(Product2 product : productList){
+                n++;
+                if(n>2){    //just create channel price for the first two products, to test preset price effect batch
+                    break;
+                }
                 PricebookEntry pbEntry = new PricebookEntry(
                     UnitPrice  = 30,
                     CN_Minimum_Price__c  = 2,
@@ -326,7 +341,6 @@ public class TestDataFactory {
                     Pricebook2Id  = pb.Id,
                     Product2Id  = product.Id,
                     CN_Price_Book_Entry_Code__c = pb.CN_Price_Book_Code__c+product.CN_SKU_Code__c
-                    
                 );
                 pbEntryList.add(pbEntry);
             }

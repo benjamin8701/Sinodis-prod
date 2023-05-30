@@ -405,6 +405,11 @@
                     <label>OVODAN</label>
                 </value>
                 <value>
+                    <fullName>Palmilord</fullName>
+                    <default>false</default>
+                    <label>Palmilord</label>
+                </value>
+                <value>
                     <fullName>PAVONI</fullName>
                     <default>false</default>
                     <label>PAVONI</label>
@@ -1203,6 +1208,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Palmilord</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Pomone</fullName>
                 <default>false</default>
             </values>
@@ -1638,6 +1647,10 @@
             </values>
             <values>
                 <fullName>PAVONI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Palmilord</fullName>
                 <default>false</default>
             </values>
             <values>

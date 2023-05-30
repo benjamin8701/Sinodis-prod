@@ -34,7 +34,7 @@ private class CN_PresetPrice_Effect_Batch_Test {
 
         Test.startTest();
         List<PricebookEntry> pbEntryList = [Select Id,Product2Id,CN_Max_Discount_Price__c,CN_Discount_Price__c,UnitPrice From PricebookEntry Where Pricebook2Id =: pbSettings.CN_Price_Book1__c];
-
+        
         //off validation rule switch,because of CN_Effective_Date__c,Price VR
         List<Trigger_Switcher_Setting__c> switcherSettingList = [Select Id From Trigger_Switcher_Setting__c Where SetupOwnerId =: UserInfo.getOrganizationId()];
         Trigger_Switcher_Setting__c switcherSettings_close = new Trigger_Switcher_Setting__c();
@@ -42,7 +42,9 @@ private class CN_PresetPrice_Effect_Batch_Test {
         switcherSettings_close.EnableValidationRule__c = false;
         update switcherSettings_close;
 
-        CN_Preset_PriceBook_Entry__c prePBEntry = new CN_Preset_PriceBook_Entry__c(
+        List<CN_Preset_PriceBook_Entry__c> prePBEntryList = new List<CN_Preset_PriceBook_Entry__c>();
+        CN_Preset_PriceBook_Entry__c prePBEntry_1 = new CN_Preset_PriceBook_Entry__c(
+            //Channel and existing pricebook entry
             CN_Channel__c = Constants.CN_PRESETPRICE_CHANNEL_DS,
             CN_Product__c = pbEntryList[0].Product2Id,
             CN_Max_Discount_Price__c = pbEntryList[0].CN_Max_Discount_Price__c+1,
@@ -51,7 +53,25 @@ private class CN_PresetPrice_Effect_Batch_Test {
             CN_Effective_Date__c = Date.today(),
             CN_Is_Effected__c = FALSE
         );
-        insert prePBEntry;
+        prePBEntryList.add(prePBEntry_1);
+
+        for(Product2 prod : SKUList){
+            if(prod.CN_SKU_Code__c == 'P00003'){
+                CN_Preset_PriceBook_Entry__c prePBEntry_2 = new CN_Preset_PriceBook_Entry__c(
+                    //Channel and not existing pricebook entry
+                    CN_Channel__c = Constants.CN_PRESETPRICE_CHANNEL_DS,
+                    CN_Product__c = prod.Id,
+                    CN_Max_Discount_Price__c = 10+1,
+                    CN_Discount_Price__c = 20+1,
+                    CN_UnitPrice__c = 30+1,
+                    CN_Effective_Date__c = Date.today(),
+                    CN_Is_Effected__c = FALSE
+                );
+                prePBEntryList.add(prePBEntry_2);
+            }
+        }
+
+        insert prePBEntryList;
 
         //on validation rule switch
         Trigger_Switcher_Setting__c switcherSettings_open = new Trigger_Switcher_Setting__c();

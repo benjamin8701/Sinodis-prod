@@ -143,6 +143,15 @@
     <enableFeeds>false</enableFeeds>
     <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
+        <fullName>CN_Apex_Update_DateTime__c</fullName>
+        <description>Use this field to avoid validation rule when update record by apex class.</description>
+        <externalId>false</externalId>
+        <label>Apex Update DateTime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>CN_Base_Unit_of_Measure__c</fullName>
         <externalId>false</externalId>
         <label>Base Unit of Measure</label>
@@ -624,6 +633,10 @@
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   RecordType.DeveloperName = &apos;CN_Product&apos;,
+  NOT(OR(
+   ISCHANGED(CN_Apex_Update_DateTime__c),
+   AND( ISNEW() , NOT( ISNULL(CN_Apex_Update_DateTime__c)))
+  )),
   OR(ISCHANGED( Name ),ISCHANGED( IsActive ))
 )</errorConditionFormula>
         <errorMessage>You have no access to update these info of the product:

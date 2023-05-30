@@ -117,6 +117,15 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     <fields>
+        <fullName>CN_Apex_Update_DateTime__c</fullName>
+        <description>Use this field to avoid validation rule when update record by apex class.</description>
+        <externalId>false</externalId>
+        <label>Apex Update DateTime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>CN_Discount_Price__c</fullName>
         <externalId>false</externalId>
         <label>Discount Price</label>
@@ -375,9 +384,12 @@
         <fullName>CN_CHECK_PRICE_BOOK_ENTRY_CODE</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
-$Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
-NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
-(CN_Price_Book_Entry_Code__c &lt;&gt; (CN_Price_Book_Code__c +  Product2.CN_SKU_Code__c))
+  $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
+  NOT(OR(
+    CN_Price_Book_Entry_Code__c = (CN_Price_Book_Code__c +  Product2.CN_SKU_Code__c),
+    CN_Price_Book_Entry_Code__c = (&apos;LP&apos; +  Product2.CN_SKU_Code__c)
+  ))
 )</errorConditionFormula>
         <errorDisplayField>CN_Price_Book_Entry_Code__c</errorDisplayField>
         <errorMessage>Price book entry code is incorrect!</errorMessage>
@@ -399,6 +411,11 @@ NOT(Pricebook2.IsStandard),
         <active>true</active>
         <errorConditionFormula>AND(
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+NOT(OR(
+   ISCHANGED(CN_Apex_Update_DateTime__c),
+  AND( ISNEW() , NOT( ISNULL(CN_Apex_Update_DateTime__c)))
+)),
+NOT( ISCHANGED( CN_Apex_Update_DateTime__c ) ),
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
 Pricebook2.IsStandard,
 ISPICKVAL(CN_Unit_of_Measure__c  , &quot;&quot;) ||  CN_Pricing_Unit__c = 0 ||  ISBLANK(CN_Pricing_Unit__c )

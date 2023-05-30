@@ -160,6 +160,10 @@
             <translation><!-- PAVONI --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Palmilord</masterLabel>
+            <translation><!-- Palmilord --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Pomone</masterLabel>
             <translation><!-- Pomone --></translation>
         </picklistValues>

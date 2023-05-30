@@ -8867,6 +8867,11 @@ Enable API and API Only</description>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>PricebookEntry.CN_Apex_Update_DateTime__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>PricebookEntry.CN_Discount_Price__c</field>
         <readable>true</readable>
@@ -8954,6 +8959,11 @@ Enable API and API Only</description>
     <fieldPermissions>
         <editable>true</editable>
         <field>PricebookEntry.CN_Unit_of_Measure__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Product2.CN_Apex_Update_DateTime__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
