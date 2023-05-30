@@ -132,6 +132,10 @@
             <translation><!-- LOSTE TRADI-FRANCE --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>La Rose Noire</masterLabel>
+            <translation><!-- La Rose Noire --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Lescure</masterLabel>
             <translation><!-- Lescure --></translation>
         </picklistValues>

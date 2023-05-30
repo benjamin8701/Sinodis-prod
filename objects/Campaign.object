@@ -365,6 +365,11 @@
                     <label>Joyhana</label>
                 </value>
                 <value>
+                    <fullName>La Rose Noire</fullName>
+                    <default>false</default>
+                    <label>La Rose Noire</label>
+                </value>
+                <value>
                     <fullName>LE RUSTIQUE</fullName>
                     <default>false</default>
                     <label>LE RUSTIQUE</label>
@@ -1170,6 +1175,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>La Rose Noire</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Lescure</fullName>
                 <default>false</default>
             </values>
@@ -1601,6 +1610,10 @@
             </values>
             <values>
                 <fullName>LOSTE TRADI-FRANCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>La Rose Noire</fullName>
                 <default>false</default>
             </values>
             <values>
