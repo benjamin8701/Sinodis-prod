@@ -780,7 +780,7 @@ TODAY()&lt; ActivityDate
   ISCHANGED( CN_End_Date__c ),
   CN_Is_Overdue__c
 )</errorConditionFormula>
-        <errorMessage>The visit was locked, you are not allowed to edit the End Date Time to two weeks earlier.</errorMessage>
+        <errorMessage>The visit was locked, you are not allowed to edit the End Date Time to last week.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Event_Prevent_Edit_Overdue_Visit</fullName>

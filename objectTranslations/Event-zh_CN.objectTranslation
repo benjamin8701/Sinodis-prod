@@ -147,7 +147,7 @@
         <name>CN_Event_Prevent_Edit_ByWhen</name>
     </validationRules>
     <validationRules>
-        <errorMessage>记录已锁定，两周之前的记录不可更改。</errorMessage>
+        <errorMessage>记录已锁定，上一周的记录不可更改。</errorMessage>
         <name>CN_Event_Prevent_Edit_EndDate_Visit</name>
     </validationRules>
     <validationRules>

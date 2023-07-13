@@ -233,7 +233,7 @@
     <fields>
         <fullName>CN_Is_Overdue__c</fullName>
         <externalId>false</externalId>
-        <formula>((ActivityDate + DurationInMinutes/60/24)+ MOD((8- WEEKDAY(ActivityDate + DurationInMinutes / 60 / 24)),7)+7) &lt;= TODAY()</formula>
+        <formula>((ActivityDate + DurationInMinutes/60/24)+ MOD((8- WEEKDAY(ActivityDate + DurationInMinutes / 60 / 24)),7) + 1) &lt; TODAY()</formula>
         <label>Lock</label>
         <type>Checkbox</type>
     </fields>
