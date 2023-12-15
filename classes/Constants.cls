@@ -15,8 +15,8 @@ public without sharing class Constants {
     public static Boolean CN_ACCOUNT_TM_REPORT_HANDLER_TRIGGER_ON = true;
     //CR05 - Tm report by Shuqi - end   
 	public static Boolean CN_ACCOUNT_PREVENT_EDIT_APPROVED_HANDLER_TRIGGER_ON = true;
-	
-    
+
+
     public static final String CN_Account_RT_API_NAME_NEW_DIRECT = 'CN_New_Direct';
     public static final String CN_Account_RT_API_NAME_EDIT_DIRECT = 'CN_Edit_Direct';
     public static final String CN_Account_RT_API_NAME_NEW_INDIRECT = 'CN_New_Indirect';
@@ -42,7 +42,9 @@ public without sharing class Constants {
     public static final String CN_ACCOUNT_SYNC_STATUS_SUCCESS = 'Success';
     
     public static final String CN_ACCOUNT_SALESTEAM_CODE_WS = '900014';
-
+	// new sales teams added on 2023/11/20
+	public static final String CN_ACCOUNT_SALESTEAM_CODE_QSR = '901775';
+	public static final String CN_ACCOUNT_SALESTEAM_CODE_B2B = '901776';
 
     // ContentDocumentLink
     public static Boolean CDL_TRIGGER_ON = true;
@@ -83,7 +85,7 @@ public without sharing class Constants {
     public static Boolean SHIPTO_TRIGGER_ON = true;
     public static Boolean CN_SHIPTO_TRIGGER_ON = true;
     public static Boolean CN_SHIPTO_PREVENT_DELETE_HANDLER_ON = true;
-    
+
     public static final String CN_SHIPTO_RT_API_NAME = 'CN_Ship_to_Party';
 
     public static final String CN_SHIPTO_ACCOUNT_SYNC_STATUS_SUCCESS = 'Success';
@@ -223,6 +225,8 @@ public without sharing class Constants {
 	public static final String CN_PRESETPRICE_CHANNEL_WS = 'WS';
 	public static final String CN_PRESETPRICE_CHANNEL_DS = 'DS';
 	public static final String CN_PRESETPRICE_CHANNEL_KA = 'KA';
+	public static final String CN_PRESETPRICE_CHANNEL_QSR = 'QSR';
+	public static final String CN_PRESERPRICE_CHANNEL_B2B = 'B2B';
 
 	// Added By Jessica Wang 2021-07-21 Release2 Start
 	//Lead
@@ -340,6 +344,10 @@ public without sharing class Constants {
 	public static final String CN_SALES_TEAM1 = '900012';
 	public static final String CN_SALES_TEAM2 = '900013';
 	public static final String CN_SALES_TEAM3 = '900014';
+	// new sales team added on 2023/11/20
+    public static final String CN_SALES_TEAM4 = '901775'; //QSR
+    public static final String CN_SALES_TEAM5 = '901776'; //B2B
+
 
 	//Event
 	public static final String CN_VISIT_RT_API_NAME = 'CN_Visit';

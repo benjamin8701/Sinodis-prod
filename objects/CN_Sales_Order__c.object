@@ -894,7 +894,7 @@
     <fields>
         <fullName>CN_Sale_Team_Name_of_Sales_Person__c</fullName>
         <externalId>false</externalId>
-        <formula>CASE(CN_Sold_To_Account_Name__r.Owner.CN_Sales_Team__c,&apos;900012&apos;,&apos;1-DS&apos;,&apos;900013&apos;,&apos;3-KA&apos;,&apos;900014&apos;,&apos;2-WS&apos;,&apos;&apos;)</formula>
+        <formula>CASE(CN_Sold_To_Account_Name__r.Owner.CN_Sales_Team__c,&apos;900012&apos;,&apos;1-DS&apos;,&apos;900013&apos;,&apos;3-KA&apos;,&apos;900014&apos;,&apos;2-WS&apos;,&apos;901775&apos;,&apos;4-QSR&apos;,&apos;901776&apos;,&apos;5-B2B&apos;,&apos;&apos;)</formula>
         <label>Sale Team Name of Sales Person</label>
         <required>false</required>
         <trackHistory>false</trackHistory>

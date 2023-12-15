@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>false</active>
+    <active>true</active>
     <allowRecall>true</allowRecall>
     <allowedSubmitters>
         <type>creator</type>
@@ -181,7 +181,7 @@
                 <type>FieldUpdate</type>
             </action>
             <action>
-                <name>CN_Populate_Approve_Step9</name>
+                <name>CN_Populate_Approve_Step11</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
@@ -245,20 +245,21 @@
                 <type>FieldUpdate</type>
             </action>
             <action>
-                <name>CN_Populate_Approve_Step9</name>
+                <name>CN_Populate_Approve_Step_Empty</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
         <assignedApprover>
             <approver>
-                <name>CN_Approver_8__c</name>
+                <name>CN_Approver_10__c</name>
                 <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
+        <description>QSR CCE Assistant approval</description>
         <entryCriteria>
             <criteriaItems>
-                <field>Quote.CN_Approver_8__c</field>
+                <field>Quote.CN_Approver_10__c</field>
                 <operation>notEqual</operation>
             </criteriaItems>
         </entryCriteria>
@@ -283,6 +284,71 @@
         </approvalActions>
         <assignedApprover>
             <approver>
+                <name>CN_Approver_11__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>B2B CCE Assistant Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Quote.CN_Approver_11__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Step 9</label>
+        <name>CN_Step_9</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>CN_Accumulated_Appover10</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>CN_Populate_Approve_Step11</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>CN_Approver_8__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Quote.CN_Approver_8__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Step 10</label>
+        <name>CN_Step_10</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>CN_Accumulated_Appover11</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>CN_Populate_Approve_Step_Empty</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
                 <name>CN_Approver_9__c</name>
                 <type>relatedUserField</type>
             </approver>
@@ -294,8 +360,8 @@
                 <operation>notEqual</operation>
             </criteriaItems>
         </entryCriteria>
-        <label>Step 9</label>
-        <name>CN_Step_9</name>
+        <label>Step 11</label>
+        <name>CN_Step_11</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
@@ -358,7 +424,7 @@
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
-    <label>CN Quote Approval V4</label>
+    <label>CN Quote Approval V5</label>
     <processOrder>2</processOrder>
     <recallActions>
         <action>

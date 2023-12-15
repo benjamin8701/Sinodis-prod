@@ -1,0 +1,39 @@
+有一个厨师演示拜访已创建，以下是详细信息：
+
+拜访主题: {!Event.Subject}
+拜访客户名称: {!Account.Name}
+拜访描述: {!Event.Description}
+开始时间：{!DATETIMEVALUE(Event.StartDateTime)}
+结束时间：{!DATETIMEVALUE(Event.EndDateTime)}
+
+​
+
+请点击以下链接​
+{!Event.Link}
+查看额外信息​
+
+​
+谢谢，​
+Salesforce
+
+==========================For English Version Scroll Down======================
+There is a chef demo visit that has been created, here are the details:
+
+Visit Subject：{!Event.Subject}
+Visit Customer Name: {!Account.Name}
+Visit Description: {!Event.Description}
+Start Time: {!DATETIMEVALUE(Event.StartDateTime)}
+End Time: {!DATETIMEVALUE(Event.EndDateTime)}
+
+
+
+Please click the following link
+
+{!Event.Link}
+
+to view additional information. 
+
+
+
+Thank you,
+Salesforce
