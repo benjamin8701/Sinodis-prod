@@ -428,25 +428,26 @@ public without sharing class CN_Quote_Populate_Approver_Handler implements Trigg
                 }
                 qliUpdate.CN_Approver_Required__c = '';
             } else {
+                // 1024 - app1; 512 - app2; 256 - app3; 128 - app4; 64 - app5 cce; 32 - app6 cce; 16 - app7 cce; 8 - app8; 4 - app9; 2 - app10 QSR cce; 1 - app11 B2B cce
                 if(System.Label.CN_Quote_Approve_Type_2.equals(qli.CN_Approval_Type__c)) {
-                    qliUpdate.CN_Approval_Status_Required__c = Integer.valueOf(256 + 128) & Integer.valueOf(quoteIdApprovalCodeMap.get(qli.QuoteId)); // 110000000 & actual approver status
+                    qliUpdate.CN_Approval_Status_Required__c = Integer.valueOf(1024 + 512) & Integer.valueOf(quoteIdApprovalCodeMap.get(qli.QuoteId)); // 11000000000 & actual approver status
                     qliUpdate.CN_Commets_for_Approver__c = System.Label.CN_Quote_Approve_Type_2;
                     requiredApproverCnt = 2;
-
+                
                 } else if(System.Label.CN_Quote_Approve_Type_3.equals(qli.CN_Approval_Type__c)) {
                     // Quote Line Item follow Quote's Approval Process if there're Type 4 existed for Type 3 Item
                     if(System.Label.CN_Quote_Approve_Type_4.equals(quoteIDApproveTypeMap.get(qli.QuoteId))) {
-                        qliUpdate.CN_Approval_Status_Required__c = Integer.valueOf(256 + 128 + 64 + 32 + 2 + 1) & Integer.valueOf(quoteIdApprovalCodeMap.get(qli.QuoteId)); // 111100011 & actual approver status
+                        qliUpdate.CN_Approval_Status_Required__c = Integer.valueOf(1024 + 512 + 256 + 128 + 8 + 4) & Integer.valueOf(quoteIdApprovalCodeMap.get(qli.QuoteId)); // 11110000011 & actual approver status
                         qliUpdate.CN_Commets_for_Approver__c = System.Label.CN_Quote_Approve_Type_3;
                         requiredApproverCnt = 6;
 
                     } else {
-                        qliUpdate.CN_Approval_Status_Required__c = Integer.valueOf(256 + 128 + 64 + 32 + 16 + 8 + 4) & Integer.valueOf(quoteIdApprovalCodeMap.get(qli.QuoteId)); // 111111100 & actual approver status
+                        qliUpdate.CN_Approval_Status_Required__c = Integer.valueOf(1024 + 512 + 256 + 128 + 64 + 32 + 16 + 2 + 1) & Integer.valueOf(quoteIdApprovalCodeMap.get(qli.QuoteId)); // 11111111100 & actual approver status
                         qliUpdate.CN_Commets_for_Approver__c = System.Label.CN_Quote_Approve_Type_3;
                         requiredApproverCnt = 5;
                     }
                 } else if(System.Label.CN_Quote_Approve_Type_4.equals(qli.CN_Approval_Type__c)) {
-                    qliUpdate.CN_Approval_Status_Required__c = Integer.valueOf(256 + 128 + 64 + 32 + 2 + 1) & Integer.valueOf(quoteIdApprovalCodeMap.get(qli.QuoteId)); // 111100011 & actual approver status
+                    qliUpdate.CN_Approval_Status_Required__c = Integer.valueOf(1024 + 512 + 256 + 128 + 8 + 4) & Integer.valueOf(quoteIdApprovalCodeMap.get(qli.QuoteId)); // 11110000011 & actual approver status
                     qliUpdate.CN_Commets_for_Approver__c = System.Label.CN_Quote_Approve_Type_4;
                     requiredApproverCnt = 6;
                 }

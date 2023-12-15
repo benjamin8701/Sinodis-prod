@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>在visit上赋予QSR（Ian &amp; Eco）编辑Notify Chef和填写feedback权限</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.CN_Chef_Feedback__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.CN_Notify_Chef__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.CN_Chef_Feedback__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.CN_Notify_Chef__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CN Guest Chef Demo Visit Permission Set</label>
+    <license>Salesforce</license>
+</PermissionSet>

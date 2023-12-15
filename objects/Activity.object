@@ -142,6 +142,13 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>CN_Chef_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <label>Chef Feedback</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>CN_Chef_Request_Id__c</fullName>
         <externalId>false</externalId>
         <label>Chef Request Id</label>
@@ -252,6 +259,13 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Notify_Chef__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Notify Chef</label>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>CN_Objective__c</fullName>
@@ -469,5 +483,5 @@
         <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>

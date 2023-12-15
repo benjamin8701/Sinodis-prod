@@ -63,6 +63,8 @@ public without sharing class CN_Quote_Populate_Fields_Handler implements Trigger
                                                 Quote.CN_Approver_7__c,
                                                 Quote.CN_Approver_8__c,
                                                 Quote.CN_Approver_9__c,
+                                                Quote.CN_Approver_10__c,
+                                                Quote.CN_Approver_11__c,
                                                 Quote.CN_Latest_Approver__c,
                                                 Quote.Status
                                             FROM QuoteLineItem 
@@ -72,8 +74,8 @@ public without sharing class CN_Quote_Populate_Fields_Handler implements Trigger
 
                     Decimal approveStatus = 0;
                     if(qli.Quote.CN_Latest_Approver__c != null) {
-                        Decimal startNum = 256;
-                        for(Integer i = 1; i <= 9; i++) {
+                        Decimal startNum = 1024;
+                        for(Integer i = 1; i <= 11; i++) {
                             if(qli.getSObject('Quote').get('CN_Approver_' + i + '__c') != null) {
                                 if(qli.Quote.CN_Latest_Approver__c == qli.getSObject('Quote').get('CN_Approver_' + i + '__c')) {
                                     if(Constants.CN_QUOTE_STATUS_REJECTED.equals(qli.Quote.Status)) {

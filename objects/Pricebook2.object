@@ -166,6 +166,16 @@
                     <default>false</default>
                     <label>WS</label>
                 </value>
+                <value>
+                    <fullName>QSR</fullName>
+                    <default>false</default>
+                    <label>QSR</label>
+                </value>
+                <value>
+                    <fullName>B2B</fullName>
+                    <default>false</default>
+                    <label>B2B</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
