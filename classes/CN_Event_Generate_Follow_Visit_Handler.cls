@@ -23,14 +23,22 @@ public without sharing class CN_Event_Generate_Follow_Visit_Handler implements T
         Id visitRTId = Schema.SObjectType.Event.getRecordTypeInfosByDeveloperName().get(Constants.CN_EV_RT_API_NAME_NEW).getRecordTypeId();
 
         List<Event> generateEventList = new List<Event>();
+        List<Event> shareEventRelatedAccountToGroupList = new List<Event>();
 
         for(Event visit : (List<Event>)Trigger.New) {
             if(visitRTId.equals(visit.recordTypeId) && visit.CN_By_when__c != null){
                 generateEventList.add(visit);
             }
+
+            if(visitRTId.equals(visit.recordTypeId) && visit.CN_Notify_Chef__c == TRUE){
+                shareEventRelatedAccountToGroupList.add(visit);
+            }
         }
         if (generateEventList.size()>0) {
             generateFollowUpVisit(generateEventList);
+        }
+        if(shareEventRelatedAccountToGroupList.size() > 0){
+            shareAccountToGroup(shareEventRelatedAccountToGroupList);
         }
     }
 
@@ -51,6 +59,24 @@ public without sharing class CN_Event_Generate_Follow_Visit_Handler implements T
         if (generateEventList.size()>0) {
             generateFollowUpVisit(generateEventList);
         }
+    }
+
+    /**
+     * share account to pubic group user to edit activities under account
+     */
+    public void shareAccountToGroup(List<Event> visitList){
+        List<AccountShare> accShareList = new List<AccountShare>();
+        Group publicGroup = [SELECT Id FROM Group Where DeveloperName = 'CN_Customer_Visit_Recipient_Group'];
+        for (Event visitObj : visitList) {
+            AccountShare accShare = New AccountShare();
+            accShare.UserOrGroupID = publicGroup.Id;
+            accShare.AccountID = visitObj.WhatId;
+            accShare.AccountaccessLevel = 'Edit'; 
+            accShare.OpportunityAccessLevel = 'Read';
+            accShareList.add(accShare);
+        }
+
+        Insert accShareList;
     }
 
 

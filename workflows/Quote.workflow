@@ -54,8 +54,28 @@
     <fieldUpdates>
         <fullName>CN_Accumulated_Appover1</fullName>
         <field>CN_Approved_Status__c</field>
-        <formula>CN_Approved_Status__c + 256</formula>
+        <formula>CN_Approved_Status__c + 1024</formula>
         <name>CN_Accumulated_Appover1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Accumulated_Appover10</fullName>
+        <field>CN_Approved_Status__c</field>
+        <formula>CN_Approved_Status__c + 2</formula>
+        <name>CN_Accumulated_Appover10</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_Accumulated_Appover11</fullName>
+        <field>CN_Approved_Status__c</field>
+        <formula>CN_Approved_Status__c + 1</formula>
+        <name>CN_Accumulated_Appover11</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
@@ -64,7 +84,7 @@
     <fieldUpdates>
         <fullName>CN_Accumulated_Appover2</fullName>
         <field>CN_Approved_Status__c</field>
-        <formula>CN_Approved_Status__c + 128</formula>
+        <formula>CN_Approved_Status__c + 512</formula>
         <name>CN_Accumulated_Appover2</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
@@ -74,7 +94,7 @@
     <fieldUpdates>
         <fullName>CN_Accumulated_Appover3</fullName>
         <field>CN_Approved_Status__c</field>
-        <formula>CN_Approved_Status__c + 64</formula>
+        <formula>CN_Approved_Status__c + 256</formula>
         <name>CN_Accumulated_Appover3</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
@@ -84,7 +104,7 @@
     <fieldUpdates>
         <fullName>CN_Accumulated_Appover4</fullName>
         <field>CN_Approved_Status__c</field>
-        <formula>CN_Approved_Status__c + 32</formula>
+        <formula>CN_Approved_Status__c + 128</formula>
         <name>CN_Accumulated_Appover4</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
@@ -94,7 +114,7 @@
     <fieldUpdates>
         <fullName>CN_Accumulated_Appover5</fullName>
         <field>CN_Approved_Status__c</field>
-        <formula>CN_Approved_Status__c + 16</formula>
+        <formula>CN_Approved_Status__c + 64</formula>
         <name>CN_Accumulated_Appover5</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
@@ -104,7 +124,7 @@
     <fieldUpdates>
         <fullName>CN_Accumulated_Appover6</fullName>
         <field>CN_Approved_Status__c</field>
-        <formula>CN_Approved_Status__c + 8</formula>
+        <formula>CN_Approved_Status__c + 32</formula>
         <name>CN_Accumulated_Appover6</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
@@ -114,7 +134,7 @@
     <fieldUpdates>
         <fullName>CN_Accumulated_Appover7</fullName>
         <field>CN_Approved_Status__c</field>
-        <formula>CN_Approved_Status__c + 4</formula>
+        <formula>CN_Approved_Status__c + 14</formula>
         <name>CN_Accumulated_Appover7</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
@@ -124,7 +144,7 @@
     <fieldUpdates>
         <fullName>CN_Accumulated_Appover8</fullName>
         <field>CN_Approved_Status__c</field>
-        <formula>CN_Approved_Status__c + 2</formula>
+        <formula>CN_Approved_Status__c + 8</formula>
         <name>CN_Accumulated_Appover8</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
@@ -134,7 +154,7 @@
     <fieldUpdates>
         <fullName>CN_Accumulated_Appover9</fullName>
         <field>CN_Approved_Status__c</field>
-        <formula>CN_Approved_Status__c + 1</formula>
+        <formula>CN_Approved_Status__c + 4</formula>
         <name>CN_Accumulated_Appover9</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>

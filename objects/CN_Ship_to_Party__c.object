@@ -384,6 +384,11 @@
                     <label>P060-SINODIS Dalian-西诺迪斯（大连）</label>
                 </value>
                 <value>
+                    <fullName>P070</fullName>
+                    <default>false</default>
+                    <label>P070-SINODIS Tianjin-西诺迪斯（天津）</label>
+                </value>
+                <value>
                     <fullName>P010</fullName>
                     <default>false</default>
                     <isActive>false</isActive>
@@ -861,6 +866,10 @@
             </values>
             <values>
                 <fullName>P060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P070</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

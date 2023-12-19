@@ -120,6 +120,26 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>CN_CCE4_QSR__c</fullName>
+        <externalId>false</externalId>
+        <label>CCE4 QSR</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_CCE5_B2B__c</fullName>
+        <externalId>false</externalId>
+        <label>CCE5 B2B</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <label>CN Approve Process Settings</label>
     <visibility>Public</visibility>
 </CustomObject>

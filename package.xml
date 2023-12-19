@@ -275,6 +275,7 @@
         <members>CN_Sample_Request__c.CN_SR_Approve_Process</members>
         <members>Quote.CN_Quote_Approval</members>
         <members>Quote.CN_Quote_Approval_V4</members>
+        <members>Quote.CN_Quote_Approval_V5</members>
         <members>Quote.CN_Quote_Auto_Approval</members>
         <name>ApprovalProcess</name>
     </types>
@@ -458,6 +459,7 @@
         <members>CN_Email_Folder/CN_Sample_Request_Approved_Process_CS</members>
         <members>CN_Email_Folder/CN_Sample_Request_Rejected</members>
         <members>CN_Email_Folder/CN_Sample_Request_Submit</members>
+        <members>CN_Email_Folder/CN_Chef_Customer_Visit_Created</members>
         <name>EmailTemplate</name>
     </types>
     <types>
@@ -470,6 +472,7 @@
     </types>
     <types>
         <members>CN_CCE_Sales_MDM</members>
+        <members>CN_Customer_Visit_Recipient_Group</members>
         <name>Group</name>
     </types>
     <types>
@@ -615,6 +618,7 @@
         <members>CN_Product_Edit_Description</members>
         <members>CN_Promotion_Manager</members>
         <members>CN_SalesMDM_Account_Approval</members>
+        <members>CN_Guest_Chef_Demo_Visit_Permission_Set</members>
         <name>PermissionSet</name>
     </types>
     <types>
@@ -709,6 +713,14 @@
         <members>Quote.CN_Quote_Split_Items</members>
         <members>Quote.CN_Send_To_SAP</members>
         <name>QuickAction</name>
+    </types>
+
+    <types>
+        <members>CN_B2B_Sales_Manager</members>
+        <members>CN_International_QSR_Business_Sales_Director</members>
+        <members>CN_QSR_Chef_Consultant</members>
+        <members>CN_VACANCY_QSR_B2B_Channel_Director</members>
+        <name>Role</name>
     </types>
     <types>
         <members>*</members>

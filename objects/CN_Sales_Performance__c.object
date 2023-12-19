@@ -644,6 +644,8 @@ SAP传的是编号</description>
    &apos;900012&apos; , &apos;DS&apos;,
    &apos;900013&apos; , &apos;KA&apos;,
    &apos;900014&apos; , &apos;WS&apos;,
+   &apos;901775&apos; , &apos;QSR&apos;,
+   &apos;901776&apos; , &apos;B2B&apos;,
    &apos;&apos;
 )</formula>
         <label>Target Sales Channel</label>
@@ -665,7 +667,7 @@ SAP传的是编号</description>
    &apos;K050&apos;,&apos;K050-ChengDu&apos;,
    &apos;&apos;
 )</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+<formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Sales Office Name</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
