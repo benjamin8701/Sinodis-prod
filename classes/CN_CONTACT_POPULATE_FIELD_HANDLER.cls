@@ -212,7 +212,7 @@ public without sharing class CN_CONTACT_POPULATE_FIELD_HANDLER implements Trigge
     //Create Contact diretly ----by shuqi
     public Set<Id> updateAccount(Set<Id> accIdSet, Map<Id, String> accIdCRIdMap) {
         Set<Id> accIdErrorSet = new Set<Id>();
-        List<Contact> conListAccRelated = [SELECT Id, CN_Contact_Type__c,AccountId,Account.CN_Account_Status__c FROM Contact WHERE AccountId IN: accIdSet LIMIT 500000];
+        List<Contact> conListAccRelated = [SELECT Id, CN_Contact_Type__c,AccountId,Account.CN_Account_Status__c FROM Contact WHERE AccountId IN: accIdSet LIMIT 50000];
         Set<Id> accIdForUpdateSet = new Set<Id>();
         Set<Id> accIdForNewSet = new Set<Id>();
         //Set<Id> accIdForNotNewSet = new Set<Id>();
@@ -263,6 +263,8 @@ public without sharing class CN_CONTACT_POPULATE_FIELD_HANDLER implements Trigge
                 update accListForUpdate;
                 Constants.CN_ACCOUNT_TRIGGER_ON = true;        
             }
+        }else{
+            accIdErrorSet.addAll(accIdSet);
         }
 
        return accIdErrorSet;

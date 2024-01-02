@@ -78,6 +78,14 @@
             <operator>includes</operator>
             <values>WS</values>
         </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>includes</operator>
+            <values>QSR</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>includes</operator>
+            <values>B2B</values>
+        </dashboardFilterOptions>
         <name>Channel</name>
     </dashboardFilters>
     <dashboardGridLayout>

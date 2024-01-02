@@ -245,6 +245,7 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
                     if( 
                         changedFieldSet.contains('CN_Account_Invoice_Type__c') ||
                         changedFieldSet.contains('CN_Account_Bank_Account__c') ||
+                        changedFieldSet.contains('CN_Account_Bank_Account_Name__c') ||
                         changedFieldSet.contains('CN_Account_Invoicing_Name__c') ||
                         changedFieldSet.contains('CN_Account_Tax_Registration_No__c') ||
                         changedFieldSet.contains('CN_Account_Invoice_Address_and_Phone__c') ||
@@ -277,7 +278,6 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
                         changedFieldSet.contains('CN_Account_Potential_Volume_Chance__c') ||
                         changedFieldSet.contains('CN_Account_Competitors__c') ||
                         changedFieldSet.contains('CN_Account_Number_Of_Stores__c') ||
-                        changedFieldSet.contains('CN_Account_Competitors__c') ||
                         changedFieldSet.contains('CN_Account_Payment_Type__c') ||
                         changedFieldSet.contains('CN_Account_Payment_Bank_Name__c') ||
                         changedFieldSet.contains('CN_Account_Payment_Bank_Account__c') ||
