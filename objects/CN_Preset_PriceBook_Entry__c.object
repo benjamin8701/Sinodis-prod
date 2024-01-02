@@ -185,6 +185,16 @@
                     <default>false</default>
                     <label>LP</label>
                 </value>
+                <value>
+                    <fullName>QSR</fullName>
+                    <default>false</default>
+                    <label>QSR</label>
+                </value>
+                <value>
+                    <fullName>B2B</fullName>
+                    <default>false</default>
+                    <label>B2B</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -377,6 +387,10 @@
         <picklistValues>
             <picklist>CN_Channel__c</picklist>
             <values>
+                <fullName>B2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>DS</fullName>
                 <default>false</default>
             </values>
@@ -386,6 +400,10 @@
             </values>
             <values>
                 <fullName>LP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QSR</fullName>
                 <default>false</default>
             </values>
             <values>

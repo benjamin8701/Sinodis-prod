@@ -363,6 +363,16 @@
                     <default>false</default>
                     <label>80-Others</label>
                 </value>
+                <value>
+                    <fullName>XX</fullName>
+                    <default>false</default>
+                    <label>XX-Deleted</label>
+                </value>
+                <value>
+                    <fullName>81</fullName>
+                    <default>false</default>
+                    <label>81-Overdue payment</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -852,6 +862,10 @@
             </values>
             <values>
                 <fullName>80</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>XX</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

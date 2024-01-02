@@ -96,12 +96,23 @@ private class CN_CONTACT_POPULATE_FIELD_HANDLER_Test {
             con.CN_Bill_To_Address__c = 'ABCDE';
             insert con;
 
+            Contact con2 = new Contact();
+            con2.AccountId = acc.Id;
+            con2.CN_Contact_Type__c = '02';
+            con2.Title = 'CEO';
+            con2.CN_Department_Of_Contact_Person__c = '0002';
+            con2.CN_Contact_Name_EN__c = 'Test Contact1';
+            con2.LastName = 'Contact1';
+            con2.MobilePhone = '13013801300';
+            con2.CN_Bill_To_Address__c = 'ABCDEF';
+            insert con2;
+
             con.CN_Contact_Type__c = '01;02;04';
             update con;
 
-            delete con;
+            delete con2;
 
-            undelete con;
+            undelete con2;
         }
     }
 }

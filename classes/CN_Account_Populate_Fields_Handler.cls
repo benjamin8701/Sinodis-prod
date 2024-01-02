@@ -64,8 +64,22 @@ public without sharing class CN_Account_Populate_Fields_Handler implements Trigg
         OwnerIdSet.addAll(accountOwnerIdMap.values());
         List<User> ownerUserList = [SELECT id,CN_User_Personnel_Number__c,CN_Sales_Team__c,CN_Sales_Office__c FROM User Where id IN :OwnerIdSet];
         updateAccountSalesPerson(accountOwnerIdMap,ownerUserList,False);
-        //updateAccountSalesTeamsAndBusinessUnit(accountOwnerIdMap,ownerUserList);
+        updateAccountSalesTeamsAndBusinessUnit(accountOwnerIdMap,ownerUserList);
         updateAccountSalesOffice(accountOwnerIdMap,ownerUserList);
+        updateGroupAndBrand(accountOwnerIdMap);
+    }
+
+    /**
+     * 12.18 added by Kimi
+     * Owner发生变化时，如果Brand&Group不为空，则清空Brand&Group
+     */
+    public void updateGroupAndBrand(Map<Account,Id> accountOwnerIdMap){
+        if(accountOwnerIdMap.size() >0){
+            for (Account accObj : accountOwnerIdMap.keySet()) {
+                accObj.CN_Group_Name__c = null;
+                accobj.CN_Brand__c = null;
+            }
+        }
     }
    
     public void updateAccountSalesPerson(Map<Account,Id> accountOwnerIdMap,List<User> ownerUserList,Boolean isCreate) {

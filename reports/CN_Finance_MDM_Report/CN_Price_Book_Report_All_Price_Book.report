@@ -26,6 +26,8 @@
  &apos;KA&apos;,&apos;1-KA&apos;,
  &apos;DS&apos;,&apos;2-DS&apos;,
  &apos;WS&apos;,&apos;3-WS&apos;,
+ &apos;QSR&apos;,&apos;4-QSR&apos;,
+ &apos;B2B&apos;,&apos;5-B2B&apos;,
   &apos;&apos;
 )</calculatedFormula>
         <dataType>Text</dataType>
