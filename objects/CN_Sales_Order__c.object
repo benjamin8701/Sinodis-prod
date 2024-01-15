@@ -474,6 +474,16 @@
                     <default>false</default>
                     <label>DS</label>
                 </value>
+                <value>
+                    <fullName>QSR</fullName>
+                    <default>false</default>
+                    <label>QSR</label>
+                </value>
+                <value>
+                    <fullName>B2B</fullName>
+                    <default>false</default>
+                    <label>B2B</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -850,6 +860,11 @@
                     <default>false</default>
                     <label>C-Completely processed</label>
                 </value>
+                <value>
+                    <fullName>X</fullName>
+                    <default>false</default>
+                    <label>X - Deleted</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -966,7 +981,7 @@
         <relationshipLabel>Sales Order</relationshipLabel>
         <relationshipName>Sales_Order</relationshipName>
         <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
@@ -1224,11 +1239,19 @@
         <picklistValues>
             <picklist>CN_Distribution_Channel__c</picklist>
             <values>
+                <fullName>B2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>DS</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>KA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QSR</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -1431,6 +1454,10 @@
             </values>
             <values>
                 <fullName>C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

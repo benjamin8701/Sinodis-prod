@@ -1031,6 +1031,11 @@
                     <label>P060-SINODIS Dalian-西诺迪斯（大连）</label>
                 </value>
                 <value>
+                    <fullName>P070</fullName>
+                    <default>false</default>
+                    <label>P070-SINODIS Tianjin-西诺迪斯（天津）</label>
+                </value>
+                <value>
                     <fullName>P010</fullName>
                     <default>false</default>
                     <isActive>false</isActive>
@@ -1853,7 +1858,6 @@
                 <value>
                     <fullName>B06</fullName>
                     <default>false</default>
-                    <isActive>false</isActive>
                     <label>B06-Shanghai Area</label>
                 </value>
             </valueSetDefinition>
@@ -2388,19 +2392,19 @@
                     <label>Supermarket</label>
                 </value>
                 <value>
-                    <fullName>QSR-Western</fullName>
+                    <fullName>QSR - Western</fullName>
                     <default>false</default>
-                    <label>QSR-Western</label>
+                    <label>QSR - Western</label>
                 </value>
                 <value>
-                    <fullName>QSR-Asian exclude Chinese</fullName>
+                    <fullName>QSR - Asian exclude Chinese</fullName>
                     <default>false</default>
-                    <label>QSR-Asian exclude Chinese</label>
+                    <label>QSR - Asian exclude Chinese</label>
                 </value>
                 <value>
-                    <fullName>QSR-Chinese</fullName>
+                    <fullName>QSR - Chinese</fullName>
                     <default>false</default>
-                    <label>QSR-Chinese</label>
+                    <label>QSR - Chinese</label>
                 </value>
                 <value>
                     <fullName>Wholesaler</fullName>
@@ -2446,6 +2450,11 @@
                     <fullName>Wholesaler-Second</fullName>
                     <default>false</default>
                     <label>Wholesaler-Second</label>
+                </value>
+                <value>
+                    <fullName>B2B OEM</fullName>
+                    <default>false</default>
+                    <label>B2B OEM</label>
                 </value>
                 <value>
                     <fullName>BAPA</fullName>
@@ -2632,15 +2641,15 @@
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Restaurant</controllingFieldValue>
-                <valueName>QSR-Western</valueName>
+                <valueName>QSR - Western</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Restaurant</controllingFieldValue>
-                <valueName>QSR-Asian exclude Chinese</valueName>
+                <valueName>QSR - Asian exclude Chinese</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Restaurant</controllingFieldValue>
-                <valueName>QSR-Chinese</valueName>
+                <valueName>QSR - Chinese</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Catering</controllingFieldValue>
@@ -2709,6 +2718,10 @@
             <valueSettings>
                 <controllingFieldValue>OEM</controllingFieldValue>
                 <valueName>Coffee/Tea OEM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OEM</controllingFieldValue>
+                <valueName>B2B OEM</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>EC</controllingFieldValue>
@@ -6205,6 +6218,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                     <label>P060-SINODIS Dalian-西诺迪斯（大连）</label>
                 </value>
                 <value>
+                    <fullName>P070</fullName>
+                    <default>false</default>
+                    <label>P070-SINODIS Tianjin-西诺迪斯（天津）</label>
+                </value>
+                <value>
                     <fullName>P010</fullName>
                     <default>false</default>
                     <isActive>false</isActive>
@@ -7039,7 +7057,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <value>
                     <fullName>B06</fullName>
                     <default>false</default>
-                    <isActive>false</isActive>
                     <label>B06-Shanghai Area</label>
                 </value>
             </valueSetDefinition>
@@ -7655,6 +7672,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                     <label>Wholesaler-Second</label>
                 </value>
                 <value>
+                    <fullName>B2B OEM</fullName>
+                    <default>false</default>
+                    <label>B2B OEM</label>
+                </value>
+                <value>
                     <fullName>BAPA</fullName>
                     <default>false</default>
                     <isActive>false</isActive>
@@ -7852,6 +7874,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <valueSettings>
                 <controllingFieldValue>OEM</controllingFieldValue>
                 <valueName>Coffee/Tea OEM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OEM</controllingFieldValue>
+                <valueName>B2B OEM</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>EC</controllingFieldValue>
@@ -8933,6 +8959,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
@@ -9495,6 +9525,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>B2B OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA - LKA</fullName>
                 <default>false</default>
             </values>
@@ -9611,15 +9645,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Asian exclude Chinese</fullName>
+                <fullName>QSR - Asian exclude Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Chinese</fullName>
+                <fullName>QSR - Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Western</fullName>
+                <fullName>QSR - Western</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10491,6 +10525,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
@@ -11038,6 +11076,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Airline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B2B OEM</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11667,6 +11709,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
@@ -12229,6 +12275,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>B2B OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA - LKA</fullName>
                 <default>false</default>
             </values>
@@ -12345,15 +12395,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Asian exclude Chinese</fullName>
+                <fullName>QSR - Asian exclude Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Chinese</fullName>
+                <fullName>QSR - Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Western</fullName>
+                <fullName>QSR - Western</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13225,6 +13275,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
@@ -13772,6 +13826,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Airline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B2B OEM</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14401,6 +14459,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
@@ -14729,6 +14791,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>026</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>B06</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Sort_Key__c</picklist>
@@ -14963,6 +15029,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>B2B OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA - LKA</fullName>
                 <default>false</default>
             </values>
@@ -15079,15 +15149,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Asian exclude Chinese</fullName>
+                <fullName>QSR - Asian exclude Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Chinese</fullName>
+                <fullName>QSR - Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Western</fullName>
+                <fullName>QSR - Western</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15959,6 +16029,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
@@ -16518,6 +16592,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Airline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B2B OEM</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17147,6 +17225,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
@@ -17709,6 +17791,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>B2B OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA - LKA</fullName>
                 <default>false</default>
             </values>
@@ -17825,15 +17911,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Asian exclude Chinese</fullName>
+                <fullName>QSR - Asian exclude Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Chinese</fullName>
+                <fullName>QSR - Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Western</fullName>
+                <fullName>QSR - Western</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -18705,6 +18791,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
@@ -19252,6 +19342,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Airline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B2B OEM</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -20559,15 +20653,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Asian exclude Chinese</fullName>
+                <fullName>QSR - Asian exclude Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Chinese</fullName>
+                <fullName>QSR - Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Western</fullName>
+                <fullName>QSR - Western</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22614,6 +22708,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
@@ -22942,6 +23040,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>026</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>B06</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Sort_Key__c</picklist>
@@ -23176,6 +23278,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>B2B OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA - LKA</fullName>
                 <default>false</default>
             </values>
@@ -23292,15 +23398,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Asian exclude Chinese</fullName>
+                <fullName>QSR - Asian exclude Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Chinese</fullName>
+                <fullName>QSR - Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Western</fullName>
+                <fullName>QSR - Western</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -24172,6 +24278,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
@@ -24500,6 +24610,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>026</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>B06</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Sort_Key__c</picklist>
@@ -24731,6 +24845,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Airline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B2B OEM</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25359,6 +25477,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
@@ -25687,6 +25809,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>026</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>B06</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Sort_Key__c</picklist>
@@ -25921,6 +26047,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>B2B OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA - LKA</fullName>
                 <default>false</default>
             </values>
@@ -26037,15 +26167,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Asian exclude Chinese</fullName>
+                <fullName>QSR - Asian exclude Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Chinese</fullName>
+                <fullName>QSR - Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Western</fullName>
+                <fullName>QSR - Western</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -26917,6 +27047,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
@@ -27245,6 +27379,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>026</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>B06</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Sort_Key__c</picklist>
@@ -27476,6 +27614,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Airline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B2B OEM</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28105,6 +28247,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
@@ -28667,6 +28813,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>B2B OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA - LKA</fullName>
                 <default>false</default>
             </values>
@@ -28783,15 +28933,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Asian exclude Chinese</fullName>
+                <fullName>QSR - Asian exclude Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Chinese</fullName>
+                <fullName>QSR - Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Western</fullName>
+                <fullName>QSR - Western</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -29663,6 +29813,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
@@ -30210,6 +30364,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Airline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B2B OEM</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -30839,6 +30997,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
@@ -31401,6 +31563,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>B2B OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA - LKA</fullName>
                 <default>false</default>
             </values>
@@ -31517,15 +31683,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Asian exclude Chinese</fullName>
+                <fullName>QSR - Asian exclude Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Chinese</fullName>
+                <fullName>QSR - Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Western</fullName>
+                <fullName>QSR - Western</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -32397,6 +32563,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
@@ -32944,6 +33114,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Airline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B2B OEM</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -33573,6 +33747,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
@@ -33901,6 +34079,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>026</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>B06</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Sort_Key__c</picklist>
@@ -34135,6 +34317,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>B2B OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA - LKA</fullName>
                 <default>false</default>
             </values>
@@ -34251,15 +34437,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Asian exclude Chinese</fullName>
+                <fullName>QSR - Asian exclude Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Chinese</fullName>
+                <fullName>QSR - Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Western</fullName>
+                <fullName>QSR - Western</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -35131,6 +35317,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
@@ -35459,6 +35649,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>026</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>B06</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Sort_Key__c</picklist>
@@ -35690,6 +35884,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Airline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B2B OEM</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -36319,6 +36517,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
@@ -36881,6 +37083,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>B2B OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA - LKA</fullName>
                 <default>false</default>
             </values>
@@ -36997,15 +37203,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Asian exclude Chinese</fullName>
+                <fullName>QSR - Asian exclude Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Chinese</fullName>
+                <fullName>QSR - Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Western</fullName>
+                <fullName>QSR - Western</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -37877,6 +38083,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
@@ -38424,6 +38634,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Airline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B2B OEM</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -39053,6 +39267,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>CN_Account_Invoice_Type__c</picklist>
@@ -39615,6 +39833,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>B2B OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BAPA - LKA</fullName>
                 <default>false</default>
             </values>
@@ -39731,15 +39953,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Asian exclude Chinese</fullName>
+                <fullName>QSR - Asian exclude Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Chinese</fullName>
+                <fullName>QSR - Chinese</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>QSR-Western</fullName>
+                <fullName>QSR - Western</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -40611,6 +40833,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <fullName>P060</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>P070</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>New_CN_Account_Invoice_Type__c</picklist>
@@ -41158,6 +41384,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Airline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B2B OEM</fullName>
                 <default>false</default>
             </values>
             <values>
