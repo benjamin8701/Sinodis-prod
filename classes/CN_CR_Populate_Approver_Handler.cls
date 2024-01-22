@@ -15,12 +15,18 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
     Id updateShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_SHIPTO).getRecordTypeId();
     Id newContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_CONTACT).getRecordTypeId();
     Id newShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_SHIPTO).getRecordTypeId();
+    //add by leo 2023.08.24 Inactive Ship-to
+    Id inactiveShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_INACTIVE_SHIPTO).getRecordTypeId();
+    //add by leo 2023.08.24 Inactive Ship-to
     public void handle() {
         this.cnRTIdSet.add(this.updateAccountRTId);
         this.cnRTIdSet.add(this.updateContactRTId);
         this.cnRTIdSet.add(this.updateShiptoRTId);
         this.cnRTIdSet.add(this.newContactRTId);
         this.cnRTIdSet.add(this.newShiptoRTId);
+        //add by leo 2023.08.24 Inactive Ship-to
+        this.cnRTIdSet.add(this.inactiveShiptoRTId);
+	//add by leo 2023.08.24 Inactive Ship-to
         if(Trigger.isBefore && Trigger.isInsert) {
             handleBeforeInsert();
         } else if(Trigger.isBefore && Trigger.isUpdate) {
@@ -161,6 +167,15 @@ public without sharing class CN_CR_Populate_Approver_Handler implements Triggers
                     cr.CN_Is_Auto_Approved__c = false;
                     cr.CN_Approval_Send_Notification__c = false;
                 }
+	    //add by leo 2023.08.24 Inactive Ship-to
+            // Inactive Ship-to
+            } else if(inactiveShiptoRTId.equals(cr.RecordTypeId)) {
+                if(String.isNotBlank(owner.Title)) {
+                    cr.CN_Approver_4__c = settings.CN_Finance_MDM_UserId__c;
+                    cr.CN_Is_Auto_Approved__c = false;
+                    cr.CN_Approval_Send_Notification__c = false;
+                }
+	    //add by leo 2023.08.24 Inactive Ship-to
             // Update Ship-to
             } else if(updateShiptoRTId.equals(cr.RecordTypeId)) {
                 Boolean isFinMDMRequired = false;

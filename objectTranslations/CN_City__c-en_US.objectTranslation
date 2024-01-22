@@ -41,6 +41,10 @@
         <label><!-- Sales Office --></label>
         <name>CN_Sales_Office__c</name>
         <picklistValues>
+            <masterLabel>B100-Tianjin</masterLabel>
+            <translation><!-- B100-Tianjin --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>K010-ShangHai</masterLabel>
             <translation><!-- K010-ShangHai --></translation>
         </picklistValues>

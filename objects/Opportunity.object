@@ -711,6 +711,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>E-Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>FHC</fullName>
                 <default>false</default>
             </values>

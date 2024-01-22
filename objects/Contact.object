@@ -439,6 +439,16 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Billing_To_Address_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Id</formula>
+        <label>Billing To Address ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Change_Request__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -750,6 +760,43 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Has_CR_Need_Sync__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Has CR Need Sync</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Inactive</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Converted_From_Lead__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>标记是否由Lead转化而来</description>
+        <externalId>false</externalId>
+        <label>Is Converted From Lead</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Lead_Modify__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Lead Modify</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Is_Others_Contact__c</fullName>
         <externalId>false</externalId>
         <formula>AND(
@@ -820,6 +867,48 @@ INCLUDES(CN_Contact_Type__c , &quot;04&quot;)
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CN_Lead_MG_Account_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead MG Account ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_MG_Billing_To_Address_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>MG Billing To Address ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_MG_Contact_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>MG Contact ID</label>
+        <length>64</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Need_Send_MG__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Need Send MG</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>CN_Open_Field_To_Comment__c</fullName>
@@ -1322,6 +1411,10 @@ INCLUDES(CN_Contact_Type__c , &quot;04&quot;)
                 <default>false</default>
             </values>
             <values>
+                <fullName>E-Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>FHC</fullName>
                 <default>false</default>
             </values>
@@ -1436,7 +1529,8 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
 RecordType.DeveloperName = &apos;CN_Contact&apos;,
 INCLUDES(CN_Contact_Type__c, &quot;01&quot;) ,
 NOT(AND( ISPICKVAL(Account.CN_Account_Status__c ,&quot;New&quot;) , ISBLANK(CN_Change_Request__c))),
-NOT(AND( ISPICKVAL(Account.CN_Account_Status__c ,&quot;Approved&quot;) , NOT(ISBLANK(CN_Change_Request__c))))
+NOT(AND( ISPICKVAL(Account.CN_Account_Status__c ,&quot;Approved&quot;) , NOT(ISBLANK(CN_Change_Request__c)))),
+NOT(ISCHANGED( CN_Need_Send_MG__c ))
 )</errorConditionFormula>
         <errorMessage>When you create Contact Type is 01-Billing. You can only select Account whose Status is New.</errorMessage>
     </validationRules>
@@ -1474,7 +1568,8 @@ $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
 RecordType.DeveloperName = &apos;CN_Contact&apos;,
 NOT(ISNEW()),
-ISCHANGED(CN_Converted_From__c)
+ISCHANGED(CN_Converted_From__c),
+CN_Is_Lead_Modify__c = false
 )</errorConditionFormula>
         <errorMessage>It&apos;s not allowed to convert to existing records.</errorMessage>
     </validationRules>
@@ -1490,6 +1585,8 @@ ISCHANGED(CN_Converted_From__c)
   NOT(AND( ISNEW() ,  NOT(ISBLANK(CN_Change_Request__c)))),
   NOT(ISCHANGED(CN_Change_Request__c)),
   NOT(ISCHANGED( CN_Sync_Status__c )),
+  NOT(ISCHANGED( CN_Need_Send_MG__c)),
+  NOT(ISCHANGED( CN_Has_CR_Need_Sync__c)),
   NOT(ISCHANGED( CN_Latest_CR_Sync_Status__c ))
 )</errorConditionFormula>
         <errorMessage>Please create contact via creating a new contact change request. 

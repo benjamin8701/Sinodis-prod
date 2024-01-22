@@ -40,6 +40,9 @@ private class CN_CR_Change_RecordType_Handler_Test {
             Id updateShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_SHIPTO).getRecordTypeId();
             Id newContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_CONTACT).getRecordTypeId();
             Id newShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_SHIPTO).getRecordTypeId();
+            //add by leo
+            Id inAcitveShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_INACTIVE_SHIPTO).getRecordTypeId();
+            //add by leo
 
             Account acc_update1 = new Account();
             acc_update1.Id = acc_factory.Id;
@@ -124,7 +127,22 @@ private class CN_CR_Change_RecordType_Handler_Test {
             cr5.New_CN_ShipTo_City_CN__c = city.Id;
             cr5.CN_Is_Generate_From_Action__c = true;
             crList.add(cr5);
-
+            //add by leo
+            CN_Change_Request__c cr6 = new CN_Change_Request__c();
+            cr5.RecordTypeId = inAcitveShiptoRTId;
+            cr5.New_CN_ShipTo_Sold_To_Party_Customer__c = acc_factory.Id;
+            cr5.New_CN_ShipTo_Customer_Name__c = 'Test CR ShipTo 01';
+            cr5.New_CN_ShipTo_Contact_Name__c = 'CR Contact Name';
+            cr5.New_CN_ShipTo_Delivery_Address_CN__c = 'Addresss CN';
+            cr5.New_CN_ShipTo_Delivery_Address_EN__c = 'Addresss EN';
+            cr5.New_CN_ShipTo_Delivery_Plant__c = 'P011';
+            cr5.New_CN_ShipTo_Mobile_Phone__c = '15755555553';
+            cr5.New_CN_ShipTo_Telephone__c = '15755555553';
+            cr5.New_CN_ShipTo_Province_CN__c = province.Id;
+            cr5.New_CN_ShipTo_City_CN__c = city.Id;
+            cr5.CN_Is_Generate_From_Action__c = true;
+            crList.add(cr6);
+            //add by leo
             insert crLIst;
 
             Test.startTest();

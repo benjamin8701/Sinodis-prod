@@ -71,4 +71,9 @@
         <default>false</default>
         <label>Road Show</label>
     </standardValue>
+    <standardValue>
+        <fullName>E-Commerce</fullName>
+        <default>false</default>
+        <label>E-Commerce</label>
+    </standardValue>
 </StandardValueSet>

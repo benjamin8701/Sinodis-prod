@@ -36,6 +36,10 @@
             <translation><!-- Digital Campaign --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>E-Commerce</masterLabel>
+            <translation><!-- E-Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Expositions</masterLabel>
             <translation><!-- Expositions --></translation>
         </picklistValues>
@@ -317,6 +321,10 @@
             <masterLabel>P060-SINODIS Dalian-西诺迪斯（大连）</masterLabel>
             <translation><!-- P060-SINODIS Dalian-西诺迪斯（大连） --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>P070-SINODIS Tianjin-西诺迪斯（天津）</masterLabel>
+            <translation><!-- P070-SINODIS Tianjin-西诺迪斯（天津） --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label>集团名称</label>
@@ -398,6 +406,10 @@
     <fields>
         <label>诉讼城市</label>
         <name>CN_Account_Litigation_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG Account ID --></label>
+        <name>CN_Account_MG_Account_ID__c</name>
     </fields>
     <fields>
         <label>售达方</label>
@@ -736,6 +748,10 @@
             <masterLabel>026-GuangZhou</masterLabel>
             <translation><!-- 026-GuangZhou --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>B06-Shanghai Area</masterLabel>
+            <translation><!-- B06-Shanghai Area --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label>销售团队</label>
@@ -991,6 +1007,10 @@
             <translation><!-- Airline --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>B2B OEM</masterLabel>
+            <translation><!-- B2B OEM --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>BAPA - LKA</masterLabel>
             <translation><!-- BAPA - LKA --></translation>
         </picklistValues>
@@ -1107,16 +1127,16 @@
             <translation><!-- Premium Tea Shop --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>QSR-Asian exclude Chinese</masterLabel>
-            <translation><!-- QSR-Asian exclude Chinese --></translation>
+            <masterLabel>QSR - Asian exclude Chinese</masterLabel>
+            <translation><!-- QSR - Asian exclude Chinese --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>QSR-Chinese</masterLabel>
-            <translation><!-- QSR-Chinese --></translation>
+            <masterLabel>QSR - Chinese</masterLabel>
+            <translation><!-- QSR - Chinese --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>QSR-Western</masterLabel>
-            <translation><!-- QSR-Western --></translation>
+            <masterLabel>QSR - Western</masterLabel>
+            <translation><!-- QSR - Western --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Retail OEM</masterLabel>
@@ -1216,6 +1236,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Approved Status --></label>
+        <name>CN_Approved_Status__c</name>
+    </fields>
+    <fields>
         <label><!-- Approver1 --></label>
         <name>CN_Approver_1__c</name>
         <relationshipLabel>变更申请</relationshipLabel>
@@ -1282,6 +1306,14 @@
         <name>CN_CR_Email_Subject__c</name>
     </fields>
     <fields>
+        <label><!-- CN_CR_Source --></label>
+        <name>CN_CR_Source__c</name>
+        <picklistValues>
+            <masterLabel>E-Commerce</masterLabel>
+            <translation><!-- E-Commerce --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label>现金管理组</label>
         <name>CN_Cash_Mgmt_Group__c</name>
     </fields>
@@ -1312,6 +1344,10 @@
     <fields>
         <label><!-- Contact Account Name --></label>
         <name>CN_Contact_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Billing To Address ID --></label>
+        <name>CN_Contact_Billing_To_Address_ID__c</name>
     </fields>
     <fields>
         <label>联系人收票地址</label>
@@ -1474,9 +1510,21 @@
         <name>CN_Contact_Family_Info__c</name>
     </fields>
     <fields>
+        <label><!-- Contact Lead Mg Account Id --></label>
+        <name>CN_Contact_Lead_Mg_Account_Id__c</name>
+    </fields>
+    <fields>
         <label>联系人公司名称</label>
         <name>CN_Contact_License_Name__c</name>
         <relationshipLabel>变更申请</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact MG Billing ID --></label>
+        <name>CN_Contact_MG_Billing_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact MG Contact ID --></label>
+        <name>CN_Contact_MG_Contact_ID__c</name>
     </fields>
     <fields>
         <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</help>
@@ -1704,6 +1752,10 @@
             <masterLabel>Medium</masterLabel>
             <translation><!-- Medium --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Need Send MG Flag --></label>
+        <name>CN_Need_Send_MG_Flag__c</name>
     </fields>
     <fields>
         <label>新客户类别</label>
@@ -1989,6 +2041,10 @@
         <label>新销售办公室</label>
         <name>CN_New_Sales_Office__c</name>
         <picklistValues>
+            <masterLabel>B100-Tianjin</masterLabel>
+            <translation><!-- B100-Tianjin --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>K010-ShangHai</masterLabel>
             <translation><!-- K010-ShangHai --></translation>
         </picklistValues>
@@ -2165,6 +2221,10 @@
         <label>销售办公室</label>
         <name>CN_Sales_Office__c</name>
         <picklistValues>
+            <masterLabel>B100-Tianjin</masterLabel>
+            <translation><!-- B100-Tianjin --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>K010-ShangHai</masterLabel>
             <translation><!-- K010-ShangHai --></translation>
         </picklistValues>
@@ -2209,6 +2269,14 @@
     <fields>
         <label><!-- ShipTo Account Name --></label>
         <name>CN_ShipTo_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- ShipTo Address ID --></label>
+        <name>CN_ShipTo_Address_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- ShipTo Card --></label>
+        <name>CN_ShipTo_Card__c</name>
     </fields>
     <fields>
         <label>城市</label>
@@ -2258,6 +2326,14 @@
             <masterLabel>P060-SINODIS Dalian-西诺迪斯（大连）</masterLabel>
             <translation><!-- P060-SINODIS Dalian-西诺迪斯（大连） --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>P070-SINODIS Tianjin-西诺迪斯（天津）</masterLabel>
+            <translation><!-- P070-SINODIS Tianjin-西诺迪斯（天津） --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>冻结状态</label>
+        <name>CN_ShipTo_Inactive__c</name>
     </fields>
     <fields>
         <label>送达方间接客户</label>
@@ -2431,6 +2507,10 @@
         <picklistValues>
             <masterLabel>Digital Campaign</masterLabel>
             <translation><!-- Digital Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Commerce</masterLabel>
+            <translation><!-- E-Commerce --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Expositions</masterLabel>
@@ -2691,6 +2771,10 @@
             <masterLabel>P060-SINODIS Dalian-西诺迪斯（大连）</masterLabel>
             <translation><!-- P060-SINODIS Dalian-西诺迪斯（大连） --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>P070-SINODIS Tianjin-西诺迪斯（天津）</masterLabel>
+            <translation><!-- P070-SINODIS Tianjin-西诺迪斯（天津） --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label>新集团名称</label>
@@ -2774,6 +2858,10 @@
         <help>填写营业执照注册城市中文名+英文名</help>
         <label>新诉讼城市</label>
         <name>New_CN_Account_Litigation_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- New MG Account ID --></label>
+        <name>New_CN_Account_MG_Account_ID__c</name>
     </fields>
     <fields>
         <label>新连锁门店数</label>
@@ -2882,6 +2970,10 @@
         <picklistValues>
             <masterLabel>M231-60 days end of month, due net</masterLabel>
             <translation><!-- M231-60 days end of month, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M331-90 days end of month, due net</masterLabel>
+            <translation><!-- M331-90 days end of month, due net --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -3106,6 +3198,10 @@
         <picklistValues>
             <masterLabel>026-GuangZhou</masterLabel>
             <translation><!-- 026-GuangZhou --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B06-Shanghai Area</masterLabel>
+            <translation><!-- B06-Shanghai Area --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -3361,6 +3457,10 @@
         <picklistValues>
             <masterLabel>Airline</masterLabel>
             <translation><!-- Airline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B OEM</masterLabel>
+            <translation><!-- B2B OEM --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>BAPA - LKA</masterLabel>
@@ -3704,9 +3804,21 @@
         <name>New_CN_Contact_Family_Info__c</name>
     </fields>
     <fields>
+        <label><!-- New Contact Lead Mg Account Id --></label>
+        <name>New_CN_Contact_Lead_Mg_Account_Id__c</name>
+    </fields>
+    <fields>
         <label>新联系人公司名称</label>
         <name>New_CN_Contact_License_Name__c</name>
         <relationshipLabel>变更申请</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- New Contact MG Billing ID --></label>
+        <name>New_CN_Contact_MG_Billing_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Contact MG Contact ID --></label>
+        <name>New_CN_Contact_MG_Contact_ID__c</name>
     </fields>
     <fields>
         <help>请输入号码格式为1XXXXXXXXXX或XXX-XXXXXXXX或XXXX-XXXXXXXX-XXX(X代表数字)</help>
@@ -3764,6 +3876,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- New ShipTo Address ID --></label>
+        <name>New_CN_ShipTo_Address_ID__c</name>
+    </fields>
+    <fields>
         <label>新城市</label>
         <name>New_CN_ShipTo_City_CN__c</name>
         <relationshipLabel>变更申请</relationshipLabel>
@@ -3812,6 +3928,14 @@
             <masterLabel>P060-SINODIS Dalian-西诺迪斯（大连）</masterLabel>
             <translation><!-- P060-SINODIS Dalian-西诺迪斯（大连） --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>P070-SINODIS Tianjin-西诺迪斯（天津）</masterLabel>
+            <translation><!-- P070-SINODIS Tianjin-西诺迪斯（天津） --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>新冻结状态</label>
+        <name>New_CN_ShipTo_Inactive__c</name>
     </fields>
     <fields>
         <label>新送达方间接客户</label>
@@ -4070,6 +4194,11 @@
         <name>CN_Send_To_SAP</name>
     </quickActions>
     <recordTypes>
+        <description><!-- Approved Inactive Ship To Request --></description>
+        <label><!-- Approved Inactive Ship To Request --></label>
+        <name>CN_Approved_Inactive_Ship_To_Request</name>
+    </recordTypes>
+    <recordTypes>
         <label><!-- Approved New Contact Request --></label>
         <name>CN_Approved_New_Contact_Request</name>
     </recordTypes>
@@ -4088,6 +4217,11 @@
     <recordTypes>
         <label><!-- Approved Update Ship To Request --></label>
         <name>CN_Approved_Update_Ship_To_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Update Ship-to Request --></description>
+        <label><!-- Inactive Ship-to Request --></label>
+        <name>CN_Inactive_Ship_To_Request</name>
     </recordTypes>
     <recordTypes>
         <label><!-- Change Account Owner --></label>

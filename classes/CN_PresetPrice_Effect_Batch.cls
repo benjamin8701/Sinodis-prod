@@ -62,6 +62,9 @@ global class CN_PresetPrice_Effect_Batch implements Database.Batchable<SObject>,
         channelStringPBIdMap.put(Constants.CN_PRESETPRICE_CHANNEL_DS,pbSettings.CN_Price_Book1__c);
         channelStringPBIdMap.put(Constants.CN_PRESETPRICE_CHANNEL_KA,pbSettings.CN_Price_Book2__c);
         channelStringPBIdMap.put(Constants.CN_PRESETPRICE_CHANNEL_WS,pbSettings.CN_Price_Book3__c);
+        channelStringPBIdMap.put(Constants.CN_PRESETPRICE_CHANNEL_QSR,pbSettings.CN_Price_Book4__c);
+        channelStringPBIdMap.put(Constants.CN_PRESERPRICE_CHANNEL_B2B,pbSettings.CN_Price_Book5__c);
+
 
         List<PricebookEntry> priceBookEntryList_New_Channel = new List<PricebookEntry>();
         List<PricebookEntry> priceBookEntryList_New_Standard = new List<PricebookEntry>();

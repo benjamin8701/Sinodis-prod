@@ -4,8 +4,8 @@
     <objectMapping>
         <inputObject>Lead</inputObject>
         <mappingFields>
-            <inputField>CN_City__c</inputField>
-            <outputField>CN_City_CN__c</outputField>
+            <inputField>CN_Lead_Source__c</inputField>
+            <outputField>CN_Account_Source__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>CN_Converted_From_Lead_Id__c</inputField>
@@ -20,6 +20,14 @@
             <outputField>CN_Category__c</outputField>
         </mappingFields>
         <mappingFields>
+            <inputField>CN_MG_Account_ID__c</inputField>
+            <outputField>CN_MG_Account_ID__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>CN_MG_Contact_ID__c</inputField>
+            <outputField>CN_Lead_MG_Contact_Id__c</outputField>
+        </mappingFields>
+        <mappingFields>
             <inputField>CN_Province__c</inputField>
             <outputField>CN_Province_CN__c</outputField>
         </mappingFields>
@@ -31,6 +39,10 @@
             <inputField>CN_Zip_Postal_Code__c</inputField>
             <outputField>CN_Post_Code__c</outputField>
         </mappingFields>
+        <mappingFields>
+            <inputField>CN_City__c</inputField>
+            <outputField>CN_City_CN__c</outputField>
+        </mappingFields>
         <outputObject>Account</outputObject>
     </objectMapping>
     <objectMapping>
@@ -40,8 +52,20 @@
             <outputField>CN_Converted_From__c</outputField>
         </mappingFields>
         <mappingFields>
+            <inputField>CN_Is_Converted_From_Lead__c</inputField>
+            <outputField>CN_Is_Converted_From_Lead__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>CN_MG_Account_ID__c</inputField>
+            <outputField>CN_Lead_MG_Account_ID__c</outputField>
+        </mappingFields>
+        <mappingFields>
             <inputField>CN_Wechat_ID__c</inputField>
             <outputField>CN_Wechat_ID__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>CN_MG_Contact_ID__c</inputField>
+            <outputField>CN_MG_Contact_ID__c</outputField>
         </mappingFields>
         <outputObject>Contact</outputObject>
     </objectMapping>

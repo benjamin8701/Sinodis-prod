@@ -12,6 +12,10 @@
         <label><!-- Channel --></label>
         <name>CN_Channel__c</name>
         <picklistValues>
+            <masterLabel>B2B</masterLabel>
+            <translation><!-- B2B --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>DS</masterLabel>
             <translation><!-- DS --></translation>
         </picklistValues>
@@ -22,6 +26,10 @@
         <picklistValues>
             <masterLabel>LP</masterLabel>
             <translation><!-- LP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QSR</masterLabel>
+            <translation><!-- QSR --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>WS</masterLabel>

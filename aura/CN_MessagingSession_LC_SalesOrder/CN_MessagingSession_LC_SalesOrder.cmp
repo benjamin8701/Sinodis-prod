@@ -1,0 +1,34 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="CN_MessagingSession_LCC_SalesOrder">
+    
+	<lightning:notificationsLibrary aura:id="notifLib"/>
+	<aura:attribute name="recordId" type="String"/>
+	<aura:attribute name="isShowError" type="Boolean"  default="false"/>
+	<aura:attribute name="ErrorMsg" type="String"  default=""/>
+
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+
+	<aura:handler name="init" value="{!this}" action="{!c.initAction}" />
+    
+	<div>
+		<aura:if isTrue="{!v.isShowError}">
+            <label>{!v.ErrorMsg}</label>
+        </aura:if>
+        <lightning:card class="">
+            <div class="slds-media slds-no-space slds-grow" style="padding-left: 12px;">
+                <lightning:icon iconName="standard:opportunity" size="small" ></lightning:icon>
+                <div class="slds-media__body slds-align-middle" style="padding-left: 12px;">
+                    <h2 class="slds-card__header-title">
+                        <a class="slds-card__header-link baseCard__header-title-container">
+                            <span class="slds-truncate slds-m-right--xx-small" title="Frequency Product Report">Frequency Product Report</span>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="" style="overflow-x: auto; padding-top: 10px;">
+                <lightning:datatable keyField="CN_Material_Number__c" data="{! v.data }" columns="{! v.columns }" hideCheckboxColumn="true"/>
+            </div>
+        </lightning:card>
+    </div>
+	
+</aura:component>

@@ -15,12 +15,16 @@ public without sharing class CN_CR_Check_Fields_Change_Handler implements Trigge
     Id updateShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_SHIPTO).getRecordTypeId();
     Id newContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_CONTACT).getRecordTypeId();
 
+    //add by leo 2023.10.19
+    Id newShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_SHIPTO).getRecordTypeId();
+
     Map<Id, Set<String>> crIdChangedFieldNameMap = new Map<Id, Set<String>>();
     public void handle() {
         this.cnRTIdSet.add(this.updateAccountRTId);
         this.cnRTIdSet.add(this.updateContactRTId);
         this.cnRTIdSet.add(this.updateShiptoRTId);
         this.cnRTIdSet.add(this.newContactRTId);
+        this.cnRTIdSet.add(this.newShiptoRTId);
         if(Trigger.isBefore && Trigger.isUpdate) {
             handleBeforeUpdate();
         }
@@ -36,9 +40,55 @@ public without sharing class CN_CR_Check_Fields_Change_Handler implements Trigge
         if(crList.size() > 0) {
             checkFieldsChanged(crList);
             checkContactRelation(crList);
+            //add by leo 2023.08.24 check field
+            checkShipToField(crList);
+            //add by leo 2023.08.24 check field
             checkShipToRelation(crList);
         }
     }
+
+    /*
+     * add by leo 2023.08.24 check field
+	 */
+    private void checkShipToField(List<CN_Change_Request__c> crList) {
+        List<CN_Change_Request__c> crCheckList = new List<CN_Change_Request__c>();
+        for(CN_Change_Request__c cr : crList) {
+            if(cr.hasErrors()) {
+                continue;
+            }
+            crCheckList.add(cr);
+        }
+        if(crCheckList.size() > 0) {
+            Map<String, CN_Change_Request_Fields_Check__mdt> crmSettingMap = CN_Change_Request_Fields_Check__mdt.getAll();
+            List<String> requiredFieldNames = new List<String>();
+            for(String crmSettingId : crmSettingMap.keyset()) {
+                CN_Change_Request_Fields_Check__mdt mdt = crmSettingMap.get(crmSettingId);
+                if (mdt.CN_Object_Name__c == 'CN_Ship_to_Party__c'
+                        && (
+                                        mdt.CN_Change_Request_Record_Type__c == Constants.CN_CR_RT_API_NAME_UPDATE_SHIPTO ||
+                                        mdt.CN_Change_Request_Record_Type__c == Constants.CN_CR_RT_API_NAME_NEW_SHIPTO
+                        )
+                        && mdt.CN_Is_Required__c == true
+                ){
+                    requiredFieldNames.add(mdt.CN_Field_Name__c);
+                }
+            }
+
+            for(CN_Change_Request__c cr : crCheckList) {
+                if(updateShiptoRTId == cr.RecordTypeId || newShiptoRTId == cr.RecordTypeId) {
+                    for (String next : requiredFieldNames) {
+                        System.debug(next);
+                        System.debug(cr.get(next));
+                        if (cr.get(next) == null){
+                            System.debug(next);
+                            cr.addError('Field [' + next + '] can not be null');
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     public void checkContactRelation(List<CN_Change_Request__c> crList) {
         List<CN_Change_Request__c> crCheckList = new List<CN_Change_Request__c>();
         for(CN_Change_Request__c cr : crList) {
@@ -74,7 +124,7 @@ public without sharing class CN_CR_Check_Fields_Change_Handler implements Trigge
                         }
                         accIdSet.add(cr.CN_Contact_License_Name__c);
                         accIdSet.add(cr.New_CN_Contact_License_Name__c);
-                        conIdSet.add(cr.CN_Contact__c);                    
+                        conIdSet.add(cr.CN_Contact__c);
                     }
                 }
             }
@@ -136,7 +186,7 @@ public without sharing class CN_CR_Check_Fields_Change_Handler implements Trigge
                 if(cr.get(oldFieldName) != cr.get(fieldMap.get(oldFieldName))) {
                     changedFieldSet.add(oldFieldName);
                     if(fieldInterfaceMap.get(oldFieldName)) {
-                            isInterfaceField = true;
+                        isInterfaceField = true;
                     }
                 }
             }
@@ -148,11 +198,11 @@ public without sharing class CN_CR_Check_Fields_Change_Handler implements Trigge
                     isInterfaceField = false;
                 }
             }else if(updateContactRTId == cr.recordTypeId){
-                if(cr.New_CN_Contact_Type__c.contains('01')){
-                    if(!cr.CN_Contact_Type__c?.contains('01')){
+                if (cr.New_CN_Contact_Type__c.contains('01')){
+                    if (!cr.CN_Contact_Type__c?.contains('01')){
                         isInterfaceField = true;
                     }
-                }else{
+                } else {
                     isInterfaceField = false;
                 }
             }
@@ -181,8 +231,8 @@ public without sharing class CN_CR_Check_Fields_Change_Handler implements Trigge
             }
             Set<String> changedFieldSet = crIdChangedFieldNameMap.get(cr.Id);
             if(changedFieldSet != null && changedFieldSet.contains('CN_ShipTo_Sold_To_Party_Customer__c') && updateShiptoRTId == cr.RecordTypeId) {
-                crCheckList.add(cr);    
-                accIdSet.add(cr.CN_ShipTo_Sold_To_Party_Customer__c);        
+                crCheckList.add(cr);
+                accIdSet.add(cr.CN_ShipTo_Sold_To_Party_Customer__c);
                 STPIdSet.add(cr.CN_Ship_To_Party__c);
             }
         }

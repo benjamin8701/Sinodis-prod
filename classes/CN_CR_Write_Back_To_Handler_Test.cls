@@ -49,7 +49,6 @@ private class CN_CR_Write_Back_To_Handler_Test {
             Id updateAccountRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_ACCOUNT).getRecordTypeId();
             Id updateContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_CONTACT).getRecordTypeId();
             Id updateShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_SHIPTO).getRecordTypeId();
-
             Id appUpdateAccountRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_APPD_UPDATE_ACCOUNT).getRecordTypeId();
             Id appUpdateContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_APPD_UPDATE_CONTACT).getRecordTypeId();
             Id appUpdateShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_APPD_UPDATE_SHIPTO).getRecordTypeId();
@@ -229,5 +228,62 @@ private class CN_CR_Write_Back_To_Handler_Test {
 
             Test.stopTest();
         }
+    }
+
+    //add by leo
+    @isTest
+    private static void handleWriteBackContactType() {
+        TestDataFactory testFactory = new TestDataFactory();
+        testFactory.makeAccounts(10,false);
+        User salesRep = [SELECT Id FROM User WHERE lastName = 'Sales1'][0];
+        Account acc = [SELECT Id FROM Account WHERE CN_MG_Account_ID__c = '1'];
+        acc.CN_Sync_Status__c = Constants.CN_ACCOUNT_SYNC_STATUS_SUCCESS;
+        update acc;
+
+        Id crRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_APPD_UPDATE_CONTACT).getRecordTypeId();
+        Contact contact = [SELECT Id FROM Contact WHERE CN_MG_Contact_ID__c = '1'];
+        System.runAs(salesRep){
+            CN_Change_Request__c cr = new CN_Change_Request__c();
+
+            Map<String, Object> cR_LC_Ctrl_ResultMap = CN_Contact_Change_Request_LC_Ctrl.getContact(contact.Id);
+            for(String field : ((Map<String, String>)cR_LC_Ctrl_ResultMap.get('fieldMap')).keySet()){
+                Contact con_source = (Contact)cR_LC_Ctrl_ResultMap.get('sourceContact');
+                cr.put(field,con_source.get(((Map<String, String>)cR_LC_Ctrl_ResultMap.get('fieldMap')).get(field)));
+            }
+
+            Trigger_Switcher_Setting__c setting = new Trigger_Switcher_Setting__c(
+                    SetupOwnerId = UserInfo.getOrganizationId(),
+                    EnableFlow__c = true,
+                    EnableTrigger__c = true,
+                    EnableValidationRule__c = false
+            );
+            insert setting;
+
+            cr.CN_Is_Generate_From_Action__c = true;
+            cr.RecordTypeId = crRTId;
+            cr.OwnerId = salesRep.Id;
+            cr.CN_Contact_Type__c = '01;02';
+            cr.New_CN_Contact_Type__c = '02';
+            cr.CN_External_Id__c = contact.Id;
+            cr.CN_Contact__c = contact.Id;
+            insert cr;
+
+            try {
+                cr.CN_Change_Request_Status__c = Constants.CN_CR_STATUS_APPROVALED;
+                update cr;
+            } catch (Exception e) {
+
+            }
+
+            try {
+                cr.CN_Contact_Type__c = '02';
+                cr.New_CN_Contact_Type__c = '01;02';
+                update cr;
+            } catch (Exception e) {
+
+            }
+        }
+
+
     }
 }

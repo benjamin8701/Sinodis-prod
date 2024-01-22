@@ -46,10 +46,26 @@ public without sharing class CN_CR_Write_Back_To_Contact_Handler implements Trig
             fieldMap.put(fieldNameOld, fieldNameNew);       
             fieldNameOldfieldNameMap.put(fieldNameOld, fieldName);
         }
+
+        Map<String, Contact> mapBillDel = new Map<String, Contact>();
+        Map<String, Contact> mapBillNew = new Map<String, Contact>();
+
         for(CN_Change_Request__c cr : crList){
             Set<String> changedFieldSet = new Set<String>();
             for(String oldFieldName : fieldMap.keySet()) {
                 if(cr.get(oldFieldName) != cr.get(fieldMap.get(oldFieldName))) {
+                    if (oldFieldName == 'CN_Contact_Type__c') {
+                        String fieldOldValue = (String)cr.get(oldFieldName);
+                        String fieldNewValue = (String)cr.get(fieldMap.get(oldFieldName));
+                        if (String.isNotBlank(fieldOldValue) && fieldOldValue.contains('01') 
+                            && (String.isBlank(fieldNewValue) || !fieldNewValue.contains('01'))) {
+                            mapBillDel.put(cr.New_CN_Contact_License_Name__c, null);
+                        }
+                        else if ((String.isBlank(fieldOldValue) || !fieldOldValue.contains('01'))
+                            && String.isNotBlank(fieldNewValue) && fieldNewValue.contains('01')) {
+                            mapBillNew.put(cr.New_CN_Contact_License_Name__c, null);
+                        }
+                    }
                     changedFieldSet.add(oldFieldName);
                 }
             }
@@ -57,13 +73,77 @@ public without sharing class CN_CR_Write_Back_To_Contact_Handler implements Trig
                 Contact con = new Contact();
                 con.Id = cr.CN_Contact__c;
                 con.CN_Change_Request__c = cr.Id;
+                //add by leo 2023.12.10 CN_Has_CR_Need_Sync must be False when sync Contact to E-Commerce
+                if (cr.CN_Sync_Status__c == Constants.CN_CR_SYNC_STATUS_NO_NEED_TO_SYNC) {
+                    con.CN_Has_CR_Need_Sync__c = false;
+                }else {
+                    con.CN_Has_CR_Need_Sync__c = true;
+                }
+                //add by leo 2023.12.10 CN_Has_CR_Need_Sync must be False when sync Contact to E-Commerce
                 for(String oldFieldName : changedFieldSet){
                     con.put(fieldNameOldfieldNameMap.get(oldFieldName),cr.get(fieldMap.get(oldFieldName)));
                 }
+                if (mapBillDel.containsKey(cr.New_CN_Contact_License_Name__c)) {
+                    mapBillDel.put(cr.New_CN_Contact_License_Name__c, con);
+                }
+                else if (mapBillNew.containsKey(cr.New_CN_Contact_License_Name__c)) {
+                    mapBillNew.put(cr.New_CN_Contact_License_Name__c, con);
+                }
+                else {
+                    conList.add(con);
+                }
+            }
+        }
+        
+        System.debug('crList: ' + crList.size());
+        System.debug('mapBillNew: ' + mapBillNew.size());
+        System.debug('mapBillDel: ' + mapBillDel.size());
+
+        if (mapBillNew.size() > 0) {
+            Map<String, Contact> mapBillNow = new Map<String, Contact>();
+            Set<String> setIds = mapBillNew.keySet();
+
+            List<Contact> ltCons = [SELECT Id,AccountId,CN_Contact_Type__c
+                FROM Contact
+                WHERE CN_Contact_Type__c INCLUDES ('01') AND AccountId IN :mapBillNew.keySet()];
+
+            System.debug('mapBillNew.keySet(): ' + mapBillNew.keySet());
+            System.debug('ltCons.size(): ' + ltCons.size());
+            System.debug('ltCons: ' + ltCons);
+
+            for (Contact item : ltCons) {
+                mapBillNow.put(item.AccountId, item);
+            }
+
+            for(String accountCode : mapBillNew.keySet()) {
+                Contact conNew = mapBillNew.get(accountCode);
+                conList.add(conNew);
+                
+                Contact conNow = mapBillNow.get(accountCode);
+                if (mapBillDel.containsKey(accountCode)) {
+                    Contact conDel = mapBillDel.get(accountCode);
+                    conDel.CN_Contact_Type__c = conDel.CN_Contact_Type__c.replace('01', '');
+                }
+                else if (conNow != null && conNow.Id != conNew.Id) {
+                    conNow.CN_Contact_Type__c = conNow.CN_Contact_Type__c.replace('01', '');
+                    conList.add(conNow);
+                }
+            }
+        }
+
+        if (mapBillDel.size() > 0) {
+            for(String accountCode : mapBillDel.keySet()) {
+                Contact con = mapBillDel.get(accountCode);
+                if (mapBillNew.containsKey(accountCode) == false) {
+                    con.CN_Contact_Type__c += ';01;';
+                }
                 conList.add(con);
             }
-        } 
-        if(conList.size()>0){
+        }
+        
+        System.debug('conList: ' + conList);
+
+        if(conList.size()>0) {
             Database.DMLOptions dml = new Database.DMLOptions(); 
             dml.DuplicateRuleHeader.allowSave = true;
             dml.DuplicateRuleHeader.runAsCurrentUser = true;

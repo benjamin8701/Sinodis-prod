@@ -221,14 +221,18 @@ public without sharing class CN_CONTACT_POPULATE_FIELD_HANDLER implements Trigge
 
         for(Contact con : conListAccRelated) {
             accIdForUpdateSet.add(con.AccountId);
-            if(con.CN_Contact_Type__c?.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME)) {
-                accHadBillingMap.put(con.AccountId, true);
-            }
-            if(con.CN_Contact_Type__c?.contains(Constants.CN_CONTACT_TYPE_PURCHASE_VALUE_NAME)) {
-                accHadPurchasingMap.put(con.AccountId, true);
-            }
-            if(con.Account.CN_Account_Status__c == 'New'){
-                accIdForNewSet.add(con.AccountId);
+	    //Add by leo 2023.08.24 add check null
+            if(con.CN_Contact_Type__c<>null){
+	    //Add by leo 2023.08.24 add check null
+                if(con.CN_Contact_Type__c?.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME)) {
+                    accHadBillingMap.put(con.AccountId, true);
+                }
+                if(con.CN_Contact_Type__c?.contains(Constants.CN_CONTACT_TYPE_PURCHASE_VALUE_NAME)) {
+                    accHadPurchasingMap.put(con.AccountId, true);
+                }
+                if(con.Account.CN_Account_Status__c == 'New'){
+                    accIdForNewSet.add(con.AccountId);
+                }
             }/*else{
                 accIdForNotNewSet.add(con.AccountId);
             }*/

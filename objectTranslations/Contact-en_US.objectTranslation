@@ -49,6 +49,10 @@
         <name>CN_Bill_To_Address__c</name>
     </fields>
     <fields>
+        <label><!-- Billing To Address ID --></label>
+        <name>CN_Billing_To_Address_ID__c</name>
+    </fields>
+    <fields>
         <label><!-- Change Request --></label>
         <name>CN_Change_Request__c</name>
         <relationshipLabel><!-- Change Request --></relationshipLabel>
@@ -234,6 +238,22 @@
         <name>CN_Function__c</name>
     </fields>
     <fields>
+        <label><!-- Has CR Need Sync --></label>
+        <name>CN_Has_CR_Need_Sync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive --></label>
+        <name>CN_Inactive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Converted From Lead --></label>
+        <name>CN_Is_Converted_From_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Lead Modify --></label>
+        <name>CN_Is_Lead_Modify__c</name>
+    </fields>
+    <fields>
         <label><!-- Is Others Contact --></label>
         <name>CN_Is_Others_Contact__c</name>
     </fields>
@@ -268,6 +288,22 @@
     <fields>
         <label><!-- Latest Change Request Sync Time --></label>
         <name>CN_Latest_CR_Sync_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead MG Account ID --></label>
+        <name>CN_Lead_MG_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG Billing To Address ID --></label>
+        <name>CN_MG_Billing_To_Address_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG Contact ID --></label>
+        <name>CN_MG_Contact_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Need Send MG --></label>
+        <name>CN_Need_Send_MG__c</name>
     </fields>
     <fields>
         <label><!-- Open Field to Comment --></label>
@@ -335,6 +371,10 @@
     <quickActions>
         <label><!-- Request Update --></label>
         <name>CN_Contact_Update_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- CN_MessagingSession_AC_Contact --></label>
+        <name>CN_MessagingSession_AC_Contact</name>
     </quickActions>
     <recordTypes>
         <label><!-- CN Contact --></label>

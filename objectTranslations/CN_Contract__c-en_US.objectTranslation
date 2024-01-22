@@ -527,6 +527,10 @@
         <label><!-- Sales Channel --></label>
         <name>CN_Sales_Channel__c</name>
         <picklistValues>
+            <masterLabel>B2B</masterLabel>
+            <translation><!-- B2B --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>BSI</masterLabel>
             <translation><!-- BSI --></translation>
         </picklistValues>
@@ -541,6 +545,10 @@
         <picklistValues>
             <masterLabel>KA</masterLabel>
             <translation><!-- KA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QSR</masterLabel>
+            <translation><!-- QSR --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>WS</masterLabel>

@@ -15,6 +15,8 @@ public without sharing class CN_CR_Change_RecordType_Handler implements Triggers
     Id updateShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_UPDATE_SHIPTO).getRecordTypeId();
     Id newContactRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_CONTACT).getRecordTypeId();
     Id newShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_SHIPTO).getRecordTypeId();
+    //add by leo 2023.04.21 新增了冻结逻辑
+    Id inAcitveShiptoRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_INACTIVE_SHIPTO).getRecordTypeId();
     public void handle() {
         if(Trigger.isBefore && Trigger.isUpdate) {
             handleBeforeUpdate();
@@ -26,6 +28,7 @@ public without sharing class CN_CR_Change_RecordType_Handler implements Triggers
         cnRTIdSet.add(updateShiptoRTId);
         cnRTIdSet.add(newContactRTId);
         cnRTIdSet.add(newShiptoRTId);
+        cnRTIdSet.add(inAcitveShiptoRTId);
         List<CN_Change_Request__c> crList = new List<CN_Change_Request__c>();
         for(CN_Change_Request__c changeRequest : (List<CN_Change_Request__c>)Trigger.new){
             if(Constants.CN_CR_STATUS_APPROVED.equals(changeRequest.CN_Change_Request_Status__c) && cnRTIdSet.contains(changeRequest.recordTypeId)){
@@ -49,7 +52,9 @@ public without sharing class CN_CR_Change_RecordType_Handler implements Triggers
                 changeRequest.RecordTypeId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_APPD_NEW_CONTACT).getRecordTypeId();
             }else if(changeRequest.RecordTypeId == newShiptoRTId){
                 changeRequest.RecordTypeId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_NEW_APPD_SHIPTO).getRecordTypeId();
-            }  
+            }else if(changeRequest.RecordTypeId == inAcitveShiptoRTId){
+                changeRequest.RecordTypeId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_APPD_INACTIVE_SHIPTO).getRecordTypeId();
+            }
         }
     }
 

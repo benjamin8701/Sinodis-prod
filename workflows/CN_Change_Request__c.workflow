@@ -127,6 +127,35 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>CN_CR_Approved_Status_Approval</fullName>
+        <field>CN_Approved_Status__c</field>
+        <formula>1</formula>
+        <name>CN_CR_Approved_Status_Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_CR_Approved_Status_New</fullName>
+        <field>CN_Approved_Status__c</field>
+        <name>CN_CR_Approved_Status_New</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_CR_Approved_Status_Rejection</fullName>
+        <field>CN_Approved_Status__c</field>
+        <formula>2</formula>
+        <name>CN_CR_Approved_Status_Rejection</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>CN_CR_Clear_ExternalId</fullName>
         <field>CN_External_Id__c</field>
         <name>CN_CR_Clear_ExternalId</name>
@@ -141,6 +170,27 @@
         <name>CN_CR_Clear_Sync_Status</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_CR_Need_Send_MG_Flag</fullName>
+        <description>1需要通知</description>
+        <field>CN_Need_Send_MG_Flag__c</field>
+        <formula>1</formula>
+        <name>CN_CR_Need_Send_MG_Flag</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CN_CR_Need_Send_MG_Flag_Rejection</fullName>
+        <field>CN_Need_Send_MG_Flag__c</field>
+        <formula>1</formula>
+        <name>CN_CR_Need_Send_MG_Flag_Rejection </name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>

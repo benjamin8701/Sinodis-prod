@@ -34,6 +34,17 @@ trigger Contact_Trigger on Contact (after insert, after update, after delete, af
                 triggersObj.bind(Triggers.Evt.beforeInsert, new CN_Contact_Type_Check_Handler());
                 triggersObj.bind(Triggers.Evt.beforeUpdate, new CN_Contact_Type_Check_Handler());
             }
+            // Added By Leo 2023.08.23  Start
+            if(Constants.CN_CONTACT_SEND_MG_MARK_HANDLER_TRIGGER_ON){
+                triggersObj.bind(Triggers.Evt.beforeInsert, new CN_Contact_Send_Mg_Mark_Handler());
+                triggersObj.bind(Triggers.Evt.beforeUpdate, new CN_Contact_Send_Mg_Mark_Handler());
+            }
+            
+            if(Constants.CN_CONTACT_LEAD_CONVERTED_HANDLER_TRIGGER_ON){
+	    	//merge CS Contact and EC-Lead Contact
+                triggersObj.bind(Triggers.Evt.AfterInsert, new CN_Contact_Convert_From_Lead_Handler());
+            }
+            // Added By Leo 2023.08.23  End
         }
         triggersObj.execute(); 
     }

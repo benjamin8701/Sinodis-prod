@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CN MG Customer  Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CN MG Customer  Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- CN_CR_ShipTo_Owner --></label>
+        <name>CN_CR_ShipTo_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Auto Account Id --></label>
+        <name>CN_Contact_Auto_Account_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Auto Owner Id --></label>
+        <name>CN_Contact_Auto_Owner_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN Sales MDM Id --></label>
+        <name>CN_Sales_MDM_Id__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

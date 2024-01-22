@@ -241,6 +241,10 @@
         <picklistValues>
             <picklist>CN_Channel__c</picklist>
             <values>
+                <fullName>B2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>DS</fullName>
                 <default>false</default>
             </values>
@@ -250,6 +254,10 @@
             </values>
             <values>
                 <fullName>List Price</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QSR</fullName>
                 <default>false</default>
             </values>
             <values>

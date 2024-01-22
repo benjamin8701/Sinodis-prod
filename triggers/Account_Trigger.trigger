@@ -46,7 +46,14 @@ trigger Account_Trigger on Account (before insert, after insert, after update, b
             if(Constants.CN_ACCOUNT_PREVENT_EDIT_APPROVED_HANDLER_TRIGGER_ON) {
                 triggersObj.bind(Triggers.Evt.BeforeUpdate, new CN_Account_Prevent_Edit_Approved_Handler());
             }
-            //20211130 – CR By  Dezheng - end
+            //20211130 – CR By  Dezheng - endt
+
+            //add by Leo Dicaprio 2023-04-07 start
+            if(Constants.CN_ACCOUNT_SEND_MG_MARK_HANDLER_TRIGGER_ON){
+                triggersObj.bind(Triggers.Evt.BeforeInsert,new CN_Account_Send_MG_Mark_Handler());
+                triggersObj.bind(Triggers.Evt.BeforeUpdate,new CN_Account_Send_MG_Mark_Handler());
+            }
+            //add by Leo Dicaprio 2023-04-07 end
         }
         triggersObj.execute(); 
     }

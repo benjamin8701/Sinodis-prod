@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>CN Integration Assignment</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>cathy.xiao@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(CN_City__r.CN_City_EN__c = &apos;Shanghai&apos;,OR(ISPICKVAL(CN_Customer_Category__c, &apos;BAPA&apos;),ISPICKVAL(CN_Customer_Category__c, &apos;Coffee/Tea Shop&apos;)),NOT(ISBLANK(CN_Store_Number__c)),VALUE(CN_Store_Number__c) &gt; 50)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>grace.gong@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(CN_City__r.CN_City_EN__c = &apos;Shanghai&apos;,OR(ISPICKVAL(CN_Customer_Category__c, &apos;BAPA&apos;),ISPICKVAL(CN_Customer_Category__c, &apos;Coffee/Tea Shop&apos;)),NOT(ISBLANK(CN_Store_Number__c)),VALUE(CN_Store_Number__c) &lt;= 50)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>grace.gong@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(     CN_City__r.CN_City_EN__c= &apos;Shanghai&apos;,     OR(                 ISPICKVAL(CN_Customer_Category__c, &apos;Restaurant&apos;) ,                  ISPICKVAL(CN_Customer_Category__c, &apos;Hotel&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Catering&apos;)      ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>cathy.xiao@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(     CN_City__r.CN_City_EN__c= &apos;Shanghai&apos;,     OR(         ISPICKVAL(CN_Customer_Category__c, &apos;OEM&apos;)     ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>boye.ye@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(     CN_City__r.CN_City_EN__c= &apos;HangZhou&apos;,     OR(         ISPICKVAL(CN_Customer_Category__c, &apos;EC&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Wholesaler&apos;)      ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>paul.liang@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND( CN_City__r.CN_City_EN__c= &apos;Shanghai&apos;, OR( ISPICKVAL(CN_Customer_Category__c, &apos;EC&apos;) , ISPICKVAL(CN_Customer_Category__c, &apos;Wholesaler&apos;) ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ning.xu@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND( CN_City__r.CN_City_EN__c= &apos;Hefei&apos;, OR( ISPICKVAL(CN_Customer_Category__c, &apos;EC&apos;) , ISPICKVAL(CN_Customer_Category__c, &apos;Wholesaler&apos;) ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jane.chen@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND( CN_City__r.CN_City_EN__c= &apos;Nanjing&apos;, OR( ISPICKVAL(CN_Customer_Category__c, &apos;EC&apos;) , ISPICKVAL(CN_Customer_Category__c, &apos;Wholesaler&apos;) ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jerry.ma@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(  CN_City__r.CN_City_EN__c= &apos;Suzhou&apos;, CN_City__r.CN_Province_Name_CN__c=&apos;Jiangsu&apos;, OR( ISPICKVAL(CN_Customer_Category__c, &apos;EC&apos;) , ISPICKVAL(CN_Customer_Category__c, &apos;Wholesaler&apos;) ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ian.xu@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND( CN_City__r.CN_City_EN__c= &apos;Ningbo&apos;, OR( ISPICKVAL(CN_Customer_Category__c, &apos;EC&apos;) , ISPICKVAL(CN_Customer_Category__c, &apos;Wholesaler&apos;) ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>coco.wu@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND( CN_City__r.CN_City_EN__c= &apos;Changsha&apos;, OR( ISPICKVAL(CN_Customer_Category__c, &apos;EC&apos;) , ISPICKVAL(CN_Customer_Category__c, &apos;Wholesaler&apos;) ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>johnny.wei@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(CN_City__r.CN_City_EN__c = &apos;Beijing&apos;,OR(ISPICKVAL(CN_Customer_Category__c, &apos;BAPA&apos;),ISPICKVAL(CN_Customer_Category__c, &apos;Coffee/Tea Shop&apos;)),NOT(ISBLANK(CN_Store_Number__c)),VALUE(CN_Store_Number__c) &gt; 50)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eleven.zhu@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(CN_City__r.CN_City_EN__c = &apos;Beijing&apos;,OR(ISPICKVAL(CN_Customer_Category__c, &apos;BAPA&apos;),ISPICKVAL(CN_Customer_Category__c, &apos;Coffee/Tea Shop&apos;)),NOT(ISBLANK(CN_Store_Number__c)),VALUE(CN_Store_Number__c) &lt;= 50)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eleven.zhu@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND( CN_City__r.CN_City_EN__c= &apos;Beijing&apos;, OR(  ISPICKVAL(CN_Customer_Category__c, &apos;Restaurant&apos;) ,  ISPICKVAL(CN_Customer_Category__c, &apos;Hotel&apos;) , ISPICKVAL(CN_Customer_Category__c, &apos;Catering&apos;) ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>yang.han@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND( CN_City__r.CN_City_EN__c= &apos;Beijing&apos;, OR( ISPICKVAL(CN_Customer_Category__c, &apos;EC&apos;) , ISPICKVAL(CN_Customer_Category__c, &apos;Wholesaler&apos;) ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>xinming.gao@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND( CN_City__r.CN_City_EN__c= &apos;Harbin&apos;, OR( ISPICKVAL(CN_Customer_Category__c, &apos;EC&apos;) , ISPICKVAL(CN_Customer_Category__c, &apos;Wholesaler&apos;) ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ruibin.sun@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND( CN_City__r.CN_City_EN__c= &apos;Zhengzhou&apos;, OR( ISPICKVAL(CN_Customer_Category__c, &apos;EC&apos;) , ISPICKVAL(CN_Customer_Category__c, &apos;Wholesaler&apos;) ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ronan.li@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND( CN_City__r.CN_City_EN__c= &apos;Dalian&apos;, OR( ISPICKVAL(CN_Customer_Category__c, &apos;EC&apos;) , ISPICKVAL(CN_Customer_Category__c, &apos;Wholesaler&apos;) ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jiahui.song@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND( CN_City__r.CN_City_EN__c= &apos;Jinan&apos;, OR( ISPICKVAL(CN_Customer_Category__c, &apos;EC&apos;) , ISPICKVAL(CN_Customer_Category__c, &apos;Wholesaler&apos;) ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>haiyan.ma@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND( CN_City__r.CN_City_EN__c= &apos;Tianjin&apos;, OR( ISPICKVAL(CN_Customer_Category__c, &apos;EC&apos;) , ISPICKVAL(CN_Customer_Category__c, &apos;Wholesaler&apos;) ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>johnny.wei@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND( CN_City__r.CN_City_EN__c= &apos;Beijing&apos;, OR( ISPICKVAL(CN_Customer_Category__c, &apos;OEM&apos;) ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>william.ma@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(CN_City__r.CN_City_EN__c = &apos;Shenzhen&apos;,OR(ISPICKVAL(CN_Customer_Category__c, &apos;BAPA&apos;),ISPICKVAL(CN_Customer_Category__c, &apos;Coffee/Tea Shop&apos;)),NOT(ISBLANK(CN_Store_Number__c)),VALUE(CN_Store_Number__c) &gt; 50)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ariel.yang@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(CN_City__r.CN_City_EN__c = &apos;Shenzhen&apos;,OR(ISPICKVAL(CN_Customer_Category__c, &apos;BAPA&apos;),ISPICKVAL(CN_Customer_Category__c, &apos;Coffee/Tea Shop&apos;)),NOT(ISBLANK(CN_Store_Number__c)),VALUE(CN_Store_Number__c) &lt;= 50)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ariel.yang@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(     CN_City__r.CN_City_EN__c= &apos;Shenzhen&apos;,     OR(                  ISPICKVAL(CN_Customer_Category__c, &apos;Restaurant&apos;) ,                 ISPICKVAL(CN_Customer_Category__c, &apos;Hotel&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Catering&apos;)     ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>william.ma@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(CN_City__r.CN_City_EN__c = &apos;Guangzhou&apos;,OR(ISPICKVAL(CN_Customer_Category__c, &apos;BAPA&apos;),ISPICKVAL(CN_Customer_Category__c, &apos;Coffee/Tea Shop&apos;)),NOT(ISBLANK(CN_Store_Number__c)),VALUE(CN_Store_Number__c) &gt; 50)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>yuki.wang@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(CN_City__r.CN_City_EN__c = &apos;Guangzhou&apos;,OR(ISPICKVAL(CN_Customer_Category__c, &apos;BAPA&apos;),ISPICKVAL(CN_Customer_Category__c, &apos;Coffee/Tea Shop&apos;)),NOT(ISBLANK(CN_Store_Number__c)),VALUE(CN_Store_Number__c) &lt;= 50)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>yuki.wang@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(     CN_City__r.CN_City_EN__c= &apos;Guangzhou&apos;,     OR(                 ISPICKVAL(CN_Customer_Category__c, &apos;Restaurant&apos;) ,                 ISPICKVAL(CN_Customer_Category__c, &apos;Hotel&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Catering&apos;)      ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>william.ma@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(CN_City__r.CN_City_EN__c = &apos;Chengdu&apos;,OR(ISPICKVAL(CN_Customer_Category__c, &apos;BAPA&apos;),ISPICKVAL(CN_Customer_Category__c, &apos;Coffee/Tea Shop&apos;)),NOT(ISBLANK(CN_Store_Number__c)),VALUE(CN_Store_Number__c) &gt; 50)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>liza.zhang@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(CN_City__r.CN_City_EN__c = &apos;Chengdu&apos;,OR(ISPICKVAL(CN_Customer_Category__c, &apos;BAPA&apos;),ISPICKVAL(CN_Customer_Category__c, &apos;Coffee/Tea Shop&apos;)),NOT(ISBLANK(CN_Store_Number__c)),VALUE(CN_Store_Number__c) &lt;= 50)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>liza.zhang@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(     CN_City__r.CN_City_EN__c= &apos;Chengdu&apos;,     OR(                  ISPICKVAL(CN_Customer_Category__c, &apos;Restaurant&apos;) ,                  ISPICKVAL(CN_Customer_Category__c, &apos;Hotel&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Catering&apos;)     ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>grace.gong@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(     OR(         CN_City__r.CN_Province_Name_CN__c= &apos;Jiangsu&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Anhui&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Shandong&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Zhejiang&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Jiangxi&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Fujian&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Henan&apos;     ),     OR(         ISPICKVAL(CN_Customer_Category__c, &apos;BAPA&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Restaurant&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Coffee/Tea Shop&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Hotel&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Catering&apos;)     ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eleven.zhu@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(     OR(         CN_City__r.CN_Province_Name_CN__c= &apos;Tianjin&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Nei Mongol&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Shanxi&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Hebei&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Liaoning&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Jilin&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Heilongjiang&apos;     ),     OR(         ISPICKVAL(CN_Customer_Category__c, &apos;BAPA&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Restaurant&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Coffee/Tea Shop&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Hotel&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Catering&apos;)     ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ariel.yang@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(     OR(         CN_City__r.CN_Province_Name_CN__c= &apos;Hunan&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Hubei&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Hainan&apos;     ),     OR(         ISPICKVAL(CN_Customer_Category__c, &apos;BAPA&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Restaurant&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Coffee/Tea Shop&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Hotel&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Catering&apos;)     ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>liza.zhang@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(     OR(         CN_City__r.CN_Province_Name_CN__c= &apos;Guangxi&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Guizhou&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Yunnan&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Shaanxi&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Sichuan&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Gansu&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Ningxia&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Qinghai&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Xinjiang&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Xizang&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Chongqing&apos;     ),     OR(         ISPICKVAL(CN_Customer_Category__c, &apos;BAPA&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Restaurant&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Coffee/Tea Shop&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Hotel&apos;) ,         ISPICKVAL(CN_Customer_Category__c, &apos;Catering&apos;)     ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>cathy.xiao@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(     OR(         CN_City__r.CN_Province_Name_CN__c= &apos;Jiangsu&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Anhui&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Shandong&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Zhejiang&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Jiangxi&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Fujian&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Henan&apos;     ),     OR(         ISPICKVAL(CN_Customer_Category__c, &apos;OEM&apos;)     ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>johnny.wei@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>AND(     OR(         CN_City__r.CN_Province_Name_CN__c= &apos;Tianjin&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Nei Mongol&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Shanxi&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Hebei&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Liaoning&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Jilin&apos;,         CN_City__r.CN_Province_Name_CN__c= &apos;Heilongjiang&apos;     ),     OR(         ISPICKVAL(CN_Customer_Category__c, &apos;OEM&apos;)     ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>grace.gong@sinodis.com.cn</assignedTo>
+            <assignedToType>User</assignedToType>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

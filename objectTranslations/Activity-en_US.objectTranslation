@@ -33,6 +33,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Chef Feedback --></label>
+        <name>CN_Chef_Feedback__c</name>
+    </fields>
+    <fields>
         <label><!-- Chef Request Id --></label>
         <name>CN_Chef_Request_Id__c</name>
     </fields>
@@ -85,6 +89,10 @@
     <fields>
         <label><!-- Next Step --></label>
         <name>CN_Next_Step__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notify Chef --></label>
+        <name>CN_Notify_Chef__c</name>
     </fields>
     <fields>
         <label><!-- Objective --></label>
