@@ -477,6 +477,11 @@ IF(
                     <default>false</default>
                     <label>Others</label>
                 </value>
+                <value>
+                    <fullName>E-Commerce</fullName>
+                    <default>false</default>
+                    <label>E-Commerce</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -2239,6 +2244,20 @@ IF(
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CN_Inactive__c</fullName>
+        <externalId>false</externalId>
+        <formula>!AND(
+  !CN_Closed__c,
+  ISBLANK(TEXT(CN_Order_Block__c)),
+  ISBLANK(TEXT(CN_Delivery_Block__c)),
+  ISBLANK(TEXT(CN_Billing_Block__c))
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Inactive</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Incoterms_Part_2__c</fullName>
         <externalId>false</externalId>
         <formula>TEXT(CN_Incoterms__c)</formula>
@@ -2761,6 +2780,17 @@ IF(
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>CN_Lead_MG_Contact_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead MG Contact Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Level__c</fullName>
         <externalId>false</externalId>
         <label>Level</label>
@@ -2839,6 +2869,17 @@ IF(
         </valueSet>
     </fields>
     <fields>
+        <fullName>CN_MG_Account_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>MG Account ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Map_Link__c</fullName>
         <externalId>false</externalId>
         <formula>if(ISNULL(CN_Gaode_Geolocation__Longitude__s) ||ISNULL(CN_Gaode_Geolocation__Latitude__s),HYPERLINK(&apos;&apos;, &apos;尚未获取到经纬度&apos;,&apos;_self&apos;),HYPERLINK(&apos;/apex/Map?lon=&apos;&amp;TEXT(CN_Gaode_Geolocation__Longitude__s)&amp;&apos;&amp;lat=&apos;&amp;TEXT(CN_Gaode_Geolocation__Latitude__s) , &apos;点击跳转到地图&apos;))</formula>
@@ -2857,6 +2898,19 @@ IF(
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Need_Send_MG_Flag__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Need Send MG Flag</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -3207,6 +3261,11 @@ IF(
                     <fullName>D007</fullName>
                     <default>false</default>
                     <label>D007</label>
+                </value>
+                <value>
+                    <fullName>M331</fullName>
+                    <default>false</default>
+                    <label>M331-90 days end of month, due net</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -4047,6 +4106,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                     <label>K050-ChengDu</label>
                 </value>
                 <value>
+                    <fullName>B100</fullName>
+                    <default>false</default>
+                    <label>B100-Tianjin</label>
+                </value>
+                <value>
                     <fullName>K060</fullName>
                     <default>false</default>
                     <isActive>false</isActive>
@@ -4674,11 +4738,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                     <label>Retail OEM</label>
                 </value>
                 <value>
-                    <fullName>B2B OEM</fullName>
-                    <default>false</default>
-                    <label>B2B OEM</label>
-                </value>
-                <value>
                     <fullName>Coffee/Tea OEM</fullName>
                     <default>false</default>
                     <label>Coffee/Tea OEM</label>
@@ -4787,6 +4846,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                     <fullName>Wholesaler-Second</fullName>
                     <default>false</default>
                     <label>Wholesaler-Second</label>
+                </value>
+                <value>
+                    <fullName>B2B OEM</fullName>
+                    <default>false</default>
+                    <label>B2B OEM</label>
                 </value>
                 <value>
                     <fullName>BAPA</fullName>
@@ -5050,6 +5114,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             <valueSettings>
                 <controllingFieldValue>OEM</controllingFieldValue>
                 <valueName>Coffee/Tea OEM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OEM</controllingFieldValue>
+                <valueName>B2B OEM</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>EC</controllingFieldValue>
@@ -5474,6 +5542,12 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>OperatingHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -5715,6 +5789,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>E-Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>FHC</fullName>
                 <default>false</default>
             </values>
@@ -5794,6 +5872,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Commerce</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -7156,6 +7238,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>CN_Sales_Office__c</picklist>
+            <values>
+                <fullName>B100</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>K010</fullName>
                 <default>false</default>
@@ -7845,6 +7931,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>E-Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>FHC</fullName>
                 <default>false</default>
             </values>
@@ -7924,6 +8014,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Commerce</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -9286,6 +9380,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>CN_Sales_Office__c</picklist>
+            <values>
+                <fullName>B100</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>K010</fullName>
                 <default>false</default>
@@ -9975,6 +10073,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>E-Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>FHC</fullName>
                 <default>false</default>
             </values>
@@ -10054,6 +10156,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Commerce</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11416,6 +11522,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>CN_Sales_Office__c</picklist>
+            <values>
+                <fullName>B100</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>K010</fullName>
                 <default>false</default>
@@ -12105,6 +12215,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>E-Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>FHC</fullName>
                 <default>false</default>
             </values>
@@ -12184,6 +12298,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Commerce</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13542,6 +13660,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>CN_Sales_Office__c</picklist>
+            <values>
+                <fullName>B100</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>K010</fullName>
                 <default>false</default>
@@ -14231,6 +14353,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>E-Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>FHC</fullName>
                 <default>false</default>
             </values>
@@ -14310,6 +14436,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Commerce</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15660,6 +15790,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>CN_Sales_Office__c</picklist>
+            <values>
+                <fullName>B100</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>K010</fullName>
                 <default>false</default>
@@ -16349,6 +16483,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>E-Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>FHC</fullName>
                 <default>false</default>
             </values>
@@ -16428,6 +16566,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Commerce</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17791,6 +17933,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <picklistValues>
             <picklist>CN_Sales_Office__c</picklist>
             <values>
+                <fullName>B100</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>K010</fullName>
                 <default>false</default>
             </values>
@@ -18478,6 +18624,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>E-Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>FHC</fullName>
                 <default>false</default>
             </values>
@@ -18557,6 +18707,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Commerce</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19915,6 +20069,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         </picklistValues>
         <picklistValues>
             <picklist>CN_Sales_Office__c</picklist>
+            <values>
+                <fullName>B100</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>K010</fullName>
                 <default>false</default>
@@ -21196,6 +21354,7 @@ NOT(ISBLANK( CN_Converted_From__c ))
   NOT(ISCHANGED(   CN_Need_Sync_Geolocation__c)),
   NOT(ISCHANGED(   CN_Gaode_Response_Status__c)),
   NOT(ISCHANGED(CN_Sent_Reminder_Level__c)),
+  NOT(ISCHANGED( CN_Need_Send_MG_Flag__c )),
   ISPICKVAL(PRIORVALUE( CN_Account_Status__c ) , &quot;Approved&quot;) 
 )</errorConditionFormula>
         <errorMessage>Pls don&apos;t update when the account has been approved.</errorMessage>

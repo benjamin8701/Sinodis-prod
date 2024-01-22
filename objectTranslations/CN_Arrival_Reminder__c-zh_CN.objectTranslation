@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>到货提醒</value>
+    </caseValues>
+    <fields>
+        <label>名称</label>
+        <name>CN_ArName__c</name>
+    </fields>
+    <fields>
+        <label>位置</label>
+        <name>CN_Area__c</name>
+    </fields>
+    <fields>
+        <label>联系人</label>
+        <name>CN_Contact__c</name>
+        <relationshipLabel><!-- Arrival Reminder --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>客户提交时间</label>
+        <name>CN_Customer_Submit_Time__c</name>
+    </fields>
+    <fields>
+        <label>提醒状态</label>
+        <name>CN_Email_Send__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>许可证名称</label>
+        <name>CN_Lincense_Name_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG Arrival Reminder Id --></label>
+        <name>CN_MG_Arrival_Reminder_Id__c</name>
+    </fields>
+    <fields>
+        <label>联系电话</label>
+        <name>CN_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label>SKU名称</label>
+        <name>CN_Product__c</name>
+        <relationshipLabel><!-- Arrival Reminder --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>数量</label>
+        <name>CN_Quantity_Want_Buy__c</name>
+    </fields>
+    <fields>
+        <label>SKU编码</label>
+        <name>CN_SKU_ID__c</name>
+    </fields>
+    <fields>
+        <label>售达方客户代码</label>
+        <name>CN_Sold_To_Party_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label>仓库</label>
+        <name>CN_Warehouse__c</name>
+    </fields>
+    <fields>
+        <label>反馈</label>
+        <name>CN_feedback__c</name>
+    </fields>
+    <nameFieldLabel>到货提醒名称</nameFieldLabel>
+    <recordTypes>
+        <label><!-- E-Commerce Record --></label>
+        <name>CN_E_Commerce_Record</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Arrival_Reminder_List --></label>
+        <name>Arrival_Reminder_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Export_Report --></label>
+        <name>Export_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Export_Report1 --></label>
+        <name>Export_Report1</name>
+    </webLinks>
+</CustomObjectTranslation>

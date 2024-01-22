@@ -1,0 +1,14 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickActionWithoutHeader" controller="CN_CR_Update_Offline_Contact_Ctrl">
+    <aura:attribute access="private" type="List" name="selection" default="[]"/>
+    <aura:attribute access="private" type="List" name="errors" default="[]"/>
+    <aura:attribute access="private" type="Boolean" name="isMultiEntry" default="false"/>
+    <aura:attribute name="recordId" type="String"/>
+
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    <lightning:card title="Choose a Offline Contact">
+        <div class="slds-form slds-form_stacked slds-m-around_xx-large">
+            <c:CN_Lookup_Offline_Contact selection="{!v.selection}" onSearch="{!c.lookupSearch}" onSelection="{!c.clearErrorsOnChange}" errors="{!v.errors}" label="Search" placeholder="Search Salesforce" isMultiEntry="{!v.isMultiEntry}"/>
+            <lightning:button variant="brand" label="Submit" onclick="{!c.handleShowModal}" />
+        </div>
+    </lightning:card>
+</aura:component>

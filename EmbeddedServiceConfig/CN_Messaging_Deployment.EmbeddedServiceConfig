@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmbeddedServiceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areGuestUsersAllowed>false</areGuestUsersAllowed>
+    <branding>EmbeddedServiceConfig_BrandingSet_18cf13f5d3b</branding>
+    <deploymentFeature>EmbeddedMessaging</deploymentFeature>
+    <deploymentType>Web</deploymentType>
+    <embeddedServiceCustomLabels>
+        <customLabel>EM_Container_Base_ParticipantLeaveText_04I5h000000LARc_3087526</customLabel>
+        <labelKey>EM_Container_Base_ParticipantLeaveText</labelKey>
+    </embeddedServiceCustomLabels>
+    <embeddedServiceMessagingChannel>
+        <isEnabled>true</isEnabled>
+        <messagingChannel>CN_Messaging_WebChat</messagingChannel>
+        <shouldShowDeliveryReceipts>false</shouldShowDeliveryReceipts>
+        <shouldShowReadReceipts>false</shouldShowReadReceipts>
+        <shouldShowTypingIndicators>false</shouldShowTypingIndicators>
+    </embeddedServiceMessagingChannel>
+    <isEnabled>true</isEnabled>
+    <masterLabel>CN_Messaging_Deployment</masterLabel>
+    <shouldHideAuthDialog>false</shouldHideAuthDialog>
+    <site>ESW_CN_Messaging_Deploymen_17048543576961</site>
+</EmbeddedServiceConfig>

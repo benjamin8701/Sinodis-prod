@@ -49,6 +49,10 @@
         <name>CN_Account_Sales_Team__c</name>
     </fields>
     <fields>
+        <label><!-- Appraise --></label>
+        <name>CN_Appraise__c</name>
+    </fields>
+    <fields>
         <label><!-- Base Unit of Measure --></label>
         <name>CN_Base_Unit_of_Measure__c</name>
     </fields>
@@ -141,6 +145,15 @@
         <name>CN_Rejected_Date__c</name>
     </fields>
     <fields>
+        <label><!-- Relate Sales Order ID --></label>
+        <name>CN_Relate_Sales_Order_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relate Sales Order --></label>
+        <name>CN_Relate_Sales_Order__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Resolve Comments --></label>
         <name>CN_Resolve_Comments__c</name>
         <picklistValues>
@@ -228,6 +241,10 @@
         <label><!-- Submit Datetime --></label>
         <name>CN_Submit_Datetime__c</name>
     </fields>
+    <fields>
+        <label><!-- Suggestion --></label>
+        <name>CN_Suggestion__c</name>
+    </fields>
     <layouts>
         <layout>CN Complaint Layout</layout>
         <sections>
@@ -247,6 +264,21 @@
             <section>QA-C/S Follow-up</section>
         </sections>
     </layouts>
+    <layouts>
+        <layout>CN online service Layout</layout>
+        <sections>
+            <label><!-- Account Info --></label>
+            <section>Account Info</section>
+        </sections>
+        <sections>
+            <label><!-- Services FeedBack --></label>
+            <section>Services FeedBack</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Close Case --></label>
+        <name>CN_Close_Case</name>
+    </quickActions>
     <quickActions>
         <label><!-- Cancel --></label>
         <name>CN_Complaint_Cancel</name>
@@ -268,12 +300,24 @@
         <name>CN_Complaint_Resolved</name>
     </quickActions>
     <quickActions>
+        <label><!-- CN_MessagingSession_AC_Case --></label>
+        <name>CN_MessagingSession_AC_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>CN_SendEmail</name>
+    </quickActions>
+    <quickActions>
         <label><!-- Submit Complaint --></label>
         <name>CN_Submit_Complaint</name>
     </quickActions>
     <recordTypes>
         <label><!-- CN_Complaint --></label>
         <name>CN_Complaint</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CN_Service_Online --></label>
+        <name>CN_Service_Online</name>
     </recordTypes>
     <startsWith>Consonant</startsWith>
     <validationRules>

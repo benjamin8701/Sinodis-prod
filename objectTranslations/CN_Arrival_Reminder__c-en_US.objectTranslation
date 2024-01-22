@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Arrival Reminder</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Arrival Reminder</value>
+    </caseValues>
+    <fields>
+        <label><!-- ArName --></label>
+        <name>CN_ArName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area --></label>
+        <name>CN_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>CN_Contact__c</name>
+        <relationshipLabel><!-- Arrival Reminder --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Submit Time --></label>
+        <name>CN_Customer_Submit_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notify Triggered --></label>
+        <name>CN_Email_Send__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lincense Name(CN) --></label>
+        <name>CN_Lincense_Name_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG Arrival Reminder Id --></label>
+        <name>CN_MG_Arrival_Reminder_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Number --></label>
+        <name>CN_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU Name --></label>
+        <name>CN_Product__c</name>
+        <relationshipLabel><!-- Arrival Reminder --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity（want buy） --></label>
+        <name>CN_Quantity_Want_Buy__c</name>
+    </fields>
+    <fields>
+        <label><!-- SKU Code --></label>
+        <name>CN_SKU_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold-To Party Customer Code --></label>
+        <name>CN_Sold_To_Party_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse --></label>
+        <name>CN_Warehouse__c</name>
+    </fields>
+    <fields>
+        <label><!-- feedback --></label>
+        <name>CN_feedback__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- E-Commerce Record --></label>
+        <name>CN_E_Commerce_Record</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Arrival_Reminder_List --></label>
+        <name>Arrival_Reminder_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Export_Report --></label>
+        <name>Export_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Export_Report1 --></label>
+        <name>Export_Report1</name>
+    </webLinks>
+</CustomObjectTranslation>

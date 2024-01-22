@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>FieldLock</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Field locks</value>
+    </caseValues>
+    <fields>
+        <label><!-- CN_Need_Send_MG_Flag --></label>
+        <name>CN_Need_Send_MG_Flag__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

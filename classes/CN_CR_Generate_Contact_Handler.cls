@@ -110,6 +110,12 @@ public without sharing class CN_CR_Generate_Contact_Handler implements Triggers.
                  CN_Open_Field_To_Comment__c = cr.New_CN_Contact_Open_Field_To_Comment__c,
                  CN_Bill_To_Address__c = cr.New_CN_Contact_Billing_To_Address__c
              );
+            //Add by Leo 由Lead入口而来的CR，如果是EC 需要标记。后续Trigger中进行 CS聊天用户信息合并
+            if(cr.CN_CR_Source__c == Constants.CN_CR_SOURCE_ECOMMERCE && cr.CN_From_Lead__c != null && cr.New_CN_Contact_MG_Contact_ID__c != null){
+                con.CN_Is_Lead_Modify__c = true;
+                con.CN_MG_Contact_ID__c = cr.New_CN_Contact_MG_Contact_ID__c;
+            }
+            //Add by Leo 由Lead入口而来的CR，如果是EC 需要标记。后续Trigger中进行 CS聊天用户信息合并
             conList.add(con);
         }
         return conList;

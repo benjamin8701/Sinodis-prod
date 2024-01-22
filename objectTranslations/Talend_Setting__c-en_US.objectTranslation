@@ -17,6 +17,46 @@
         <name>Customer_Hierarchy_Endpoint__c</name>
     </fields>
     <fields>
+        <label><!-- MG_Approval_Lead --></label>
+        <name>MG_Approval_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG_Save_Company_Contact --></label>
+        <name>MG_Save_Company_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG_Save_Customer_Code --></label>
+        <name>MG_Save_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG_Send_WeChat_Message --></label>
+        <name>MG_Send_WeChat_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG_Update_CampaignMember --></label>
+        <name>MG_Update_CampaignMember__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG_Update_Campaign --></label>
+        <name>MG_Update_Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG_Update_Case_Status --></label>
+        <name>MG_Update_Case_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG_Update_Company_Status --></label>
+        <name>MG_Update_Company_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG_Update_Lead_Status --></label>
+        <name>MG_Update_Lead_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG_Update_Shipping_Address --></label>
+        <name>MG_Update_Shipping_Address__c</name>
+    </fields>
+    <fields>
         <label><!-- Password --></label>
         <name>Password__c</name>
     </fields>
@@ -39,6 +79,46 @@
     <fields>
         <label><!-- Sandbox Customer Hierarchy Endpoint --></label>
         <name>Sandbox_Customer_Hierarchy_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox_MG_Approval_Lead --></label>
+        <name>Sandbox_MG_Approval_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox_MG_Save_Company_Contact --></label>
+        <name>Sandbox_MG_Save_Company_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox_MG_Save_Customer_Code --></label>
+        <name>Sandbox_MG_Save_Customer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox_MG_Send_WeChat_Message --></label>
+        <name>Sandbox_MG_Send_WeChat_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox_MG_Update_CampaignMember --></label>
+        <name>Sandbox_MG_Update_CampaignMember__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox_MG_Update_Campaign --></label>
+        <name>Sandbox_MG_Update_Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox_MG_Update_Case_Status --></label>
+        <name>Sandbox_MG_Update_Case_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox_MG_Update_Company_Status --></label>
+        <name>Sandbox_MG_Update_Company_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox_MG_Update_Lead_Status --></label>
+        <name>Sandbox_MG_Update_Lead_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sandbox_MG_Update_Shipping_Address --></label>
+        <name>Sandbox_MG_Update_Shipping_Address__c</name>
     </fields>
     <fields>
         <label><!-- Sandbox Password --></label>

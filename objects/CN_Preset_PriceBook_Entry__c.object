@@ -329,6 +329,8 @@
         <columns>CN_Max_Discount_Price__c</columns>
         <columns>CN_Standard_List_Price__c</columns>
         <columns>CN_Is_Effected__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -344,7 +346,7 @@
         <columns>CN_Max_Discount_Price__c</columns>
         <columns>CN_Standard_List_Price__c</columns>
         <columns>CN_Is_Effected__c</columns>
-        <filterScope>Mine</filterScope>
+        <filterScope>Everything</filterScope>
         <filters>
             <field>CN_Is_Effected__c</field>
             <operation>equals</operation>
@@ -364,7 +366,7 @@
         <columns>CN_Max_Discount_Price__c</columns>
         <columns>CN_Standard_List_Price__c</columns>
         <columns>CN_Is_Effected__c</columns>
-        <filterScope>Mine</filterScope>
+        <filterScope>Everything</filterScope>
         <filters>
             <field>CN_Is_Effected__c</field>
             <operation>equals</operation>

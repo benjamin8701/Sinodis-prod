@@ -20,5 +20,13 @@
         <label><!-- Price Book 0000900014 --></label>
         <name>CN_Price_Book3__c</name>
     </fields>
+    <fields>
+        <label><!-- Price Book 0000901775 --></label>
+        <name>CN_Price_Book4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Book 0000901776 --></label>
+        <name>CN_Price_Book5__c</name>
+    </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

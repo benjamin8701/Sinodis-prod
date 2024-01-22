@@ -6,6 +6,7 @@
     <enableExpandedPipelineInspectionSetup>false</enableExpandedPipelineInspectionSetup>
     <enableFindSimilarOpportunities>false</enableFindSimilarOpportunities>
     <enableOpportunityFieldHistoryTracking>true</enableOpportunityFieldHistoryTracking>
+    <enableOpportunityInsightsInMobile>false</enableOpportunityInsightsInMobile>
     <enableOpportunityTeam>false</enableOpportunityTeam>
     <enablePipelineInspection>false</enablePipelineInspection>
     <enablePipelineInspectionSingleCategoryRollup>false</enablePipelineInspectionSingleCategoryRollup>
@@ -14,7 +15,6 @@
     <oppAmountDealMotionEnabled>true</oppAmountDealMotionEnabled>
     <oppCloseDateDealMotionEnabled>true</oppCloseDateDealMotionEnabled>
     <promptToAddProducts>false</promptToAddProducts>
-    <pushCountEnabled>true</pushCountEnabled>
     <simpleOppCreateFromContact>false</simpleOppCreateFromContact>
     <simpleOppCreateFromEvent>false</simpleOppCreateFromEvent>
 </OpportunitySettings>

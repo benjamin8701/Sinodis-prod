@@ -23,19 +23,27 @@ public without sharing class CN_CR_Contact_Type_Check_Handler implements Trigger
                 }                
                 //Update Contact CR
                 if(CRforContactMaps.containsKey(cr.RecordTypeId) && CRforContactMaps.get(cr.RecordTypeId).Developername == Constants.CN_CR_RT_API_NAME_UPDATE_CONTACT){
-                    //other --> 01, Error
-                    if(!cr.CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME) && cr.New_CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME)){
-                        cr.addError(system.label.CN_Contact_Type_Billilng_Only);
-                        continue;
-                    }
-                    //01 --> other, Error
-                    if(cr.CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME) && !cr.New_CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME)){
-                        cr.addError(system.label.CN_Contact_Type_Billilng_Only);
-                        continue;
-                    }
-                    //02 --> other, need check 02
-                    if(cr.CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_PURCHASE_VALUE_NAME) && !cr.New_CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_PURCHASE_VALUE_NAME)){
-                        needCheckAccIds.add(cr.New_CN_Contact_License_Name__c);
+                    //add by leo add 2023.08.24 check null
+                    if(cr.CN_Contact_Type__c<>null){
+                        //add by leo add 2023.08.24 check null
+
+                        //other --> 01, Error
+                        if(!cr.CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME) && cr.New_CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME)){
+                            //20231007 MG Need Change contact type
+                            //cr.addError(system.label.CN_Contact_Type_Billilng_Only);
+                            //continue;
+                        }
+                        //01 --> other, Error
+                        if(cr.CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME) && !cr.New_CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME)){
+                            //20231007 MG Need Change contact type
+                            //cr.addError(system.label.CN_Contact_Type_Billilng_Only);
+                            //continue;
+                        }
+                        //02 --> other, need check 02
+                        if(cr.CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_PURCHASE_VALUE_NAME) && !cr.New_CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_PURCHASE_VALUE_NAME)){
+                            needCheckAccIds.add(cr.New_CN_Contact_License_Name__c);
+                        }
+
                     }
                 }
             }
@@ -64,13 +72,15 @@ public without sharing class CN_CR_Contact_Type_Check_Handler implements Trigger
                 if(CRforContactMaps.containsKey(cr.RecordTypeId) && CRforContactMaps.get(cr.RecordTypeId).Developername == Constants.CN_CR_RT_API_NAME_UPDATE_CONTACT){
                     //Update contact type other --> 01, Error
                     if(!oldCR.New_CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME) && cr.New_CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME)){
-                        cr.addError(system.label.CN_Contact_Type_Billilng_Only);
-                        continue;
+                        //20231007 MG Need Change contact type
+                        //cr.addError(system.label.CN_Contact_Type_Billilng_Only);
+                        //continue;
                     }
                     //Update contact type 01 --> other, Error
                     if(oldCR.New_CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME) && !cr.New_CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_FINANCE_VALUE_NAME)){
-                        cr.addError(system.label.CN_Contact_Type_Billilng_Only);
-                        continue;
+                        //20231007 MG Need Change contact type
+                        //cr.addError(system.label.CN_Contact_Type_Billilng_Only);
+                        //continue;
                     }
                     //Update contact type 02 --> other, need check 02
                     if(oldCR.New_CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_PURCHASE_VALUE_NAME) && !cr.New_CN_Contact_Type__c.contains(Constants.CN_CONTACT_TYPE_PURCHASE_VALUE_NAME)){

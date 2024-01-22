@@ -398,6 +398,15 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>CN_Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Inactive</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Indirect_Account__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -425,6 +434,15 @@
         <formula>CN_Sold_To_Party_Customer__r.CN_Is_Indirect_Acount__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Is Indirect Account</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Only_Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Only Inactive</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -508,6 +526,15 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>CN_Need_Send_MG__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Need Send MG</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>CN_Order_Combination__c</fullName>
@@ -594,6 +621,18 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_ShipTo_Address_ID__c</fullName>
+        <description>MG_ShipTo_Address_ID</description>
+        <externalId>true</externalId>
+        <label>ShipTo Address ID</label>
+        <length>64</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Shipping_Condition__c</fullName>
         <defaultValue>&quot;01&quot;</defaultValue>
         <externalId>false</externalId>
@@ -622,7 +661,7 @@
         <label>Sold-to Party Customer</label>
         <lookupFilter>
             <active>true</active>
-            <booleanFilter>(1 AND 2 AND 3) OR (4 AND 5 AND 6) OR 7</booleanFilter>
+            <booleanFilter>(1 AND 2 AND 3) OR (4 AND 5 AND 6) OR 7 OR 8</booleanFilter>
             <errorMessage>You can only select Account whose Status is New.</errorMessage>
             <filterItems>
                 <field>Account.CN_Account_Status__c</field>
@@ -656,6 +695,11 @@
             </filterItems>
             <filterItems>
                 <field>$User.CN_Is_Integration_User__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <filterItems>
+                <field>$Source.CN_Is_Only_Inactive__c</field>
                 <operation>equals</operation>
                 <value>True</value>
             </filterItems>
@@ -986,7 +1030,8 @@
   NOT(AND( ISNEW() ,  NOT(ISBLANK(CN_Change_Request__c)))),
   NOT(ISCHANGED(CN_Change_Request__c)),
   NOT(ISCHANGED( CN_Sync_Status__c )),
-  NOT(ISCHANGED(  CN_Latest_CR_Sync_Status__c ))
+  NOT(ISCHANGED(  CN_Latest_CR_Sync_Status__c )),
+  NOT(ISCHANGED(  CN_Need_Send_MG__c))
 )</errorConditionFormula>
         <errorMessage>Please create ship-to via creating a new ship-to change request.
 Please edit existing ship-to via creating a update ship-to change request.</errorMessage>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>API Call Logger</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>API Call Loggers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Class Name --></label>
+        <name>CN_Class_Name__c</name>
+        <picklistValues>
+            <masterLabel>CN_Account_Customer_Code_To_Mg_Callout</masterLabel>
+            <translation><!-- CN_Account_Customer_Code_To_Mg_Callout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CN_Account_Inactive_To_Mg_Callout</masterLabel>
+            <translation><!-- CN_Account_Inactive_To_Mg_Callout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CN_Arrival_Reminder_Upsert_Rest</masterLabel>
+            <translation><!-- CN_Arrival_Reminder_Upsert_Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CN_CR_Approved_Result_To_Mg_Callout</masterLabel>
+            <translation><!-- CN_CR_Approved_Result_To_Mg_Callout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CN_CR_Contact_Billing_Upsert_Rest</masterLabel>
+            <translation><!-- CN_CR_Contact_Billing_Upsert_Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CN_CR_ShipTo_Address_Upsert_Rest</masterLabel>
+            <translation><!-- CN_CR_ShipTo_Address_Upsert_Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CN_Contact_Registered_Insert_Rest</masterLabel>
+            <translation><!-- CN_Contact_Registered_Insert_Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CN_Contact_Upsert_To_Mg_Callout</masterLabel>
+            <translation><!-- CN_Contact_Upsert_To_Mg_Callout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CN_Download_By_Url_Batch</masterLabel>
+            <translation><!-- CN_Download_By_Url_Batch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CN_LeadUpsert_Rest</masterLabel>
+            <translation><!-- CN_LeadUpsert_Rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CN_Lead_Upsert_To_Mg_Callout</masterLabel>
+            <translation><!-- CN_Lead_Upsert_To_Mg_Callout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CN_ShipTo_Upsert_To_Mg_Callout</masterLabel>
+            <translation><!-- CN_ShipTo_Upsert_To_Mg_Callout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WS_Contact_Registered_Insert</masterLabel>
+            <translation><!-- WS_Contact_Registered_Insert --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Create Time --></label>
+        <name>CN_Create_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- DataBase Result --></label>
+        <name>CN_DataBase_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>CN_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Body --></label>
+        <name>CN_Request_Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Body --></label>
+        <name>CN_Response_Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Code --></label>
+        <name>CN_Status_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>API Call Logger Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CN_Call_Logger --></label>
+        <name>CN_Call_Logger</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

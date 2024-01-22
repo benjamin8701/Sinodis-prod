@@ -174,7 +174,11 @@ public without sharing class CN_Campaign_Generate_Opp_LC_Ctrl {
                         pricebookId = settings.CN_Price_Book2__c;
                     } else if(salesTeamValue == Constants.CN_SALES_TEAM3) {
                         pricebookId = settings.CN_Price_Book3__c;
-                    } else {
+                    } else if(salesTeamValue == Constants.CN_SALES_TEAM4) {
+                        pricebookId = settings.CN_Price_Book4__c;
+                    } else if(salesTeamValue == Constants.CN_SALES_TEAM5){
+                        pricebookId = settings.CN_Price_Book5__c;
+                    }else{
                         pricebookId = settings.CN_Price_Book1__c;
                     }
                     ownerPBMap.put(ur.Id, pricebookId);

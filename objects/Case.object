@@ -203,6 +203,18 @@
         <type>Default</type>
     </actionOverrides>
     <businessProcesses>
+        <fullName>CN_CS_Support_Process</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
         <fullName>CN_Support_Process</fullName>
         <isActive>true</isActive>
         <values>
@@ -252,11 +264,17 @@
         <fullName>AccountId</fullName>
         <lookupFilter>
             <active>true</active>
+            <booleanFilter>1 OR 2</booleanFilter>
             <errorMessage>Must select direct Account</errorMessage>
             <filterItems>
                 <field>Account.RecordTypeId</field>
                 <operation>equals</operation>
                 <value>Approved Direct, Edit Direct</value>
+            </filterItems>
+            <filterItems>
+                <field>$Source.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>CN_Service_Online</value>
             </filterItems>
             <isOptional>false</isOptional>
         </lookupFilter>
@@ -295,6 +313,18 @@
         <formula>Account.CN_Sales_Team_UI__r.Name</formula>
         <label>Sales Team</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Appraise__c</fullName>
+        <externalId>false</externalId>
+        <label>Appraise</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -564,6 +594,32 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>CN_Relate_Sales_Order_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Relate Sales Order ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Relate_Sales_Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Relate Sales Order</label>
+        <referenceTo>CN_Sales_Order__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Sales_Order</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>CN_Resolve_Comments__c</fullName>
         <externalId>false</externalId>
         <label>Resolve Comments</label>
@@ -753,7 +809,7 @@
     <fields>
         <fullName>CN_Sales_Office__c</fullName>
         <externalId>false</externalId>
-        <formula>CASE(Account.Owner.CN_Sales_Office__c, &apos;K010&apos;, &apos;K010-ShangHai&apos;, &apos;K020&apos;, &apos;K020-BeiJing&apos;,&apos;&apos;,&apos;K030-ShenZhen&apos;,&apos;K040&apos;,&apos;K040-GuangZhou&apos;,&apos;K050&apos;,&apos;K050-ChengDu&apos;,&apos;K060&apos;,&apos;K060-DaLian&apos;,&apos;&apos;)</formula>
+        <formula>CASE(Account.Owner.CN_Sales_Office__c,&apos;B100&apos;,&apos;B100-TianJin&apos;, &apos;K010&apos;, &apos;K010-ShangHai&apos;, &apos;K020&apos;, &apos;K020-BeiJing&apos;,&apos;&apos;,&apos;K030-ShenZhen&apos;,&apos;K040&apos;,&apos;K040-GuangZhou&apos;,&apos;K050&apos;,&apos;K050-ChengDu&apos;,&apos;K060&apos;,&apos;K060-DaLian&apos;,&apos;&apos;)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Sales Office</label>
         <required>false</required>
@@ -783,6 +839,16 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CN_Suggestion__c</fullName>
+        <externalId>false</externalId>
+        <label>Suggestion</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>ClosedDate</fullName>
@@ -1064,6 +1130,106 @@
         <active>true</active>
         <businessProcess>CN_Support_Process</businessProcess>
         <label>CN_Complaint</label>
+        <picklistValues>
+            <picklist>CN_Resolve_Comments__c</picklist>
+            <values>
+                <fullName>Explanation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sampling</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Resolve_Reason__c</picklist>
+            <values>
+                <fullName>Brand Quality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supply Chain</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Reported</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Quality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supply Chain</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>CN_Service_Online</fullName>
+        <active>true</active>
+        <businessProcess>CN_CS_Support_Process</businessProcess>
+        <label>CN_Service_Online</label>
         <picklistValues>
             <picklist>CN_Resolve_Comments__c</picklist>
             <values>

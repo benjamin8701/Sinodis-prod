@@ -19,8 +19,10 @@ public class TestDataFactory {
         
         List<sObject> objectList = new List<sObject>();
         objectList.add(makeProvince('010-Beijing', '010'));
-        objectList.add(makeCity('010-Beijing', '010', 'K010', '010', 'BJ'));
-        objectList.add(makeCity('020-Beijing', '020', 'K020', '010', 'BJ'));
+        objectList.add(makeCity('010-Beijing', '010', 'K010', '010'));
+        objectList.add(makeCity('020-Beijing', '020', 'K020', '010'));
+        objectList.add(makeCity('030-Beijing', '310100', 'K020', '010'));
+
         objectList.add(makeInternalImployee('TestUser1', 'Test0001', 'TestUser1@example.com', 'Sales'));
         objectList.add(makeInternalImployee('TestUser2', 'Test0002', 'TestUser2@example.com', 'AR'));
         objectList.add(makeInternalImployee('TestUser6', 'Test0021', 'TestUser6@example.com', 'AR'));
@@ -51,6 +53,7 @@ public class TestDataFactory {
         ObjectList.Add(makePriceBook('Pricebook DS', 'test pricebook description', 'DS',false));
         ObjectList.Add(makePriceBook('Pricebook KA', 'test pricebook description', 'KA',false));
         
+
         insert objectList;
 
         makePriceBookEntry();
@@ -109,13 +112,13 @@ public class TestDataFactory {
         return province;
     }
 
-    private static CN_City__c makeCity(String cityName, String cityCode, String salesOffice, String provinceCode, String cityENCode) {
+    private static CN_City__c makeCity(String cityName, String cityCode, String salesOffice, String provinceCode) {
         CN_City__c city = new CN_City__c();
         city.CN_City_Code__c = cityCode;
-        city.CN_City_EN_Code__c = cityENCode;
         city.Name = cityName;
         city.CN_City_CN__c = cityName;
         city.CN_City_EN__c = cityName;
+        city.CN_City_EN_Code__c = cityName;
         city.CN_Province__r = new CN_Province__c(Province_Code__c = provinceCode);
         city.CN_Sales_Office__c = salesOffice;
         city.RecordTypeId = getRecordTypeId('CN_City__c', 'CN_City');
@@ -195,6 +198,9 @@ public class TestDataFactory {
         objectList.add(makeUser('Chef', 'CN Chef', 'CN_Chef', '', 'Test0018', '', ''));
         objectList.add(makeUser('QA', 'CN QA', 'CN_QA', '', 'Test0019', '', ''));
         objectList.add(makeUser('CS', 'CN C/S', 'CN_CS', '', 'Test0020', '', ''));
+        //addby zhang zhihao 2023/12/30 
+        objectList.add(makeUser('System Integration', 'System Integration', 'China', '', '', '', ''));
+        //addby zhang zhihao 2023/12/30 
         system.debug('makeUserFuture objectList:          ' + objectList);
         insert objectList;
 
@@ -341,6 +347,7 @@ public class TestDataFactory {
                     Pricebook2Id  = pb.Id,
                     Product2Id  = product.Id,
                     CN_Price_Book_Entry_Code__c = pb.CN_Price_Book_Code__c+product.CN_SKU_Code__c
+                    
                 );
                 pbEntryList.add(pbEntry);
             }
@@ -460,7 +467,110 @@ public class TestDataFactory {
             }
         }
         insert priceBookSetting;
+
+        //Added on Zhang Zhihao 2023/12/22
+        CN_MG_Customer_Settings__c mgCustomerSetting = new CN_MG_Customer_Settings__c(
+            //Sales GONG Grace  ID
+            CN_Sales_MDM_Id__c = lastNameUserIdMap.get('SalesMDM')
+        );
+
+        insert mgCustomerSetting;
+        //Added on Zhang Zhihao 2023/12/22
+
+         //Added on Zhang Zhihao 2023/12/28
+        //   Talend_Setting__c talendSetting = new Talend_Setting__c(
+        //           Sandbox_MG_Update_Shipping_Address__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_updateShippingAddress',
+        //           Sandbox_MG_Save_Company_Contact__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_SaveCompanyContact',
+        //           Sandbox_MG_Save_Customer_Code__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_SaveCustomerCode',
+        //           Sandbox_MG_Update_Company_Status__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_updateCompanyStatus',
+        //           Sandbox_MG_Approval_Lead__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_approvallead',
+        //           MG_Update_Shipping_Address__c = 'http://127.0.0.1',
+        //           MG_Save_Company_Contact__c = 'http://127.0.0.1',
+        //           MG_Save_Customer_Code__c = 'http://127.0.0.1',
+        //           MG_Update_Company_Status__c = 'http://127.0.0.1',
+        //           MG_Approval_Lead__c = 'http://127.0.0.1',
+        //           MG_Send_WeChat_Message__c = 'http://127.0.0.1',
+        //           Sandbox_MG_Send_WeChat_Message__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_sendWeChatMessage',
+        //           Sandbox_MG_Update_Lead_Status__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_updateLeadStatus',
+        //           MG_Update_Lead_Status__c = 'http://127.0.0.1',
+        //           MG_Update_Case_Status__c = 'http://127.0.0.1',
+        //           Sandbox_MG_Update_Case_Status__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_multiupdate',
+        //           Sandbox_MG_Update_Campaign__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_saveSfEvent',
+        //           MG_Update_Campaign__c = 'http://127.0.0.1',
+        //           Sandbox_MG_Update_CampaignMember__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_syncCustomerSegments',
+        //           MG_Update_CampaignMember__c = 'http://127.0.0.1',
+
+        //           Change_Request_Endpoint__c = 'http://127.0.0.1',
+        //           Password__c = 'http://127.0.0.1',
+        //           Sales_Order_Update_Endpoint__c = 'http://127.0.0.1',
+        //           Sanbox_Change_Request_Endpoint__c = 'http://127.0.0.1',
+        //           Sanbox_Sales_Order_Update_Endpoint__c = 'http://127.0.0.1',
+        //           Sandbox_Password__c = 'http://127.0.0.1',
+        //           Sandbox_Send_To_Account_Endpoint__c = 'http://127.0.0.1',
+        //           Sandbox_User_Name__c = 'http://127.0.0.1',
+        //           Send_to_Account_Endpoint__c = 'http://127.0.0.1',
+        //           User_Name__c = 'http://127.0.0.1',
+        //           Customer_Hierarchy_Endpoint__c = 'http://127.0.0.1',
+        //           Sandbox_Customer_Hierarchy_Endpoint__c = 'http://127.0.0.1',
+        //           Quote_Endpoint__c = 'http://127.0.0.1',
+        //           Sandbox_Quote_Endpoint__c = 'http://127.0.0.1'
+        //   );
+        //   insert talendSetting;
+
+         //System.debug('talendSetting-------------->'+talendSetting);
+        //Added on Zhang Zhihao 2023/12/28
+  
+
     }
+
+       //Added on Zhang Zhihao 2023/12/31
+        public void makeTalendSetting(){
+              
+            Talend_Setting__c talendSetting = new Talend_Setting__c(
+                Sandbox_MG_Update_Shipping_Address__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_updateShippingAddress',
+                Sandbox_MG_Save_Company_Contact__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_SaveCompanyContact',
+                Sandbox_MG_Save_Customer_Code__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_SaveCustomerCode',
+                Sandbox_MG_Update_Company_Status__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_updateCompanyStatus',
+                Sandbox_MG_Approval_Lead__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_approvallead',
+                MG_Update_Shipping_Address__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_updateShippingAddress',
+                MG_Save_Company_Contact__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_SaveCompanyContact',
+                MG_Save_Customer_Code__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_SaveCustomerCode',
+                MG_Update_Company_Status__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_updateCompanyStatus',
+                MG_Approval_Lead__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_approvallead',
+
+                Sandbox_MG_Send_WeChat_Message__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_sendWeChatMessage',
+                Sandbox_MG_Update_Lead_Status__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_updateLeadStatus',
+                MG_Send_WeChat_Message__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_sendWeChatMessage',
+                MG_Update_Lead_Status__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_updateLeadStatus',
+
+                Sandbox_MG_Update_Case_Status__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_multiupdate',
+                Sandbox_MG_Update_Campaign__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_saveSfEvent',
+                MG_Update_Campaign__c = 'http://127.0.0.1',
+                Sandbox_MG_Update_CampaignMember__c = 'https://talenddevap01.sinodis.com:8443/services/sf2mg/tiger_MG_syncCustomerSegments',
+                MG_Update_CampaignMember__c = 'http://127.0.0.1',
+
+                Change_Request_Endpoint__c = 'http://127.0.0.1',
+                Password__c = 'http://127.0.0.1',
+                Sales_Order_Update_Endpoint__c = 'http://127.0.0.1',
+                Sanbox_Change_Request_Endpoint__c = 'http://127.0.0.1',
+                Sanbox_Sales_Order_Update_Endpoint__c = 'http://127.0.0.1',
+                Sandbox_Password__c = 'http://127.0.0.1',
+                Sandbox_Send_To_Account_Endpoint__c = 'http://127.0.0.1',
+                Sandbox_User_Name__c = 'http://127.0.0.1',
+                Send_to_Account_Endpoint__c = 'http://127.0.0.1',
+                User_Name__c = 'http://127.0.0.1',
+                Customer_Hierarchy_Endpoint__c = 'http://127.0.0.1',
+                Sandbox_Customer_Hierarchy_Endpoint__c = 'http://127.0.0.1',
+                Quote_Endpoint__c = 'http://127.0.0.1',
+                Sandbox_Quote_Endpoint__c = 'http://127.0.0.1'
+        );
+        insert talendSetting;
+
+
+    }
+    //Added on Zhang Zhihao 2023/12/31
+
+
 
     public List<Account> makeAccounts(integer num) {
         makeCustomSetting();
@@ -529,6 +639,7 @@ public class TestDataFactory {
                 acc.CN_Business_Unit_UI__c = businessUnit.Id;
                 acc.CN_Sales_Team_UI__c = salesTeam.Id;
                 acc.CN_Visit_Addr_CN__c = 'Visit Address';
+                acc.CN_MG_Account_ID__c = String.valueOf(n);
                 accList.add(acc);
             }
             insert accList;
@@ -562,6 +673,7 @@ public class TestDataFactory {
                 con.LastName = 'Contact';
                 con.MobilePhone = '13013001300';
                 con.CN_Bill_To_Address__c = 'ABCDE';
+                con.CN_MG_Contact_ID__c = acc.CN_MG_Account_ID__c;
                 conList.add(con);
             }
             Database.DMLOptions dml_contact = new Database.DMLOptions();
@@ -583,7 +695,8 @@ public class TestDataFactory {
                         CN_Delivery_Plant__c = acc.CN_Delivery_Plant__c,
                         CN_Province_CN__c = acc.CN_Province_CN__c,
                         CN_City_CN__c = acc.CN_City_CN__c,
-                        CN_Delivery_Address_EN__c = acc.CN_Invoicing_Address_EN__c
+                        CN_Delivery_Address_EN__c = acc.CN_Invoicing_Address_EN__c,
+                        CN_ShipTo_Address_ID__c = acc.CN_MG_Account_ID__c
                     );
                 shipToList.add(shipTo);
             }

@@ -1169,6 +1169,7 @@ Unique Id</description>
   &apos;K030&apos;,&apos;K030-ShenZhen&apos;,
   &apos;K040&apos;,&apos;K040-GuangZhou&apos;,
   &apos;K050&apos;,&apos;K050-ChengDu&apos;,
+  &apos;B100&apos;,&apos;B100-Tianjin&apos;,
   &apos;&apos;
 )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>

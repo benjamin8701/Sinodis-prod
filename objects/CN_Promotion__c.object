@@ -487,6 +487,11 @@ $Label.CN_PleaseConfirm_Value_AlreadyPublished
                     <default>false</default>
                     <label>K060-DaLian</label>
                 </value>
+                <value>
+                    <fullName>B100</fullName>
+                    <default>false</default>
+                    <label>B100-Tianjin</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
@@ -683,6 +688,10 @@ $Label.CN_PleaseConfirm_Value_AlreadyPublished
         </picklistValues>
         <picklistValues>
             <picklist>CN_Sales_Office__c</picklist>
+            <values>
+                <fullName>B100</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>K010</fullName>
                 <default>false</default>

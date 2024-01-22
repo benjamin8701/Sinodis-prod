@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
+        <label><!-- Bank Information --></label>
+        <name>CN_Bank_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business License --></label>
+        <name>CN_Business_License__c</name>
+    </fields>
+    <fields>
         <label>Campaign</label>
         <name>CN_Campaign__c</name>
         <relationshipLabel><!-- Leads --></relationshipLabel>
@@ -9,6 +17,10 @@
         <label><!-- City --></label>
         <name>CN_City__c</name>
         <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company ID --></label>
+        <name>CN_Company_ID__c</name>
     </fields>
     <fields>
         <label><!-- Converted Contact Id From CR --></label>
@@ -71,12 +83,57 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- FieldLock --></label>
+        <name>CN_Field_Lock__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Food Experience License --></label>
+        <name>CN_Food_Experience_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invitation Code --></label>
+        <name>CN_Invitation_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invitator Name --></label>
+        <name>CN_Invitator_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invitator Phone Number --></label>
+        <name>CN_Invitator_Phone_Number__c</name>
+    </fields>
+    <fields>
         <label><!-- Is Converted Display --></label>
         <name>CN_Is_Converted_Display__c</name>
     </fields>
     <fields>
+        <label><!-- Is Converted From Lead --></label>
+        <name>CN_Is_Converted_From_Lead__c</name>
+    </fields>
+    <fields>
         <label><!-- Is From Web To Lead --></label>
         <name>CN_Is_From_Web_To_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- CN Lead Source --></label>
+        <name>CN_Lead_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG Account ID --></label>
+        <name>CN_MG_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MG Contact ID --></label>
+        <name>CN_MG_Contact_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Need Send MG Flag --></label>
+        <name>CN_Need_Send_MG_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Employee Number --></label>
+        <name>CN_Owner_Employee_Number__c</name>
     </fields>
     <fields>
         <label><!-- Province --></label>
@@ -88,9 +145,25 @@
         <name>CN_Reason_Lead_Dead__c</name>
     </fields>
     <fields>
+        <label><!-- Status Change Records --></label>
+        <name>CN_Status_Change_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Number --></label>
+        <name>CN_Store_Number__c</name>
+    </fields>
+    <fields>
         <help><!-- Please fill with city and street --></help>
         <label><!-- Visit Address --></label>
         <name>CN_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- UniqueId --></label>
+        <name>CN_UniqueId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volume(kg)/Size of Lead --></label>
+        <name>CN_Volume_Size_of_Lead_Desc__c</name>
     </fields>
     <fields>
         <label><!-- Volume(kg)/Size of Lead --></label>
@@ -114,6 +187,10 @@
     <quickActions>
         <label><!-- New Contact Request --></label>
         <name>CN_New_Contact_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Contact Request --></label>
+        <name>CN_Update_Contact_Request</name>
     </quickActions>
     <recordTypes>
         <label><!-- CN Lead --></label>

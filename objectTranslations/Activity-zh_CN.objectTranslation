@@ -31,6 +31,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label>厨师反馈信息</label>
+        <name>CN_Chef_Feedback__c</name>
+    </fields>
+    <fields>
         <label><!-- Chef Request Id --></label>
         <name>CN_Chef_Request_Id__c</name>
     </fields>
@@ -83,6 +87,10 @@
     <fields>
         <label>后续计划</label>
         <name>CN_Next_Step__c</name>
+    </fields>
+    <fields>
+        <label>邮件通知厨师</label>
+        <name>CN_Notify_Chef__c</name>
     </fields>
     <fields>
         <label>拜访主题(目的)</label>

@@ -104,6 +104,10 @@
             <translation><!-- Digital Campaign --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>E-Commerce</masterLabel>
+            <translation><!-- E-Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Expositions</masterLabel>
             <translation><!-- Expositions --></translation>
         </picklistValues>
@@ -860,6 +864,10 @@
             <masterLabel>P060-SINODIS Dalian-西诺迪斯（大连）</masterLabel>
             <translation><!-- P060-SINODIS Dalian-西诺迪斯（大连） --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>P070-SINODIS Tianjin-西诺迪斯（天津）</masterLabel>
+            <translation><!-- P070-SINODIS Tianjin-西诺迪斯（天津） --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Department of Contact Person --></label>
@@ -1038,6 +1046,10 @@
     <fields>
         <label><!-- Has Ship To Party --></label>
         <name>CN_Has_Ship_To_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive --></label>
+        <name>CN_Inactive__c</name>
     </fields>
     <fields>
         <label><!-- Incoterms (Part 2) --></label>
@@ -1325,6 +1337,10 @@
         <name>CN_Latest_Order_Create_Date__c</name>
     </fields>
     <fields>
+        <label><!-- Lead MG Contact Id --></label>
+        <name>CN_Lead_MG_Contact_Id__c</name>
+    </fields>
+    <fields>
         <label><!-- Level --></label>
         <name>CN_Level__c</name>
         <picklistValues>
@@ -1362,12 +1378,20 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- MG Account ID --></label>
+        <name>CN_MG_Account_ID__c</name>
+    </fields>
+    <fields>
         <label><!-- Map Link --></label>
         <name>CN_Map_Link__c</name>
     </fields>
     <fields>
         <label><!-- Nature --></label>
         <name>CN_Nature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Need Send MG Flag --></label>
+        <name>CN_Need_Send_MG_Flag__c</name>
     </fields>
     <fields>
         <label><!-- CN_Need_Sync_Geolocation --></label>
@@ -1555,6 +1579,10 @@
         <picklistValues>
             <masterLabel>M231-60 days end of month, due net</masterLabel>
             <translation><!-- M231-60 days end of month, due net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M331-90 days end of month, due net</masterLabel>
+            <translation><!-- M331-90 days end of month, due net --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -1991,6 +2019,10 @@
             <masterLabel>026-GuangZhou</masterLabel>
             <translation><!-- 026-GuangZhou --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>B06-Shanghai Area</masterLabel>
+            <translation><!-- B06-Shanghai Area --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Sales Group --></label>
@@ -2003,6 +2035,10 @@
     <fields>
         <label><!-- Sales Office --></label>
         <name>CN_Sales_Office__c</name>
+        <picklistValues>
+            <masterLabel>B100-Tianjin</masterLabel>
+            <translation><!-- B100-Tianjin --></translation>
+        </picklistValues>
         <picklistValues>
             <masterLabel>K010-ShangHai</masterLabel>
             <translation><!-- K010-ShangHai --></translation>
@@ -2054,7 +2090,7 @@
         <name>CN_Sales_Team_Name__c</name>
     </fields>
     <fields>
-        <help><!-- Please search for KA/DS/WS. --></help>
+        <help><!-- Please search for KA/DS/WS/QSR/B2B. --></help>
         <label><!-- Sales Team --></label>
         <name>CN_Sales_Team_UI__c</name>
         <relationshipLabel><!-- SalesTeams --></relationshipLabel>
@@ -2320,6 +2356,10 @@
         <picklistValues>
             <masterLabel>Airline</masterLabel>
             <translation><!-- Airline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B OEM</masterLabel>
+            <translation><!-- B2B OEM --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>BAPA - LKA</masterLabel>

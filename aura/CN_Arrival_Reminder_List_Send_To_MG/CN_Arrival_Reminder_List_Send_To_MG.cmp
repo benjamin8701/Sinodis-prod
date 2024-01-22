@@ -1,0 +1,5 @@
+<aura:component>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" access="global" />
+    <aura:attribute name="selectedIds" type="List" default="" />
+    <c:cNArrivalReminderNoticeLWC arrivalReminderIdList="{!v.selectedIds}"/>
+</aura:component>
