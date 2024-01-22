@@ -45,6 +45,10 @@
                 <behavior>Required</behavior>
                 <field>CN_Delivery_Address_EN__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CN_Inactive__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>

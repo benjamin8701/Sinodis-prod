@@ -38,6 +38,16 @@
         <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
         <label>Step 1</label>
         <name>Step_1</name>
+        <rejectionActions>
+            <action>
+                <name>CN_CR_Approved_Status_Rejection</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>CN_CR_Need_Send_MG_Flag_Rejection</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -71,6 +81,16 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>CN_CR_Approved_Status_Rejection</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>CN_CR_Need_Send_MG_Flag_Rejection</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -104,6 +124,16 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>CN_CR_Approved_Status_Rejection</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>CN_CR_Need_Send_MG_Flag_Rejection</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
@@ -136,6 +166,16 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>CN_CR_Approved_Status_Rejection</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>CN_CR_Need_Send_MG_Flag_Rejection</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
     </approvalStep>
     <emailTemplate>CN_Email_Folder/CN_CR_Approval</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
@@ -145,6 +185,14 @@ ISPICKVAL(CN_Change_Request_Status__c, &quot;Ready for Approval&quot;),
  CN_Is_Auto_Approved__c = false)</formula>
     </entryCriteria>
     <finalApprovalActions>
+        <action>
+            <name>CN_CR_Approved_Status_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>CN_CR_Need_Send_MG_Flag</name>
+            <type>FieldUpdate</type>
+        </action>
         <action>
             <name>CN_CR_Populate_Approve_Step_Empty</name>
             <type>FieldUpdate</type>
@@ -157,8 +205,16 @@ ISPICKVAL(CN_Change_Request_Status__c, &quot;Ready for Approval&quot;),
     <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionActions>
         <action>
+            <name>CN_CR_Approved_Status_Rejection</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
             <name>CN_CR_Final_Rejected_Notification</name>
             <type>Alert</type>
+        </action>
+        <action>
+            <name>CN_CR_Need_Send_MG_Flag_Rejection</name>
+            <type>FieldUpdate</type>
         </action>
         <action>
             <name>CN_CR_Populate_Approve_Step_Empty</name>
@@ -176,6 +232,10 @@ ISPICKVAL(CN_Change_Request_Status__c, &quot;Ready for Approval&quot;),
             <type>FieldUpdate</type>
         </action>
         <action>
+            <name>CN_CR_Approved_Status_New</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
             <name>CN_CR_Populate_Approve_Step_1</name>
             <type>FieldUpdate</type>
         </action>
@@ -183,6 +243,10 @@ ISPICKVAL(CN_Change_Request_Status__c, &quot;Ready for Approval&quot;),
     <label>CN_CR_Approve_Process</label>
     <processOrder>1</processOrder>
     <recallActions>
+        <action>
+            <name>CN_CR_Approved_Status_New</name>
+            <type>FieldUpdate</type>
+        </action>
         <action>
             <name>CN_CR_Populate_Approve_Step_Empty</name>
             <type>FieldUpdate</type>

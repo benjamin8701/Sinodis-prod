@@ -21,4 +21,9 @@
         <default>false</default>
         <label>Sales Reported</label>
     </standardValue>
+    <standardValue>
+        <fullName>eCom</fullName>
+        <default>false</default>
+        <label>eCom</label>
+    </standardValue>
 </StandardValueSet>

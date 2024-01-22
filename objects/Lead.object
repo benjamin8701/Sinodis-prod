@@ -317,6 +317,24 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>CN_Bank_Information__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Information</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>CN_Business_License__c</fullName>
+        <externalId>false</externalId>
+        <label>Business License</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
         <fullName>CN_Campaign__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -361,6 +379,17 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Company_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Company ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Converted_Contact_Id_From_CR__c</fullName>
@@ -469,11 +498,75 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>CN_Field_Lock__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>FieldLock</label>
+        <referenceTo>CN_Field_Lock__c</referenceTo>
+        <relationshipLabel>Leads</relationshipLabel>
+        <relationshipName>Leads</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_Food_Experience_License__c</fullName>
+        <externalId>false</externalId>
+        <label>Food Experience License</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>CN_Invitation_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Invitation Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Invitator_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Invitator Name</label>
+        <length>64</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Invitator_Phone_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Invitator Phone Number</label>
+        <length>11</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Is_Converted_Display__c</fullName>
         <externalId>false</externalId>
         <formula>IsConverted ||  NOT(ISBLANK(CN_Converted_Contact_Id_From_CR__c ))</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Is Converted Display</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Is_Converted_From_Lead__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Converted From Lead</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -485,6 +578,60 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Lead_Source__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( LeadSource )</formula>
+        <label>CN Lead Source</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_MG_Account_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>MG Account ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_MG_Contact_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>MG Contact ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Need_Send_MG_Flag__c</fullName>
+        <externalId>false</externalId>
+        <label>Need Send MG Flag</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Owner_Employee_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.LastName+ &apos; &apos; + Owner:User.FirstName</formula>
+        <label>Owner Employee Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Province__c</fullName>
@@ -509,6 +656,28 @@
         <type>TextArea</type>
     </fields>
     <fields>
+        <fullName>CN_Status_Change_Records__c</fullName>
+        <externalId>false</externalId>
+        <label>Status Change Records</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CN_Store_Number__c</fullName>
+        <description>门店数量</description>
+        <externalId>false</externalId>
+        <label>Store Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Street__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Please fill with city and street</inlineHelpText>
@@ -516,6 +685,36 @@
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_UniqueId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>UniqueId</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Volume_Size_of_Lead_Desc__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CN_Volume_Size_of_Lead__c  &lt;= 50 , &apos;1-50人&apos;,
+	IF( CN_Volume_Size_of_Lead__c  &lt;= 200 , &apos;50-200人&apos;,
+		IF( CN_Volume_Size_of_Lead__c  &lt;= 500 , &apos;200-500人&apos;,
+			IF( CN_Volume_Size_of_Lead__c  &lt;= 1000 , &apos;500-1000人&apos;,
+				&apos;1000人以上&apos;
+			)
+		)
+	)
+)</formula>
+        <label>Volume(kg)/Size of Lead</label>
+        <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -999,6 +1198,10 @@
             </values>
             <values>
                 <fullName>Digital Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Commerce</fullName>
                 <default>false</default>
             </values>
             <values>

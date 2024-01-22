@@ -247,6 +247,9 @@ public without sharing class CN_Quote_Populate_Approver_Handler implements Trigg
             quo.CN_Approver_7__c = null;
             quo.CN_Approver_8__c = null;
             quo.CN_Approver_9__c = null;
+            // for new sales team(QSR & B2B CCE)
+            quo.CN_Approver_10__c = null;
+            quo.CN_Approver_11__c = null;
             quo.CN_Is_Auto_Approved__c = false;
 
             User creator = creatorMap.get(quo.CreatedById);
@@ -317,6 +320,10 @@ public without sharing class CN_Quote_Populate_Approver_Handler implements Trigg
                         quo.CN_Approver_6__c = settings.CN_CCE2_DS__c;
                     }else if(Constants.CN_SALES_TEAM_NAME_WS.equals(sTName)){
                         quo.CN_Approver_7__c = settings.CN_CCE3_WS__c;
+                    }else if(Constants.CN_SALES_TEAM_NAME_QSR.equals(sTName)){
+                        quo.CN_Approver_10__c = settings.CN_CCE4_QSR__c;
+                    }else if(Constants.CN_SALES_TEAM_NAME_B2B.equals(sTName)){
+                        quo.CN_Approver_11__c = settings.CN_CCE5_B2B__c;
                     }
                 } else if(System.Label.CN_Quote_Approve_Type_4.equals(approvalType)) {
                     quo.CN_Approver_1__c = ManagerUserId;
@@ -330,32 +337,41 @@ public without sharing class CN_Quote_Populate_Approver_Handler implements Trigg
             Decimal approvalCode = 0;
             quoteIdApproverIdListMap.put(quo.Id, new List<Id>());
             if(quo.CN_Approver_1__c != null) {
-                approvalCode = approvalCode + 256;
+                approvalCode = approvalCode + 1024;
                 quoteIdApproverIdListMap.get(quo.Id).add(quo.CN_Approver_1__c);
             } 
             if(quo.CN_Approver_2__c != null) {
-                approvalCode = approvalCode + 128;
+                approvalCode = approvalCode + 512;
                 quoteIdApproverIdListMap.get(quo.Id).add(quo.CN_Approver_2__c);
             }
             if(quo.CN_Approver_3__c != null) {
-                approvalCode = approvalCode + 64;
+                approvalCode = approvalCode + 256;
                 quoteIdApproverIdListMap.get(quo.Id).add(quo.CN_Approver_3__c);
             }
             if(quo.CN_Approver_4__c != null) {
-                approvalCode = approvalCode + 32;
+                approvalCode = approvalCode + 128;
                 quoteIdApproverIdListMap.get(quo.Id).add(quo.CN_Approver_4__c);
             }
             if(quo.CN_Approver_5__c != null) {
-                approvalCode = approvalCode + 16;
+                approvalCode = approvalCode + 64;
                 quoteIdApproverIdListMap.get(quo.Id).add(quo.CN_Approver_5__c);
             }
             if(quo.CN_Approver_6__c != null) {
-                approvalCode = approvalCode + 8;
+                approvalCode = approvalCode + 32;
                 quoteIdApproverIdListMap.get(quo.Id).add(quo.CN_Approver_6__c);
             }
             if(quo.CN_Approver_7__c != null) {
-                approvalCode = approvalCode + 4;
+                approvalCode = approvalCode + 16;
                 quoteIdApproverIdListMap.get(quo.Id).add(quo.CN_Approver_7__c);
+            }
+            // new sales team(QSR & B2B)
+            if(quo.CN_Approver_10__c != null) {
+                approvalCode = approvalCode + 8;
+                quoteIdApproverIdListMap.get(quo.Id).add(quo.CN_Approver_10__c);
+            }
+            if(quo.CN_Approver_11__c != null) {
+                approvalCode = approvalCode + 4;
+                quoteIdApproverIdListMap.get(quo.Id).add(quo.CN_Approver_11__c);
             }
             if(quo.CN_Approver_8__c != null) {
                 approvalCode = approvalCode + 2;

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>CN_Messaging_QU_Sales</name>
+    <queueMembers>
+        <users>
+            <user>jessica.huang@sinodis.com.cn</user>
+            <user>system.support@savencia.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>CN_Messaging_QueueRoutingConfig</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+</Queue>

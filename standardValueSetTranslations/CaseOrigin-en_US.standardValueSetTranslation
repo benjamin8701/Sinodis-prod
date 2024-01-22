@@ -16,4 +16,8 @@
         <masterLabel>Web</masterLabel>
         <translation><!-- Web --></translation>
     </valueTranslation>
+    <valueTranslation>
+        <masterLabel>eCom</masterLabel>
+        <translation><!-- eCom --></translation>
+    </valueTranslation>
 </StandardValueSetTranslation>

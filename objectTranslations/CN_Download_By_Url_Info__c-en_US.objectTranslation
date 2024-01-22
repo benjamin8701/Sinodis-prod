@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Download By Url Info</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Download By Url Infos</value>
+    </caseValues>
+    <fields>
+        <label><!-- Field Name --></label>
+        <name>CN_Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Url --></label>
+        <name>CN_File_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Linked Entity Id --></label>
+        <name>CN_Linked_Entity_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Need Download --></label>
+        <name>CN_Need_Download__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>CN_Object_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Server Url --></label>
+        <name>CN_Server_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suffix Name --></label>
+        <name>CN_Suffix_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>CN_Title__c</name>
+    </fields>
+    <layouts>
+        <layout>CN_Download_By_Url_Info Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CN_File_Record --></label>
+        <name>CN_File_Record</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

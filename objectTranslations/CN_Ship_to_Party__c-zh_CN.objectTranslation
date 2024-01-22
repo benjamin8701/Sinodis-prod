@@ -99,6 +99,14 @@
             <masterLabel>P060-SINODIS Dalian-西诺迪斯（大连）</masterLabel>
             <translation><!-- P060-SINODIS Dalian-西诺迪斯（大连） --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>P070-SINODIS Tianjin-西诺迪斯（天津）</masterLabel>
+            <translation><!-- P070-SINODIS Tianjin-西诺迪斯（天津） --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inactive --></label>
+        <name>CN_Inactive__c</name>
     </fields>
     <fields>
         <label>间接客户</label>
@@ -112,6 +120,10 @@
     <fields>
         <label>是否间接客户</label>
         <name>CN_Is_Indirect_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Only Inactive --></label>
+        <name>CN_Is_Only_Inactive__c</name>
     </fields>
     <fields>
         <label><!-- Latest Change Request Sync Error Message --></label>
@@ -155,6 +167,10 @@
         <name>CN_Mobile_Phone__c</name>
     </fields>
     <fields>
+        <label><!-- Need Send MG --></label>
+        <name>CN_Need_Send_MG__c</name>
+    </fields>
+    <fields>
         <label>订单组合</label>
         <name>CN_Order_Combination__c</name>
     </fields>
@@ -186,6 +202,10 @@
     <fields>
         <label><!-- Search Term --></label>
         <name>CN_Search_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- ShipTo Address ID --></label>
+        <name>CN_ShipTo_Address_ID__c</name>
     </fields>
     <fields>
         <label>运输条件</label>

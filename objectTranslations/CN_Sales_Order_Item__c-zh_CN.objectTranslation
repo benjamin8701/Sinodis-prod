@@ -108,6 +108,14 @@
             <masterLabel>80-Others</masterLabel>
             <translation><!-- 80-Others --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>81-Overdue payment</masterLabel>
+            <translation><!-- 81-Overdue payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XX-Deleted</masterLabel>
+            <translation><!-- XX-Deleted --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label>原价</label>

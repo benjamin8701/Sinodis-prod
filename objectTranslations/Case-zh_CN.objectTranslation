@@ -573,6 +573,10 @@
         <name>CN_Account_Sales_Team__c</name>
     </fields>
     <fields>
+        <label>评价</label>
+        <name>CN_Appraise__c</name>
+    </fields>
+    <fields>
         <label>基本计量单位</label>
         <name>CN_Base_Unit_of_Measure__c</name>
     </fields>
@@ -665,6 +669,15 @@
         <name>CN_Rejected_Date__c</name>
     </fields>
     <fields>
+        <label><!-- Relate Sales Order ID --></label>
+        <name>CN_Relate_Sales_Order_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relate Sales Order --></label>
+        <name>CN_Relate_Sales_Order__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
         <label>结案建议</label>
         <name>CN_Resolve_Comments__c</name>
         <picklistValues>
@@ -752,6 +765,10 @@
         <label><!-- Submit Datetime --></label>
         <name>CN_Submit_Datetime__c</name>
     </fields>
+    <fields>
+        <label>建议</label>
+        <name>CN_Suggestion__c</name>
+    </fields>
     <layouts>
         <layout>CN Complaint Layout</layout>
         <sections>
@@ -771,6 +788,22 @@
             <section>QA-C/S Follow-up</section>
         </sections>
     </layouts>
+    <layouts>
+        <layout>CN online service Layout</layout>
+        <sections>
+            <label>客户信息</label>
+            <section>Account Info</section>
+        </sections>
+        <sections>
+            <label>服务反馈</label>
+            <section>Services FeedBack</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>关闭</label>
+        <name>CN_Close_Case</name>
+    </quickActions>
     <quickActions>
         <aspect>Master</aspect>
         <label>取消</label>
@@ -797,6 +830,14 @@
         <name>CN_Complaint_Resolved</name>
     </quickActions>
     <quickActions>
+        <label><!-- CN_MessagingSession_AC_Case --></label>
+        <name>CN_MessagingSession_AC_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>CN_SendEmail</name>
+    </quickActions>
+    <quickActions>
         <aspect>Master</aspect>
         <label>提交投诉</label>
         <name>CN_Submit_Complaint</name>
@@ -804,6 +845,10 @@
     <recordTypes>
         <label><!-- CN_Complaint --></label>
         <name>CN_Complaint</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CN_Service_Online --></label>
+        <name>CN_Service_Online</name>
     </recordTypes>
     <validationRules>
         <errorMessage>请填写产品，问题产品数量及SAP产品批次号。</errorMessage>

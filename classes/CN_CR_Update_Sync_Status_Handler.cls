@@ -126,6 +126,12 @@ public without sharing class CN_CR_Update_Sync_Status_Handler implements Trigger
                 con.CN_Up_Code__c = cr.CN_SAP_ID__c;
             }
 
+            //add by leo 2023.12.10 CN_Has_CR_Need_Sync must be False when sync Contact to E-Commerce
+            if(Constants.CN_CR_SYNC_STATUS_SUCCESS.equals(cr.CN_Sync_Status__c) || Constants.CN_CR_SYNC_STATUS_NO_NEED_TO_SYNC.equals(cr.CN_Sync_Status__c)){
+                con.CN_Has_CR_Need_Sync__c = false;
+            }
+            //add by leo 2023.12.10 CN_Has_CR_Need_Sync must be False when sync Contact to E-Commerce
+
             conUpdateList.add(con);
         }
         if(conUpdateList.size() > 0) {

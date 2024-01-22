@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <valueTranslation>
+        <masterLabel>Logistics Distribution</masterLabel>
+        <translation><!-- Logistics Distribution --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Order Dependent</masterLabel>
+        <translation><!-- Order Dependent --></translation>
+    </valueTranslation>
+    <valueTranslation>
         <masterLabel>Quality</masterLabel>
         <translation><!-- Quality --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Refund Issue</masterLabel>
+        <translation><!-- Refund Issue --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Return Issue</masterLabel>
+        <translation><!-- Return Issue --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Service Issues</masterLabel>
+        <translation><!-- Service Issues --></translation>
     </valueTranslation>
     <valueTranslation>
         <masterLabel>Supply Chain</masterLabel>

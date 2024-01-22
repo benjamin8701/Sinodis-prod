@@ -162,12 +162,20 @@
         <label>分销渠道</label>
         <name>CN_Distribution_Channel__c</name>
         <picklistValues>
+            <masterLabel>B2B</masterLabel>
+            <translation><!-- B2B --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>DS</masterLabel>
             <translation><!-- DS --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>KA</masterLabel>
             <translation><!-- KA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QSR</masterLabel>
+            <translation><!-- QSR --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>WS</masterLabel>
@@ -401,6 +409,10 @@
         <picklistValues>
             <masterLabel>C-Completely processed</masterLabel>
             <translation><!-- C-Completely processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X - Deleted</masterLabel>
+            <translation><!-- X - Deleted --></translation>
         </picklistValues>
     </fields>
     <fields>

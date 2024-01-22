@@ -1162,6 +1162,16 @@
                     <default>false</default>
                     <label>Gerard</label>
                 </value>
+                <value>
+                    <fullName>QSR</fullName>
+                    <default>false</default>
+                    <label>QSR</label>
+                </value>
+                <value>
+                    <fullName>B2B</fullName>
+                    <default>false</default>
+                    <label>B2B</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -1265,6 +1275,7 @@
         <columns>CN_Start_Date__c</columns>
         <columns>CN_End_Date__c</columns>
         <columns>CN_Contract_Status__c</columns>
+        <columns>UPDATEDBY_USER</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>RECORDTYPE</field>
@@ -1633,6 +1644,10 @@
         <picklistValues>
             <picklist>CN_Sales_Channel__c</picklist>
             <values>
+                <fullName>B2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>BSI</fullName>
                 <default>false</default>
             </values>
@@ -1646,6 +1661,10 @@
             </values>
             <values>
                 <fullName>KA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QSR</fullName>
                 <default>false</default>
             </values>
             <values>

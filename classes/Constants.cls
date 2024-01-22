@@ -15,7 +15,13 @@ public without sharing class Constants {
     public static Boolean CN_ACCOUNT_TM_REPORT_HANDLER_TRIGGER_ON = true;
     //CR05 - Tm report by Shuqi - end   
 	public static Boolean CN_ACCOUNT_PREVENT_EDIT_APPROVED_HANDLER_TRIGGER_ON = true;
+	//add by Leo Dicaprio 2023-04-07 start
+	public static Boolean CN_ACCOUNT_SEND_MG_MARK_HANDLER_TRIGGER_ON = true;
+	//add by Leo Dicaprio 2023-04-07 end
 
+	//add by Leo Dicaprio 2023-04-07 start Related 1
+	public static Boolean CN_ACCOUNT_CHECK_EC_FIELD_HANDLER_TRIGGER_ON = true;
+	//add by Leo Dicaprio 2023-04-07 end
 
     public static final String CN_Account_RT_API_NAME_NEW_DIRECT = 'CN_New_Direct';
     public static final String CN_Account_RT_API_NAME_EDIT_DIRECT = 'CN_Edit_Direct';
@@ -42,6 +48,9 @@ public without sharing class Constants {
     public static final String CN_ACCOUNT_SYNC_STATUS_SUCCESS = 'Success';
     
     public static final String CN_ACCOUNT_SALESTEAM_CODE_WS = '900014';
+	//add by Leo Dicaprio 2023-08-23 start
+    public static final String CN_ACCOUNT_SOURCE_ECOMMERCE = 'E-Commerce';
+	//add by Leo Dicaprio 2023-08-23 end
 	// new sales teams added on 2023/11/20
 	public static final String CN_ACCOUNT_SALESTEAM_CODE_QSR = '901775';
 	public static final String CN_ACCOUNT_SALESTEAM_CODE_B2B = '901776';
@@ -75,6 +84,11 @@ public without sharing class Constants {
     // Added By Jessica Wang 2021-07-22 Start
 	public static Boolean CN_CONTACT_WRITE_BACK_TO_LEAD_HANDLER_TRIGGER_ON = true;
 	// Added By Jessica Wang 2021-07-22 End
+	// Added By Leo Dicaprio 2023-04-06 Start
+	public static Boolean CN_CONTACT_SEND_MG_MARK_HANDLER_TRIGGER_ON = true;
+	public static Boolean CN_CONTACT_LEAD_CONVERTED_HANDLER_TRIGGER_ON = true;
+
+	// Added By Leo Dicaprio 2023-04-06 End
 	public static Boolean CN_CONTACT_TYPE_CHECK_HANDLER_TRIGGER_ON = true;
     public static final String CN_CONTACT_RT_API_NAME = 'CN_Contact';
     public static final String CN_CONTACT_TYPE_FINANCE_VALUE_NAME = '01';
@@ -85,6 +99,7 @@ public without sharing class Constants {
     public static Boolean SHIPTO_TRIGGER_ON = true;
     public static Boolean CN_SHIPTO_TRIGGER_ON = true;
     public static Boolean CN_SHIPTO_PREVENT_DELETE_HANDLER_ON = true;
+    public static Boolean CN_SHIPTO_SEND_MG_CREATE_HANDLER_ON = true;
 
     public static final String CN_SHIPTO_RT_API_NAME = 'CN_Ship_to_Party';
 
@@ -126,6 +141,7 @@ public without sharing class Constants {
     public static Boolean CN_CR_PREVENT_DUPLICATE_ONGOING_CR_TRIGGER_ON = true;
     public static Boolean CN_CR_CHECK_AT_LEAST_ONE_FIELD_CHANGED_HANDLER_TRIGGER_ON = true;
     public static Boolean CN_CR_GENERATE_SHIPTO_HANDLER_TRIGGER_ON = true;
+    public static Boolean CN_CR_INACTIVE_SHIPTO_HANDLER_TRIGGER_ON = true;
     public static Boolean CN_CR_UPDATE_SYNC_STATUS_HANDLER_TRIGGER_ON = true;
     public static Boolean CN_CR_WRITE_BACK_TO_ACCOUNT_HANDLER_TRIGGER_ON = true;
     public static Boolean CN_CR_CHECK_FIELDS_HANDLER_TRIGGER_ON = true;
@@ -135,9 +151,11 @@ public without sharing class Constants {
     public static final String CN_CR_RT_API_NAME_UPDATE_SHIPTO = 'CN_Update_Ship_To_Request';
     public static final String CN_CR_RT_API_NAME_NEW_CONTACT = 'CN_New_Contact_Request';
     public static final String CN_CR_RT_API_NAME_NEW_SHIPTO = 'CN_New_Ship_To_Request';
+    public static final String CN_CR_RT_API_NAME_INACTIVE_SHIPTO = 'CN_Inactive_Ship_To_Request';
     public static final String CN_CR_RT_API_NAME_APPD_UPDATE_ACCOUNT = 'CN_Approved_Update_Account_Request';
     public static final String CN_CR_RT_API_NAME_APPD_UPDATE_CONTACT = 'CN_Approved_Update_Contact_Request';
     public static final String CN_CR_RT_API_NAME_APPD_UPDATE_SHIPTO = 'CN_Approved_Update_Ship_To_Request';
+    public static final String CN_CR_RT_API_NAME_APPD_INACTIVE_SHIPTO = 'CN_Approved_Inactive_Ship_To_Request';
     public static final String CN_CR_RT_API_NAME_APPD_NEW_CONTACT = 'CN_Approved_New_Contact_Request';
     public static final String CN_CR_RT_API_NAME_NEW_APPD_SHIPTO = 'CN_Approved_New_Ship_To_Request';
     //hotfix realse7 ----by shuqi start
@@ -157,6 +175,10 @@ public without sharing class Constants {
     public static final String CN_CR_SYNC_STATUS_PROCESSING = 'Processing';
     public static final String CN_CR_SYNC_STATUS_SUCCESS = 'Success';
     public static final String CN_CR_SYNC_STATUS_FAIL = 'Fail';
+
+	//add by leo 2023.08.23 CR Source
+    public static final String CN_CR_SOURCE_ECOMMERCE= 'E-Commerce';
+	//add by leo 2023.08.23 CR Source
 
     // Sales Order
     public static final String CN_SO_SYNC_STATUS_SENT = 'Sent';
@@ -234,13 +256,20 @@ public without sharing class Constants {
 	public static Boolean CN_LEAD_TRIGGER_ON = true;
 	public static Boolean CN_LEAD_OWNER_CHANGED_CUSTOM_NOTIFICATION_TRIGGER_ON = true;
 	public static Boolean CN_LEAD_MKT_ASSIGNED_HANDLER_TRIGGER_ON = true;
-	
+	public static Boolean CN_LEAD_STATUS_SEND_MG_HANDLER_TRIGGER_ON = true;
+
 	
 	public static final String CN_LEAD_RT_API_NAME = 'CN_Lead';
 
 	public static final String CN_LEAD_STATUS_CLOSED_CONVERTED = 'Closed - Converted';
 	public static final String CN_LEAD_STATUS_SALES_QUALIFIED = 'Sales Qualified';
 	public static final String CN_LEAD_STATUS_MKT_QUALIFIED = 'MKT Qualified';
+	// Added By Zhang Zhihao 2023-12-26 Release2 Start
+	public static final String CN_LEAD_STATUS_ASSIGNED = 'Assigned';
+	// Added By Zhang Zhihao 2023-12-26 Release2 Start
+	
+	//
+	public static final String CN_LEAD_SOURCE_ECOMMERCE ='E-Commerce';
 
 	public static final String CN_Custom_Notification_API_NAME = 'CN_Sinodis_Notification';
 	// Added By Jessica Wang 2021-07-21 Release2 End
@@ -323,6 +352,8 @@ public without sharing class Constants {
 	public static final String CN_SALES_TEAM_NAME_KA = 'KA';
 	public static final String CN_SALES_TEAM_NAME_DS = 'DS';
 	public static final String CN_SALES_TEAM_NAME_WS = 'WS';
+	public static final String CN_SALES_TEAM_NAME_QSR = 'QSR';
+	public static final String CN_SALES_TEAM_NAME_B2B = 'B2B';
 	public static final String CN_SR_SHARING_ROWCAUSE_EDIT = 'Edit';
 	public static final String CN_SR_SHARING_ACCESSLEVEL_MANUAL = 'Manual';
 
@@ -338,7 +369,16 @@ public without sharing class Constants {
 	public static final String CN_CM_TYPE_ACCOUNT = 'Account';
 	public static final String CN_CM_TYPE_CONTACT = 'Contact';
 	public static final String CN_CM_TYPE_LEAD = 'Lead';
+	//add by leo start
+	public static Boolean CAMPAIGNMEMBER_TRIGGER_ON = true;
+	public static Boolean CN_CAMPAIGNMEMBER_UPSERT_TO_MG_HANDLER_TRIGGER_ON = true;
+	public static Integer SKIP_CAMPAIGN_VALUE = 0;
 
+	//Campaign
+	public static Boolean CAMPAIGN_TRIGGER_ON = true;
+	public static Boolean CN_CAMPAIGN_UPSERT_TO_MG_HANDLER_TRIGGER_ON = true;
+
+	//add by leo end
 
 	//User Sales Team
 	public static final String CN_SALES_TEAM1 = '900012';
@@ -430,7 +470,14 @@ public without sharing class Constants {
 	public static Boolean CN_CA_CREATOR_TO_OWNER_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_CA_PREVENT_DELETE_TRIGGER_ON = true;
 	public static Boolean CN_CA_SHARE_HANDLER_TRIGGER_ON = true;
+	// add by Zhang Zhihao 2023 11/7
+	public static Boolean CN_CA_CHECK_fIELD_INSERT_HANDLER_TRIGGER_ON= true;
+	// add by Zhang Zhihao 2023 11/7
 
+	// add by Zhang Zhihao 2023 11/7
+	public static final String CN_RECORD_TYPE_COMPLAINT= 'CN_Complaint';
+	public static final String CN_RECORD_TYPE_Non_Product= 'CN_Non_Product_Complaint';
+	// add by Zhang Zhihao 2023 11/7
 	public static final String CN_CA_RT_API_NAME_COMPLAINT = 'CN_Complaint';
 	public static final String CN_CA_STATUS_NEW = 'New';
 	public static final String CN_CA_STATUS_REJECTED = 'Rejected';
@@ -453,7 +500,13 @@ public without sharing class Constants {
 	public static final String CN_PROFILE_NAME_SALESLEADER = 'CN Sales Lead';
 	public static final String CN_PROFILE_NAME_ADMIN = 'System Administrator';
 	public static final String CN_PROFILE_NAME_INTEGRATION = 'System Integration';
+	// add by leo 2023.09.13
+	public static final String CN_PROFILE_NAME_SALES = 'CN Sales';
+	// add by leo 2023.09.13
 
+	// add by zhang zhihao 2023.12.28
+	public static final String CN_PROFILE_NAME_FOODQUALITY = 'CN Food Quality';
+	// add by zhang zhihao 2023.12.28
 	//Permission Set / Custom Permission
 	public static final String CN_CUSTOMPERMISSION_MRM = 'CN_Marketing_Reassign_Manager';
 
@@ -497,6 +550,13 @@ public without sharing class Constants {
 
 
 	// Added By Dezheng Du 2021-08-03 Release2 End
+
+	// Add by leo 2023.08.28
+	// CN_API_Call_Logger__c
+	public static final String CN_API_CALL_LOGGER = 'CN_Call_Logger';
+	// CN_Download_By_Url_Info__c
+	public static final String CN_DOWNLOAD_BY_URL_INFO_RECORD_TYPE = 'CN_File_Record';
+	// Add by leo 2023.08.28
 
 	//Product2 Trigger switch    
 	public static Boolean CN_PRODUCT_TRIGGER_ON = true;

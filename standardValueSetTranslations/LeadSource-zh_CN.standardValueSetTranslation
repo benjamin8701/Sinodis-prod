@@ -17,6 +17,10 @@
         <translation><!-- Digital Campaign --></translation>
     </valueTranslation>
     <valueTranslation>
+        <masterLabel>E-Commerce</masterLabel>
+        <translation><!-- E-Commerce --></translation>
+    </valueTranslation>
+    <valueTranslation>
         <masterLabel>FHC</masterLabel>
         <translation><!-- FHC --></translation>
     </valueTranslation>

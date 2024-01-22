@@ -82,6 +82,10 @@
         <label>销售办公室</label>
         <name>CN_Sales_Office__c</name>
         <picklistValues>
+            <masterLabel>B100-Tianjin</masterLabel>
+            <translation><!-- B100-Tianjin --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>K010-ShangHai</masterLabel>
             <translation><!-- K010-ShangHai --></translation>
         </picklistValues>
@@ -134,12 +138,20 @@
         <label>活动渠道</label>
         <name>Channel__c</name>
         <picklistValues>
+            <masterLabel>B2B</masterLabel>
+            <translation><!-- B2B --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>DS</masterLabel>
             <translation><!-- DS --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>KA</masterLabel>
             <translation><!-- KA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QSR</masterLabel>
+            <translation><!-- QSR --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>WS</masterLabel>

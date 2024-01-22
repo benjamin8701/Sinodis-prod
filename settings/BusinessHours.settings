@@ -60,7 +60,7 @@
     </holidays>
     <holidays>
         <businessHours>CN_BusinessHour</businessHours>
-        <description>National Day 03</description>
+        <description>National Day 01</description>
         <isRecurring>true</isRecurring>
         <name>10.1</name>
         <recurrenceDayOfMonth>1</recurrenceDayOfMonth>
@@ -75,8 +75,20 @@
         <name>10.2</name>
     </holidays>
     <holidays>
+        <activityDate>2024-10-02</activityDate>
+        <description>National Day 02</description>
+        <isRecurring>false</isRecurring>
+        <name>10.2</name>
+    </holidays>
+    <holidays>
         <activityDate>2023-10-03</activityDate>
         <description>National Day 05</description>
+        <isRecurring>false</isRecurring>
+        <name>10.3</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-10-03</activityDate>
+        <description>National Day 03</description>
         <isRecurring>false</isRecurring>
         <name>10.3</name>
     </holidays>
@@ -84,6 +96,12 @@
         <activityDate>2021-10-04</activityDate>
         <businessHours>CN_BusinessHour</businessHours>
         <description>National Day 02</description>
+        <isRecurring>false</isRecurring>
+        <name>10.4</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-10-04</activityDate>
+        <description>National Day 04</description>
         <isRecurring>false</isRecurring>
         <name>10.4</name>
     </holidays>
@@ -101,6 +119,12 @@
         <name>10.5</name>
     </holidays>
     <holidays>
+        <activityDate>2024-10-05</activityDate>
+        <description>National Day 05</description>
+        <isRecurring>false</isRecurring>
+        <name>10.5</name>
+    </holidays>
+    <holidays>
         <activityDate>2023-10-05</activityDate>
         <description>National Day 07</description>
         <isRecurring>false</isRecurring>
@@ -110,6 +134,12 @@
         <activityDate>2021-10-06</activityDate>
         <businessHours>CN_BusinessHour</businessHours>
         <description>National Day 03</description>
+        <isRecurring>false</isRecurring>
+        <name>10.6</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-10-06</activityDate>
+        <description>National Day 06</description>
         <isRecurring>false</isRecurring>
         <name>10.6</name>
     </holidays>
@@ -127,6 +157,24 @@
         <name>10.7</name>
     </holidays>
     <holidays>
+        <activityDate>2024-10-07</activityDate>
+        <description>National Day 07</description>
+        <isRecurring>false</isRecurring>
+        <name>10.7</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-12-30</activityDate>
+        <description>New Year&apos;s Day 01</description>
+        <isRecurring>false</isRecurring>
+        <name>12.30</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-12-31</activityDate>
+        <description>New Year&apos;s Day 02</description>
+        <isRecurring>false</isRecurring>
+        <name>12.31</name>
+    </holidays>
+    <holidays>
         <activityDate>2023-04-05</activityDate>
         <description>Tomb Sweeping Day</description>
         <isRecurring>false</isRecurring>
@@ -139,7 +187,19 @@
         <name>5.1</name>
     </holidays>
     <holidays>
+        <activityDate>2024-05-01</activityDate>
+        <description>Labor Day 01</description>
+        <isRecurring>false</isRecurring>
+        <name>5.1</name>
+    </holidays>
+    <holidays>
         <activityDate>2023-05-02</activityDate>
+        <description>Labor Day 02</description>
+        <isRecurring>false</isRecurring>
+        <name>5.2</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-05-02</activityDate>
         <description>Labor Day 02</description>
         <isRecurring>false</isRecurring>
         <name>5.2</name>
@@ -149,6 +209,30 @@
         <description>Labor Day 03</description>
         <isRecurring>false</isRecurring>
         <name>5.3</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-05-03</activityDate>
+        <description>Labor Day 03</description>
+        <isRecurring>false</isRecurring>
+        <name>5.3</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-05-04</activityDate>
+        <description>Labor Day 04</description>
+        <isRecurring>false</isRecurring>
+        <name>5.4</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-05-05</activityDate>
+        <description>Labor Day 05</description>
+        <isRecurring>false</isRecurring>
+        <name>5.5</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-06-10</activityDate>
+        <description>Dragon Boat Festival</description>
+        <isRecurring>false</isRecurring>
+        <name>6.10</name>
     </holidays>
     <holidays>
         <activityDate>2021-06-14</activityDate>
@@ -168,6 +252,24 @@
         <description>Dragon Boat Festival 02</description>
         <isRecurring>false</isRecurring>
         <name>6.23</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-09-15</activityDate>
+        <description>Mid-Autumn Festival 01</description>
+        <isRecurring>false</isRecurring>
+        <name>9.15</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-09-16</activityDate>
+        <description>Mid-Autumn Festival  02</description>
+        <isRecurring>false</isRecurring>
+        <name>9.16</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-09-17</activityDate>
+        <description>Mid-Autumn Festival  03</description>
+        <isRecurring>false</isRecurring>
+        <name>9.17</name>
     </holidays>
     <holidays>
         <activityDate>2021-09-20</activityDate>
@@ -242,6 +344,72 @@
         <description>Chinese New Year 07</description>
         <isRecurring>false</isRecurring>
         <name>Chinese New Year 1.27</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-02-10</activityDate>
+        <description>Chinese New Year 01</description>
+        <isRecurring>false</isRecurring>
+        <name>Chinese New Year 2.10</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-02-11</activityDate>
+        <description>Chinese New Year 02</description>
+        <isRecurring>false</isRecurring>
+        <name>Chinese New Year 2.11</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-02-12</activityDate>
+        <description>Chinese New Year 03</description>
+        <isRecurring>false</isRecurring>
+        <name>Chinese New Year 2.12</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-02-13</activityDate>
+        <description>Chinese New Year 04</description>
+        <isRecurring>false</isRecurring>
+        <name>Chinese New Year 2.13</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-02-14</activityDate>
+        <description>Chinese New Year 05</description>
+        <isRecurring>false</isRecurring>
+        <name>Chinese New Year 2.14</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-02-15</activityDate>
+        <description>Chinese New Year 06</description>
+        <isRecurring>false</isRecurring>
+        <name>Chinese New Year 2.15</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-02-16</activityDate>
+        <description>Chinese New Year 07</description>
+        <isRecurring>false</isRecurring>
+        <name>Chinese New Year 2.16</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-02-17</activityDate>
+        <description>Chinese New Year 08</description>
+        <isRecurring>false</isRecurring>
+        <name>Chinese New Year 2.17</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-04-04</activityDate>
+        <description>Tomb Sweeping Day01</description>
+        <isRecurring>false</isRecurring>
+        <name>Tomb Sweeping Day4.4</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-04-05</activityDate>
+        <description>Tomb Sweeping Day02</description>
+        <isRecurring>false</isRecurring>
+        <name>Tomb Sweeping Day4.5</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-04-06</activityDate>
+        <description>Tomb Sweeping Day03</description>
+        <isRecurring>false</isRecurring>
+        <name>Tomb Sweeping Day4.6</name>
     </holidays>
     <holidays>
         <activityDate>2021-05-08</activityDate>

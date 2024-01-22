@@ -55,6 +55,10 @@
             <translation><!-- 5CCE2304 – CCE Sample --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>5CCE2404 – CCE Sample</masterLabel>
+            <translation><!-- 5CCE2404 – CCE Sample --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>5TMK2104 – TM sample</masterLabel>
             <translation><!-- 5TMK2104 – TM sample --></translation>
         </picklistValues>

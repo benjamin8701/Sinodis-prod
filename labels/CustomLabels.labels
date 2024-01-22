@@ -813,6 +813,20 @@
         <value>This lead had already generated change request.</value>
     </labels>
     <labels>
+        <fullName>CN_Lead_New_Lead_Notification_Body</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Lead_New_Lead_Notification_Body</shortDescription>
+        <value>新线索名称：</value>
+    </labels>
+    <labels>
+        <fullName>CN_Lead_New_Lead_Notification_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_Lead_New_Lead_Notification_Title</shortDescription>
+        <value>您有一条新的线索需要处理</value>
+    </labels>
+    <labels>
         <fullName>CN_Lead_Not_Sales_Qualified</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -1638,5 +1652,51 @@ Send Notify Email Successfully</value>
         <protected>false</protected>
         <shortDescription>CN_ShipTo_Change_Request</shortDescription>
         <value>New Ship To Party Change Request</value>
+    </labels>
+    <labels>
+        <fullName>CN_ShipTo_Changed_Notification_Body</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_ShipTo_Changed_Notification_Body</shortDescription>
+        <value>You have new ChangeRequest</value>
+    </labels>
+    <labels>
+        <fullName>CN_ShipTo_Changed_Notification_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CN_ShipTo_Changed_Notification_Title</shortDescription>
+        <value>ShipTo ChangeRequest</value>
+    </labels>
+    <labels>
+        <fullName>EM_Container_Base_AgentLeaveAnnouncement_04I1m0000008Oba_5442018</fullName>
+        <categories>EmbeddedMessaging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EM_Container_Base_AgentLeaveAnnouncement_04I1m0000008Oba_5442018</shortDescription>
+        <value>Participant left</value>
+    </labels>
+    <labels>
+        <fullName>EM_Container_Base_HeaderAnnouncementTransferRequestSucce_04I1y0000004CRg_5565035</fullName>
+        <categories>EmbeddedMessaging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EM_Container_Base_HeaderAnnouncementTransferRequestSucce_04I1y0000004CRg_5565035</shortDescription>
+        <value>Transferring...</value>
+    </labels>
+    <labels>
+        <fullName>EM_Container_Base_ParticipantLeaveText_04I1m0000008Oba_8853220</fullName>
+        <categories>EmbeddedMessaging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EM_Container_Base_ParticipantLeaveText_04I1m0000008Oba_8853220</shortDescription>
+        <value>{0} left</value>
+    </labels>
+    <labels>
+        <fullName>EM_Container_Base_ParticipantLeaveText_04I5h000000LARc_3087526</fullName>
+        <categories>EmbeddedMessaging</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EM_Container_Base_ParticipantLeaveText_04I5h000000LARc_3087526</shortDescription>
+        <value>{0} left</value>
     </labels>
 </CustomLabels>

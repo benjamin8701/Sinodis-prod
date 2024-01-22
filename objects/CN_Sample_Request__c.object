@@ -306,6 +306,11 @@
                     <default>false</default>
                     <label>5CCE2304 – CCE Sample</label>
                 </value>
+                <value>
+                    <fullName>5CCE2404 – CCE Sample</fullName>
+                    <default>false</default>
+                    <label>5CCE2404 – CCE Sample</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -600,6 +605,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
     &apos;K030&apos;,&apos;K030-ShenZhen&apos;,
     &apos;K040&apos;,&apos;K040-GuangZhou&apos;,
     &apos;K050&apos;,&apos;K050-ChengDu&apos;,
+    &apos;B100&apos;,&apos;B100-Tianjin&apos;,
     &apos;&apos;
 )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -802,6 +808,8 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <columns>CN_Sample_Request_Cost__c</columns>
         <columns>CN_Sample_Request_Status__c</columns>
         <columns>CREATED_DATE</columns>
+        <columns>CN_Creator_Name__c</columns>
+        <columns>CN_Approved_Date__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -868,6 +876,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>5CCE2304 %E2%80%93 CCE Sample</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5CCE2404 %E2%80%93 CCE Sample</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -956,6 +968,10 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>5CCE2304 %E2%80%93 CCE Sample</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5CCE2404 %E2%80%93 CCE Sample</fullName>
                 <default>false</default>
             </values>
             <values>

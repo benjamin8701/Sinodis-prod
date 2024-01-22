@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <customApplications>
+        <description xsi:nil="true"/>
+        <label><!-- Messaging --></label>
+        <name>CN_Messaging_APP</name>
+    </customApplications>
+    <customApplications>
+        <description xsi:nil="true"/>
         <label><!-- Sinodis --></label>
         <name>CN_Savencia_Sinodis</name>
     </customApplications>
@@ -467,6 +473,14 @@
     <customLabels>
         <label><!-- CN_Lead_Has_Change_Request --></label>
         <name>CN_Lead_Has_Change_Request</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Lead_New_Lead_Notification_Body --></label>
+        <name>CN_Lead_New_Lead_Notification_Body</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_Lead_New_Lead_Notification_Title --></label>
+        <name>CN_Lead_New_Lead_Notification_Title</name>
     </customLabels>
     <customLabels>
         <label><!-- CN_Lead_Not_Sales_Qualified --></label>
@@ -940,6 +954,30 @@
         <label><!-- CN_ShipTo_Change_Request --></label>
         <name>CN_ShipTo_Change_Request</name>
     </customLabels>
+    <customLabels>
+        <label><!-- CN_ShipTo_Changed_Notification_Body --></label>
+        <name>CN_ShipTo_Changed_Notification_Body</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CN_ShipTo_Changed_Notification_Title --></label>
+        <name>CN_ShipTo_Changed_Notification_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- EM_Container_Base_AgentLeaveAnnouncement_04I1m0000008Oba_5442018 --></label>
+        <name>EM_Container_Base_AgentLeaveAnnouncement_04I1m0000008Oba_5442018</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- EM_Container_Base_HeaderAnnouncementTransferRequestSucce_04I1y0000004CRg_5565035 --></label>
+        <name>EM_Container_Base_HeaderAnnouncementTransferRequestSucce_04I1y0000004CRg_5565035</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- EM_Container_Base_ParticipantLeaveText_04I1m0000008Oba_8853220 --></label>
+        <name>EM_Container_Base_ParticipantLeaveText_04I1m0000008Oba_8853220</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- EM_Container_Base_ParticipantLeaveText_04I5h000000LARc_3087526 --></label>
+        <name>EM_Container_Base_ParticipantLeaveText_04I5h000000LARc_3087526</name>
+    </customLabels>
     <customTabs>
         <label><!-- Mass Change Account --></label>
         <name>CN_Mass_Change_Account_Owner_Tab</name>
@@ -979,6 +1017,14 @@
     <flowDefinitions>
         <flows/>
         <fullName>CN_Lead_Created</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>CN_Messaging_Flow_Route</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>CN_Notify_Chef_By_Email</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
