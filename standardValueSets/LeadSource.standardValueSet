@@ -72,8 +72,33 @@
         <label>Road Show</label>
     </standardValue>
     <standardValue>
+        <fullName>Customer Recommend</fullName>
+        <default>false</default>
+        <label>Customer Recommend</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cold Visit</fullName>
+        <default>false</default>
+        <label>Cold Visit</label>
+    </standardValue>
+    <standardValue>
         <fullName>E-Commerce</fullName>
         <default>false</default>
         <label>E-Commerce</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Public Demo</fullName>
+        <default>false</default>
+        <label>Public Demo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Brand Activity</fullName>
+        <default>false</default>
+        <label>Brand Activity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Expositions</fullName>
+        <default>false</default>
+        <label>Expositions</label>
     </standardValue>
 </StandardValueSet>

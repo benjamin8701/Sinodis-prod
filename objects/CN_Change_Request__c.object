@@ -205,11 +205,6 @@
                     <label>Website</label>
                 </value>
                 <value>
-                    <fullName>Social Media Network</fullName>
-                    <default>false</default>
-                    <label>Social Media Network</label>
-                </value>
-                <value>
                     <fullName>Marketing Campaign</fullName>
                     <default>false</default>
                     <label>Marketing Campaign</label>
@@ -258,6 +253,32 @@
                     <fullName>E-Commerce</fullName>
                     <default>false</default>
                     <label>E-Commerce</label>
+                </value>
+                <value>
+                    <fullName>Social Media</fullName>
+                    <default>false</default>
+                    <label>Social Media</label>
+                </value>
+                <value>
+                    <fullName>Network</fullName>
+                    <default>false</default>
+                    <label>Network</label>
+                </value>
+                <value>
+                    <fullName>Livestreaming</fullName>
+                    <default>false</default>
+                    <label>Livestreaming</label>
+                </value>
+                <value>
+                    <fullName>Road Show</fullName>
+                    <default>false</default>
+                    <label>Road Show</label>
+                </value>
+                <value>
+                    <fullName>Social Media Network</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Social Media Network</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -5889,11 +5910,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                     <label>Website</label>
                 </value>
                 <value>
-                    <fullName>Social Media Network</fullName>
-                    <default>false</default>
-                    <label>Social Media Network</label>
-                </value>
-                <value>
                     <fullName>Marketing Campaign</fullName>
                     <default>false</default>
                     <label>Marketing Campaign</label>
@@ -5942,6 +5958,32 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                     <fullName>E-Commerce</fullName>
                     <default>false</default>
                     <label>E-Commerce</label>
+                </value>
+                <value>
+                    <fullName>Social Media</fullName>
+                    <default>false</default>
+                    <label>Social Media</label>
+                </value>
+                <value>
+                    <fullName>Network</fullName>
+                    <default>false</default>
+                    <label>Network</label>
+                </value>
+                <value>
+                    <fullName>Livestreaming</fullName>
+                    <default>false</default>
+                    <label>Livestreaming</label>
+                </value>
+                <value>
+                    <fullName>Road Show</fullName>
+                    <default>false</default>
+                    <label>Road Show</label>
+                </value>
+                <value>
+                    <fullName>Social Media Network</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Social Media Network</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -8982,10 +9024,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Sponsorship Event</fullName>
                 <default>false</default>
             </values>
@@ -10586,10 +10624,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Public Demo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Social Media Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11751,7 +11785,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11767,7 +11809,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13358,7 +13404,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13374,7 +13428,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14524,7 +14582,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14540,7 +14606,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16131,7 +16201,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16147,7 +16225,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17301,7 +17383,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17317,7 +17407,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -18916,7 +19010,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -18932,7 +19034,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -20102,7 +20208,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -20118,7 +20232,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -21709,7 +21827,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -21725,7 +21851,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22891,10 +23021,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Sponsorship Event</fullName>
                 <default>false</default>
             </values>
@@ -24495,10 +24621,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Public Demo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Social Media Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25664,10 +25786,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Sponsorship Event</fullName>
                 <default>false</default>
             </values>
@@ -27268,10 +27386,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Public Demo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Social Media Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28436,7 +28550,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28452,7 +28574,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -30051,7 +30177,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -30067,7 +30201,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -31252,10 +31390,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Sponsorship Event</fullName>
                 <default>false</default>
             </values>
@@ -32864,10 +32998,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
             </values>
             <values>
                 <fullName>Public Demo</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Social Media Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -34033,7 +34163,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -34049,7 +34187,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -35640,7 +35782,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -35656,7 +35806,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -36822,10 +36976,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Sponsorship Event</fullName>
                 <default>false</default>
             </values>
@@ -38429,10 +38579,6 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Sponsorship Event</fullName>
                 <default>false</default>
             </values>
@@ -39583,7 +39729,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -39599,7 +39753,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -41198,7 +41356,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -41214,7 +41380,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -42380,7 +42550,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -42396,7 +42574,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -43987,7 +44169,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -44003,7 +44193,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -45153,7 +45347,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -45169,7 +45371,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -46760,7 +46966,15 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
+                <fullName>Livestreaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Marketing Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -46776,7 +46990,11 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
                 <default>false</default>
             </values>
             <values>
-                <fullName>Social Media Network</fullName>
+                <fullName>Road Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
                 <default>false</default>
             </values>
             <values>

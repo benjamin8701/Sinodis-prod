@@ -46,7 +46,7 @@ public class CN_ShipTo_Send_Mg_Handler_Test {
 		TestDataFactory testFactory = new TestDataFactory();
 		testFactory.makeFactoryAccount();
 		Account acc = [SELECT Id,CN_Invoicing_Address_and_Phone__c,CN_Delivery_Plant__c,CN_Province_CN__c,CN_City_CN__c, Name,CN_Invoicing_Address_EN__c, CN_MG_Account_ID__c FROM Account WHERE CN_MG_Account_ID__c = '1'];
-		acc.CN_Account_Source__c = 'social media network';
+		acc.CN_Account_Source__c = 'Customer Service Hotline';
 		update acc;
 
 		CN_Ship_to_Party__c shipTo = new CN_Ship_to_Party__c(
@@ -103,7 +103,7 @@ public class CN_ShipTo_Send_Mg_Handler_Test {
 		TestDataFactory testFactory = new TestDataFactory();
 		testFactory.makeFactoryAccount();
 		Account acc = [SELECT Id,CN_Invoicing_Address_and_Phone__c,CN_Delivery_Plant__c,CN_Province_CN__c,CN_City_CN__c, Name,CN_Invoicing_Address_EN__c, CN_MG_Account_ID__c FROM Account WHERE CN_MG_Account_ID__c = '1'];
-		acc.CN_Account_Source__c = 'social media network';
+		acc.CN_Account_Source__c = 'Customer Service Hotline';
 		update acc;
 
 		CN_Ship_to_Party__c shipToParty =  [select id,Name  from CN_Ship_to_Party__c WHERE CN_ShipTo_Address_ID__c = '1'];

@@ -1189,7 +1189,19 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>Brand Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>CIIE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Recommend</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -1202,6 +1214,10 @@
             </values>
             <values>
                 <fullName>E-Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expositions</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -1226,6 +1242,10 @@
             </values>
             <values>
                 <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Demo</fullName>
                 <default>false</default>
             </values>
             <values>
