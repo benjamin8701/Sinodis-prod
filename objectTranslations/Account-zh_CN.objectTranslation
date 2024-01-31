@@ -99,8 +99,16 @@
             <translation><!-- FHC --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Livestreaming</masterLabel>
+            <translation><!-- Livestreaming --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Marketing Campaign</masterLabel>
             <translation><!-- Marketing Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network</masterLabel>
+            <translation><!-- Network --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Other Trade show</masterLabel>
@@ -115,8 +123,12 @@
             <translation><!-- Public Demo --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Social Media Network</masterLabel>
-            <translation><!-- Social Media Network --></translation>
+            <masterLabel>Road Show</masterLabel>
+            <translation><!-- Road Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Sponsorship Event</masterLabel>

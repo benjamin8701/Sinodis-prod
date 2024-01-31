@@ -5,8 +5,20 @@
         <translation><!-- Bakery China --></translation>
     </valueTranslation>
     <valueTranslation>
+        <masterLabel>Brand Activity</masterLabel>
+        <translation><!-- Brand Activity --></translation>
+    </valueTranslation>
+    <valueTranslation>
         <masterLabel>CIIE</masterLabel>
         <translation><!-- CIIE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cold Visit</masterLabel>
+        <translation><!-- Cold Visit --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Customer Recommend</masterLabel>
+        <translation><!-- Customer Recommend --></translation>
     </valueTranslation>
     <valueTranslation>
         <masterLabel>Customer Service Hotline</masterLabel>
@@ -19,6 +31,10 @@
     <valueTranslation>
         <masterLabel>E-Commerce</masterLabel>
         <translation><!-- E-Commerce --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Expositions</masterLabel>
+        <translation><!-- Expositions --></translation>
     </valueTranslation>
     <valueTranslation>
         <masterLabel>FHC</masterLabel>
@@ -43,6 +59,10 @@
     <valueTranslation>
         <masterLabel>Others</masterLabel>
         <translation><!-- Others --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Public Demo</masterLabel>
+        <translation><!-- Public Demo --></translation>
     </valueTranslation>
     <valueTranslation>
         <masterLabel>Road Show</masterLabel>
