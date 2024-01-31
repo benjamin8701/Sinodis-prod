@@ -46,7 +46,7 @@ public class CN_Contact_Send_Mg_Mark_Handler_Test {
         TestDataFactory testFactory = new TestDataFactory();
         testFactory.makeFactoryAccount();
         Account account = [SELECT Id, Name, CN_MG_Account_ID__c FROM Account WHERE CN_MG_Account_ID__c = '1'];
-        account.CN_Account_Source__c = 'social media network';
+        account.CN_Account_Source__c = 'Customer Service Hotline';
         update account;
 
         Contact con = new Contact();
@@ -105,7 +105,7 @@ public class CN_Contact_Send_Mg_Mark_Handler_Test {
         TestDataFactory testFactory = new TestDataFactory();
         testFactory.makeFactoryAccount();
         Account account = [SELECT Id, Name, CN_MG_Account_ID__c FROM Account WHERE CN_MG_Account_ID__c = '1'];
-        account.CN_Account_Source__c = 'social media network';
+        account.CN_Account_Source__c = 'Customer Service Hotline';
         update account;
 
         Contact contact =  [select id,Name,CN_MG_Contact_Id__c  from Contact WHERE CN_MG_Contact_ID__c = '1'];
