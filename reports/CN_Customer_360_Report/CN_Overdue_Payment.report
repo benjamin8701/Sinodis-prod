@@ -85,7 +85,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Reminder 1,Reminder 2,Reminder 3,Blocked,Postpone to Block</value>
+            <value>,Blocked,Postpone to Block,Reminder 1,Reminder 2,Reminder 3</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
