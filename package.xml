@@ -3,10 +3,8 @@
     <types>
         <members>CN_Acc_Cal_LatestOrder_SCH_Test</members>
         <members>CN_Acc_Send_To_SAP_LC_Ctrl_Test</members>
-        <members>CN_Acc_Send_To_SAP_LC_Ctrl_Test</members>
         <members>CN_Account_Address_Change_Handler</members>
         <members>CN_Account_Approve_Aging_Handler</members>
-        <members>CN_Account_Approve_Aging_Handler_Test</members>
         <members>CN_Account_Approve_Aging_Handler_Test</members>
         <members>CN_Account_Calculate_LatestOrder_Batch</members>
         <members>CN_Account_Calculate_LatestOrder_SCH</members>
@@ -21,15 +19,12 @@
         <members>CN_Account_Generate_ShipTo_Handler</members>
         <members>CN_Account_Inactive_To_Mg_Callout</members>
         <members>CN_Account_New_ConRequest_LC_Ctrl_Test</members>
-        <members>CN_Account_New_ConRequest_LC_Ctrl_Test</members>
         <members>CN_Account_New_Contact_Request_LC_Ctrl</members>
-        <members>CN_Account_New_ShipTo_LC_Ctrl_Test</members>
         <members>CN_Account_New_ShipTo_LC_Ctrl_Test</members>
         <members>CN_Account_New_ShipTo_Request_LC_Ctrl</members>
         <members>CN_Account_Populate_Approver_Handler</members>
         <members>CN_Account_Populate_Fields_Handler</members>
         <members>CN_Account_Prevent_Delete_Handler</members>
-        <members>CN_Account_Prevent_Delete_Handler_Test</members>
         <members>CN_Account_Prevent_Delete_Handler_Test</members>
         <members>CN_Account_Prevent_Edit_Approved_Handler</members>
         <members>CN_Account_Related_Fields_Check</members>
@@ -43,8 +38,6 @@
         <members>CN_Account_TM_REPORT_Handler</members>
         <members>CN_Account_TM_REPORT_Handler_Test</members>
         <members>CN_Arrival_Reminder_Upsert_Rest</members>
-        <members>CN_Arrival_Reminder_Upsert_Rest</members>
-        <members>CN_Arrival_Reminder_to_Mg_Callout</members>
         <members>CN_Arrival_Reminder_to_Mg_Callout</members>
         <members>CN_BU_Prevent_Delete_Handler</members>
         <members>CN_BU_Prevent_Delete_Handler_Test</members>
@@ -68,12 +61,9 @@
         <members>CN_CR_Approved_Result_To_Mg_Test</members>
         <members>CN_CR_Change_RecordType_Handler</members>
         <members>CN_CR_Change_RecordType_Handler_Test</members>
-        <members>CN_CR_Change_RecordType_Handler_Test</members>
         <members>CN_CR_Check_Fields_Change_Handler</members>
         <members>CN_CR_Check_Fields_Change_Handler_Test</members>
-        <members>CN_CR_Check_Fields_Change_Handler_Test</members>
         <members>CN_CR_Check_Fields_Handler</members>
-        <members>CN_CR_Check_Fields_Handler_Test</members>
         <members>CN_CR_Check_Fields_Handler_Test</members>
         <members>CN_CR_Contact_Auto_Processing_Batch</members>
         <members>CN_CR_Contact_Billing_Upsert_Rest</members>
@@ -85,7 +75,6 @@
         <members>CN_CR_Populate_Approver_Handler</members>
         <members>CN_CR_Populate_Approver_Handler_Test</members>
         <members>CN_CR_Prevent_Delete_Handler</members>
-        <members>CN_CR_Prevent_Delete_Handler_Test</members>
         <members>CN_CR_Prevent_Delete_Handler_Test</members>
         <members>CN_CR_Prevent_Duplicate_CR_Handler</members>
         <members>CN_CR_Send_To_SAP_LC_Ctrl</members>
@@ -104,13 +93,10 @@
         <members>CN_CST_Populate_Owner_SCH</members>
         <members>CN_CTA_Approve_Aging_Handler</members>
         <members>CN_CTA_Approve_Aging_Handler_Test</members>
-        <members>CN_CTA_Approve_Aging_Handler_Test</members>
         <members>CN_CTA_Generate_CR_Handler</members>
-        <members>CN_CTA_Generate_CR_Handler_Test</members>
         <members>CN_CTA_Generate_CR_Handler_Test</members>
         <members>CN_CTA_Populate_Account_Handler</members>
         <members>CN_CTA_Populate_Approver_Hander</members>
-        <members>CN_CTA_Populate_Approver_Hander_Test</members>
         <members>CN_CTA_Populate_Approver_Hander_Test</members>
         <members>CN_CTA_Populate_Fields_Handler</members>
         <members>CN_CTA_Populate_FinanceMDM_Handler</members>
@@ -118,7 +104,6 @@
         <members>CN_Campaign_Generate_Opp_LC_Ctrl</members>
         <members>CN_Campaign_Generate_Opp_LC_Ctrl_Test</members>
         <members>CN_Case_Populate_Status_Handler_Test</members>
-        <members>CN_Case_Share_Handler</members>
         <members>CN_Case_Share_Handler</members>
         <members>CN_Case_Share_Handler_Test</members>
         <members>CN_Chef_Assigned_Reset_WorkDate_Handler</members>
@@ -147,27 +132,19 @@
         <members>CN_Complaint_Resolved_LC_Ctrl</members>
         <members>CN_Contact_Change_Request_LC_Ctrl</members>
         <members>CN_Contact_Convert_From_Lead_Handler</members>
-        <members>CN_Contact_Convert_From_Lead_Handler</members>
         <members>CN_Contact_Convert_From_Lead_Test</members>
         <members>CN_Contact_Prevent_Delete_Handler</members>
         <members>CN_Contact_Prevent_Delete_Handler_Test</members>
-        <members>CN_Contact_Prevent_Delete_Handler_Test</members>
-        <members>CN_Contact_Registered_Insert_Rest</members>
         <members>CN_Contact_Registered_Insert_Rest</members>
         <members>CN_Contact_Registered_Insert_Rest_Test</members>
         <members>CN_Contact_Send_Mg_Batch</members>
-        <members>CN_Contact_Send_Mg_Batch</members>
-        <members>CN_Contact_Send_Mg_Mark_Handler</members>
         <members>CN_Contact_Send_Mg_Mark_Handler</members>
         <members>CN_Contact_Send_Mg_Mark_Handler_Test</members>
         <members>CN_Contact_Send_Mg_SCH</members>
-        <members>CN_Contact_Send_Mg_SCH</members>
         <members>CN_Contact_Send_Mg_SCH_Test</members>
-        <members>CN_Contact_Type_Check_Handler</members>
         <members>CN_Contact_Type_Check_Handler</members>
         <members>CN_Contact_Type_Check_Handler_Test</members>
         <members>CN_Contact_Update_FinAREmail_Handler</members>
-        <members>CN_Contact_Upsert_To_Mg_Callout</members>
         <members>CN_Contact_Upsert_To_Mg_Callout</members>
         <members>CN_Contact_Upsert_To_Mg_Test</members>
         <members>CN_Contact_Write_Back_To_Lead_Handler</members>
@@ -194,13 +171,9 @@
         <members>CN_Group_Send_To_SAP_LC_Ctrl</members>
         <members>CN_Group_Send_To_SAP_LC_Ctrl_Test</members>
         <members>CN_HelperClass_WS</members>
-        <members>CN_HelperClass_WS</members>
-        <members>CN_LeadUpsert_Rest</members>
         <members>CN_LeadUpsert_Rest</members>
         <members>CN_LeadUpsert_Rest_Test</members>
         <members>CN_Lead_MKT_Assigned_Handler</members>
-        <members>CN_Lead_MKT_Assigned_Handler</members>
-        <members>CN_Lead_MKT_Assigned_Handler_Test</members>
         <members>CN_Lead_MKT_Assigned_Handler_Test</members>
         <members>CN_Lead_New_ConRequest_LC_Ctrl_Test</members>
         <members>CN_Lead_New_Contact_Request_LC_Ctrl</members>
@@ -225,7 +198,6 @@
         <members>CN_Opportunity_Populate_Fields_Handler</members>
         <members>CN_OrderTreeUpsert_WS</members>
         <members>CN_OrderTreeUpsert_WS_Test</members>
-        <members>CN_OrderTreeUpsert_WS_Test</members>
         <members>CN_PresetPrice_Effect_Batch</members>
         <members>CN_PresetPrice_Effect_Batch_SCH</members>
         <members>CN_PresetPrice_Effect_Batch_Test</members>
@@ -247,10 +219,8 @@
         <members>CN_QuoteItem_Promotion_Link_Handler</members>
         <members>CN_QuoteItem_Validation_Handler</members>
         <members>CN_QuoteLineItem_Trigger_Test</members>
-        <members>CN_QuoteLineItem_Trigger_Test</members>
         <members>CN_Quote_AcceptORDeny_All_Items_LC_Ctrl</members>
         <members>CN_Quote_Accept_All_Items_LC_Ctrl_Test</members>
-        <members>CN_Quote_Apply_LC_Ctrl</members>
         <members>CN_Quote_Apply_LC_Ctrl</members>
         <members>CN_Quote_Approval_Reminder_Handler</members>
         <members>CN_Quote_Fin_AcceptOrDeny_All_LC_Ctrl</members>
@@ -259,7 +229,6 @@
         <members>CN_Quote_Generate_Quote_Prom_Handler</members>
         <members>CN_Quote_Notify_Finance_Template_Ctrl</members>
         <members>CN_Quote_Notify_Finance_Test</members>
-        <members>CN_Quote_Populate_Approver_Handler</members>
         <members>CN_Quote_Populate_Approver_Handler</members>
         <members>CN_Quote_Populate_Fields_Handler</members>
         <members>CN_Quote_Populate_Fields_Handler_Test</members>
@@ -298,7 +267,6 @@
         <members>CN_Sample_Product_Get_LC_Ctrl</members>
         <members>CN_Sample_Product_Get_LC_Ctrl_Test</members>
         <members>CN_ShipTo_Prevent_Delete_Handler</members>
-        <members>CN_ShipTo_Prevent_Delete_Handler_Test</members>
         <members>CN_ShipTo_Prevent_Delete_Handler_Test</members>
         <members>CN_ShipTo_Send_Mg_Handler</members>
         <members>CN_ShipTo_Send_Mg_Handler_Test</members>
@@ -623,7 +591,6 @@
         <members>CN_Chef_Request__c-CN MKT_CCE Demo Request</members>
         <members>CN_Chef_Request__c-CN Marketing development Request</members>
         <members>CN_Chef_Request__c-CN Self-Chef Demo Request</members>
-        <members>CN_Chef_Request__c-CN Self-Chef Demo Request</members>
         <members>CN_Chef_Request__c-Chef Request Layout</members>
         <members>CN_Chef_UT_Item__c-Chef UT Item Layout</members>
         <members>CN_Chef_UT_OFF__c-Chef UT OFF Layout</members>
@@ -644,7 +611,6 @@
         <members>CN_Download_By_Url_Info__c-CN_Download_By_Url_Info Layout</members>
         <members>CN_Group__c-Group Layout</members>
         <members>CN_Internal_Employee__c-CN Internal Employee Layout</members>
-        <members>CN_Messaging_Setting__mdt-CN_Messaging_Setting_Layout</members>
         <members>CN_Messaging_Setting__mdt-CN_Messaging_Setting_Layout</members>
         <members>CN_Order_Reason__c-Order Reason Layout</members>
         <members>CN_Payment_History__c-Payment History Layout</members>
@@ -685,7 +651,6 @@
         <members>OpportunityLineItem-Opportunity Product Layout</members>
         <members>Pricebook2-CN Price Book Layout</members>
         <members>PricebookEntry-CN Price Book Entry Layout</members>
-        <members>Product2-CN Product Layout</members>
         <members>Product2-CN Product Layout</members>
         <members>Quote-CN Sinodis Quote Layout</members>
         <members>Quote-CN Sinodis Quote Layout - Finance MDM</members>
@@ -807,7 +772,6 @@
         <members>Account.CN_Account_Request_New_Contact</members>
         <members>Account.CN_Account_Request_New_Ship_To_Party</members>
         <members>Account.CN_Account_Send</members>
-        <members>Account.CN_Account_Send</members>
         <members>Account.CN_Account_Status</members>
         <members>Account.CN_Account_Type</members>
         <members>Account.CN_Account_Update_Request</members>
@@ -854,7 +818,6 @@
         <members>Case.CN_SendEmail</members>
         <members>Case.CN_Submit_Complaint</members>
         <members>Contact.CN_Contact_Update_Request</members>
-        <members>Contact.CN_MessagingSession_AC_Contact</members>
         <members>Contact.CN_MessagingSession_AC_Contact</members>
         <members>Lead.CN_New_Contact_Request</members>
         <members>Lead.CN_Update_Contact_Request</members>
