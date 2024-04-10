@@ -11,7 +11,8 @@
         
         let updateStatusToClosedAction = component.get("c.updateStatusToClosed"); 
         updateStatusToClosedAction.setParams({
-            "recordId" : component.get("v.recordId")
+            "recordId" : component.get("v.recordId"),
+            "feedBack" : component.get("v.feedBack")
         });
         let updateStatusToClosedActionPromise = helper.callServerAction(component, updateStatusToClosedAction);
         updateStatusToClosedActionPromise.then(function(_returnValue){

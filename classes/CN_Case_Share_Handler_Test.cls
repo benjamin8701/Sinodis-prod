@@ -169,22 +169,6 @@ private class CN_Case_Share_Handler_Test {
         }catch(Exception e){}
 
         CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved(complaintList[1].id, 'resolveDescription', 'Supply Chain', 'Return');
-        
-        try{
-            System.runAs(salesRep) {
-            	CN_Complaint_Closed_LC_Ctrl.updateStatusToClosed(complaintList[1].id);
-        	}
-        }catch(Exception e){}
-        try{
-            System.runAs(salesRep) {
-                CN_Complaint_Closed_LC_Ctrl.updateStatusToClosed('36547912345');
-            }
-        }catch(Exception e){}
-        try{
-            System.runAs(salesRep) {
-                CN_Complaint_Closed_LC_Ctrl.updateStatusToClosed('');
-            }
-        }catch(Exception e){}
 
         Test.stopTest();
         

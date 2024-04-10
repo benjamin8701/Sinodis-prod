@@ -20,6 +20,9 @@ private class CN_SOItem_Populate_CampaignP_Batch_Test {
     private static void CN_SOItem_Populate_CampaignP_Batch_Test() {
         TestDataFactory testFactory = new TestDataFactory();
         List<Account> accListFactory = testFactory.makeFactoryAccount();
+        //add by Zhangzhihao  Create a TalendSetting 2024/4/6
+        testFactory.makeTalendSetting();    
+        //add by Zhangzhihao  Create a TalendSetting 2024/4/6
 
         List<User> userList = [SELECT Id, LastName FROM User WHERE lastName in ('Sales1', 'Sales3', 'ChefManager', 'Chef', 'CCE1_KA')];
         Map<String, User> lastNameUserMap = new Map<String, User>();
