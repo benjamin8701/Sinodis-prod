@@ -51,13 +51,18 @@ public without sharing class CN_Complaint_Populate_Status_Handler implements Tri
                     && ownerIdSet_Group.contains(((Case)Trigger.OldMap.get(comp.Id)).OwnerId)
                     && !Constants.CN_CA_STATUS_REJECTED.equals(comp.Status)
                     && !Constants.CN_CA_STATUS_RESOLVED.equals(comp.Status)
-                    && !Constants.CN_CA_STATUS_NEW.equals(comp.Status)){
-                comp.Status = Constants.CN_CA_STATUS_ACCEPTED;
-            }else if(!ownerIdSet_Group.contains(comp.OwnerId)
+                    //add by Zhang Zhihao The new status can also be clicked accept
+                    // && !Constants.CN_CA_STATUS_NEW.equals(comp.Status)
+                    //add by Zhang Zhihao The new status can also be clicked accept
+                    ){              
+                    comp.Status = Constants.CN_CA_STATUS_ACCEPTED;
+            }
+            else if(!ownerIdSet_Group.contains(comp.OwnerId)
                     && !ownerIdSet_Group.contains(((Case)Trigger.OldMap.get(comp.Id)).OwnerId)
                     &&( Constants.CN_CA_STATUS_REJECTED.equals(((Case)Trigger.OldMap.get(comp.Id)).Status) || Constants.CN_CA_STATUS_NEW.equals(((Case)Trigger.OldMap.get(comp.Id)).Status))){
                 comp.addError(system.label.CN_Complaint_Assign_Queue_Check);
-            }else if(comp.OwnerId != ((Case)Trigger.OldMap.get(comp.Id)).OwnerId 
+            }
+            else if(comp.OwnerId != ((Case)Trigger.OldMap.get(comp.Id)).OwnerId 
                     && comp.Status == ((Case)Trigger.OldMap.get(comp.Id)).Status
                     && !Constants.CN_CA_STATUS_ASSIGNED.equals(((Case)Trigger.OldMap.get(comp.Id)).Status)){
                 comp.addError(system.label.CN_Complaint_Mannual_Assign_Check);

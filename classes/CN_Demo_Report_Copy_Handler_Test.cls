@@ -20,6 +20,9 @@ private class CN_Demo_Report_Copy_Handler_Test {
     private static void handleDemoReportForAccountTest() {
         TestDataFactory testFactory = new TestDataFactory();
         List<Account> accListFactory = testFactory.makeFactoryAccount();
+        //add by Zhangzhihao  Create a TalendSetting 2024/4/6
+        testFactory.makeTalendSetting();    
+        //add by Zhangzhihao  Create a TalendSetting 2024/4/6
         List<User> userList = [SELECT Id, LastName FROM User WHERE lastName in ('Sales1', 'Sales3', 'ChefManager', 'Chef')];
         Map<String, User> lastNameUserMap = new Map<String, User>();
         for(User usr: userList) {
@@ -111,6 +114,9 @@ private class CN_Demo_Report_Copy_Handler_Test {
     private static void handleDemoReportForCampaignTest() {
         TestDataFactory testFactory = new TestDataFactory();
         testFactory.makeCustomSetting();
+        //add by Zhangzhihao  Create a TalendSetting 2024/4/6
+        testFactory.makeTalendSetting();    
+        //add by Zhangzhihao  Create a TalendSetting 2024/4/6
         List<User> userList = [SELECT Id, LastName FROM User WHERE lastName in ('Sales1', 'Sales3', 'ChefManager', 'Chef', 'CCE1_KA')];
         Map<String, User> lastNameUserMap = new Map<String, User>();
         for(User usr: userList) {

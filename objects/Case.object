@@ -184,16 +184,16 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Complaint_Page_Layout</content>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Case_Record_Page</content>
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Complaint_Page_Layout</content>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Case_Record_Page</content>
         <formFactor>Small</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
@@ -204,6 +204,18 @@
     </actionOverrides>
     <businessProcesses>
         <fullName>CN_CS_Support_Process</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>CN_Non_Product_Support_Process</fullName>
         <isActive>true</isActive>
         <values>
             <fullName>Closed</fullName>
@@ -319,6 +331,16 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Actual_Return_Consistent_Status__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is the actual return consistent</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Appraise__c</fullName>
         <externalId>false</externalId>
         <label>Appraise</label>
@@ -354,6 +376,17 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_CS_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <label>CS Feedback</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
         <fullName>CN_Cancel_Button__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -386,12 +419,25 @@
     <fields>
         <fullName>CN_Created_by_Me__c</fullName>
         <externalId>false</externalId>
-        <formula>CreatedById =  $User.Id</formula>
+        <formula>CreatedById =  $User.Id || CN_Submitter__c = $User.Id</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Created by Me</label>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CN_Customer_Claim_Amount_CNY__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Claim Amount CNY</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CN_Customer_Code__c</fullName>
@@ -406,12 +452,38 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Customer_Compensation__c</fullName>
+        <description>赔偿要求</description>
+        <externalId>false</externalId>
+        <label>Customer Compensation</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Customer_Name__c</fullName>
         <externalId>false</externalId>
         <formula>Account.Name</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Customer Name</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_DN_Date__c</fullName>
+        <description>配送时间</description>
+        <externalId>false</externalId>
+        <label>Delivery Note Date</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -463,6 +535,19 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_EN_Name__c</fullName>
+        <description>产品英文名称</description>
+        <externalId>false</externalId>
+        <label>EN Name</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_End_Customer__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -487,6 +572,83 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>CN_Excel_File_link__c</fullName>
+        <description>Url field to store excel file which is generated from interface.</description>
+        <externalId>false</externalId>
+        <label>Excel File Link</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>CN_Excel_Generation_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Excel Generation Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CN_Expiry_Date__c</fullName>
+        <description>保质期至</description>
+        <externalId>false</externalId>
+        <label>Expiry Date</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Foreign_Matter__c</fullName>
+        <description>异物问题</description>
+        <externalId>false</externalId>
+        <label>FOREIGN MATTER</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Protain</fullName>
+                    <default>false</default>
+                    <label>Protain</label>
+                </value>
+                <value>
+                    <fullName>Insect</fullName>
+                    <default>false</default>
+                    <label>Insect</label>
+                </value>
+                <value>
+                    <fullName>Metal</fullName>
+                    <default>false</default>
+                    <label>Metal</label>
+                </value>
+                <value>
+                    <fullName>Plastic</fullName>
+                    <default>false</default>
+                    <label>Plastic</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others(Please mantion the details)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
         <fullName>CN_If_Creator_Equals_Account_Sales__c</fullName>
         <externalId>false</externalId>
         <formula>CreatedById =  Account.OwnerId</formula>
@@ -507,6 +669,18 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CN_If_User_In_Group__c</fullName>
+        <externalId>false</externalId>
+        <formula>OR(CONTAINS( CN_User_In_Groups__c , $User.Id),
+   CONTAINS(CN_Roles_In_Groups__c , $User.Id )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>If User In Group</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Is_My_Case__c</fullName>
         <externalId>false</externalId>
         <formula>OR(
@@ -520,12 +694,302 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CN_Latest_Excel_Generate_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Latest Excel Generate Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CN_MG_Case_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>MG Case ID</label>
+        <length>33</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Need_Send_MG_Flag__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Need Send MG Flag</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Old_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Old Status records</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CN_Other__c</fullName>
+        <externalId>false</externalId>
+        <label>Others Issue</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CN_Other_problem_images__c</fullName>
+        <description>其他问题图片</description>
+        <externalId>false</externalId>
+        <label>Other problem images</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>CN_Package__c</fullName>
+        <description>包装问题</description>
+        <externalId>false</externalId>
+        <label>Package Issue</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Label</fullName>
+                    <default>false</default>
+                    <label>Label</label>
+                </value>
+                <value>
+                    <fullName>Damaged pre packaging</fullName>
+                    <default>false</default>
+                    <label>Damaged pre packaging</label>
+                </value>
+                <value>
+                    <fullName>Damaged outer box</fullName>
+                    <default>false</default>
+                    <label>Damaged outer box</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Deformed carton</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Deformed carton</label>
+                </value>
+                <value>
+                    <fullName>Faulty label</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Faulty label</label>
+                </value>
+                <value>
+                    <fullName>Faulty label attachment</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Faulty label attachment</label>
+                </value>
+                <value>
+                    <fullName>Faulty package</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Faulty package(hole, tear)</label>
+                </value>
+                <value>
+                    <fullName>No label</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>No label</label>
+                </value>
+                <value>
+                    <fullName>Package leaking</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Package leaking</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CN_Packaging_issue_image__c</fullName>
+        <description>包装问题图片</description>
+        <externalId>false</externalId>
+        <label>Packaging issue image</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
         <fullName>CN_Please_Confirm__c</fullName>
         <externalId>false</externalId>
         <formula>$Label.CN_Complaint_Submit_Message</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Please Confirm</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Product_Problem__c</fullName>
+        <description>产品</description>
+        <externalId>false</externalId>
+        <label>Product Issue</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Deterioration moldy</fullName>
+                    <default>false</default>
+                    <label>Deterioration moldy</label>
+                </value>
+                <value>
+                    <fullName>Product damage</fullName>
+                    <default>false</default>
+                    <label>Product damage</label>
+                </value>
+                <value>
+                    <fullName>Usage issues</fullName>
+                    <default>false</default>
+                    <label>Usage issues</label>
+                </value>
+                <value>
+                    <fullName>Foreign body</fullName>
+                    <default>false</default>
+                    <label>Foreign body</label>
+                </value>
+                <value>
+                    <fullName>Original box shortage</fullName>
+                    <default>false</default>
+                    <label>Original box shortage</label>
+                </value>
+                <value>
+                    <fullName>Size</fullName>
+                    <default>false</default>
+                    <label>Size</label>
+                </value>
+                <value>
+                    <fullName>Insufficient net content</fullName>
+                    <default>false</default>
+                    <label>Insufficient net content</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Sensory</fullName>
+                    <default>false</default>
+                    <label>Sensory</label>
+                </value>
+                <value>
+                    <fullName>Agglomeration</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Agglomeration</label>
+                </value>
+                <value>
+                    <fullName>Bad</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Bad</label>
+                </value>
+                <value>
+                    <fullName>Mould</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Mould</label>
+                </value>
+                <value>
+                    <fullName>Product texture or size</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Product texture or size</label>
+                </value>
+                <value>
+                    <fullName>Product visual issue</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Product visual issue</label>
+                </value>
+                <value>
+                    <fullName>Quantity missing in original box</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Quantity missing in original box</label>
+                </value>
+                <value>
+                    <fullName>Taste, Flavour issues</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Taste, Flavour issues</label>
+                </value>
+                <value>
+                    <fullName>Weight issue</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Weight issue</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CN_Product_issue_image__c</fullName>
+        <description>产品问题图片</description>
+        <externalId>false</externalId>
+        <label>Product issue image</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>CN_Production_Date__c</fullName>
+        <description>生产日期</description>
+        <externalId>false</externalId>
+        <label>Production Date</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -723,6 +1187,18 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>CN_Roles_In_Groups__c</fullName>
+        <externalId>false</externalId>
+        <label>CN Roles In Groups</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_SAP_Batch_Number__c</fullName>
         <externalId>false</externalId>
         <label>SAP Batch Number</label>
@@ -807,6 +1283,32 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_SKU_Specifications__c</fullName>
+        <externalId>false</externalId>
+        <label>SKU Specifications</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ML</fullName>
+                    <default>false</default>
+                    <label>ML</label>
+                </value>
+                <value>
+                    <fullName>L</fullName>
+                    <default>false</default>
+                    <label>L</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>CN_Sales_Office__c</fullName>
         <externalId>false</externalId>
         <formula>CASE(Account.Owner.CN_Sales_Office__c,&apos;B100&apos;,&apos;B100-TianJin&apos;, &apos;K010&apos;, &apos;K010-ShangHai&apos;, &apos;K020&apos;, &apos;K020-BeiJing&apos;,&apos;&apos;,&apos;K030-ShenZhen&apos;,&apos;K040&apos;,&apos;K040-GuangZhou&apos;,&apos;K050&apos;,&apos;K050-ChengDu&apos;,&apos;K060&apos;,&apos;K060-DaLian&apos;,&apos;&apos;)</formula>
@@ -831,6 +1333,21 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_Subject__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Name + &quot;-&quot; + Account.CN_Customer_Code__c + &quot;-&quot; + IF($RecordType.Name = &apos;CN_Complaint&apos;, &apos;产品投诉&apos;,
+    IF($RecordType.Name = &apos;CN_Non_Product_Complaint&apos;, &apos;非产品投诉&apos;,
+        IF($RecordType.Name = &apos;CN_Service_Online&apos;, &apos;在线服务投诉&apos;, &apos;DefaultFallbackValue&apos;)
+    )
+)</formula>
+        <label>Subject</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_Submit_Datetime__c</fullName>
         <externalId>false</externalId>
         <label>Submit Datetime</label>
@@ -841,6 +1358,19 @@
         <type>DateTime</type>
     </fields>
     <fields>
+        <fullName>CN_Submitter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>CN_Submitter</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>CN_Suggestion__c</fullName>
         <externalId>false</externalId>
         <label>Suggestion</label>
@@ -849,6 +1379,40 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>CN_User_In_Groups__c</fullName>
+        <externalId>false</externalId>
+        <label>User In Groups</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_WS_Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>WS-Account Name</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>CN_WS_Telephone__c</fullName>
+        <externalId>false</externalId>
+        <label>WS-Telephone</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>ClosedDate</fullName>
@@ -1059,14 +1623,20 @@
         <columns>CN_SKU_Quantity__c</columns>
         <columns>CASES.STATUS</columns>
         <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.CLOSED_DATE</columns>
         <columns>OWNER_NAME</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CASES.STATUS</field>
             <operation>equals</operation>
-            <value>Assigned,Accepted,Resolved</value>
+            <value>New,Assigned,Accepted,Resolved</value>
         </filters>
-        <label>All Open Complaints</label>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.CN_Complaint</value>
+        </filters>
+        <label>All Open Product Complaints</label>
     </listViews>
     <listViews>
         <fullName>CN_Canceled_Complaint</fullName>
@@ -1085,21 +1655,126 @@
         <label>Canceled Complaint</label>
     </listViews>
     <listViews>
+        <fullName>CN_Customer_Service</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <label>CN_Customer_Service</label>
+        <queue>CN_CS_Queue</queue>
+        <sharedTo>
+            <roleAndSubordinates>CN_CS</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CN_Feedback_Complaints</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.CN_Non_Product_Complaint</value>
+        </filters>
+        <label>Feedback Complaints</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_CS</roleAndSubordinates>
+            <roleAndSubordinates>CN_Finance_AR</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CN_Finance</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <label>CN_Finance</label>
+        <queue>CN_Finance</queue>
+        <sharedTo>
+            <roleAndSubordinates>CN_Finance_AR</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CN_Food_Quality</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <label>CN_Food_Quality</label>
+        <queue>CN_Food_Quality</queue>
+        <sharedTo>
+            <roleAndSubordinates>CN_Food_Quality</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CN_Legal</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <label>CN_Legal</label>
+        <queue>CN_QA_Queue</queue>
+        <sharedTo>
+            <roleAndSubordinates>CN_QA</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CN_Service_Online_Complaints</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.CN_Service_Online</value>
+        </filters>
+        <label>Service Online Complaints</label>
+        <sharedTo>
+            <roleAndSubordinates>CN_CS</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
         <fullName>MyCases</fullName>
         <columns>CASES.CASE_NUMBER</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.ORIGIN</columns>
         <columns>CASES.REASON</columns>
-        <columns>CN_Complaint_Date__c</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CN_Account_Sales_Team__c</columns>
-        <columns>CN_SKU_CODE__c</columns>
-        <columns>CN_SKU_Quantity__c</columns>
+        <columns>CN_Subject__c</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
         <columns>CASES.STATUS</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>CASES.CREATED_DATE</columns>
         <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.RECORDTYPE</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <columns>CASES.SUBJECT</columns>
         <filterScope>Mine</filterScope>
-        <label>My Complaints</label>
+        <label>My Case</label>
     </listViews>
     <listViews>
         <fullName>MyOpenCases</fullName>
@@ -1130,6 +1805,87 @@
         <active>true</active>
         <businessProcess>CN_Support_Process</businessProcess>
         <label>CN_Complaint</label>
+        <picklistValues>
+            <picklist>CN_Foreign_Matter__c</picklist>
+            <values>
+                <fullName>Insect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Protain</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Package__c</picklist>
+            <values>
+                <fullName>Damaged outer box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged pre packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Label</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Product_Problem__c</picklist>
+            <values>
+                <fullName>Deterioration moldy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foreign body</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insufficient net content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Original box shortage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product damage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sensory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Size</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usage issues</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>CN_Resolve_Comments__c</picklist>
             <values>
@@ -1165,7 +1921,22 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>CN_SKU_Specifications__c</picklist>
+            <values>
+                <fullName>L</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ML</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Origin</picklist>
+            <values>
+                <fullName>E-Commerce</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>Email</fullName>
                 <default>false</default>
@@ -1202,7 +1973,7 @@
             <picklist>Reason</picklist>
             <values>
                 <fullName>Quality</fullName>
-                <default>false</default>
+                <default>true</default>
             </values>
             <values>
                 <fullName>Supply Chain</fullName>
@@ -1226,10 +1997,51 @@
         </picklistValues>
     </recordTypes>
     <recordTypes>
-        <fullName>CN_Service_Online</fullName>
+        <fullName>CN_Non_Product_Complaint</fullName>
         <active>true</active>
-        <businessProcess>CN_CS_Support_Process</businessProcess>
-        <label>CN_Service_Online</label>
+        <businessProcess>CN_Non_Product_Support_Process</businessProcess>
+        <label>CN_Non_Product_Complaint</label>
+        <picklistValues>
+            <picklist>CN_Foreign_Matter__c</picklist>
+            <values>
+                <fullName>Insect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Protain</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Package__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Product_Problem__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usage issues</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>CN_Resolve_Comments__c</picklist>
             <values>
@@ -1261,6 +2073,185 @@
             </values>
             <values>
                 <fullName>Supply Chain</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_SKU_Specifications__c</picklist>
+            <values>
+                <fullName>L</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ML</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>E-Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Reported</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Logistics Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Issue</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>CN_Service_Online</fullName>
+        <active>true</active>
+        <businessProcess>CN_CS_Support_Process</businessProcess>
+        <label>CN_Service_Online</label>
+        <picklistValues>
+            <picklist>CN_Foreign_Matter__c</picklist>
+            <values>
+                <fullName>Insect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Protain</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Package__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Product_Problem__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usage issues</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Resolve_Comments__c</picklist>
+            <values>
+                <fullName>Explanation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sampling</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_Resolve_Reason__c</picklist>
+            <values>
+                <fullName>Brand Quality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supply Chain</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CN_SKU_Specifications__c</picklist>
+            <values>
+                <fullName>L</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ML</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1359,10 +2350,34 @@
 $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
 NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   ISPICKVAL(Reason , &quot;Quality&quot;), 
-  ISBLANK(ProductId)|| ISBLANK( CN_SAP_Batch_Number__c )  || ISBLANK( CN_SKU_Quantity__c )
+  ISBLANK(ProductId)|| ISBLANK( CN_SAP_Batch_Number__c )  || ISBLANK( CN_SKU_Quantity__c ) || ISBLANK( CN_DN__c )
 )</errorConditionFormula>
         <errorDisplayField>Reason</errorDisplayField>
-        <errorMessage>Please fill in Product, SKU Quantity and SAP Batch Number</errorMessage>
+        <errorMessage>Please fill in Product, SKU Quantity, DN and SAP Batch Number</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Case_Other_Mandatory_Check</fullName>
+        <active>true</active>
+        <description>Mandatory check for Other</description>
+        <errorConditionFormula>AND(
+  OR(
+    INCLUDES(CN_Product_Problem__c, &apos;Other&apos;),
+    INCLUDES(CN_Foreign_Matter__c, &apos;Others&apos;),
+    INCLUDES(CN_Package__c, &apos;Other&apos;)
+  ),
+  ISBLANK(CN_Other__c)
+)</errorConditionFormula>
+        <errorDisplayField>CN_Other__c</errorDisplayField>
+        <errorMessage>Please enter the reason for your complaint</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Case_Product_Package_Check</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+ RecordType.Name =&apos;CN_Complaint&apos;,
+ISBLANK(CN_Package__c),
+ISBLANK( CN_Product_Problem__c ) )</errorConditionFormula>
+        <errorMessage>Please enter packaging issue/product issue</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Complaint_Date</fullName>
@@ -1388,10 +2403,15 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   BEGINS(RecordType.DeveloperName,&quot;CN&quot;),
   $Profile.Name = &quot;CN C/S&quot;,
-  ISPICKVAL(CN_Resolve_Reason__c, &quot;Brand Quality&quot;)
+  OR(
+  ISPICKVAL(CN_Resolve_Reason__c, &quot;Brand Quality&quot;),
+  ISPICKVAL(CN_Resolve_Reason__c, &quot;Customer&quot;)
+  ),
+  ISPICKVAL(Status,&quot;Resolved&quot;)
+
 )</errorConditionFormula>
         <errorDisplayField>CN_Resolve_Reason__c</errorDisplayField>
-        <errorMessage>You can&apos;t set the Resolve Reason as &quot;Brand Quality&quot;.</errorMessage>
+        <errorMessage>You can&apos;t set the Resolve Reason as &quot;Brand Quality&quot; or &quot;Customer&quot;.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Complaint_Check_Reason_QA</fullName>
@@ -1407,6 +2427,15 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
         <errorMessage>You can&apos;t set the Resolve Reason as &quot;Customer Service&quot;.</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>CN_Complaint_Check_SKU_Quantity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND($Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+RecordType.Name =&apos;CN_Complaint&apos;,
+CN_SKU_Quantity__c = 0
+)</errorConditionFormula>
+        <errorMessage>You can&apos;t set the SKU quantity to 0.</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>CN_Complaint_Check_Status_Accepted</fullName>
         <active>true</active>
         <errorConditionFormula>AND(
@@ -1415,13 +2444,14 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   BEGINS(RecordType.DeveloperName,&quot;CN&quot;),
   NOT(ISNEW()),
   ISPICKVAL( PRIORVALUE(Status) , &apos;Accepted&apos;),
+  ISPICKVAL( Origin , &apos;E-Commerce&apos;),
   OR(
     AND(ISPICKVAL( Status, &apos;Resolved&apos;),NOT(CN_Resolved_Button__c)),
     NOT(OR(ISPICKVAL(Status, &apos;Accepted&apos;),ISPICKVAL(Status,&apos;Resolved&apos;)))
   )
 )</errorConditionFormula>
         <errorDisplayField>Status</errorDisplayField>
-        <errorMessage>You are not allowed to change the status manually.</errorMessage>
+        <errorMessage>You are not allowed to change the status manually</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Complaint_Check_Status_Assigned</fullName>
@@ -1472,9 +2502,11 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
     <validationRules>
         <fullName>CN_Complaint_Check_Status_New</fullName>
         <active>true</active>
-        <description>when update the record, prevent edit the status manually.</description>
+        <description>when update the record, prevent edit the status manually</description>
         <errorConditionFormula>AND(
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
+  NOT(RecordType.DeveloperName = &apos;CN_Service_Online&apos;),
+  NOT(ISPICKVAL( Origin , &apos;E-Commerce&apos;)),
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   BEGINS(RecordType.DeveloperName,&quot;CN&quot;),
   NOT(ISNEW()),
@@ -1483,10 +2515,11 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
     AND(ISPICKVAL( Status, &apos;Assigned&apos;),NOT(ISCHANGED( CN_Submit_Datetime__c ))),
     AND(ISPICKVAL( Status, &apos;Canceled&apos;),NOT(ISCHANGED( CN_Cancel_Button__c))),
     NOT(OR(ISPICKVAL(Status, &apos;New&apos;),ISPICKVAL(Status,&apos;Assigned&apos;),ISPICKVAL( Status, &apos;Canceled&apos;)))
-  )
+  ),
+  NOT(OR(ISPICKVAL(Status, &apos;Accepted&apos;),ISPICKVAL(Status,&apos;Rejected&apos;)))
 )</errorConditionFormula>
         <errorDisplayField>Status</errorDisplayField>
-        <errorMessage>You are not allowed to change the status manually.</errorMessage>
+        <errorMessage>You are not allowed to change the status manually</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Complaint_Check_Status_Rejected</fullName>
@@ -1498,12 +2531,12 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   ISPICKVAL( PRIORVALUE(Status) , &apos;Rejected&apos;),
   OR(
     AND(ISPICKVAL( Status, &apos;Assigned&apos;),NOT(ISCHANGED( CN_Submit_Datetime__c))),
-    AND(ISPICKVAL( Status, &apos;Canceled&apos;),NOT(ISCHANGED( CN_Cancel_Button__c))),
-    NOT(OR(ISPICKVAL(Status, &apos;Rejected&apos;),ISPICKVAL(Status,&apos;Assigned&apos;),ISPICKVAL( Status,&apos;Canceled&apos;)))
-  )
+    NOT(OR(ISPICKVAL(Status, &apos;Rejected&apos;),ISPICKVAL(Status,&apos;Assigned&apos;)))
+  ),  
+  NOT(ISPICKVAL(Status, &apos;Closed&apos;))
 )</errorConditionFormula>
         <errorDisplayField>Status</errorDisplayField>
-        <errorMessage>You are not allowed to change the status manually.</errorMessage>
+        <errorMessage>You are not allowed to change the status manually</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Complaint_Check_Status_Resolved</fullName>
@@ -1530,11 +2563,12 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   $Setup.Trigger_Switcher_Setting__c.EnableValidationRule__c,
   NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
   RecordType.DeveloperName == &apos;CN_Complaint&apos;,
-  NOT(CreatedById =  $User.Id),
+  NOT(CN_Submitter__c=  $User.Id),
   ISPICKVAL( Status , &apos;Closed&apos;) ,
+  ISPICKVAL( Origin , &apos;E-Commerce&apos;),
   NOT(ISPICKVAL( PRIORVALUE( Status ) , &apos;Closed&apos; ))
 )</errorConditionFormula>
-        <errorMessage>Only the creator can close the complaint.</errorMessage>
+        <errorMessage>Only the submitter can close the complaint.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Coplaint_Prevent_Edit_Assigned</fullName>
@@ -1557,6 +2591,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
     ISCHANGED(ProductId),
     ISCHANGED(CN_SKU_Quantity__c),
     ISCHANGED(CN_SAP_Batch_Number__c),
+    ISCHANGED(CN_DN__c),
     ISCHANGED(CN_QA_Compliant_Number__c)
   )
 )</errorConditionFormula>
@@ -1588,6 +2623,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
     ISCHANGED(ProductId),
     ISCHANGED(CN_SKU_Quantity__c),
     ISCHANGED(CN_SAP_Batch_Number__c),
+    ISCHANGED(CN_DN__c),
     ISCHANGED(CN_QA_Compliant_Number__c),
     ISCHANGED(CN_End_Customer__c)
   )
@@ -1620,6 +2656,7 @@ NOT(IF($Profile.Name = &quot;System Integration&quot;, TRUE, FALSE)),
     ISCHANGED(ProductId),
     ISCHANGED(CN_SKU_Quantity__c),
     ISCHANGED(CN_SAP_Batch_Number__c),
+    ISCHANGED(CN_DN__c),
     ISCHANGED(CN_QA_Compliant_Number__c)
   )
 )</errorConditionFormula>

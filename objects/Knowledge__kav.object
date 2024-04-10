@@ -22,7 +22,26 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
     <label>Knowledge</label>
+    <listViews>
+        <fullName>All_Knowledge</fullName>
+        <columns>ARTICLE_NUMBER</columns>
+        <columns>TITLE</columns>
+        <columns>PUBLISH_STATUS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>LANGUAGE</columns>
+        <columns>LAST_PUBLISHED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <listViews>
         <fullName>archived_articles</fullName>
         <columns>TITLE</columns>
@@ -81,5 +100,7 @@
         <label>Published Articles</label>
     </listViews>
     <pluralLabel>Knowledge</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts>
+        <excludedStandardButtons>MassAssignKnowledgeArticleVersion</excludedStandardButtons>
+    </searchLayouts>
 </CustomObject>

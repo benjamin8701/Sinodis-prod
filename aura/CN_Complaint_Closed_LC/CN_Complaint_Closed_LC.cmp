@@ -15,9 +15,11 @@
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 	<aura:attribute name="recordId" type="String"/>
     <aura:attribute name="showLoading" type="Boolean" default="false" />
+    <aura:attribute name="feedBack" type="String"/>
     <!--<aura:attribute name="modalContentMessage" type="String" default="Complaint has been closed!"/>-->
     <aura:attribute name="modalContentMessage" type="String" default="{!$Label.c.CN_Complaint_Closed_Message}"/>
     <aura:attribute name="confirmMsg" type="String" default="{!$Label.c.CN_Complaint_Closed_ConfirmMsg}"/>
+    <aura:attribute name="feedBackMsg" type="String" default="{!$Label.c.CN_Complaint_Feed_Back}"/>
     
     <header>
         <div class="modal-header slds-modal__header slds_size_1-of-1">           
@@ -31,6 +33,11 @@
                     {!v.modalContentMessage}
                  </div>
             </div>
+        </div>
+
+        <div>
+            <h4 >{!v.feedBackMsg}</h4>
+            <lightning:textarea value="{!v.feedBack}" />
         </div>
     </body>
     <footer>

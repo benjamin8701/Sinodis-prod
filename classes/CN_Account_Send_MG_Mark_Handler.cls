@@ -51,6 +51,13 @@ public class CN_Account_Send_MG_Mark_Handler implements Triggers.Handler{
 				newAcc.CN_Need_Send_MG_Flag__c = (Integer)newAcc.CN_Need_Send_MG_Flag__c | 1 << 1;
 				continue;
 			}
+			//add by ZhangZhiHao owner changes to push to EC
+			
+			else if (newAcc.OwnerId != oldAcc.OwnerId) {
+				newAcc.CN_Need_Send_MG_Flag__c = (Integer)newAcc.CN_Need_Send_MG_Flag__c | 1 << 1;
+				continue;
+			}
+			//add by ZhangZhiHao owner changes to push to EC
 
 		}
 

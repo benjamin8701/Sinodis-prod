@@ -257,8 +257,9 @@ public without sharing class Constants {
 	public static Boolean CN_LEAD_OWNER_CHANGED_CUSTOM_NOTIFICATION_TRIGGER_ON = true;
 	public static Boolean CN_LEAD_MKT_ASSIGNED_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_LEAD_STATUS_SEND_MG_HANDLER_TRIGGER_ON = true;
-
-	
+	//add by ZhangZhiHao 2024-3-19
+	public static Boolean CN_LEAD_INVITATION_OWNER_NOTIFY_TRIGGER_ON = true;
+	//add by ZhangZhiHao 2024-3-19
 	public static final String CN_LEAD_RT_API_NAME = 'CN_Lead';
 
 	public static final String CN_LEAD_STATUS_CLOSED_CONVERTED = 'Closed - Converted';
@@ -420,7 +421,9 @@ public without sharing class Constants {
 	public static Boolean CN_QUOTE_READY_VALIDATION_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_QUOTE_PROMOTION_LINK_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_QUOTE_SHARING_HANDLER_TRIGGER_ON = true;
-
+	//add by Zhang Zhihao  2024/2/23
+	public static Boolean CN_QUOTE_RELATION_QUOTE_CPPC_HANDLER_TRIGGER_ON  = true;
+	//add by Zhang Zhihao  2024/2/23
 	public static Integer CN_QUOTE_APPROVAL_REMINDER_HOURS = 8;
 	public static String CN_SHARING_REASON_MANUAL = 'Manual';
 
@@ -470,10 +473,19 @@ public without sharing class Constants {
 	public static Boolean CN_CA_CREATOR_TO_OWNER_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_CA_PREVENT_DELETE_TRIGGER_ON = true;
 	public static Boolean CN_CA_SHARE_HANDLER_TRIGGER_ON = true;
+	
+	//add by Zhang Zhihao 2024 1/14
+	public static Boolean CN_CA_SUBMITTER_TRIGGER_ON =true;
+	public static Boolean CN_CA_STATUS_CHANGE_NOTIFICATION_TRIGGER_ON = true;
+	//add by Zhang Zhihao 2024 1/14
 	// add by Zhang Zhihao 2023 11/7
 	public static Boolean CN_CA_CHECK_fIELD_INSERT_HANDLER_TRIGGER_ON= true;
+	//add by He Peng 2024 1.24
+	public static Boolean CN_CA_Offline_TRIGGER_ON= true;
 	// add by Zhang Zhihao 2023 11/7
-
+	//add by Zhang Zhihao 2024-01-16 start
+	public static final String CN_COMPLAINT_SOURCE_ECOMMERCE = 'E-Commerce';
+	//add by Zhang Zhihao 2024-01-16 end
 	// add by Zhang Zhihao 2023 11/7
 	public static final String CN_RECORD_TYPE_COMPLAINT= 'CN_Complaint';
 	public static final String CN_RECORD_TYPE_Non_Product= 'CN_Non_Product_Complaint';
@@ -504,6 +516,10 @@ public without sharing class Constants {
 	public static final String CN_PROFILE_NAME_SALES = 'CN Sales';
 	// add by leo 2023.09.13
 
+	// add by ZhangZhihao 2024.2.29
+	public static final String CN_PROFILE_NAME_SALES_STRING_LIST = 'CN CCE Sales MDM,CN Sales,CN Sales Lead,CN Sales Manager';
+	// add by ZhangZhihao 2024.2.29
+
 	// add by zhang zhihao 2023.12.28
 	public static final String CN_PROFILE_NAME_FOODQUALITY = 'CN Food Quality';
 	// add by zhang zhihao 2023.12.28
@@ -521,6 +537,8 @@ public without sharing class Constants {
 	public static Boolean OP_TRIGGER_ON = true;
 	public static Boolean CN_OP_TRIGGER_ON = true;
 	public static Boolean CN_OP_POPULATE_FIELDS_HANDLER_TRIGGER_ON = true;
+	public static Boolean CN_OP_RELATION_OPPTY_CPPC_HANDLER_TRIGGER_ON = true;
+
 
 	public static final String CN_OP_RT_API_NAME_NEW = 'CN_Opportunity';
 
@@ -561,5 +579,37 @@ public without sharing class Constants {
 	//Product2 Trigger switch    
 	public static Boolean CN_PRODUCT_TRIGGER_ON = true;
     public static Boolean CN_BRAND_OWNER_CHECK_HANDLER_TRIGGER_ON = true;
+	
+
+	// add by Zhang Zhihao 2024/1/17 Competitor_Product_Price_for_Customer Trigger
+	//Competitor_Product_Price_for_Customer
+	public static Boolean CPP_TRIGGER_ON  =true;
+	public static Boolean CN_CPP_TRIGGER_ON = true;
+
+	public static Boolean CN_CPP_ACCOUNT_NAME_ASSIGNMENT_HANDLER_TRIGGER_ON = true;
+	public static Boolean CN_CPP_FIELD_CHECK_HANDLER_TRIGGER_ON = false;
+	public static Boolean CN_CPP_Relation_CPPC_Oppty_Quote_Handler_TRIGGER_ON = false;
+
+	// add by Zhang Zhihao 2024/2/21 User Trigger
+	public static Boolean CN_CPP_Relation_CPPC_Oppty_Handler_TRIGGER_ON = true;
+	public static Boolean CN_CPP_Relation_CPPC_Quote_Handler_TRIGGER_ON = true;
+	public static String CN_MARKETING_OUT_CHANNEL = 'Standard Price Book';
+	// add by Zhang Zhihao 2024/2/21 User Trigger
+
+	// add by Zhang Zhihao 2024/1/17 Competitor_Product_Price_for_Customer Trigger
+
+	// add by Zhang Zhihao 2024/1/17 Competitor_Product Trigger
+	//Competitor_Product
+	public static Boolean CN_COMPETITOR_PRODUCT_TRIGGER_ON  =true;
+	public static Boolean CN_COMPETITOR_PRODUCT_DELETE_AND_EDIT_HANDLER_TRIGGER_ON =true;
+	public static Boolean CN_COMPETITOR_PRODUCT_FIELD_CHECK_HANDLER_TRIGGER_ON = false;
+
+
+	// add by Zhang Zhihao 2024/1/24 User Trigger
+	public static Boolean USER_TRIGGER_ON = true;
+	public static Boolean CN_USER_FIELD_EDIT_EMAIL_HANDLER_TRIGGER_ON = true;
+	public static String CN_SALES_PROFILE_Names = 'CN CCE Sales MDM,CN Sales,CN Sales Lead,CN Sales Manager,CN Sales MDM';
+	// add by Zhang Zhihao 2024/1/24 User Trigger
+
 	
 }

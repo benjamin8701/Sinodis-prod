@@ -25,8 +25,12 @@ public with sharing class CN_Complaint_Resolved_LC_Ctrl {
         }
         //Resolve Description ----by Shuqi
         List<Case> compList = [SELECT Id,
+                                        //Add by Zhang Zhihao 2023/1/14  Query submitter
+                                        CN_Submitter__c,
+                                        //Add by Zhang Zhihao 2023/1/14  Query submitter
                                         CreatedById,
                                         Status,
+                                        Origin,
                                         CN_Resolved_Button__c,
                                         CN_Resolve_Reason__c,
                                			CN_Resolve_Description__c
@@ -35,19 +39,37 @@ public with sharing class CN_Complaint_Resolved_LC_Ctrl {
         if(compList.isEmpty()) {
             throw new AuraHandledException(System.Label.CN_Complaint_Not_Found);
         }
-
         Case caseToUpdate = compList[0];
         if( Constants.CN_CA_STATUS_ACCEPTED.equals(caseToUpdate.Status)
-            && (Constants.CN_PROFILE_NAME_CS.equals(myProflieName) || Constants.CN_PROFILE_NAME_QA.equals(myProflieName) || Constants.CN_PROFILE_NAME_ADMIN.equals(myProflieName))
-            && resolveReason != null) 
+            && (Constants.CN_PROFILE_NAME_CS.equals(myProflieName) 
+            //add by Zhang zhihao Add simple food safety simple party 2023/12/28
+            || Constants.CN_PROFILE_NAME_QA.equals(myProflieName) 
+            //add by Zhang zhihao Add simple food safety simple party 2023/12/28
+            || Constants.CN_PROFILE_NAME_ADMIN.equals(myProflieName) 
+            || Constants.CN_PROFILE_NAME_FOODQUALITY.equals(myProflieName)
+            )
+            && resolveReason != null && Constants.CN_COMPLAINT_SOURCE_ECOMMERCE.equals(caseToUpdate.Origin)) 
         {
             caseToUpdate.Status = Constants.CN_CA_STATUS_RESOLVED;
-            caseToUpdate.OwnerId = caseToUpdate.CreatedById;
+            //Add by Zhang Zhihao 2023/1/14  Return to the submitter
+            caseToUpdate.OwnerId = caseToUpdate.CN_Submitter__c;
+             //Add by Zhang Zhihao 2023/1/14  Return to the submitter
             caseToUpdate.CN_Resolved_Button__c = true;
             caseToUpdate.CN_Resolve_Description__c = resolveDescription;
             caseToUpdate.CN_Resolve_Reason__c = resolveReason;
             caseToUpdate.CN_Resolve_Comments__c = resolveComments;
             
+        }//Add by He Peng Offline resolved => closed
+        else if(Constants.CN_CA_STATUS_ACCEPTED.equals(caseToUpdate.Status) 
+            && ((!Constants.CN_COMPLAINT_SOURCE_ECOMMERCE.equals(caseToUpdate.Origin)) 
+            || Constants.CN_PROFILE_NAME_SALES.equals(myProflieName))
+            && (resolveReason != null )){
+            caseToUpdate.Status = Constants.CN_CA_STATUS_CLOSED;
+            caseToUpdate.OwnerId = caseToUpdate.CN_Submitter__c;
+            caseToUpdate.CN_Resolved_Button__c = true;
+            caseToUpdate.CN_Resolve_Description__c = resolveDescription;
+            caseToUpdate.CN_Resolve_Reason__c = resolveReason;
+            caseToUpdate.CN_Resolve_Comments__c = resolveComments;
         }else if(caseToUpdate.CN_Resolve_Reason__c == null){
             throw new AuraHandledException(System.Label.CN_Complaint_ResolveReason_Null);
         }else{
@@ -99,7 +121,6 @@ public with sharing class CN_Complaint_Resolved_LC_Ctrl {
             //Resolve Description ----by Shuqi
             defaultDescription = complaint.CN_Resolve_Description__c;
         }
-        
         return new Map<String, Object>{
             'options_Reason' => options_Reason,
             'options_Comment' => options_Comment,

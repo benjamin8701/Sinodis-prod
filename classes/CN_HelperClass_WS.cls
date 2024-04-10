@@ -40,14 +40,7 @@ global without sharing class CN_HelperClass_WS {
                 }
                 when Picklist {
                     String strValue = String.valueOf(value);
-                    /*
-                    for (Schema.PicklistEntry item : filedDes.getPicklistValues()) {
-                        if (item.getLabel() == strValue) {
-                            obj.put(filedDes.getName(), item.getValue());
-                            break;
-                        }
-                    }
-                    //*/
+                 
                     obj.put(filedDes.getName(), strValue);
                 }
                 when Reference {
@@ -56,16 +49,16 @@ global without sharing class CN_HelperClass_WS {
                         Id newId = Id.valueOf(strValue);
                         obj.put(filedDes.getName(), newId);
                     } catch (Exception ex) {
-                        //System.debug('fieldName---' + filedDes.getName());
+                        
                         SObject sobjRed = filedDes.getReferenceTo()[0].newSObject();
                         for (Schema.SObjectField refField : filedDes.getReferenceTo()[0].getDescribe().fields.getMap().values()) {
-                            //System.debug('refField.getDescribe()---' + Json.serialize(filedDes.getReferenceTo().toString()));
+                           
                             if (refField.getDescribe().isExternalID()) {
                                 sobjRed.put(refField.getDescribe().getName(), strValue);
-                                //System.debug('sobjRed---' + sobjRed);
+                               
                             }
                         }
-                        //System.debug('for外sobjRed' + sobjRed);
+                        
                         obj.putSObject(filedDes.getRelationshipName(), sobjRed);
                     }
                 }
@@ -116,25 +109,30 @@ global without sharing class CN_HelperClass_WS {
             Map<String, Schema.SObjectField> fsMapFields = type.getDescribe().fields.getMap();
             List<SObject> listResultSObjs = new List<SObject>();
 
-            //创建转换容器 key:转换的字段名  value<需要转换的字段值，转换后的字段值>
+           
             Map<String,Map<Object,Object>> convert = new Map<String,Map<Object,Object>>();
             for(String fieldName : convertFieldsMap.keySet()){
                 Map<Object,Object> oneConvertList = new Map<Object, Object>();
                 convert.put(fieldName,oneConvertList);
             }
 
-            //遍历数据源
+           
             for (Map<String,Object> item : ltAPIMap) {
-                //遍历每个要转换的字段
+                
                 for(String fieldName :convert.keySet()){
+                    //modify by leo 2024.01.24 start
+                    if (item.get(fieldname) == null || String.valueOf(item.get(fieldname)) == ''){
+                        continue;
+                    }
+                    //modify by leo 2024.01.24 end
                     convert.get(fieldname).put(item.get(fieldname),null);
                 }
             }
 
-            //遍历需要查询的字段
+            
             for(String fieldName :convertFieldsMap.keySet()){
                 boolean isEdit = false;
-                //查询出sf系统对应的ID
+                
                 String queryString = 'SELECT ' + convertFieldsMap.get(fieldName).get('targetField') + ' ,' + convertFieldsMap.get(fieldName).get('field') + ' FROM ' + convertFieldsMap.get(fieldName).get('object') + ' WHERE ' + convertFieldsMap.get(fieldName).get('field') + ' IN ( ' ;
                 for (Object obj: convert.get(fieldName).keySet()){
                     if (obj != null && obj != ''){
@@ -142,40 +140,56 @@ global without sharing class CN_HelperClass_WS {
                         queryString +=  '\'' + obj + '\',';
                     }
                 }
+
+                //modify by leo 2024.01.24 start
+                List<SObject> res;
+                //modify by leo 2024.01.24 end
+
                 if(isEdit){
                     queryString = queryString.substring(0,queryString.length()-1) + ')';
+                    
+                    res= Database.query(queryString);
+                    System.debug('convertAPIMapToSObject:' + Json.serialize(res));
+
+                //modify by leo 2024.01.24 start
                 }else{
-                    continue;
+                    
+                    res = new List<SObject>();
                 }
-                System.debug('convertAPIMapToSObject:' + queryString);
-                List<SObject> res= Database.query(queryString);
-                System.debug('convertAPIMapToSObject:' + Json.serialize(res));
+                //modify by leo 2024.01.24 end
 
-                //将原数据与sfID做成对应关系
+               
                 for(SObject s:res){
-
-                    //如果是空的，就不进行替换了
+                    //modify by leo 2024.01.24 start
+                   
                     if(s.get(convertFieldsMap.get(fieldName).get('field')) == null || s.get(convertFieldsMap.get(fieldName).get('targetField')) == null ){
-                        continue;
+                        convert.get(fieldName).put(s.get(convertFieldsMap.get(fieldName).get('field')),null);
+                    }else{
+                       
+                        convert.get(fieldName).put(s.get(convertFieldsMap.get(fieldName).get('field')),s.get(convertFieldsMap.get(fieldName).get('targetField')));
                     }
-                    //convert.get(fieldName) 当前字段的list    key：需要替换的值  value：新的值
-                    convert.get(fieldName).put(s.get(convertFieldsMap.get(fieldName).get('field')),s.get(convertFieldsMap.get(fieldName).get('targetField')));
+                    //modify by leo 2024.01.24 end
                 }
-                //将原数据替换为sfID
+
+              
                 for (Map<String,Object> item  :ltAPIMap){
-//                    System.debug(JSON.serialize(item));
+
                     Object old = item.get(fieldName);
-//                    System.debug(fieldName + ' : ' + old);
+
                     if (old != null && old != '') {
                         if(convert.get(fieldName).get(old) != null){
                             item.put(fieldName,convert.get(fieldName).get(old));
                         }else{
                             item.remove(fieldName);
                         }
+                    //modify by leo 2024.01.24 start
+                    }else{
+                        item.remove(fieldName);
                     }
+                    //modify by leo 2024.01.24 end
                 }
             }
-            //替换工作执行结束
+            //The replacement job is complete
 
             for (Map<String,Object> item : ltAPIMap) {
                 SObject dealData = type.newSObject();
@@ -258,7 +272,7 @@ global without sharing class CN_HelperClass_WS {
         }
 
         public void Save() {
-            //log.Create_Time__c = Datetime.now(); not need
+           
             insert log;
         }
 

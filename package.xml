@@ -47,10 +47,53 @@
         <members>CN_Brand_Prevent_Delete_Handler_Test</members>
         <members>CN_Brand_Send_To_SAP_LC_Ctrl</members>
         <members>CN_Brand_Send_To_SAP_LC_Ctrl_Test</members>
+        <members>CN_CampaignMember_Upsert_To_Mg_Batch</members>
+        <members>CN_CampaignMember_Upsert_To_Mg_Callout</members>
+        <members>CN_CampaignMember_Upsert_To_Mg_Handler</members>
+        <members>CN_CampaignMember_Upsert_To_Mg_SCH</members>
+        <members>CN_CampaignMember_Upsert_To_Mg_SCH_Test</members>
+        <members>CN_CampaignMember_Upsert_To_Mg_Test</members>
+        <members>CN_Campaign_Generate_Opp_LC_Ctrl_Test</members>
+        <members>CN_Campaign_Upsert_To_Mg_Batch</members>
+        <members>CN_Campaign_Upsert_To_Mg_Callout</members>
+        <members>CN_Campaign_Upsert_To_Mg_Handler</members>
+        <members>CN_Campaign_Upsert_To_Mg_Handler_Test</members>
+        <members>CN_Campaign_Upsert_To_Mg_SCH</members>
+        <members>CN_Campaign_Upsert_To_Mg_SCH_Test</members>
+        <members>CN_Case_Cancel_Rest</members>
+        <members>CN_Case_Cancel_Rest_Test</members>
+        <members>CN_Case_Insert_Rest</members>
+        <members>CN_Case_Insert_Rest_Test</members>
+        <members>CN_Case_NP_Insert_Rest</members>
+        <members>CN_Case_NP_Insert_Rest_Test</members>
+        <members>CN_Case_Upsert_To_Mg_Batch</members>
+        <members>CN_Case_Upsert_To_Mg_Callout</members>
+        <members>CN_Case_Upsert_To_Mg_Callout_Test</members>
+        <members>CN_Case_Upsert_To_Mg_Handler</members>
+        <members>CN_Case_Upsert_To_Mg_Handler_Test</members>
+        <members>CN_Case_Upsert_To_Mg_SCH</members>
+        <members>CN_Case_Upsert_To_Mg_SCH_Test</members>
+        <members>CN_Case_Share_Handler_Test</members>
+        <members>CN_Case_Populate_Status_Handler_Test</members>
         <members>CN_CDL_Populate_Uploaded_Handler</members>
         <members>CN_CDL_Populate_Uploaded_Handler_Test</members>
         <members>CN_CD_Populate_Uploaded_Handler</members>
         <members>CN_CD_Populate_Uploaded_Handler_Test</members>
+        <members>CN_Complaint_Check_Field_Insert_Handler</members>
+        <members>CN_Complaint_Closed_LC_Ctrl</members>
+        <members>CN_Complaint_Closed_LC_Ctrl_Test</members>
+        <members>CN_Complaint_Offline_Handler</members>
+        <members>CN_Complaint_Populate_Status_Handler</members>
+        <members>CN_Complaint_Recall_LC_Ctrl</members>
+        <members>CN_Complaint_Recall_LC_Ctrl_Test</members>
+        <members>CN_Complaint_Rejected_LC_Ctrl</members>
+        <members>CN_Complaint_Rejected_LC_Ctrl_Test</members>
+        <members>CN_Complaint_Resolved_LC_Ctrl</members>
+        <members>CN_Complaint_Resolved_LC_Ctrl_Test</members>
+        <members>CN_Complaint_Status_Change_Notify</members>
+        <members>CN_Complaint_Status_Change_Notify_Test</members>
+        <members>CN_Complaint_Submitter_Handler</members>
+        <members>CN_Complaint_Submitter_Handler_Test</members>
         <members>CN_CONTACT_POPULATE_FIELD_HANDLER</members>
         <members>CN_CONTACT_POPULATE_FIELD_HANDLER_Test</members>
         <members>CN_CR_Approve_Aging_Handler</members>
@@ -66,6 +109,8 @@
         <members>CN_CR_Check_Fields_Handler</members>
         <members>CN_CR_Check_Fields_Handler_Test</members>
         <members>CN_CR_Contact_Auto_Processing_Batch</members>
+        <members>CN_CR_Contact_Auto_Processing_SCH</members>
+        <members>CN_CR_Contact_Auto_Processing_SCH_Test</members>
         <members>CN_CR_Contact_Billing_Upsert_Rest</members>
         <members>CN_CR_Contact_Billing_Upsert_Rest_Test</members>
         <members>CN_CR_Contact_Type_Check_Handler</members>
@@ -173,6 +218,8 @@
         <members>CN_HelperClass_WS</members>
         <members>CN_LeadUpsert_Rest</members>
         <members>CN_LeadUpsert_Rest_Test</members>
+        <members>CN_Lead_Invitation_Owner_Notify</members>
+        <members>CN_Lead_Invitation_Owner_Notify_Test</members>
         <members>CN_Lead_MKT_Assigned_Handler</members>
         <members>CN_Lead_MKT_Assigned_Handler_Test</members>
         <members>CN_Lead_New_ConRequest_LC_Ctrl_Test</members>
@@ -277,6 +324,8 @@
         <members>CN_Shipto_Change_Request_LC_Ctrl</members>
         <members>CN_Update_Offline_Contact_Ctrl</members>
         <members>CN_Update_Offline_Contact_Ctrl_Test</members>
+        <members>CN_User_Upsert_To_Mg_Batch</members>
+        <members>CN_User_Upsert_To_Mg_Batch_Test</members>
         <members>Constants</members>
         <members>Context</members>
         <members>CustomException</members>
@@ -576,6 +625,7 @@
         <members>CN_Brand__c-Brand Layout</members>
         <members>CN_Business_Unit__c-Business Unit Layout</members>
         <members>CN_Campaign_Product__c-Campaign Product Layout</members>
+        <members>CN_Case_SAP_Batch__c-CN Case Sap Batch Layout</members>
         <members>CN_Change_Request_Fields_Check__mdt-CN_Change_Request_Fields_Check Layout</members>
         <members>CN_Change_Request_Fields_Mapping__mdt-CN_Change_Request_Fields_Mapping Layout</members>
         <members>CN_Change_Request__c-CN Mass Change Account Finance AR Layout</members>
@@ -642,10 +692,13 @@
         <members>CampaignMemberStatus-Campaign Member Status Layout</members>
         <members>Case-CN Complaint Layout</members>
         <members>Case-CN online service Layout</members>
+        <members>Case-CN non-product Complaint Layout</members>
+        <members>Case-CN product Complaint Layout</members>
         <members>Contact-CN Sinodis Contact Layout</members>
         <members>Event-CN Sinodis Event Layout</members>
         <members>Event-CN Sinodis Visit Layout</members>
         <members>Global-Global Layout</members>
+        <members>Knowledge__kav-Knowledge Layout</members>
         <members>Lead-CN Lead Layout</members>
         <members>Opportunity-CN Opportunity Layout</members>
         <members>OpportunityLineItem-Opportunity Product Layout</members>
