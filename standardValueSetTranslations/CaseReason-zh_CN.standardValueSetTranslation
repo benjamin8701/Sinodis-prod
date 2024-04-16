@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <valueTranslation>
-        <masterLabel>Logistics Distribution</masterLabel>
+        <masterLabel>Logistics Issue</masterLabel>
         <translation>物流配送</translation>
     </valueTranslation>
     <valueTranslation>
-        <masterLabel>Order Dependent</masterLabel>
+        <masterLabel>Order Issue</masterLabel>
         <translation>订单相关</translation>
     </valueTranslation>
     <valueTranslation>
@@ -21,7 +21,7 @@
         <translation>退货问题</translation>
     </valueTranslation>
     <valueTranslation>
-        <masterLabel>Service Issues</masterLabel>
+        <masterLabel>Service Issue</masterLabel>
         <translation>服务问题</translation>
     </valueTranslation>
     <valueTranslation>

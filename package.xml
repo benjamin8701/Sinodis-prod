@@ -324,6 +324,7 @@
         <members>CN_Shipto_Change_Request_LC_Ctrl</members>
         <members>CN_Update_Offline_Contact_Ctrl</members>
         <members>CN_Update_Offline_Contact_Ctrl_Test</members>
+        <members>CN_User_Field_Edit_Email_Handler</members>
         <members>CN_User_Upsert_To_Mg_Batch</members>
         <members>CN_User_Upsert_To_Mg_Batch_Test</members>
         <members>Constants</members>

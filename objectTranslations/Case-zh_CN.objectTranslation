@@ -601,6 +601,10 @@
         <name>CN_Created_by_Me__c</name>
     </fields>
     <fields>
+        <label>反馈</label>
+        <name>CN_CS_Feedback__c</name>
+    </fields>
+    <fields>
         <label>客户代码</label>
         <name>CN_Customer_Code__c</name>
     </fields>
@@ -641,8 +645,72 @@
         <name>CN_Is_My_Case__c</name>
     </fields>
     <fields>
+        <label>其他 （描述）</label>
+        <name>CN_Other__c</name>
+    </fields>
+    <fields>
+        <label>包装问题</label>
+        <name>CN_Package__c</name>
+    <picklistValues>
+        <masterLabel>Damaged outer box</masterLabel>
+        <translation>外箱破损</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damaged pre packaging</masterLabel>
+        <translation>预包装破损(封口不严、有孔、漏气等)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Label</masterLabel>
+        <translation>标签</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>其他</translation>
+    </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Please Confirm --></label>
         <name>CN_Please_Confirm__c</name>
+    </fields>
+    <fields>
+        <label>产品问题</label>
+        <name>CN_Product_Problem__c</name>
+    <picklistValues>
+        <masterLabel>Deterioration moldy</masterLabel>
+        <translation>变质，发霉</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foreign body</masterLabel>
+        <translation>异物</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insufficient net content</masterLabel>
+        <translation>净含量不足</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Original box shortage</masterLabel>
+        <translation>原箱少货</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>其他</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product damage</masterLabel>
+        <translation>产品破损</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensory</masterLabel>
+        <translation>感官(如出油出水、结块，风味等)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Size</masterLabel>
+        <translation>尺寸</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Usage issues</masterLabel>
+        <translation>使用问题</translation>
+    </picklistValues>
     </fields>
     <fields>
         <label>QA投诉编号</label>
@@ -855,6 +923,10 @@
         <name>CN_Case_Check_Product_Info</name>
     </validationRules>
     <validationRules>
+        <errorMessage>请输入包装问题/产品问题</errorMessage>
+        <name>CN_Case_Product_Package_Check</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>投诉时间不能晚于今天。</errorMessage>
         <name>CN_Check_Complaint_Date</name>
     </validationRules>
@@ -865,6 +937,10 @@
     <validationRules>
         <errorMessage>您不能将解决结案原因设置为&quot;Customer Service&quot;。</errorMessage>
         <name>CN_Complaint_Check_Reason_QA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>您不能将SKU数量设置为0。</errorMessage>
+        <name>CN_Complaint_Check_SKU_Quantity</name>
     </validationRules>
     <validationRules>
         <errorMessage>您不能手动更改状态。</errorMessage>

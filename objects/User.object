@@ -374,6 +374,14 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>CN_Email_Verified_Need_Sync__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Email Verified Need Sync</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Is_Finance__c</fullName>
         <externalId>false</externalId>
         <formula>$Profile.Name = &quot;CN CFO&quot; ||  $Profile.Name = &quot;CN Finance AR&quot; || $Profile.Name = &quot;CN Finance Controlling&quot; || $Profile.Name = &quot;CN Finance MDM&quot;</formula>
@@ -459,6 +467,16 @@
         <fullName>CN_Sales_Team__c</fullName>
         <externalId>false</externalId>
         <label>Sales Team</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Target_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Target_Email</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>

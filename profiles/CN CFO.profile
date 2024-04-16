@@ -11363,15 +11363,19 @@
         <layout>CampaignMemberStatus-Campaign Member Status Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-CN Complaint Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-CN Complaint Layout</layout>
-        <recordType>Case.CN_Complaint</recordType>
+        <layout>Case-CN non-product Complaint Layout</layout>
+        <recordType>Case.CN_Non_Product_Complaint</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-CN online service Layout</layout>
         <recordType>Case.CN_Service_Online</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-CN product Complaint Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-CN product Complaint Layout</layout>
+        <recordType>Case.CN_Complaint</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contact-CN Sinodis Contact Layout</layout>
