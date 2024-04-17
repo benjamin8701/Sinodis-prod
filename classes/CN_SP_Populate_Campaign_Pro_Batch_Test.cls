@@ -19,6 +19,9 @@ private class CN_SP_Populate_Campaign_Pro_Batch_Test {
     @isTest
     private static void CN_SP_Populate_Campaign_Product_Batch_Test() {
         TestDataFactory testFactory = new TestDataFactory();
+         //add by Zhangzhihao  Create a TalendSetting 2024/4/6
+         testFactory.makeTalendSetting();    
+         //add by Zhangzhihao  Create a TalendSetting 2024/4/6
         List<Account> accListFactory = testFactory.makeFactoryAccount();
         List<User> userList = [SELECT Id, LastName FROM User WHERE lastName in ('Sales1', 'Sales3', 'ChefManager', 'Chef', 'CCE1_KA')];
         Map<String, User> lastNameUserMap = new Map<String, User>();

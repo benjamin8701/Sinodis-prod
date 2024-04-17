@@ -13,24 +13,26 @@
 @RestResource(urlMapping = '/AccountShipToAddressUpsert')
 global without sharing class CN_CR_ShipTo_Address_Upsert_Rest {
 
+	//add by ZhangZhihao Modify Required check newShipToIndirectAccount  2024/1/24
 	private static Set<String> SET_RequireFields_ShipTo_Address_Create = new Set<String> {
 		'newMGAccountID',
 		'newCityCN',
 		'newShipToContactName',
-		'newShipToIndirectAccount',
+		//'newShipToIndirectAccount',
 		'newShipToMobilePhone',
 		'newProvinceCN',
 		'newShipToTelephone',
 		'shipToAddressID',
 		'shipToCard'
 	};
-
+	//add by ZhangZhihao Modify Required check newShipToIndirectAccount 2024/1/24
+	//add by ZhangZhihao Modify Required check  newShipToIndirectAccount 2024/1/24
 	private static Set<String> SET_RequireFields_ShipTo_Address_Update = new Set<String> {
 		'newMGAccountID',
 		'mgAccountID',
 		'newCityCN',
 		'newShipToContactName',
-		'newShipToIndirectAccount',
+		//'newShipToIndirectAccount',
 		'newShipToMobilePhone',
 		'newProvinceCN',
 		'newShipToTelephone',
@@ -38,7 +40,7 @@ global without sharing class CN_CR_ShipTo_Address_Upsert_Rest {
 		'shipToAddressID',
 		'shipToCard'
 	};
-
+	//add by ZhangZhihao Modify Required check newShipToIndirectAccount  2024/1/24
 	private static Set<String> SET_RequireFields_ShipTo_Address_Inactive = new Set<String> {
 		'shipToAddressID',
 		'inactive'
