@@ -8466,6 +8466,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case.CN_CS_Feedback__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case.CN_Customer_Claim_Amount_CNY__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -8562,6 +8567,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.CN_Old_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.CN_Other__c</field>
         <readable>true</readable>
     </fieldPermissions>
 	<fieldPermissions>

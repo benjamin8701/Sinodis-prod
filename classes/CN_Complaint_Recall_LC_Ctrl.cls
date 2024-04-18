@@ -39,9 +39,12 @@ public without sharing class CN_Complaint_Recall_LC_Ctrl {
         if( Constants.CN_CA_STATUS_ASSIGNED.equals(caseToUpdate.Status)
         //Add by Zhang Zhihao 2023/1/14  The author may withdraw
         //&& userinfo.getUserId() == caseToUpdate.CreatedById) 
-        && userinfo.getUserId() == caseToUpdate.CN_Submitter__c) 
+        && (userinfo.getUserId() == caseToUpdate.CN_Submitter__c ||  
+        userinfo.getUserId() == caseToUpdate.CreatedById
+        )) 
         //Add by Zhang Zhihao 2023/1/14  The author may withdraw
         {
+            
             caseToUpdate.Status = Constants.CN_CA_STATUS_NEW;
             caseToUpdate.CN_Recall_Button__c = true;
             caseToUpdate.CN_Recall_Date__c = Datetime.now();
@@ -50,7 +53,11 @@ public without sharing class CN_Complaint_Recall_LC_Ctrl {
             if(Constants.CN_PROFILE_NAME_CS.equals(ProfileName)){
                 caseToUpdate.OwnerId = CSQueueId;
             }else{
-                caseToUpdate.OwnerId = caseToUpdate.CN_Submitter__c;
+                if(caseToUpdate.CN_Submitter__c!=null){
+                    caseToUpdate.OwnerId = caseToUpdate.CN_Submitter__c;
+                }else{
+                    caseToUpdate.OwnerId = caseToUpdate.CreatedById;
+                }
             }
             caseToUpdate.CN_Need_Send_MG_Flag__c = 0;
         }else{
@@ -69,5 +76,4 @@ public without sharing class CN_Complaint_Recall_LC_Ctrl {
             'errorMessage' => errorMessage
         };
     }
-    
 }

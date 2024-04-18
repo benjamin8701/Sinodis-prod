@@ -30,7 +30,8 @@ public with sharing class CN_Complaint_Check_Field_Insert_Handler implements Tri
         for (Case cases : (List<Case>)Trigger.new) {
             //add by He Peng 2024/2/28 service subject
             String RecordTypeName = recordTypeNameMap.get(cases.recordTypeId);
-            if(Constants.CN_RECORD_TYPE_COMPLAINT.equals(RecordTypeName)||
+            if((Constants.CN_RECORD_TYPE_COMPLAINT.equals(RecordTypeName)
+            &&Constants.CN_COMPLAINT_SOURCE_ECOMMERCE.equals(cases.Origin))||
             Constants.CN_RECORD_TYPE_Non_Product.equals(RecordTypeName)){
                 cases.Subject =cases.CN_Subject__c;
                 if(Constants.CN_RECORD_TYPE_COMPLAINT.equals(RecordTypeName)){
