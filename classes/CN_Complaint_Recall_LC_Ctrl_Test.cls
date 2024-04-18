@@ -60,6 +60,20 @@ public class CN_Complaint_Recall_LC_Ctrl_Test {
             CN_Complaint_Recall_LC_Ctrl.recallComplaint(cases.Id);
             }
         }catch(Exception e){}
+        try{
+            System.runAs(salesRep){
+                Case casetest2 = new Case();
+                casetest2.CN_MG_Case_Id__c = '2';
+                casetest2.Status = 'New';
+                insert casetest2;
+                Case cases = [select Id,CaseNumber,CN_MG_Case_Id__c,Status,CN_Actual_Return_Consistent_Status__c,CN_CS_Feedback__c from Case WHERE CN_MG_Case_Id__c = '2' LIMIT 1];
+                cases.Status = 'Assigned';
+                update cases;
+                cases.CN_Submitter__c = null;
+                update cases;
+            CN_Complaint_Recall_LC_Ctrl.recallComplaint(cases.Id);
+            }
+        }catch(Exception e){}
         Test.stopTest();
     }
 }

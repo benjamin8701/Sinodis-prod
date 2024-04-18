@@ -15,7 +15,6 @@ public with sharing class CN_Complaint_Resolved_LC_Ctrl {
         List<Profile> profileList = [SELECT Id, Name FROM Profile WHERE Id=:userinfo.getProfileId() LIMIT 1];
         String myProflieName = profileList[0].Name;
         String errorMessage = '';
-
         if(String.isBlank(recordId)) {
             throw new AuraHandledException(System.Label.CN_Complaint_Not_Found);
         }
@@ -52,7 +51,11 @@ public with sharing class CN_Complaint_Resolved_LC_Ctrl {
         {
             caseToUpdate.Status = Constants.CN_CA_STATUS_RESOLVED;
             //Add by Zhang Zhihao 2023/1/14  Return to the submitter
-            caseToUpdate.OwnerId = caseToUpdate.CN_Submitter__c;
+            if(caseToUpdate.CN_Submitter__c!=null){
+                caseToUpdate.OwnerId = caseToUpdate.CN_Submitter__c;
+            }else{
+                caseToUpdate.OwnerId = caseToUpdate.CreatedById;
+            }
              //Add by Zhang Zhihao 2023/1/14  Return to the submitter
             caseToUpdate.CN_Resolved_Button__c = true;
             caseToUpdate.CN_Resolve_Description__c = resolveDescription;
@@ -64,12 +67,17 @@ public with sharing class CN_Complaint_Resolved_LC_Ctrl {
             && ((!Constants.CN_COMPLAINT_SOURCE_ECOMMERCE.equals(caseToUpdate.Origin)) 
             || Constants.CN_PROFILE_NAME_SALES.equals(myProflieName))
             && (resolveReason != null )){
-            caseToUpdate.Status = Constants.CN_CA_STATUS_CLOSED;
-            caseToUpdate.OwnerId = caseToUpdate.CN_Submitter__c;
+            caseToUpdate.Status = Constants.CN_CA_STATUS_RESOLVED;
+            if(caseToUpdate.CN_Submitter__c!=null){
+                caseToUpdate.OwnerId = caseToUpdate.CN_Submitter__c;
+            }else{
+                caseToUpdate.OwnerId = caseToUpdate.CreatedById;
+            }
             caseToUpdate.CN_Resolved_Button__c = true;
             caseToUpdate.CN_Resolve_Description__c = resolveDescription;
             caseToUpdate.CN_Resolve_Reason__c = resolveReason;
             caseToUpdate.CN_Resolve_Comments__c = resolveComments;
+            caseToUpdate.CN_Closed_Button__c = true;
         }else if(caseToUpdate.CN_Resolve_Reason__c == null){
             throw new AuraHandledException(System.Label.CN_Complaint_ResolveReason_Null);
         }else{
@@ -77,7 +85,7 @@ public with sharing class CN_Complaint_Resolved_LC_Ctrl {
         }
         try {
             update caseToUpdate;
-        } catch (Exception e) {
+        } catch (Exception e) {         
             String err = e.getMessage();
             if(err.contains(System.Label.CN_Complaint_ResolveReason_VR_ErrorMsg) && err.contains('Customer Service')){
                 errorMessage = System.label.CN_Complaint_Check_Reason_QA_Msg;

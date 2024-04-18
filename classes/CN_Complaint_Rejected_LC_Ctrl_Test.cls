@@ -40,6 +40,14 @@ public class CN_Complaint_Rejected_LC_Ctrl_Test {
             CN_Complaint_Rejected_LC_Ctrl.updateStatusToRejected(cases[0].Id,'1111');
             }
         }catch(Exception e){}
+        try{
+            System.runAs(CS){
+            List<Case> cases = [select Id,CaseNumber,CN_MG_Case_Id__c,Status,CN_Actual_Return_Consistent_Status__c,CN_CS_Feedback__c from Case WHERE CN_MG_Case_Id__c = '5'];
+            cases[0].CN_Submitter__c = null;
+            update cases[0];
+            CN_Complaint_Rejected_LC_Ctrl.updateStatusToRejected(cases[0].Id,'1111');
+            }
+        }catch(Exception e){}
         Test.stopTest();
     }
 }

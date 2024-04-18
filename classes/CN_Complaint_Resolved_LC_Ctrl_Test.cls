@@ -122,16 +122,19 @@ public class CN_Complaint_Resolved_LC_Ctrl_Test {
             }
         }catch(Exception e){}
 
+        try{
+            System.runAs(CS) {
+                List<Case> cases = [select Id,CaseNumber,CN_MG_Case_Id__c,Status,CN_Actual_Return_Consistent_Status__c,CN_CS_Feedback__c from Case WHERE CN_MG_Case_Id__c = '8'];
+                CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved(cases[0].Id,'Return','Brand Quality','Return');
+                cases[0].Status = 'Accepted';
+                update(cases[0]);
+                cases[0].CN_Submitter__c = null;
+                update(cases[0]);
 
+                CN_Complaint_Resolved_LC_Ctrl.getInitInfo(cases[0].Id);
+                CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved(cases[0].Id,'Return','Brand Quality','Return');
+        }}catch(Exception e){}
 
-        
-
-        // try{
-        //     System.runAs(CS){
-        //     Case cases = [select Id,CaseNumber,CN_MG_Case_Id__c,Status,CN_Actual_Return_Consistent_Status__c,CN_CS_Feedback__c from Case WHERE CN_MG_Case_Id__c = '8' LIMIT 1];
-        //     CN_Complaint_Canceled_LC_Ctrl.cancelComplaint(cases.Id);
-        //     }
-        // }catch(Exception e){}
-        // Test.stopTest();
+        Test.stopTest();
     }
 }

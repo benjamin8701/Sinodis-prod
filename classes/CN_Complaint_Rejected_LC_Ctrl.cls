@@ -23,6 +23,7 @@ public with sharing class CN_Complaint_Rejected_LC_Ctrl {
         if(!hasCreatePermission) {
             throw new AuraHandledException(System.Label.CN_Complaint_No_Permission);
         }
+        
         List<Case> compList = [SELECT Id,
                                         //Add by Zhang Zhihao 2023/1/14  Query submitter
                                         CN_Submitter__c,
@@ -45,8 +46,11 @@ public with sharing class CN_Complaint_Rejected_LC_Ctrl {
             caseToUpdate.Status = Constants.CN_CA_STATUS_REJECTED;
             caseToUpdate.CN_Reject_Datetime__c = System.now();
              //Add by Zhang Zhihao 2023/1/14  Assign the submitter
-             //caseToUpdate.OwnerId = caseToUpdate.CreatedById;
-             caseToUpdate.OwnerId = caseToUpdate.CN_Submitter__c;
+            if(caseToUpdate.CN_Submitter__c!=null){
+                caseToUpdate.OwnerId = caseToUpdate.CN_Submitter__c;
+            }else{
+                caseToUpdate.OwnerId = caseToUpdate.CreatedById;
+            }
              //Add by Zhang Zhihao 2023/1/14  Assign the submitter
             caseToUpdate.CN_Reject_Reason__c = rejectReason;
         }

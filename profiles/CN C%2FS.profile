@@ -8564,7 +8564,12 @@
         <field>Case.CN_Old_Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
-	 <fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.CN_Other__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
         <editable>true</editable>
         <field>Case.CN_Other_problem_images__c</field>
         <readable>true</readable>
