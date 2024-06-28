@@ -34,11 +34,12 @@ public without sharing class CN_Lead_MKT_Assigned_Handler implements Triggers.Ha
                       //Zhang Zhihao modifies the lead status  2023.11.26 start
                     lead.Status = Constants.CN_LEAD_STATUS_MKT_QUALIFIED;
                 } else {
-                    lead.Status = Constants.CN_LEAD_STATUS_ASSIGNED;
+                     //Zhang Zhihao modifies the lead status  2023.11.26 start
+                    if(salesMdmId!=null&&oldLead.ownerId!=salesMdmId){
+                        lead.Status = Constants.CN_LEAD_STATUS_ASSIGNED;
+                    }
                 }
-                 //Zhang Zhihao modifies the lead status  2023.11.26 start
             }
-             //Zhang Zhihao modifies the lead status according to the lead sales owner 2023.11.14 end
         }
     }
 

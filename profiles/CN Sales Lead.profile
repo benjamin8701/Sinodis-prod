@@ -2529,6 +2529,31 @@
         <field>CN_Campaign_Product__c.CN_SKU_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
+     <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Case_SAP_Batch__c.CN_Case_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Case_SAP_Batch__c.CN_Expiry_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Case_SAP_Batch__c.CN_Production_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Case_SAP_Batch__c.CN_Return_Good_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CN_Case_SAP_Batch__c.CN_Unit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>CN_Change_Request_Fields_Check__mdt.CN_Change_Request_Field_Name__c</field>
@@ -8401,6 +8426,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.CN_Actual_Return_Consistent_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.CN_Appraise__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8432,6 +8462,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.CN_Created_by_Me__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.CN_CS_Feedback__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -8477,6 +8512,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.CN_Is_My_Case__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.CN_Other__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11363,15 +11403,19 @@
         <layout>CampaignMemberStatus-Campaign Member Status Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-CN Complaint Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-CN Complaint Layout</layout>
-        <recordType>Case.CN_Complaint</recordType>
+        <layout>Case-CN non-product Complaint Layout</layout>
+        <recordType>Case.CN_Non_Product_Complaint</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-CN online service Layout</layout>
         <recordType>Case.CN_Service_Online</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-CN product Complaint Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-CN product Complaint Layout</layout>
+        <recordType>Case.CN_Complaint</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contact-CN Sinodis Contact Layout</layout>

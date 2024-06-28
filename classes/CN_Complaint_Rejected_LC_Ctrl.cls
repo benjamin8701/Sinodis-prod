@@ -23,7 +23,11 @@ public with sharing class CN_Complaint_Rejected_LC_Ctrl {
         if(!hasCreatePermission) {
             throw new AuraHandledException(System.Label.CN_Complaint_No_Permission);
         }
+        
         List<Case> compList = [SELECT Id,
+                                        //Add by Zhang Zhihao 2023/1/14  Query submitter
+                                        CN_Submitter__c,
+                                         //Add by Zhang Zhihao 2023/1/14  Query submitter
                                         CreatedById,
                                         Status
                                     FROM Case
@@ -33,13 +37,34 @@ public with sharing class CN_Complaint_Rejected_LC_Ctrl {
         }
         Case caseToUpdate = compList[0];
         if( Constants.CN_CA_STATUS_ASSIGNED.equals(caseToUpdate.Status)
-            && (Constants.CN_PROFILE_NAME_CS.equals(myProflieName) || Constants.CN_PROFILE_NAME_QA.equals(myProflieName) || Constants.CN_PROFILE_NAME_ADMIN.equals(myProflieName))) 
+            && (Constants.CN_PROFILE_NAME_CS.equals(myProflieName) || Constants.CN_PROFILE_NAME_QA.equals(myProflieName) || Constants.CN_PROFILE_NAME_ADMIN.equals(myProflieName) 
+            //add by Zhang zhihao Add The food Quality is simplified 2023/12/28
+            || Constants.CN_PROFILE_NAME_FOODQUALITY.equals(myProflieName)
+            //add by Zhang zhihao Add The food Quality is simplified 2023/12/28
+            )) 
         {
             caseToUpdate.Status = Constants.CN_CA_STATUS_REJECTED;
             caseToUpdate.CN_Reject_Datetime__c = System.now();
-            caseToUpdate.OwnerId = caseToUpdate.CreatedById;
+             //Add by Zhang Zhihao 2023/1/14  Assign the submitter
+            if(caseToUpdate.CN_Submitter__c!=null){
+                caseToUpdate.OwnerId = caseToUpdate.CN_Submitter__c;
+            }else{
+                caseToUpdate.OwnerId = caseToUpdate.CreatedById;
+            }
+             //Add by Zhang Zhihao 2023/1/14  Assign the submitter
             caseToUpdate.CN_Reject_Reason__c = rejectReason;
-        }else{
+        }
+        //Add by Zhangzhi hao CS can click the reject button 
+        else if(Constants.CN_CA_STATUS_NEW.equals(caseToUpdate.Status)&&Constants.CN_PROFILE_NAME_CS.equals(myProflieName)){
+            caseToUpdate.Status = Constants.CN_CA_STATUS_REJECTED;
+            caseToUpdate.CN_Reject_Datetime__c = System.now();
+            caseToUpdate.CN_Reject_Reason__c = rejectReason;
+            //Add by He Peng cs queue=> cs user => closed
+            caseToUpdate.CN_Submitter__c = UserInfo.getUserId();
+            caseToUpdate.OwnerId = UserInfo.getUserId();
+        }
+        //Add by Zhangzhi hao CS can click the reject button 
+        else{
             throw new AuraHandledException(System.Label.CN_Complaint_Can_Not_Rejected);
         }
         try{

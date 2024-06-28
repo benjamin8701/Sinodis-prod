@@ -11,19 +11,40 @@
 public without sharing class CN_CR_Write_Back_To_Shipto_Handler implements Triggers.Handler{
     public static Boolean isTriggerRun = true;
     public void handle() {
-        if(Trigger.isAfter && Trigger.isUpdate) {
-            if(CN_CR_Write_Back_To_Shipto_Handler.isTriggerRun) {
+          //add by ZhangZhihao Check whether the operation is frozen 2024/3/25
+        if(Trigger.isAfter && Trigger.isUpdate ) {
+            if(CN_CR_Write_Back_To_Shipto_Handler.isTriggerRun || ShouldSkipTriggerRun() ) {
                 handleAfterUpdate();
             }
         }
+          //add by ZhangZhihao Check whether the operation is frozen 2024/3/25
     }
+
+    //add by ZhangZhihao   Check whether the operation is frozen 2024/3/25
+    private Boolean ShouldSkipTriggerRun() {
+        // 根据记录类型判断是否为 crRTId2，若是则返回 true，表示不需要执行 isTriggerRun 判断
+        Id crRTId2 = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_APPD_INACTIVE_SHIPTO).getRecordTypeId();
+        for(CN_Change_Request__c cr : (List<CN_Change_Request__c>)Trigger.New){
+            if(cr.RecordTypeId == crRTId2) {
+                return true;
+            }
+        }
+        return false;
+    }
+     //add by ZhangZhihao Check whether the operation is frozen 2024/3/25
+
     public void handleAfterUpdate() {
         Id crRTId = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_APPD_UPDATE_SHIPTO).getRecordTypeId();
         //add by leo 2023.08.24 Inactive Ship-to
 	    Id crRTId2 = Schema.SObjectType.CN_Change_Request__c.getRecordTypeInfosByDeveloperName().get(Constants.CN_CR_RT_API_NAME_APPD_INACTIVE_SHIPTO).getRecordTypeId();
-        //add by leo 2023.08.24 Inactive Ship-to
-	List<CN_Change_Request__c> crList = new List<CN_Change_Request__c>();
+        //add by leo 2023.08.2024 Inactive Ship-to
+        //add by ZhangZhiHao 2024/3/7 
+	    List<CN_Change_Request__c> crList = new List<CN_Change_Request__c>();
+        //add by ZhangZhiHao 2024/3/7 
+        Integer recordCount = Trigger.New.size();
+        //add by ZhangZhiHao 2024/3/7 
         for(CN_Change_Request__c cr : (List<CN_Change_Request__c>)Trigger.New){
+		//add by ZhangZhiHao 2024/3/7 
             if(cr.RecordTypeId == crRTId && Constants.CN_CR_STATUS_APPROVALED.equals(cr.CN_Change_Request_Status__c)
             //add by leo 2023.08.24 Inactive Ship-to
             && cr.CN_Change_Request_Status__c!=((CN_Change_Request__c)Trigger.oldMap.get(cr.Id)).CN_Change_Request_Status__c){
@@ -34,6 +55,7 @@ public without sharing class CN_CR_Write_Back_To_Shipto_Handler implements Trigg
                 crList.add(cr);
             }
         }
+         //add by ZhangZhiHao 2024/3/7   
         if(crList.size()>0){
             populateShipToFields(crList);
             CN_CR_Write_Back_To_Shipto_Handler.isTriggerRun = false;
@@ -70,7 +92,7 @@ public without sharing class CN_CR_Write_Back_To_Shipto_Handler implements Trigg
             shipTo.CN_Change_Request__c = cr.Id;
             shipTo.CN_Need_Send_MG__c = true;
             //add by leo 2023.04.24 添加标志位，用于Schedule判断更新条件
-
+             //add by ZhangZhiHao 2024/3/7 
             if(changedFieldSet.size()>0){
                 //add by leo 2023.07.25 添加标志位，判断是否只修改了Inactive,用于绕过 CN_Sold_To_Party_Customer__c 的filter
                 if (shipTo.CN_Inactive__c <> null && changedFieldSet.size() == 1){
@@ -87,6 +109,9 @@ public without sharing class CN_CR_Write_Back_To_Shipto_Handler implements Trigg
                 shipToList.add(shipTo);
             }
         } 
+         //add by ZhangZhiHao 2024/3/7 
+        for(CN_Ship_To_Party__c st : shipToList){}
+         //add by ZhangZhiHao 2024/3/7 
         if(shipToList.size()>0){
             Database.DMLOptions dml = new Database.DMLOptions(); 
             dml.DuplicateRuleHeader.allowSave = true;

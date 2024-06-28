@@ -794,6 +794,26 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>CN_Need_Send_Childrens_MG_Flag__c</fullName>
+        <externalId>false</externalId>
+        <label>CN_Need_Send_Childrens_MG_Flag</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Need_Send_MG_Flag__c</fullName>
+        <externalId>false</externalId>
+        <label>CN_Need_Send_MG_Flag</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_New_Product_Launch__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>

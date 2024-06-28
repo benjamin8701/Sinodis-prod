@@ -29,6 +29,11 @@ trigger Lead_Trigger on Lead (before update,before insert,after update,after ins
                 triggersobj.bind(Triggers.Evt.AfterUpdate, new CN_Lead_status_Send_Mg_Handler());
             }
 	    // add by leo 2023.08.23 mark Lead status change only EC
+        //add by Zhang ZhiHao 2023.3.19 Lead bell notification with invitation code
+        if(Constants.CN_LEAD_INVITATION_OWNER_NOTIFY_TRIGGER_ON) {
+            triggersObj.bind(Triggers.Evt.AfterInsert, new CN_Lead_Invitation_Owner_Notify());
+        }
+         //add by Zhang ZhiHao 2023.3.19 Lead bell notification with invitation code
         }
         triggersObj.execute(); 
     }

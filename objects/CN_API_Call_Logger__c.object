@@ -229,6 +229,31 @@
                     <default>false</default>
                     <label>CN_Lead_Upsert_To_Mg_Callout</label>
                 </value>
+                <value>
+                    <fullName>CN_Case_Insert_Rest</fullName>
+                    <default>false</default>
+                    <label>CN_Case_Insert_Rest</label>
+                </value>
+                <value>
+                    <fullName>CN_Arrival_Reminder_to_Mg_Callout</fullName>
+                    <default>false</default>
+                    <label>CN_Arrival_Reminder_to_Mg_Callout</label>
+                </value>
+                <value>
+                    <fullName>Flow - Call Case Excel Generation</fullName>
+                    <default>false</default>
+                    <label>Flow - Call Case Excel Generation</label>
+                </value>
+                <value>
+                    <fullName>CN_Case_NP_Insert_Rest</fullName>
+                    <default>false</default>
+                    <label>CN_Case_NP_Insert_Rest</label>
+                </value>
+                <value>
+                    <fullName>CN_Case_Upsert_To_Mg_Callout</fullName>
+                    <default>false</default>
+                    <label>CN_Case_Upsert_To_Mg_Callout</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -292,6 +317,8 @@
     <listViews>
         <fullName>All1</fullName>
         <columns>NAME</columns>
+        <columns>CN_Class_Name__c</columns>
+        <columns>CN_Request_Body__c</columns>
         <columns>CN_Create_Time__c</columns>
         <columns>CN_Class_Name__c</columns>
         <columns>CN_Error_Message__c</columns>
@@ -300,12 +327,25 @@
         <columns>CN_Status_Code__c</columns>
         <columns>CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Class_Name__c</field>
+            <operation>equals</operation>
+            <value>CN_CR_ShipTo_Address_Upsert_Rest</value>
+        </filters>
         <label>All</label>
     </listViews>
     <listViews>
         <fullName>All_List</fullName>
         <columns>NAME</columns>
-        <filterScope>Mine</filterScope>
+        <columns>CN_Class_Name__c</columns>
+        <columns>CN_Error_Message__c</columns>
+        <columns>CN_Create_Time__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CN_Class_Name__c</field>
+            <operation>equals</operation>
+            <value>CN_Case_Upsert_To_Mg_Callout</value>
+        </filters>
         <label>All</label>
     </listViews>
     <nameField>
@@ -333,6 +373,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>CN_Arrival_Reminder_to_Mg_Callout</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>CN_CR_Approved_Result_To_Mg_Callout</fullName>
                 <default>false</default>
             </values>
@@ -342,6 +386,10 @@
             </values>
             <values>
                 <fullName>CN_CR_ShipTo_Address_Upsert_Rest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CN_Case_Insert_Rest</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -366,6 +414,10 @@
             </values>
             <values>
                 <fullName>CN_ShipTo_Upsert_To_Mg_Callout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow - Call Case Excel Generation</fullName>
                 <default>false</default>
             </values>
             <values>

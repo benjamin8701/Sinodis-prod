@@ -14,21 +14,9 @@
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
-        <fullName>Order Dependent</fullName>
+        <fullName>Service Issue</fullName>
         <default>false</default>
-        <label>Order Dependent</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Logistics Distribution</fullName>
-        <default>false</default>
-        <label>Logistics Distribution</label>
-        <cssExposed>false</cssExposed>
-    </standardValue>
-    <standardValue>
-        <fullName>Return Issue</fullName>
-        <default>false</default>
-        <label>Return Issue</label>
+        <label>Service Issue</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
@@ -38,9 +26,21 @@
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
-        <fullName>Service Issues</fullName>
+        <fullName>Return Issue</fullName>
         <default>false</default>
-        <label>Service Issues</label>
+        <label>Return Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Logistics Issue</fullName>
+        <default>false</default>
+        <label>Logistics Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Order Issue</fullName>
+        <default>false</default>
+        <label>Order Issue</label>
         <cssExposed>false</cssExposed>
     </standardValue>
 </StandardValueSet>

@@ -44,11 +44,18 @@ public class CN_Lead_Upsert_To_Mg_Batch implements Database.batchable<SObject>, 
 			paramMap.put('owner',item.CN_Owner_Employee_Number__c);
 			paramMap.put('status',item.Status);
 			paramMap.put('sale_email',item.Owner.Email);
-
-			List<CN_Lead_Upsert_To_Mg_Callout.LeadStatusMsg> lists = (List<CN_Lead_Upsert_To_Mg_Callout.LeadStatusMsg>)JSON.deserialize(
-					String.valueOf(item.CN_Status_Change_Records__c),
-							List<CN_Lead_Upsert_To_Mg_Callout.LeadStatusMsg>.class
-			);
+			//add by Zhangzhihao 2024/1/25 Prevents the old state from being null
+			List<CN_Lead_Upsert_To_Mg_Callout.LeadStatusMsg> lists = new List<CN_Lead_Upsert_To_Mg_Callout.LeadStatusMsg>();
+				if (item.CN_Status_Change_Records__c == null) {
+					CN_Lead_Upsert_To_Mg_Callout.LeadStatusMsg defaultStatusMsg = new CN_Lead_Upsert_To_Mg_Callout.LeadStatusMsg();
+					lists.add(defaultStatusMsg);
+				} else {
+					lists = (List<CN_Lead_Upsert_To_Mg_Callout.LeadStatusMsg>)JSON.deserialize(
+						String.valueOf(item.CN_Status_Change_Records__c),
+						List<CN_Lead_Upsert_To_Mg_Callout.LeadStatusMsg>.class
+					);
+				}
+			//add by Zhangzhihao 2024/1/25 Prevents the old state from being null
 
 			// add by  Zhang Zhihao 2023.12.14 customer status
 			if(item.Status == Constants.CN_LEAD_STATUS_CLOSED_CONVERTED) {

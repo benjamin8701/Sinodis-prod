@@ -19,6 +19,9 @@ private class CN_Campaign_Generate_Opp_LC_Ctrl_Test {
     private static void CN_Campaign_Generate_Opp_LC_Ctrl_Test() {
         TestDataFactory testFactory = new TestDataFactory();
         testFactory.makeFactoryAccount();
+        //add by Zhangzhihao  Create a TalendSetting 2024/4/6
+        testFactory.makeTalendSetting();    
+        //add by Zhangzhihao  Create a TalendSetting 2024/4/6
         Account acc_factory = [SELECT Id, Name FROM Account WHERE CN_License_Name_EN__c = 'TestAccount_Factory'][0];
         Contact con_factory = [SELECT Id, Name FROM Contact WHERE AccountId =: acc_factory.Id];
 

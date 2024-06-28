@@ -68,6 +68,15 @@
 				console.log(errorMsg);
 				if(errorMsg != null && errorMsg != undefined && errorMsg != {} && errorMsg != ""){
 					component.set("v.errorMessage", errorMsg);
+                    //add by He Peng errorMsg notify
+                    var toastEvent = $A.get("e.force:showToast");
+                    toastEvent.setParams({
+                        "title": "Error!",
+                        "type":"error",
+                        "mode":"sticky",
+                        "message": errorMsg
+                    });
+                    toastEvent.fire();
 				}else{
 					var toastEvent = $A.get("e.force:showToast");
 					toastEvent.setParams({

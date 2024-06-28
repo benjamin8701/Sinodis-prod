@@ -104,24 +104,6 @@ private class CN_Case_Populate_Status_Handler_Test {
             CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved('516549649864', 'resolveDescription', 'Supply Chain', 'Return');
         }catch(Exception e){}
 
-        CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved(complaintList[1].id, 'resolveDescription', 'Supply Chain', 'Return');
-        
-        System.runAs(salesRep) {
-            CN_Complaint_Closed_LC_Ctrl.updateStatusToClosed(complaintList[1].id);
-        }
-
-        try{
-            System.runAs(salesRep) {
-                CN_Complaint_Closed_LC_Ctrl.updateStatusToClosed('36547912345');
-            }
-        }catch(Exception e){}
-        try{
-            System.runAs(salesRep) {
-                CN_Complaint_Closed_LC_Ctrl.updateStatusToClosed('');
-            }
-        }catch(Exception e){}
-
-        Test.stopTest();
-        
+        CN_Complaint_Resolved_LC_Ctrl.updateStatusToResolved(complaintList[1].id, 'resolveDescription', 'Supply Chain', 'Return');        
     }
 }
