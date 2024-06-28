@@ -2344,7 +2344,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label>冻结状态</label>
+        <label>S6冻结状态</label>
         <name>CN_ShipTo_Inactive__c</name>
     </fields>
     <fields>
@@ -2361,6 +2361,10 @@
         <label>省份</label>
         <name>CN_ShipTo_Province_CN__c</name>
         <relationshipLabel>变更申请</relationshipLabel>
+    </fields>
+    <fields>
+        <label>S3冻结状态</label>
+        <name>CN_ShipTo_S3_Inactive__c</name>
     </fields>
     <fields>
         <label>售达方客户</label>
@@ -2994,10 +2998,6 @@
         <picklistValues>
             <masterLabel>M231-60 days end of month, due net</masterLabel>
             <translation><!-- M231-60 days end of month, due net --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>M331-90 days end of month, due net</masterLabel>
-            <translation><!-- M331-90 days end of month, due net --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -3906,7 +3906,7 @@
     <fields>
         <label>新城市</label>
         <name>New_CN_ShipTo_City_CN__c</name>
-        <relationshipLabel>变更申请</relationshipLabel>
+        <relationshipLabel><!-- Change Requests (New City(CN)) --></relationshipLabel>
     </fields>
     <fields>
         <label>新送达方联系人姓名</label>
@@ -3958,7 +3958,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label>新冻结状态</label>
+        <label>新S6冻结状态</label>
         <name>New_CN_ShipTo_Inactive__c</name>
     </fields>
     <fields>
@@ -3975,6 +3975,10 @@
         <label>新省份</label>
         <name>New_CN_ShipTo_Province_CN__c</name>
         <relationshipLabel>变更申请</relationshipLabel>
+    </fields>
+    <fields>
+        <label>新S3冻结状态</label>
+        <name>New_CN_ShipTo_S3_Inactive__c</name>
     </fields>
     <fields>
         <label>新售达方客户</label>
@@ -3994,229 +3998,7 @@
         <label>已经上传新合约</label>
         <name>New_CN_Upload_Contract__c</name>
     </fields>
-    <layouts>
-        <layout>CN Mass Change Account Finance AR Layout</layout>
-        <sections>
-            <label>客户信息</label>
-            <section>Account Information</section>
-        </sections>
-        <sections>
-            <label>变更申请信息</label>
-            <section>Change Request Information</section>
-        </sections>
-        <sections>
-            <label>自定义链接</label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label>SAP同步信息</label>
-            <section>Sync to SAP</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>CN Mass Change Account Owner Layout</layout>
-        <sections>
-            <label>客户信息</label>
-            <section>Account Information</section>
-        </sections>
-        <sections>
-            <label>变更申请信息</label>
-            <section>Change Request Information</section>
-        </sections>
-        <sections>
-            <label>自定义链接</label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label>SAP同步信息</label>
-            <section>Sync to SAP</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>CN Sinodis Account Change Request For Finance Layout</layout>
-        <sections>
-            <label>客户信息</label>
-            <section>Account Information</section>
-        </sections>
-        <sections>
-            <label>客户负责人</label>
-            <section>Account Owners</section>
-        </sections>
-        <sections>
-            <label>变更申请信息</label>
-            <section>Change Request Information</section>
-        </sections>
-        <sections>
-            <label>自定义链接</label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label>顾客分类</label>
-            <section>Customer Classification</section>
-        </sections>
-        <sections>
-            <label>文件</label>
-            <section>Documents</section>
-        </sections>
-        <sections>
-            <label>发票</label>
-            <section>Invoicing</section>
-        </sections>
-        <sections>
-            <label>支付</label>
-            <section>Payment</section>
-        </sections>
-        <sections>
-            <label>SAP同步信息</label>
-            <section>Sync to SAP</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>CN Sinodis Account Change Request Layout</layout>
-        <sections>
-            <label>客户信息</label>
-            <section>Account Information</section>
-        </sections>
-        <sections>
-            <label>客户负责人</label>
-            <section>Account Owners</section>
-        </sections>
-        <sections>
-            <label>变更申请信息</label>
-            <section>Change Request Information</section>
-        </sections>
-        <sections>
-            <label>自定义链接</label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label>顾客分类</label>
-            <section>Customer Classification</section>
-        </sections>
-        <sections>
-            <label>文件</label>
-            <section>Documents</section>
-        </sections>
-        <sections>
-            <label>发票</label>
-            <section>Invoicing</section>
-        </sections>
-        <sections>
-            <label>支付</label>
-            <section>Payment</section>
-        </sections>
-        <sections>
-            <label>SAP同步信息</label>
-            <section>Sync to SAP</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>CN Sinodis New Contact Change Request Layout</layout>
-        <sections>
-            <label>附加信息</label>
-            <section>Additional Information</section>
-        </sections>
-        <sections>
-            <label>变更申请信息</label>
-            <section>Change Request Information</section>
-        </sections>
-        <sections>
-            <label>联系人信息</label>
-            <section>Contact Information</section>
-        </sections>
-        <sections>
-            <label>自定义链接</label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label>SAP创建信息</label>
-            <section>SAP Creation Information</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>CN Sinodis New ShipTo Change Request Layout</layout>
-        <sections>
-            <label>地址</label>
-            <section>Address</section>
-        </sections>
-        <sections>
-            <label>变更申请信息</label>
-            <section>Change Request Information</section>
-        </sections>
-        <sections>
-            <label>联系人</label>
-            <section>Contact</section>
-        </sections>
-        <sections>
-            <label>自定义链接</label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label>信息</label>
-            <section>Information</section>
-        </sections>
-        <sections>
-            <label>SAP创建信息</label>
-            <section>SAP Creation Information</section>
-        </sections>
-        <sections>
-            <label>系统信息</label>
-            <section>System Information</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>CN Sinodis ShipTo Change Request Layout</layout>
-        <sections>
-            <label>变更申请信息</label>
-            <section>Change Request Information</section>
-        </sections>
-        <sections>
-            <label>自定义链接</label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label>送达方信息</label>
-            <section>Ship to Party Information</section>
-        </sections>
-        <sections>
-            <label>SAP同步信息</label>
-            <section>Sync to SAP</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>CN Sinodis Update Contact Change Request Layout</layout>
-        <sections>
-            <label>附加信息</label>
-            <section>Additional Information</section>
-        </sections>
-        <sections>
-            <label>变更申请信息</label>
-            <section>Change Request Information</section>
-        </sections>
-        <sections>
-            <label>联系人信息</label>
-            <section>Contact Information</section>
-        </sections>
-        <sections>
-            <label>自定义链接</label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label>SAP同步信息</label>
-            <section>Sync to SAP</section>
-        </sections>
-    </layouts>
     <nameFieldLabel>变更申请名称</nameFieldLabel>
-    <quickActions>
-        <aspect>Master</aspect>
-        <label>检查审批/撤销检查</label>
-        <name>CN_Ready_for_Approval</name>
-    </quickActions>
-    <quickActions>
-        <aspect>Master</aspect>
-        <label>发送到SAP</label>
-        <name>CN_Send_To_SAP</name>
-    </quickActions>
     <recordTypes>
         <description><!-- Approved Inactive Ship To Request --></description>
         <label><!-- Approved Inactive Ship To Request --></label>
@@ -4342,6 +4124,10 @@
     <validationRules>
         <errorMessage>请关闭此页面，从客户/联系人/送达方页面点击按钮创建变更申请。</errorMessage>
         <name>CN_Check_Generate_Source</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>不允许同时选择新S3冻结状态与新S6冻结状态</errorMessage>
+        <name>CN_Check_Inactive_Checkbox_Status</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Please select the account which had been synced --></errorMessage>

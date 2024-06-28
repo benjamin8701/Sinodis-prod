@@ -20,7 +20,7 @@ public class CN_ShipTo_Upsert_To_Mg_Batch  implements Database.Batchable<SObject
 		CN_Sold_To_Party_Customer__r.CN_MG_Account_ID__c,
 		CN_Sold_To_Party_Customer__r.CN_Lead_MG_Contact_Id__c,
 		CN_UP_Code__c,CN_Post_Code__c,
-		CN_Telephone__c,CN_Inactive__c FROM CN_Ship_to_Party__c
+		CN_Telephone__c,CN_Inactive__c,CN_Inactive_S3__c FROM CN_Ship_to_Party__c
 		WHERE CN_Need_Send_MG__c = true
 		AND CN_Sold_To_Party_Customer__r.CN_Account_Source__c = :Constants.CN_ACCOUNT_SOURCE_ECOMMERCE
 		AND CN_UP_Code__c != null

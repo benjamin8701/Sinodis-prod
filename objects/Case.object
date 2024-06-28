@@ -535,6 +535,18 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CN_EC_Complaint_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>EC Complaint ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CN_EN_Name__c</fullName>
         <description>产品英文名称</description>
         <externalId>false</externalId>
@@ -1614,6 +1626,7 @@
     <listViews>
         <fullName>AllOpenCases</fullName>
         <columns>CASES.CASE_NUMBER</columns>
+        <columns>CN_EC_Complaint_Id__c</columns>
         <columns>CASES.SUBJECT</columns>
         <columns>ACCOUNT.NAME</columns>
         <columns>CASES.REASON</columns>
