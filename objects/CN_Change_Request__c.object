@@ -2501,6 +2501,12 @@
                     <label>BAPA</label>
                 </value>
                 <value>
+                    <fullName>Casual Dining - Asian exclude Chinese</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Casual Dining - Asian exclude Chinese</label>
+                </value>
+                <value>
                     <fullName>Catering</fullName>
                     <default>false</default>
                     <isActive>false</isActive>
@@ -2529,6 +2535,12 @@
                     <default>false</default>
                     <isActive>false</isActive>
                     <label>EC</label>
+                </value>
+                <value>
+                    <fullName>Fine Dining - Asian exclude Chinese</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Fine Dining - Asian exclude Chinese</label>
                 </value>
                 <value>
                     <fullName>Hotel</fullName>
@@ -5485,7 +5497,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>CN_ShipTo_Inactive__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>ShipTo Inactive</label>
+        <label>ShipTo S6 Inactive</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -5529,6 +5541,16 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CN_ShipTo_S3_Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>ShipTo S3 Inactive</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>CN_ShipTo_Sold_To_Party_Customer__c</fullName>
@@ -8842,7 +8864,7 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <fullName>New_CN_ShipTo_Inactive__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>New ShipTo Inactive</label>
+        <label>New ShipTo S6 Inactive</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -8886,6 +8908,16 @@ $Label.CN_PleaseConfirm_Value_AlreadySubmitted
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>New_CN_ShipTo_S3_Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>New ShipTo S3 Inactive</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>New_CN_ShipTo_Sold_To_Party_Customer__c</fullName>
@@ -48403,6 +48435,13 @@ NOT(IF(RecordType.DeveloperName = &quot;CN_MASS_Change_Account_Owner&quot;, TRUE
 NOT(IF(RecordType.DeveloperName = &quot;CN_Mass_Change_Account_Finance_AR&quot;, TRUE, FALSE))
 )</errorConditionFormula>
         <errorMessage>Please close this page and create change request from quick action. 请关闭此页面，从客户/联系人/运送人页面点击按钮创建变更申请。</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Check_Inactive_Checkbox_Status</fullName>
+        <active>true</active>
+        <description>cannot select S3 and S6 together</description>
+        <errorConditionFormula>AND( New_CN_ShipTo_S3_Inactive__c = True,New_CN_ShipTo_Inactive__c = True)</errorConditionFormula>
+        <errorMessage>Cannot select S3 and S6 together</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Check_New_Contact_Request_Account</fullName>

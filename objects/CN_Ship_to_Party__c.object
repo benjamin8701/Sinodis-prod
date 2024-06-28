@@ -398,10 +398,19 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>CN_Inactive_S3__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Inactive S3</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CN_Inactive__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>Inactive</label>
+        <label>Inactive S6</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -995,6 +1004,13 @@
 )</errorConditionFormula>
         <errorDisplayField>CN_Contact_Name__c</errorDisplayField>
         <errorMessage>Contact Name must be entered more than two words.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CN_Check_Inactive_Checkbox_Status</fullName>
+        <active>true</active>
+        <description>cannot select S3 and S6 together</description>
+        <errorConditionFormula>AND(CN_Inactive_S3__c = True, CN_Inactive__c = True)</errorConditionFormula>
+        <errorMessage>Cannot select S3 and S6 together</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CN_Check_Moblie_NumberFormat</fullName>
