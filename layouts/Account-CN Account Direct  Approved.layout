@@ -332,6 +332,7 @@
         <fields>NAME</fields>
         <fields>CN_Contact_Name__c</fields>
         <fields>CN_Delivery_Address_CN__c</fields>
+        <fields>CN_Inactive_S3__c</fields>
         <fields>CN_Inactive__c</fields>
         <relatedList>CN_Ship_to_Party__c.CN_Sold_To_Party_Customer__c</relatedList>
     </relatedLists>

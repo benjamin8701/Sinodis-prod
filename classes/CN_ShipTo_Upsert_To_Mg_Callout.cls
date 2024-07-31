@@ -117,6 +117,7 @@ public class CN_ShipTo_Upsert_To_Mg_Callout {
 			mapItem.put('up_code',shipTo.CN_UP_Code__c);
 			mapItem.put('post_code',shipTo.CN_Post_Code__c);
 			mapItem.put('inactive',shipTo.CN_Inactive__c?'1':'0');
+			mapItem.put('inactive_s3',shipTo.CN_Inactive_S3__c?'1':'0');
 			maps.add(mapItem);
 		}
 		return maps;

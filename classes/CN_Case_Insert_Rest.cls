@@ -56,7 +56,10 @@ global class CN_Case_Insert_Rest {
         'otherProblemImages' => 'CN_Other_problem_images__c',
         'wsCompanyName'      => 'CN_WS_Account_Name__c',
         'wsContactPhone'     => 'CN_WS_Telephone__c',
-        'sapBatch'  => 'CN_SAP_Batch_Number__c'   
+        'sapBatch'  => 'CN_SAP_Batch_Number__c',
+        // add by ZhangZhihao 2024/5/21 Add field
+        'CN_EC_Complaint_Id__c' => 'CN_EC_Complaint_Id__c'
+        // add by ZhangZhihao 2024/5/21 Add field
     };
     private static Map<String, String> MAP_BatchNums_Fields = new Map<String, String> {
         'CN_Case_ID__c' => 'CN_Case_ID__c',
