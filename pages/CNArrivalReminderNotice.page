@@ -1,0 +1,55 @@
+<apex:page standardController="CN_Arrival_Reminder__c" recordSetVar="CNArrivalReminders" showHeader="false" readOnly="false">
+    <apex:includeLightning />
+
+    <div id="lightning" />
+    <script>
+        var selectedList = [];
+    </script>
+    <apex:repeat value="{!selected}" var="selectedItem"> 
+        <script>
+            selectedList.push('{!selectedItem}'); 
+        </script>
+    </apex:repeat>
+    <apex:includeScript value="/lightning/lightning.out.js" />
+    <script>
+        if(selectedList.length == 0) {
+            sforce.one.showToast({
+            "title": "Error",
+            "message": "Please select at least one project for operation.",
+            "type": "error"
+        });
+        window.location.href = '/lightning/o/CN_Arrival_Reminder__c/list?filterName=Recent';
+            // alert('Please select at least one project for operation.'); 
+            // window.location.href = '/lightning/o/CN_Arrival_Reminder__c/list?filterName=Recent';
+            // // window.open("Please select at least one project for operation.");
+            // var toastEvent = $A.get("e.force:showToast");
+            //         var msg = 'Please select at least one project for operation.';
+            //         toastEvent.setParams({
+            //             "type": "error",
+            //             "message": msg
+            //         });
+                    // toastEvent.fire();
+            // var toastEvent = $A.get("e.force:showToast");
+            // toastEvent.setParams({
+            //     "title": "Success!",
+            //     "type":"success",
+            //     "message": "Please select at least one project for operation."
+            // });
+            // toastEvent.fire();
+          
+            
+        } else {
+            // $Lightning.use("c:arrivalReminderapp", function() {
+            $Lightning.use("c:CN_Arrival_Reminder_App_Send_To_MG", function() {
+            $Lightning.createComponent("c:CN_Arrival_Reminder_List_Send_To_MG",
+                {selectedIds : selectedList},
+                'lightning',
+                function(cmp) {
+                    console.log("component created");
+                }
+                );
+            });
+        }
+        
+    </script>
+</apex:page>

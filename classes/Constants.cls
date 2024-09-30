@@ -473,7 +473,8 @@ public without sharing class Constants {
 	public static Boolean CN_CA_CREATOR_TO_OWNER_HANDLER_TRIGGER_ON = true;
 	public static Boolean CN_CA_PREVENT_DELETE_TRIGGER_ON = true;
 	public static Boolean CN_CA_SHARE_HANDLER_TRIGGER_ON = true;
-	
+	//add by Wang Bo 2024/7/5
+	public static Boolean CN_CA_STATUS_CHANGE_UPDATE_PREVIOUS_STATUS_TRIGGER_ON = true;
 	//add by Zhang Zhihao 2024 1/14
 	public static Boolean CN_CA_SUBMITTER_TRIGGER_ON =true;
 	public static Boolean CN_CA_STATUS_CHANGE_NOTIFICATION_TRIGGER_ON = true;

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Complaint Product Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Complaint Product Details</value>
+    </caseValues>
+    <fields>
+        <label><!-- Complaint --></label>
+        <name>CN_Case_ID__c</name>
+        <relationshipLabel><!-- Complaint Product Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expiry Date --></label>
+        <name>CN_Expiry_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Date --></label>
+        <name>CN_Production_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number --></label>
+        <name>CN_Return_Good_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>CN_Unit__c</name>
+        <picklistValues>
+            <masterLabel>CAR</masterLabel>
+            <translation><!-- CAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EA</masterLabel>
+            <translation><!-- EA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G</masterLabel>
+            <translation><!-- G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L</masterLabel>
+            <translation><!-- L --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ML</masterLabel>
+            <translation><!-- ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>kg</masterLabel>
+            <translation><!-- kg --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- CN Case Sap Batch --></label>
+        <name>CN_Case_Sap_Batch</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t set the Number as 0. --></errorMessage>
+        <name>CN_Complaint_Product_Check_Number</name>
+    </validationRules>
+</CustomObjectTranslation>
