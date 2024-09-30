@@ -288,6 +288,11 @@
                     <label>Regular Product recommend</label>
                 </value>
                 <value>
+                    <fullName>Regular Product recommend</fullName>
+                    <default>false</default>
+                    <label>Regular Product recommend</label>
+                </value>
+                <value>
                     <fullName>Contract negotiation</fullName>
                     <default>false</default>
                     <label>Contract negotiation</label>
